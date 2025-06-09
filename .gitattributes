@@ -1,0 +1,124 @@
+# Global attributes for forcing line endings normalization of specific files
+
+* text=auto
+
+# YAML-based files
+*.yml  text eol=lf encoding=utf-8
+*.yaml text eol=lf encoding=utf-8
+
+# Documents
+*.md           text eol=crlf encoding=utf-8
+*.txt          text eol=crlf encoding=cp1251
+
+# INI-based files
+*.ini          text eol=crlf encoding=utf-8
+*.INI          text eol=crlf encoding=utf-8
+*.editorconfig text eol=crlf encoding=utf-8
+
+# Batch scripts
+*.bat          text eol=crlf encoding=utf-8
+*.cmd          text eol=crlf encoding=utf-8
+
+# PowerShell scripts
+*.ps1 text eol=crlf encoding=utf-8
+
+# X-Ray configs
+*.ltx linguist-detectable
+*.seq linguist-detectable
+*.ltx      text eol=crlf encoding=cp1251 linguist-language=INI gitlab-language=ini
+*.xml      text eol=crlf encoding=cp1251
+*.seq      text eol=crlf encoding=cp1251 linguist-language=INI gitlab-language=ini
+configs/gameplay/*.xml text eol=crlf encoding=cp1251
+configs/ui/*.xml       text eol=crlf encoding=cp1251
+configs/text/cze/*.xml text eol=crlf encoding=cp1250
+configs/text/eng/*.xml text eol=crlf encoding=cp1252
+configs/text/fra/*.xml text eol=crlf encoding=cp1252
+configs/text/ger/*.xml text eol=crlf encoding=cp1252
+configs/text/ita/*.xml text eol=crlf encoding=cp1252
+configs/text/pol/*.xml text eol=crlf encoding=cp1250
+configs/text/rus/*.xml text eol=crlf encoding=cp1251
+configs/text/spa/*.xml text eol=crlf encoding=cp1252
+
+*.script linguist-detectable
+*.script   text eol=crlf encoding=utf-8 linguist-language=Lua gitlab-language=lua
+*.lua      text eol=crlf encoding=utf-8
+
+shaders/**/*.hlsl  linguist-detectable
+shaders/**/*.hlsli linguist-detectable
+shaders/**/*.hlsl  text eol=crlf encoding=utf-8 linguist-language=HLSL gitlab-language=hlsl
+shaders/**/*.hlsli text eol=crlf encoding=utf-8 linguist-language=HLSL gitlab-language=hlsl
+
+
+# X-Ray assets
+*.efd   binary
+*.anm   binary
+*.ppe   binary
+*.ogf   binary
+*.omf   binary
+*.dm    binary
+*.dds   binary
+*.thm   binary
+*.ogf   binary
+*.ogm   binary
+*.tga   binary
+*.spawn binary
+
+*.bin   binary
+
+# X-Ray build results
+build.aimap   binary
+build.cform   binary
+build.details binary
+build.lights  binary
+build.prj     binary
+
+# X-Ray level assets
+level            binary
+level.ai         binary
+level.cform      binary
+level.details    binary
+level.env_mod    binary
+level.fog_vol    binary
+level.game       binary
+level.geom       binary
+level.geomx      binary
+level.hom        binary
+level.ps_static  binary
+level.snd_static binary
+level.wallmarks  binary
+level.puddles    text eol=crlf gitlab-language=ini
+
+ai_map.part         binary
+detail_object.part  binary
+fog_volume.part     text eol=crlf gitlab-language=ini
+glow.part           text eol=crlf gitlab-language=ini
+group.part          text eol=crlf gitlab-language=ini
+group.part1         text eol=crlf gitlab-language=ini
+light.part          text eol=crlf gitlab-language=ini
+portal.part         text eol=crlf gitlab-language=ini
+ps.part             text eol=crlf gitlab-language=ini
+scene_object.part   text eol=crlf gitlab-language=ini
+sector.part         text eol=crlf gitlab-language=ini
+shape.part          text eol=crlf gitlab-language=ini
+sound_env.part      text eol=crlf gitlab-language=ini
+sound_src.part      text eol=crlf gitlab-language=ini
+spawn.part          text eol=crlf gitlab-language=ini
+wallmark.part       binary
+way.part            text eol=crlf gitlab-language=ini
+puddles.part            text eol=crlf gitlab-language=ini
+
+*.details binary
+*.group   binary
+*.level   binary
+*.dti     binary
+*.object  binary
+*.skl     binary
+*.skls    binary
+*.bones   binary
+
+*.exe binary
+*.dll binary
+*.bpl binary
+*.bpi binary
+*.pdb binary
+*.tds binary

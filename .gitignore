@@ -1,0 +1,6 @@
+# Global ignoring of different binaries and another temporary files
+
+# Temporary files
+*.~*
+Thumbs.db
+[Dd]esktop.ini
