@@ -51,46 +51,51 @@
 	    <texture id="ui_inGame2_blood_icon_part_3" x="500" y="289" width="23" height="33" />
 
 		<!-- Индикатор голода -->
-	    <texture id="ui_inGame2_circle_hunger_green" x="596" y="982" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_hunger_yellow" x="14" y="886" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_hunger_orange" x="14" y="938" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_hunger_red" x="13" y="970" width="26" height="28" />
+	    <texture id="ui_inGame2_circle_hunger_green" x="548" y="982" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_hunger_yellow" x="12" y="885" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_hunger_orange" x="12" y="926" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_hunger_red" x="12" y="970" width="30" height="30" />
 
 		<!-- Индикатор кровотечения -->
-	    <texture id="ui_inGame2_circle_bloodloose_green" x="595" y="983" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_bloodloose_yellow" x="60" y="886" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_bloodloose_orange" x="60" y="928" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_bloodloose_red" x="60" y="970" width="26" height="28" />
+	    <texture id="ui_inGame2_circle_bloodloose_green" x="594" y="982" width="30" height="30" />
+		
+	    <texture id="ui_inGame2_circle_bloodloose_yellow" x="60" y="885" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_bloodloose_orange" x="60" y="926" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_bloodloose_red" x="60" y="970" width="30" height="30" />
 		
 		<!-- Индикатор перегруза -->
-	    <texture id="ui_inGame2_circle_Overweight_green" x="643" y="983" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Overweight_yellow" x="108" y="886" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Overweight_orange" x="108" y="928" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Overweight_red" x="108" y="970" width="26" height="28" />
+	    <texture id="ui_inGame2_circle_Overweight_green" x="642" y="982" width="30" height="30" />
+		
+	    <texture id="ui_inGame2_circle_Overweight_yellow" x="107" y="885" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_Overweight_orange" x="107" y="926" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_Overweight_red" x="107" y="970" width="30" height="30" />
 		
 		<!-- Индикатор поломки оружия -->
-	    <texture id="ui_inGame2_circle_Gunbroken_green" x="690" y="983" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Gunbroken_yellow" x="156" y="886" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Gunbroken_orange" x="156" y="928" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Gunbroken_red" x="156" y="970" width="26" height="28" />
+	    <texture id="ui_inGame2_circle_Gunbroken_green" x="689" y="982" width="30" height="30" />
+		
+	    <texture id="ui_inGame2_circle_Gunbroken_yellow" x="154" y="885" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_Gunbroken_orange" x="154" y="926" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_Gunbroken_red" x="154" y="970" width="30" height="30" />
 		
 		<!-- Индикатор поломки шлема -->
-	    <texture id="ui_inGame2_circle_Helmetbroken_green" x="737" y="983" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Helmetbroken_yellow" x="202" y="886" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Helmetbroken_orange" x="202" y="928" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Helmetbroken_red" x="202" y="970" width="26" height="28" />
+	    <texture id="ui_inGame2_circle_Helmetbroken_green" x="737" y="982" width="30" height="30" />
+		
+	    <texture id="ui_inGame2_circle_Helmetbroken_yellow" x="201" y="885" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_Helmetbroken_orange" x="201" y="926" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_Helmetbroken_red" x="201" y="970" width="30" height="30" />
 		
 		<!-- Индикатор поломки брони -->
-	    <texture id="ui_inGame2_circle_Armorbroken_green" x="784" y="983" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Armorbroken_yellow" x="249" y="886" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Armorbroken_orange" x="249" y="928" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_Armorbroken_red" x="249" y="970" width="26" height="28" />
+	    <texture id="ui_inGame2_circle_Armorbroken_green" x="783" y="982" width="30" height="30" />
+		
+	    <texture id="ui_inGame2_circle_Armorbroken_yellow" x="249" y="885" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_Armorbroken_orange" x="249" y="926" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_Armorbroken_red" x="249" y="970" width="30" height="30" />
 		
 		<!-- Индикатор радиационного облучения -->
-	    <texture id="ui_inGame2_circle_radiation_green" x="828" y="983" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_radiation_yellow" x="293" y="886" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_radiation_orange" x="293" y="928" width="26" height="28" />
-	    <texture id="ui_inGame2_circle_radiation_red" x="293" y="970" width="26" height="28" />
+	    <texture id="ui_inGame2_circle_radiation_green" x="827" y="982" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_radiation_yellow" x="292" y="885" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_radiation_orange" x="292" y="926" width="30" height="30" />
+	    <texture id="ui_inGame2_circle_radiation_red" x="292" y="970" width="30" height="30" />
 
         <!-- ИНДИКАТОРЫ ТРЕУГОЛЬНИКИ (ОПАСНОСТЕЙ) -->
 

@@ -7,7 +7,7 @@
 		</background>
 
 	    <clock_wnd x="0.13" y="0.09" width="39" height="16" alignment="c">
-	        <text x="0" y="0" font="ui_font_letterica16_russian" color="ui_1" align="c" vert_align="c"/>
+	        <text x="0" y="0" font="ui_font_letterica16_russian" r="255" g="150" b="0" a="255" align="c" vert_align="c"/>
 	    </clock_wnd>
 
 		<compass x="0.5" y="0.5" width="164" height="164" heading="1" stretch="1" alignment="c">
