@@ -15,3 +15,4 @@ Installation:
 Link to the current __IX-Ray__ [release](https://github.com/ixray-team/ixray-1.6-stcop/releases/latest)
 
 ## Contributors
+<img width="2560" height="1440" alt="ss_admin_07-31-25_22-37-50_(Затон)" src="https://github.com/user-attachments/assets/d556adab-f3ca-44c1-9157-6a296020699d" />
