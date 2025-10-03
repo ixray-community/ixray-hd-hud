@@ -163,16 +163,28 @@
                 <texture r="10" g="250" b="250">ui_pda2_exit_point</texture>
         </level_changer_left_up_spot>
 
+
         <treasure hint="st_ui_pda_secret">
                 <level_map spot="treasure_spot" pointer="quest_pointer"/>
                 <mini_map  spot="treasure_spot_mini"/>
         </treasure>
         <treasure_spot width="25" height="25" alignment="c" stretch="1"><!-- scale="1" scale_min="1.1" scale_max="3.1" light_anim="map_spot_secrets" la_cyclic="0" la_texture="1" la_text="0" la_alpha="1"-->
-                <texture>ui_inGame2_PDA_icon_personal_spot</texture>
+                <texture>ui_inGame2_PDA_icon_secret</texture>
         </treasure_spot>
-        <treasure_spot_mini width="15" height="15" alignment="c" stretch="1">
-                <texture>ui_inGame2_PDA_icon_personal_spot</texture>
+        <treasure_spot_mini width="18" height="18" alignment="c" stretch="1">
+                <texture>ui_inGame2_PDA_icon_secret</texture>
         </treasure_spot_mini>
+		
+        <personal_spot hint="st_ui_pda_personal">
+                <level_map spot="personal_spot_main" pointer="quest_pointer"/>
+                <mini_map  spot="personal_spot_mini"/>
+        </personal_spot>
+        <personal_spot_main width="29" height="29" alignment="c" stretch="1">
+                <texture>ui_inGame2_PDA_personal_spot</texture>
+        </personal_spot_main>
+        <personal_spot_mini width="17" height="17" alignment="c" stretch="1">
+                <texture>ui_inGame2_PDA_personal_spot</texture>
+        </personal_spot_mini>
 
         <alife_combat_fight>
                 <level_map spot="alife_combat_fight_spot" pointer="combat_pointer"/>
@@ -228,72 +240,72 @@
 
 
 <!-- Группировки -->
-  <alife_presentation_faction_duty>
-    <level_map spot="alife_presentation_faction_duty_spot"/>
-  </alife_presentation_faction_duty>
-  <alife_presentation_faction_duty_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="0" g="0" b="255">ui\ui_common</texture>
-  </alife_presentation_faction_duty_spot>
+		  <alife_presentation_faction_duty>
+			<level_map spot="alife_presentation_faction_duty_spot"/>
+		  </alife_presentation_faction_duty>
+		  <alife_presentation_faction_duty_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="0" g="0" b="255">ui\ui_common</texture>
+		  </alife_presentation_faction_duty_spot>
 
-  <alife_presentation_faction_dolg>
-    <level_map spot="alife_presentation_faction_dolg_spot"/>
-  </alife_presentation_faction_dolg>
-  <alife_presentation_faction_dolg_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="0" g="0" b="255">ui\ui_common</texture>
-  </alife_presentation_faction_dolg_spot>
+		  <alife_presentation_faction_dolg>
+			<level_map spot="alife_presentation_faction_dolg_spot"/>
+		  </alife_presentation_faction_dolg>
+		  <alife_presentation_faction_dolg_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="0" g="0" b="255">ui\ui_common</texture>
+		  </alife_presentation_faction_dolg_spot>
 
-  <alife_presentation_faction_freedom>
-    <level_map spot="alife_presentation_faction_freedom_spot"/>
-  </alife_presentation_faction_freedom>
-  <alife_presentation_faction_freedom_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="128" g="255" b="0">ui\ui_common</texture>
-  </alife_presentation_faction_freedom_spot>
+		  <alife_presentation_faction_freedom>
+			<level_map spot="alife_presentation_faction_freedom_spot"/>
+		  </alife_presentation_faction_freedom>
+		  <alife_presentation_faction_freedom_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="128" g="255" b="0">ui\ui_common</texture>
+		  </alife_presentation_faction_freedom_spot>
 
-  <alife_presentation_faction_bandit>
-    <level_map spot="alife_presentation_faction_bandit_spot"/>
-  </alife_presentation_faction_bandit>
-  <alife_presentation_faction_bandit_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="255" g="255" b="0">ui\ui_common</texture>
-  </alife_presentation_faction_bandit_spot>
+		  <alife_presentation_faction_bandit>
+			<level_map spot="alife_presentation_faction_bandit_spot"/>
+		  </alife_presentation_faction_bandit>
+		  <alife_presentation_faction_bandit_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="255" g="255" b="0">ui\ui_common</texture>
+		  </alife_presentation_faction_bandit_spot>
 
-  <alife_presentation_faction_killer>
-    <level_map spot="alife_presentation_faction_killer_spot"/>
-  </alife_presentation_faction_killer>
-  <alife_presentation_faction_killer_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="0" g="128" b="128">ui\ui_common</texture>
-  </alife_presentation_faction_killer_spot>
+		  <alife_presentation_faction_killer>
+			<level_map spot="alife_presentation_faction_killer_spot"/>
+		  </alife_presentation_faction_killer>
+		  <alife_presentation_faction_killer_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="0" g="128" b="128">ui\ui_common</texture>
+		  </alife_presentation_faction_killer_spot>
 
-  <alife_presentation_faction_army>
-    <level_map spot="alife_presentation_faction_army_spot"/>
-  </alife_presentation_faction_army>
-  <alife_presentation_faction_army_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="128" g="128" b="0">ui\ui_common</texture>
-  </alife_presentation_faction_army_spot>
+		  <alife_presentation_faction_army>
+			<level_map spot="alife_presentation_faction_army_spot"/>
+		  </alife_presentation_faction_army>
+		  <alife_presentation_faction_army_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="128" g="128" b="0">ui\ui_common</texture>
+		  </alife_presentation_faction_army_spot>
 
-  <alife_presentation_faction_monster>
-    <level_map spot="alife_presentation_faction_monster_spot"/>
-  </alife_presentation_faction_monster>
-  <alife_presentation_faction_monster_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="255" g="0" b="0">ui\ui_common</texture>
-  </alife_presentation_faction_monster_spot>
+		  <alife_presentation_faction_monster>
+			<level_map spot="alife_presentation_faction_monster_spot"/>
+		  </alife_presentation_faction_monster>
+		  <alife_presentation_faction_monster_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="255" g="0" b="0">ui\ui_common</texture>
+		  </alife_presentation_faction_monster_spot>
 
-  <alife_presentation_faction_zombied>
-    <level_map spot="alife_presentation_faction_zombied_spot"/>
-  </alife_presentation_faction_zombied>
-  <alife_presentation_faction_zombied_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="255" g="128" b="0">ui\ui_common</texture>
-  </alife_presentation_faction_zombied_spot>
+		  <alife_presentation_faction_zombied>
+			<level_map spot="alife_presentation_faction_zombied_spot"/>
+		  </alife_presentation_faction_zombied>
+		  <alife_presentation_faction_zombied_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="255" g="128" b="0">ui\ui_common</texture>
+		  </alife_presentation_faction_zombied_spot>
 
-  <alife_presentation_faction_stalker>
-    <level_map spot="alife_presentation_faction_stalker_spot"/>
-  </alife_presentation_faction_stalker>
-  <alife_presentation_faction_stalker_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
-    <texture x="720" y="630" width="128" height="128" r="255" g="128" b="255">ui\ui_common</texture>
-  </alife_presentation_faction_stalker_spot>
+		  <alife_presentation_faction_stalker>
+			<level_map spot="alife_presentation_faction_stalker_spot"/>
+		  </alife_presentation_faction_stalker>
+		  <alife_presentation_faction_stalker_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1">
+			<texture x="720" y="630" width="128" height="128" r="255" g="128" b="255">ui\ui_common</texture>
+		  </alife_presentation_faction_stalker_spot>
 
-  <alife_presentation_faction_monolith>
-    <level_map spot="alife_presentation_faction_digger_spot"/>
-  </alife_presentation_faction_monolith>
+		  <alife_presentation_faction_monolith>
+			<level_map spot="alife_presentation_faction_digger_spot"/>
+		  </alife_presentation_faction_monolith>
 
 
 
@@ -463,22 +475,22 @@
 <!--	<level_map spot="alife_presentation_squad_friend_spot"/> -->
     <mini_map spot="alife_presentation_squad_friend_spot_mini"/>
   </alife_presentation_squad_friend>
-  <alife_presentation_squad_friend_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="0" g="255" b="0">ui_pda2_squad_leader</texture>
+  <alife_presentation_squad_friend_spot x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="95" g="255" b="95">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_friend_spot>
-  <alife_presentation_squad_friend_spot_mini x="0" y="0" width="9" height="9" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="0" g="255" b="0">ui_minimap_squad_leader</texture>
+  <alife_presentation_squad_friend_spot_mini x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="95" g="255" b="95">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_friend_spot_mini>
 
   <alife_presentation_squad_neutral>
 <!--    <level_map spot="alife_presentation_squad_neutral_spot"/> -->
     <mini_map spot="alife_presentation_squad_neutral_spot_mini"/>
   </alife_presentation_squad_neutral>
-  <alife_presentation_squad_neutral_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="255" g="240" b="0">ui_pda2_squad_leader</texture>
+  <alife_presentation_squad_neutral_spot x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="210" b="0">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_neutral_spot>
-  <alife_presentation_squad_neutral_spot_mini x="0" y="0" width="9" height="9" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="255" g="240" b="0">ui_minimap_squad_leader</texture>
+  <alife_presentation_squad_neutral_spot_mini x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="210" b="0">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_neutral_spot_mini>
 
 
@@ -486,11 +498,11 @@
 <!--    <level_map spot="alife_presentation_squad_enemy_spot"/> -->
 	<mini_map spot="alife_presentation_squad_enemy_spot_mini"/>
   </alife_presentation_squad_enemy>
-  <alife_presentation_squad_enemy_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="237" g="28" b="36">ui_pda2_squad_leader</texture>
+  <alife_presentation_squad_enemy_spot x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="237" g="33" b="42">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_enemy_spot>
-  <alife_presentation_squad_enemy_spot_mini x="0" y="0" width="9" height="9" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="237" g="28" b="36">ui_minimap_squad_leader</texture>
+  <alife_presentation_squad_enemy_spot_mini x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="237" g="33" b="42">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_enemy_spot_mini>
 
   <alife_presentation_squad_monster>
@@ -625,67 +637,6 @@
     <ui_secondary_task_blink_spot x="-8" y="-40" width="39" height="39" stretch="1" light_anim="new_task_highlight_00" light_anim_cyclic="1" la_texture="1" xform_anim="new_task_highlight_xform" xform_anim_cyclic="1" alignment="c" location_level="-1">
         <texture>ui_pda2_stask_last_01a</texture>
     </ui_secondary_task_blink_spot>
-
-
-          <!-- <secondary_na_border x="0" y="0" width="37" height="37" alignment="c" stretch="1" scale_min="2.5" scale_max="4.1" scale="1" location_level="5">
-            <texture r="0" g="154" b="218">ui_pda2_hl_quest_base</texture>
-          </secondary_na_border>
-          <secondary_mini_na_border x="0" y="0" width="18" height="18" alignment="c" stretch="1" scale_min="2.5" scale_max="4.1" scale="1" location_level="5">
-            <texture r="0" g="154" b="218">ui_pda2_hl_quest_base</texture>
-          </secondary_mini_na_border>
-
-        <secondary_ac_border x="0" y="0" width="37" height="37" alignment="c" stretch="1" scale_min="2.5" scale_max="4.1" scale="1" location_level="5">
-            <texture r="255" g="240" b="0">ui_pda2_hl_quest_base</texture>
-        </secondary_ac_border>
-        <secondary_mini_ac_border x="0" y="0" width="18" height="18" alignment="c" stretch="1" scale_min="2.5" scale_max="4.1" scale="1" location_level="5">
-            <texture r="255" g="240" b="0">ui_pda2_hl_quest_base</texture>
-        </secondary_mini_ac_border> -->
-
-
-<!--
-        <primary_task_location>
-                <level_map spot="primary_task_spot"        pointer="quest_pointer"/>
-                <mini_map spot="primary_task_spot_mini"        pointer="quest_pointer"/>
-        </primary_task_location>
-        <primary_task_spot x="0" y="0" width="21" height="21" stretch="1" alignment="c" location_level="5">
-                <texture r="242" g="15" b="11">ui_pda2_quest</texture>
-        </primary_task_spot>
-        <primary_task_spot_mini  x="0" y="0" width="15" height="15" stretch="1" alignment="c" location_level="5">
-                <texture r="242" g="15" b="11">ui_mmap_quest</texture>
-                <texture_below r="242" g="15" b="11">ui_mini_sn_spot_below</texture_below>
-                <texture_above r="242" g="15" b="11">ui_mini_sn_spot_above</texture_above>
-        </primary_task_spot_mini>
-
-  <primary_na_border x="0" y="0" width="37" height="37" alignment="c" stretch="1" location_level="5">
-    <texture r="0" g="154" b="218">ui_pda2_hl_quest_base</texture>
-  </primary_na_border>
-  <primary_mini_na_border x="0" y="0" width="18" height="18" alignment="c" stretch="1" location_level="5">
-    <texture r="0" g="154" b="218">ui_pda2_hl_quest_base</texture>
-  </primary_mini_na_border>
-
-        <primary_ac_border x="0" y="0" width="37" height="37" alignment="c" stretch="1" location_level="5">
-    <texture r="255" g="240" b="0">ui_pda2_hl_quest_base</texture>
-        </primary_ac_border>
-        <primary_mini_ac_border x="0" y="0" width="18" height="18" alignment="c" stretch="1" location_level="5">
-    <texture r="255" g="240" b="0">ui_pda2_hl_quest_base</texture>
-        </primary_mini_ac_border>
-
-        <third_task_location>
-                <level_map spot="third_task_spot"/>
-        </third_task_location>
-        <third_task_spot x="0" y="0" width="27" height="27" stretch="1" alignment="c" location_level="5">
-                <texture r="0" g="154" b="218">ui_pda2_sq_sos</texture>
-        </third_task_spot>
-
-  <third_na_border x="0" y="0" width="37" height="37" alignment="c" stretch="1" location_level="5">
-    <texture r="0" g="154" b="218">ui_pda2_hl_quest_base</texture>
-  </third_na_border>
-
-        <third_ac_border x="0" y="0" width="37" height="37" alignment="c" stretch="1" location_level="5">
-    <texture r="255" g="240" b="0">ui_pda2_hl_quest_base</texture>
-        </third_ac_border>
-
--->
 
         <!-- Сюжетные задания -->
         <no_spot x="0" y="0" width="0" height="0" stretch="1" alignment="c">

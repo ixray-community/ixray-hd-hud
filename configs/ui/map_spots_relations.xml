@@ -13,35 +13,23 @@
 	<deadbody_location hint="deadbody">
 		<mini_map  spot="deadbody_mini_spot"/>
 	</deadbody_location>
-	
-<!--
-	<squad_leader_location hint="squad_leader">
-		<mini_map spot="squad_leader_mini_spot"/>
-	</squad_leader_location>
--->
-	
-	<enemy_mini_spot width="15" height="15" stretch="1" alignment="c" >
-		<texture r="230" g="46" b="46">npc_marker_common</texture>
+
+	<enemy_mini_spot width="10" height="10" stretch="1" alignment="c" >
+		<texture r="237" g="33" b="42">ui_mmap_common_actor_2</texture>
 	</enemy_mini_spot>
 
-	<neutral_mini_spot width="15" height="15" stretch="1" alignment="c">
-		<texture r="255" g="255" b="255">npc_marker_common</texture>
+	<neutral_mini_spot width="10" height="10" stretch="1" alignment="c">
+		<texture r="255" g="210" b="0">ui_mmap_common_actor_2</texture>
 	</neutral_mini_spot>
 
-	<friend_mini_spot width="15" height="15" stretch="1" alignment="c">
-		<texture r="171" g="227" b="106">npc_marker_common</texture>
+	<friend_mini_spot width="10" height="10" stretch="1" alignment="c">
+		<texture r="95" g="255" b="95">ui_mmap_common_actor_2</texture>
 	</friend_mini_spot>
 
-	<deadbody_mini_spot width="15" height="15" stretch="1" alignment="c">
-		<texture r="168" g="168" b="168">npc_marker_deadbody</texture>
+	<deadbody_mini_spot width="10" height="10" stretch="1" alignment="c">
+		<texture r="160" g="160" b="160">ui_mmap_death_actor_2</texture>
 	</deadbody_mini_spot>
-
-<!--
-	<squad_leader_mini_spot width="25" height="25" stretch="1" alignment="c">
-		<texture r="255" g="59" b="59">npc_marker_squad_leader</texture>
-	</squad_leader_mini_spot>
--->
-
+	
 <!-- map_spot_new_xform
 
   <location_squad_attack_point>
