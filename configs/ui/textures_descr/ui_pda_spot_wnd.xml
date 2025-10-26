@@ -5,9 +5,9 @@
 		
 		<texture id="ui_inGame2_edit_wnd"    		x="30" y="30" width="604" height="232" />
 		
-        <texture id="ui_inGame2_edit_wnd_b"    		x="62" y="604" width="0" height="0" />
+        <texture id="ui_inGame2_edit_wnd_b"    		x="62" y="604" width="0" height="120" />
         <texture id="ui_inGame2_edit_wnd_back"    	x="62" y="544" width="540" height="120" />
-        <texture id="ui_inGame2_edit_wnd_e"    		x="602" y="664" width="0" height="0" />
+        <texture id="ui_inGame2_edit_wnd_e"    		x="602" y="664" width="0" height="120" />
 		
 		<texture id="ui_inGame2_btn_left"    		x="30" y="290" width="259" height="40" />
 		
