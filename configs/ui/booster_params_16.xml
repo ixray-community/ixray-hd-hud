@@ -8,7 +8,7 @@
 			<texture>ui_am_propery_05</texture>
 			<text color="ui_3" font="letterica16" vert_align="c" x="18" y="0"/>
 		</caption>
-		<value x="0" y="0" width="30" height="20" magnitude="10000">
+		<value x="117" y="0" width="30" height="20" magnitude="10000">
 			<text font="letterica16" vert_align="c"/>
 		</value>
 	</boost_health_restore>
