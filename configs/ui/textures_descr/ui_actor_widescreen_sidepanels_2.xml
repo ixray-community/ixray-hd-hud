@@ -1,6 +1,0 @@
-<w>
-    <file name="ui\ui_actor_widescreen_sidepanels_2" scale="2">
-	    <texture id="ui_mm_loading_left_widepanel_2" x="0" y="0" width="128" height="768" />
-        <texture id="ui_mm_loading_right_widepanel_2" x="128" y="0" width="128" height="768" />
-	</file>
-</w>
