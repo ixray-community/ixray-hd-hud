@@ -1,4 +1,4 @@
-# HD Hud Remaster (ver. 1.0) for IX-Ray Platform
+# Renewed Perception (ver. 1.0) for IX-Ray Platform
 
 <img width="2560" height="1440" alt="ss_admin_07-31-25_22-37-50_(Затон)" src="https://github.com/user-attachments/assets/d556adab-f3ca-44c1-9157-6a296020699d" />
 
