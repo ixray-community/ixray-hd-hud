@@ -25,9 +25,10 @@
 # X-Ray configs
 *.ltx linguist-detectable
 *.seq linguist-detectable
-*.ltx      text eol=crlf encoding=cp1251 linguist-language=INI gitlab-language=ini
-*.xml      text eol=crlf encoding=cp1251
-*.seq      text eol=crlf encoding=cp1251 linguist-language=INI gitlab-language=ini
+*.xml linguist-detectable
+*.ltx text eol=crlf encoding=cp1251 linguist-language=INI gitlab-language=ini
+*.seq text eol=crlf encoding=cp1251 linguist-language=INI gitlab-language=ini
+*.xml text eol=crlf encoding=cp1251 linguist-language=XML gitlab-language=xml
 configs/gameplay/*.xml text eol=crlf encoding=cp1251
 configs/ui/*.xml       text eol=crlf encoding=cp1251
 configs/text/cze/*.xml text eol=crlf encoding=cp1250
@@ -39,15 +40,16 @@ configs/text/pol/*.xml text eol=crlf encoding=cp1250
 configs/text/rus/*.xml text eol=crlf encoding=cp1251
 configs/text/spa/*.xml text eol=crlf encoding=cp1252
 
+# X-Ray scripts
 *.script linguist-detectable
 *.script   text eol=crlf encoding=utf-8 linguist-language=Lua gitlab-language=lua
 *.lua      text eol=crlf encoding=utf-8
 
+# X-Ray shaders
 shaders/**/*.hlsl  linguist-detectable
 shaders/**/*.hlsli linguist-detectable
 shaders/**/*.hlsl  text eol=crlf encoding=utf-8 linguist-language=HLSL gitlab-language=hlsl
 shaders/**/*.hlsli text eol=crlf encoding=utf-8 linguist-language=HLSL gitlab-language=hlsl
-
 
 # X-Ray assets
 *.efd   binary
@@ -88,24 +90,24 @@ level.snd_static binary
 level.wallmarks  binary
 level.puddles    text eol=crlf gitlab-language=ini
 
-ai_map.part         binary
-detail_object.part  binary
-fog_volume.part     text eol=crlf gitlab-language=ini
-glow.part           text eol=crlf gitlab-language=ini
-group.part          text eol=crlf gitlab-language=ini
-group.part1         text eol=crlf gitlab-language=ini
-light.part          text eol=crlf gitlab-language=ini
-portal.part         text eol=crlf gitlab-language=ini
-ps.part             text eol=crlf gitlab-language=ini
-scene_object.part   text eol=crlf gitlab-language=ini
-sector.part         text eol=crlf gitlab-language=ini
-shape.part          text eol=crlf gitlab-language=ini
-sound_env.part      text eol=crlf gitlab-language=ini
-sound_src.part      text eol=crlf gitlab-language=ini
-spawn.part          text eol=crlf gitlab-language=ini
-wallmark.part       binary
-way.part            text eol=crlf gitlab-language=ini
-puddles.part            text eol=crlf gitlab-language=ini
+ai_map.part        binary
+detail_object.part binary
+fog_volume.part    text eol=crlf gitlab-language=ini
+glow.part          text eol=crlf gitlab-language=ini
+group.part         text eol=crlf gitlab-language=ini
+group.part1        text eol=crlf gitlab-language=ini
+light.part         text eol=crlf gitlab-language=ini
+portal.part        text eol=crlf gitlab-language=ini
+ps.part            text eol=crlf gitlab-language=ini
+scene_object.part  text eol=crlf gitlab-language=ini
+sector.part        text eol=crlf gitlab-language=ini
+shape.part         text eol=crlf gitlab-language=ini
+sound_env.part     text eol=crlf gitlab-language=ini
+sound_src.part     text eol=crlf gitlab-language=ini
+spawn.part         text eol=crlf gitlab-language=ini
+wallmark.part      binary
+way.part           text eol=crlf gitlab-language=ini
+puddles.part       text eol=crlf gitlab-language=ini
 
 *.details binary
 *.group   binary
