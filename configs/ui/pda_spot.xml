@@ -1,0 +1,22 @@
+<w>
+	<background x="260" y="226" width="606" height="234">
+		<auto_static x="-5" y="0" width="240" height="85" stretch="1">
+			<texture>ui_inGame2_main_wnd</texture>
+		</auto_static>
+	</background>
+
+	<spot_name_edit x="275" y="246" width="540" height="50">
+		<text x="5" font="letterica16" vert_align="c" align="l"/>
+		<texture>ui_inGame2_edit_wnd</texture>
+	</spot_name_edit>	
+
+	<btn_apply x="269" y="285" width="105" height="20" check_mode="0">
+		<text font="letterica18">ui_inv_ok</text>
+		<texture>ui_inGame2_btn_left</texture>
+	</btn_apply>
+
+	<btn_cancel x="377" y="285" width="105" height="20" check_mode="0">
+		<text font="letterica18">ui_inv_cancel</text>
+		<texture>ui_inGame2_btn_right</texture>
+	</btn_cancel>
+</w>

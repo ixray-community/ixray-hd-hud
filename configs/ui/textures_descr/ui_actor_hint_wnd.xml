@@ -1,30 +1,50 @@
 <w>
-    <file name="ui\ui_actor_hint_wnd_new" scale="2">
-	    <texture id="ui_inGame2_shield_Psy" x="100" y="455" width="25" height="30" />
-	    <texture id="ui_inGame2_shield_Radiation" x="126" y="455" width="25" height="30" />
-	    <texture id="ui_inGame2_shield_biological" x="154" y="455" width="25" height="30" />
-	    <texture id="ui_inGame2_shield_blood" x="181" y="490" width="25" height="30" />
-	    <texture id="ui_inGame2_shield_force" x="209" y="490" width="25" height="30" />
-	    <texture id="ui_inGame2_shield_health" x="98" y="490" width="25" height="30" />
-	    <texture id="ui_inGame2_shield_stamina" x="125" y="490" width="25" height="30" />
-	    <texture id="ui_inGame2_shield_radiation_cleanup" x="154" y="490" width="25" height="30" />
+    <file name="ui\ui_actor_hint_wnd" scale="2">
+	    <texture id="ui_inGame2_inv_trash"    x="5" y="651" width="29" height="36" />
 
-		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_2_b" 		x="414" y="240" width="44" height="45" />
-		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_2_back" 	x="411" y="240" width="47" height="45" />
-		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_2_e" 		x="455" y="240" width="44" height="45" />
-		
-		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_background" x="411" y="240" width="47" height="59" />
+	    <texture id="ui_inGame2_hint_wnd_main_window_lt"    x="0" y="0" width="60" height="150" />
+	    <texture id="ui_inGame2_hint_wnd_main_window_t"     x="60" y="0" width="25" height="150" />
+	    <texture id="ui_inGame2_hint_wnd_main_window_rt"    x="211" y="0" width="65" height="150" />
 
-		<texture id="ui_item_count_back_2" x="435" y="285" width="23" height="14" />
-		
-        <texture id="ui_inGame2_Patroni_HUD_main_window" x="782" y="14" width="224" height="125" />
-        <texture id="ui_inGame2_Patroni_HUD_red_bar" x="782" y="156" width="154" height="16" />
-        <texture id="ui_inGame2_Patroni_HUD_blue_bar" x="782" y="177" width="154" height="12" />
-		
+	    <texture id="ui_inGame2_hint_wnd_main_window_l"     x="0" y="112" width="60" height="28" />
+	    <texture id="ui_inGame2_hint_wnd_main_window_back"  x="60" y="112" width="25" height="28" />
+	    <texture id="ui_inGame2_hint_wnd_main_window_r"     x="211" y="112" width="65" height="28" />
+
+	    <texture id="ui_inGame2_hint_wnd_main_window_lb"    x="0" y="318" width="60" height="85" />
+	    <texture id="ui_inGame2_hint_wnd_main_window_b"     x="60" y="318" width="25" height="85" />
+	    <texture id="ui_inGame2_hint_wnd_main_window_rb"    x="211" y="318" width="65" height="85" />
+
+	    <texture id="ui_inGame2_hint_wnd_bar"           x="0" y="412" width="128" height="9" />
+	    <texture id="ui_inGame2_hint_wnd_bar_alfa_line" x="0" y="422" width="128" height="9" />
+
+	    <texture id="ui_inGame2_hint_wnd_bar_16"           x="0" y="412" width="101" height="9" />
+	    <texture id="ui_inGame2_hint_wnd_bar_alfa_line_16" x="0" y="422" width="101" height="9" />
+
+	    <texture id="ui_inGame2_hint_wnd_Information" x="284" y="9" width="242" height="7" />
+	    <texture id="ui_inGame2_hint_wnd_Properties" x="284" y="21" width="242" height="7" />
+	    <texture id="ui_inGame2_hint_wnd_upgrades" x="284" y="33" width="242" height="7" />
+
 	    <texture id="ui_inGame2_Radar_main_window" x="531" y="0" width="210" height="210" />
 	    <texture id="ui_inGame2_Radar_blue_bar" x="500000" y="500000" width="0" height="0" />
 	    <texture id="ui_inGame2_Radar_green_bar" x="500000" y="500000" width="0" height="0" />
 	    <texture id="ui_inGame2_Radar_compass" x="551" y="240" width="169" height="169" />
+	    <texture id="ui_inGame_actor_point" x="505" y="185" width="14" height="14" />	
+
+        <texture id="ui_inGame2_Patroni_HUD_main_window" x="782" y="14" width="224" height="125" />
+        <texture id="ui_inGame2_Patroni_HUD_red_bar" x="782" y="156" width="154" height="16" />
+        <texture id="ui_inGame2_Patroni_HUD_blue_bar" x="782" y="177" width="154" height="12" />
+
+		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_b" 		x="414" y="240" width="44" height="45" />
+		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_back" 	x="411" y="240" width="47" height="45" />
+		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_e" 		x="455" y="240" width="44" height="45" />
+
+	    <texture id="ui_inGame2_radiation_icon_part_1" x="501" y="124" width="21" height="21" />
+	    <texture id="ui_inGame2_radiation_icon_part_2" x="499" y="183" width="25" height="25" />
+	    <texture id="ui_inGame2_radiation_icon_part_3" x="496" y="251" width="31" height="31" />
+
+	    <texture id="ui_inGame2_blood_icon_part_1" x="505" y="153" width="13" height="20" />
+	    <texture id="ui_inGame2_blood_icon_part_2" x="503" y="218" width="17" height="26" />
+	    <texture id="ui_inGame2_blood_icon_part_3" x="500" y="289" width="23" height="33" />
 				
 	    <texture id="ui_inGame2_circle_hunger_green" x="548" y="983" width="30" height="30" />
 	    <texture id="ui_inGame2_circle_hunger_yellow" x="13" y="886" width="30" height="30" />
@@ -82,45 +102,14 @@
 	    <texture id="ui_inGame2_triangle_Radiation_green" x="419" y="721" width="37" height="32" />
 	    <texture id="ui_inGame2_triangle_Biological_green" x="339" y="721" width="37" height="32" />
 
-	</file>
-    <file name="ui\ui_actor_hint_wnd">
-	    <texture id="ui_inGame2_inv_trash"    x="5" y="651" width="29" height="36" />
-
-	    <texture id="ui_inGame2_hint_wnd_main_window_lt"    x="0" y="0" width="60" height="150" />
-	    <texture id="ui_inGame2_hint_wnd_main_window_t"     x="60" y="0" width="25" height="150" />
-	    <texture id="ui_inGame2_hint_wnd_main_window_rt"    x="211" y="0" width="65" height="150" />
-
-	    <texture id="ui_inGame2_hint_wnd_main_window_l"     x="0" y="112" width="60" height="28" />
-	    <texture id="ui_inGame2_hint_wnd_main_window_back"  x="60" y="112" width="25" height="28" />
-	    <texture id="ui_inGame2_hint_wnd_main_window_r"     x="211" y="112" width="65" height="28" />
-
-	    <texture id="ui_inGame2_hint_wnd_main_window_lb"    x="0" y="318" width="60" height="85" />
-	    <texture id="ui_inGame2_hint_wnd_main_window_b"     x="60" y="318" width="25" height="85" />
-	    <texture id="ui_inGame2_hint_wnd_main_window_rb"    x="211" y="318" width="65" height="85" />
-
-	    <texture id="ui_inGame2_hint_wnd_bar"           x="0" y="412" width="128" height="9" />
-	    <texture id="ui_inGame2_hint_wnd_bar_alfa_line" x="0" y="422" width="128" height="9" />
-
-	    <texture id="ui_inGame2_hint_wnd_bar_16"           x="0" y="412" width="101" height="9" />
-	    <texture id="ui_inGame2_hint_wnd_bar_alfa_line_16" x="0" y="422" width="101" height="9" />
-
-	    <texture id="ui_inGame2_hint_wnd_Information" x="284" y="9" width="242" height="7" />
-	    <texture id="ui_inGame2_hint_wnd_Properties" x="284" y="21" width="242" height="7" />
-	    <texture id="ui_inGame2_hint_wnd_upgrades" x="284" y="33" width="242" height="7" />
-
-	    <texture id="ui_inGame_actor_point" x="505" y="185" width="14" height="14" />	
-
-		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_b" 		x="414" y="240" width="44" height="45" />
-		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_back" 	x="411" y="240" width="47" height="45" />
-		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_e" 		x="455" y="240" width="44" height="45" />
-
-	    <texture id="ui_inGame2_radiation_icon_part_1" x="501" y="124" width="21" height="21" />
-	    <texture id="ui_inGame2_radiation_icon_part_2" x="499" y="183" width="25" height="25" />
-	    <texture id="ui_inGame2_radiation_icon_part_3" x="496" y="251" width="31" height="31" />
-
-	    <texture id="ui_inGame2_blood_icon_part_1" x="505" y="153" width="13" height="20" />
-	    <texture id="ui_inGame2_blood_icon_part_2" x="503" y="218" width="17" height="26" />
-	    <texture id="ui_inGame2_blood_icon_part_3" x="500" y="289" width="23" height="33" />
+	    <texture id="ui_inGame2_shield_Psy" x="100" y="455" width="25" height="30" />
+	    <texture id="ui_inGame2_shield_Radiation" x="126" y="455" width="25" height="30" />
+	    <texture id="ui_inGame2_shield_biological" x="154" y="455" width="25" height="30" />
+	    <texture id="ui_inGame2_shield_blood" x="181" y="490" width="25" height="30" />
+	    <texture id="ui_inGame2_shield_force" x="209" y="490" width="25" height="30" />
+	    <texture id="ui_inGame2_shield_health" x="98" y="490" width="25" height="30" />
+	    <texture id="ui_inGame2_shield_stamina" x="125" y="490" width="25" height="30" />
+	    <texture id="ui_inGame2_shield_radiation_cleanup" x="154" y="490" width="25" height="30" />
 
 	    <texture id="storyline_task_spot_below" x="502" y="155" width="19" height="16" />
 	    <texture id="storyline_task_spot_above" x="502" y="141" width="19" height="16" />
@@ -141,7 +130,16 @@
 		<texture id="ui_pda2_common_actor_2"	x="403" y="562" width="20" height="20" />
 		
 		<texture id="ui_mmap_death_actor_2"		x="403" y="584" width="20" height="20" />
-		<texture id="ui_pda2_death_actor_2"		x="403" y="584" width="20" height="20" />			
+		<texture id="ui_pda2_death_actor_2"		x="403" y="584" width="20" height="20" />
+		
+		<texture id="ui_item_count_back_2" x="435" y="285" width="23" height="14" />
+		
+		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_2_b" 		x="414" y="240" width="44" height="45" />
+		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_2_back" 	x="411" y="240" width="47" height="45" />
+		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_2_e" 		x="455" y="240" width="44" height="45" />
+		
+		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_background" x="411" y="240" width="47" height="59" />
+	
 		
 	</file>
 </w>
