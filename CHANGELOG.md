@@ -4,7 +4,7 @@ Full changelog
 
 ## Release 1.0 (December 2025)
 
-- Added addon resources (@mrGlock5, @Drombeys, @St4lker0k765)
+- Added addon resources (@mrGlock5 (Desert Cliff), @Drombeys, @St4lker0k765)
 
 ---
 
@@ -12,4 +12,4 @@ Full changelog
 
 ## Релиз 1.0 (Декабрь 2025)
 
-- Добавлены ресурсы аддона (@mrGlock5, @Drombeys, @St4lker0k765)
+- Добавлены ресурсы аддона (@mrGlock5 (Desert Cliff), @Drombeys, @St4lker0k765)

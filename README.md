@@ -25,7 +25,7 @@ Link to the current __IX-Ray__ [release](https://github.com/ixray-team/ixray-1.6
 
 ## Contributors
 
-- mrGlock5
+- Desert Cliff
 - Drombeys
 - St4lker0k765
 
@@ -56,7 +56,7 @@ Link to the current __IX-Ray__ [release](https://github.com/ixray-team/ixray-1.6
 
 ## Контрибьюторы
 
-- mrGlock5
+- Desert Cliff
 - Drombeys
 - St4lker0k765
 
