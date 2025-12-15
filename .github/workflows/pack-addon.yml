@@ -12,6 +12,7 @@ on:
             - "configs/**"
             - "levels/**"
             - "meshes/**"
+            - "fonts/**"
             - "scripts/**"
             - "shaders/**"
             - "sounds/**"
@@ -29,6 +30,7 @@ on:
             - "configs/**"
             - "levels/**"
             - "meshes/**"
+            - "fonts/**"
             - "scripts/**"
             - "shaders/**"
             - "sounds/**"
@@ -73,6 +75,7 @@ jobs:
                       "configs",
                       "levels",
                       "meshes",
+                      "fonts",
                       "scripts",
                       "shaders",
                       "sounds",
