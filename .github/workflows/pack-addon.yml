@@ -1,0 +1,112 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: "Pack addon"
+
+on:
+    push:
+        branches:
+            - "**"
+        paths:
+            - ".github/workflows/**"
+            - "anims/**"
+            - "configs/**"
+            - "levels/**"
+            - "meshes/**"
+            - "scripts/**"
+            - "shaders/**"
+            - "sounds/**"
+            - "spawns/**"
+            - "textures/**"
+            - "README.md"
+            - "LICENSE.txt"
+            - "addon.init"
+    pull_request:
+        branches:
+            - "**"
+        paths:
+            - ".github/workflows/**"
+            - "anims/**"
+            - "configs/**"
+            - "levels/**"
+            - "meshes/**"
+            - "scripts/**"
+            - "shaders/**"
+            - "sounds/**"
+            - "spawns/**"
+            - "textures/**"
+            - "README.md"
+            - "LICENSE.txt"
+            - "addon.init"
+
+defaults:
+    run:
+        shell: pwsh
+
+jobs:
+    pack-addon:
+        name: "Pack addon"
+
+        strategy:
+            matrix:
+                system:
+                    - windows-2022
+
+        runs-on: ${{ matrix.system }}
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Move files
+              run: |
+                  # Build path
+                  $repository = "${{ github.event.repository.name }}"
+                  $addons = "ixr_addons"
+                  $path = Join-Path $addons $repository
+                  New-Item -ItemType Directory -Path $path -Force | Out-Null
+
+                  # Move folders
+                  $folders = @(
+                      "anims",
+                      "configs",
+                      "levels",
+                      "meshes",
+                      "scripts",
+                      "shaders",
+                      "sounds",
+                      "spawns",
+                      "textures"
+                  )
+                  foreach ($folder in $folders)
+                  {
+                      if (Test-Path $folder -ErrorAction SilentlyContinue)
+                      {
+                          Move-Item -Path $folder -Destination $path -Force
+                      }
+                  }
+
+                  # Move files
+                  $files = @(
+                      "addon.init"
+                  )
+                  foreach ($file in $files)
+                  {
+                      if (Test-Path $file -ErrorAction SilentlyContinue)
+                      {
+                          Move-Item -Path $file -Destination $path -Force
+                      }
+                  }
+
+                  # Move all
+                  New-Item -ItemType Directory -Path temp -Force | Out-Null
+                  Move-Item -Path "README.md", "LICENSE.txt" -Destination temp -Force
+                  Move-Item -Path ixr_addons -Destination temp
+
+            - name: Upload addon
+              uses: actions/upload-artifact@v4
+              with:
+                  name: ${{ github.event.repository.name }}-${{ github.sha }}
+                  path: |
+                      temp/
