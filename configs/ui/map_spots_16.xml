@@ -476,10 +476,10 @@
     <mini_map spot="alife_presentation_squad_friend_spot_mini"/>
   </alife_presentation_squad_friend>
   <alife_presentation_squad_friend_spot x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="205" g="225" b="97">ui_mmap_squad_leader_2</texture>
+    <texture r="0" g="225" b="0">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_friend_spot>
   <alife_presentation_squad_friend_spot_mini x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="205" g="225" b="97">ui_mmap_squad_leader_2</texture>
+    <texture r="0" g="225" b="0">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_friend_spot_mini>
 
   <alife_presentation_squad_neutral>
