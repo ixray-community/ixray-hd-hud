@@ -34,39 +34,48 @@
 		<indicator_bleeding x="990" y="420" width="20" height="28" stretch="1"/>
 	 
 	<!-- БУСТЕРЫ -->
-		<indicator_booster_psy x="20" y="590" width="18" height="28" stretch="1">
+		<indicator_booster_stack_panel x="830" y="590" width="200" height="28" right="true" spacing="5"/>
+
+		<indicator_booster_psy x="0" y="0" width="18" height="28" stretch="1">
 			<texture>ui_inGame2_shield_Psy</texture>
+	        <text y="-12" font="font_rubik_16" align="c" vert_align="t"/>
 		</indicator_booster_psy>
 			
-		<indicator_booster_radia x="50" y="590" width="18" height="28" stretch="1">
+		<indicator_booster_radia x="0" y="0" width="18" height="28" stretch="1">
 			<texture>ui_inGame2_shield_Radiation</texture>
+	        <text y="-12" font="font_rubik_16" align="c" vert_align="t"/>
 		</indicator_booster_radia>
 			
-		<indicator_booster_chem x="80" y="590" width="18" height="28" stretch="1">
+		<indicator_booster_chem x="0" y="0" width="18" height="28" stretch="1">
 			<texture>ui_inGame2_shield_biological</texture>
+	        <text y="-12" font="font_rubik_16" align="c" vert_align="t"/>
 		</indicator_booster_chem>
 			
-		<indicator_booster_wound x="50" y="645" width="18" height="28" stretch="1">
+		<indicator_booster_wound x="0" y="0" width="18" height="28" stretch="1">
 			<texture>ui_inGame2_shield_blood</texture>
+	        <text y="-12" font="font_rubik_16" align="c" vert_align="t"/>
 		</indicator_booster_wound>
 			
-		<indicator_booster_weight x="100" y="645" width="18" height="28" stretch="1">
+		<indicator_booster_weight x="0" y="0" width="18" height="28" stretch="1">
 			<texture>ui_inGame2_shield_force</texture>
+	        <text y="-12" font="font_rubik_16" align="c" vert_align="t"/>
 		</indicator_booster_weight>
 			
-		<indicator_booster_health x="20" y="645" width="18" height="28" stretch="1">
+		<indicator_booster_health x="0" y="0" width="18" height="28" stretch="1">
 			<texture>ui_inGame2_shield_health</texture>
+	        <text y="-12" font="font_rubik_16" align="c" vert_align="t"/>
 		</indicator_booster_health>
 			
-		<indicator_booster_power x="130" y="645" width="18" height="28" stretch="1">
+		<indicator_booster_power x="0" y="0" width="18" height="28" stretch="1">
 			<texture>ui_inGame2_shield_stamina</texture>
+	        <text y="-12" font="font_rubik_16" align="c" vert_align="t"/>
 		</indicator_booster_power>
 			
-		<indicator_booster_rad x="80" y="645" width="18" height="28" stretch="1">
+		<indicator_booster_rad x="0" y="0" width="18" height="28" stretch="1">
 			<texture>ui_inGame2_shield_radiation_cleanup</texture>
+	        <text y="-12" font="font_rubik_16" align="c" vert_align="t"/>
 		</indicator_booster_rad>
 
-	
 <!--
 	<radiation_static x="0" y="0" width="53" height="64" stretch="1">
 		<texture>ui_hud_icon_radiation</texture>
@@ -123,68 +132,52 @@
 	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
 	        <texture>ui_inGame2_Patroni_HUD_active_items_icon_background</texture>
 	    </auto_static>
-	    <counter x="9" y="36.5" width="20" height="18" stretch="1">
+	    <counter x="9" y="35.5" width="22" height="18" stretch="1">
 			<window_name>counter</window_name>
-	        <texture a="255">ui_item_count_back_2</texture>
 	        <text font="font_rubik_16" align="c" vert_align="c"/>
 	    </counter>
-        <auto_frameline x="15000" y="36000" width="21" height="23">
-			<texture>ui_inGame2_Patroni_HUD_active_items_icon_2</texture>
-        </auto_frameline>
     </quick_slot0>
 
     <quick_slot1 x="56" y="705" width="20" height="25" stretch="1">
 	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
 	        <texture>ui_inGame2_Patroni_HUD_active_items_icon_background</texture>
 	    </auto_static>
-	    <counter x="9" y="36.5" width="20" height="18" stretch="1">
+	    <counter x="9" y="35.5" width="22" height="18" stretch="1">
 			<window_name>counter</window_name>
-	        <texture a="255">ui_item_count_back_2</texture>
 	        <text font="font_rubik_16" align="c" vert_align="c"/>
 	    </counter>
-        <auto_frameline x="15000" y="36000" width="21" height="23">
-			<texture>ui_inGame2_Patroni_HUD_active_items_icon_2</texture>
-        </auto_frameline>
     </quick_slot1>
 
     <quick_slot2 x="96" y="705" width="20" height="25" stretch="1">
 	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
 	        <texture>ui_inGame2_Patroni_HUD_active_items_icon_background</texture>
 	    </auto_static>
-	    <counter x="9" y="36.5" width="20" height="18" stretch="1">
+	    <counter x="9" y="35.5" width="22" height="18" stretch="1">
 			<window_name>counter</window_name>
-	        <texture a="255">ui_item_count_back_2</texture>
 	        <text font="font_rubik_16" align="c" vert_align="c"/>
 	    </counter>
-        <auto_frameline x="15000" y="36000" width="21" height="23">
-			<texture>ui_inGame2_Patroni_HUD_active_items_icon_2</texture>
-        </auto_frameline>
     </quick_slot2>
 
     <quick_slot3 x="136" y="705" width="20" height="25" stretch="1">
 	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
 	        <texture>ui_inGame2_Patroni_HUD_active_items_icon_background</texture>
 	    </auto_static>
-	    <counter x="9" y="36.5" width="20" height="18" stretch="1">
+	    <counter x="9" y="35.5" width="22" height="18" stretch="1">
 			<window_name>counter</window_name>
-	        <texture a="255">ui_item_count_back_2</texture>
 	        <text font="font_rubik_16" align="c" vert_align="c"/>
 	    </counter>
-        <auto_frameline x="15000" y="36000" width="21" height="23">
-			<texture>ui_inGame2_Patroni_HUD_active_items_icon_2</texture>
-        </auto_frameline>
     </quick_slot3>
 
-    <quick_slot0_text x="10" y="744" width="17" height="13">
+    <quick_slot0_text x="11" y="743" width="17" height="13">
         <text align="c" vert_align="c" font="font_rubik_16" color="ui_7">quick_use_str_1</text>
     </quick_slot0_text>
-    <quick_slot1_text x="50" y="744" width="17" height="13">
+    <quick_slot1_text x="51" y="743" width="17" height="13">
         <text align="c" vert_align="c" font="font_rubik_16" color="ui_7">quick_use_str_2</text>
     </quick_slot1_text>
-    <quick_slot2_text x="90" y="744" width="17" height="13">
+    <quick_slot2_text x="91" y="743" width="17" height="13">
         <text align="c" vert_align="c" font="font_rubik_16" color="ui_7">quick_use_str_3</text>
     </quick_slot2_text>
-    <quick_slot3_text x="130" y="744" width="17" height="13">
+    <quick_slot3_text x="131" y="743" width="17" height="13">
         <text align="c" vert_align="c" font="font_rubik_16" color="ui_7">quick_use_str_4</text>
     </quick_slot3_text>
 
