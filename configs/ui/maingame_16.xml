@@ -126,60 +126,60 @@
 		</flashing_icon>
 	</flashing_icons>
 
-	<pick_up_item x="452" y="400" width="80" height="60"/>
+	<pick_up_item x="452" y="400" width="120" height="100"/>
 
 	<new_contact_snd>detectors\contact_1</new_contact_snd>
 	
-    <quick_slot0 x="16" y="705" width="20" height="25" stretch="1">
-	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
+    <quick_slot0 x="16" y="708" width="20" height="25" stretch="1">
+	    <auto_static x="-9" y="-12" width="38" height="60" stretch="1">
 	        <texture>ui_inGame2_Patroni_HUD_active_items_icon_background</texture>
 	    </auto_static>
-	    <counter x="9" y="35.5" width="22" height="18" stretch="1">
+	    <counter x="7" y="32.5" width="22" height="18" stretch="1">
 			<window_name>counter</window_name>
 	        <text font="font_rubik_16" align="c" vert_align="c"/>
 	    </counter>
     </quick_slot0>
 
-    <quick_slot1 x="56" y="705" width="20" height="25" stretch="1">
-	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
+    <quick_slot1 x="56" y="708" width="20" height="25" stretch="1">
+	    <auto_static x="-9" y="-12" width="38" height="60" stretch="1">
 	        <texture>ui_inGame2_Patroni_HUD_active_items_icon_background</texture>
 	    </auto_static>
-	    <counter x="9" y="35.5" width="22" height="18" stretch="1">
+	    <counter x="7" y="32.5" width="22" height="18" stretch="1">
 			<window_name>counter</window_name>
 	        <text font="font_rubik_16" align="c" vert_align="c"/>
 	    </counter>
     </quick_slot1>
 
-    <quick_slot2 x="96" y="705" width="20" height="25" stretch="1">
-	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
+    <quick_slot2 x="96" y="708" width="20" height="25" stretch="1">
+	    <auto_static x="-9" y="-12" width="38" height="60" stretch="1">
 	        <texture>ui_inGame2_Patroni_HUD_active_items_icon_background</texture>
 	    </auto_static>
-	    <counter x="9" y="35.5" width="22" height="18" stretch="1">
+	    <counter x="7" y="32.5" width="22" height="18" stretch="1">
 			<window_name>counter</window_name>
 	        <text font="font_rubik_16" align="c" vert_align="c"/>
 	    </counter>
     </quick_slot2>
 
-    <quick_slot3 x="136" y="705" width="20" height="25" stretch="1">
-	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
+    <quick_slot3 x="136" y="708" width="20" height="25" stretch="1">
+	    <auto_static x="-9" y="-12" width="38" height="60" stretch="1">
 	        <texture>ui_inGame2_Patroni_HUD_active_items_icon_background</texture>
 	    </auto_static>
-	    <counter x="9" y="35.5" width="22" height="18" stretch="1">
+	    <counter x="7" y="32.5" width="22" height="18" stretch="1">
 			<window_name>counter</window_name>
 	        <text font="font_rubik_16" align="c" vert_align="c"/>
 	    </counter>
     </quick_slot3>
 
-    <quick_slot0_text x="11" y="743" width="17" height="13">
+    <quick_slot0_text x="9" y="743" width="17" height="13">
         <text align="c" vert_align="c" font="font_rubik_16" color="ui_7">quick_use_str_1</text>
     </quick_slot0_text>
-    <quick_slot1_text x="51" y="743" width="17" height="13">
+    <quick_slot1_text x="49" y="743" width="17" height="13">
         <text align="c" vert_align="c" font="font_rubik_16" color="ui_7">quick_use_str_2</text>
     </quick_slot1_text>
-    <quick_slot2_text x="91" y="743" width="17" height="13">
+    <quick_slot2_text x="89" y="743" width="17" height="13">
         <text align="c" vert_align="c" font="font_rubik_16" color="ui_7">quick_use_str_3</text>
     </quick_slot2_text>
-    <quick_slot3_text x="131" y="743" width="17" height="13">
+    <quick_slot3_text x="129" y="743" width="17" height="13">
         <text align="c" vert_align="c" font="font_rubik_16" color="ui_7">quick_use_str_4</text>
     </quick_slot3_text>
 
