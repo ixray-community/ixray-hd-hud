@@ -1,4 +1,4 @@
-# Renewed Perception (ver. 1.0) for IX-Ray Platform
+# Renewed Perception (ver. 1.1) for IX-Ray Platform
 
 <img width="2560" height="1440" alt="ss_admin_07-31-25_22-37-50_(Затон)" src="https://github.com/user-attachments/assets/d556adab-f3ca-44c1-9157-6a296020699d" />
 
@@ -17,7 +17,7 @@ The main goal of the add-on is to modernize the original interface while preserv
 Installation:
 
 1. Install original Stalker Call of Pripyat 1.6.02
-2. Install current version of IX-Ray (minimum 1.3)
+2. Install current version of IX-Ray (minimum 1.3.1)
 3. Extract addon archive into the game folder
 4. Start the game and play
 
@@ -48,7 +48,7 @@ Link to the current __IX-Ray__ [release](https://github.com/ixray-team/ixray-1.6
 Установка:
 
 1. Установить оригинальный Stalker Call of Pripyat 1.6.02
-2. Установить актуальную версию IX-Ray (минимальная 1.3)
+2. Установить актуальную версию IX-Ray (минимальная 1.3.1)
 3. Распакуйте архив аддона в папку с игрой
 4. Запустите игру и играйте
 
