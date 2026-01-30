@@ -25,7 +25,7 @@
 		<text align="c" font="letterica16" color="white"/>
 	</voice_distance>
 	
-		<indicator_stack_panel x="820" y="595" width="200" height="20" sp_align="right" spacing="0"/>
+		<indicator_stack_panel x="850" y="595" width="200" height="20" sp_align="right" spacing="0"/>
 
 		<indicator_starvation x="0" y="0" width="20" height="28" stretch="1"/>
 		<indicator_helmet_broken x="0" y="0" width="20" height="28" stretch="1"/>
