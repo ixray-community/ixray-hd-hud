@@ -268,9 +268,9 @@
 		</properties>
 	</upgrade_info>
 
-	<cell_item_text x="1" y="1" width="23" height="16" stretch="1">
-		<texture a="200">ui_item_count_back</texture>
-		<text x="0" y="0" width="29" height="16" font="letterica16" color="ui_2" align="c" vert_align="c"/>
+	<cell_item_text x="0" y="0" width="24" height="16" stretch="1">
+		<texture a="255">ui_item_count_back_2</texture>
+		<text x="0" y="1.5" width="28" height="16" font="font_rubik_18" color="ui_1" align="c" vert_align="c"/>
 	</cell_item_text>
 
 	<cell_item_mark x="1" y="1" width="12" height="15" stretch="1">
@@ -291,10 +291,10 @@
 
 	<condition_progess_bar x="1" y="1" width="30" height="5" horz="1" min="0" max="1" pos="1" stretch="1">
 		<background x="0" y="0" width="30" height="5" stretch="1">
-			<texture r="62" g="74" b="74">ui_inGame2_inventory_item_status_bar_16</texture>
+			<texture r="62" g="74" b="74" stretch="1">ui_inGame2_inventory_item_status_bar_16 </texture>
 		</background>
 		<progress stretch="1">
-			<texture r="142" g="149" b="149">ui_inGame2_inventory_item_status_bar_16</texture>
+			<texture r="142" g="149" b="149" stretch="1">ui_inGame2_inventory_item_status_bar_16</texture>
 		</progress>
 		<min_color r="196" g="18" b="18"/>
 		<middle_color r="255" g="255" b="118"/>
