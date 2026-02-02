@@ -214,6 +214,22 @@
 
 		<active_ammo_color r="199" g="199" b="199" a="255"/>
         <inactive_ammo_color r="199" g="199" b="199" a="130"/>
+		
+		<!-- Adaptive ammo widget: magazine / backpack ammo -->
+		<static_active_ammo_type x="860" y="690" width="150" height="37" 
+		    low_ammo_color="255,68,68,255" 
+		    low_ammo_threshold="0.15" 
+		    magazine_font="font_oswald_semibold_40" 
+		    magazine_x="0" 
+		    magazine_y="0" 
+		    separator="1" 
+		    separator_x="72" 
+		    separator_y="0">
+			<text complex_mode="0" font="font_oswald_semibold_40" r="199" g="199" b="199" align="r" vert_align="c">ammo</text>
+		</static_active_ammo_type>
+		
+		<!-- Legacy static ammo widgets (disabled when adaptive mode active) -->
+		<!--
 		<static_cur_ammo x="860" y="690" width="68" height="37">
 			<text complex_mode="0" font="font_oswald_semibold_40" r="199" g="199" b="199" align="c" vert_align="c">ammo</text>
 		</static_cur_ammo>
@@ -225,11 +241,11 @@
 	    <static_ap_ammo x="896" y="724" width="32" height="15">
 	        <text align="c" complex_mode="0" font="font_oswald_24" r="199" g="199" b="199" a="255">ap</text>
 	    </static_ap_ammo>
+		-->
 
 	    <static_grenade x="836" y="690" width="18" height="19">
 	        <text align="c" complex_mode="0" font="font_rubik_20" r="199" g="199" b="199" a="255" vert_align="c">gr</text>
 	    </static_grenade>
-
 
 		<static_wpn_icon x="971.5" y="723" width="30" height="30" align="c" alignment="c"/>
 

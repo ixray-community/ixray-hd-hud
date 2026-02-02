@@ -25,7 +25,7 @@
 		<text align="c" font="letterica16" color="white"/>
 	</voice_distance>
 	
-		<indicator_stack_panel x="850" y="595" width="200" height="20" sp_align="right" spacing="0"/>
+		<indicator_stack_panel x="830" y="595" width="200" height="20" sp_align="right" spacing="0"/>
 
 		<indicator_starvation x="0" y="0" width="20" height="28" stretch="1"/>
 		<indicator_helmet_broken x="0" y="0" width="20" height="28" stretch="1"/>
@@ -212,18 +212,18 @@
 		<indik_psi x="0" y="0" width="26" height="30" stretch="1"/>
 		<indik_acid x="0" y="0" width="26" height="30" stretch="1"/>
 
-		<back x="841" y="635" width="178" height="121" stretch="1">
+		<back x="850" y="655" width="165" height="105" stretch="1">
 			<texture>ui_inGame2_Patroni_HUD_main_window</texture>
 		</back>
 
-		<progress_bar_health x="875" y="646" width="124" height="18" horz="1" min="0" max="1" pos="0" 
+		<progress_bar_health x="880" y="709" width="125" height="17" horz="1" min="0" max="1" pos="0" 
 		expression="floor(fltPlayerHealth * 55.0) / 55.0">
 			<progress stretch="1">
 				<texture>ui_inGame2_Patroni_HUD_red_bar</texture>
 			</progress>
 		</progress_bar_health>
 
-	    <progress_bar_stamina x="875" y="666" width="124" height="15" horz="1" min="0" max="1" pos="0"
+	    <progress_bar_stamina x="880" y="732.5" width="138" height="14" horz="1" min="0" max="1" pos="0"
 		expression="floor(fltPlayerPower * 55.0) / 55.0">
 	        <progress stretch="1">
 		        <texture>ui_inGame2_Patroni_HUD_blue_bar</texture>
@@ -232,6 +232,22 @@
 
 		<active_ammo_color r="199" g="199" b="199" a="255"/>
         <inactive_ammo_color r="199" g="199" b="199" a="130"/>
+		
+		<!-- Adaptive ammo widget (alpha_version) -->
+		<static_active_ammo_type x="790" y="670" width="120" height="37" 
+		    low_ammo_color="255,68,68,255" 
+		    low_ammo_threshold="0.05" 
+		    magazine_font="ui_font_graff_32" 
+		    magazine_x="60" 
+		    magazine_y="-3" 
+		    separator="1" 
+		    separator_x="120" 
+		    separator_y="0">
+			<text complex_mode="1" font="graffiti19" r="199" g="199" b="199" a="255" align="r" vert_align="c"></text>
+		</static_active_ammo_type>
+		
+		<!-- Legacy static ammo widgets -->
+		<!--
 		<static_cur_ammo x="887" y="686" width="54" height="37"> 
 			<text complex_mode="0" font="ui_font_graff_32" r="199" g="199" b="199" align="c" vert_align="c">ammo</text>
 		</static_cur_ammo>
@@ -243,15 +259,16 @@
 	    <static_ap_ammo x="913" y="720" width="26" height="15">
 	        <text align="c" complex_mode="0" font="ui_font_graffiti19" r="199" g="199" b="199" a="255">ap</text>
 	    </static_ap_ammo>
+		-->
 
 	    <static_grenade x="863" y="720" width="14" height="19">
-	        <text align="c" complex_mode="0" font="font_rubik_20" r="199" g="199" b="199" a="255" vert_align="c">gr</text>
+	        <text align="c" complex_mode="0" font="font_rubik_18" r="199" g="199" b="199" a="255" vert_align="c">gr</text>
 	    </static_grenade>
 
-		<static_wpn_icon x="979" y="716" width="24" height="30" align="c" alignment="c"/>
+		<static_wpn_icon x="980" y="682" width="24" height="30" align="c" alignment="c" display_mode="text"/>
 
-	    <static_fire_mode x="863" y="687" width="14" height="19">
-	        <text font="font_rubik_20" color="ui_1" align="c" vert_align="c"/>
+	    <static_fire_mode x="860" y="670" width="14" height="19">
+	        <text font="font_rubik_18" color="ui_1" align="c" vert_align="c"/>
 	    </static_fire_mode>
 	</hud_states>
 

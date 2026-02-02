@@ -30,9 +30,9 @@
 	    <texture id="ui_inGame2_Radar_compass" x="554" y="243" width="164" height="164" />
 	    <texture id="ui_inGame_actor_point" x="509" y="179" width="8" height="8" />	
 
-        <texture id="ui_inGame2_Patroni_HUD_main_window" x="782" y="5" width="224" height="125" />
-        <texture id="ui_inGame2_Patroni_HUD_red_bar" x="759" y="143" width="157" height="18" />
-        <texture id="ui_inGame2_Patroni_HUD_blue_bar" x="759" y="172" width="157" height="13" />
+        <texture id="ui_inGame2_Patroni_HUD_main_window" x="758" y="15" width="189" height="91" />
+        <texture id="ui_inGame2_Patroni_HUD_red_bar" x="759" y="116" width="141" height="14" />
+        <texture id="ui_inGame2_Patroni_HUD_blue_bar" x="759" y="141" width="157" height="11" />
 
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_b" 		x="414" y="240" width="44" height="45" />
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_back" 	x="411" y="240" width="47" height="45" />
@@ -111,6 +111,7 @@
 	    <texture id="ui_inGame2_shield_stamina" x="125" y="490" width="25" height="30" />
 	    <texture id="ui_inGame2_shield_radiation_cleanup" x="154" y="490" width="25" height="30" />
 
+	    <texture id="ui_inGame2_hint_wnd_main_window" x="502" y="141" width="19" height="16" />
 	    <texture id="storyline_task_spot_below" x="502" y="155" width="19" height="16" />
 	    <texture id="storyline_task_spot_above" x="502" y="141" width="19" height="16" />
 	    <texture id="secondary_task_spot_below" x="502" y="127" width="19" height="16" />
