@@ -34,6 +34,38 @@
 	    <texture id="ui_inGame2_helmet_blocker" x="559" y="775" width="121" height="106" />
 
 	    <texture id="ui_item_count_back_2" x="558" y="882" width="32" height="18" />
+
+	    <texture id="ui_inv_sort_all_e" x="697" y="935" width="40" height="22" />
+	    <texture id="ui_inv_sort_all_h" x="697" y="957" width="40" height="18" />
+	    <texture id="ui_inv_sort_all_t" x="697" y="975" width="40" height="19" />
+
+	    <texture id="ui_inv_sort_weapons_e" x="737" y="935" width="39" height="22" />
+	    <texture id="ui_inv_sort_weapons_h" x="737" y="957" width="39" height="18" />
+	    <texture id="ui_inv_sort_weapons_t" x="737" y="975" width="39" height="19" />
+
+	    <texture id="ui_inv_sort_ammo_e" x="776" y="935" width="39" height="22" />
+	    <texture id="ui_inv_sort_ammo_h" x="776" y="957" width="39" height="18" />
+	    <texture id="ui_inv_sort_ammo_t" x="776" y="975" width="39" height="19" />
+
+	    <texture id="ui_inv_sort_armor_e" x="815" y="935" width="39" height="22" />
+	    <texture id="ui_inv_sort_armor_h" x="815" y="957" width="39" height="18" />
+	    <texture id="ui_inv_sort_armor_t" x="815" y="975" width="39" height="19" />
+
+	    <texture id="ui_inv_sort_devices_e" x="854" y="935" width="39" height="22" />
+	    <texture id="ui_inv_sort_devices_h" x="854" y="957" width="39" height="18" />
+	    <texture id="ui_inv_sort_devices_t" x="854" y="975" width="39" height="19" />
+
+	    <texture id="ui_inv_sort_consumables_e" x="893" y="935" width="39" height="22" />
+	    <texture id="ui_inv_sort_consumables_h" x="893" y="957" width="39" height="18" />
+	    <texture id="ui_inv_sort_consumables_t" x="893" y="975" width="39" height="19" />
+
+	    <texture id="ui_inv_sort_artefacts_e" x="932" y="935" width="39" height="22" />
+	    <texture id="ui_inv_sort_artefacts_h" x="932" y="957" width="39" height="18" />
+	    <texture id="ui_inv_sort_artefacts_t" x="932" y="975" width="39" height="19" />
+
+	    <texture id="ui_inv_sort_attachments_e" x="971" y="935" width="42" height="22" />
+	    <texture id="ui_inv_sort_attachments_h" x="971" y="957" width="42" height="18" />
+	    <texture id="ui_inv_sort_attachments_t" x="971" y="975" width="42" height="19" />
 	</file>
 
 	<file name="ui\ui_actor_widescreen_sidepanels" scale="2">
