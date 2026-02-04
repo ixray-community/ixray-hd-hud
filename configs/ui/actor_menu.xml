@@ -353,6 +353,65 @@
 	    </text_color>
 	</exit_button>
 
+	<inventory_sort_tabs x="528" y="112" width="248" height="22">
+		<button x="0" y="0" width="31" height="22" stretch="1" id="all" hint="st_inv_sort_all_hint">
+			<text font="letterica16" align="c" r="0" g="0" b="0" a="0"/>
+			<texture_e>ui_inv_sort_all_e</texture_e>
+			<texture_h>ui_inv_sort_all_h</texture_h>
+			<texture_t>ui_inv_sort_all_t</texture_t>
+			<texture_d>ui_inv_sort_all_e</texture_d>
+		</button>
+		<button x="31" y="0" width="31" height="22" stretch="1" id="weapons" hint="st_inv_sort_weapons_hint">
+			<text font="letterica16" align="c" r="0" g="0" b="0" a="0"/>
+			<texture_e>ui_inv_sort_weapons_e</texture_e>
+			<texture_h>ui_inv_sort_weapons_h</texture_h>
+			<texture_t>ui_inv_sort_weapons_t</texture_t>
+			<texture_d>ui_inv_sort_weapons_e</texture_d>
+		</button>
+		<button x="62" y="0" width="31" height="22" stretch="1" id="ammo" hint="st_inv_sort_ammo_hint">
+			<text font="letterica16" align="c" r="0" g="0" b="0" a="0"/>
+			<texture_e>ui_inv_sort_ammo_e</texture_e>
+			<texture_h>ui_inv_sort_ammo_h</texture_h>
+			<texture_t>ui_inv_sort_ammo_t</texture_t>
+			<texture_d>ui_inv_sort_ammo_e</texture_d>
+		</button>
+		<button x="93" y="0" width="31" height="22" stretch="1" id="armor" hint="st_inv_sort_armor_hint">
+			<text font="letterica16" align="c" r="0" g="0" b="0" a="0"/>
+			<texture_e>ui_inv_sort_armor_e</texture_e>
+			<texture_h>ui_inv_sort_armor_h</texture_h>
+			<texture_t>ui_inv_sort_armor_t</texture_t>
+			<texture_d>ui_inv_sort_armor_e</texture_d>
+		</button>
+		<button x="124" y="0" width="31" height="22" stretch="1" id="devices" hint="st_inv_sort_devices_hint">
+			<text font="letterica16" align="c" r="0" g="0" b="0" a="0"/>
+			<texture_e>ui_inv_sort_devices_e</texture_e>
+			<texture_h>ui_inv_sort_devices_h</texture_h>
+			<texture_t>ui_inv_sort_devices_t</texture_t>
+			<texture_d>ui_inv_sort_devices_e</texture_d>
+		</button>
+		<button x="155" y="0" width="31" height="22" stretch="1" id="consumables" hint="st_inv_sort_consumables_hint">
+			<text font="letterica16" align="c" r="0" g="0" b="0" a="0"/>
+			<texture_e>ui_inv_sort_consumables_e</texture_e>
+			<texture_h>ui_inv_sort_consumables_h</texture_h>
+			<texture_t>ui_inv_sort_consumables_t</texture_t>
+			<texture_d>ui_inv_sort_consumables_e</texture_d>
+		</button>
+		<button x="186" y="0" width="31" height="22" stretch="1" id="artefacts" hint="st_inv_sort_artefacts_hint">
+			<text font="letterica16" align="c" r="0" g="0" b="0" a="0"/>
+			<texture_e>ui_inv_sort_artefacts_e</texture_e>
+			<texture_h>ui_inv_sort_artefacts_h</texture_h>
+			<texture_t>ui_inv_sort_artefacts_t</texture_t>
+			<texture_d>ui_inv_sort_artefacts_e</texture_d>
+		</button>
+		<button x="217" y="0" width="31" height="22" stretch="1" id="attachments" hint="st_inv_sort_attachments_hint">
+			<text font="letterica16" align="c" r="0" g="0" b="0" a="0"/>
+			<texture_e>ui_inv_sort_attachments_e</texture_e>
+			<texture_h>ui_inv_sort_attachments_h</texture_h>
+			<texture_t>ui_inv_sort_attachments_t</texture_t>
+			<texture_d>ui_inv_sort_attachments_e</texture_d>
+		</button>
+	</inventory_sort_tabs>
+
 	<action_sounds>
 	    <snd_open>interface\inv_open</snd_open>
 	    <snd_close>interface\inv_close</snd_close>

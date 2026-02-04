@@ -292,8 +292,8 @@
   <dragdrop_trash x="0" y="0" width="375" height="768"
     	cell_width="375" cell_height="768" rows_num="1" cols_num="1" a="0"/>
 
-  <dragdrop_bag x="665" y="114" width="347" height="574"
-    	cell_width="33" cell_height="41" rows_num="14" cols_num="10"
+  <dragdrop_bag x="665" y="145" width="347" height="574"
+    	cell_width="33" cell_height="43" rows_num="13" cols_num="10"
 		unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
 	<dragdrop_belt x="394" y="302.5" width="240" height="42"
@@ -301,23 +301,23 @@
 		cell_sp_x="19" cell_sp_y="0" a="0"/>
 
 	<dragdrop_actor_trade x="662" y="114" width="346" height="164"
-		cell_width="33" cell_height="41" rows_num="4" cols_num="10"
+		cell_width="33" cell_height="43" rows_num="4" cols_num="10"
 		unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
 	<dragdrop_actor_trade_bag x="662" y="340" width="346" height="369"
-		cell_width="33" cell_height="41" rows_num="9" cols_num="10"
+		cell_width="33" cell_height="43" rows_num="9" cols_num="10"
 		unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
 	<dragdrop_partner_trade x="16" y="114" width="346" height="164"
-	    cell_width="33" cell_height="41" rows_num="4" cols_num="10"
+	    cell_width="33" cell_height="43" rows_num="4" cols_num="10"
 	    unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
 	<dragdrop_partner_bag x="16" y="340" width="346" height="369"
-	    cell_width="33" cell_height="41" rows_num="9" cols_num="10"
+	    cell_width="33" cell_height="43" rows_num="9" cols_num="10"
 	    unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
 	<dragdrop_deadbody_bag x="16" y="119" width="346" height="574"
-	    cell_width="33" cell_height="41" rows_num="14" cols_num="10"
+	    cell_width="33" cell_height="43" rows_num="14" cols_num="10"
 	    unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
 	<dragdrop_quick_slots x="396" y="666" width="227" height="41"
@@ -372,7 +372,7 @@
 	    </text_color>
 	</putall_button>
 
-	<exit_button x="384" y="735" width="256" height="24" stretch="1" hint="ui_st_exit_hint">
+	<exit_button x="384" y="734" width="254" height="25" stretch="1" hint="ui_st_exit_hint">
 	    <window_name>exit_button</window_name>
 	    <texture>ui_inGame2_big_inventory_button</texture>
 	    <text font="graffiti22" align="c">ui_inv_exit</text>
@@ -527,127 +527,54 @@
 	    </power_sensor>
 	</actor_state_info>
 
-<!--
-	<inventory_sort_buttons x="10" y="10" width="800" height="50">
-		<category_all x="0" y="0" width="90" height="40">
-			<texture_e>ui_button_ordinary_e</texture_e>
-			<texture_h>ui_button_ordinary_h</texture_h>
-			<texture_t>ui_button_ordinary_t</texture_t>
-			<texture_d>ui_button_ordinary_d</texture_d>
-			<text font="letterica18" align="c">st_inv_sort_all</text>
-			<text_color>
-				<e r="200" g="200" b="200"/>
-				<h r="255" g="255" b="255"/>
-				<t r="255" g="255" b="255"/>
-				<d r="100" g="100" b="100"/>
-			</text_color>
-			<hint>st_inv_sort_all_hint</hint>
-		</category_all>
-
-		<category_weapons x="100" y="0" width="90" height="40">
-			<texture_e>ui_button_ordinary_e</texture_e>
-			<texture_h>ui_button_ordinary_h</texture_h>
-			<texture_t>ui_button_ordinary_t</texture_t>
-			<texture_d>ui_button_ordinary_d</texture_d>
-			<text font="letterica18" align="c">st_inv_sort_weapons</text>
-			<text_color>
-				<e r="200" g="200" b="200"/>
-				<h r="255" g="255" b="255"/>
-				<t r="255" g="255" b="255"/>
-				<d r="100" g="100" b="100"/>
-			</text_color>
-			<hint>st_inv_sort_weapons_hint</hint>
-		</category_weapons>
-
-		<category_ammo x="200" y="0" width="90" height="40">
-			<texture_e>ui_button_ordinary_e</texture_e>
-			<texture_h>ui_button_ordinary_h</texture_h>
-			<texture_t>ui_button_ordinary_t</texture_t>
-			<texture_d>ui_button_ordinary_d</texture_d>
-			<text font="letterica18" align="c">st_inv_sort_ammo</text>
-			<text_color>
-				<e r="200" g="200" b="200"/>
-				<h r="255" g="255" b="255"/>
-				<t r="255" g="255" b="255"/>
-				<d r="100" g="100" b="100"/>
-			</text_color>
-			<hint>st_inv_sort_ammo_hint</hint>
-		</category_ammo>
-
-		<category_armor x="300" y="0" width="90" height="40">
-			<texture_e>ui_button_ordinary_e</texture_e>
-			<texture_h>ui_button_ordinary_h</texture_h>
-			<texture_t>ui_button_ordinary_t</texture_t>
-			<texture_d>ui_button_ordinary_d</texture_d>
-			<text font="letterica18" align="c">st_inv_sort_armor</text>
-			<text_color>
-				<e r="200" g="200" b="200"/>
-				<h r="255" g="255" b="255"/>
-				<t r="255" g="255" b="255"/>
-				<d r="100" g="100" b="100"/>
-			</text_color>
-			<hint>st_inv_sort_armor_hint</hint>
-		</category_armor>
-
-		<category_devices x="400" y="0" width="90" height="40">
-			<texture_e>ui_button_ordinary_e</texture_e>
-			<texture_h>ui_button_ordinary_h</texture_h>
-			<texture_t>ui_button_ordinary_t</texture_t>
-			<texture_d>ui_button_ordinary_d</texture_d>
-			<text font="letterica18" align="c">st_inv_sort_devices</text>
-			<text_color>
-				<e r="200" g="200" b="200"/>
-				<h r="255" g="255" b="255"/>
-				<t r="255" g="255" b="255"/>
-				<d r="100" g="100" b="100"/>
-			</text_color>
-			<hint>st_inv_sort_devices_hint</hint>
-		</category_devices>
-
-		<category_consumables x="500" y="0" width="90" height="40">
-			<texture_e>ui_button_ordinary_e</texture_e>
-			<texture_h>ui_button_ordinary_h</texture_h>
-			<texture_t>ui_button_ordinary_t</texture_t>
-			<texture_d>ui_button_ordinary_d</texture_d>
-			<text font="letterica18" align="c">st_inv_sort_consumables</text>
-			<text_color>
-				<e r="200" g="200" b="200"/>
-				<h r="255" g="255" b="255"/>
-				<t r="255" g="255" b="255"/>
-				<d r="100" g="100" b="100"/>
-			</text_color>
-			<hint>st_inv_sort_consumables_hint</hint>
-		</category_consumables>
-
-		<category_artefacts x="600" y="0" width="90" height="40">
-			<texture_e>ui_button_ordinary_e</texture_e>
-			<texture_h>ui_button_ordinary_h</texture_h>
-			<texture_t>ui_button_ordinary_t</texture_t>
-			<texture_d>ui_button_ordinary_d</texture_d>
-			<text font="letterica18" align="c">st_inv_sort_artefacts</text>
-			<text_color>
-				<e r="200" g="200" b="200"/>
-				<h r="255" g="255" b="255"/>
-				<t r="255" g="255" b="255"/>
-				<d r="100" g="100" b="100"/>
-			</text_color>
-			<hint>st_inv_sort_artefacts_hint</hint>
-		</category_artefacts>
-
-		<category_attachments x="700" y="0" width="90" height="40">
-			<texture_e>ui_button_ordinary_e</texture_e>
-			<texture_h>ui_button_ordinary_h</texture_h>
-			<texture_t>ui_button_ordinary_t</texture_t>
-			<texture_d>ui_button_ordinary_d</texture_d>
-			<text font="letterica18" align="c">st_inv_sort_attachments</text>
-			<text_color>
-				<e r="200" g="200" b="200"/>
-				<h r="255" g="255" b="255"/>
-				<t r="255" g="255" b="255"/>
-				<d r="100" g="100" b="100"/>
-			</text_color>
-			<hint>st_inv_sort_attachments_hint</hint>
-		</category_attachments>
-	</inventory_sort_buttons>
-	-->
+	<inventory_sort_tabs x="660" y="108" width="352" height="40">
+		<button x="0" y="0" width="44" height="30" stretch="1" id="all" hint="st_inv_sort_all_hint">
+			<texture_e>ui_inv_sort_all_e</texture_e>
+			<texture_h>ui_inv_sort_all_h</texture_h>
+			<texture_t>ui_inv_sort_all_t</texture_t>
+			<texture_d>ui_inv_sort_all_e</texture_d>
+		</button>
+		<button x="44" y="0" width="44" height="30" stretch="1" id="weapons" hint="st_inv_sort_weapons_hint">
+			<texture_e>ui_inv_sort_weapons_e</texture_e>
+			<texture_h>ui_inv_sort_weapons_h</texture_h>
+			<texture_t>ui_inv_sort_weapons_t</texture_t>
+			<texture_d>ui_inv_sort_weapons_e</texture_d>
+		</button>
+		<button x="88" y="0" width="44" height="30" stretch="1" id="ammo" hint="st_inv_sort_ammo_hint">
+			<texture_e>ui_inv_sort_ammo_e</texture_e>
+			<texture_h>ui_inv_sort_ammo_h</texture_h>
+			<texture_t>ui_inv_sort_ammo_t</texture_t>
+			<texture_d>ui_inv_sort_ammo_e</texture_d>
+		</button>
+		<button x="132" y="0" width="44" height="30" stretch="1" id="armor" hint="st_inv_sort_armor_hint">
+			<texture_e>ui_inv_sort_armor_e</texture_e>
+			<texture_h>ui_inv_sort_armor_h</texture_h>
+			<texture_t>ui_inv_sort_armor_t</texture_t>
+			<texture_d>ui_inv_sort_armor_e</texture_d>
+		</button>
+		<button x="176" y="0" width="44" height="30" stretch="1" id="devices" hint="st_inv_sort_devices_hint">
+			<texture_e>ui_inv_sort_devices_e</texture_e>
+			<texture_h>ui_inv_sort_devices_h</texture_h>
+			<texture_t>ui_inv_sort_devices_t</texture_t>
+			<texture_d>ui_inv_sort_devices_e</texture_d>
+		</button>
+		<button x="220" y="0" width="44" height="30" stretch="1" id="consumables" hint="st_inv_sort_consumables_hint">
+			<texture_e>ui_inv_sort_consumables_e</texture_e>
+			<texture_h>ui_inv_sort_consumables_h</texture_h>
+			<texture_t>ui_inv_sort_consumables_t</texture_t>
+			<texture_d>ui_inv_sort_consumables_e</texture_d>
+		</button>
+		<button x="264" y="0" width="44" height="30" stretch="1" id="artefacts" hint="st_inv_sort_artefacts_hint">
+			<texture_e>ui_inv_sort_artefacts_e</texture_e>
+			<texture_h>ui_inv_sort_artefacts_h</texture_h>
+			<texture_t>ui_inv_sort_artefacts_t</texture_t>
+			<texture_d>ui_inv_sort_artefacts_e</texture_d>
+		</button>
+		<button x="308" y="0" width="44" height="30" stretch="1" id="attachments" hint="st_inv_sort_attachments_hint">
+			<texture_e>ui_inv_sort_attachments_e</texture_e>
+			<texture_h>ui_inv_sort_attachments_h</texture_h>
+			<texture_t>ui_inv_sort_attachments_t</texture_t>
+			<texture_d>ui_inv_sort_attachments_e</texture_d>
+		</button>
+	</inventory_sort_tabs>
 </w>

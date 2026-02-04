@@ -277,12 +277,12 @@
 				r="201" g="201" b="201" a="215"/>
 		</static_wpn_icon>
 
-		<static_fire_mode x="856" y="666" width="28" height="28" stretch="1" use_icon="1">
+		<static_fire_mode x="856" y="666" width="28" height="28" stretch="1" use_icon="0">
 			<mode_mapping text="1" icon="icon_fmode_single.svg"/>
 			<mode_mapping text="A" icon="icon_fmode_auto.svg"/>
 			<mode_mapping text="2" icon="icon_fmode_2burst.svg"/>
 			<mode_mapping text="3" icon="icon_fmode_3burst.svg"/>
-			<text font="letterica16" color="ui_1" align="c" vert_align="c"/>
+			<text font="letterica18" color="ui_1" align="c" vert_align="c"/>
 		</static_fire_mode>
 	</hud_states>
 </w>
