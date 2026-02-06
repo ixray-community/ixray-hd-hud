@@ -1,17 +1,17 @@
-	<enemy_location hint="enemy" no_offline="1" compass_dist="3">
-		<mini_map compass="1" spot="enemy_mini_spot"/>
+	<enemy_location hint="enemy" no_offline="1" compass_dist="2">
+		<mini_map compass="1" compass_width="8" compass_height="10" compass_offset_y="35" spot="enemy_mini_spot"/>
 	</enemy_location>
 
-	<neutral_location hint="neutral" compass_dist="3">
-		<mini_map compass="1" spot="neutral_mini_spot"/>
+	<neutral_location hint="neutral" compass_dist="2">
+		<mini_map compass="1" compass_width="8" compass_height="10" compass_offset_y="35" spot="neutral_mini_spot"/>
 	</neutral_location>
 
-	<friend_location hint="friend" compass_dist="3">
-		<mini_map compass="1" spot="friend_mini_spot"/>
+	<friend_location hint="friend" compass_dist="2">
+		<mini_map compass="1" compass_width="8" compass_height="10" compass_offset_y="35" spot="friend_mini_spot"/>
 	</friend_location>
 
-	<deadbody_location hint="deadbody" compass_dist="10">
-		<mini_map compass="1" spot="deadbody_mini_spot"/>
+	<deadbody_location hint="deadbody" compass_dist="2">
+		<mini_map compass="1" compass_width="8" compass_height="10" compass_offset_y="35" spot="deadbody_mini_spot"/>
 	</deadbody_location>
 
 	<enemy_mini_spot width="10" height="10" stretch="1" alignment="c" >

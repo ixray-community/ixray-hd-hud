@@ -3,9 +3,9 @@
 	    <texture id="ui_inGame2_inventory_back" x="340" y="0" width="684" height="768" />
 	    <texture id="ui_inGame2_left_side" x="684" y="0" width="340" height="768" />
 	    <texture id="ui_inGame2_center_trade_devider" x="683" y="768" width="341" height="163" />
-	    <texture id="ui_inGame2_inventory_status_bar" x="341" y="776" width="58" height="5" />
-	    <texture id="ui_inGame2_inventory_item_status_bar" x="341" y="776" width="38" height="5" />
-	    <texture id="ui_inGame2_inventory_item_status_bar_16" x="341" y="776" width="30" height="5" />
+	    <texture id="ui_inGame2_inventory_status_bar" x="340" y="775" width="60" height="7" />
+	    <texture id="ui_inGame2_inventory_item_status_bar" x="340" y="775" width="38" height="5" />
+	    <texture id="ui_inGame2_inventory_item_status_bar_16" x="340" y="775" width="30" height="5" />
 	    <texture id="ui_inGame2_inventory_health_bar" x="340" y="788" width="167" height="16" />
 	    <texture id="ui_inGame2_inventory_progress_bar" x="341" y="789" width="167" height="16" />
 
