@@ -343,9 +343,9 @@
 		<text>Показать только артефакты</text>
 	</string>
 	<string id="st_inv_sort_attachments">
-		<text>Обвес</text>
+		<text>Обвесы</text>
 	</string>
 	<string id="st_inv_sort_attachments_hint">
-		<text>Показать только обвес</text>
+		<text>Показать только обвесы</text>
 	</string>
 </string_table>

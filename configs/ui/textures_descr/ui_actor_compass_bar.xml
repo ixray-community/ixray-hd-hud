@@ -1,7 +1,6 @@
 <w>
     <file name="ui\ui_actor_compass_bar" scale="2">
-	    <texture id="ui_inGame2_compass_bar_window" x="0" y="25" width="500" height="45" />
-	    <texture id="ui_inGame2_compass_dial" x="0" y="9" width="1024" height="7" />
-        <texture id="ui_inGame2_compass_danger_glow" x="0" y="70" width="354" height="20" />
+	    <texture id="ui_inGame2_compass_bar_window" x="0" y="0" width="438" height="29" />
+	    <texture id="ui_inGame2_compass_dial" x="0" y="105" width="1024" height="5" />
    </file>
 </w>
