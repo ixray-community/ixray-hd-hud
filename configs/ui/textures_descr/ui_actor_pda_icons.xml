@@ -19,8 +19,8 @@
 	    	<texture id="ui_inGame2_PDA_icon_Primary_mission" x="3" y="562" width="25" height="25" />
 	    	<texture id="ui_inGame2_PDA_icon_Secondary_mission" x="3" y="532" width="25" height="25" />
 
-	    	<texture id="ui_inGame2_PDA_icon_secret" x="0" y="452" width="29" height="29" />
-	    	<texture id="ui_inGame2_PDA_personal_spot" x="35" y="452" width="29" height="29" />
+	    	<texture id="ui_inGame2_PDA_icon_secret" x="4" y="453" width="28" height="28" />
+	    	<texture id="ui_inGame2_PDA_personal_spot" x="35" y="453" width="28" height="28" />
 	    	<texture id="ui_inGame2_PDA_icon_location_legend" x="3" y="587" width="42" height="42" />
 			
 			<texture id="npc_marker_squad_leader" x="405" y="540" width="13" height="13" />

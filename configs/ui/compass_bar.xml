@@ -58,7 +58,7 @@
 
         <spots
             align="c"
-            collect_interval="0.15"
+            collect_interval="0.1"
             max_distance="-1"
             show="1"
             x="0"
