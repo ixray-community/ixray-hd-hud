@@ -216,17 +216,17 @@
 			<texture>ui_inGame2_Patroni_HUD_main_window</texture>
 		</back>
 
-		<progress_bar_health x="881" y="708" width="123" height="19" horz="1" min="0" max="1" pos="0" 
+		<progress_bar_health x="879.5" y="704" width="122" height="20" stretch="1" horz="1" min="0" max="1" pos="0" 
 		expression="floor(fltPlayerHealth * 55.0) / 55.0">
 			<progress stretch="1">
-				<texture>ui_inGame2_Patroni_HUD_red_bar</texture>
+				<texture r="125" g="12" b="12">ui_inGame2_Patroni_HUD_red_bar</texture>
 			</progress>
 		</progress_bar_health>
 
-	    <progress_bar_stamina x="881" y="732" width="123" height="14" horz="1" min="0" max="1" pos="0"
+	    <progress_bar_stamina x="879.5" y="733" width="122" height="15" stretch="1" horz="1" min="0" max="1" pos="0"
 		expression="floor(fltPlayerPower * 55.0) / 55.0">
 	        <progress stretch="1">
-		        <texture>ui_inGame2_Patroni_HUD_blue_bar</texture>
+		        <texture r="207" g="207" b="207">ui_inGame2_Patroni_HUD_blue_bar</texture>
 	        </progress>
 	    </progress_bar_stamina>
 
@@ -253,18 +253,18 @@
 -->
 
 		<!-- Adaptive ammo widget -->
-		<static_ammo_adaptive x="872" y="663" width="70" height="40">
+		<static_ammo_adaptive x="872" y="660" width="70" height="40">
 			<clip_text x="0" y="0" width="40" height="37">
-				<text complex_mode="0" font="font_oswald_40" r="201" g="201" b="201" a="255" align="r" vert_align="c"/>
+				<text complex_mode="0" font="font_oswald_40" r="217" g="206" b="188" a="255" align="r" vert_align="c"/>
 			</clip_text>
 			<total_text x="45" y="4" width="55" height="27">
-				<text complex_mode="0" font="font_oswald_22" r="201" g="201" b="201" a="255" align="l" vert_align="c"/>
+				<text complex_mode="0" font="font_oswald_22" r="217" g="206" b="188" a="255" align="l" vert_align="c"/>
 			</total_text>
 		</static_ammo_adaptive>
 
 		<static_wpn_icon
-			x="977"
-			y="680"
+			x="965"
+			y="677"
 			width="60"
 			height="30"
 			align="c"
@@ -274,14 +274,14 @@
 				font="font_oswald_22"
 				align="c"
 				vert_align="c"
-				r="201" g="201" b="201" a="215"/>
+				r="217" g="206" b="188" a="255"/>
 		</static_wpn_icon>
 
-		<static_fire_mode x="856" y="666" width="28" height="28" stretch="1" use_icon="0">
-			<mode_mapping text="1" icon="icon_fmode_single.svg"/>
-			<mode_mapping text="A" icon="icon_fmode_auto.svg"/>
-			<mode_mapping text="2" icon="icon_fmode_2burst.svg"/>
-			<mode_mapping text="3" icon="icon_fmode_3burst.svg"/>
+		<static_fire_mode x="862" y="666" width="18" height="22" stretch="1" use_icon="1">
+			<mode_mapping text="1" icon="ui_inGame2_icon_fmode_single"/>
+			<mode_mapping text="A" icon="ui_inGame2_icon_fmode_auto"/>
+			<mode_mapping text="2" icon="ui_inGame2_icon_fmode_2burst"/>
+			<mode_mapping text="3" icon="ui_inGame2_icon_fmode_3burst"/>
 			<text font="letterica18" color="ui_1" align="c" vert_align="c"/>
 		</static_fire_mode>
 	</hud_states>

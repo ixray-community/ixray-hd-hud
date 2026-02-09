@@ -30,9 +30,9 @@
 	    <texture id="ui_inGame2_Radar_compass" x="554" y="243" width="164" height="164" />
 	    <texture id="ui_inGame_actor_point" x="509" y="179" width="8" height="8" />	
 
-        <texture id="ui_inGame2_Patroni_HUD_main_window" x="758" y="15" width="189" height="91" />
-        <texture id="ui_inGame2_Patroni_HUD_red_bar" x="760" y="112" width="142" height="18" />
-        <texture id="ui_inGame2_Patroni_HUD_blue_bar" x="760" y="133" width="142" height="14" />
+        <texture id="ui_inGame2_Patroni_HUD_main_window" x="756" y="12" width="192" height="92" />
+        <texture id="ui_inGame2_Patroni_HUD_red_bar" x="757" y="122" width="145" height="19" />
+        <texture id="ui_inGame2_Patroni_HUD_blue_bar" x="757" y="155" width="145" height="15" />
 
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_b" 		x="414" y="240" width="44" height="45" />
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_back" 	x="411" y="240" width="47" height="45" />
@@ -159,6 +159,9 @@
 		
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_background" x="760" y="199" width="47" height="60" />
 	
-		
+		<texture id="ui_inGame2_icon_fmode_single" x="820" y="200" width="32" height="32" />
+		<texture id="ui_inGame2_icon_fmode_auto" x="852" y="200" width="32" height="32" />
+		<texture id="ui_inGame2_icon_fmode_3burst" x="884" y="200" width="32" height="32" />
+		<texture id="ui_inGame2_icon_fmode_2burst" x="916" y="200" width="32" height="32" />
 	</file>
 </w>
