@@ -19,7 +19,7 @@
 	</enemy_mini_spot>
 
 	<neutral_mini_spot width="10" height="10" stretch="1" alignment="c">
-		<texture r="255" g="255" b="255">ui_mmap_common_actor_2</texture>
+		<texture r="211" g="211" b="211">ui_mmap_common_actor_2</texture>
 	</neutral_mini_spot>
 
 	<friend_mini_spot width="10" height="10" stretch="1" alignment="c">
