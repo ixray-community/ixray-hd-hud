@@ -36,7 +36,7 @@
 		<indicator_thirst x="0" y="0" width="18" height="26" stretch="1"/>
 	 
 	<!-- БУСТЕРЫ -->
-		<indicator_booster_stack_panel x="10" y="625" width="300" height="28" sp_align="left" spacing="-5"/>
+		<indicator_booster_stack_panel x="10" y="640" width="300" height="28" sp_align="left" spacing="-5"/>
 
 		<indicator_booster_psy x="0" y="0" width="36" height="40" stretch="1"
 			sector_count="64" clockwise="1" blend="1"
@@ -44,8 +44,8 @@
 			<back x="0" y="0" width="34" height="44" stretch="1">
 				<texture>ui_inGame2_shield_Psy</texture>
 			</back>
-			<front x="-1" y="-1" width="36" height="46" stretch="1">
-				<texture>ui_inGame2_radial_progress_bar</texture>
+			<front x="0.5" y="0" width="32" height="42" stretch="1">
+				<texture r="159" g="207" b="255" a="255">ui_inGame2_radial_progress_bar</texture>
 			</front>
 		</indicator_booster_psy>
 
@@ -55,8 +55,8 @@
 			<back x="0" y="0" width="34" height="44" stretch="1">
 				<texture>ui_inGame2_shield_Radiation</texture>
 			</back>
-			<front x="-1" y="-1" width="36" height="46" stretch="1">
-				<texture>ui_inGame2_radial_progress_bar</texture>
+			<front x="0.5" y="0" width="32" height="42" stretch="1">
+				<texture r="159" g="207" b="255" a="255">ui_inGame2_radial_progress_bar</texture>
 			</front>
 		</indicator_booster_radia>
 
@@ -66,8 +66,8 @@
 			<back x="0" y="0" width="34" height="44" stretch="1">
 				<texture>ui_inGame2_shield_biological</texture>
 			</back>
-			<front x="-1" y="-1" width="36" height="46" stretch="1">
-				<texture>ui_inGame2_radial_progress_bar</texture>
+			<front x="0.5" y="0" width="32" height="42" stretch="1">
+				<texture r="159" g="207" b="255" a="255">ui_inGame2_radial_progress_bar</texture>
 			</front>
 		</indicator_booster_chem>
 
@@ -77,19 +77,19 @@
 			<back x="0" y="0" width="34" height="44" stretch="1">
 				<texture>ui_inGame2_shield_blood</texture>
 			</back>
-			<front x="-1" y="-1" width="36" height="46" stretch="1">
-				<texture>ui_inGame2_radial_progress_bar</texture>
+			<front x="0.5" y="0" width="32" height="42" stretch="1">
+				<texture r="159" g="207" b="255" a="255">ui_inGame2_radial_progress_bar</texture>
 			</front>
 		</indicator_booster_wound>
-			
+
 		<indicator_booster_weight x="0" y="0" width="40" height="40" stretch="1"
 			sector_count="64" clockwise="1" blend="1"
 			begin_angle="0" end_angle="6.28">
 			<back x="0" y="0" width="34" height="44" stretch="1">
 				<texture>ui_inGame2_shield_force</texture>
 			</back>
-			<front x="-1" y="-1" width="36" height="46" stretch="1">
-				<texture>ui_inGame2_radial_progress_bar</texture>
+			<front x="0.5" y="0" width="32" height="42" stretch="1">
+				<texture r="159" g="207" b="255" a="255">ui_inGame2_radial_progress_bar</texture>
 			</front>
 		</indicator_booster_weight>
 
@@ -99,8 +99,8 @@
 			<back x="0" y="0" width="34" height="44" stretch="1">
 				<texture>ui_inGame2_shield_health</texture>
 			</back>
-			<front x="-1" y="-1" width="36" height="46" stretch="1">
-				<texture>ui_inGame2_radial_progress_bar</texture>
+			<front x="0.5" y="0" width="32" height="42" stretch="1">
+				<texture r="159" g="207" b="255" a="255">ui_inGame2_radial_progress_bar</texture>
 			</front>
 		</indicator_booster_health>
 
@@ -110,8 +110,8 @@
 			<back x="0" y="0" width="34" height="44" stretch="1">
 				<texture>ui_inGame2_shield_stamina</texture>
 			</back>
-			<front x="-1" y="-1" width="36" height="46" stretch="1">
-				<texture>ui_inGame2_radial_progress_bar</texture>
+			<front x="0.5" y="0" width="32" height="42" stretch="1">
+				<texture r="159" g="207" b="255" a="255">ui_inGame2_radial_progress_bar</texture>
 			</front>
 		</indicator_booster_power>
 
@@ -121,8 +121,8 @@
 			<back x="0" y="0" width="34" height="44" stretch="1">
 				<texture>ui_inGame2_shield_radiation_cleanup</texture>
 			</back>
-			<front x="-1" y="-1" width="36" height="46" stretch="1">
-				<texture>ui_inGame2_radial_progress_bar</texture>
+			<front x="0.5" y="0" width="32" height="42" stretch="1">
+				<texture r="159" g="207" b="255" a="255">ui_inGame2_radial_progress_bar</texture>
 			</front>
 		</indicator_booster_rad>
 

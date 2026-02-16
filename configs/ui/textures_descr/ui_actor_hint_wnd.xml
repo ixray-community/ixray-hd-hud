@@ -25,8 +25,8 @@
 	    <texture id="ui_inGame2_hint_wnd_upgrades" x="284" y="33" width="242" height="7" />
 
 	    <texture id="ui_inGame2_Radar_main_window" x="545" y="0" width="212" height="212" />
-	    <texture id="ui_inGame2_Radar_blue_bar" x="72400000" y="271" width="167" height="167" />
-	    <texture id="ui_inGame2_Radar_green_bar" x="54200000" y="271" width="167" height="167" />
+	    <texture id="ui_inGame2_Radar_blue_bar" x="724" y="271" width="167" height="167" />
+	    <texture id="ui_inGame2_Radar_green_bar" x="542" y="271" width="167" height="167" />
 	    <texture id="ui_inGame2_Radar_compass" x="498" y="194" width="28" height="28" />
 	    <texture id="ui_inGame_actor_point" x="509" y="180" width="6" height="6" />	
 
@@ -101,7 +101,7 @@
 	    <texture id="ui_inGame2_circle_freezing_orange" x="457" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_freezing_red" x="457" y="969" width="40" height="40" />
 
-	    <texture id="ui_inGame2_triangle_Radiation_yellow" x="419" y="816" width="37" height="32 " />
+	    <texture id="ui_inGame2_triangle_Radiation_yellow" x="419" y="816" width="37" height="32" />
 	    <texture id="ui_inGame2_triangle_Radiation_orange" x="419" y="856" width="37" height="32" />
 	    <texture id="ui_inGame2_triangle_Radiation_red" x="419" y="898" width="37" height="32" />
 		
@@ -122,16 +122,16 @@
 	    <texture id="ui_inGame2_triangle_Radiation_green" x="419" y="721" width="37" height="32" />
 	    <texture id="ui_inGame2_triangle_Biological_green" x="339" y="721" width="37" height="32" />
 
-	    <texture id="ui_inGame2_shield_Psy" x="209" y="448" width="38" height="38" />
-	    <texture id="ui_inGame2_shield_Radiation" x="206" y="448" width="38" height="38" />
-	    <texture id="ui_inGame2_shield_biological" x="283" y="448" width="38" height="38" />
-	    <texture id="ui_inGame2_shield_blood" x="320" y="448" width="38" height="38" />
-	    <texture id="ui_inGame2_shield_force" x="357" y="448" width="38" height="38" />
-	    <texture id="ui_inGame2_shield_health" x="98" y="448" width="38" height="38" />
-	    <texture id="ui_inGame2_shield_stamina" x="135" y="448" width="38" height="38" />
-	    <texture id="ui_inGame2_shield_radiation_cleanup" x="172" y="448" width="38" height="38" />
+	    <texture id="ui_inGame2_shield_Psy" x="80" y="485" width="40" height="40" />
+	    <texture id="ui_inGame2_shield_Radiation" x="120" y="485" width="40" height="40" />
+	    <texture id="ui_inGame2_shield_biological" x="160" y="485" width="40" height="40" />
+	    <texture id="ui_inGame2_shield_blood" x="200" y="485" width="40" height="40" />
+	    <texture id="ui_inGame2_shield_force" x="240" y="485" width="40" height="40" />
+	    <texture id="ui_inGame2_shield_health" x="80" y="445" width="40" height="40" />
+	    <texture id="ui_inGame2_shield_stamina" x="120" y="445" width="40" height="40" />
+	    <texture id="ui_inGame2_shield_radiation_cleanup" x="160" y="445" width="40" height="40" />
 
-		<texture id="ui_inGame2_radial_progress_bar" x="98" y="485" width="38" height="38" />
+		<texture id="ui_inGame2_radial_progress_bar" x="200" y="445" width="40" height="40" />
 
 	    <texture id="ui_inGame2_hint_wnd_main_window" x="502" y="141" width="19" height="16" />
 	    <texture id="storyline_task_spot_below" x="502" y="155" width="19" height="16" />
