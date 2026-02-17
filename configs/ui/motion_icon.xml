@@ -1,9 +1,21 @@
+
 <window>
-	<window rel_size="1.16" width="167" height="167" alignment="c"/>
-	<luminosity_progress x="0" y="0" width="167" height="167" alignment="c" stretch="1" sector_count="24" clockwise="1" begin_angle="-0.2" end_angle="0.835" blend="0">
+	<window rel_size="1.0" width="10" height="10" alignment="c"/>
+<!--
+	<luminosity_progress x="10" y="10" width="10" height="10" alignment="c" stretch="1" sector_count="24" clockwise="1" begin_angle="-0.227" end_angle="0.835" blend="0">
 		<texture>ui_inGame2_Radar_green_bar</texture>
 	</luminosity_progress>
-	<noise_progress x="0" y="0" width="167" height="167" stretch="1" alignment="c" sector_count="24" clockwise="0" begin_angle="3.3" end_angle="4.37" blend="0">
+-->
+	<noise_progress x="10" y="10" width="10" height="10" stretch="1" alignment="c" sector_count="24" clockwise="0" begin_angle="3.365" end_angle="4.37" blend="0">
 		<texture>ui_inGame2_Radar_blue_bar</texture>
 	</noise_progress>
+
+	<luminosity_overlay x="17" y="-27" width="135" height="180" stretch="1">
+		<texture r="255" g="79" b="79" a="165">ui_inGame_vignette_luminosity</texture>
+	</luminosity_overlay>
+<!--
+	<noise_overlay x="20" y="-24" width="128" height="172" stretch="1">
+		<texture r="255" g="255" b="255" a="50">ui_inGame_vignette_noise</texture>
+	</noise_overlay>
+-->
 </window>
