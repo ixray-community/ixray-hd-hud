@@ -83,10 +83,10 @@
 	    <texture id="ui_inGame2_circle_radiation_orange" x="12" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_radiation_red" x="12" y="969" width="40" height="40" />
 
-	    <texture id="ui_inGame2_circle_thrist_white" x="731" y="969" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_thrist_yellow" x="237" y="885" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_thrist_orange" x="237" y="927" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_thrist_red" x="237" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_white" x="731" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_yellow" x="237" y="885" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_orange" x="237" y="927" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_red" x="237" y="969" width="40" height="40" />
 
 	    <texture id="ui_inGame2_circle_toxic_white" x="776" y="969" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_toxic_yellow" x="282" y="885" width="40" height="40" />
