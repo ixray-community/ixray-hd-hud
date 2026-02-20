@@ -167,5 +167,10 @@
 		<texture id="ui_inGame2_icon_fmode_auto" x="324" y="490" width="32" height="32" />
 		<texture id="ui_inGame2_icon_fmode_3burst" x="356" y="490" width="32" height="32" />
 		<texture id="ui_inGame2_icon_fmode_2burst" x="388" y="490" width="32" height="32" />
+
+		<texture id="ui_inGame2_ammo_icon_1" x="305" y="827" width="50" height="50" />
+		<texture id="ui_inGame2_ammo_icon_2" x="355" y="827" width="50" height="50" />
+		<texture id="ui_inGame2_ammo_icon_3" x="405" y="827" width="50" height="50" />
+		<texture id="ui_inGame2_ammo_icon_4" x="455" y="827" width="50" height="50" />
 	</file>
 </w>

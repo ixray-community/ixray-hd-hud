@@ -1,0 +1,33 @@
+<w>
+	<file name="ui\ui_drop_amount" scale="2">
+		<texture id="ui_drop_amount_split_bg" x="0" y="0" width="512" height="228" />
+
+		<texture id="ui_inGame2_opt_slider_bar_b" x="0" y="464" width="1" height="16" />
+		<texture id="ui_inGame2_opt_slider_bar_back" x="1" y="464" width="100" height="16" />
+		<texture id="ui_inGame2_opt_slider_bar_e" x="101" y="464" width="1" height="16" />
+
+		<texture id="ui_inGame2_opt_slider_box_e" x="110" y="464" width="20" height="16" />
+		<texture id="ui_inGame2_opt_slider_box_d" x="110" y="464" width="20" height="16" />
+		<texture id="ui_inGame2_opt_slider_box_t" x="130" y="464" width="20" height="16" />
+		<texture id="ui_inGame2_opt_slider_box_h" x="150" y="464" width="20" height="16" />
+
+		<texture id="ui_drop_amount_btn_inc_e" x="420" y="258" width="33" height="33" />
+		<texture id="ui_drop_amount_btn_inc_d" x="420" y="258" width="33" height="33" />
+		<texture id="ui_drop_amount_btn_inc_t" x="420" y="323" width="33" height="33" />
+		<texture id="ui_drop_amount_btn_inc_h" x="420" y="291" width="33" height="33" />
+
+		<texture id="ui_drop_amount_btn_dec_e" x="0" y="258" width="33" height="33" />
+		<texture id="ui_drop_amount_btn_dec_d" x="0" y="258" width="33" height="33" />
+		<texture id="ui_drop_amount_btn_dec_t" x="0" y="323" width="33" height="33" />
+		<texture id="ui_drop_amount_btn_dec_h" x="0" y="291" width="33" height="33" />
+
+		<texture id="ui_drop_amount_btn_common_e" x="0" y="386" width="135" height="25" />
+		<texture id="ui_drop_amount_btn_common_d" x="0" y="386" width="135" height="25" />
+		<texture id="ui_drop_amount_btn_common_t" x="0" y="411" width="135" height="25" />
+		<texture id="ui_drop_amount_btn_common_h" x="0" y="411" width="135" height="25" />
+
+		<texture id="ui_drop_amount_edit_box_b"   x="37"  y="256" width="8"  height="36" />
+		<texture id="ui_drop_amount_edit_box_back" x="45"  y="256" width="357" height="36" />
+		<texture id="ui_drop_amount_edit_box_e"   x="402" y="256" width="8"  height="36" />
+	</file>
+</w>
