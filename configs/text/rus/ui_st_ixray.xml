@@ -52,7 +52,7 @@
 		<text>Масштабирование</text>
 	</string>
 	<string id="st_filter_linear">
-		<text>Стандартное (Линейное)</text>
+		<text>Стандарное (Линейное)</text>
 	</string>
 	<string id="st_filter_point">
 		<text>Целочисленное</text>

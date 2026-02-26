@@ -25,7 +25,7 @@
 		<text align="c" font="letterica16" color="white"/>
 	</voice_distance>
 	
-		<indicator_stack_panel x="850" y="625" width="200" height="20" sp_align="right" spacing="0"/>
+		<indicator_stack_panel x="850" y="645" width="200" height="20" sp_align="right" spacing="5"/>
 		<indicator_starvation x="0" y="0" width="18" height="26" stretch="1"/>
 		<indicator_helmet_broken x="0" y="0" width="18" height="26" stretch="1"/>
 		<indicator_outfit_broken x="0" y="0" width="18" height="26" stretch="1"/>
@@ -259,21 +259,21 @@
 		<indik_psi x="0" y="0" width="26" height="30" stretch="1"/>
 		<indik_acid x="0" y="0" width="26" height="30" stretch="1"/>
 
-		<back x="860" y="665" width="150" height="90" stretch="1">
+		<back x="890" y="680" width="130" height="80" stretch="1">
 			<texture>ui_inGame2_Patroni_HUD_main_window</texture>
 		</back>
 
-		<progress_bar_health x="885" y="706.5" width="112" height="17" stretch="1" horz="1" min="0" max="1" pos="0" 
+		<progress_bar_health x="912.5" y="717" width="96" height="15" stretch="1" horz="1" min="0" max="1" pos="0" 
 		expression="floor(fltPlayerHealth * 55.0) / 55.0">
 			<progress stretch="1">
-				<texture r="129" g="37" b="37">ui_inGame2_Patroni_HUD_red_bar</texture>
+				<texture r="135" g="25" b="25">ui_inGame2_Patroni_HUD_red_bar</texture>
 			</progress>
 		</progress_bar_health>
 
-	    <progress_bar_stamina x="885" y="731.5" width="112" height="14" stretch="1" horz="1" min="0" max="1" pos="0"
+	    <progress_bar_stamina x="912.5" y="739" width="96" height="13" stretch="1" horz="1" min="0" max="1" pos="0"
 		expression="floor(fltPlayerPower * 55.0) / 55.0">
 	        <progress stretch="1">
-		        <texture r="66" g="102" b="101">ui_inGame2_Patroni_HUD_blue_bar</texture>
+		        <texture r="36" g="125" b="167">ui_inGame2_Patroni_HUD_blue_bar</texture>
 	        </progress>
 	    </progress_bar_stamina>
 
@@ -300,31 +300,23 @@
 -->
 
 		<!-- Adaptive ammo widget -->
-		<static_ammo_adaptive x="872" y="665" width="70" height="40">
+		<static_ammo_adaptive x="894" y="678" width="60" height="34">
 			<clip_text x="0" y="0" width="40" height="37">
-				<text complex_mode="0" font="ui_font_graffiti28" r="211" g="211" b="211" a="255" align="r" vert_align="c"/>
+				<text complex_mode="0" font="ui_font_graffiti22" r="211" g="211" b="211" a="255" align="r" vert_align="c"/>
 			</clip_text>
 			<total_text x="45" y="4" width="55" height="27">
-				<text complex_mode="0" font="ui_font_graffiti18" r="211" g="211" b="211" a="255" align="l" vert_align="c"/>
+				<text complex_mode="0" font="ui_font_graffiti16" r="211" g="211" b="211" a="255" align="l" vert_align="c"/>
 			</total_text>
 		</static_ammo_adaptive>
 
-		<static_wpn_icon
-			x="965"
-			y="682"
-			width="60"
-			height="30"
-			align="c"
-			alignment="c"
-			display_mode="text">
-			<text
-				font="font_oswald_22"
-				align="c"
-				vert_align="c"
-				r="211" g="211" b="211" a="255"/>
+		<static_wpn_icon x="1015" y="704" width="90" height="30" align="c" alignment="c" stretch="1" display_mode="text">
+			<ammo_icon x="0" y="0" width="24" height="24"/>
+			<ammo_text x="28" y="2" width="60" height="26">
+				<text font="font_blender_pro_b_14" align="l" vert_align="c" r="199" g="199" b="199" a="255"/>
+			</ammo_text>
 		</static_wpn_icon>
 
-		<static_fire_mode x="870" y="670" width="16" height="20" stretch="1" use_icon="1">
+		<static_fire_mode x="899" y="684" width="16" height="20" stretch="1" use_icon="1">
 			<mode_mapping text="1" icon="ui_inGame2_icon_fmode_single"/>
 			<mode_mapping text="A" icon="ui_inGame2_icon_fmode_auto"/>
 			<mode_mapping text="2" icon="ui_inGame2_icon_fmode_2burst"/>

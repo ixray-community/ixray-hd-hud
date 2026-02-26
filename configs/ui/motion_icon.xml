@@ -10,7 +10,7 @@
 		<texture>ui_inGame2_Radar_blue_bar</texture>
 	</noise_progress>
 
-	<luminosity_overlay x="17" y="-27" width="135" height="180" stretch="1">
+	<luminosity_overlay x="13" y="-28" width="135" height="180" stretch="1">
 		<texture r="255" g="79" b="79" a="165">ui_inGame_vignette_luminosity</texture>
 	</luminosity_overlay>
 <!--

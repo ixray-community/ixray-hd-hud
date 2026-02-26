@@ -238,20 +238,20 @@
 	</quick_slot4_text>
 
 	<actor_weight_caption x="820" y="736" width="57" height="16">
-		<text align="r" font="graffiti19" color="ui_3">ui_total_weight</text>
+		<text align="r" font="font_rubik_18" r="211" g="211" b="211" a="255">ui_total_weight</text>
 	</actor_weight_caption>
 	<actor_weight x="908" y="736" width="35" height="16">
-		<text align="c" font="graffiti19"/>
+		<text align="c" font="font_rubik_18"/>
 	</actor_weight>
 	<actor_weight_max x="940" y="736" width="68" height="16">
-		<text align="l" font="graffiti19" color="ui_3"/>
+		<text align="l" font="font_rubik_18" color="ui_3"/>
 	</actor_weight_max>
 
 	<partner_weight_caption x="174" y="738" width="68" height="14">
-		<text align="r" font="graffiti19" color="ui_3">ui_total_weight</text>
+		<text align="r" font="font_rubik_18" r="211" g="211" b="211" a="255">ui_total_weight</text>
 	</partner_weight_caption>
 	<partner_weight x="342" y="738" width="36" height="14">
-		<text align="l" font="graffiti19" color="ui_7"/>
+		<text align="l" font="font_rubik_18" color="ui_1"/>
 	</partner_weight>
 
 	<!-- partner  -->

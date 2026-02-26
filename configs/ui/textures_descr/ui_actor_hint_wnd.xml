@@ -83,22 +83,22 @@
 	    <texture id="ui_inGame2_circle_radiation_orange" x="12" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_radiation_red" x="12" y="969" width="40" height="40" />
 
-	    <texture id="ui_inGame2_circle_thirst_white" x="731" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_green" x="731" y="969" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_thirst_yellow" x="237" y="885" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_thirst_orange" x="237" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_thirst_red" x="237" y="969" width="40" height="40" />
 
-	    <texture id="ui_inGame2_circle_toxic_white" x="776" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_toxic_green" x="776" y="969" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_toxic_yellow" x="282" y="885" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_toxic_orange" x="282" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_toxic_red" x="282" y="969" width="40" height="40" />
 
-	    <texture id="ui_inGame2_circle_sleepines_white" x="641" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_sleepines_green" x="641" y="969" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_sleepines_yellow" x="147" y="885" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_sleepines_orange" x="147" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_sleepines_red" x="147" y="969" width="40" height="40" />
 
-	    <texture id="ui_inGame2_circle_freezing_white" x="950" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_freezing_green" x="950" y="969" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_freezing_yellow" x="457" y="885" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_freezing_orange" x="457" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_freezing_red" x="457" y="969" width="40" height="40" />
@@ -168,9 +168,9 @@
 		<texture id="ui_inGame2_icon_fmode_3burst" x="356" y="490" width="32" height="32" />
 		<texture id="ui_inGame2_icon_fmode_2burst" x="388" y="490" width="32" height="32" />
 
-		<texture id="ui_inGame2_ammo_icon_1" x="305" y="827" width="50" height="50" />
-		<texture id="ui_inGame2_ammo_icon_2" x="355" y="827" width="50" height="50" />
-		<texture id="ui_inGame2_ammo_icon_3" x="405" y="827" width="50" height="50" />
-		<texture id="ui_inGame2_ammo_icon_4" x="455" y="827" width="50" height="50" />
+		<texture id="ui_inGame2_ammo_fmj" x="280" y="819" width="28" height="28" />
+		<texture id="ui_inGame2_ammo_ap" x="311" y="819" width="28" height="28" />	
+		<texture id="ui_inGame2_ammo_zhekan" x="343" y="819" width="28" height="28" />
+		<texture id="ui_inGame2_ammo_buck" x="375" y="819" width="28" height="28" />	
 	</file>
 </w>

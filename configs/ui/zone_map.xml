@@ -1,13 +1,13 @@
 <window>
 	<minimap>
-		<level_frame x="0.145" y="0.1432" width="0.219" height="0.219" stretch="1" alignment="c"/>
+		<level_frame x="0.145" y="0.1432" width="0.212" height="0.212" stretch="1" alignment="c"/>
 		
-		<background width="0.300" height="0.300" stretch="1" alignment="c">
+		<background width="0.290" height="0.290" stretch="1" alignment="c">
 			<texture>ui_inGame2_Radar_main_window</texture>
 		</background>
 
 	    <clock_wnd x="0.165" y="0.135" width="36" height="20" alignment="c">
-	        <text x="0" y="0" font="ui_font_graffiti16" r="211" g="211" b="211" a="255" align="c" vert_align="c"/>
+	        <text x="0.4" y="0" font="font_rubik_18" r="211" g="211" b="211" a="255" align="c" vert_align="c"/>
 	    </clock_wnd>
 
 		<compass x="0.5" y="0.5" width="164" height="164" heading="1" stretch="1" alignment="c">
