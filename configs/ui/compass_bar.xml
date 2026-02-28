@@ -25,7 +25,7 @@
             </cardinal_points>
         </strip>
 
-        <spots x="0" y="10" align="c" show="1" stretch="1">
+        <spots x="0" y="0" align="c" show="1" stretch="1">
         </spots>
 
         <active_target x="0" y="0" width="10" height="22" padding="8" smoothing_speed="10" stretch="1">
