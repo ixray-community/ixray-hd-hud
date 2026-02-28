@@ -1,7 +1,7 @@
 <w>
     <file name="ui\ui_actor_compass_bar" scale="2">
-	    <texture id="ui_inGame2_compass_bar_window" x="0" y="0" width="502" height="36" />
-	    <texture id="ui_inGame2_compass_dial" x="0" y="105" width="1024" height="5" />
+	    <texture id="ui_inGame2_compass_bar_window" x="0" y="0" width="504" height="56" />
+	    <texture id="ui_inGame2_compass_dial" x="0" y="100" width="1024" height="14" />
 
 	    <texture id="ui_inGame2_Story_quest" x="14" y="702" width="36" height="36" />  
         <texture id="ui_inGame2_Side_quest" x="59" y="702" width="36" height="36" /> 
@@ -15,5 +15,9 @@
 
         <texture id="ui_inGame2_PDA_personal_spot_2" x="149" y="702" width="29" height="29" />
         <texture id="ui_inGame2_PDA_stash" x="194" y="702" width="29" height="29" />  
+
+        <texture id="ui_inGame2_PDA_squad_leader" x="15" y="796" width="19" height="22" />
+        <texture id="ui_inGame2_PDA_squad_member" x="40" y="796" width="19" height="11" /> 
+        <texture id="ui_inGame2_PDA_squad_death" x="65" y="796" width="18" height="18" /> 
    </file>
 </w>

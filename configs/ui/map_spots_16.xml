@@ -492,7 +492,7 @@
   </alife_presentation_squad_friend_spot>
   <alife_presentation_squad_friend_spot_mini x="0" y="0" width="15" height="15" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="186" g="255" b="96">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="0" width="12" height="12" max_dist="5" vert_align="center"></compass>
+    <compass x="0" y="0" width="10" height="10" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_member</compass>
   </alife_presentation_squad_friend_spot_mini>
 
   <alife_presentation_squad_neutral>
@@ -504,7 +504,7 @@
   </alife_presentation_squad_neutral_spot>
   <alife_presentation_squad_neutral_spot_mini x="0" y="0" width="15" height="15" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="236" g="236" b="236">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="0" width="12" height="12" max_dist="5" vert_align="center"></compass>
+    <compass x="0" y="0" width="10" height="10" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_member</compass>
   </alife_presentation_squad_neutral_spot_mini>
 
 
@@ -517,7 +517,7 @@
   </alife_presentation_squad_enemy_spot>
   <alife_presentation_squad_enemy_spot_mini x="0" y="0" width="15" height="15" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="255" g="47" b="47">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="0" width="12" height="12" max_dist="5" vert_align="center"></compass>
+    <compass x="0" y="0" width="10" height="10" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_member</compass>
   </alife_presentation_squad_enemy_spot_mini>
 
   <alife_presentation_squad_monster>

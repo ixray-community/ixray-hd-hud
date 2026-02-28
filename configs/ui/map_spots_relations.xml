@@ -16,22 +16,22 @@
 
 	<enemy_mini_spot width="15" height="15" stretch="1" alignment="c" >
 		<texture r="255" g="47" b="47">ui_mmap_common_actor_2</texture>
-		<compass  x="0" y="0" max_dist="5" vert_align="center"></compass>
+		<compass x="0" y="0" width="10" height="4" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_member</compass>
 	</enemy_mini_spot>
 
 	<neutral_mini_spot width="15" height="15" stretch="1" alignment="c">
 		<texture r="236" g="236" b="236">ui_mmap_common_actor_2</texture>
-		<compass  x="0" y="0" max_dist="5" vert_align="center"></compass>
+		<compass x="0" y="0" width="10" height="4" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_member</compass>
 	</neutral_mini_spot>
 
 	<friend_mini_spot width="15" height="15" stretch="1" alignment="c">
 		<texture r="186" g="255" b="96">ui_mmap_common_actor_2</texture>
-		<compass  x="0" y="0" max_dist="5" vert_align="center"></compass>
+		<compass x="0" y="0" width="10" height="4" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_member</compass>
 	</friend_mini_spot>
 
 	<deadbody_mini_spot width="8" height="8" stretch="1" alignment="c">
 		<texture r="160" g="160" b="160">ui_mmap_death_actor_2</texture>
-		<compass  x="0" y="0" max_dist="5" vert_align="center"></compass>
+		<compass x="0" y="0" width="7" height="7" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_death</compass>
 	</deadbody_mini_spot>
 	
 <!-- map_spot_new_xform
