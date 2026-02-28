@@ -148,14 +148,14 @@
 	    <texture id="ui_inGame2_radiation_inv_yellow" 	x="773" y="933" width="45" height="45" />
 	    <texture id="ui_inGame2_radiation_inv_red" 		x="589" y="933" width="45" height="45" />
 		
-		<texture id="ui_mmap_squad_leader_2"	x="403" y="540" width="20" height="20" />
-		<texture id="ui_pda2_squad_leader_2"	x="403" y="540" width="20" height="20" />
+		<texture id="ui_mmap_squad_leader_2"	x="389" y="449" width="20" height="20" />
+		<texture id="ui_pda2_squad_leader_2"	x="389" y="449" width="20" height="20" />
 		 
-		<texture id="ui_mmap_common_actor_2"	x="403" y="562" width="20" height="20" />
-		<texture id="ui_pda2_common_actor_2"	x="403" y="562" width="20" height="20" />
+		<texture id="ui_mmap_common_actor_2"	x="361" y="449" width="20" height="20" />
+		<texture id="ui_pda2_common_actor_2"	x="361" y="449" width="20" height="20" />
 		
-		<texture id="ui_mmap_death_actor_2"		x="403" y="584" width="20" height="20" />
-		<texture id="ui_pda2_death_actor_2"		x="403" y="584" width="20" height="20" />
+		<texture id="ui_mmap_death_actor_2"		x="338" y="449" width="20" height="20" />
+		<texture id="ui_pda2_death_actor_2"		x="338" y="449" width="20" height="20" />
 		
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_2_b" 		x="414" y="240" width="44" height="45" />
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_2_back" 	x="411" y="240" width="47" height="45" />
@@ -172,5 +172,5 @@
 		<texture id="ui_inGame2_ammo_ap" x="311" y="819" width="28" height="28" />	
 		<texture id="ui_inGame2_ammo_zhekan" x="343" y="819" width="28" height="28" />
 		<texture id="ui_inGame2_ammo_buck" x="375" y="819" width="28" height="28" />	
-	</file>
+	</file> 
 </w>

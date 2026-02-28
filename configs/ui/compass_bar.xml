@@ -1,53 +1,22 @@
 <window>
-    <compass_bar
-        alignment="c"
-        fov_angle="45"
-        height="0.045"
-        width="0.52"
-        x="0.5"
-        y="0.060"
-    >
-        <background
-            alignment="c"
-            height="0.5"
-            width="0.6"
-            stretch="1"
-            x="0"
-            y="-0.625"
-        >
+    <compass_bar alignment="c" fade_in_speed="6" fade_out_speed="5" fov_angle="45" x="0.5" y="0.055" width="0.52" height="0.05" stretch="1">
+        <background x="0" y="-0.625" width="1.0" height="1.0" alignment="l" stretch="1">
             <texture>ui_inGame2_compass_bar_window</texture>
         </background>
 
-        <strip
-            height="5"
-            stretch="1"
-            tex_loop="1"
-            tex_width="1024"
-            units="relative"
-            width="0.89"
-            x="0.050"
-            y="-1.5"
-        >
-            <texture height="1" width="1" height_px="5" offset_x="0" offset_y="-6">ui_inGame2_compass_dial</texture>
-
-            <cardinal_points
-                alignment="c"
-                height="0.28"
-                units="relative"
-                width="0.065"
-                y="0.25"
-                stretch="1"
-            >
+        <strip x="0.5" y="0.4" width="0.9" height="1.0" tex_loop="1" tex_width="1024"  alignment="c" stretch="1">
+            <texture x="0" y="30" width="1.0" height="0.15">ui_inGame2_compass_dial</texture>
+            <cardinal_points alignment="c" x="0" y="0.35" width="0.065" height="0.4" stretch="1">
                 <text align="c" font="font_blender_pro_b_14" vert_align="c" stretch="1"/>
                 <main_cardinals>
-                    <text align="c" font="font_blender_pro_b_14" color="ui_1" vert_align="c" stretch="1" />
+                    <text align="c" font="font_blender_pro_b_14" colour="ui_7" vert_align="c" stretch="1"/>
                     <n>N</n>
                     <e align="r">E</e>
                     <s>S</s>
                     <w align="l">W</w>
                 </main_cardinals>
                 <inter_cardinals>
-                    <text align="c" font="font_blender_pro_b_12" color="ui_1" vert_align="c" stretch="1" />
+                    <text align="c" font="font_blender_pro_b_12" colour="ui_7" vert_align="c" stretch="1"/>
                     <ne>NE</ne>
                     <se>SE</se>
                     <sw>SW</sw>
@@ -56,45 +25,12 @@
             </cardinal_points>
         </strip>
 
-        <spots
-            align="c"
-            collect_interval="0.1"
-            show="1"
-            x="0"
-            y="0"
-            stretch="1"
-        >
-            <spot_template height="8" width="8" stretch="1"/>
-            <spot_types>
-                <default offset_x="0" offset_y="-20" valign="center" stretch="1"/>
-            </spot_types>
+        <spots align="c" show="1" stretch="1">
         </spots>
 
-        <active_target
-            height="22"
-            offset_y="-20"
-            padding="8"
-            smoothing_speed="10"
-            width="10"
-            stretch="1"
-        >
-            <marker
-                height="20"
-                texture="ui_inGame2_hint_wnd_main_window"
-                width="20"
-                x="0"
-                y="-5"
-                stretch="1"
-            />
-            <distance_text
-                align="l"
-                color="ui_1"
-                height="14"
-                vert_align="c"
-                width="80"
-                x="-3"
-                y="-20"
-            >
+        <active_target x="0" y="0" width="10" height="22" padding="8" smoothing_speed="10" stretch="1">
+            <marker x="0" y="-1" width="18" height="18" texture="ui_inGame2_hint_wnd_main_window" stretch="1"/>
+            <distance_text x="0" y="-15" width="80" height="14" align="l" vert_align="c" color="ui_1">
                 <text align="l" font="font_rubik_12" vert_align="c"/>
             </distance_text>
         </active_target>

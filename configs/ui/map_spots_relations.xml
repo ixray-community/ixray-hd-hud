@@ -1,39 +1,43 @@
 	<enemy_location hint="enemy" no_offline="1">
-		<mini_map compass="1" spot="enemy_mini_spot"/>
+		<mini_map spot="enemy_mini_spot"/>
 	</enemy_location>
 
 	<neutral_location hint="neutral">
-		<mini_map compass="1" spot="neutral_mini_spot"/>
+		<mini_map spot="neutral_mini_spot"/>
 	</neutral_location>
 
 	<friend_location hint="friend">
-		<mini_map compass="1" spot="friend_mini_spot"/>
+		<mini_map spot="friend_mini_spot"/>
 	</friend_location>
 
 	<deadbody_location hint="deadbody">
-		<mini_map compass="1" spot="deadbody_mini_spot"/>
+		<mini_map spot="deadbody_mini_spot"/>
 	</deadbody_location>
 
-	<enemy_mini_spot width="10" height="10" stretch="1" alignment="c" >
+	<enemy_mini_spot width="15" height="15" stretch="1" alignment="c" >
 		<texture r="255" g="47" b="47">ui_mmap_common_actor_2</texture>
+		<compass  x="0" y="0" max_dist="5" vert_align="center"></compass>
 	</enemy_mini_spot>
 
-	<neutral_mini_spot width="10" height="10" stretch="1" alignment="c">
+	<neutral_mini_spot width="15" height="15" stretch="1" alignment="c">
 		<texture r="236" g="236" b="236">ui_mmap_common_actor_2</texture>
+		<compass  x="0" y="0" max_dist="5" vert_align="center"></compass>
 	</neutral_mini_spot>
 
-	<friend_mini_spot width="10" height="10" stretch="1" alignment="c">
+	<friend_mini_spot width="15" height="15" stretch="1" alignment="c">
 		<texture r="186" g="255" b="96">ui_mmap_common_actor_2</texture>
+		<compass  x="0" y="0" max_dist="5" vert_align="center"></compass>
 	</friend_mini_spot>
 
-	<deadbody_mini_spot width="10" height="10" stretch="1" alignment="c">
+	<deadbody_mini_spot width="8" height="8" stretch="1" alignment="c">
 		<texture r="160" g="160" b="160">ui_mmap_death_actor_2</texture>
+		<compass  x="0" y="0" max_dist="5" vert_align="center"></compass>
 	</deadbody_mini_spot>
 	
 <!-- map_spot_new_xform
 
   <location_squad_attack_point>
-    <mini_map compass="1" spot="location_squad_attack_point_spot_mini"/>
+    <mini_map spot="location_squad_attack_point_spot_mini"/>
   </location_squad_attack_point>
   <location_squad_attack_point_spot_mini x="0" y="0" width="9" height="9" alignment="c" stretch="1" scale_min="3.0" scale_max="5.1" scale="0" location_level="10">
     <texture r="11" g="178" b="248">ui_mmap_common_actor</texture>
