@@ -3,4 +3,16 @@
 	<string id="st_ui_pda_personal_spot">
 		<text>Personal spot</text>
 	</string>
+	<string id="st_pda_change_spot_hint">
+		<text>Edit spot label</text>
+	</string>
+	<string id="st_pda_delete_spot">
+		<text>Delete spot</text>
+	</string>
+	<string id="st_pda_set_navigation_spot">
+		<text>Set route</text>
+	</string>
+	<string id="st_pda_unset_navigation_spot">
+		<text>Clear route</text>
+	</string>
 </string_table>

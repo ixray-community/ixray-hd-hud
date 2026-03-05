@@ -309,7 +309,7 @@
 			</total_text>
 		</static_ammo_adaptive>
 
-		<static_wpn_icon x="1010" y="695" width="90" height="30" align="l" alignment="c" stretch="1" display_mode="text" show_weapon_name="1">
+		<static_wpn_icon x="1013" y="694.5" width="90" height="30" align="l" alignment="c" stretch="1" display_mode="text" show_weapon_name="1">
 			<ammo_icon x="0" y="0" width="24" height="24"/>
 			<ammo_text x="28" y="2" width="60" height="26">
 				<text font="font_blender_pro_b_14" align="l" vert_align="c" r="199" g="199" b="199" a="255"/>
@@ -321,7 +321,7 @@
 			<mode_mapping text="A" icon="ui_inGame2_icon_fmode_auto"/>
 			<mode_mapping text="2" icon="ui_inGame2_icon_fmode_2burst"/>
 			<mode_mapping text="3" icon="ui_inGame2_icon_fmode_3burst"/>
-			<text font="letterica18" color="ui_1" align="c" vert_align="c"/>
+			<text font="letterica18" r="199" g="199" b="199" a="255" align="c" vert_align="c"/>
 		</static_fire_mode>
 	</hud_states>
 </w>
