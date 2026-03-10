@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
 	<string id="st_ui_pda_personal">
-		<text>Личная метка</text>
+		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
 	</string>
 	<string id="st_ui_pda_personal_spot">
-		<text>Личная метка</text>
+		<text>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
 	</string>
 	<string id="st_pda_change_spot_hint">
-		<text>Изменить подпись</text>
+		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
 	</string>
 	<string id="st_pda_delete_spot">
-		<text>Удалить метку</text>
+		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</text>
 	</string>
 	<string id="st_pda_set_navigation_spot">
-		<text>Установить маршрут</text>
+		<text>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
 	</string>
 	<string id="st_pda_unset_navigation_spot">
-		<text>Снять маршрут</text>
+		<text>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</text>
 	</string>
 </string_table>

@@ -16,8 +16,7 @@
         <texture id="ui_inGame2_PDA_personal_spot_2" x="149" y="702" width="29" height="29" />
         <texture id="ui_inGame2_PDA_stash" x="194" y="702" width="29" height="29" />  
 
-        <texture id="ui_inGame2_PDA_squad_leader" x="15" y="796" width="19" height="22" />
-        <texture id="ui_inGame2_PDA_squad_member" x="40" y="796" width="19" height="11" /> 
-        <texture id="ui_inGame2_PDA_squad_death" x="65" y="796" width="18" height="18" /> 
+        <texture id="ui_inGame2_compass_altitude_up" x="25" y="660" width="16" height="16" />
+        <texture id="ui_inGame2_compass_altitude_down" x="55" y="660" width="16" height="16" />
    </file>
 </w>
