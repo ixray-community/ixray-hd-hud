@@ -4,7 +4,7 @@
             <texture>ui_inGame2_compass_bar_window</texture>
         </background>
 
-        <strip x="0.5" y="0.4" width="0.9" height="1.0" tex_loop="1" tex_width="1024"  alignment="c" stretch="1">
+        <strip x="0.5" y="0.4" width="0.89" height="1.0" tex_loop="1" tex_width="1024"  alignment="c" stretch="1">
             <texture x="0" y="29" width="0.95" height="0.5">ui_inGame2_compass_dial</texture>
             <cardinal_points alignment="c" x="0" y="0.55" width="0.065" height="0.4" stretch="1">
                 <text align="c" font="font_blender_pro_b_14" vert_align="c" stretch="1"/>
