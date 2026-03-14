@@ -83,20 +83,20 @@
 	    <texture id="ui_inGame2_circle_radiation_orange" x="12" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_radiation_red" x="12" y="969" width="40" height="40" />
 
-	    <texture id="ui_inGame2_circle_thirst_green" x="731" y="969" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_thirst_yellow" x="237" y="885" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_thirst_orange" x="237" y="927" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_thirst_red" x="237" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_green" x="780" y="223" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_yellow" x="826" y="223" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_orange" x="872" y="223" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_thirst_red" x="919" y="223" width="40" height="40" />
 
 	    <texture id="ui_inGame2_circle_toxic_green" x="776" y="969" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_toxic_yellow" x="282" y="885" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_toxic_orange" x="282" y="927" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_toxic_red" x="282" y="969" width="40" height="40" />
 
-	    <texture id="ui_inGame2_circle_sleepines_green" x="641" y="969" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_sleepines_yellow" x="147" y="885" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_sleepines_orange" x="147" y="927" width="40" height="40" />
-	    <texture id="ui_inGame2_circle_sleepines_red" x="147" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_sleepiness_green" x="641" y="969" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_sleepiness_yellow" x="147" y="885" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_sleepiness_orange" x="147" y="927" width="40" height="40" />
+	    <texture id="ui_inGame2_circle_sleepiness_red" x="147" y="969" width="40" height="40" />
 
 	    <texture id="ui_inGame2_circle_freezing_green" x="950" y="969" width="40" height="40" />
 	    <texture id="ui_inGame2_circle_freezing_yellow" x="457" y="885" width="40" height="40" />

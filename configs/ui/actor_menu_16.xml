@@ -93,11 +93,11 @@
     </partner_ch_info>
     <!-- Finish -->
 
-	<actor_money_static x="800" y="75" width="104" height="22">
+	<actor_money_static x="800" y="77.5" width="104" height="22">
 		<text align="r" font="graffiti22"/>
 	</actor_money_static>
 
-	<partner_money_static x="155" y="75" width="104" height="22">
+	<partner_money_static x="155" y="77.5" width="104" height="22">
 		<text align="r" font="graffiti22"/>
 	</partner_money_static>
 
@@ -106,14 +106,14 @@
 		<slot> <!-- Knife -->
 		</slot>
 		<slot> <!-- Pistol -->
-			<slot_highlight x="384" y="546" width="255" height="98" stretch="1">
+			<slot_highlight x="384" y="618" width="255" height="98" stretch="1">
 				<texture>ui_inGame2_weapon_highlighter</texture>
 			</slot_highlight>
-			<slot_dragdrop x="384" y="548" width="255" height="100"
+			<slot_dragdrop x="384" y="615" width="255" height="100"
 				cell_width="33" cell_height="41" rows_num="2" cols_num="6"
 				custom_placement="0" vertical_placement="0" a="0"
 				virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
-    		<slot_progress x="489.5" y="636" width="45" height="6" horz="1" min="0" max="1" pos="0">
+    		<slot_progress x="488.5" y="708.5" width="47" height="7" horz="1" min="0" max="1" pos="0">
     		    <progress stretch="1">
     		        <texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
     		    </progress>
@@ -124,14 +124,14 @@
 		</slot>
         <slot>
             <!-- Auto -->
-            <slot_highlight x="384" y="435" width="255" height="98" stretch="1">
+            <slot_highlight x="384" y="510" width="255" height="98" stretch="1">
                 <texture>ui_inGame2_weapon_highlighter</texture>
             </slot_highlight>
-            <slot_dragdrop x="384" y="435" width="255" height="100" 
+            <slot_dragdrop x="384" y="510" width="255" height="100" 
 				cell_width="33" cell_height="41" rows_num="2" cols_num="6" 
 				custom_placement="0" vertical_placement="0" a="0" 
 				virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
-            <slot_progress x="489.5" y="529" width="45" height="6" horz="1" min="0" max="1" pos="0">
+            <slot_progress x="488.5" y="601" width="47" height="7" horz="1" min="0" max="1" pos="0">
                 <progress stretch="1">
                     <texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
                 </progress>
@@ -151,7 +151,7 @@
 				cell_width="33" cell_height="41" rows_num="3" cols_num="2"
 				custom_placement="0" a="0" virtual_cells="1" vc_vert_align="c"
 				vc_horiz_align="c"/>
-    		<slot_progress x="410" y="277.5" width="45" height="6" horz="1" min="0" max="1" pos="0">
+    		<slot_progress x="410" y="277" width="47" height="7" horz="1" min="0" max="1" pos="0">
     		    <progress stretch="1">
     		        <texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
     		    </progress>
@@ -166,11 +166,11 @@
 		<slot> <!-- PDA -->
 		</slot>
 		<slot> <!-- Detector -->
-			<slot_dragdrop x="384" y="362" width="126" height="66"
+			<slot_dragdrop x="384" y="435" width="126" height="66"
 				cell_width="33" cell_height="41" rows_num="1" cols_num="2"
 				custom_placement="0" a="0" virtual_cells="1" vc_vert_align="c"
 				vc_horiz_align="c"/>
-			<slot_highlight x="384" y="362" width="125" height="70" stretch="1">
+			<slot_highlight x="384" y="435" width="125" height="70" stretch="1">
 				<texture>ui_inGame2_detector_highlighter</texture>
 			</slot_highlight>
 		</slot>
@@ -182,7 +182,7 @@
 			<slot_highlight x="386" y="7" width="96" height="103" stretch="1">
 				<texture>ui_inGame2_helmet_highlighter</texture>
 			</slot_highlight>
-    		<slot_progress x="411" y="9" width="45" height="6" horz="1" min="0" max="1" pos="0">
+    		<slot_progress x="410" y="8.5" width="47" height="7" horz="1" min="0" max="1" pos="0">
     		    <progress stretch="1">
     		        <texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
     		    </progress>
@@ -198,14 +198,14 @@
 		<slot> <!-- Backpack -->
 		</slot>
 		<slot> <!-- Pistol (New) -->
-			<slot_highlight x="513" y="365" width="400" height="60" stretch="1">
+			<slot_highlight x="513" y="440" width="400" height="60" stretch="1">
 				<texture>ui_inGame2_pistol_highlighter</texture>
 			</slot_highlight>
-			<slot_dragdrop x="518" y="362" width="120" height="66"
+			<slot_dragdrop x="518" y="435" width="120" height="66"
 				cell_width="33" cell_height="41" rows_num="1" cols_num="2"
 				custom_placement="0" vertical_placement="0" a="0"
 				virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
-			<slot_progress x="555" y="420.5" width="45" height="6" horz="1" min="0" max="1" pos="0">
+			<slot_progress x="554.5" y="492" width="47" height="7" horz="1" min="0" max="1" pos="0">
 				<progress stretch="1">
 					<texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
 				</progress>
@@ -216,7 +216,7 @@
 		</slot>
 	</inventory_slot_wnd>
 
-	<quick_slot_highlight x="384" y="651" width="63" height="68" dx="64" stretch="1">
+	<quick_slot_highlight x="384" y="364" width="63" height="68" dx="64" stretch="1">
 		<texture>ui_inGame2_quick_item_highlighter</texture>
 	</quick_slot_highlight>
 	
@@ -224,16 +224,16 @@
 		<texture>ui_inGame2_artefakt_highlighter</texture>
 	</artefact_slot_highlight>
 
-	<quick_slot1_text x="429" y="703" width="14" height="13">
+	<quick_slot1_text x="429" y="415" width="14" height="13">
 		<text align="c" font="font_rubik_16">quick_use_str_1</text>
 	</quick_slot1_text>
-	<quick_slot2_text x="494" y="703" width="14" height="13">
+	<quick_slot2_text x="494" y="415" width="14" height="13">
 		<text align="c" font="font_rubik_16">quick_use_str_2</text>
 	</quick_slot2_text>
-	<quick_slot3_text x="559" y="703" width="14" height="13">
+	<quick_slot3_text x="559" y="415" width="14" height="13">
 		<text align="c" font="font_rubik_16">quick_use_str_3</text>
 	</quick_slot3_text>
-	<quick_slot4_text x="623" y="703" width="14" height="13">
+	<quick_slot4_text x="623" y="415" width="14" height="13">
 		<text align="c" font="font_rubik_16">quick_use_str_4</text>
 	</quick_slot4_text>
 
@@ -247,15 +247,15 @@
 		<text align="l" font="font_rubik_18" color="ui_3"/>
 	</actor_weight_max>
 
-	<partner_weight_caption x="174" y="738" width="68" height="14">
+	<partner_weight_caption x="265" y="738" width="68" height="14">
 		<text align="r" font="font_rubik_18" r="211" g="211" b="211" a="255">ui_total_weight</text>
 	</partner_weight_caption>
-	<partner_weight x="342" y="738" width="36" height="14">
+	<partner_weight x="360" y="738" width="36" height="14">
 		<text align="l" font="font_rubik_18" color="ui_1"/>
 	</partner_weight>
 
 	<!-- partner  -->
-	<left_delimiter x="0" y="226" width="375" height="162" stretch="1">
+	<left_delimiter x="0" y="226" width="376" height="162" stretch="1">
 		<texture>ui_invaddon_trade_16</texture>
 		<!--trade_caption x="123" y="74" width="48" height="16">
 			<text align="l" font="letterica16" color="ui_3">ui_total_price</text>
@@ -263,12 +263,12 @@
 		<trade_price x="260" y="74" width="40" height="16">
 			<text align="l" font="graffiti19"/>
 		</trade_price>
-		<trade_weight_max x="300" y="74" width="40" height="16">
+		<trade_weight_max x="320" y="74" width="40" height="16">
 			<text align="l" font="graffiti19" color="ui_3"/>
 		</trade_weight_max>
 	</left_delimiter>
 	<!-- actor -->
-	<right_delimiter x="648" y="226" width="376" height="163" stretch="1">
+	<right_delimiter x="648" y="226" width="377" height="163" stretch="1">
 	    <texture>ui_invaddon_trade_16</texture>
 	    <!--trade_caption x="123" y="74" width="48" height="16">
 	    	<text align="r" font="letterica16" color="ui_3">ui_total_price</text>
@@ -281,7 +281,7 @@
 	    </trade_weight_max>
 	</right_delimiter>
 
-	<belt_list_over x="384" y="291.5" width="48" height="62" dx="52" stretch="1">
+	<belt_list_over x="383.5" y="292" width="48" height="62" dx="52" stretch="1">
 		<texture >ui_inGame2_artefact_blocker</texture>
 	</belt_list_over>
 
@@ -292,7 +292,7 @@
   <dragdrop_trash x="0" y="0" width="375" height="768"
     	cell_width="375" cell_height="768" rows_num="1" cols_num="1" a="0"/>
 
-  <dragdrop_bag x="665" y="145" width="347" height="574"
+  <dragdrop_bag x="665" y="146" width="347" height="574"
     	cell_width="33" cell_height="43" rows_num="13" cols_num="10"
 		unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
@@ -320,28 +320,28 @@
 	    cell_width="33" cell_height="43" rows_num="14" cols_num="10"
 	    unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
-	<dragdrop_quick_slots x="396" y="666" width="227" height="41"
+	<dragdrop_quick_slots x="396" y="375" width="227" height="41"
 	    cell_width="33" cell_height="41" a="0" rows_num="1"	cols_num="4"
 		cell_sp_x="32" cell_sp_y="0" custom_placement="1"/>
 
-	<trade_buy_button x="10" y="295" width="134" height="26" stretch="1" hint="ui_st_buy_hint">
+	<trade_buy_button x="14" y="295" width="105" height="24" stretch="1" hint="ui_st_buy_hint">
 	    <window_name>trade_buy_button</window_name>
 	    <texture>ui_inGame2_inventory_button</texture>
 	    <text font="graffiti22" align="c">ui_st_buy</text>
 	    <text_color>
-	        <e color ="ui_7"/>
+	        <e color ="ui_1"/>
 	        <t color ="ui_black"/>
 	        <d color ="ui_1"/>
 	        <h color ="ui_black"/>
 	    </text_color>
 	</trade_buy_button>
 
-	<trade_sell_button x="660" y="295" width="134" height="26" stretch="1" hint="ui_st_sell_hint">
+	<trade_sell_button x="662" y="295" width="105" height="24" stretch="1" hint="ui_st_sell_hint">
 	    <window_name>trade_sell_button</window_name>
 	    <texture>ui_inGame2_inventory_button</texture>
 	    <text font="graffiti22" align="c">ui_st_sell</text>
 	    <text_color>
-	        <e color ="ui_7"/>
+	        <e color ="ui_1"/>
 	        <t color ="ui_black"/>
 	        <d color ="ui_1"/>
 	        <h color ="ui_black"/>
@@ -527,54 +527,62 @@
 	    </power_sensor>
 	</actor_state_info>
 
-	<inventory_sort_tabs x="660" y="108" width="352" height="40">
-		<button x="0" y="0" width="44" height="30" stretch="1" id="all" hint="st_inv_sort_all_hint">
+	<inventory_sort_tabs x="662" y="110" width="352" height="40">
+		<button x="0" y="0" width="44" height="33" stretch="1" id="all" hint="st_inv_sort_all_hint">
 			<texture_e>ui_inv_sort_all_e</texture_e>
 			<texture_h>ui_inv_sort_all_h</texture_h>
 			<texture_t>ui_inv_sort_all_t</texture_t>
 			<texture_d>ui_inv_sort_all_e</texture_d>
+			<sound_t>interface\inv_open</sound_t>
 		</button>
-		<button x="44" y="0" width="44" height="30" stretch="1" id="weapons" hint="st_inv_sort_weapons_hint">
+		<button x="44" y="0" width="44" height="33" stretch="1" id="weapons" hint="st_inv_sort_weapons_hint">
 			<texture_e>ui_inv_sort_weapons_e</texture_e>
 			<texture_h>ui_inv_sort_weapons_h</texture_h>
 			<texture_t>ui_inv_sort_weapons_t</texture_t>
 			<texture_d>ui_inv_sort_weapons_e</texture_d>
+			<sound_t>interface\inv_open</sound_t>
 		</button>
-		<button x="88" y="0" width="44" height="30" stretch="1" id="ammo" hint="st_inv_sort_ammo_hint">
+		<button x="88" y="0" width="44" height="33" stretch="1" id="ammo" hint="st_inv_sort_ammo_hint">
 			<texture_e>ui_inv_sort_ammo_e</texture_e>
 			<texture_h>ui_inv_sort_ammo_h</texture_h>
 			<texture_t>ui_inv_sort_ammo_t</texture_t>
 			<texture_d>ui_inv_sort_ammo_e</texture_d>
+			<sound_t>interface\inv_open</sound_t>
 		</button>
-		<button x="132" y="0" width="44" height="30" stretch="1" id="armor" hint="st_inv_sort_armor_hint">
+		<button x="132" y="0" width="44" height="33" stretch="1" id="armor" hint="st_inv_sort_armor_hint">
 			<texture_e>ui_inv_sort_armor_e</texture_e>
 			<texture_h>ui_inv_sort_armor_h</texture_h>
 			<texture_t>ui_inv_sort_armor_t</texture_t>
 			<texture_d>ui_inv_sort_armor_e</texture_d>
+			<sound_t>interface\inv_open</sound_t>
 		</button>
-		<button x="176" y="0" width="44" height="30" stretch="1" id="devices" hint="st_inv_sort_devices_hint">
+		<button x="176" y="0" width="44" height="33" stretch="1" id="devices" hint="st_inv_sort_devices_hint">
 			<texture_e>ui_inv_sort_devices_e</texture_e>
 			<texture_h>ui_inv_sort_devices_h</texture_h>
 			<texture_t>ui_inv_sort_devices_t</texture_t>
 			<texture_d>ui_inv_sort_devices_e</texture_d>
+			<sound_t>interface\inv_open</sound_t>
 		</button>
-		<button x="220" y="0" width="44" height="30" stretch="1" id="consumables" hint="st_inv_sort_consumables_hint">
+		<button x="220" y="0" width="44" height="33" stretch="1" id="consumables" hint="st_inv_sort_consumables_hint">
 			<texture_e>ui_inv_sort_consumables_e</texture_e>
 			<texture_h>ui_inv_sort_consumables_h</texture_h>
 			<texture_t>ui_inv_sort_consumables_t</texture_t>
 			<texture_d>ui_inv_sort_consumables_e</texture_d>
+			<sound_t>interface\inv_open</sound_t>
 		</button>
-		<button x="264" y="0" width="44" height="30" stretch="1" id="artefacts" hint="st_inv_sort_artefacts_hint">
+		<button x="264" y="0" width="44" height="33" stretch="1" id="artefacts" hint="st_inv_sort_artefacts_hint">
 			<texture_e>ui_inv_sort_artefacts_e</texture_e>
 			<texture_h>ui_inv_sort_artefacts_h</texture_h>
 			<texture_t>ui_inv_sort_artefacts_t</texture_t>
 			<texture_d>ui_inv_sort_artefacts_e</texture_d>
+			<sound_t>interface\inv_open</sound_t>
 		</button>
-		<button x="308" y="0" width="44" height="30" stretch="1" id="attachments" hint="st_inv_sort_attachments_hint">
+		<button x="308" y="0" width="44" height="33" stretch="1" id="attachments" hint="st_inv_sort_attachments_hint">
 			<texture_e>ui_inv_sort_attachments_e</texture_e>
 			<texture_h>ui_inv_sort_attachments_h</texture_h>
 			<texture_t>ui_inv_sort_attachments_t</texture_t>
 			<texture_d>ui_inv_sort_attachments_e</texture_d>
+			<sound_t>interface\inv_open</sound_t>
 		</button>
 	</inventory_sort_tabs>
 </w>

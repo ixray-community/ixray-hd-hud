@@ -4,15 +4,15 @@
 		<text>Личная метка</text>
 	</string>
 	<string id="st_pda_change_spot_hint">
-		<text>Изменить название</text>
+		<text>Редактировать</text>
 	</string>
 	<string id="st_pda_delete_spot">
-		<text>Удалить метку</text>
+		<text>Удалить</text>
 	</string>
 	<string id="st_pda_set_navigation_spot">
-		<text>Установить маршрут</text>
+		<text>Маршрут</text>
 	</string>
 	<string id="st_pda_unset_navigation_spot">
-		<text>Очистить маршрут</text>
+		<text>Снять маршрут</text>
 	</string>
 </string_table>

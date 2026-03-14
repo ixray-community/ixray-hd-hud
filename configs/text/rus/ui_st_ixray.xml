@@ -561,4 +561,118 @@
 	<string id="ui_rmw_ammo_next">
 		<text>$$ACTION_WPN_NEXT$$ Тип боеприпасов</text>
 	</string>
+	<string id="ui_talk_reply">
+		<text>$$ACTION_UI_ACCEPT$$ Поговорить</text>
+	</string>
+	<string id="ui_talk_log">
+		<text>$$ACTION_UI_SEC_UP$$/$$ACTION_UI_SEC_DOWN$$ Лог</text>
+	</string>
+	<string id="ui_talk_open_trade">
+		<text>$$ACTION_UI_ACTION_2$$ Торговля</text>
+	</string>
+	<string id="ui_talk_open_upgrade">
+		<text>$$ACTION_UI_ACTION_2$$ Ремонт/модификации</text>
+	</string>
+	<string id="ui_am_actions">
+		<text>$$ACTION_UI_ACTION_1$$ Действия</text>
+	</string>
+	<string id="ui_am_use">
+		<text>$$ACTION_UI_ACCEPT$$ Использовать</text>
+	</string>
+	<string id="ui_am_info">
+		<text>$$ACTION_UI_HINT$$ Информация</text>
+	</string>
+	<string id="ui_am_take_all">
+		<text>$$ACTION_actormenu_action$$ Взять всё</text>
+	</string>
+	<string id="ui_am_put_all">
+		<text>$$ACTION_actormenu_action$$ Сложить всё</text>
+	</string>
+	<string id="ui_am_trade">
+		<text>$$ACTION_actormenu_action$$ Торговать</text>
+	</string>
+	<string id="ui_am_propbox_select">
+		<text>$$ACTION_UI_ACCEPT$$ Выбрать</text>
+	</string>
+	<string id="ui_am_repair">
+		<text>$$ACTION_actormenu_action$$ Починить</text>
+	</string>
+	<string id="ui_am_upgrade">
+		<text>$$ACTION_UI_ACCEPT$$ Улучшить</text>
+	</string>
+	<string id="st_move_to_offer">
+		<text>предложить</text>
+	</string>
+	<string id="st_move_to_offer_amount">
+		<text>предложить несколько</text>
+	</string>
+	<string id="st_move_to_offer_all">
+		<text>предложить всё</text>
+	</string>
+	<string id="st_remove_from_offer">
+		<text>убрать из предложения</text>
+	</string>
+	<string id="st_remove_from_offer_amount">
+		<text>убрать несколько</text>
+	</string>
+	<string id="st_remove_from_offer_all">
+		<text>убрать всё</text>
+	</string>
+	<string id="st_move_to_cart">
+		<text>выбрать</text>
+	</string>
+	<string id="st_move_to_cart_amount">
+		<text>выбрать несколько</text>
+	</string>
+	<string id="st_move_to_cart_all">
+		<text>выбрать всё</text>
+	</string>
+	<string id="st_remove_from_cart">
+		<text>убрать</text>
+	</string>
+	<string id="st_remove_from_cart_amount">
+		<text>убрать несколько</text>
+	</string>
+	<string id="st_remove_from_cart_all">
+		<text>убрать всё</text>
+	</string>
+	<string id="st_split_item_half_gp">
+		<text>$$ACTION_UI_ACTION_1$$ Половина</text>
+	</string>
+	<string id="st_split_item_all_gp">
+		<text>$$ACTION_UI_ACTION_2$$ Все</text>
+	</string>
+	<string id="kb_safemode">
+		<text>Опустить оружие</text>
+	</string>
+	<string id="ui_tasks_show_on_map">
+		<text>$$ACTION_pda_tasks_filter_toggle$$ Показать на карте</text>
+	</string>
+	<string id="ui_tasks_map_show_me">
+		<text>$$ACTION_pda_tasks_map_show_me$$ Текущее местоположение</text>
+	</string>
+	<string id="ui_tasks_map_zoom">
+		<text>$$ACTION_pda_tasks_map_zoom_out$$/$$ACTION_pda_tasks_map_zoom_in$$ Масштаб</text>
+	</string>
+	<string id="ui_tasks_filter_toggle">
+		<text>$$ACTION_pda_tasks_filter_toggle$$ Включить фильтр</text>
+	</string>
+	<string id="ui_pda_show_mission">
+		<text>$$ACTION_pda_tasks_toggle_list$$ Показать задания</text>
+	</string>
+	<string id="ui_pda_hide_mission">
+		<text>$$ACTION_pda_tasks_toggle_list$$ Скрыть задания</text>
+	</string>
+	<string id="ui_pda_toggle_legend">
+		<text>$$ACTION_pda_tasks_toggle_legend$$ Легенда</text>
+	</string>
+	<string id="ui_tasks_filter_next">
+		<text>$$ACTION_pda_tasks_filter_prev$$/$$ACTION_pda_tasks_filter_next$$ Фильтры меток</text>
+	</string>
+	<string id="ui_tasks_show_on_map_main">
+		<text>$$ACTION_pda_tasks_filter_toggle$$ Показать главное задание</text>
+	</string>
+	<string id="dead_character_use_or_drag_gp">
+		<text>Обыскать ($$ACTION_USE$$)\nТащить труп ($$ACTION_SPRINT_TOGGLE$$+$$ACTION_USE$$)</text>
+	</string>
 </string_table>
