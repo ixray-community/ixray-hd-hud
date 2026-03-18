@@ -94,11 +94,11 @@
     <!-- Finish -->
 
 	<actor_money_static x="800" y="77.5" width="104" height="22">
-		<text align="r" font="graffiti22"/>
+		<text align="r" font="graffiti22" r="211" g="211" b="211" a="255"/>
 	</actor_money_static>
 
 	<partner_money_static x="155" y="77.5" width="104" height="22">
-		<text align="r" font="graffiti22"/>
+		<text align="r" font="graffiti22" r="211" g="211" b="211" a="255"/>
 	</partner_money_static>
 
 
@@ -113,14 +113,22 @@
 				cell_width="33" cell_height="41" rows_num="2" cols_num="6"
 				custom_placement="0" vertical_placement="0" a="0"
 				virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
-    		<slot_progress x="488.5" y="708.5" width="47" height="7" horz="1" min="0" max="1" pos="0">
+    		<!--slot_progress x="488.5" y="708.5" width="47" height="7" horz="1" min="0" max="1" pos="0">
     		    <progress stretch="1">
     		        <texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
     		    </progress>
 				<min_color r="225" g="50" b="50"/>
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
-    		</slot_progress>
+    		</slot_progress-->
+			<slot_progress_percent x="617" y="695" width="24" height="19" horz="1" min="0" max="1" pos="0">
+				<percent_display>
+					<background width="24" height="19" stretch="1">
+						<texture a="255">ui_inGame2_inventory_percent_status</texture>
+					</background>
+					<text x="4" y="4" font="font_blender_pro_b_14" format="percent"/>
+				</percent_display>
+			</slot_progress_percent>
 		</slot>
         <slot>
             <!-- Auto -->
@@ -131,14 +139,22 @@
 				cell_width="33" cell_height="41" rows_num="2" cols_num="6" 
 				custom_placement="0" vertical_placement="0" a="0" 
 				virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
-            <slot_progress x="488.5" y="601" width="47" height="7" horz="1" min="0" max="1" pos="0">
+            <!--slot_progress x="488.5" y="601" width="47" height="7" horz="1" min="0" max="1" pos="0">
                 <progress stretch="1">
                     <texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
                 </progress>
 				<min_color r="225" g="50" b="50"/>
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
-            </slot_progress>
+            </slot_progress-->
+			<slot_progress_percent x="617" y="589" width="24" height="19" horz="1" min="0" max="1" pos="0">
+				<percent_display>
+					<background width="24" height="19" stretch="1">
+						<texture a="255">ui_inGame2_inventory_percent_status</texture>
+					</background>
+					<text x="2" y="4" font="font_blender_pro_b_14" format="percent"/>
+				</percent_display>
+			</slot_progress_percent>
         </slot>
 		<slot> <!-- Grenade -->
 		</slot>
@@ -151,14 +167,22 @@
 				cell_width="33" cell_height="41" rows_num="3" cols_num="2"
 				custom_placement="0" a="0" virtual_cells="1" vc_vert_align="c"
 				vc_horiz_align="c"/>
-    		<slot_progress x="410" y="277" width="47" height="7" horz="1" min="0" max="1" pos="0">
+    		<!--slot_progress x="410" y="277" width="47" height="7" horz="1" min="0" max="1" pos="0">
     		    <progress stretch="1">
     		        <texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
     		    </progress>
 				<min_color r="225" g="50" b="50"/>
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
-    		</slot_progress>
+    		</slot_progress-->
+			<slot_progress_percent x="455" y="263" width="24" height="19" horz="1" min="0" max="1" pos="0">
+				<percent_display>
+					<background width="24" height="19" stretch="1">
+						<texture a="255">ui_inGame2_inventory_percent_status</texture>
+					</background>
+					<text x="2" y="4" font="font_blender_pro_b_14" format="percent"/>
+				</percent_display>
+			</slot_progress_percent>
 			<slot_highlight x="385.5" y="111" width="96" height="174" stretch="1">
 				<texture>ui_inGame2_armor_highlighter</texture>
 			</slot_highlight>
@@ -182,14 +206,22 @@
 			<slot_highlight x="386" y="7" width="96" height="103" stretch="1">
 				<texture>ui_inGame2_helmet_highlighter</texture>
 			</slot_highlight>
-    		<slot_progress x="410" y="8.5" width="47" height="7" horz="1" min="0" max="1" pos="0">
+    		<!--slot_progress x="410" y="8.5" width="47" height="7" horz="1" min="0" max="1" pos="0">
     		    <progress stretch="1">
     		        <texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
     		    </progress>
 				<min_color r="225" g="50" b="50"/>
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
-    		</slot_progress>
+    		</slot_progress-->
+			<slot_progress_percent x="455" y="89" width="24" height="19" horz="1" min="0" max="1" pos="0">
+				<percent_display>
+					<background width="24" height="19" stretch="1">
+						<texture a="255">ui_inGame2_inventory_percent_status</texture>
+					</background>
+					<text x="2" y="4" font="font_blender_pro_b_14" format="percent"/>
+				</percent_display>
+			</slot_progress_percent>
 			<slot_dragdrop x="386" y="8" width="95" height="107" 
 				cell_width="33" cell_height="41" rows_num="2" cols_num="2" 
 				custom_placement="0" a="0" virtual_cells="1" 
@@ -198,21 +230,29 @@
 		<slot> <!-- Backpack -->
 		</slot>
 		<slot> <!-- Pistol (New) -->
-			<slot_highlight x="513" y="440" width="400" height="60" stretch="1">
+			<slot_highlight x="513" y="436" width="125" height="70" stretch="1">
 				<texture>ui_inGame2_pistol_highlighter</texture>
 			</slot_highlight>
 			<slot_dragdrop x="518" y="435" width="120" height="66"
 				cell_width="33" cell_height="41" rows_num="1" cols_num="2"
 				custom_placement="0" vertical_placement="0" a="0"
 				virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
-			<slot_progress x="554.5" y="492" width="47" height="7" horz="1" min="0" max="1" pos="0">
+			<!--slot_progress x="554.5" y="492" width="47" height="7" horz="1" min="0" max="1" pos="0">
 				<progress stretch="1">
 					<texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
 				</progress>
 				<min_color r="225" g="50" b="50"/>
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
-			</slot_progress>
+			</slot_progress-->
+			<slot_progress_percent x="617" y="485" width="24" height="19" horz="1" min="0" max="1" pos="0">
+				<percent_display>
+					<background width="24" height="19" stretch="1">
+						<texture a="255">ui_inGame2_inventory_percent_status</texture>
+					</background>
+					<text x="3.5" y="4" font="font_blender_pro_b_14" format="percent"/>
+				</percent_display>
+			</slot_progress_percent>
 		</slot>
 	</inventory_slot_wnd>
 

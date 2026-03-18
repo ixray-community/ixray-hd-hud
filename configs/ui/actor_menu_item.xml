@@ -303,17 +303,36 @@
 		<text x="2" y="6" width="24" height="16" font="arial_14" color="ui_2" align="r" vert_align="c"/>
 	</cell_item_custom_text>
 
-    <condition_progess_bar x="1" y="1" width="38" height="5" horz="1" min="0" max="1" pos="1">
-	    <background x="0" y="0" width="38" height="5" stretch="1">
-            <texture r="62" g="74" b="74">ui_inGame2_inventory_item_status_bar</texture>
-	    </background>
-        <progress stretch="1">
-            <texture r="142" g="149" b="149">ui_inGame2_inventory_item_status_bar</texture>
-        </progress>
-		<min_color r="196" g="18" b="18"/>
-		<middle_color r="255" g="255" b="118"/>
-		<max_color r="107" g="207" b="119"/>
+    <condition_progess_bar x="1" y="1" width="38" height="5" horz="1" min="0" max="1" pos="0">
+		<!-- Legacy bar: раскомментировать и закомментировать percent_display для полоски -->
+		<!--
+		<legacy x="0" y="0" width="38" height="5" horz="1" min="0" max="1" pos="0">
+			<progress stretch="1">
+				<texture r="142" g="149" b="149">ui_inGame2_inventory_status_bar</texture>
+			</progress>
+			<min_color r="196" g="18" b="18"/>
+			<middle_color r="255" g="255" b="118"/>
+			<max_color r="107" g="207" b="119"/>
+		</legacy>
+		-->
+		<percent_display>
+			<background width="24" height="19" stretch="1">
+				<texture a="255">ui_inGame2_inventory_percent_status</texture>
+			</background>
+			<text x="0" y="0" font="font_blender_pro_b_14" format="number"/>
+		</percent_display>
     </condition_progess_bar>
+
+	<!--
+	<condition_percent_bar x="1" y="1" width="24" height="19" horz="1" min="0" max="1" pos="0">
+		<percent_display>
+			<background width="24" height="19" stretch="1">
+				<texture a="255">ui_inGame2_inventory_percent_status</texture>
+			</background>
+			<text x="0" y="0" font="font_blender_pro_b_14" format="number"/>
+		</percent_display>
+	</condition_percent_bar>
+	-->
 	<!-- ============================ outfit_info ====================================   -->
 
 	<outfit_info x="0" y="0" width="350" height="180">
@@ -450,3 +469,5 @@
 	</outfit_info>
 
 </w>
+
+

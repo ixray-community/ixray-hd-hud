@@ -33,7 +33,8 @@
 	    <texture id="ui_inGame2_artefact_blocker" x="476" y="850" width="61" height="58" />
 	    <texture id="ui_inGame2_helmet_blocker" x="559" y="775" width="121" height="106" />
 
-	    <texture id="ui_item_count_back_2" x="558" y="882" width="32" height="18" />
+	    <texture id="ui_item_count_back_2" x="558" y="882" width="33" height="19" />
+	    <texture id="ui_inGame2_inventory_percent_status" x="603" y="882" width="33" height="19" />
 	</file>
 
 	<file name="ui\ui_actor_widescreen_sidepanels" scale="2">
@@ -52,13 +53,13 @@
 	</file>
 
 	<file name="ui\ui_ui_inv_atribute" scale="2">
-	    <texture id="ui_inGame2_weapon_highlighter" x="26" y="452" width="316" height="96" />
-		<texture id="ui_inGame2_helmet_highlighter" x="27" y="23" width="119" height="101" />
-		<texture id="ui_inGame2_armor_highlighter" x="27" y="127" width="119" height="170" />
-		<texture id="ui_inGame2_detector_highlighter" x="26" y="378" width="152" height="62" />
-		<texture id="ui_inGame2_pistol_highlighter" x="26" y="191" width="378" height="62" />
-		<texture id="ui_inGame2_quick_item_highlighter" x="23" y="665" width="80" height="68" />
-		<texture id="ui_inGame2_artefakt_highlighter" x="23" y="305" width="63" height="63" />
+	    <texture id="ui_inGame2_weapon_highlighter" x="11" y="511" width="319" height="98" />
+		<texture id="ui_inGame2_helmet_highlighter" x="12" y="9" width="121" height="101" />
+		<texture id="ui_inGame2_armor_highlighter" x="12" y="113" width="121" height="171" />
+		<texture id="ui_inGame2_detector_highlighter" x="11" y="437" width="155" height="64" />
+		<texture id="ui_inGame2_pistol_highlighter" x="11" y="437" width="155" height="64" />
+		<texture id="ui_inGame2_quick_item_highlighter" x="9" y="363" width="80" height="67" />
+		<texture id="ui_inGame2_artefakt_highlighter" x="9" y="292" width="63" height="62" />
 	</file>
 
 	<file name="ui\ui_addon_inventory_16" scale="2">
