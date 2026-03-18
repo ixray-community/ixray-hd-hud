@@ -1,0 +1,58 @@
+local con = nil
+local function execute_command(command, arg)
+	if not con then con = get_console() end
+
+	if tostring(arg) == "true" then
+		arg = 1
+	end
+
+	if tostring(arg) == "false" then
+		arg = 0
+	end
+
+	con:execute(tostring(command) .. " " .. tostring(arg))
+end
+
+function on_game_start()
+	RegisterScriptCallback("on_init_ixr_options", function (_ref)
+		-- begin options params
+		
+		_ref.register_option(nil, "hud_visible", "st_ui_hud_show", _ref.check_box(true), 
+			function (group, name, value)
+				execute_command("hud_draw", value)
+			end
+		)
+
+		_ref.register_option("st_ui_group_hd_hud", "minimap_visible", "st_ui_hud_show_minimap", _ref.check_box(true), 
+			function (group, name, value)
+				execute_command("hud_minimap", value)
+			end
+		)
+
+		_ref.register_option("st_ui_group_hd_hud", "quick_slots_visible", "st_ui_hud_show_quick_slots", _ref.check_box(true), 
+			function (group, name, value)
+				execute_command("hud_hide_quick_slots", not value)
+			end
+		)
+
+		_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true), 
+			function (group, name, value)
+				execute_command("hud_crosshair", value)
+			end
+		)
+
+		_ref.register_option("st_ui_group_crosshair", "switch_to_crosshair_point_mode", "st_ui_hud_use_crosshair_point_mode", _ref.check_box(false), 
+			function (group, name, value)
+				execute_command("hud_crosshair_point", value)
+			end
+		)
+
+		_ref.register_option("st_ui_group_crosshair", "show_crosshair_target_distance", "st_ui_hud_show_crosshair_target_distance", _ref.check_box(false), 
+			function (group, name, value)
+				execute_command("hud_crosshair_dist", value)
+			end
+		)
+		
+		-- end options params
+	end)
+end

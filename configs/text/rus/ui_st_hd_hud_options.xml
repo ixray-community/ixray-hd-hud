@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_ui_group_hd_hud">
+		<text>HD Hud</text>
+	</string>
+
+	<string id="st_ui_hud_show">
+		<text>Показывать худ</text>
+	</string>
+	<string id="st_ui_hud_show_minimap">
+		<text>Показывать миникарту</text>
+	</string>
+	<string id="st_ui_hud_show_quick_slots">
+		<text>Показывать слоты быстрого доступа</text>
+	</string>
+	
+	<string id="st_ui_group_crosshair">
+		<text>Прицел</text>
+	</string>
+	
+	<string id="st_ui_hud_show_crosshair">
+		<text>Показывать перекрестие прицела</text>
+	</string>
+	<string id="st_ui_hud_use_crosshair_point_mode">
+		<text>Прицел точка</text>
+	</string>
+	<string id="st_ui_hud_show_crosshair_target_distance">
+		<text>Показывать дистанцию до цели под прицелом</text>
+	</string>
+</string_table>
