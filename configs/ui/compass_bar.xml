@@ -10,7 +10,7 @@
                 <text align="c" font="font_blender_pro_b_14" vert_align="c" stretch="1"/>
                 <main_cardinals>
                     <text align="c" font="font_blender_pro_b_14" vert_align="c" stretch="1"
-                          r="152" g="152" b="152"/>
+                          r="211" g="211" b="211"/>
                     <n r="227" g="79" b="56">N</n>
                     <e align="r">E</e>
                     <s>S</s>
@@ -18,7 +18,7 @@
                 </main_cardinals>
                 <inter_cardinals>
                     <text align="c" font="font_blender_pro_b_12" vert_align="c" stretch="1"
-                          r="152" g="152" b="152"/>
+                          r="211" g="211" b="211"/>
                     <ne>NE</ne>
                     <se>SE</se>
                     <sw>SW</sw>
