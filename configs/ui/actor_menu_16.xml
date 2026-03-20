@@ -16,7 +16,7 @@
 	    </auto_static>
 	</main>
 
-	<left_background x="0" y="0" width="376" height="768" stretch="1">
+	<left_background x="0" y="0" width="375" height="768" stretch="1">
 		<texture>ui_invaddon_backpack_16</texture>
 	    <auto_static x="0" y="0" width="104" height="768" stretch="1">
 		    <texture></texture>
@@ -93,14 +93,13 @@
     </partner_ch_info>
     <!-- Finish -->
 
-	<actor_money_static x="800" y="77.5" width="104" height="22">
-		<text align="r" font="graffiti22" r="211" g="211" b="211" a="255"/>
+	<actor_money_static x="800" y="76" width="104" height="22">
+		<text align="r" font="font_rubik_regular_22" r="211" g="211" b="211" a="255"/>
 	</actor_money_static>
 
-	<partner_money_static x="155" y="77.5" width="104" height="22">
-		<text align="r" font="graffiti22" r="211" g="211" b="211" a="255"/>
+	<partner_money_static x="155" y="76" width="104" height="22">
+		<text align="r" font="font_rubik_regular_22" r="211" g="211" b="211" a="255"/>
 	</partner_money_static>
-
 
 	<inventory_slot_wnd>
 		<slot> <!-- Knife -->
@@ -121,12 +120,12 @@
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
     		</slot_progress-->
-			<slot_progress_percent x="617" y="695" width="24" height="19" horz="1" min="0" max="1" pos="0">
+			<slot_progress_percent x="615" y="695" width="24" height="19" horz="1" min="0" max="1" pos="0">
 				<percent_display>
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="4" y="4" font="font_blender_pro_b_14" format="percent"/>
+					<text x="4" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
 				</percent_display>
 			</slot_progress_percent>
 		</slot>
@@ -147,7 +146,7 @@
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
             </slot_progress-->
-			<slot_progress_percent x="617" y="589" width="24" height="19" horz="1" min="0" max="1" pos="0">
+			<slot_progress_percent x="615" y="589" width="24" height="19" horz="1" min="0" max="1" pos="0">
 				<percent_display>
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
@@ -180,7 +179,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="2" y="4" font="font_blender_pro_b_14" format="percent"/>
+					<text x="2" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
 				</percent_display>
 			</slot_progress_percent>
 			<slot_highlight x="385.5" y="111" width="96" height="174" stretch="1">
@@ -194,7 +193,7 @@
 				cell_width="33" cell_height="41" rows_num="1" cols_num="2"
 				custom_placement="0" a="0" virtual_cells="1" vc_vert_align="c"
 				vc_horiz_align="c"/>
-			<slot_highlight x="384" y="435" width="125" height="70" stretch="1">
+			<slot_highlight x="384" y="435" width="124" height="66" stretch="1">
 				<texture>ui_inGame2_detector_highlighter</texture>
 			</slot_highlight>
 		</slot>
@@ -219,7 +218,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="2" y="4" font="font_blender_pro_b_14" format="percent"/>
+					<text x="2" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
 				</percent_display>
 			</slot_progress_percent>
 			<slot_dragdrop x="386" y="8" width="95" height="107" 
@@ -234,7 +233,7 @@
 		<slot> <!-- NVG (placeholder) -->
 		</slot>
 		<slot> <!-- PISTOL_SLOT_NEW -->
-			<slot_highlight x="513" y="436" width="125" height="70" stretch="1">
+			<slot_highlight x="516" y="436" width="124" height="65" stretch="1">
 				<texture>ui_inGame2_pistol_highlighter</texture>
 			</slot_highlight>
 			<slot_dragdrop x="518" y="435" width="120" height="66"
@@ -249,18 +248,18 @@
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
 			</slot_progress-->
-			<slot_progress_percent x="617" y="485" width="24" height="19" horz="1" min="0" max="1" pos="0">
+			<slot_progress_percent x="615" y="481" width="24" height="19" horz="1" min="0" max="1" pos="0">
 				<percent_display>
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="3.5" y="4" font="font_blender_pro_b_14" format="percent"/>
+					<text x="3.5" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
 				</percent_display>
 			</slot_progress_percent>
 		</slot>
 	</inventory_slot_wnd>
 
-	<quick_slot_highlight x="384" y="364" width="63" height="68" dx="64" stretch="1">
+	<quick_slot_highlight x="384" y="364" width="63" height="65" dx="64" stretch="1">
 		<texture>ui_inGame2_quick_item_highlighter</texture>
 	</quick_slot_highlight>
 	
@@ -269,16 +268,16 @@
 	</artefact_slot_highlight>
 
 	<quick_slot1_text x="429" y="415" width="14" height="13">
-		<text align="c" font="font_rubik_16">quick_use_str_1</text>
+		<text align="c" r="152" g="152" b="152"font="font_rubik_16">quick_use_str_1</text>
 	</quick_slot1_text>
 	<quick_slot2_text x="494" y="415" width="14" height="13">
-		<text align="c" font="font_rubik_16">quick_use_str_2</text>
+		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_2</text>
 	</quick_slot2_text>
 	<quick_slot3_text x="559" y="415" width="14" height="13">
-		<text align="c" font="font_rubik_16">quick_use_str_3</text>
+		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_3</text>
 	</quick_slot3_text>
 	<quick_slot4_text x="623" y="415" width="14" height="13">
-		<text align="c" font="font_rubik_16">quick_use_str_4</text>
+		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_4</text>
 	</quick_slot4_text>
 
 	<actor_weight_caption x="820" y="736" width="57" height="16">
@@ -299,33 +298,27 @@
 	</partner_weight>
 
 	<!-- partner  -->
-	<left_delimiter x="0" y="226" width="376" height="162" stretch="1">
+	<left_delimiter x="0" y="226" width="375" height="162" stretch="1">
 		<texture>ui_invaddon_trade_16</texture>
-		<!--trade_caption x="123" y="74" width="48" height="16">
-			<text align="l" font="letterica16" color="ui_3">ui_total_price</text>
-		</trade_caption-->
 		<trade_price x="260" y="74" width="40" height="16">
-			<text align="l" font="graffiti19"/>
+			<text align="l" font="font_rubik_18" r="211" g="211" b="211" a="255"/>
 		</trade_price>
 		<trade_weight_max x="320" y="74" width="40" height="16">
-			<text align="l" font="graffiti19" color="ui_3"/>
+			<text align="l" font="font_rubik_18" r="211" g="211" b="211" a="255"/>
 		</trade_weight_max>
 	</left_delimiter>
 	<!-- actor -->
-	<right_delimiter x="648" y="226" width="377" height="163" stretch="1">
+	<right_delimiter x="649" y="226" width="376.5" height="163" stretch="1">
 	    <texture>ui_invaddon_trade_16</texture>
-	    <!--trade_caption x="123" y="74" width="48" height="16">
-	    	<text align="r" font="letterica16" color="ui_3">ui_total_price</text>
-	    </trade_caption-->
 	    <trade_price x="260" y="74" width="40" height="16">
-		    <text align="c" font="graffiti19"/>
+		    <text align="c" font="font_rubik_18" r="211" g="211" b="211" a="255"/>
 	    </trade_price>
 	    <trade_weight_max x="300" y="74" width="40" height="16">
-		    <text align="l" font="graffiti19" color="ui_3"/>
+		    <text align="l" font="font_rubik_18" r="211" g="211" b="211" a="255"/>
 	    </trade_weight_max>
 	</right_delimiter>
 
-	<belt_list_over x="383.5" y="292" width="48" height="62" dx="52" stretch="1">
+	<belt_list_over x="384" y="291" width="50" height="63" dx="51.5" stretch="1">
 		<texture >ui_inGame2_artefact_blocker</texture>
 	</belt_list_over>
 
@@ -336,7 +329,7 @@
   <dragdrop_trash x="0" y="0" width="375" height="768"
     	cell_width="375" cell_height="768" rows_num="1" cols_num="1" a="0"/>
 
-  <dragdrop_bag x="665" y="146" width="347" height="574"
+  <dragdrop_bag x="665" y="146" width="347" height="545"
     	cell_width="33" cell_height="43" rows_num="13" cols_num="10"
 		unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
@@ -348,19 +341,19 @@
 		cell_width="33" cell_height="43" rows_num="4" cols_num="10"
 		unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
-	<dragdrop_actor_trade_bag x="662" y="340" width="346" height="369"
-		cell_width="33" cell_height="43" rows_num="9" cols_num="10"
+	<dragdrop_actor_trade_bag x="662" y="370" width="346" height="340"
+		cell_width="33" cell_height="43" rows_num="8" cols_num="10"
 		unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
 	<dragdrop_partner_trade x="16" y="114" width="346" height="164"
 	    cell_width="33" cell_height="43" rows_num="4" cols_num="10"
 	    unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
-	<dragdrop_partner_bag x="16" y="340" width="346" height="369"
-	    cell_width="33" cell_height="43" rows_num="9" cols_num="10"
+	<dragdrop_partner_bag x="16" y="370" width="346" height="340"
+	    cell_width="33" cell_height="43" rows_num="8" cols_num="10"
 	    unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
-	<dragdrop_deadbody_bag x="16" y="119" width="346" height="574"
+	<dragdrop_deadbody_bag x="16" y="146" width="347" height="545"
 	    cell_width="33" cell_height="43" rows_num="14" cols_num="10"
 	    unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
@@ -464,7 +457,7 @@
 			<hint_text delay="800">st_ui_health_sensor</hint_text>
 			<state_progress x="0" y="0" width="134" height="16" horz="1" min="0" max="1" pos="0" expression="floor(fltPlayerHealth * 55.0) / 55.0">
 				<progress stretch="1">
-					<texture r="173" g="31" b="31" a="255">ui_inGame2_inventory_health_bar</texture>
+					<texture r="227" g="79" b="56" a="255">ui_inGame2_inventory_health_bar</texture>
 				</progress>
 			</state_progress>
 		</health_state>
@@ -570,6 +563,11 @@
 	        </state_progress>
 	    </power_sensor>
 	</actor_state_info>
+
+	<inventory_sort_tabs_container_upgrade 				x="662" y="110" width="352" height="40"/>
+	<inventory_sort_tabs_container_trade_actor_bag 		x="662" y="333" width="352" height="40"/>
+	<inventory_sort_tabs_container_trade_partner_bag 	x="14" 	y="333" width="352" height="40"/>
+	<inventory_sort_tabs_container_deadbody_bag 		x="14" 	y="110" width="352" height="40"/>
 
 	<inventory_sort_tabs x="662" y="110" width="352" height="40">
 		<button x="0" y="0" width="44" height="33" stretch="1" id="all" hint="st_inv_sort_all_hint">
