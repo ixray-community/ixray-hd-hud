@@ -254,14 +254,14 @@
 		<progress_bar_health x="912.5" y="717" width="96" height="15" stretch="1" horz="1" min="0" max="1" pos="0" 
 		expression="floor(fltPlayerHealth * 55.0) / 55.0">
 			<progress stretch="1">
-				<texture r="227" g="79" b="56">ui_inGame2_Patroni_HUD_red_bar</texture>
+				<texture r="138" g="39" b="34">ui_inGame2_Patroni_HUD_red_bar</texture>
 			</progress>
 		</progress_bar_health>
 
 	    <progress_bar_stamina x="912.5" y="739" width="96" height="13" stretch="1" horz="1" min="0" max="1" pos="0"
 		expression="floor(fltPlayerPower * 55.0) / 55.0">
 	        <progress stretch="1">
-		        <texture r="152" g="152" b="152">ui_inGame2_Patroni_HUD_blue_bar</texture>
+		        <texture r="18" g="123" b="145">ui_inGame2_Patroni_HUD_blue_bar</texture>
 	        </progress>
 	    </progress_bar_stamina>
 
