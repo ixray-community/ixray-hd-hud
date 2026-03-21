@@ -457,7 +457,7 @@
 			<hint_text delay="800">st_ui_health_sensor</hint_text>
 			<state_progress x="0" y="0" width="134" height="16" horz="1" min="0" max="1" pos="0" expression="floor(fltPlayerHealth * 55.0) / 55.0">
 				<progress stretch="1">
-					<texture r="138" g="39" b="34" a="255">ui_inGame2_inventory_health_bar</texture>
+					<texture r="227" g="79" b="56" a="255">ui_inGame2_inventory_health_bar</texture>
 				</progress>
 			</state_progress>
 		</health_state>

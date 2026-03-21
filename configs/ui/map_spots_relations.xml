@@ -16,7 +16,7 @@
 
 	<enemy_mini_spot width="20" height="20" stretch="1" alignment="c" >
 		<texture r="255" g="47" b="47">ui_mmap_common_actor_2</texture>
-		<compass x="0" y="40" width="14" height="14" max_dist="5" vert_align="center">ui_mmap_common_actor_2</compass>
+		<compass x="0" y="30" width="14" height="14" max_dist="5" vert_align="center">ui_mmap_common_actor_2</compass>
 	</enemy_mini_spot>
 
 	<neutral_mini_spot width="20" height="20" stretch="1" alignment="c">

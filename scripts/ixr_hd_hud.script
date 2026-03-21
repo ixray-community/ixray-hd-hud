@@ -1,10 +1,4 @@
 local con = nil
-local crosshair_console_armed = false
-
-local function arm_crosshair_console()
-	crosshair_console_armed = true
-end
-
 local function execute_command(command, arg)
 	if not con then con = get_console() end
 
@@ -20,10 +14,9 @@ local function execute_command(command, arg)
 end
 
 function on_game_start()
-	RegisterScriptCallback("main_menu_update", arm_crosshair_console)
-	RegisterScriptCallback("actor_on_update", arm_crosshair_console)
-
 	RegisterScriptCallback("on_init_ixr_options", function (_ref)
+		-- begin options params
+		
 		_ref.register_option(nil, "hud_visible", "st_ui_hud_show", _ref.check_box(true), 
 			function (group, name, value)
 				execute_command("hud_draw", value)
@@ -44,9 +37,6 @@ function on_game_start()
 
 		_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true), 
 			function (group, name, value)
-				if not crosshair_console_armed then
-					return
-				end
 				execute_command("hud_crosshair", value)
 			end
 		)
@@ -62,5 +52,7 @@ function on_game_start()
 				execute_command("hud_crosshair_dist", value)
 			end
 		)
+		
+		-- end options params
 	end)
 end
