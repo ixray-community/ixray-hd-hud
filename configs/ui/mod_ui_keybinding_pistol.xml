@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <keybingidg>
-	<group name="gunsl_keys_slots" override="add">
-		<command id="kb_weapon7" exe="wpn_7"/>
-	</group>
-	<group name="kb_grp_weapons" override="add">
+	<group name="kb_grp_inventory" override="add">
 		<command id="kb_weapon7" exe="wpn_7"/>
 	</group>
 </keybingidg>
