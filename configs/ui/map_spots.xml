@@ -487,24 +487,24 @@
 <!--    <level_map spot="alife_presentation_squad_friend_spot"/> -->
     <mini_map spot="alife_presentation_squad_friend_spot_mini"/>
   </alife_presentation_squad_friend>
-  <alife_presentation_squad_friend_spot x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+  <alife_presentation_squad_friend_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="205" g="225" b="97">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_friend_spot>
-  <alife_presentation_squad_friend_spot_mini x="0" y="0" width="16" height="16" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+  <alife_presentation_squad_friend_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="205" g="225" b="97">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="-2" width="10" height="10" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_leader</compass>
+    <compass x="0" y="-2" width="11" height="11" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_leader</compass>
   </alife_presentation_squad_friend_spot_mini>
 
   <alife_presentation_squad_neutral>
 <!--    <level_map spot="alife_presentation_squad_neutral_spot"/> -->
     <mini_map spot="alife_presentation_squad_neutral_spot_mini"/>
   </alife_presentation_squad_neutral>
-  <alife_presentation_squad_neutral_spot x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+  <alife_presentation_squad_neutral_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="255" g="246" b="97">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_neutral_spot>
-  <alife_presentation_squad_neutral_spot_mini x="0" y="0" width="16" height="16" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+  <alife_presentation_squad_neutral_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="255" g="246" b="97">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="-2" width="10" height="10" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_leader</compass>
+    <compass x="0" y="-2" width="11" height="11" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_leader</compass>
   </alife_presentation_squad_neutral_spot_mini>
 
 
@@ -512,12 +512,12 @@
 <!--    <level_map spot="alife_presentation_squad_enemy_spot"/> -->
 	<mini_map spot="alife_presentation_squad_enemy_spot_mini"/>
   </alife_presentation_squad_enemy>
-  <alife_presentation_squad_enemy_spot x="0" y="0" width="14" height="14" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+  <alife_presentation_squad_enemy_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="255" g="68" b="43">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_enemy_spot>
-  <alife_presentation_squad_enemy_spot_mini x="0" y="0" width="16" height="16" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+  <alife_presentation_squad_enemy_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="255" g="68" b="43">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="-2" width="10" height="10" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_leader</compass>
+    <compass x="0" y="-2" width="11" height="11" max_dist="5" vert_align="center">ui_inGame2_PDA_squad_leader</compass>
   </alife_presentation_squad_enemy_spot_mini>
 
   <alife_presentation_squad_monster>
@@ -528,7 +528,7 @@
   <alife_presentation_squad_monster_spot width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="237" g="28" b="36">ui_pda2_squad_leader</texture>
   </alife_presentation_squad_monster_spot>
-  <alife_presentation_squad_monster_spot_mini width="9" height="9" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+  <alife_presentation_squad_monster_spot_mini width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="237" g="28" b="36">ui_mmap_squad_leader</texture>
   </alife_presentation_squad_monster_spot_mini>
 
