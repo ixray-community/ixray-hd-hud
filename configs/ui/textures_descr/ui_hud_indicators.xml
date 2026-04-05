@@ -71,5 +71,39 @@
 	    <texture id="ui_inGame2_circle_burning_yellow" x="28" y="76" width="38" height="38" />
 	    <texture id="ui_inGame2_circle_burning_orange" x="28" y="129" width="38" height="38" />
 	    <texture id="ui_inGame2_circle_burning_red" x="28" y="183" width="38" height="38" />
+
+		<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////-->
+
+		<!-- Radiation -->
+	    <texture id="ui_inGame2_triangle_Radiation_green" x="158" y="246" width="47" height="41" />
+		<texture id="ui_inGame2_triangle_Radiation_yellow" x="158" y="295" width="47" height="41" />
+	    <texture id="ui_inGame2_triangle_Radiation_orange" x="158" y="385" width="47" height="41" />
+	    <texture id="ui_inGame2_triangle_Radiation_red" x="158" y="392" width="47" height="41" />
+		
+	    <!-- Fire -->
+		<texture id="ui_inGame2_triangle_Fire_green" x="93" y="246" width="47" height="41" />
+		<texture id="ui_inGame2_triangle_Fire_yellow" x="93" y="295" width="47" height="41" />
+	    <texture id="ui_inGame2_triangle_Fire_orange" x="93" y="385" width="47" height="41" />
+	    <texture id="ui_inGame2_triangle_Fire_red" x="93" y="392" width="47" height="41" />
+		
+	    <!-- Biological -->
+		<texture id="ui_inGame2_triangle_Biological_green" x="225" y="246" width="47" height="41" />
+		<texture id="ui_inGame2_triangle_Biological_yellow" x="225" y="295" width="47" height="41" />
+	    <texture id="ui_inGame2_triangle_Biological_orange" x="225" y="385" width="47" height="41" />
+	    <texture id="ui_inGame2_triangle_Biological_red" x="225" y="392" width="47" height="41" />
+		
+	    <!-- Psy -->
+		<texture id="ui_inGame2_triangle_Psy_green" x="27" y="246" width="47" height="41" />
+		<texture id="ui_inGame2_triangle_Psy_yellow" x="27" y="295" width="47" height="41" />
+	    <texture id="ui_inGame2_triangle_Psy_orange" x="27" y="385" width="47" height="41" />
+	    <texture id="ui_inGame2_triangle_Psy_red" x="27" y="392" width="47" height="41" />
+
+		<!--Caliber icon-->
+		<texture id="ui_ammo_caliber_icon_fmj" x="30" y="461" width="30" height="30"/>
+		<texture id="ui_ammo_caliber_icon_ap" x="71" y="461" width="30" height="30"/>
+		<texture id="ui_ammo_caliber_icon_buck" x="112" y="461" width="30" height="30"/>
+		<texture id="ui_ammo_caliber_icon_zhekan" x="153" y="461" width="30" height="30"/>
+		<texture id="ui_ammo_caliber_icon_pistol_1" x="194" y="461" width="30" height="30"/>
+		<texture id="ui_ammo_caliber_icon_pistol_2" x="235" y="461" width="30" height="30"/>
 	</file> 
 </w>

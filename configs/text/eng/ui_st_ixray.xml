@@ -675,4 +675,17 @@
 	<string id="dead_character_use_or_drag_gp">
 		<text>Search body ($$ACTION_USE$$)\nDrag body ($$ACTION_SPRINT_TOGGLE$$+$$ACTION_USE$$)</text>
 	</string>
+	<string id="st_assign_quick_slot_1">
+		<text>Assign to quick slot 1</text>
+	</string>
+	<string id="st_assign_quick_slot_2">
+		<text>Assign to quick slot 2</text>
+	</string>
+	<string id="st_assign_quick_slot_3">
+		<text>Assign to quick slot 3</text>
+	</string>
+	<string id="st_assign_quick_slot_4">
+		<text>Assign to quick slot 4</text>
+	</string>
 </string_table>
+
