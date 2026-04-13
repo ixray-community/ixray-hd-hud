@@ -104,7 +104,7 @@
 	<inventory_slot_wnd>
 		<slot> <!-- Knife -->
 		</slot>
-		<slot> <!-- Pistol -->
+		<slot> <!-- INV_SLOT_2 -->
 			<slot_highlight x="384" y="618" width="255" height="98" stretch="1">
 				<texture>ui_inGame2_weapon_highlighter</texture>
 			</slot_highlight>
@@ -129,14 +129,13 @@
 				</percent_display>
 			</slot_progress_percent>
 		</slot>
-        <slot>
-            <!-- Auto -->
-            <slot_highlight x="384" y="510" width="255" height="98" stretch="1">
-                <texture>ui_inGame2_weapon_highlighter</texture>
-            </slot_highlight>
-            <slot_dragdrop x="384" y="510" width="255" height="100" 
-				cell_width="33" cell_height="41" rows_num="2" cols_num="6" 
-				custom_placement="0" vertical_placement="0" a="0" 
+		<slot> <!-- INV_SLOT_3 -->
+			<slot_highlight x="384" y="510" width="255" height="98" stretch="1">
+				<texture>ui_inGame2_weapon_highlighter</texture>
+			</slot_highlight>
+			<slot_dragdrop x="384" y="510" width="255" height="100"
+				cell_width="33" cell_height="41" rows_num="2" cols_num="6"
+				custom_placement="0" vertical_placement="0" a="0"
 				virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
             <!--slot_progress x="488.5" y="601" width="47" height="7" horz="1" min="0" max="1" pos="0">
                 <progress stretch="1">
@@ -154,7 +153,7 @@
 					<text x="2" y="4" font="font_blender_pro_b_14" format="percent"/>
 				</percent_display>
 			</slot_progress_percent>
-        </slot>
+		</slot>
 		<slot> <!-- Grenade -->
 		</slot>
 		<slot> <!-- Binoc -->
@@ -221,23 +220,35 @@
 					<text x="2" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
 				</percent_display>
 			</slot_progress_percent>
-			<slot_dragdrop x="386" y="8" width="95" height="107" 
-				cell_width="33" cell_height="41" rows_num="2" cols_num="2" 
-				custom_placement="0" a="0" virtual_cells="1" 
+			<slot_dragdrop x="386" y="8" width="95" height="107"
+				cell_width="33" cell_height="41" rows_num="2" cols_num="2"
+				custom_placement="0" a="0" virtual_cells="1"
 				vc_vert_align="c" vc_horiz_align="c" />
-			</slot>
+		</slot>
 		<slot> <!-- Backpack -->
 		</slot>
-		<slot> <!-- PowerBank (placeholder) -->
+		<slot> <!-- POWER_BANK_SLOT -->
+			<slot_highlight x="518" y="300" width="120" height="52" stretch="1">
+				<texture>ui_inGame2_detector_highlighter</texture>
+			</slot_highlight>
+			<slot_dragdrop x="520" y="302" width="116" height="48"
+				cell_width="33" cell_height="41" rows_num="1" cols_num="2"
+				custom_placement="0" a="0" virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
 		</slot>
-		<slot> <!-- NVG (placeholder) -->
+		<slot> <!-- NVG_SLOT -->
+			<slot_highlight x="518" y="365" width="120" height="52" stretch="1">
+				<texture>ui_inGame2_detector_highlighter</texture>
+			</slot_highlight>
+			<slot_dragdrop x="520" y="367" width="116" height="48"
+				cell_width="33" cell_height="41" rows_num="1" cols_num="2"
+				custom_placement="0" a="0" virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
 		</slot>
 		<slot> <!-- PISTOL_SLOT_NEW -->
 			<slot_highlight x="516" y="436" width="124" height="65" stretch="1">
 				<texture>ui_inGame2_pistol_highlighter</texture>
 			</slot_highlight>
-			<slot_dragdrop x="518" y="435" width="120" height="66"
-				cell_width="33" cell_height="41" rows_num="1" cols_num="2"
+			<slot_dragdrop x="518" y="428" width="120" height="82"
+				cell_width="33" cell_height="41" rows_num="2" cols_num="2"
 				custom_placement="0" vertical_placement="0" a="0"
 				virtual_cells="1" vc_vert_align="c" vc_horiz_align="c"/>
 			<!--slot_progress x="554.5" y="492" width="47" height="7" horz="1" min="0" max="1" pos="0">
@@ -248,7 +259,7 @@
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
 			</slot_progress-->
-			<slot_progress_percent x="615" y="481" width="24" height="19" horz="1" min="0" max="1" pos="0">
+			<slot_progress_percent x="615" y="482" width="24" height="19" horz="1" min="0" max="1" pos="0">
 				<percent_display>
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
