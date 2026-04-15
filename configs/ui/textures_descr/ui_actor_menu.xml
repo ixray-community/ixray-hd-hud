@@ -30,7 +30,7 @@
 	    <texture id="ui_inGame2_big_inventory_button_d" x="341" y="926" width="243" height="24" />
 
 	    <texture id="ui_inGame2_repair_panel" x="0" y="0" width="341" height="768" />
-	    <texture id="ui_inGame2_artefact_blocker" x="476" y="850" width="61" height="58" />
+	    <texture id="ui_inGame2_artefact_blocker" x="476" y="850" width="61" height="60" />
 	    <texture id="ui_inGame2_helmet_blocker" x="559" y="775" width="121" height="106" />
 
 	    <texture id="ui_item_count_back_2" x="558" y="882" width="33" height="19" />
