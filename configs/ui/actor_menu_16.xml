@@ -464,7 +464,7 @@
 	        </text>
 	    </hint_wnd>
 
-		<health_state x="14.5" y="184" width="136" height="16" stretch="1">
+		<health_state x="15" y="184" width="136" height="16" stretch="1">
 			<hint_text delay="800">st_ui_health_sensor</hint_text>
 			<state_progress x="0" y="0" width="134" height="16" horz="1" min="0" max="1" pos="0" expression="floor(fltPlayerHealth * 55.0) / 55.0">
 				<progress stretch="1">
@@ -473,25 +473,33 @@
 			</state_progress>
 		</health_state>
 
-		<bleeding_state x="14.5" y="202" width="136" height="16">
-			<hint_text delay="800">st_ui_bleeding_sensor</hint_text>
-			<state_progress x="0" y="0" width="134" height="16" horz="1" min="0" max="1" pos="0" 
-				expression="floor(fltPlayerBleedingSpeed * 55.0) / 55.0">
-				<progress stretch="1">
-					<texture r="228" g="62" b="55" a="255">ui_inGame2_inventory_health_bar</texture>
-				</progress>
-			</state_progress>
-		</bleeding_state>
-
-		<radiation_state x="14.5" y="222" width="136" height="16">
+		<radiation_state x="15" y="203" width="136" height="16">
 			<hint_text delay="800">st_ui_main_sensor</hint_text>
 			<state_progress x="0" y="0" width="134" height="16" horz="1" min="0" max="1" pos="0" 
 				expression="floor(fltPlayerRad * 55.0) / 55.0">
 				<progress stretch="1">
-					<texture r="255" g="249" b="86" a="255">ui_inGame2_inventory_health_bar</texture>
+					<texture r="160" g="220" b="80" a="255">ui_inGame2_inventory_health_bar</texture>
 				</progress>
 			</state_progress>
 		</radiation_state>
+
+		<starvation_state x="15" y="222" width="136" height="16">
+			<hint_text delay="800">ui_inv_satiety</hint_text>
+			<state_progress x="0" y="0" width="134" height="16" horz="1" min="0" max="1" pos="0">
+				<progress stretch="1">
+					<texture r="110" g="105" b="95" a="255">ui_inGame2_inventory_health_bar</texture>
+				</progress>
+			</state_progress>
+		</starvation_state>
+
+		<thirst_state x="15" y="241" width="136" height="16">
+			<hint_text delay="800">ui_inv_thirst</hint_text>
+			<state_progress x="0" y="0" width="134" height="16" horz="1" min="0" max="1" pos="0">
+				<progress stretch="1">
+					<texture r="85" g="100" b="110" a="255">ui_inGame2_inventory_health_bar</texture>
+				</progress>
+			</state_progress>
+		</thirst_state>
 
 	    <radia_sensor x="-3" y="4.5" width="150" height="18">
 	        <hint_text delay="800">ui_inv_outfit_radiation_protection</hint_text>
