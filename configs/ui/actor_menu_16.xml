@@ -125,7 +125,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="4" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
+					<text x="6" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="number"/>
 				</percent_display>
 			</slot_progress_percent>
 		</slot>
@@ -150,7 +150,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="2" y="4" font="font_blender_pro_b_14" format="percent"/>
+					<text x="6" y="4" font="font_blender_pro_b_14" format="number"/>
 				</percent_display>
 			</slot_progress_percent>
 		</slot>
@@ -178,7 +178,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="2" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
+					<text x="6" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="number"/>
 				</percent_display>
 			</slot_progress_percent>
 			<slot_highlight x="385.5" y="111" width="96" height="174" stretch="1">
@@ -217,7 +217,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="2" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
+					<text x="6" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="number"/>
 				</percent_display>
 			</slot_progress_percent>
 			<slot_dragdrop x="386" y="8" width="95" height="107"
@@ -264,7 +264,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="3.5" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="percent"/>
+					<text x="6" y="4" r="211" g="211" b="211" font="font_blender_pro_b_14" format="number"/>
 				</percent_display>
 			</slot_progress_percent>
 		</slot>
