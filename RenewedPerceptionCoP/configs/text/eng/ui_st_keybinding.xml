@@ -231,4 +231,10 @@
 	<string id="kb_show_quick_slots">
 		<text>Show quick access panel</text>
 	</string>
+	<string id="kb_inventory_sort_prev">
+		<text>Inventory sort: previous tab</text>
+	</string>
+	<string id="kb_inventory_sort_next">
+		<text>Inventory sort: next tab</text>
+	</string>
 </string_table>

@@ -225,4 +225,13 @@
 	<string id="kb_quick_use_4">
 		<text>Ячейка быстрого доступа 4</text>
 	</string>
+	<string id="kb_show_quick_slots">
+		<text>Показ панели быстрого доступа</text>
+	</string>
+	<string id="kb_inventory_sort_prev">
+		<text>Сортировка: предыдущая вкладка</text>
+	</string>
+	<string id="kb_inventory_sort_next">
+		<text>Сортировка: следующая вкладка</text>
+	</string>
 </string_table>
