@@ -304,7 +304,7 @@
 			<background width="24" height="19" stretch="1">
 				<texture a="255">ui_inGame2_inventory_percent_status</texture>
 			</background>
-			<text x="2" y="4" r="255" g="255" b="255" font="font_rubik_14" format="portion"/>
+			<text x="0" y="0" width="24" height="19" r="255" g="255" b="255" font="font_rubik_14" format="portion" align="c" vert_align="c"/>
 		</percent_display>
 	</condition_progess_bar>
 
@@ -314,7 +314,7 @@
 			<background width="24" height="19" stretch="1">
 				<texture a="255">ui_inGame2_inventory_percent_status</texture>
 			</background>
-			<text x="2" y="4" font="font_rubik_14" format="portion"/>
+			<text x="0" y="0" width="24" height="19" font="font_rubik_14" format="portion" align="c" vert_align="c"/>
 		</percent_display>
 	</condition_percent_bar>
 	-->
