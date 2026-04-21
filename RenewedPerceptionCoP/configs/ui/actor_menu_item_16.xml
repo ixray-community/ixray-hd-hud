@@ -304,11 +304,8 @@
 			<background width="24" height="19" stretch="1">
 				<texture a="255">ui_inGame2_inventory_percent_status</texture>
 			</background>
-			<text x="2" y="4" font="font_rubik_14" format="portion"/>
+			<text x="2" y="4" r="255" g="255" b="255" font="font_rubik_14" format="portion"/>
 		</percent_display>
-			<min_color r="180" g="0" b="0"/>
-			<middle_color r="255" g="255" b="255"/>
-			<max_color r="255" g="255" b="255"/>
 	</condition_progess_bar>
 
 	<!--
