@@ -306,6 +306,7 @@
 		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_4</text>
 	</quick_slot4_text>
 
+	<!-- legacy (caption / actor_weight / actor_weight_max)
 	<actor_weight_caption x="820" y="736" width="57" height="16">
 		<text align="r" font="font_rubik_18" r="211" g="211" b="211" a="255">ui_total_weight</text>
 	</actor_weight_caption>
@@ -315,6 +316,25 @@
 	<actor_weight_max x="940" y="736" width="68" height="16">
 		<text align="l" font="font_rubik_18" color="ui_3"/>
 	</actor_weight_max>
+	-->
+
+	<!-- Row container: [actor_weight_caption] [weight_status_bar | actor_weight] [actor_weight_max] -->
+	<actor_weight_row x="670" y="736" width="330" height="16">
+		<actor_weight_caption x="5" y="0" width="57" height="16">
+			<text align="r" font="font_rubik_18" r="211" g="211" b="211" a="255">ui_total_weight</text>
+		</actor_weight_caption>
+		<weight_status_bar x="88" y="0" width="120" height="16" stretch="1" horz="1" min="0" max="1" pos="0">
+			<progress x="0" y="0" width="120" height="16" stretch="1">
+				<texture>ui_inGame2_inventory_progress_bar</texture>
+			</progress>
+			<min_color r="107" g="207" b="119"/>
+			<middle_color r="255" g="255" b="118"/>
+			<max_color r="196" g="18" b="18"/>
+		</weight_status_bar>
+		<actor_weight_max x="230" y="0" width="68" height="16">
+			<text align="l" font="font_rubik_18" color="ui_3"/>
+		</actor_weight_max>
+	</actor_weight_row>
 
 	<partner_weight_caption x="265" y="738" width="68" height="14">
 		<text align="r" font="font_rubik_18" r="211" g="211" b="211" a="255">ui_total_weight</text>
