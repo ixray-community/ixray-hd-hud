@@ -51,6 +51,13 @@
             <text align="r" vert_align="c" font="arial_14" color="ui_3"/>
         </reputation_static>
 
+        <game_time_caption x="208" y="5" width="25" height="14">
+            <text align="l" vert_align="c" font="arial_14" color="ui_3">ui_inv_time</text>
+        </game_time_caption>
+        <game_time_static x="230" y="5" width="25" height="14">
+            <text align="r" vert_align="c" font="arial_14" color="ui_7"/>
+        </game_time_static>
+
         <icon x="260.5" y="1" width="99" height="87" stretch="1">
             <deadbody r="255" g="160" b="160" a="205"/>
         </icon>
