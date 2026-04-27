@@ -108,10 +108,10 @@
 		
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_background" x="377" y="617" width="47" height="60" />
 	
-		<texture id="ui_inGame2_icon_fmode_single" x="292" y="490" width="32" height="32" />
-		<texture id="ui_inGame2_icon_fmode_auto" x="324" y="490" width="32" height="32" />
-		<texture id="ui_inGame2_icon_fmode_3burst" x="356" y="490" width="32" height="32" />
-		<texture id="ui_inGame2_icon_fmode_2burst" x="388" y="490" width="32" height="32" />
+		<texture id="ui_inGame2_icon_fmode_single" x="296" y="493" width="25" height="25" />
+		<texture id="ui_inGame2_icon_fmode_auto" x="391" y="493" width="25" height="25" />
+		<texture id="ui_inGame2_icon_fmode_3burst" x="359" y="493" width="32" height="25" />
+		<texture id="ui_inGame2_icon_fmode_2burst" x="328" y="493" width="25" height="25" />
 
 		<texture id="ui_inGame2_ammo_fmj" x="280" y="819" width="28" height="28" />
 		<texture id="ui_inGame2_ammo_ap" x="311" y="819" width="28" height="28" />	
