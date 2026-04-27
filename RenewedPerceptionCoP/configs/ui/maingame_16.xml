@@ -258,7 +258,7 @@
 		</static_wpn_icon>
 		-->
 
-		<static_wpn_icon x="994" y="694" width="50" height="30" align="l" alignment="c" stretch="1" caliber="1" hud_group_catalog="hud_group_catalog.xml">
+		<static_wpn_icon x="992" y="694" width="50" height="30" align="l" alignment="c" stretch="1" caliber="1" hud_group_catalog="hud_group_catalog.xml">
 			<caliber_text x="25" y="0" width="16" height="30" stretch="1">
 				<text font="font_blender_pro_b_14" align="c" vert_align="c" r="199" g="199" b="199" a="255"/>
 			</caliber_text>
