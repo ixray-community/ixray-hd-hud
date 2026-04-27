@@ -114,36 +114,6 @@
 			</front>
 		</indicator_booster_rad>
 
-<!--
-	<radiation_static x="0" y="0" width="53" height="64" stretch="1">
-		<texture>ui_hud_icon_radiation</texture>
-	</radiation_static>
-
-	<wound_static x="0" y="0" width="53" height="64" stretch="1">
-		<texture>ui_hud_icon_drop</texture>
-	</wound_static>
-
-	<starvation_static x="0" y="0" width="53" height="64" stretch="1">
-		<texture>ui_hud_icon_eat</texture>
-	</starvation_static>
-
-	<psy_health_static x="0" y="0" width="53" height="64" stretch="1">
-		<texture>ui_hud_icon_psycho</texture>
-	</psy_health_static>
-
-	<can_sleep_static x="0" y="0" width="53" height="64" stretch="1">
-		<texture>ui_hud_icon_sleep</texture>
-	</can_sleep_static>
-
-    <indicator_starvation x="784" y="350" width="26" height="35" stretch="1"/>
-    <indicator_helmet_broken x="784" y="390" width="26" height="35" stretch="1"/>
-    <indicator_outfit_broken x="784" y="430" width="26" height="35" stretch="1"/>
-    <indicator_weapon_broken x="784" y="470" width="26" height="35" stretch="1"/>
-    <indicator_overweight x="784" y="510" width="26" height="35" stretch="1"/>
-    <indicator_radiation x="784" y="550" width="26" height="35" stretch="1"/>
-    <indicator_bleeding x="784" y="590" width="26" height="35" stretch="1"/>
-
--->
 	<invincible_static x="0" y="0" width="53" height="64" stretch="1">
 		<texture>ui_hud_icon_goodmode</texture>
 	</invincible_static>
@@ -265,30 +235,8 @@
 	        </progress>
 	    </progress_bar_stamina>
 
-<!-- Legacy static ammo widgets -->
-<!--
-		<active_ammo_color r="199" g="199" b="199" a="255"/>
-        <inactive_ammo_color r="199" g="199" b="199" a="130"/>
-		
-		<static_cur_ammo x="887" y="686" width="54" height="37"> 
-			<text complex_mode="0" font="ui_font_graff_32" r="199" g="199" b="199" align="c" vert_align="c">ammo</text>
-		</static_cur_ammo>
-
-	    <static_fmj_ammo x="885" y="720" width="26" height="15">
-	        <text align="c" complex_mode="0" font="ui_font_graffiti19" color="ui_1">fmj</text>
-	    </static_fmj_ammo>
-
-	    <static_ap_ammo x="913" y="720" width="26" height="15">
-	        <text align="c" complex_mode="0" font="ui_font_graffiti19" r="199" g="199" b="199" a="255">ap</text>
-	    </static_ap_ammo>
-
-	    <static_grenade x="863" y="720" width="14" height="19">
-	        <text align="c" complex_mode="0" font="font_rubik_18" r="199" g="199" b="199" a="255" vert_align="c">gr</text>
-	    </static_grenade>
--->
-
 		<!-- Adaptive ammo widget -->
-		<static_ammo_adaptive x="894" y="678" width="60" height="34">
+		<static_ammo_adaptive x="894" y="678" width="60" height="34" separator="/">
 			<clip_text x="0" y="0" width="40" height="37">
 				<text complex_mode="0" font="ui_font_graffiti22" r="211" g="211" b="211" a="255" align="r" vert_align="c"/>
 			</clip_text>
