@@ -98,17 +98,16 @@
     	<actor_location hint="disable_hint">
                 <level_map spot="actor_level_spot"/>
         </actor_location>
-        <actor_level_spot x="0" y="0" width="25" height="25" alignment="c" location_level="-1">
-                <texture>ui_icons_newPDA_man</texture>
+        <actor_level_spot x="0" y="0" width="49" height="49" alignment="c" location_level="-1">
+                <texture shader="ui_actor_wave">ui\ui_actor_wave_mask</texture>
         </actor_level_spot>
 
         <actor_location_p hint="disable_hint">
                 <level_map spot="actor_level_spot_p"/>
         </actor_location_p>
         <actor_level_spot_p x="0" y="0" width="49" height="49" heading="1" alignment="c" location_level="-2">
-                <texture>ui_icons_newPDA_manArrow</texture>
+                <texture></texture>
         </actor_level_spot_p>
-
 
         <level_changer_up>
                 <level_map spot="level_changer_up_spot" pointer="quest_pointer"/>

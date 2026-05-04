@@ -1,0 +1,53 @@
+<w>
+    <main_wnd x="0" y="0" width="1024" height="768" update_delay="2900"/>
+
+    <center_caption x="55" y="157" width="650" height="16">
+		<text align="l" font="letterica16" r="100" g="100" b="100" a="0"/>
+	</center_caption>
+
+<!--
+	<actor_ch_info x="40" y="200" width="400" height="125">
+		<icon      x="0" y="0" width="132" height="108" stretch="1"/>
+		<icon_over x="0" y="0" width="132" height="108" stretch="1">
+			<texture>ui_fm_over_chars</texture>
+		</icon_over>
+		<name_static x="330" y="29" width="160" height="25">
+			<text align="c" vert_align="c" font="letterica25" color="ui_2"/>
+		</name_static>
+	</actor_ch_info>
+-->
+
+	<logs_list x="45" y="176" width="936" height="523" item_height="35" scroll_profile="pda_logs" always_show_scroll="1">
+		<font font="letterica18" color="ui_4"/>
+	</logs_list>
+
+	<logs_item  x="276" y="0" width="270" height="38">
+		<date_static x="55" y="1" width="100" height="14">
+			<text align="l" font="letterica16" color="ui_3"/>
+		</date_static>
+		<caption_static x="155" y="1" width="750" height="14">
+			<text align="l" font="letterica16" color="ui_1"/>
+		</caption_static>
+		<text_static x="55" y="16" width="845" height="14" complex_mode="1">
+			<text align="l" font="letterica16" color="ui_4"/>
+		</text_static>
+		<image x="0" y="2" width="49" height="29" stretch="1"/>
+	</logs_item>
+
+	<pda_timeline x="35" y="88" width="965" height="38">
+		<nodes count="31" max_count="31" size="14" line_height="35" hit_padding="2" show_future="0"/>
+		<spacing auto="1"/>
+		<textures>
+			<line width="965" height="30">ui_inGame2_timeline_line</line>
+			<node_empty>ui_node_empty</node_empty>
+			<node_archive>ui_node_archive</node_archive>
+			<node_present>ui_present</node_present>
+			<node_future>ui_node_empty</node_future>
+			<node_hover>ui_node_archive</node_hover>
+			<node_selected>ui_present</node_selected>
+			<marker>ui_inGame2_timeline_marker</marker>
+		</textures>
+		<animation smoothing="12.0" snap_threshold="0.5"/>
+		<label offset_y="-10" width="96" height="18" align="c" vert_align="c" font="font_rubik_12" color="ui_1"/>
+	</pda_timeline>
+</w>

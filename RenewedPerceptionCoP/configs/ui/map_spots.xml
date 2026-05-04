@@ -99,7 +99,7 @@
                 <level_map spot="actor_level_spot"/>
         </actor_location>
         <actor_level_spot width="26" height="26" alignment="c" location_level="-1">
-                <texture>ui_icons_newPDA_man</texture>
+                <texture shader="ui_actor_wave">ui\ui_actor_wave_mask</texture>
         </actor_level_spot>
 
         <actor_location_p hint="disable_hint">

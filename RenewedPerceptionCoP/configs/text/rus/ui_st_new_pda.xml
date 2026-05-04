@@ -15,4 +15,46 @@
 	<string id="st_pda_unset_navigation_spot">
 		<text>Снять маршрут</text>
 	</string>
+	<string id="filter_personal_spots_text">
+		<text>Личные метки</text>
+	</string>
+	<string id="st_ui_pda_ranking_general">
+		<text>Общее</text>
+	</string>
+	<string id="st_ui_pda_ranking_valuable_artifact">
+		<text>Самый ценный найденный артефакт</text>
+	</string>
+	<string id="pda_stat_8">
+		<text>Заработано денег</text>
+	</string>
+	<string id="pda_stat_9">
+		<text>Потрачено денег</text>
+	</string>
+	<string id="pda_stat_10">
+		<text>Помощь сталкерам</text>
+	</string>
+	<string id="pda_stat_11">
+		<text>Количество убийств в голову</text>
+	</string>
+	<string id="pda_stat_12">
+		<text>Количество смертей игрока</text>
+	</string>
+	<string id="pda_stat_13">
+		<text>Пройденные километры</text>
+	</string>
+	<string id="ui_pda_dialog_no_contact">
+		<text>Нет активного контактаt</text>
+	</string>
+	<string id="ui_pda_dialog_status_idle">
+		<text>Статус: ожидание</text>
+	</string>
+	<string id="ui_pda_dialog_history">
+		<text>История диалога</text>
+	</string>
+	<string id="ui_pda_dialog_answers">
+		<text>Варианты ответа</text>
+	</string>
+	<string id="ui_pda_dialog_hint_select">
+		<text>ЛКМ: выбрать ответ</text>
+	</string>
 </string_table>

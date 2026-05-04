@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_dialogs>
+    <dialog id="dm_traveler_dialog" override="add">
+        <phrase id="11" text="dm_traveler_can_i_go_with_you" enabled="0"/>
+        <phrase id="12" text="dm_traveler_take_me_to" enabled="0"/>
+    </dialog>
+
+    <dialog id="dm_universal_dialog" override="add">
+        <phrase text="dm_wounded_medkit" enabled="0"/>
+    </dialog>
+</game_dialogs>

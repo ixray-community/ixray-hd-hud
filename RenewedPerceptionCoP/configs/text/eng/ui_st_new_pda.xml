@@ -15,4 +15,37 @@
 	<string id="st_pda_unset_navigation_spot">
 		<text>Clear route</text>
 	</string>
+	<string id="st_ui_pda_stat_money_earned">
+		<text>Money earned</text>
+	</string>
+	<string id="st_ui_pda_stat_money_spent">
+		<text>Money spent</text>
+	</string>
+	<string id="st_ui_pda_stat_help_stalkers">
+		<text>Help to stalkers</text>
+	</string>
+	<string id="st_ui_pda_stat_headshots">
+		<text>Headshot kills</text>
+	</string>
+	<string id="st_ui_pda_stat_player_deaths">
+		<text>Player deaths</text>
+	</string>
+	<string id="st_ui_pda_stat_distance_km">
+		<text>Distance traveled</text>
+	</string>
+	<string id="ui_pda_dialog_no_contact">
+		<text>No active contact</text>
+	</string>
+	<string id="ui_pda_dialog_status_idle">
+		<text>Status: idle</text>
+	</string>
+	<string id="ui_pda_dialog_history">
+		<text>Dialogue history</text>
+	</string>
+	<string id="ui_pda_dialog_answers">
+		<text>Available answers</text>
+	</string>
+	<string id="ui_pda_dialog_hint_select">
+		<text>LMB: select answer</text>
+	</string>
 </string_table>

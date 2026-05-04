@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<w>
+    <file name="ui\ui_actor_artefact_atlas" scale="2">
+        <texture id="af_medusa_icon"                x="896" y="128" width="128" height="128"/>
+        <texture id="af_cristall_flower_icon"       x="256" y="0" width="128" height="128"/>
+        <texture id="af_night_star_icon"            x="128" y="256" width="128" height="128"/>
+        <texture id="af_vyvert_icon"                x="384" y="256" width="128" height="128"/>
+        <texture id="af_gravi_icon"                 x="640" y="128" width="128" height="128"/>
+        <texture id="af_gold_fish_icon"             x="512" y="128" width="128" height="128"/>
+        <texture id="af_cristall_icon"              x="128" y="0" width="128" height="128"/>
+        <texture id="af_fireball_icon"              x="128" y="128" width="128" height="128"/>
+        <texture id="af_dummy_glassbeads_icon"      x="640" y="0" width="128" height="128"/>
+        <texture id="af_eye_icon"                   x="896" y="0" width="128" height="128"/>
+        <texture id="af_fire_icon"                  x="0" y="128" width="128" height="128"/>
+        <texture id="af_blood_icon"                 x="640" y="256" width="128" height="128"/>
+        <texture id="af_mincer_meat_icon"           x="0" y="256" width="128" height="128"/>
+        <texture id="af_soul_icon"                  x="256" y="256" width="128" height="128"/>
+        <texture id="af_fuzz_kolobok_icon"          x="256" y="128" width="128" height="128"/>
+        <texture id="af_baloon_icon"                x="768" y="256" width="128" height="128"/>
+        <texture id="af_glass_icon"                 x="384" y="128" width="128" height="128"/>
+        <texture id="af_electra_sparkler_icon"      x="768" y="0" width="128" height="128"/>
+        <texture id="af_electra_flash_icon"         x="0" y="384" width="128" height="128"/>
+        <texture id="af_electra_moonlight_icon"     x="512" y="256" width="128" height="128"/>
+        <texture id="af_dummy_battery_icon"         x="512" y="0" width="128" height="128"/>
+        <texture id="af_dummy_dummy_icon"           x="896" y="256" width="128" height="128"/>
+        <texture id="af_ice_icon"                   x="768" y="128" width="128" height="128"/>
+        <texture id="af_compass_icon"               x="0" y="0" width="128" height="128"/>
+        <texture id="af_oasis_heart_icon"           x="384" y="0" width="128" height="128"/>
+    </file>
+</w>

@@ -1,5 +1,16 @@
 local con = nil
 local crosshair_console_armed = false
+local pda_stats_initialized = false
+local pda_last_money = 0
+local pda_last_position = nil
+local pda_was_alive = true
+
+local PSTOR_MONEY_EARNED = "ixr_pda_money_earned"
+local PSTOR_MONEY_SPENT = "ixr_pda_money_spent"
+local PSTOR_HELP_STALKERS = "ixr_pda_help_stalkers"
+local PSTOR_HEADSHOTS = "ixr_pda_headshots"
+local PSTOR_PLAYER_DEATHS = "ixr_pda_player_deaths"
+local PSTOR_DISTANCE_METERS = "ixr_pda_distance_meters"
 
 local function arm_crosshair_console()
 	crosshair_console_armed = true
@@ -19,9 +30,98 @@ local function execute_command(command, arg)
 	con:execute(tostring(command) .. " " .. tostring(arg))
 end
 
+local function read_stat_value(key, default_value)
+	if not db or not db.actor then
+		return default_value
+	end
+
+	local value = xr_logic.pstor_retrieve(db.actor, key, default_value)
+	if value == nil then
+		return default_value
+	end
+
+	return value
+end
+
+local function write_stat_value(key, value)
+	if not db or not db.actor then
+		return
+	end
+
+	xr_logic.pstor_store(db.actor, key, value)
+end
+
+local function add_stat_value(key, delta)
+	local current_value = tonumber(read_stat_value(key, 0)) or 0
+	write_stat_value(key, current_value + delta)
+end
+
+local function init_pda_stats_runtime()
+	if pda_stats_initialized or not db or not db.actor then
+		return
+	end
+
+	pda_stats_initialized = true
+	pda_last_money = db.actor:money()
+	pda_last_position = vector():set(db.actor:position())
+	pda_was_alive = db.actor:alive()
+end
+
+local function on_actor_update_ixr_pda_stats()
+	if not db or not db.actor then
+		return
+	end
+
+	init_pda_stats_runtime()
+
+	local current_money = db.actor:money()
+	local delta_money = current_money - pda_last_money
+	if delta_money > 0 then
+		add_stat_value(PSTOR_MONEY_EARNED, delta_money)
+	elseif delta_money < 0 then
+		add_stat_value(PSTOR_MONEY_SPENT, -delta_money)
+	end
+	pda_last_money = current_money
+
+	local current_position = db.actor:position()
+	if pda_last_position then
+		local delta_distance = current_position:distance_to(pda_last_position)
+		if delta_distance > 0 and delta_distance < 50 then
+			add_stat_value(PSTOR_DISTANCE_METERS, delta_distance)
+		end
+	end
+	pda_last_position = vector():set(current_position)
+
+	local is_alive = db.actor:alive()
+	if pda_was_alive and not is_alive then
+		add_stat_value(PSTOR_PLAYER_DEATHS, 1)
+	end
+	pda_was_alive = is_alive
+end
+
+function OnGetPdaStatById(stat_id)
+	if stat_id == "money_earned" then
+		return tostring(math.floor(tonumber(read_stat_value(PSTOR_MONEY_EARNED, 0)) or 0))
+	elseif stat_id == "money_spent" then
+		return tostring(math.floor(tonumber(read_stat_value(PSTOR_MONEY_SPENT, 0)) or 0))
+	elseif stat_id == "help_stalkers" then
+		return tostring(math.floor(tonumber(read_stat_value(PSTOR_HELP_STALKERS, 0)) or 0))
+	elseif stat_id == "headshots" then
+		return tostring(math.floor(tonumber(read_stat_value(PSTOR_HEADSHOTS, 0)) or 0))
+	elseif stat_id == "player_deaths" then
+		return tostring(math.floor(tonumber(read_stat_value(PSTOR_PLAYER_DEATHS, 0)) or 0))
+	elseif stat_id == "distance_km" then
+		local meters = tonumber(read_stat_value(PSTOR_DISTANCE_METERS, 0)) or 0
+		return string.format("%.2f км", meters / 1000.0)
+	end
+
+	return ""
+end
+
 function on_game_start()
 	RegisterScriptCallback("main_menu_update", arm_crosshair_console)
 	RegisterScriptCallback("actor_on_update", arm_crosshair_console)
+	RegisterScriptCallback("actor_on_update", on_actor_update_ixr_pda_stats)
 
 	RegisterScriptCallback("on_init_ixr_options", function (_ref)
 		_ref.register_option(nil, "hud_visible", "st_ui_hud_show", _ref.check_box(true), 
