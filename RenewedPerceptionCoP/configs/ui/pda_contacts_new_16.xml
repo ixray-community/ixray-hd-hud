@@ -2,11 +2,7 @@
 <window>
 	<main_wnd x="0" y="0" width="1024" height="768"/>
 
-	<background x="35" y="41" width="955" height="667">
-		<texture>ui_inGame2_pda_buttons_background</texture>
-	</background>
-
-	<left_frame_window x="0" y="39" width="643" height="650" a="80">
+	<left_frame_window x="35" y="45" width="643" height="650" a="80">
 		<texture>ui_inGame2_pda_ranking_icon_over</texture>
 	</left_frame_window>
 
@@ -17,7 +13,7 @@
 		<texture>ui_inGame2_pda_ranking_center_caption</texture>
 	</left_frame_line>
 
-	<right_frame_window x="649" y="39" width="316" height="650" a="80">
+	<right_frame_window x="682" y="80" width="316" height="645" a="80">
 		<texture>ui_inGame2_pda_ranking_icon_over</texture>
 	</right_frame_window>
 
@@ -28,13 +24,11 @@
 		<texture>ui_inGame2_pda_ranking_center_caption</texture>
 	</right_frame_line>
 
-	<list x="16" y="46" width="560" height="500" always_show_scroll="1" can_select="1"/>
+	<list x="16" y="46" width="650" height="640" always_show_scroll="0" can_select="1"/>
 	<detail_list x="16" y="46" width="303" height="470" always_show_scroll="1" left_ident="5"/>
 
-	<!-- PDA dialog is positioned inside right_frame_window by this local root. -->
 	<pda_dialog>
 		<main x="0" y="0" width="316" height="650"/>
-
 		<button x="8" y="600" width="300" height="24" stretch="1" hint="ui_st_exit_hint">
 			<texture>ui_inGame2_big_inventory_button</texture>
 			<text font="letterica16" align="c">ui_st_trade</text>
@@ -46,8 +40,8 @@
 			</text_color>
 		</button>
 
-		<answers_list x="8" y="36" width="300" height="430" always_show_scroll="1" left_ident="4"/>
-		<questions_list x="8" y="478" width="300" height="110" always_show_scroll="1" left_ident="4"/>
+		<answers_list x="15" y="36" width="300" height="430" always_show_scroll="0" left_ident="4"/>
+		<questions_list x="15" y="500" width="300" height="110" always_show_scroll="0" left_ident="4"/>
 
 		<font font="letterica18" r="210" g="215" b="225"/>
 		<font font="letterica18" r="200" g="200" b="200"/>

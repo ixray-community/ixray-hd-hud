@@ -2,7 +2,6 @@
     <file name="ui\ui_actor_hint_wnd" scale="2">
 
 	    	<texture id="ui_inGame2_PDA_icon_Stalker_machanik" x="306" y="576" width="27" height="27" />
-	    	<texture id="ui_inGame2_PDA_icon_Stalker_VIP" x="1000000" y="1000000" width="0" height="0" />
 	    	<texture id="ui_inGame2_PDA_icon_Stalker_Trader" x="274" y="576" width="27" height="27" />
 	    	<texture id="ui_inGame2_PDA_icon_Stalker_Medic" x="242" y="576" width="27" height="27" />
 		    <texture id="ui_inGame2_PDA_icon_Stalker_guide" x="306" y="544" width="27" height="27" />

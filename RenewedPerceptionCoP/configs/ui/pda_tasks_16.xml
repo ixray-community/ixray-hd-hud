@@ -10,10 +10,10 @@
 		<window_name>btn_second_task</window_name>
 		<text align="c" vert_align="c" x="0" y="0" width="120" height="19" font="font_oswald_18">Задания</text>
 		<text_color>
-				<t r="231" g="165" b="47"/>
-				<e r="122" g="122" b="122"/>
-				<e r="122" g="122" b="122"/>
-				<h r="179" g="179" b="179"/>
+				<t r="242" g="242" b="242"/>
+				<e r="115" g="115" b="115"/>
+				<e r="115" g="115" b="115"/>
+				<h r="166" g="166" b="166"/>
 		</text_color>
 	</btn_second_task>
 
@@ -49,7 +49,7 @@
 				<text  align="l" font="letterica18"/>
 			</t_hint_text>
 		</map_hint_item>
-		<zoom_scale x="0" y="30" width="44" height="160" inertion="0.90">
+		<zoom_scale x="0" y="30" width="44" height="160" inertion="0.90" label_format="x%.1f" horizontal="0">
 			<rail x="34" y="0" width="10" height="160" stretch="1">
 				<texture>ui_inGame2_rail_timeline</texture>
 			</rail>
@@ -57,7 +57,7 @@
 				<texture>ui_inGame2_thumb_timeline</texture>
 			</thumb>
 			<tick_label x="-20" y="0" width="18" height="14">
-				<text align="r" font="font_oswald_16" r="255" g="255" b="255"> </text>
+				<text align="r" font="font_rubik_14" r="255" g="255" b="255"> </text>
 			</tick_label>
 		</zoom_scale>
 	</map_wnd>
@@ -67,10 +67,10 @@
 			<texture>ui_inGame2_pda_button_filters</texture>
 			<text x="-420" y="0" align="c" vert_align="c" font="font_oswald_18">filter_primary_objects_text</text>
 			<text_color>
-				<t r="231" g="165" b="47"/>
-				<e r="122" g="122" b="122"/>
-				<e r="122" g="122" b="122"/>
-				<h r="179" g="179" b="179"/>
+				<t r="242" g="242" b="242"/>
+				<e r="115" g="115" b="115"/>
+				<e r="115" g="115" b="115"/>
+				<h r="166" g="166" b="166"/>
 			</text_color>
 	</filter_primary_objects>
 
@@ -79,10 +79,10 @@
 			<texture>ui_inGame2_pda_button_filters</texture>
 			<text x="-420" y="0" align="c" vert_align="c" font="font_oswald_18">filter_quest_npcs_text</text>
 			<text_color>
-				<t r="231" g="165" b="47"/>
-				<e r="122" g="122" b="122"/>
-				<e r="122" g="122" b="122"/>
-				<h r="179" g="179" b="179"/>
+				<t r="242" g="242" b="242"/>
+				<e r="115" g="115" b="115"/>
+				<e r="115" g="115" b="115"/>
+				<h r="166" g="166" b="166"/>
 			</text_color>
 	</filter_quest_npcs>
 
@@ -91,10 +91,10 @@
 			<texture>ui_inGame2_pda_button_filters</texture>
 			<text x="-420" y="0" align="c" vert_align="c" font="font_oswald_18">filter_personal_spots_text</text>
 			<text_color>
-				<t r="231" g="165" b="47"/>
-				<e r="122" g="122" b="122"/>
-				<e r="122" g="122" b="122"/>
-				<h r="179" g="179" b="179"/>
+				<t r="242" g="242" b="242"/>
+				<e r="115" g="115" b="115"/>
+				<e r="115" g="115" b="115"/>
+				<h r="166" g="166" b="166"/>
 			</text_color>
 	</filter_personal_spots>
 
@@ -103,26 +103,12 @@
 			<texture>ui_inGame2_pda_button_filters</texture>
 			<text x="-420" y="0" align="c" vert_align="c" font="font_oswald_18">filter_treasures_text</text>
 			<text_color>
-				<t r="231" g="165" b="47"/>
-				<e r="122" g="122" b="122"/>
-				<e r="122" g="122" b="122"/>
-				<h r="179" g="179" b="179"/>
+				<t r="242" g="242" b="242"/>
+				<e r="115" g="115" b="115"/>
+				<e r="115" g="115" b="115"/>
+				<h r="166" g="166" b="166"/>
 			</text_color>
 	</filter_treasures>
-
-	<storyline_task_item x="-58000" y="98" width="800" height="26">
-		<window_name>pda_task_item1</window_name>
-		<t_icon x="-21" y="-30" width="65" height="48"/>
-		<t_icon_over x="-21" y="-30" width="65" height="48"/>
-		<t_caption x="45" y="-17" width="760" height="26">
-			<text align="l" vert_align="c" font="letterica25" r="220" g="220" b="220"/>
-		</t_caption>
-	</storyline_task_item>
-
-	<btn_task_focus x="-95100" y="67" width="38" height="50" hint="ui_task_btn_focus_center">
-		<window_name>btn_task_focus</window_name>
-		<texture></texture>
-	</btn_task_focus>
 
 	<btn_nav_parent x="935" y="30" width="32" height="200">
 		<btn_nav_0 x="0" y="-10" width="22" height="28" hint="ui_map_btn_legend">
@@ -155,101 +141,97 @@
 		<background_frame x="0" y="0" width="400" height="500">
 			<texture>ui_icons_PDA_dialog_2</texture>
 		</background_frame>
+				<auto_frameline x="0" y="0" width="400" height="2" stretch="1">
+					<texture>ui_inGame2_PDA_horiz_divider</texture>
+				</auto_frameline>
 		<t_caption x="0" y="15" width="400" height="20">
-			<text align="c" font="font_oswald_20" r="128" g="128" b="128" a="160">Текущие Задания</text>
+			<text align="c" font="font_oswald_24" r="128" g="128" b="128" a="160">ui_pda_secondary_task</text>
 		</t_caption>
 		<t_counter x="215" y="15" width="50" height="14">
-			<text align="r" font="letterica16" color="ui_4"/>
+			<text align="r" font="font_rubik_16" color="ui_4"/>
 		</t_counter>
-		<btn_close x="380" y="10" width="15" height="15">
+		<btn_close x="380" y="10" width="12" height="15">
 			<window_name>task_btn_close</window_name>
-			<texture>ui_task_bt_close</texture>
+			<texture>ui_inGame2_PDA_button_close</texture>
 		</btn_close>
 
-		<storyline_task_item x="15" y="50" width="365" height="55">
+		<storyline_task_item x="15" y="50" width="385" height="55">
 			<window_name>pda_task_item1_list</window_name>
-			<t_icon x="0" y="3" width="65" height="48"/>
-			<t_icon_over x="0" y="3" width="65" height="48"/>
-			<t_caption x="75" y="14" width="260" height="26">
-				<text align="l" vert_align="c" font="letterica18" r="220" g="220" b="220"/>
+			<t_icon x="0" y="0" width="48" height="36"/>
+			<t_icon_over x="0" y="0" width="48" height="36"/>
+			<t_caption x="55" y="6" width="260" height="26">
+				<text align="l" vert_align="c" font="font_rubik_18" r="220" g="220" b="220"/>
 			</t_caption>
-			<btn_task_focus x="345" y="16" width="19" height="19" hint="ui_task_btn_focus_center">
+			<btn_task_focus x="360" y="6" width="18" height="22" hint="ui_task_btn_focus_center">
 				<window_name>btn_task_focus_list</window_name>
 				<texture>ui_inGame2_pda_center_on_mission_button</texture>
 			</btn_task_focus>
 		</storyline_task_item>
 
-		<task_list x="15" y="122" width="365" height="315" item_height="35" scroll_profile="default" always_show_scroll="1" />
+		<task_list x="15" y="122" width="365" height="315" item_height="35" scroll_profile="default" always_show_scroll="0" />
 
 		<task_filter_tabs x="15" y="456" width="370" height="24">
 			<button id="all" x="0" y="0" width="123" height="24" frame_mode="0">
 				<window_name>task_filter_tab_all</window_name>
-				<texture>ui_inGame2_pda_button</texture>
-				<text align="c" vert_align="c" x="0" y="0" width="123" height="24" font="letterica16">Все</text>
+				<text align="c" vert_align="c" x="0" y="0" width="123" height="24" font="letterica16">ui_pda_all_task</text>
 				<text_color>
-					<t r="255" g="255" b="255"/>
-					<d r="255" g="255" b="255"/>
-					<e r="200" g="200" b="200"/>
-					<h r="170" g="170" b="170"/>
+					<t r="242" g="242" b="242"/>
+					<e r="115" g="115" b="115"/>
+					<e r="115" g="115" b="115"/>
+					<h r="166" g="166" b="166"/>
 				</text_color>
 			</button>
 			<button id="story" x="123" y="0" width="123" height="24" frame_mode="0">
 				<window_name>task_filter_tab_story</window_name>
-				<texture>ui_inGame2_pda_button</texture>
-				<text align="c" vert_align="c" x="0" y="0" width="123" height="24" font="letterica16">Сюжетные</text>
+				<text align="c" vert_align="c" x="0" y="0" width="123" height="24" font="letterica16">ui_pda_story_task</text>
 				<text_color>
-					<t r="255" g="255" b="255"/>
-					<d r="255" g="255" b="255"/>
-					<e r="200" g="200" b="200"/>
-					<h r="170" g="170" b="170"/>
+					<t r="242" g="242" b="242"/>
+					<e r="115" g="115" b="115"/>
+					<e r="115" g="115" b="115"/>
+					<h r="166" g="166" b="166"/>
 				</text_color>
 			</button>
 			<button id="side" x="246" y="0" width="123" height="24" frame_mode="0">
 				<window_name>task_filter_tab_side</window_name>
-				<texture>ui_inGame2_pda_button</texture>
-				<text align="c" vert_align="c" x="0" y="0" width="123" height="24" font="letterica16">Попутные</text>
+				<text align="c" vert_align="c" x="0" y="0" width="123" height="24" font="letterica16">ui_pda_side_task</text>
 				<text_color>
-					<t r="255" g="255" b="255"/>
-					<d r="255" g="255" b="255"/>
-					<e r="200" g="200" b="200"/>
-					<h r="170" g="170" b="170"/>
+					<t r="242" g="242" b="242"/>
+					<e r="115" g="115" b="115"/>
+					<e r="115" g="115" b="115"/>
+					<h r="166" g="166" b="166"/>
 				</text_color>
 			</button>
 		</task_filter_tabs>
 
-		<task_item  x="0" y="0" width="350" height="35">
+		<task_item  x="0" y="0" width="384" height="35">
 			<activ  r="255" g="255" b="255"/>
 			<unread r="220" g="220" b="220"/>
 			<read   r="100" g="100" b="100"/>
-			<st_story x="7" y="8" width="19" height="19" stretch="1"/>
-			<name x="40" y="0" width="285" height="30">
-				<text align="l" font="letterica18" complex_mode="1"/>
+			<st_story x="0" y="0" width="14" height="17" stretch="1"/>
+			<name x="24" y="3" width="300" height="30">
+				<text align="l" font="font_rubik_16" complex_mode="1"/>
 			</name>
-			<btn_focus x="337" y="1" width="19" height="19" hint="ui_task_btn_focus_center2">
+			<btn_focus x="350" y="0" width="14" height="17" hint="ui_task_btn_focus_center" stretch="1">
 				<window_name>task_item_btn_focus</window_name>
-				<texture></texture>
-			</btn_focus>
-			<btn_task_focus x="337" y="1" width="19" height="19" hint="ui_task_btn_focus_center">
-				<window_name>task_item_btn_task_focus</window_name>
 				<texture>ui_inGame2_pda_center_on_mission_button</texture>
-			</btn_task_focus>
+			</btn_focus>
 		</task_item>
 	</second_task_wnd>
 
-	<map_legend_wnd x="700" y="10" width="230" height="390">
-		<background_frame x="0" y="0" width="230" height="390">
-			<texture>ui_icons_PDA_dialog</texture>
+	<map_legend_wnd x="690" y="18" width="240" height="450">
+		<background_frame x="0" y="0" width="240" height="450">
+			<texture a="210">ui_icons_PDA_legend_list</texture>
 		</background_frame>
 		<t_caption x="15" y="15" width="80" height="14">
-			<text align="l" font="letterica16" r="128" g="128" b="128" a="160">pda_legend_caption</text>
+			<text align="l" font="font_rubik_16" r="128" g="128" b="128" a="160">pda_legend_caption</text>
 		</t_caption>
-		<btn_close x="200" y="10" width="15" height="15">
+		<btn_close x="220" y="10" width="12" height="15">
 			<window_name>task_btn_close</window_name>
-			<texture>ui_task_bt_close</texture>
+			<texture>ui_inGame2_PDA_button_close</texture>
 		</btn_close>
-		<legend_list x="0" y="43" width="275" height="350" item_height="25" scroll_profile="default" always_show_scroll="0">
+		<legend_list x="0" y="45" width="240" height="500" item_height="25" scroll_profile="default" always_show_scroll="0">
 			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="19" height="19" stretch="1">
+				<image x="10" y="0" width="15" height="18" stretch="1">
 					<texture>ui_inGame2_PDA_icon_Primary_mission</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
@@ -257,7 +239,7 @@
 				</text_static>
 			</item>
 			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="19" height="19" stretch="1">
+				<image x="10" y="0" width="15" height="18" stretch="1">
 					<texture>ui_inGame2_PDA_icon_Secondary_mission</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
@@ -265,7 +247,7 @@
 				</text_static>
 			</item>
 			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="19" height="19" stretch="1">
+				<image x="10" y="0" width="15" height="18" stretch="1">
 					<texture>ui_inGame2_PDA_icon_secret</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
@@ -273,55 +255,71 @@
 				</text_static>
 			</item>
 			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="20" height="20" stretch="1">
-					<texture>ui_inGame2_PDA_icon_location_legend</texture>
+				<image x="10" y="0" width="15" height="18" stretch="1">
+					<texture>ui_inGame2_PDA_personal_spot</texture>
+				</image>
+				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
+					<text align="l" font="letterica16" r="170" g="170" b="170">st_ui_pda_legend_personal_spots</text>
+				</text_static>
+			</item>
+			<item x="0" y="0" width="275" height="26">
+				<image x="10" y="0" width="15" height="18" stretch="1">
+					<texture>ui_inGame2_PDA_icon_location</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
 					<text align="l" font="letterica16" r="170" g="170" b="170">st_ui_pda_legend_primary_objects</text>
 				</text_static>
 			</item>
-			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="19" height="19" stretch="1">
-					<texture color="pda_blue">ui_inGame2_PDA_icon_Actor_Box</texture>
+			<item x="135" y="0" width="275" height="26">
+				<image x="10" y="0" width="15" height="18" stretch="1">
+					<texture r="193" g="238" b="254">ui_inGame2_PDA_icon_Actor_Box</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
 					<text align="l" font="letterica16" r="170" g="170" b="170">st_ui_pda_actor_box</text>
 				</text_static>
 			</item>
 			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="19" height="19" stretch="1">
-					<texture color="pda_blue">ui_inGame2_PDA_icon_Stalker_Trader</texture>
+				<image x="10" y="0" width="15" height="18" stretch="1">
+					<texture r="193" g="238" b="254">ui_inGame2_PDA_icon_Stalker_Trader</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
 					<text align="l" font="letterica16" r="170" g="170" b="170">st_ui_pda_legend_trader</text>
 				</text_static>
 			</item>
 			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="19" height="19" stretch="1">
-					<texture color="pda_blue">ui_inGame2_PDA_icon_Stalker_guide</texture>
+				<image x="10" y="0" width="15" height="18" stretch="1">
+					<texture r="193" g="238" b="254">ui_inGame2_PDA_icon_Stalker_guide</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
 					<text align="l" font="letterica16" r="170" g="170" b="170">st_ui_pda_legend_scout</text>
 				</text_static>
 			</item>
 			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="19" height="19" stretch="1">
-					<texture color="pda_blue">ui_inGame2_PDA_icon_Stalker_machanik</texture>
+				<image x="10" y="0" width="15" height="18" stretch="1">
+					<texture r="193" g="238" b="254">ui_inGame2_PDA_icon_Stalker_machanik</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
 					<text align="l" font="letterica16" r="170" g="170" b="170">st_ui_pda_legend_mechanic</text>
 				</text_static>
 			</item>
 			<item x="0" y="0" width="275" height="26">
-				<image x="10" y="0" width="19" height="19" stretch="1">
-					<texture color="pda_blue">ui_inGame2_PDA_icon_Stalker_Medic</texture>
+				<image x="10" y="0" width="15" height="18" stretch="1">
+					<texture r="193" g="238" b="254">ui_inGame2_PDA_icon_Stalker_Medic</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
 					<text align="l" font="letterica16" r="170" g="170" b="170">st_ui_pda_legend_medic</text>
 				</text_static>
 			</item>
 			<item x="0" y="0" width="275" height="26">
-				<image x="14" y="3" width="11" height="11">
+				<image x="10" y="0" width="15" height="18" stretch="1">
+					<texture r="193" g="238" b="254">ui_inGame2_PDA_icon_Place_to_rest</texture>
+				</image>
+				<text_static x="40" y="2" width="230" height="16" complex_mode="1">
+					<text align="l" font="letterica16" r="170" g="170" b="170">st_ui_pda_legend_rest</text>
+				</text_static>
+			</item>
+			<item x="0" y="0" width="275" height="26">
+				<image x="14" y="3" width="9" height="11">
 					<texture>ui_minimap_squad_leader</texture>
 				</image>
 				<text_static x="40" y="2" width="230" height="16" complex_mode="1">

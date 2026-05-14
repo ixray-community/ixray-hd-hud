@@ -42,19 +42,13 @@
 	<string id="pda_stat_13">
 		<text>Пройденные километры</text>
 	</string>
-	<string id="ui_pda_dialog_no_contact">
-		<text>Нет активного контактаt</text>
+	<string id="ui_pda_all_task">
+		<text>Все задания</text>
 	</string>
-	<string id="ui_pda_dialog_status_idle">
-		<text>Статус: ожидание</text>
+	<string id="ui_pda_story_task">
+		<text>Cюжетные</text>
 	</string>
-	<string id="ui_pda_dialog_history">
-		<text>История диалога</text>
-	</string>
-	<string id="ui_pda_dialog_answers">
-		<text>Варианты ответа</text>
-	</string>
-	<string id="ui_pda_dialog_hint_select">
-		<text>ЛКМ: выбрать ответ</text>
+	<string id="ui_pda_side_task">
+		<text>Попутные</text>
 	</string>
 </string_table>

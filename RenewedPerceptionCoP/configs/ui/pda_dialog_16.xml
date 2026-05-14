@@ -13,8 +13,8 @@
 		</text_color>
 	</button>
 
-	<answers_list x="8" y="36" width="287" height="260" always_show_scroll="1" left_ident="4"/>
-	<questions_list x="8" y="302" width="287" height="88" always_show_scroll="1" left_ident="4"/>
+	<answers_list x="8" y="36" width="287" height="260" always_show_scroll="0" left_ident="4"/>
+	<questions_list x="8" y="302" width="287" height="88" always_show_scroll="0" left_ident="4"/>
 
 	<font font="letterica18" r="210" g="215" b="225"/>
 	<font font="letterica18" r="200" g="200" b="200"/>
