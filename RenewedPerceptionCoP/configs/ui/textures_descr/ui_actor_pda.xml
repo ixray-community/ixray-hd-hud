@@ -85,16 +85,6 @@
 	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_right_arrow_E" x="189" y="215" width="18" height="17" />
 	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_right_arrow_H_T" x="151" y="215" width="18" height="17" />
 
-	    <texture id="ui_inGame2_pda_Filtr_arrow_left_e" x="9" y="9" width="42" height="42" />
-	    <texture id="ui_inGame2_pda_Filtr_arrow_left_h" x="9" y="59" width="42" height="42" />
-	    <texture id="ui_inGame2_pda_Filtr_arrow_left_t" x="9" y="109" width="42" height="42" />
-	    <texture id="ui_inGame2_pda_Filtr_arrow_left_d" x="9" y="9" width="42" height="42" />
-
-	    <texture id="ui_inGame2_pda_Filtr_arrow_right_e" x="59" y="9" width="42" height="42" />
-	    <texture id="ui_inGame2_pda_Filtr_arrow_right_h" x="59" y="59" width="42" height="42" />
-	    <texture id="ui_inGame2_pda_Filtr_arrow_right_t" x="59" y="109" width="42" height="42" />
-	    <texture id="ui_inGame2_pda_Filtr_arrow_right_d" x="59" y="9" width="42" height="42" />
-
 	    <texture id="ui_inGame2_pda_ranking_center_caption_b"       x="197" y="1" width="3" height="27" />
 	    <texture id="ui_inGame2_pda_ranking_center_caption_back"    x="200" y="1" width="12" height="27" />
 	    <texture id="ui_inGame2_pda_ranking_center_caption_e"       x="289" y="1" width="8" height="27" />
@@ -179,10 +169,36 @@
 
     <file name="ui\ui_actor_pda_journal_back" scale="2">
         <texture id="ui_inGame2_journal_back" x="0" y="256" width="1280" height="768" />
-        <texture id="ui_inGame2_timeline_line" x="0" y="0" width="1201" height="30" />
-        <texture id="ui_node_empty" x="60" y="30" width="30" height="30" />
-        <texture id="ui_node_archive" x="0" y="30" width="30" height="30" />
-        <texture id="ui_node_present" x="30" y="30" width="30" height="30" />
+
+	    <texture id="ui_inGame2_pda_Filtr_arrow_left_e" x="1324" y="175" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_left_h" x="1324" y="125" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_left_t" x="1324" y="80" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_left_d" x="1324" y="175" width="37" height="37" />
+
+	    <texture id="ui_inGame2_pda_Filtr_arrow_right_e" x="1394" y="175" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_right_h" x="1394" y="125" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_right_t" x="1394" y="80" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_right_d" x="1394" y="175" width="37" height="37" />
+
+	    <texture id="ui_pda_cal_btn_e" x="1324" y="10" width="37" height="37" />
+	    <texture id="ui_pda_cal_btn_h" x="1374" y="10" width="37" height="37" />
+	    <texture id="ui_pda_cal_btn_t" x="1419" y="10" width="37" height="37" />
+	    <texture id="ui_pda_cal_btn_d" x="1324" y="10" width="37" height="37" />
+
+	    <texture id="ui_pda_cal_day_e" x="1323" y="523" width="23" height="23" />
+	    <texture id="ui_pda_cal_day_h" x="1352" y="523" width="23" height="23" />
+	    <texture id="ui_pda_cal_day_t" x="1380" y="523" width="23" height="23" />
+	    <texture id="ui_pda_cal_day_d" x="1323" y="523" width="23" height="23" />
+
+		<texture id="ui_inGame2_pda_cal_popup_lt"   x="1323" y="254" width="32"  height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_t"    x="1355" y="254" width="141" height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_rt"   x="1496" y="254" width="32"  height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_l"    x="1323" y="286" width="32"  height="164" />
+		<texture id="ui_inGame2_pda_cal_popup_back" x="1355" y="286" width="141" height="164" />
+		<texture id="ui_inGame2_pda_cal_popup_r"    x="1496" y="286" width="32"  height="164" />
+		<texture id="ui_inGame2_pda_cal_popup_lb"   x="1323" y="450" width="32"  height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_b"    x="1355" y="450" width="141" height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_rb"   x="1496" y="450" width="32"  height="32"  />
     </file>
 
     <file name="ui\ui_actor_pda_msg_frame" scale="2">
