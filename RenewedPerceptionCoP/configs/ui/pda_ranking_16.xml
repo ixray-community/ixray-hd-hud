@@ -11,31 +11,31 @@
 		<texture>ui_inGame2_pda_ranking_icon_over</texture>
 	</actor_icon_over>
 
-	<ranking_actor_identity x="38" y="105" width="240" height="180">
-		<icon_static x="0" y="0" width="105" height="90" stretch="1"/>
+	<ranking_actor_identity x="36" y="81" width="240" height="180">
+		<icon_static x="0" y="0" width="130" height="128" stretch="1"/>
 
-		<name_static x="112" y="0" width="126" height="24">
+		<name_static x="134" y="0" width="146" height="24">
 			<text align="l" vert_align="c" font="font_oswald_30" r="220" g="220" b="220"/>
 		</name_static>
 
-		<rank_caption x="112" y="32" width="126" height="16">
+		<rank_caption x="134" y="32" width="126" height="16">
 			<text align="l" vert_align="c" font="font_rubik_14" r="128" g="128" b="128">ui_st_rank</text>
 		</rank_caption>
-		<rank_static x="132" y="32" width="105" height="18">
+		<rank_static x="174" y="32" width="105" height="18">
 			<text align="r" vert_align="c" font="font_rubik_14" r="170" g="170" b="170"/>
 		</rank_static>
 
-		<community_caption x="112" y="50" width="126" height="16">
+		<community_caption x="134" y="50" width="126" height="16">
 			<text align="l" vert_align="c" font="font_rubik_14" r="128" g="128" b="128">ui_st_community</text>
 		</community_caption>
-		<community_static x="132" y="50" width="105" height="18">
+		<community_static x="174" y="50" width="105" height="18">
 			<text align="r" vert_align="c" font="font_rubik_14" r="170" g="170" b="170"/>
 		</community_static>
 
-		<reputation_caption x="112" y="70" width="128" height="16">
+		<reputation_caption x="134" y="70" width="128" height="16">
 			<text align="l" vert_align="c" font="font_rubik_14" r="128" g="128" b="128">ui_st_reputation</text>
 		</reputation_caption>
-		<reputation_static x="132" y="68" width="105" height="18">
+		<reputation_static x="174" y="68" width="105" height="18">
 			<text align="r" vert_align="c" font="font_rubik_14" r="170" g="170" b="170"/>
 		</reputation_static>
 
@@ -50,54 +50,57 @@
 
 	<valuable_artifact_over x="684" y="624" width="318" height="-25" stretch="1">
 		<texture></texture>
-		<auto_static x="6" y="-25" width="188" height="22" stretch="1">
+		<auto_frameline x="0" y="-25" width="317" height="30" vertical="0">
+			<texture a="150">ui_inGame2_pda_background_text</texture>
+		</auto_frameline>
+		<auto_static x="6" y="-22" width="188" height="22" stretch="1">
 			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">st_ui_pda_ranking_valuable_artifact</text>
 		</auto_static>
 	</valuable_artifact_over>
 	<valuable_artifact_back x="684" y="594" width="318" height="135" stretch="1">
 		<texture></texture>
 	</valuable_artifact_back>
-	<valuable_artifact_icon x="800" y="630" width="72" height="88" stretch="1" use_3d="1" use_3d_scale="0.85" use_3d_rot_x="0" use_3d_rot_y="20" use_3d_rot_z="0"/>
+	<valuable_artifact_icon x="800" y="635" width="72" height="88" stretch="1" use_3d="1" use_3d_scale="0.85" use_3d_rot_x="0" use_3d_rot_y="20" use_3d_rot_z="0"/>
 
 	<stat_info>
 		<value color="ui_1"/>
-		<stat x="45" y="220" width="30" height="16">
+		<stat x="45" y="225" width="30" height="16">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_1</text>       <!-- time -->
 		</stat>
-		<stat x="45" y="250" width="30" height="16">
+		<stat x="45" y="255" width="30" height="16">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_2</text>       <!-- surges -->
 		</stat>
-		<stat x="45" y="280" width="30" height="16">
+		<stat x="45" y="285" width="30" height="16">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_3</text>       <!-- quest completed -->
 		</stat>
-		<stat x="45" y="310" width="30" height="16">
+		<stat x="45" y="315" width="30" height="16">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_4</text>       <!-- mutants killed -->
 		</stat>
-		<stat x="45" y="340" width="30" height="16">
+		<stat x="45" y="345" width="30" height="16">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_5</text>       <!-- stalkers killed -->
 		</stat>
-		<stat x="45" y="370" width="30" height="16">
+		<stat x="45" y="375" width="30" height="16">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_6</text>       <!-- founded artefacts -->
 		</stat>
-		<stat x="45" y="400" width="30" height="16">
+		<stat x="45" y="405" width="30" height="16">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_7</text>       <!-- founded treasures -->
 		</stat>
-		<stat x="45" y="430" width="320" height="16" id="money_earned">
+		<stat x="45" y="435" width="30" height="16" id="money_earned">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_8</text>
 		</stat>
-		<stat x="45" y="460" width="320" height="16" id="money_spent">
+		<stat x="45" y="465" width="30" height="16" id="money_spent">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_9</text>
 		</stat>
-		<stat x="45" y="490" width="320" height="16" id="help_stalkers">
+		<stat x="45" y="495" width="30" height="16" id="help_stalkers">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_10</text>
 		</stat>
-		<stat x="45" y="520" width="320" height="16" id="headshots">
+		<stat x="45" y="525" width="30" height="16" id="headshots">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_11</text>
 		</stat>
-		<stat x="45" y="550" width="320" height="16" id="player_deaths">
+		<stat x="45" y="555" width="30" height="16" id="player_deaths">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_12</text>
 		</stat>
-		<stat x="45" y="580" width="320" height="16" id="distance_km">
+		<stat x="45" y="585" width="30" height="16" id="distance_km">
 			<text align="l" font="font_rubik_16" r="220" g="220" b="220">pda_stat_13</text>
 		</stat>
 	</stat_info>
@@ -107,15 +110,18 @@
 	</center_caption>
 
 	<achievements_background x="320" y="80" width="360" height="650">
-		<auto_static x="15" y="0" width="360" height="25" stretch="1">
-			<text align="l" vert_align="c" font="font_oswald_24" r="220" g="220" b="220">ui_ranking_center_caption</text>
+		<auto_frameline x="0" y="0" width="360" height="30" vertical="0">
+			<texture a="255">ui_inGame2_pda_background_text</texture>
+		</auto_frameline>
+		<auto_static x="10" y="2" width="360" height="25" stretch="1">
+			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">ui_ranking_center_caption</text>
 		</auto_static>
     </achievements_background>
 
-	<achievements_wnd x="280" y="105" width="380" height="638" always_show_scroll="0" stretch="1"/>
+	<achievements_wnd x="280" y="110" width="380" height="638" always_show_scroll="0" stretch="1"/>
     <achievements_itm x="65" y="35" width="90" height="75" inverse_dir="0" stretch="1">
         <name x="170" y="0" width="230" height="20">
-            <text align="l" font="font_oswald_24" r="200" g="200" b="200">test</text>
+            <text align="l" font="font_oswald_20" r="200" g="200" b="200">test</text>
         </name>
         <icon x="42" y="0" width="90" height="75"/>
         <descr x="170" y="30" width="230" height="90" complex_mode="1">
@@ -133,7 +139,10 @@
 
     <monster_over x="685" y="105" width="314" height="226">
         <texture></texture>
-		<auto_static x="10" y="-25" width="380" height="22" stretch="1">
+		<auto_frameline x="-1" y="-25" width="317" height="30" vertical="0">
+			<texture a="255">ui_inGame2_pda_background_text</texture>
+		</auto_frameline>
+		<auto_static x="10" y="-22" width="380" height="22" stretch="1">
 			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">pda_stat_mutant_killed</text>
 		</auto_static>
     </monster_over>
@@ -142,8 +151,11 @@
 
     <favorite_weapon_over x="685" y="364" width="332" height="-25" stretch="1">
         <texture></texture>
-		<auto_static x="6" y="-23" width="240" height="22" stretch="1">
-			<text align="l" vert_align="c" font="font_oswald_24" r="220" g="220" b="220">pda_stat_favorite_weapon</text>
+		<auto_frameline x="-1" y="-25" width="317" height="30" vertical="0">
+			<texture a="255">ui_inGame2_pda_background_text</texture>
+		</auto_frameline>
+		<auto_static x="6" y="-22" width="240" height="22" stretch="1">
+			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">pda_stat_favorite_weapon</text>
 		</auto_static>
     </favorite_weapon_over>
     <favorite_weapon_back x="665" y="315" width="332" height="180" stretch="1">

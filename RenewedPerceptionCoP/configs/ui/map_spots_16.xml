@@ -748,7 +748,7 @@
                 <level_map spot="primary_object_spot"/>
 <!--                <mini_map spot="primary_object_spot_mini"/> -->
         </primary_object>
-        <primary_object_spot width="24" height="24" stretch="1" alignment="c" location_level="-3" scale="1" scale_min="1" scale_max="6">
+        <primary_object_spot width="8" height="8" stretch="1" alignment="c" location_level="0" scale="1" scale_min="1" scale_max="10">
                 <texture>ui_inGame2_PDA_icon_location</texture>
         </primary_object_spot>
 <!--

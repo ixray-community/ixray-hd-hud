@@ -5,21 +5,37 @@
 		<text align="l" font="letterica16" r="100" g="100" b="100" a="0"/>
 	</center_caption>
 
-	<logs_list x="45" y="130" width="936" height="523" item_height="35" scroll_profile="pda_logs" always_show_scroll="1">
+	<logs_list_news x="40" y="128" width="260" height="605" item_height="35" scroll_profile="pda_logs" always_show_scroll="0">
 		<font font="letterica18" color="ui_4"/>
-	</logs_list>
+		<auto_frameline x="0" y="0" width="280" height="23" vertical="0">
+			<texture>ui_inGame2_pda_background_text</texture>
+		</auto_frameline>
+		<auto_static x="0" y="4" width="280" height="16">
+			<text align="c" vert_align="c" font="letterica16" r="170" g="170" b="170">pda_filter_news</text>
+		</auto_static>
+	</logs_list_news>
+
+	<logs_list_dialogs x="325" y="128" width="660" height="605" item_height="35" scroll_profile="pda_logs" always_show_scroll="0" text_complex_mode="1">
+		<font font="letterica18" color="ui_4"/>
+		<auto_frameline x="0" y="0" width="280" height="23" vertical="0">
+			<texture>ui_inGame2_pda_background_text</texture>
+		</auto_frameline>
+		<auto_static x="0" y="4" width="280" height="16">
+			<text align="c" vert_align="c" font="letterica16" r="170" g="170" b="170">pda_filter_dialogs</text>
+		</auto_static>
+	</logs_list_dialogs>
 
 	<logs_item  x="276" y="0" width="270" height="38">
 		<date_static x="55" y="1" width="100" height="14">
 			<text align="l" font="letterica16" color="ui_3"/>
 		</date_static>
-		<caption_static x="155" y="1" width="750" height="14">
+		<caption_static x="150" y="1" width="750" height="14">
 			<text align="l" font="letterica16" color="ui_1"/>
 		</caption_static>
-		<text_static x="55" y="16" width="845" height="14" complex_mode="1">
+		<text_static x="55" y="16" width="615" height="14" complex_mode="1">
 			<text align="l" font="letterica16" color="ui_4"/>
 		</text_static>
-		<image x="0" y="2" width="49" height="29" stretch="1"/>
+		<image x="0" y="2" width="40" height="29" stretch="1"/>
 	</logs_item>
 
 	<period_caption x="525" y="85" width="80" height="23">
@@ -44,7 +60,7 @@
 		<texture>ui_inGame2_pda_Filtr_arrow_right</texture>
 	</btn_next_period>
 
-	<calendar_popup x="767" y="120" width="205" height="228" anchor_to_btn="0">
+	<calendar_popup x="767" y="120" width="205" height="228" anchor_gap="4" anchor_to_btn="0" free_month_nav="1" free_month_year_min="1986" free_month_year_max="2099">
 		<background x="0" y="0" width="205" height="228" stretch="1">
 			<texture>ui_inGame2_pda_cal_popup</texture>
 		</background>

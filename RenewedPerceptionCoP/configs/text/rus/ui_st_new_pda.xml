@@ -51,4 +51,10 @@
 	<string id="ui_pda_side_task">
 		<text>Попутные</text>
 	</string>
+	<string id="ui_map_zoom_min">
+		<text>min</text>
+	</string>
+	<string id="ui_map_zoom_max">
+		<text>max</text>
+	</string>
 </string_table>
