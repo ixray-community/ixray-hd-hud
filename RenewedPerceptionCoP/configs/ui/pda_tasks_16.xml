@@ -49,13 +49,13 @@
 				<text  align="l" font="letterica18"/>
 			</t_hint_text>
 		</map_hint_item>
-		<zoom_scale x="0" y="30" width="44" height="160" inertion="0.90" label_format="x%.1f" horizontal="0" bound_labels="1" thumb_scaling="1">
-			<rail x="34" y="0" width="10" height="150" stretch="1">
+		<zoom_scale x="15" y="30" width="44" height="150" inertion="0.90" label_format="x%.1f" horizontal="0" bound_labels="1" thumb_scaling="1">
+			<rail x="0" y="0" width="10" height="150" stretch="1" align="c">
 				<texture>ui_inGame2_rail_timeline</texture>
+				<thumb x="0" y="-2" width="7" height="2" stretch="1" align="r">
+					<texture>ui_inGame2_thumb_timeline</texture>
+				</thumb>
 			</rail>
-			<thumb x="38" y="0" width="5" height="25" stretch="1">
-				<texture>ui_inGame2_thumb_timeline</texture>
-			</thumb>
 			<tick_label_bound x="-20" y="0" width="18" height="14">
 				<text align="r" font="font_rubik_14" r="255" g="255" b="255"/>
 			</tick_label_bound>
