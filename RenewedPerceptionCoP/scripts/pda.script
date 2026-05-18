@@ -233,8 +233,43 @@ function get_stat(index) -- index= int        return string
 		return tostring(xr_statistic.actor_statistic.artefacts_founded)
 	elseif(index==6) then
 		return tostring(xr_statistic.actor_statistic.founded_secrets)
+	elseif(index==7) then
+		return tostring(db.actor:actor_money_earned())
+	elseif(index==8) then
+		return tostring(db.actor:actor_money_spent())
+	elseif(index==9) then
+		return tostring(db.actor:actor_help_wounded())
+	elseif(index==10) then
+		return tostring(db.actor:actor_headshots())
+	elseif(index==11) then
+		return tostring(db.actor:actor_deaths())
+	elseif(index==12) then
+		return string.format("%.2f km", db.actor:actor_distance_km())
 	end
 	return "Unknown"
+end
+
+-- Ranking stat_info id= from pda_ranking_16.xml (Renewed Perception HUD).
+function get_stat_by_id(stat_id)
+	if not stat_id or stat_id == "" then
+		return ""
+	end
+
+	if stat_id == "money_earned" then
+		return tostring(db.actor:actor_money_earned())
+	elseif stat_id == "money_spent" then
+		return tostring(db.actor:actor_money_spent())
+	elseif stat_id == "help_stalkers" or stat_id == "help_wounded" then
+		return tostring(db.actor:actor_help_wounded())
+	elseif stat_id == "headshots" then
+		return tostring(db.actor:actor_headshots())
+	elseif stat_id == "player_deaths" or stat_id == "deaths" or stat_id == "death" or stat_id == "actor_deaths" then
+		return tostring(db.actor:actor_deaths())
+	elseif stat_id == "distance_km" or stat_id == "distance" or stat_id == "km" or stat_id == "traveled_km" then
+		return string.format("%.2f km", db.actor:actor_distance_km())
+	end
+
+	return ""
 end
 
 killed_monsters_tbl =

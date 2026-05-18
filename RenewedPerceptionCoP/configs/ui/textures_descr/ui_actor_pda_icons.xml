@@ -1,29 +1,15 @@
 <w>
     <file name="ui\ui_actor_hint_wnd" scale="2">
 
-	    	<texture id="ui_inGame2_PDA_icon_Stalker_machanik" x="306" y="576" width="27" height="27" />
-	    	<texture id="ui_inGame2_PDA_icon_Stalker_Trader" x="274" y="576" width="27" height="27" />
-	    	<texture id="ui_inGame2_PDA_icon_Stalker_Medic" x="242" y="576" width="27" height="27" />
-		    <texture id="ui_inGame2_PDA_icon_Stalker_guide" x="306" y="544" width="27" height="27" />
-	    	<texture id="ui_inGame2_PDA_icon_Actor_Box" x="274" y="544" width="27" height="27" />
-		    <texture id="ui_inGame2_PDA_icon_Place_to_rest" x="242" y="544" width="27" height="27" />
 	    	<texture id="ui_inGame2_PDA_icon_Stalker_VIP" x="426" y="544" width="22" height="22" />
 	    	<texture id="ui_inGame2_PDA_icon_Question" x="426" y="575" width="22" height="22" />
 		
-		    <texture id="ui_inGame2_PDA_icon_Stalker_machanik_small" x="393" y="569" width="22" height="22" />
-	    	<texture id="ui_inGame2_PDA_icon_Stalker_Trader_small" x="368" y="569" width="22" height="22" />
-	    	<texture id="ui_inGame2_PDA_icon_Stalker_Medic_small" x="343" y="569" width="22" height="22" />
-		    <texture id="ui_inGame2_PDA_icon_Stalker_guide_small" x="393" y="544" width="22" height="22" />
-	    	<texture id="ui_inGame2_PDA_icon_Actor_Box_small" x="368" y="544" width="22" height="22" />
-		    <texture id="ui_inGame2_PDA_icon_Place_to_rest_small" x="343" y="544" width="22" height="22" />
 	    	<texture id="ui_inGame2_PDA_icon_Stalker_VIP_small" x="458" y="544" width="16" height="16" />
 	    	<texture id="ui_inGame2_PDA_icon_Question_small" x="458" y="575" width="16" height="16" />
 
 	    	<texture id="ui_inGame2_PDA_icon_Primary_mission" x="3" y="562" width="25" height="25" />
 	    	<texture id="ui_inGame2_PDA_icon_Secondary_mission" x="3" y="532" width="25" height="25" />
 
-	    	<texture id="ui_inGame2_PDA_icon_secret" x="4" y="453" width="28" height="28" />
-	    	<texture id="ui_inGame2_PDA_personal_spot" x="35" y="453" width="28" height="28" />
 	    	<texture id="ui_inGame2_PDA_icon_location_legend" x="3" y="587" width="42" height="42" />
 			
 			<texture id="npc_marker_squad_leader" x="389" y="449" width="20" height="20" />

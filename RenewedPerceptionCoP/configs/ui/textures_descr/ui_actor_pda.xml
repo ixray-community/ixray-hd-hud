@@ -5,10 +5,13 @@
 	    <texture id="ui_icons_newPDA_man" x="734" y="13" width="45" height="45" />
 	    <texture id="ui_icons_newPDA_manArrow" x="792" y="13" width="107" height="107" />
 
-	    <texture id="ui_inGame2_PDA_icon_location" x="945" y="207" width="81" height="81" />
+	    <texture id="ui_inGame2_PDA_vert_divider_back" x="14" y="246" width="4" height="36" />
+	    <texture id="ui_inGame2_PDA_vert_divider_b" x="14" y="238" width="4" height="8" />
+	    <texture id="ui_inGame2_PDA_vert_divider_e" x="14" y="282" width="4" height="8" />
 
-	    <texture id="ui_inGame2_PDA_vert_divider" x="14" y="238" width="4" height="52" />
-	    <texture id="ui_inGame2_PDA_horiz_divider" x="14" y="221" width="52" height="4" />
+	    <texture id="ui_inGame2_PDA_horiz_divider_back" x="21" y="221" width="38" height="4" />
+	    <texture id="ui_inGame2_PDA_horiz_divider_b" x="14" y="221" width="7" height="4" />
+	    <texture id="ui_inGame2_PDA_horiz_divider_e" x="59" y="221" width="7" height="4" />
 
 	    <texture id="ui_inGame2_PDA_button_close_e" x="14" y="14" width="13" height="13" />
 	    <texture id="ui_inGame2_PDA_button_close_h" x="14" y="39" width="13" height="13" />
@@ -107,8 +110,8 @@
 	    <texture id="btn_task_focus_h" x="149" y="64" width="18" height="18" />
 	    <texture id="btn_task_focus_t" x="124" y="64" width="18" height="18" />
 
-	    <texture id="ui_inGame2_rail_timeline" x="1865" y="18" width="18" height="209" />
-	    <texture id="ui_inGame2_thumb_timeline" x="1894" y="18" width="9" height="54" />
+	    <texture id="ui_inGame2_rail_timeline" x="1889" y="18" width="15" height="260" />
+	    <texture id="ui_inGame2_thumb_timeline" x="1863" y="19" width="14" height="12" />
 
 	    <texture id="ui_inGame2_pda_offline_e" x="124" y="14" width="37" height="37" />
 	    <texture id="ui_inGame2_pda_offline_h" x="169" y="14" width="37" height="37" />

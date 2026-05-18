@@ -4,6 +4,29 @@
 		<texture>ui_inGame2_pda_texture</texture>
 	</background_static>
 
+		<tab_backgrounds>
+		<eptTasks>
+			<auto_static x="35" y="35" width="966" height="710" stretch="1">
+				<texture>ui_inGame2_map_back</texture>
+			</auto_static>
+		</eptTasks>
+		<eptRanking>
+			<auto_static x="35" y="35" width="966" height="710" stretch="1">
+				<texture>ui_inGame2_stat_back</texture>
+			</auto_static>
+		</eptRanking>
+		<eptLogs>
+			<auto_static x="35" y="35" width="966" height="710" stretch="1">
+				<texture>ui_inGame2_journal_back</texture>
+			</auto_static>
+		</eptLogs>
+		<eptContacts>
+			<auto_static x="35" y="35" width="966" height="710" stretch="1">
+				<texture>ui_inGame2_pda_msg_frame</texture>
+			</auto_static>
+		</eptContacts>
+	</tab_backgrounds>
+
 	<noice_static x="0" y="-50" width="1024" height="816" stretch="1">
 		<texture a="255">ui_inGame2_pda_glass_effect</texture>
 	</noice_static>
@@ -31,68 +54,45 @@
 		</text>
 	</hint_wnd>
 
-	<tab x="352" y="33" width="320" height="40">
+	<tab x="352" y="34" width="320" height="40">
 	<button x="80" y="0.5" width="80" height="40" id="eptTasks" hint="pda_btn_quests_hint" frame_mode="0">
-			<text align="c" vert_align="c" x="0" y="0" width="157" height="27" font="font_oswald_20">pda_btn_quests</text>
+			<text align="c" vert_align="c" x="0" y="0" width="157" height="27" font="font_oswald_20">Планировщик</text>
 			<text_color>
-				<t r="242" g="242" b="242"/>
-				<e r="115" g="115" b="115"/>
-				<e r="115" g="115" b="115"/>
-				<h r="166" g="166" b="166"/>
+				<t r="220" g="178" b="129"/>
+				<e r="77" g="77" b="77"/>
+				<e r="77" g="77" b="77"/>
+				<h r="225" g="225" b="225"/>
 			</text_color>
 		</button>
 	<button x="160" y="0.5" width="80" height="40" id="eptRanking" hint="pda_btn_ranking_hint" frame_mode="0">
-			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">pda_btn_ranking</text>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Статистика</text>
 			<text_color>
-				<t r="242" g="242" b="242"/>
-				<e r="115" g="115" b="115"/>
-				<e r="115" g="115" b="115"/>
-				<h r="166" g="166" b="166"/>
+				<t r="220" g="178" b="129"/>
+				<e r="77" g="77" b="77"/>
+				<e r="77" g="77" b="77"/>
+				<h r="225" g="225" b="225"/>
 			</text_color>
 		</button>
 
 	<button x="240" y="0.5" width="80" height="40" id="eptLogs" hint="pda_btn_logs_hint" frame_mode="0">
-			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">pda_btn_logs</text>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Журнал</text>
 			<text_color>
-				<t r="242" g="242" b="242"/>
-				<e r="115" g="115" b="115"/>
-				<e r="115" g="115" b="115"/>
-				<h r="166" g="166" b="166"/>
+				<t r="220" g="178" b="129"/>
+				<e r="77" g="77" b="77"/>
+				<e r="77" g="77" b="77"/>
+				<h r="225" g="225" b="225"/>
 			</text_color>
 		</button>
 	<button x="0" y="0.5" width="80" height="40" id="eptContacts" hint="pda_btn_contacts_hint" frame_mode="0">
-			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">pda_btn_contacts</text>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Контакты</text>
 			<text_color>
-				<t r="242" g="242" b="242"/>
-				<e r="115" g="115" b="115"/>
-				<e r="115" g="115" b="115"/>
-				<h r="166" g="166" b="166"/>
+				<t r="220" g="178" b="129"/>
+				<e r="77" g="77" b="77"/>
+				<e r="77" g="77" b="77"/>
+				<h r="225" g="225" b="225"/>
 			</text_color>
 		</button>
 	</tab>
-
-	<tab_backgrounds>
-		<eptTasks>
-			<auto_static x="35" y="35" width="966" height="710" stretch="1">
-				<texture>ui_inGame2_map_back</texture>
-			</auto_static>
-		</eptTasks>
-		<eptRanking>
-			<auto_static x="35" y="35" width="966" height="710" stretch="1">
-				<texture>ui_inGame2_stat_back</texture>
-			</auto_static>
-		</eptRanking>
-		<eptLogs>
-			<auto_static x="35" y="35" width="966" height="710" stretch="1">
-				<texture>ui_inGame2_journal_back</texture>
-			</auto_static>
-		</eptLogs>
-		<eptContacts>
-			<auto_static x="35" y="35" width="966" height="710" stretch="1">
-				<texture>ui_inGame2_pda_msg_frame</texture>
-			</auto_static>
-		</eptContacts>
-	</tab_backgrounds>
 
 	<snd_key_tab>pda_tab_switch</snd_key_tab>
 </w>
