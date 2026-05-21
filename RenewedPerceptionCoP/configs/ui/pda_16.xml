@@ -2,9 +2,20 @@
 	<main x="0" y="0" width="1024" height="768"/>
 	<background_static x="-5" y="0" width="1280" height="768" stretch="1">
 		<texture>ui_inGame2_pda_texture</texture>
+		<!--
+			<auto_frameline x="432" y="46" width="1" height="16" vertical="1">
+				<texture a="255">ui_inGame2_PDA_vert_divider</texture>
+			</auto_frameline>
+			<auto_frameline x="517" y="46" width="0.5" height="16" vertical="1">
+				<texture a="255">ui_inGame2_PDA_vert_divider</texture>
+			</auto_frameline>
+			<auto_frameline x="600" y="46" width="1" height="16" vertical="1">
+				<texture a="255">ui_inGame2_PDA_vert_divider</texture>
+			</auto_frameline>
+		-->
 	</background_static>
 
-		<tab_backgrounds>
+	<tab_backgrounds>
 		<eptTasks>
 			<auto_static x="35" y="35" width="966" height="710" stretch="1">
 				<texture>ui_inGame2_map_back</texture>
@@ -31,15 +42,15 @@
 		<texture a="255">ui_inGame2_pda_glass_effect</texture>
 	</noice_static>
 
-	<caption_location_static x="40" y="35" width="200" height="40">
-		<text font="font_rubik_18" align="l" x="0" y="12" r="115" g="115" b="115"/>
+	<caption_location_static x="45" y="45" width="200" height="40">
+		<text font="font_rubik_16" align="l" x="0" y="12" r="115" g="115" b="115"/>
 	</caption_location_static>
 
-	<caption_date_static x="860" y="35" width="100" height="40">
-		<text font="font_rubik_18" align="r" x="0" y="12" r="115" g="115" b="115"/>
+	<caption_date_static x="45" y="28" width="100" height="20">
+		<text font="font_rubik_16" align="l" x="0" y="12" r="115" g="115" b="115"/>
 	</caption_date_static>
 
-	<close_button x="964" y="33" width="33" height="42" hint="pda_btn_close">
+	<close_button x="940" y="37" width="55" height="35" hint="pda_btn_close">
         <texture_t>ui_inGame2_pda_offline_t</texture_t>
         <texture_e>ui_inGame2_pda_offline_e</texture_e>
         <texture_h>ui_inGame2_pda_offline_h</texture_h>
@@ -47,52 +58,72 @@
 
 	<hint_wnd x="0" y="0" width="210" height="120">
 		<background x="0" y="0" width="210" height="100" border="5">
-			<texture a="100">ui_icons_PDA_tooltips</texture>
+			<texture a="255">ui_icons_PDA_tooltips</texture>
 		</background>
 		<text x="10" y="10" width="190" height="100">
 			<text font="letterica16" color="ui_6" complex_mode="1" align="l" vert_align="t"/>
 		</text>
 	</hint_wnd>
 
-	<tab x="352" y="34" width="320" height="40">
-	<button x="80" y="0.5" width="80" height="40" id="eptTasks" hint="pda_btn_quests_hint" frame_mode="0">
-			<text align="c" vert_align="c" x="0" y="0" width="157" height="27" font="font_oswald_20">Планировщик</text>
-			<text_color>
-				<t r="220" g="178" b="129"/>
-				<e r="77" g="77" b="77"/>
-				<e r="77" g="77" b="77"/>
-				<h r="225" g="225" b="225"/>
-			</text_color>
-		</button>
-	<button x="160" y="0.5" width="80" height="40" id="eptRanking" hint="pda_btn_ranking_hint" frame_mode="0">
-			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Статистика</text>
-			<text_color>
-				<t r="220" g="178" b="129"/>
-				<e r="77" g="77" b="77"/>
-				<e r="77" g="77" b="77"/>
-				<h r="225" g="225" b="225"/>
-			</text_color>
-		</button>
+	<snd_key_tab>device\pda\pda_tab_switch</snd_key_tab>
+	<snd_filter_toggle>device\pda\pda_filter_toggle</snd_filter_toggle>
+	<snd_panel_open>device\pda\pda_filter_toggle</snd_panel_open>
+	<snd_panel_close>device\pda\pda_filter_toggle</snd_panel_close>
+	<snd_open>device\pda\pda_open</snd_open>
+	<snd_close>device\pda\pda_close</snd_close>
 
-	<button x="240" y="0.5" width="80" height="40" id="eptLogs" hint="pda_btn_logs_hint" frame_mode="0">
-			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Журнал</text>
-			<text_color>
-				<t r="220" g="178" b="129"/>
-				<e r="77" g="77" b="77"/>
-				<e r="77" g="77" b="77"/>
-				<h r="225" g="225" b="225"/>
-			</text_color>
-		</button>
-	<button x="0" y="0.5" width="80" height="40" id="eptContacts" hint="pda_btn_contacts_hint" frame_mode="0">
+	<tab x="532.5" y="34.5" width="420" height="40">
+		<button x="0" y="3" width="110" height="34" id="eptContacts" hint="pda_btn_contacts_hint" frame_mode="0">
+			<texture_e>ui_inGame2_pda_tab_new_btn_e</texture_e>
+			<texture_h>ui_inGame2_pda_tab_new_btn_h</texture_h>
+			<texture_t>ui_inGame2_pda_tab_new_btn_t</texture_t>
+			<texture_d>ui_inGame2_pda_tab_new_btn_d</texture_d>
 			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Контакты</text>
 			<text_color>
-				<t r="220" g="178" b="129"/>
-				<e r="77" g="77" b="77"/>
-				<e r="77" g="77" b="77"/>
-				<h r="225" g="225" b="225"/>
+				<t r="215" g="215" b="215"/>
+				<e r="85" g="85" b="85"/>
+				<h r="255" g="255" b="255"/>
+				<d r="85" g="85" b="85"/>
+			</text_color>
+		</button>
+		<button x="102" y="3" width="110" height="34" id="eptTasks" hint="pda_btn_quests_hint" frame_mode="0">
+			<texture_e>ui_inGame2_pda_tab_new_btn_e</texture_e>
+			<texture_h>ui_inGame2_pda_tab_new_btn_h</texture_h>
+			<texture_t>ui_inGame2_pda_tab_new_btn_t</texture_t>
+			<texture_d>ui_inGame2_pda_tab_new_btn_d</texture_d>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Планировщик</text>
+			<text_color>
+				<t r="215" g="215" b="215"/>
+				<e r="85" g="85" b="85"/>
+				<h r="255" g="255" b="255"/>
+				<d r="85" g="85" b="85"/>
+			</text_color>
+		</button>
+		<button x="204" y="3" width="110" height="34" id="eptRanking" hint="pda_btn_ranking_hint" frame_mode="0">
+			<texture_e>ui_inGame2_pda_tab_new_btn_e</texture_e>
+			<texture_h>ui_inGame2_pda_tab_new_btn_h</texture_h>
+			<texture_t>ui_inGame2_pda_tab_new_btn_t</texture_t>
+			<texture_d>ui_inGame2_pda_tab_new_btn_d</texture_d>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Статистика</text>
+			<text_color>
+				<t r="215" g="215" b="215"/>
+				<e r="85" g="85" b="85"/>
+				<h r="255" g="255" b="255"/>
+				<d r="85" g="85" b="85"/>
+			</text_color>
+		</button>
+		<button x="306" y="3" width="110" height="34" id="eptLogs" hint="pda_btn_logs_hint" frame_mode="0">
+			<texture_e>ui_inGame2_pda_tab_new_btn_e</texture_e>
+			<texture_h>ui_inGame2_pda_tab_new_btn_h</texture_h>
+			<texture_t>ui_inGame2_pda_tab_new_btn_t</texture_t>
+			<texture_d>ui_inGame2_pda_tab_new_btn_d</texture_d>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">Журнал</text>
+			<text_color>
+				<t r="215" g="215" b="215"/>
+				<e r="85" g="85" b="85"/>
+				<h r="255" g="255" b="255"/>
+				<d r="85" g="85" b="85"/>
 			</text_color>
 		</button>
 	</tab>
-
-	<snd_key_tab>pda_tab_switch</snd_key_tab>
 </w>

@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Embedded phrase UI: engine reads only the pda_dialog node in this file (not pda_dialog_16.xml). -->
 <window>
 	<main_wnd x="0" y="0" width="1024" height="768"/>
 
-	<left_frame_window x="35" y="45" width="643" height="650" a="80">
+	<left_frame_window x="35" y="80" width="570" height="650" a="80">
 		<texture>ui_inGame2_pda_ranking_icon_over</texture>
 	</left_frame_window>
 
-	<left_frame_line x="-80000" y="14" width="574" height="23">
-		<title x="8" y="1" width="560" height="20">
-			<text font="letterica16" r="170" g="170" b="170">pda_btn_contacts</text>
+	<left_frame_line x="0" y="0" width="571" height="30">
+		<title x="15" y="4" width="560" height="20">
+			<text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_btn_contacts</text>
 		</title>
-		<texture>ui_inGame2_pda_ranking_center_caption</texture>
+		<texture a="128">ui_inGame2_pda_background_text</texture>
 	</left_frame_line>
 
-	<right_frame_window x="682" y="80" width="316" height="645" a="80">
+	<right_frame_window x="612" y="80" width="685" height="650" a="80">
 		<texture>ui_inGame2_pda_ranking_icon_over</texture>
 	</right_frame_window>
 
-	<right_frame_line x="-80000" y="14" width="319" height="23">
-		<title x="8" y="1" width="305" height="20">
-			<text font="letterica16" r="170" g="170" b="170"></text>
+	<right_frame_line x="-2" y="0" width="390" height="30">
+		<title x="10" y="4" width="305" height="20">
+			<text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_pda_dialog_title</text>
 		</title>
-		<texture>ui_inGame2_pda_ranking_center_caption</texture>
+		<texture a="128">ui_inGame2_pda_background_text</texture>
 	</right_frame_line>
 
-	<list x="16" y="46" width="650" height="640" always_show_scroll="0" can_select="1"/>
-	<detail_list x="16" y="46" width="303" height="470" always_show_scroll="1" left_ident="5"/>
+	<list x="16" y="46" width="538" height="590" scroll_style="rp" always_show_scroll="0" can_select="1"/>
+	<detail_list x="16" y="46" width="284" height="590" scroll_style="rp" always_show_scroll="0" left_ident="5"/>
 
 	<pda_dialog>
 		<main x="0" y="0" width="316" height="650"/>
+
 		<button x="8" y="600" width="300" height="24" stretch="1" hint="ui_st_exit_hint">
 			<texture>ui_inGame2_big_inventory_button</texture>
 			<text font="letterica16" align="c">ui_st_trade</text>
@@ -40,8 +42,8 @@
 			</text_color>
 		</button>
 
-		<answers_list x="15" y="36" width="300" height="430" always_show_scroll="0" left_ident="4"/>
-		<questions_list x="15" y="500" width="300" height="110" always_show_scroll="0" left_ident="4"/>
+		<answers_list x="8" y="36" width="300" height="430" scroll_style="rp" always_show_scroll="0" left_ident="4"/>
+		<questions_list x="8" y="478" width="300" height="110" scroll_style="rp" always_show_scroll="0" left_ident="4"/>
 
 		<font font="letterica18" r="210" g="215" b="225"/>
 		<font font="letterica18" r="200" g="200" b="200"/>

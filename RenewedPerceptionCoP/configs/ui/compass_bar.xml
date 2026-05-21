@@ -27,6 +27,10 @@
             </cardinal_points>
         </strip>
 
+        <spots align="c" show="1" stretch="1">
+            <spot_template width="32" height="32"/>
+        </spots>
+
         <active_target x="0" y="0" width="10" height="22" padding="8" smoothing_speed="10" altitude_deadzone="1.8" stretch="1">
             <altitude_arrow x="-8" y="19" width="12" height="12" texture_up="ui_inGame2_compass_altitude_up" texture_down="ui_inGame2_compass_altitude_down" stretch="1"/>
             <marker x="0" y="16" width="18" height="18" texture="ui_inGame2_hint_wnd_main_window" stretch="1"/>

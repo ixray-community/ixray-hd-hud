@@ -1,0 +1,140 @@
+-- Глобальный скролл Renewed Perception (modern scroll_profiles + Lua)
+
+local PROFILE_LIST = "renewed_perception"
+local PROFILE_FIXED = "renewed_perception_fixed"
+local PROFILE_RP = "rp"
+local PROFILE_HIDDEN = "hidden"
+
+local function rp_scroll_texture_pack()
+	return {
+		empty_arrow = "ui_rp_scroll_empty",
+		track_v = "ui_rp_scroll_v_track",
+		thumb_v = "ui_rp_scroll_thumb",
+		thumb_v_hover = "ui_rp_scroll_thumb_h",
+		track_h = "ui_rp_scroll_h_track",
+		thumb_h = "ui_rp_scroll_h_thumb",
+		thumb_h_hover = "ui_rp_scroll_h_thumb_h",
+	}
+end
+
+local function register_rp_profiles()
+	if not ui_scroll_bar_register_profile then
+		return
+	end
+
+	local tex = rp_scroll_texture_pack()
+
+	ui_scroll_bar_register_profile({
+		name = PROFILE_LIST,
+		kind = "regular",
+		thickness = 8,
+		alpha = 77,
+		hide_arrows = 1,
+		hold_delay = 40,
+		thumb_min_size = 32,
+		empty_arrow = tex.empty_arrow,
+		track_v = tex.track_v,
+		thumb_v = tex.thumb_v,
+		thumb_v_hover = tex.thumb_v_hover,
+		track_h = tex.track_h,
+		thumb_h = tex.thumb_h,
+		thumb_h_hover = tex.thumb_h_hover,
+	})
+
+	ui_scroll_bar_register_profile({
+		name = PROFILE_FIXED,
+		kind = "fixed",
+		thickness = 8,
+		alpha = 77,
+		hide_arrows = 1,
+		hold_delay = 40,
+		adaptive = 1,
+		thumb_min_size = 32,
+		scroll_box_offset_x = 0,
+		scroll_box_offset_y = 0,
+		empty_arrow = tex.empty_arrow,
+		track_v = tex.track_v,
+		thumb_v = tex.thumb_v,
+		thumb_v_hover = tex.thumb_v_hover,
+		track_h = tex.track_h,
+		thumb_h = tex.thumb_h,
+		thumb_h_hover = tex.thumb_h_hover,
+	})
+
+	local rp = {}
+	for k, v in pairs(tex) do
+		rp[k] = v
+	end
+	rp.name = PROFILE_RP
+	rp.kind = "regular"
+	rp.thickness = 8
+	rp.alpha = 77
+	rp.hide_arrows = 1
+	rp.hold_delay = 40
+	rp.thumb_min_size = 32
+	ui_scroll_bar_register_profile(rp)
+
+	ui_scroll_bar_register_profile({
+		name = PROFILE_HIDDEN,
+		kind = "regular",
+		thickness = 1,
+		alpha = 0,
+		hide_arrows = 1,
+		hold_delay = 40,
+		thumb_min_size = 1,
+		empty_arrow = tex.empty_arrow,
+		track_v = tex.empty_arrow,
+		thumb_v = tex.empty_arrow,
+		thumb_v_hover = tex.empty_arrow,
+		track_h = tex.empty_arrow,
+		thumb_h = tex.empty_arrow,
+		thumb_h_hover = tex.empty_arrow,
+	})
+
+	-- Ванильные имена -> тот же вид
+	for _, legacy_name in ipairs({ "default", "pda_logs" }) do
+		local t = {}
+		for k, v in pairs(tex) do
+			t[k] = v
+		end
+		t.name = legacy_name
+		t.kind = "regular"
+		t.thickness = 8
+		t.alpha = 77
+		t.hide_arrows = 1
+		t.hold_delay = 40
+		t.thumb_min_size = 32
+		ui_scroll_bar_register_profile(t)
+	end
+
+	local pda = {}
+	for k, v in pairs(tex) do
+		pda[k] = v
+	end
+	pda.name = "pda"
+	pda.kind = "fixed"
+	pda.thickness = 8
+	pda.alpha = 77
+	pda.hide_arrows = 1
+	pda.hold_delay = 40
+	pda.adaptive = 1
+	pda.thumb_min_size = 32
+	pda.scroll_box_offset_x = 0
+	pda.scroll_box_offset_y = 0
+	ui_scroll_bar_register_profile(pda)
+end
+
+function activate_global_rp_scroll()
+	if ui_scroll_bar_reload_profiles then
+		ui_scroll_bar_reload_profiles()
+	end
+	register_rp_profiles()
+	if ui_scroll_bar_set_default_profile then
+		ui_scroll_bar_set_default_profile(PROFILE_LIST)
+	end
+	printf("~ Renewed Perception: scroll profile [%s] active", PROFILE_LIST)
+end
+
+function on_game_start()
+	activate_global_rp_scroll()
+end

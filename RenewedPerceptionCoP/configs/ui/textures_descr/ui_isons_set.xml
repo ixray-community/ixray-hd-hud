@@ -19,5 +19,9 @@
 		<texture id="ui_inGame2_PDA_icon_Stalker_guide_small" x="256" y="128" width="128" height="128" />
 	    <texture id="ui_inGame2_PDA_icon_Actor_Box_small" x="512" y="128" width="128" height="128" />
 		<texture id="ui_inGame2_PDA_icon_Place_to_rest_small" x="640" y="128" width="128" height="128" />
+
+		<texture id="ui_icons_newPDA_manArrow_2" x="0" y="384" width="128" height="128" />
+
+		<texture id="ui_inGame2_PDA_icon_NewQuest_white" x="0" y="256" width="128" height="128" />
     </file>
 </w>

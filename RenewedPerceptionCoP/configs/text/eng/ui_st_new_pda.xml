@@ -3,6 +3,9 @@
 	<string id="st_ui_pda_personal_spot">
 		<text>Personal spot</text>
 	</string>
+	<string id="ui_map_btn_personal_spot">
+		<text>Personal spot</text>
+	</string>
 	<string id="st_pda_change_spot_hint">
 		<text>Edit spot label</text>
 	</string>
@@ -47,5 +50,20 @@
 	</string>
 	<string id="ui_pda_dialog_hint_select">
 		<text>LMB: select answer</text>
+	</string>
+	<string id="st_ui_pda_legend_personal_spots">
+		<text>Personal spots</text>
+	</string>
+	<string id="st_ui_pda_legend_rest">
+		<text>Sleeping area</text>
+	</string>
+	<string id="st_ui_pda_legend_deadbodies">
+		<text>Corpses</text>
+	</string>
+	<string id="pda_log_journal_events">
+		<text>Event log</text>
+	</string>
+	<string id="pda_log_journal_dialogs">
+		<text>Dialog log</text>
 	</string>
 </string_table>

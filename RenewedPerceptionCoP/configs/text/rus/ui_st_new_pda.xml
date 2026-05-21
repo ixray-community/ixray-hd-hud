@@ -57,4 +57,25 @@
 	<string id="ui_map_zoom_max">
 		<text>max</text>
 	</string>
+	<string id="st_ui_pda_legend_personal_spots">
+		<text>Персональная метка</text>
+	</string>
+	<string id="st_ui_pda_legend_rest">
+		<text>Место для сна</text>
+	</string>
+	<string id="st_ui_pda_legend_deadbodies">
+		<text>Трупы</text>
+	</string>
+	<string id="pda_pda_dialog_title">
+		<text>PDA Диалоги</text>
+	</string>
+	<string id="pda_log_journal_events">
+		<text>Журнал событий</text>
+	</string>
+	<string id="pda_log_journal_dialogs">
+		<text>Журнал диалогов</text>
+	</string>
+	<string id="st_ui_pda_personal_spot_rmb">
+		<text>Личная метка. ЛКМ: включить режим. ПКМ по карте: поставить метку.</text>
+	</string>
 </string_table>
