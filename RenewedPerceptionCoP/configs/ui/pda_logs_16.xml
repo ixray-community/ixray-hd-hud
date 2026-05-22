@@ -6,7 +6,7 @@
     </center_caption>
 
     <logs_list_news x="35" y="122" width="270" height="605" item_height="35" top_indent="36"
-        smart_scroll="1" scroll_profile="rp" always_show_scroll="1">
+        scroll_profile="pda_logs" always_show_scroll="0">
         <font font="letterica18" color="ui_4"/>
         <auto_frameline x="0" y="0" width="282" height="30" vertical="0">
             <title x="15" y="4" width="255" height="20">
@@ -17,7 +17,7 @@
     </logs_list_news>
 
     <logs_list_dialogs x="320" y="122" width="610" height="605" item_height="35" top_indent="36"
-        smart_scroll="1" scroll_profile="rp" always_show_scroll="1" text_complex_mode="1">
+        scroll_profile="pda_logs" always_show_scroll="0" text_complex_mode="1">
         <font font="letterica18" color="ui_4"/>
         <auto_frameline x="0" y="0" width="680" height="30" vertical="0">
             <title x="15" y="4" width="595" height="20">

@@ -4,13 +4,13 @@
       <texture>ui_icons_newPDA_Crclbig_h</texture>
     </_auto_static>
   </main>
-  <speech_menu x="260" y="550" width="300" height="265" smart_scroll="1" scroll_profile="rp" always_show_scroll="0">
+  <speech_menu x="260" y="550" width="300" height="265" always_show_scroll="0">
 		<text font="letterica16" r="238" g="224" b="198"/>
 	</speech_menu>
 	<quick_info x="1" y="670" width="1022" height="50" complex_mode="1" light_anim="ui_btn_hint"  la_cyclic="0" la_texture="0" la_text="1" la_alpha="1">
 		<text align="c" font="graffiti22" r="225" g="225" b="250" a="255" />
 	</quick_info>
-	<icons_scroll_view  x="900" y="330" width="55" height="270" smart_scroll="1" scroll_profile="rp" right_ident="2" always_show_scroll="0" vert_interval="16" inverse_dir="1" flip_vert="0"/>
+	<icons_scroll_view  x="900" y="330" width="55" height="270" right_ident="2" always_show_scroll="0" vert_interval="16" inverse_dir="1" flip_vert="0"/>
 	<weapon_jammed_static x="0" y="0" width="53" height="64" stretch="1">
 		<texture>ui_hud_icon_weapon</texture>
 	</weapon_jammed_static>

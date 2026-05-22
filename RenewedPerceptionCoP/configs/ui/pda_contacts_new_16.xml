@@ -25,8 +25,8 @@
 		<texture a="128">ui_inGame2_pda_background_text</texture>
 	</right_frame_line>
 
-	<list x="16" y="46" width="538" height="590" smart_scroll="1" scroll_profile="rp" always_show_scroll="0" can_select="1"/>
-	<detail_list x="16" y="46" width="284" height="590" smart_scroll="1" scroll_profile="rp" always_show_scroll="0" left_ident="5"/>
+	<list x="16" y="46" width="538" height="590" always_show_scroll="0" can_select="1"/>
+	<detail_list x="16" y="46" width="284" height="590" always_show_scroll="0" left_ident="5"/>
 
 	<pda_dialog>
 		<main x="0" y="0" width="316" height="650"/>
@@ -42,8 +42,8 @@
 			</text_color>
 		</button>
 
-		<answers_list x="8" y="36" width="300" height="430" smart_scroll="1" scroll_profile="rp" always_show_scroll="0" left_ident="4"/>
-		<questions_list x="8" y="478" width="300" height="110" smart_scroll="1" scroll_profile="rp" always_show_scroll="0" left_ident="4"/>
+		<answers_list x="8" y="36" width="300" height="430" always_show_scroll="0" left_ident="4"/>
+		<questions_list x="8" y="478" width="300" height="110" always_show_scroll="0" left_ident="4"/>
 
 		<font font="letterica18" r="210" g="215" b="225"/>
 		<font font="letterica18" r="200" g="200" b="200"/>

@@ -163,7 +163,7 @@
 		</auto_static>
     </achievements_background>
 
-	<achievements_wnd x="280" y="110" width="380" height="638" smart_scroll="1" scroll_profile="rp" always_show_scroll="0" stretch="1"/>
+	<achievements_wnd x="280" y="110" width="380" height="638" always_show_scroll="0" stretch="1"/>
     <achievements_itm x="65" y="35" width="90" height="75" inverse_dir="0" stretch="1">
         <name x="170" y="0" width="230" height="20">
             <text align="l" font="font_oswald_20" r="200" g="200" b="200">test</text>

@@ -43,10 +43,6 @@ function OnGetPdaStatById(stat_id)
 end
 
 function on_game_start()
-	if activate_global_rp_scroll then
-		activate_global_rp_scroll()
-	end
-
 	RegisterScriptCallback("main_menu_update", arm_crosshair_console)
 	RegisterScriptCallback("actor_on_update", arm_crosshair_console)
 
