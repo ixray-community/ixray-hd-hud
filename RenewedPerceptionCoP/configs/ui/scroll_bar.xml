@@ -1,0 +1,43 @@
+﻿<scroll_bar>
+	<rp height_v="6" hold_delay="40">
+		<up_arrow width="1" height="1">
+			<texture_e>ui_rp_scroll_empty</texture_e>
+			<texture_h>ui_rp_scroll_empty</texture_h>
+			<texture_t>ui_rp_scroll_empty</texture_t>
+			<texture_d>ui_rp_scroll_empty</texture_d>
+		</up_arrow>
+		<down_arrow width="1" height="1">
+			<texture_e>ui_rp_scroll_empty</texture_e>
+			<texture_h>ui_rp_scroll_empty</texture_h>
+			<texture_t>ui_rp_scroll_empty</texture_t>
+			<texture_d>ui_rp_scroll_empty</texture_d>
+		</down_arrow>
+		<back_v width="6" height="6">
+			<texture>ui_rp_scroll_v_track_back</texture>
+		</back_v>
+		<box_v width="6" height="6">
+			<texture>ui_rp_scroll_thumb</texture>
+		</box_v>
+	</rp>
+
+	<hidden height_v="1" hold_delay="40">
+		<up_arrow width="1" height="1">
+			<texture_e>ui_rp_scroll_empty</texture_e>
+			<texture_h>ui_rp_scroll_empty</texture_h>
+			<texture_t>ui_rp_scroll_empty</texture_t>
+			<texture_d>ui_rp_scroll_empty</texture_d>
+		</up_arrow>
+		<down_arrow width="1" height="1">
+			<texture_e>ui_rp_scroll_empty</texture_e>
+			<texture_h>ui_rp_scroll_empty</texture_h>
+			<texture_t>ui_rp_scroll_empty</texture_t>
+			<texture_d>ui_rp_scroll_empty</texture_d>
+		</down_arrow>
+		<back_v width="1" height="1">
+			<texture>ui_rp_scroll_empty</texture>
+		</back_v>
+		<box_v width="1" height="1">
+			<texture>ui_rp_scroll_empty</texture>
+		</box_v>
+	</hidden>
+</scroll_bar>

@@ -207,7 +207,7 @@
 			</btn_task_focus>
 		</storyline_task_item>
 
-		<task_list x="5" y="100" width="330" height="350" item_height="35" scroll_style="rp" always_show_scroll="1" />
+		<task_list x="5" y="100" width="330" height="350" item_height="35" smart_scroll="1" scroll_profile="rp" always_show_scroll="1" />
 
 		<task_filter_tabs x="0" y="470" width="340" height="24">
 			<button id="all" x="0" y="0" width="115" height="24" frame_mode="0">
@@ -318,7 +318,7 @@
 			<window_name>task_btn_close</window_name>
 			<texture>ui_inGame2_PDA_button_close</texture>
 		</btn_close>
-		<legend_list x="0" y="45" width="200" height="600" item_height="25" scroll_style="rp" always_show_scroll="0">
+		<legend_list x="0" y="45" width="200" height="600" item_height="25" smart_scroll="1" scroll_profile="rp" always_show_scroll="0">
 			<item x="0" y="0" width="200" height="35">
 				<image x="-2" y="-10" width="36" height="46" align="c" stretch="1">
 					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="255" g="156" b="0">ui_inGame2_PDA_icon_NewQuest_white</texture>
