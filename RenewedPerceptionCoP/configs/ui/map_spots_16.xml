@@ -173,9 +173,9 @@
         <treasure_spot width="52" height="52" alignment="c" stretch="1"><!-- scale="1" scale_min="1.1" scale_max="3.1" light_anim="map_spot_secrets" la_cyclic="0" la_texture="1" la_text="0" la_alpha="1"-->
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret</texture>
         </treasure_spot>
-        <treasure_spot_mini width="36" height="42" alignment="c" stretch="1">
+        <treasure_spot_mini width="48" height="52" alignment="c" stretch="1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret</texture>
-                <compass vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_secret</compass>
+                <compass x="0" y="3" vert_align="center" width="40" height="40" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret</compass>
         </treasure_spot_mini>
 		
         <personal_spot hint="st_ui_pda_personal">
@@ -185,9 +185,9 @@
         <personal_spot_main width="48" height="52" alignment="c" stretch="1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="221" g="35" b="96">ui_inGame2_PDA_personal_spot</texture>
         </personal_spot_main>
-        <personal_spot_mini width="36" height="42" alignment="c" stretch="1">
+        <personal_spot_mini width="52" height="52" alignment="c" stretch="1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="221" g="35" b="96">ui_inGame2_PDA_personal_spot</texture>
-                <compass vert_align="center" width="32" height="32">ui_inGame2_PDA_personal_spot</compass>
+                <compass x="0" y="3" vert_align="center" width="40" height="40" r="221" g="35" b="96">ui_inGame2_PDA_personal_spot</compass>
         </personal_spot_mini>
 
         <alife_combat_fight>
@@ -606,7 +606,7 @@
 
 	<storyline_task_spot_mini x="0" y="0" width="19" height="19" stretch="1" alignment="c" location_level="5">
 	    <texture r="255" g="156" b="0" shader="hud\cursor">ui\ui_anim_quest</texture>
-      <compass vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_NewQuest_white</compass>
+      <compass x="0" y="3" vert_align="center" width="40" height="40" r="255" g="156" b="0">ui_inGame2_PDA_icon_NewQuest_white</compass>
 	    <texture_below>storyline_task_spot_below</texture_below>
 	    <texture_above>storyline_task_spot_above</texture_above>
 	</storyline_task_spot_mini>
@@ -621,8 +621,8 @@
 	</secondary_task_spot>
 
 	<secondary_task_spot_mini x="0" y="0" width="19" height="19" stretch="1" alignment="c" location_level="5">
-	    <texture r="32" g="206" b="255" a="255" shader="hud\cursor">ui\ui_anim_quest</texture>
-      <compass vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_NewQuest_white</compass>
+	    <texture r="32" g="206" b="255" shader="hud\cursor">ui\ui_anim_quest</texture>
+      <compass x="0" y="3" vert_align="center" width="40" height="40" r="32" g="206" b="255">ui_inGame2_PDA_icon_NewQuest_white</compass>
 	    <texture_below>secondary_task_spot_below</texture_below>
 	    <texture_above>secondary_task_spot_above</texture_above>
 	</secondary_task_spot_mini>
@@ -649,7 +649,7 @@
         </ui_pda2_mechanic_location_spot>
         <ui_pda2_mechanic_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140">ui_inGame2_PDA_icon_Stalker_machanik_small</texture>
-                <compass max_dist="150" vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_Stalker_machanik</compass>
+                <compass max_dist="150" x="0" y="3" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_machanik</compass>
         </ui_pda2_mechanic_location_mini_spot>
 
         <ui_pda2_trader_location hint="st_ui_pda_legend_trader">
@@ -661,7 +661,7 @@
         </ui_pda2_trader_location_spot>
         <ui_pda2_trader_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140">ui_inGame2_PDA_icon_Stalker_Trader_small</texture>
-                <compass max_dist="150" vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_Stalker_Trader</compass>
+                <compass max_dist="150" x="0" y="3" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_Trader</compass>
         </ui_pda2_trader_location_mini_spot>
 
         <ui_pda2_scout_location hint="st_ui_pda_legend_scout">
@@ -673,7 +673,7 @@
         </ui_pda2_scout_location_spot>
         <ui_pda2_scout_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140">ui_inGame2_PDA_icon_Stalker_guide_small</texture>
-                <compass max_dist="150" vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_Stalker_guide</compass>
+                <compass max_dist="150" x="0" y="3" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_guide</compass>
         </ui_pda2_scout_location_mini_spot>
 
         <ui_pda2_quest_npc_location hint="st_ui_pda_legend_vip">
@@ -696,7 +696,7 @@
         </ui_pda2_medic_location_spot>
         <ui_pda2_medic_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140">ui_inGame2_PDA_icon_Stalker_Medic_small</texture>
-                <compass max_dist="150" vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_Stalker_Medic</compass>
+                <compass max_dist="150" x="0" y="3" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_Medic</compass>
         </ui_pda2_medic_location_mini_spot>
 
         <ui_pda2_actor_box_location hint="st_ui_pda_actor_box">
@@ -708,7 +708,7 @@
         </ui_pda2_actor_box_location_spot>
         <ui_pda2_actor_box_location_mini_spot width="40" height="40" stretch="1" alignment="c" location_level="-1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="232" g="181" b="96">ui_inGame2_PDA_icon_Actor_Box_small</texture>
-                <compass max_dist="150" vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_Actor_Box</compass>
+                <compass max_dist="150" x="0" y="3" vert_align="center" width="40" height="40" r="232" g="181" b="96">ui_inGame2_PDA_icon_Actor_Box</compass>
         </ui_pda2_actor_box_location_mini_spot>
 
         <ui_pda2_actor_sleep_location hint="st_ui_pda_sleep_place">
@@ -720,7 +720,7 @@
         </ui_pda2_actor_sleep_location_spot>
         <ui_pda2_actor_sleep_location_mini_spot width="40" height="40" stretch="1" alignment="c" location_level="-1">
                 <texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="232" g="181" b="96">ui_inGame2_PDA_icon_Place_to_rest_small</texture>
-                <compass max_dist="150" vert_align="center" width="32" height="32">ui_inGame2_PDA_icon_Place_to_rest</compass>
+                <compass max_dist="150" x="0" y="3" vert_align="center" width="40" height="40" r="232" g="181" b="96">ui_inGame2_PDA_icon_Place_to_rest</compass>
         </ui_pda2_actor_sleep_location_mini_spot>
 
         <primary_object>

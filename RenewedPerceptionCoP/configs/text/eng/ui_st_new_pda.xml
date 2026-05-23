@@ -66,4 +66,13 @@
 	<string id="pda_log_journal_dialogs">
 		<text>Dialog log</text>
 	</string>
+	<string id="pda_log_sort_oldest_hint">
+		<text>Show earlier lines at the top</text>
+	</string>
+	<string id="pda_log_sort_newest_hint">
+		<text>Show latest lines at the top</text>
+	</string>
+	<string id="pda_log_pin_last_hint">
+		<text>Pin last contact to top</text>
+	</string>
 </string_table>

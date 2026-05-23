@@ -163,16 +163,32 @@
 		</auto_static>
     </achievements_background>
 
-	<achievements_wnd x="280" y="110" width="380" height="638" always_show_scroll="0" stretch="1"/>
-    <achievements_itm x="65" y="35" width="90" height="75" inverse_dir="0" stretch="1">
-        <name x="170" y="0" width="230" height="20">
+	<achievements_layout>
+		<icon width="90" height="80"/>
+		<name width="250" height="22"/>
+		<descr width="250" height="20"/>
+		<hint_wnd width="210" height="120"/>
+	</achievements_layout>
+
+	<achievements_wnd x="312" y="108" width="380" height="638"
+		scroll_profile="default"
+		always_show_scroll="0"
+		stretch="1"
+		vert_interval="0"
+		top_indent="4"
+		bottom_indent="4"
+		right_ident="10"/>
+    <achievements_itm x="0" y="0" width="360" height="86" inverse_dir="0" stretch="1">
+		<achievements_row_stack x="0" y="0" width="360" height="86" sp_align="left" spacing="10"/>
+		<achievements_text_stack x="0" y="0" width="250" height="86" sp_align="top" spacing="4"/>
+        <icon x="0" y="0" use_layout_size="1" stretch="1"/>
+        <name x="0" y="0" use_layout_size="1">
             <text align="l" font="font_oswald_20" r="200" g="200" b="200">test</text>
         </name>
-        <icon x="42" y="0" width="90" height="75"/>
-        <descr x="170" y="30" width="230" height="90" complex_mode="1">
+        <descr x="0" y="0" width="250" height="20" complex_mode="1">
             <text align="l" font="font_rubik_16" r="150" g="150" b="150">test</text>
         </descr>
-	    <hint_wnd x="0" y="0" width="210" height="120">
+	    <hint_wnd x="0" y="0" use_layout_size="1">
 	        <background x="0" y="0" width="210" height="100" border="5">
 	            <texture>ui_icons_PDA_tooltips</texture>
 	        </background>

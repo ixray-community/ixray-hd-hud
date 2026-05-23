@@ -78,4 +78,13 @@
 	<string id="st_ui_pda_personal_spot_rmb">
 		<text>Личная метка. ЛКМ: включить режим. ПКМ по карте: поставить метку.</text>
 	</string>
+	<string id="pda_log_sort_oldest_hint">
+		<text>Показать предыдущие cверху</text>
+	</string>
+	<string id="pda_log_sort_newest_hint">
+		<text>Показать последние cверху</text>
+	</string>
+	<string id="pda_log_pin_last_hint">
+		<text>Последний диалог</text>
+	</string>
 </string_table>

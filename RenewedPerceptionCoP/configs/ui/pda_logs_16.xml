@@ -5,40 +5,64 @@
         <text align="l" font="letterica16" r="100" g="100" b="100" a="0"/>
     </center_caption>
 
-    <logs_list_news x="35" y="122" width="270" height="605" item_height="35" top_indent="36"
-        scroll_profile="pda_logs" always_show_scroll="0">
+    <logs_list_news x="35" y="122" width="280" height="605" item_height="35" top_indent="36"
+        scroll_profile="pda_logs" always_show_scroll="1">
         <font font="letterica18" color="ui_4"/>
-        <auto_frameline x="0" y="0" width="282" height="30" vertical="0">
+        <auto_frameline x="0" y="0" width="275" height="30" vertical="0">
             <title x="15" y="4" width="255" height="20">
                 <text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_log_journal_events</text>
             </title>
             <texture a="128">ui_inGame2_pda_background_text</texture>
         </auto_frameline>
+        <logs_item x="0" y="0" width="260" height="38">
+            <date_static x="55" y="1" width="100" height="14">
+                <text align="l" font="letterica16" color="ui_3"/>
+            </date_static>
+            <caption_static x="150" y="1" width="750" height="14">
+                <text align="l" font="letterica16" color="ui_1"/>
+            </caption_static>
+            <text_static x="55" y="16" width="218" height="14" complex_mode="1">
+                <text align="l" font="letterica16" color="ui_4"/>
+            </text_static>
+            <image x="5" y="0" width="40" height="29" stretch="1"/>
+        </logs_item>
     </logs_list_news>
 
-    <logs_list_dialogs x="320" y="122" width="610" height="605" item_height="35" top_indent="36"
-        scroll_profile="pda_logs" always_show_scroll="0" text_complex_mode="1">
+    <logs_list_dialogs x="320" y="122" width="680" height="605" item_height="35" top_indent="36"
+        scroll_profile="pda_logs" always_show_scroll="1">
         <font font="letterica18" color="ui_4"/>
-        <auto_frameline x="0" y="0" width="680" height="30" vertical="0">
-            <title x="15" y="4" width="595" height="20">
+        <auto_frameline x="0" y="0" width="675" height="30" vertical="0">
+            <title x="580" y="4" width="595" height="20">
                 <text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_log_journal_dialogs</text>
             </title>
             <texture a="128">ui_inGame2_pda_background_text</texture>
         </auto_frameline>
-    </logs_list_dialogs>
 
-    <logs_item x="276" y="0" width="270" height="38">
-        <date_static x="55" y="1" width="100" height="14">
-            <text align="l" font="letterica16" color="ui_3"/>
-        </date_static>
-        <caption_static x="150" y="1" width="750" height="14">
-            <text align="l" font="letterica16" color="ui_1"/>
-        </caption_static>
-        <text_static x="55" y="16" width="615" height="14" complex_mode="1">
-            <text align="l" font="letterica16" color="ui_4"/>
-        </text_static>
-        <image x="5" y="0" width="40" height="29" stretch="1"/>
-    </logs_item>
+        <btn_talk_sort_oldest x="3" y="3" width="20" height="24" stretch="1" hint="pda_log_sort_oldest_hint">
+            <texture>ui_inGame2_pda_sort_oldest</texture>
+        </btn_talk_sort_oldest>
+
+        <btn_talk_sort_newest x="25" y="3" width="20" height="24" stretch="1" hint="pda_log_sort_newest_hint">
+            <texture>ui_inGame2_pda_sort_newest</texture>
+        </btn_talk_sort_newest>
+
+        <btn_talk_pin_last x="47" y="3" width="20" height="24" stretch="1" hint="pda_log_pin_last_hint">
+            <texture>ui_inGame2_pda_log_pin_last</texture>
+        </btn_talk_pin_last>
+
+        <logs_item x="0" y="0" width="672" height="38">
+            <date_static x="55" y="1" width="100" height="14">
+                <text align="l" font="letterica16" color="ui_3"/>
+            </date_static>
+            <caption_static x="150" y="1" width="750" height="14">
+                <text align="l" font="letterica16" color="ui_1"/>
+            </caption_static>
+            <text_static x="55" y="16" width="610" height="14" complex_mode="1">
+                <text align="l" font="letterica16" color="ui_4"/>
+            </text_static>
+            <image x="5" y="0" width="40" height="29" stretch="1"/>
+        </logs_item>
+    </logs_list_dialogs>
 
     <period_caption x="525" y="85" width="80" height="23">
         <text align="r" vert_align="c" font="letterica18" r="220" g="220" b="220">pda_date_filter</text>

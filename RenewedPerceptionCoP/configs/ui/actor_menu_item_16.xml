@@ -20,7 +20,7 @@
 		<text align="l" font="letterica16" r="196" g="18" b="18" complex_mode="1"/>
 	</static_no_trade>
 
-	<descr_list x="16" y="60" width="290" height="130" always_show_scroll="0" fit_to_height="1">
+	<descr_list x="16" y="60" width="290" height="130" scroll_profile="default" always_show_scroll="0" fit_to_height="1">
 		<font font="letterica16" r="170" g="170" b="170"/>
 	</descr_list>
 	<description_line x="16" y="50" width="218" height="9" stretch="1">

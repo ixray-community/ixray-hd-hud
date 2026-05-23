@@ -29,15 +29,15 @@
 		</text_color>
 	</btn_second_task>
 
-	<map_wnd scroll_enable="0" map_move_step="20" map_zoom_step="0.1" map_zoom_min="0.5" map_zoom_max="2">
+	<map_wnd scroll_enable="1" map_move_step="20" map_zoom_step="0.1" map_zoom_min="0.5" map_zoom_max="2">
 		<snd_map_zoom_in>device\pda\pda_open</snd_map_zoom_in>
 		<snd_map_zoom_out>device\pda\pda_open</snd_map_zoom_out>
 		<main_wnd x="37" y="71" width="962" height="618">
 			<texture>ui_inGame2_pda_map_frame</texture>
 		</main_wnd>
-		<level_frame x="0" y="10" width="962" height="617"/>
-		<main_map_frame x="0" y="10" width="962" height="617" dx="0" dy="3" sx="19" sy="22">
-	        <auto_frameline x="0" y="10" width="962" height="617" vertical="1">
+		<level_frame x="0" y="10" width="955" height="610"/>
+		<main_map_frame x="0" y="10" width="955" height="610" dx="0" dy="0" sx="-1.5" sy="-1.5">
+	        <auto_frameline x="0" y="10" width="955" height="610" vertical="1">
 				<texture>ui_inGame2_pda_map_frame</texture>
 	        </auto_frameline>
 		</main_map_frame>
@@ -132,7 +132,7 @@
 			</text_color>
 	</filter_treasures>
 
-	<btn_nav_parent x="935" y="20" width="21" height="135">
+	<btn_nav_parent x="932" y="12" width="21" height="135">
 		<btn_nav_0 x="0" y="0" width="19" height="25" hint="ui_map_btn_legend" stretch="1">
 			<window_name>btn_nav_legend</window_name>
 			<texture_e>ui_inGame2_pda_control_map_button_0_e</texture_e>
@@ -207,7 +207,7 @@
 			</btn_task_focus>
 		</storyline_task_item>
 
-		<task_list x="5" y="100" width="330" height="350" item_height="35" scroll_profile="default" always_show_scroll="0" />
+		<task_list x="5" y="100" width="330" height="350" item_height="35" scroll_profile="default" always_show_scroll="1" />
 
 		<task_filter_tabs x="0" y="470" width="340" height="24">
 			<button id="all" x="0" y="0" width="115" height="24" frame_mode="0">

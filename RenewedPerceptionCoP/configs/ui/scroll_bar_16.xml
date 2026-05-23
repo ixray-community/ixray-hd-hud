@@ -1,4 +1,4 @@
-﻿<scroll_bar>
+<scroll_bar>
 	<default height="6" height_v="6" hold_delay="40" layout="stretch">
 		<back_v width="6" height="128">
 			<texture>ui_RenewedPerception_scroll_v_track</texture>
@@ -14,6 +14,7 @@
 		</box>
 	</default>
 
+	<!-- PDA map: stretch (UIMapWnd passes axis length); same parts as default -->
 	<pda height="6" height_v="6" hold_delay="40" layout="stretch" thumb="box">
 		<back_v width="6" height="128">
 			<texture>ui_RenewedPerception_scroll_v_track</texture>

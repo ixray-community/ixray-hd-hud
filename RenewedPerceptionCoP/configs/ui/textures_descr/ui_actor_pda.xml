@@ -180,6 +180,21 @@
     <file name="ui\ui_actor_pda_journal_back" scale="2">
         <texture id="ui_inGame2_journal_back" x="0" y="256" width="1280" height="768" />
 
+	    <texture id="ui_inGame2_pda_log_pin_last_e" x="955" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_log_pin_last_h" x="1005" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_log_pin_last_t" x="1052" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_log_pin_last_d" x="955" y="10" width="37" height="37" />
+
+	    <texture id="ui_inGame2_pda_sort_oldest_e" x="1219" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_oldest_h" x="1172" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_oldest_t" x="1124" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_oldest_d" x="1219" y="10" width="37" height="37" />
+
+	    <texture id="ui_inGame2_pda_sort_newest_e" x="1219" y="55" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_newest_h" x="1172" y="55" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_newest_t" x="1124" y="55" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_newest_d" x="1219" y="55" width="37" height="37" />
+
 	    <texture id="ui_inGame2_pda_Filtr_arrow_left_e" x="1324" y="175" width="37" height="37" />
 	    <texture id="ui_inGame2_pda_Filtr_arrow_left_h" x="1324" y="125" width="37" height="37" />
 	    <texture id="ui_inGame2_pda_Filtr_arrow_left_t" x="1324" y="80" width="37" height="37" />

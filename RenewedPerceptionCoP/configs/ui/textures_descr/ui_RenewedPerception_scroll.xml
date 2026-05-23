@@ -1,0 +1,9 @@
+<w>
+	<file name="ui\ui_RenewedPerception_scroll">
+		<texture id="ui_RenewedPerception_scroll_v_track" x="0" y="0" width="10" height="128" />
+		<texture id="ui_RenewedPerception_scroll_v_thumb" x="26" y="0" width="10" height="64" />
+
+		<texture id="ui_RenewedPerception_scroll_h_track" x="128" y="26" width="128" height="10" />
+		<texture id="ui_RenewedPerception_scroll_h_thumb" x="128" y="0" width="64" height="10" />
+	</file>
+</w>
