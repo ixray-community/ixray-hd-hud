@@ -231,7 +231,7 @@
     </file>
 
     <file name="ui\ui_actor_pda_pattern" scale="2">
-        <texture id="ui_inGame2_pda_pattern" x="0" y="0" width="1024" height="768" />
+        <texture id="ui_inGame2_pda_pattern" x="0" y="274" width="1500" height="750" />
     </file>
 
     <file name="ui\ui_actor_pda_glass_effect" scale="2">

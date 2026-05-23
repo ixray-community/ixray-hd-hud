@@ -25,11 +25,11 @@
 		<texture a="128">ui_inGame2_pda_background_text</texture>
 	</right_frame_line>
 
-	<list x="16" y="46" width="538" height="590" scroll_profile="default" always_show_scroll="0" can_select="1"/>
-	<detail_list x="16" y="46" width="284" height="590" scroll_profile="default" always_show_scroll="0" left_ident="5"/>
+	<list x="16" y="46" width="556" height="590" scroll_profile="default" always_show_scroll="1" can_select="1"/>
+	<detail_list x="16" y="46" width="400" height="590" scroll_profile="default" always_show_scroll="1" left_ident="0"/>
 
 	<pda_dialog>
-		<main x="0" y="0" width="316" height="650"/>
+		<main x="0" y="0" width="400" height="650"/>
 
 		<button x="8" y="600" width="300" height="24" stretch="1" hint="ui_st_exit_hint">
 			<texture>ui_inGame2_big_inventory_button</texture>
@@ -48,7 +48,7 @@
 		<font font="letterica18" r="210" g="215" b="225"/>
 		<font font="letterica18" r="200" g="200" b="200"/>
 
-		<question_item x="0" y="0" width="284" height="20" min_height="13">
+		<question_item x="0" y="0" width="400" height="20" min_height="13">
 			<num_text x="0" y="2" width="8" height="20">
 				<text font="letterica18" color="ui_2"/>
 			</num_text>

@@ -41,8 +41,8 @@
 				<texture>ui_inGame2_pda_map_frame</texture>
 	        </auto_frameline>
 		</main_map_frame>
-		<map_pattern_overlay x="-250000" y="0" width="948" height="596" stretch="1">
-			<texture>ui_inGame2_pda_pattern</texture>
+		<map_pattern_overlay x="0" y="0" width="955" height="610" stretch="1">
+			<texture a="50">ui_inGame2_pda_pattern</texture>
 		</map_pattern_overlay>
 		<map_hint_item x="0" y="0" width="300" height="200">
 			<texture>ui_icons_PDA_tooltips</texture>
@@ -257,7 +257,7 @@
 		</task_item>
 	</second_task_wnd>
 
-	<map_legend_wnd x="735" y="18" width="200" height="422">
+	<map_legend_wnd x="730" y="12" width="200" height="422">
 		<background_frame x="0" y="0" width="200" height="422">
 			<texture a="255">ui_icons_PDA_legend_list</texture>
 			<auto_frameline x="0" y="35" width="200" height="1" vertical="0">
