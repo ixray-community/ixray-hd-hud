@@ -3,7 +3,7 @@
 <window>
 	<main_wnd x="0" y="0" width="1024" height="768"/>
 
-	<left_frame_window x="35" y="80" width="570" height="650" a="80">
+	<left_frame_window x="35" y="80" width="575" height="650" a="80">
 		<texture>ui_inGame2_pda_ranking_icon_over</texture>
 	</left_frame_window>
 
