@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="st_pda_talk_status_label">
+		<text>PDA call</text>
+	</string>
+	<string id="st_pda_talk_status_available">
+		<text>Available</text>
+	</string>
+	<string id="st_pda_talk_status_disabled">
+		<text>Disabled in engine config</text>
+	</string>
+	<string id="st_pda_talk_status_unavailable">
+		<text>Unavailable</text>
+	</string>
+	<string id="st_pda_talk_status_dead">
+		<text>Contact is dead</text>
+	</string>
+	<string id="st_pda_talk_status_hostile">
+		<text>Hostile</text>
+	</string>
+	<string id="st_pda_talk_status_busy">
+		<text>Busy</text>
+	</string>
+	<string id="st_pda_talk_status_offline">
+		<text>No signal (not on level)</text>
+	</string>
+	<string id="st_pda_talk_status_out_of_range">
+		<text>Out of radio range</text>
+	</string>
+	<string id="st_pda_talk_status_no_capability">
+		<text>Cannot use PDA with this contact</text>
+	</string>
+	<string id="st_pda_talk_reward_meet_title">
+		<text>PDA</text>
+	</string>
+	<string id="st_pda_talk_reward_meet_text">
+		<text>Pick up items in person when you meet this stalker.</text>
+	</string>
+</string_table>

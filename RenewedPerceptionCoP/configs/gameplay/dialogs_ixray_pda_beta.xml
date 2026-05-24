@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_dialogs>
+    <!-- Smoke-test dialog for PDA remote talk Beta (ixray_pda_beta.script). -->
+    <dialog id="ixray_pda_beta_smoke_dialog">
+        <pda_available>1</pda_available>
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="1">
+                <text>ixray_pda_beta_smoke_info_phrase</text>
+                <dont_has_info>ixray_pda_beta_smoke_info_done</dont_has_info>
+                <give_info>ixray_pda_beta_smoke_info_done</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>ixray_pda_beta_smoke_reward_phrase</text>
+                <action>ixray_pda_beta.smoke_give_bandage</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

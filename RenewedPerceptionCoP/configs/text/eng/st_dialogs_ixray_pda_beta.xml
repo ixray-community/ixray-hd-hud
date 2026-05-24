@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="ixray_pda_beta_smoke_info_phrase">
+		<text>[Beta] Send a test info packet over the PDA link.</text>
+	</string>
+	<string id="ixray_pda_beta_smoke_reward_phrase">
+		<text>[Beta] Request a bandage (physical reward, meet-only in Beta).</text>
+	</string>
+</string_table>

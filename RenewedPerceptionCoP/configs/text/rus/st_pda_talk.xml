@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="st_pda_talk_status_label">
+		<text>Сеанс связи</text>
+	</string>
+	<string id="st_pda_talk_status_available">
+		<text>Доступен</text>
+	</string>
+	<string id="st_pda_talk_status_disabled">
+		<text>Выключено в engine_external</text>
+	</string>
+	<string id="st_pda_talk_status_unavailable">
+		<text>Недоступен</text>
+	</string>
+	<string id="st_pda_talk_status_dead">
+		<text>Погиб</text>
+	</string>
+	<string id="st_pda_talk_status_hostile">
+		<text>Враг</text>
+	</string>
+	<string id="st_pda_talk_status_busy">
+		<text>Занят</text>
+	</string>
+	<string id="st_pda_talk_status_offline">
+		<text>Нет сигнала</text>
+	</string>
+	<string id="st_pda_talk_status_out_of_range">
+		<text>Нет связи</text>
+	</string>
+	<string id="st_pda_talk_status_no_capability">
+		<text>PDA недоступен для этого контакта</text>
+	</string>
+	<string id="st_pda_talk_reward_meet_title">
+		<text>PDA</text>
+	</string>
+	<string id="st_pda_talk_reward_meet_text">
+		<text>Получите награду при личной встрече</text>
+	</string>
+</string_table>
