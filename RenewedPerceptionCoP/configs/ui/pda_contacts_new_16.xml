@@ -29,7 +29,11 @@
 	<detail_list x="16" y="46" width="400" height="590" scroll_profile="default" always_show_scroll="1" left_ident="0"/>
 
 	<pda_dialog>
-		<main x="0" y="0" width="400" height="650"/>
+		<main x="0" y="0" width="685" height="650">
+			<auto_frameline x="-2" y="496" width="390" height="1">
+				<texture a="128">ui_inGame2_PDA_horiz_divider</texture>
+			</auto_frameline>
+		</main>
 
 		<button x="8" y="600" width="300" height="24" stretch="1" hint="ui_st_exit_hint">
 			<texture>ui_inGame2_big_inventory_button</texture>
@@ -42,8 +46,8 @@
 			</text_color>
 		</button>
 
-		<answers_list x="8" y="36" width="300" height="430" scroll_profile="default" always_show_scroll="0" left_ident="4"/>
-		<questions_list x="8" y="478" width="300" height="110" scroll_profile="default" always_show_scroll="0" left_ident="4"/>
+		<answers_list x="10" y="36" width="380" height="430" scroll_profile="default" always_show_scroll="1" left_ident="0"/>
+		<questions_list x="10" y="510" width="380" height="110" scroll_profile="default" always_show_scroll="1" left_ident="0"/>
 
 		<font font="letterica18" r="210" g="215" b="225"/>
 		<font font="letterica18" r="200" g="200" b="200"/>
@@ -66,7 +70,7 @@
 			<name_caption x="0" y="2" width="278" height="10">
 				<text font="letterica16" color="ui_7" complex_mode="0"/>
 			</name_caption>
-			<content_text x="14" y="20" width="265" height="10" complex_mode="1">
+			<content_text x="14" y="20" width="365" height="10" complex_mode="1">
 				<text font="letterica18" color="ui_8"/>
 			</content_text>
 		</other_answer_item>
@@ -75,7 +79,7 @@
 			<name_caption x="0" y="2" width="278" height="10">
 				<text font="letterica16" color="ui_lime" complex_mode="0"/>
 			</name_caption>
-			<content_text x="14" y="20" width="265" height="10" complex_mode="1">
+			<content_text x="14" y="20" width="365" height="10" complex_mode="1">
 				<text font="letterica18" color="ui_2"/>
 			</content_text>
 		</actor_answer_item>
