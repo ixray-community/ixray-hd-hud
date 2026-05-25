@@ -16,22 +16,22 @@
 
 	<enemy_mini_spot width="11" height="11" stretch="1" alignment="c" >
 		<texture r="255" g="47" b="47">ui_mmap_common_actor_2</texture>
-		<compass shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_common_actor_2</compass>
+		<compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_common_actor_2</compass>
 	</enemy_mini_spot>
 
 	<neutral_mini_spot width="11" height="11" stretch="1" alignment="c">
 		<texture r="236" g="236" b="236">ui_mmap_common_actor_2</texture>
-		<compass shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_common_actor_2</compass>
+		<compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_common_actor_2</compass>
 	</neutral_mini_spot>
 
 	<friend_mini_spot width="11" height="11" stretch="1" alignment="c">
 		<texture r="186" g="255" b="96">ui_mmap_common_actor_2</texture>
-		<compass shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_common_actor_2</compass>
+		<compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_common_actor_2</compass>
 	</friend_mini_spot>
 
 	<deadbody_mini_spot width="11" height="11" stretch="1" alignment="c">
 		<texture r="160" g="160" b="160">ui_mmap_death_actor_2</texture>
-		<compass shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_death_actor_2</compass>
+		<compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_death_actor_2</compass>
 	</deadbody_mini_spot>
 	
 <!-- map_spot_new_xform

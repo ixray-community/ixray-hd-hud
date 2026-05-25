@@ -321,7 +321,7 @@
 		<legend_list x="0" y="45" width="200" height="600" item_height="25" scroll_profile="default" always_show_scroll="0">
 			<item x="0" y="0" width="200" height="35">
 				<image x="-2" y="-10" width="36" height="46" align="c" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="255" g="156" b="0">ui_inGame2_PDA_icon_NewQuest_white</texture>
+					<texture r="255" g="156" b="0">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_main_task</text>
@@ -329,7 +329,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35">
 				<image x="-2" y="-10" width="36" height="40" align="c" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="32" g="206" b="255">ui_inGame2_PDA_icon_NewQuest_white</texture>
+					<texture r="32" g="206" b="255">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_additional_task</text>
@@ -337,7 +337,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35">
 				<image x="-1" y="-12" width="32" height="40" align="c" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret</texture>
+					<texture r="151" g="169" b="202">ui_inGame2_PDA_icon_secret<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_secrets</text>
@@ -345,7 +345,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35">
 				<image x="-2" y="-15" width="36.8" height="46" align="c" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="221" g="35" b="96">ui_inGame2_PDA_personal_spot</texture>
+					<texture r="221" g="35" b="96">ui_inGame2_PDA_personal_spot<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_personal_spots</text>
@@ -353,7 +353,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140">ui_inGame2_PDA_icon_location_2</texture>
+					<texture>ui_inGame2_PDA_icon_location_2<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="2" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_primary_objects</text>
@@ -361,7 +361,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="232" g="181" b="96">ui_inGame2_PDA_icon_Place_to_rest</texture>
+					<texture r="232" g="181" b="96">ui_inGame2_PDA_icon_Place_to_rest<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_rest</text>
@@ -369,7 +369,7 @@
 			</item>
 			<item x="135" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="232" g="181" b="96">ui_inGame2_PDA_icon_Actor_Box</texture>
+					<texture r="232" g="181" b="96">ui_inGame2_PDA_icon_Actor_Box<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_actor_box</text>
@@ -377,7 +377,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_Trader</texture>
+					<texture r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_Trader<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_trader</text>
@@ -385,7 +385,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_guide</texture>
+					<texture r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_guide<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_scout</text>
@@ -393,7 +393,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_machanik</texture>
+					<texture r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_machanik<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_mechanic</text>
@@ -401,7 +401,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140" r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_Medic</texture>
+					<texture r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_Medic<shadows thickness="1" r="0" g="0" b="0" a="140"/></texture>
 				</image>
 				<text_static x="35" y="0" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">st_ui_pda_legend_medic</text>

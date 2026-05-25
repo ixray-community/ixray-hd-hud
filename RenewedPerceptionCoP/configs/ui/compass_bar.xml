@@ -28,7 +28,9 @@
         </strip>
 
         <spots align="c" show="1" stretch="1">
-            <spot_template width="32" height="32" shadow="1" shadow_offset_x="1" shadow_offset_y="1" shadow_r="0" shadow_g="0" shadow_b="0" shadow_a="140"/>
+            <spot_template width="32" height="32">
+                <shadows thickness="1" r="0" g="0" b="0" a="140"/>
+            </spot_template>
         </spots>
 
         <active_target x="0" y="0" width="30" height="40" padding="8" smoothing_speed="10" altitude_deadzone="1.8" stretch="1">
