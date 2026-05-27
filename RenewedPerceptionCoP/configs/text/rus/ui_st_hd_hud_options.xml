@@ -5,26 +5,26 @@
 	</string>
 
 	<string id="st_ui_hud_show">
-		<text>РџРѕРєР°Р·С‹РІР°С‚СЊ С…СѓРґ</text>
+		<text>Показывать худ</text>
 	</string>
 	<string id="st_ui_hud_show_minimap">
-		<text>РџРѕРєР°Р·С‹РІР°С‚СЊ РјРёРЅРёРєР°СЂС‚Сѓ</text>
+		<text>Показывать миникарту</text>
 	</string>
 	<string id="st_ui_hud_show_quick_slots">
-		<text>РџРѕРєР°Р·С‹РІР°С‚СЊ СЃР»РѕС‚С‹ Р±С‹СЃС‚СЂРѕРіРѕ РґРѕСЃС‚СѓРїР°</text>
+		<text>Показывать слоты быстрого доступа</text>
 	</string>
 	
 	<string id="st_ui_group_crosshair">
-		<text>РџСЂРёС†РµР»</text>
+		<text>Прицел</text>
 	</string>
 	
 	<string id="st_ui_hud_show_crosshair">
-		<text>РџРѕРєР°Р·С‹РІР°С‚СЊ РїРµСЂРµРєСЂРµСЃС‚РёРµ РїСЂРёС†РµР»Р°</text>
+		<text>Показывать перекрестие прицела</text>
 	</string>
 	<string id="st_ui_hud_use_crosshair_point_mode">
-		<text>РџСЂРёС†РµР» С‚РѕС‡РєР°</text>
+		<text>Прицел точка</text>
 	</string>
 	<string id="st_ui_hud_show_crosshair_target_distance">
-		<text>РџРѕРєР°Р·С‹РІР°С‚СЊ РґРёСЃС‚Р°РЅС†РёСЋ РґРѕ С†РµР»Рё РїРѕРґ РїСЂРёС†РµР»РѕРј</text>
+		<text>Показывать дистанцию до цели под прицелом</text>
 	</string>
 </string_table>

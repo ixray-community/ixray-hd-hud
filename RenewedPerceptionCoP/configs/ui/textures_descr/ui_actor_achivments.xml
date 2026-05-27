@@ -1,0 +1,27 @@
+<w>
+    <file name="ui\ui_actor_achivments" scale="2">
+	    <texture id="ui_inGame2_Drug_stalkerov" x="0" y="0" width="128" height="128" />
+	    <texture id="ui_inGame2_Torgovets_informatsiey" x="128" y="0" width="128" height="128" />
+	    <texture id="ui_inGame2_Otmecheniy_zonoy" x="256" y="0" width="128" height="128" />
+	    <texture id="ui_inGame2_Hranitel_tayn" x="0" y="256" width="128" height="128" />
+	    <texture id="ui_inGame2_Sostoyatelniy_Klient" x="128" y="128" width="128" height="128" />
+	    <texture id="ui_inGame2_Storonnik_ravnovesiya" x="256" y="128" width="128" height="128" />
+	    <texture id="ui_inGame2_Drug_svobodi" x="0" y="256" width="128" height="128" />
+
+	    <texture id="ui_inGame2_Drug_dolga" x="128" y="256" width="128" height="128" />
+	    <texture id="ui_inGame2_Nauchniy_sotrudnik" x="256" y="256" width="128" height="128" />
+	    <texture id="ui_inGame2_Diplomat" x="0" y="384" width="128" height="128" />
+	    <texture id="ui_inGame2_Lider" x="128" y="384" width="128" height="128" />
+	    <texture id="ui_inGame2_Opitniy_stalker" x="256" y="384" width="128" height="128" />
+	    <texture id="ui_inGame2_Master_visokih_tehnologiy" x="0" y="512" width="128" height="128" />
+	    <texture id="ui_inGame2_Master_boevih_sistem" x="128" y="512" width="128" height="128" />
+
+	    <texture id="ui_inGame2_Iskatel" x="256" y="512" width="128" height="128" />
+	    <texture id="ui_inGame2_Gonets_pravosudiya" x="0" y="640" width="128" height="128" />
+	    <texture id="ui_inGame2_Avtoritet" x="128" y="640" width="128" height="128" />
+	    <texture id="ui_inGame2_Svoy_paren" x="256" y="640" width="128" height="128" />
+	    <texture id="ui_inGame2_Syshik" x="0" y="768" width="128" height="128" />
+	    <texture id="ui_inGame2_Ohotnik_na_mutantov" x="128" y="768" width="128" height="128" />
+	    <texture id="ui_inGame2_Pervootkrivatel" x="256" y="768" width="128" height="128" />
+   </file>
+</w>

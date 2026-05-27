@@ -65,6 +65,12 @@ function on_game_start()
 			end
 		)
 
+		_ref.register_option("st_ui_group_hd_hud", "contextual_hud", "st_ui_hud_contextual", _ref.check_box(true),
+			function (group, name, value)
+				execute_command("hud_contextual", value)
+			end
+		)
+
 		_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true), 
 			function (group, name, value)
 				if not crosshair_console_armed then

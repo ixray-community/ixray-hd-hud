@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="actor">
+		<text>Free Stalker</text>
+	</string>
+	<string id="army">
+		<text>Military</text>
+	</string>
+	<string id="bandit">
+		<text>Bandit</text>
+	</string>
+	<string id="dolg">
+		<text>Duty</text>
+	</string>
+	<string id="ecolog">
+		<text>Scientist</text>
+	</string>
+	<string id="filter_personal_spots_text">
+		<text>Personal spots</text>
+	</string>
+	<string id="filter_primary_objects_text">
+		<text>Areas</text>
+	</string>
+	<string id="filter_quest_npcs_text">
+		<text>Important objects</text>
+	</string>
+	<string id="filter_rp_locations_text">
+		<text>Locations</text>
+	</string>
+	<string id="filter_rp_marks_text">
+		<text>Marks</text>
+	</string>
+	<string id="filter_rp_npcs_text">
+		<text>Characters</text>
+	</string>
+	<string id="filter_rp_stashes_text">
+		<text>Stashes</text>
+	</string>
+	<string id="filter_treasures_text">
+		<text>Stashes</text>
+	</string>
+	<string id="freedom">
+		<text>Freedom</text>
+	</string>
+	<string id="jupiter">
+		<text>The area around Jupiter</text>
+	</string>
+	<string id="jupiter_underground">
+		<text>Pripyat 1 underpass</text>
+	</string>
+	<string id="killer">
+		<text>Mercenary</text>
+	</string>
+	<string id="labx8">
+		<text>Laboratory X8</text>
+	</string>
+	<string id="monolith">
+		<text>Monolith</text>
+	</string>
+	<string id="monster">
+		<text>Mutant</text>
+	</string>
+	<string id="month_april">
+		<text>April</text>
+	</string>
+	<string id="month_august">
+		<text>August</text>
+	</string>
+	<string id="month_december">
+		<text>December</text>
+	</string>
+	<string id="month_february">
+		<text>February</text>
+	</string>
+	<string id="month_january">
+		<text>January</text>
+	</string>
+	<string id="month_july">
+		<text>July</text>
+	</string>
+	<string id="month_june">
+		<text>June</text>
+	</string>
+	<string id="month_march">
+		<text>March</text>
+	</string>
+	<string id="month_may">
+		<text>May</text>
+	</string>
+	<string id="month_november">
+		<text>November</text>
+	</string>
+	<string id="month_october">
+		<text>October</text>
+	</string>
+	<string id="month_september">
+		<text>September</text>
+	</string>
+	<string id="pda_btn_close">
+		<text>Deactivate PDA</text>
+	</string>
+	<string id="pda_btn_contacts">
+		<text>Contacts</text>
+	</string>
+	<string id="pda_btn_contacts_hint">
+		<text>Show stalker contact list</text>
+	</string>
+	<string id="pda_btn_logs_hint">
+		<text>Show message history</text>
+	</string>
+	<string id="pda_btn_missions_list">
+		<text>Missions</text>
+	</string>
+	<string id="pda_btn_quests_hint">
+		<text>Show Zone map and mission log</text>
+	</string>
+	<string id="pda_btn_ranking_hint">
+		<text>Show personal stats</text>
+	</string>
+	<string id="pda_calendar_hint">
+		<text>Open calendar</text>
+	</string>
+	<string id="pda_calendar_next_month_hint">
+		<text>Next month</text>
+	</string>
+	<string id="pda_calendar_prev_month_hint">
+		<text>Previous month</text>
+	</string>
+	<string id="pda_date_filter">
+		<text>Date filter</text>
+	</string>
+	<string id="pda_date_next_hint">
+		<text>Next day</text>
+	</string>
+	<string id="pda_date_prev_hint">
+		<text>Previous day</text>
+	</string>
+	<string id="pda_filter_news">
+		<text>Show news</text>
+	</string>
+	<string id="pda_filter_talk">
+		<text>Show dialogs</text>
+	</string>
+	<string id="pda_legend_actor_box">
+		<text>Personal box</text>
+	</string>
+	<string id="pda_legend_deadbodies">
+		<text>Corpses</text>
+	</string>
+	<string id="pda_legend_enemies">
+		<text>Enemies</text>
+	</string>
+	<string id="pda_legend_friends">
+		<text>Allies</text>
+	</string>
+	<string id="pda_legend_guide">
+		<text>Guide</text>
+	</string>
+	<string id="pda_legend_locations">
+		<text>Location</text>
+	</string>
+	<string id="pda_legend_main_task">
+		<text>Main mission</text>
+	</string>
+	<string id="pda_legend_mechanic">
+		<text>Technician</text>
+	</string>
+	<string id="pda_legend_medic">
+		<text>Medic</text>
+	</string>
+	<string id="pda_legend_neutrals">
+		<text>Neutrals</text>
+	</string>
+	<string id="pda_legend_personal_spots">
+		<text>Personal spot</text>
+	</string>
+	<string id="pda_legend_rest">
+		<text>Sleeping area</text>
+	</string>
+	<string id="pda_legend_side_task">
+		<text>Side mission</text>
+	</string>
+	<string id="pda_legend_squad">
+		<text>Squad commander</text>
+	</string>
+	<string id="pda_legend_stashes">
+		<text>Stash</text>
+	</string>
+	<string id="pda_legend_trader">
+		<text>Trader</text>
+	</string>
+	<string id="pda_log_journal_dialogs">
+		<text>Dialog log</text>
+	</string>
+	<string id="pda_log_journal_events">
+		<text>Event log</text>
+	</string>
+	<string id="pda_log_pin_last_hint">
+		<text>Pin last contact to top</text>
+	</string>
+	<string id="pda_log_sort_newest_hint">
+		<text>Show latest lines at the top</text>
+	</string>
+	<string id="pda_log_sort_oldest_hint">
+		<text>Show earlier lines at the top</text>
+	</string>
+	<string id="pda_map_legend_caption">
+		<text>Map legend</text>
+	</string>
+	<string id="pda_missions_list_caption">
+		<text>Mission list</text>
+	</string>
+	<string id="pda_pda_dialog_title">
+		<text>PDA dialog</text>
+	</string>
+	<string id="pda_ranking_achievements">
+		<text>Achievements</text>
+	</string>
+	<string id="pda_ranking_favorite_weapon">
+		<text>Favorite weapon</text>
+	</string>
+	<string id="pda_ranking_mutant_killed">
+		<text>Most powerful mutant killed</text>
+	</string>
+	<string id="pda_ranking_valuable_artifact">
+		<text>Most valuable artifact found</text>
+	</string>
+	<string id="pda_stat_1">
+		<text>Zone time:</text>
+	</string>
+	<string id="pda_stat_10">
+		<text>Help to stalkers</text>
+	</string>
+	<string id="pda_stat_11">
+		<text>Headshot kills</text>
+	</string>
+	<string id="pda_stat_12">
+		<text>Player deaths</text>
+	</string>
+	<string id="pda_stat_13">
+		<text>Distance traveled</text>
+	</string>
+	<string id="pda_stat_2">
+		<text>Emissions survived:</text>
+	</string>
+	<string id="pda_stat_3">
+		<text>Missions completed:</text>
+	</string>
+	<string id="pda_stat_4">
+		<text>Mutants killed:</text>
+	</string>
+	<string id="pda_stat_5">
+		<text>Stalkers killed:</text>
+	</string>
+	<string id="pda_stat_6">
+		<text>Artifacts found:</text>
+	</string>
+	<string id="pda_stat_7">
+		<text>Stashes found:</text>
+	</string>
+	<string id="pda_stat_8">
+		<text>Money earned</text>
+	</string>
+	<string id="pda_stat_9">
+		<text>Money spent</text>
+	</string>
+	<string id="pda_stat_favorite_weapon">
+		<text>Favorite weapon</text>
+	</string>
+	<string id="pda_stat_mutant_killed">
+		<text>Most powerful mutant killed</text>
+	</string>
+	<string id="pda_tab_contacts">
+		<text>Contacts</text>
+	</string>
+	<string id="pda_tab_contacts_hint">
+		<text>Stalker contact list</text>
+	</string>
+	<string id="pda_tab_journal">
+		<text>Journal</text>
+	</string>
+	<string id="pda_tab_journal_hint">
+		<text>Event and dialog journal</text>
+	</string>
+	<string id="pda_tab_planner">
+		<text>Planner</text>
+	</string>
+	<string id="pda_tab_planner_hint">
+		<text>Zone map and missions</text>
+	</string>
+	<string id="pda_tab_statistics">
+		<text>Statistics</text>
+	</string>
+	<string id="pda_tab_statistics_hint">
+		<text>Personal stats and achievements</text>
+	</string>
+	<string id="pda_weekday_fri">
+		<text>Fr</text>
+	</string>
+	<string id="pda_weekday_mon">
+		<text>Mo</text>
+	</string>
+	<string id="pda_weekday_sat">
+		<text>Sa</text>
+	</string>
+	<string id="pda_weekday_sun">
+		<text>Su</text>
+	</string>
+	<string id="pda_weekday_thu">
+		<text>Th</text>
+	</string>
+	<string id="pda_weekday_tue">
+		<text>Tu</text>
+	</string>
+	<string id="pda_weekday_wed">
+		<text>We</text>
+	</string>
+	<string id="pripyat">
+		<text>Pripyat</text>
+	</string>
+	<string id="st_jup_a10_name">
+		<text>Checkpoint</text>
+	</string>
+	<string id="st_jup_a12_name">
+		<text>Container warehouse</text>
+	</string>
+	<string id="st_jup_a6_name">
+		<text>Yanov</text>
+	</string>
+	<string id="st_jup_a9_name">
+		<text>Jupiter plant</text>
+	</string>
+	<string id="st_jup_b19_name">
+		<text>Kopachy</text>
+	</string>
+	<string id="st_jup_b1_name">
+		<text>Ash Heap anomaly</text>
+	</string>
+	<string id="st_jup_b200_name">
+		<text>Cement factory</text>
+	</string>
+	<string id="st_jup_b201_name">
+		<text>Concrete Bath anomaly</text>
+	</string>
+	<string id="st_jup_b202_name">
+		<text>Substation</text>
+	</string>
+	<string id="st_jup_b205_name">
+		<text>Volkhov AA complex</text>
+	</string>
+	<string id="st_jup_b206_name">
+		<text>Anomalous grove</text>
+	</string>
+	<string id="st_jup_b208_name">
+		<text>Eastern tunnel</text>
+	</string>
+	<string id="st_jup_b209_name">
+		<text>Bitumen anomaly</text>
+	</string>
+	<string id="st_jup_b211_name">
+		<text>Plavni anomaly</text>
+	</string>
+	<string id="st_jup_b212_name">
+		<text>Ventilation complex</text>
+	</string>
+	<string id="st_jup_b25_name">
+		<text>Quarry</text>
+	</string>
+	<string id="st_jup_b32_has_af">
+		<text>Scanners have detected artifacts:</text>
+	</string>
+	<string id="st_jup_b32_name">
+		<text>Parking lot</text>
+	</string>
+	<string id="st_jup_b32_no_af">
+		<text>Scanners have not detected any artifacts</text>
+	</string>
+	<string id="st_jup_b46_name">
+		<text>Cooling tower</text>
+	</string>
+	<string id="st_jup_b6_name">
+		<text>Scientists’ bunker</text>
+	</string>
+	<string id="st_jup_b9_name">
+		<text>Helipads</text>
+	</string>
+	<string id="st_location">
+		<text>Location:</text>
+	</string>
+	<string id="st_pda_change_spot_hint">
+		<text>Edit spot label</text>
+	</string>
+	<string id="st_pda_delete_spot">
+		<text>Delete spot</text>
+	</string>
+	<string id="st_pda_set_navigation_spot">
+		<text>Set route</text>
+	</string>
+	<string id="st_pda_unset_navigation_spot">
+		<text>Clear route</text>
+	</string>
+	<string id="st_pri_a16_name">
+		<text>Laundromat</text>
+	</string>
+	<string id="st_pri_a17_name">
+		<text>Hospital</text>
+	</string>
+	<string id="st_pri_a18_name">
+		<text>Book store</text>
+	</string>
+	<string id="st_pri_a21_name">
+		<text>Grocery store</text>
+	</string>
+	<string id="st_pri_a25_name">
+		<text>Kindergarten</text>
+	</string>
+	<string id="st_pri_a28_name">
+		<text>Prometheus movie theater</text>
+	</string>
+	<string id="st_pri_b301_name">
+		<text>School</text>
+	</string>
+	<string id="st_pri_b302_name">
+		<text>Vine anomaly</text>
+	</string>
+	<string id="st_pri_b303_name">
+		<text>Old service center</text>
+	</string>
+	<string id="st_pri_b304_name">
+		<text>Department store</text>
+	</string>
+	<string id="st_pri_b306_name">
+		<text>Yubileiny service center</text>
+	</string>
+	<string id="st_pri_b307_name">
+		<text>Volcano anomaly</text>
+	</string>
+	<string id="st_pri_b35_name">
+		<text>Apartment complex</text>
+	</string>
+	<string id="st_pri_b36_name">
+		<text>River port</text>
+	</string>
+	<string id="st_ui_pda_actor_box">
+		<text>Personal box</text>
+	</string>
+	<string id="st_ui_pda_legend_mechanic">
+		<text>Technician</text>
+	</string>
+	<string id="st_ui_pda_legend_medic">
+		<text>Medic</text>
+	</string>
+	<string id="st_ui_pda_legend_primary_objects">
+		<text>Area</text>
+	</string>
+	<string id="st_ui_pda_legend_scout">
+		<text>Guide</text>
+	</string>
+	<string id="st_ui_pda_legend_trader">
+		<text>Trader</text>
+	</string>
+	<string id="st_ui_pda_legend_vip">
+		<text>Important character</text>
+	</string>
+	<string id="st_ui_pda_personal">
+		<text>Personal spot</text>
+	</string>
+	<string id="st_ui_pda_personal_spot">
+		<text>Personal spot</text>
+	</string>
+	<string id="st_ui_pda_personal_spot_rmb">
+		<text>Personal spot. LMB: spot mode. RMB on spot: context menu.</text>
+	</string>
+	<string id="st_ui_pda_ranking_general">
+		<text>General</text>
+	</string>
+	<string id="st_ui_pda_ranking_valuable_artifact">
+		<text>Most valuable artifact found</text>
+	</string>
+	<string id="st_ui_pda_secret">
+		<text>Stash</text>
+	</string>
+	<string id="st_ui_pda_sleep_place">
+		<text>Sleeping area</text>
+	</string>
+	<string id="st_zat_a2_name">
+		<text>Skadovsk</text>
+	</string>
+	<string id="st_zat_b100_name">
+		<text>Iron Forest anomaly</text>
+	</string>
+	<string id="st_zat_b101_name">
+		<text>Swamp</text>
+	</string>
+	<string id="st_zat_b103_name">
+		<text>Substation workshops</text>
+	</string>
+	<string id="st_zat_b104_name">
+		<text>Sawmill</text>
+	</string>
+	<string id="st_zat_b106_name">
+		<text>Izumrudnoye</text>
+	</string>
+	<string id="st_zat_b12_name">
+		<text>Preobrazhensky bridge</text>
+	</string>
+	<string id="st_zat_b14_name">
+		<text>Dredge station</text>
+	</string>
+	<string id="st_zat_b18_name">
+		<text>Old barge</text>
+	</string>
+	<string id="st_zat_b20_name">
+		<text>Burnt farmstead</text>
+	</string>
+	<string id="st_zat_b28_name">
+		<text>Southern plateau</text>
+	</string>
+	<string id="st_zat_b33_name">
+		<text>Fuelling station</text>
+	</string>
+	<string id="st_zat_b38_name">
+		<text>Krug antenna complex</text>
+	</string>
+	<string id="st_zat_b39_name">
+		<text>Oakpine anomaly</text>
+	</string>
+	<string id="st_zat_b40_name">
+		<text>Waste processing station</text>
+	</string>
+	<string id="st_zat_b52_name">
+		<text>Dock cranes</text>
+	</string>
+	<string id="st_zat_b53_name">
+		<text>Boiler anomaly</text>
+	</string>
+	<string id="st_zat_b54_name">
+		<text>Scar anomaly</text>
+	</string>
+	<string id="st_zat_b55_name">
+		<text>Claw anomaly</text>
+	</string>
+	<string id="st_zat_b56_name">
+		<text>Circus anomaly</text>
+	</string>
+	<string id="st_zat_b5_name">
+		<text>Ranger station</text>
+	</string>
+	<string id="st_zat_b7_name">
+		<text>Shevchenko</text>
+	</string>
+	<string id="stalker">
+		<text>Stalker</text>
+	</string>
+	<string id="ui_inv_cancel">
+		<text>Cancel</text>
+	</string>
+	<string id="ui_inv_money">
+		<text>Money</text>
+	</string>
+	<string id="ui_inv_ok">
+		<text>OK</text>
+	</string>
+	<string id="ui_logs_center_caption">
+		<text>Message log</text>
+	</string>
+	<string id="ui_map_btn_center">
+		<text>Center on player</text>
+	</string>
+	<string id="ui_map_btn_legend">
+		<text>Show legend</text>
+	</string>
+	<string id="ui_map_btn_personal_spot">
+		<text>Personal spot</text>
+	</string>
+	<string id="ui_map_btn_zmreset">
+		<text>Maximum zoom out</text>
+	</string>
+	<string id="ui_map_zoom_max">
+		<text>max</text>
+	</string>
+	<string id="ui_map_zoom_min">
+		<text>min</text>
+	</string>
+	<string id="ui_mm_back_gp">
+		<text>$$ACTION_UI_BACK$$ Back</text>
+	</string>
+	<string id="ui_pda_all_task">
+		<text>All missions</text>
+	</string>
+	<string id="ui_pda_dialog_answers">
+		<text>Available answers</text>
+	</string>
+	<string id="ui_pda_dialog_hint_select">
+		<text>LMB: select answer</text>
+	</string>
+	<string id="ui_pda_dialog_history">
+		<text>Dialogue history</text>
+	</string>
+	<string id="ui_pda_dialog_no_contact">
+		<text>No active contact</text>
+	</string>
+	<string id="ui_pda_dialog_status_idle">
+		<text>Status: idle</text>
+	</string>
+	<string id="ui_pda_log_date_next">
+		<text>$$ACTION_PDA_LOG_DATE_NEXT$$ Next date</text>
+	</string>
+	<string id="ui_pda_log_date_prev">
+		<text>$$ACTION_PDA_LOG_DATE_PREV$$ Previous date</text>
+	</string>
+	<string id="ui_pda_log_show_dialogs">
+		<text>$$ACTION_PDA_LOG_SHOW_DIALOGS$$ Show dialogs</text>
+	</string>
+	<string id="ui_pda_log_show_news">
+		<text>$$ACTION_PDA_LOG_SHOW_NEWS$$ Show news</text>
+	</string>
+	<string id="ui_pda_log_to_end">
+		<text>$$ACTION_PDA_LOG_SCROLL_DOWN$$ To end</text>
+	</string>
+	<string id="ui_pda_log_to_start">
+		<text>$$ACTION_PDA_LOG_SCROLL_UP$$ To start</text>
+	</string>
+	<string id="ui_pda_side_task">
+		<text>Side missions</text>
+	</string>
+	<string id="ui_pda_story_task">
+		<text>Story</text>
+	</string>
+	<string id="ui_pda_tabs">
+		<text>$$ACTION_UI_TAB_LEFT$$/$$ACTION_UI_TAB_RIGHT$$ Tabs</text>
+	</string>
+	<string id="ui_ranking_center_caption">
+		<text>Achievements</text>
+	</string>
+	<string id="ui_show_second_task_wnd">
+		<text>Show/Hide Missions</text>
+	</string>
+	<string id="ui_st_community">
+		<text>Faction</text>
+	</string>
+	<string id="ui_st_exit_hint">
+		<text>Close window ($$ACTION_USE$$)</text>
+	</string>
+	<string id="ui_st_rank">
+		<text>Rank</text>
+	</string>
+	<string id="ui_st_relation">
+		<text>Attitude</text>
+	</string>
+	<string id="ui_st_reputation">
+		<text>Reputation</text>
+	</string>
+	<string id="ui_st_trade">
+		<text>Trade</text>
+	</string>
+	<string id="ui_task_btn_focus_center">
+		<text>Center map on mission</text>
+	</string>
+	<string id="zaton">
+		<text>Zaton</text>
+	</string>
+	<string id="zombied">
+		<text>Zombie</text>
+	</string>
+</string_table>

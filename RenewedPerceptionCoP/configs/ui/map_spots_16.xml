@@ -175,7 +175,9 @@
         </treasure_spot>
         <treasure_spot_mini width="48" height="52" alignment="c" stretch="1">
                 <texture r="151" g="169" b="202">ui_inGame2_PDA_icon_secret</texture>
-                <compass x="0" y="3" vert_align="center" width="40" height="40" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret</compass>
+                <compass x="0" y="3" vert_align="center" width="40" height="40" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret
+                        <shadows thickness="0" a="0"/>
+                </compass>
         </treasure_spot_mini>
 		
         <personal_spot hint="st_ui_pda_personal">
@@ -226,7 +228,7 @@
                 <compass max_dist="150" vert_align="center"></compass>
         </alife_combat_attack_spot_mini>
 
-  <!-- ÐÐ¾Ð²Ñ‹Ðµ Ð¼Ð°Ð¿ÑÐ¿Ð¾Ñ‚Ñ‹ Ð´Ð»Ñ ÑÐ¸Ð¼ÑƒÐ»ÑÑ†Ð¸Ð¸ -->
+  <!--     -->
         <alife_combat>
                 <level_map spot="alife_combat_spot"/>
         </alife_combat>
@@ -246,7 +248,7 @@
 
 
 
-<!-- Ð“Ñ€ÑƒÐ¿Ð¿Ð¸Ñ€Ð¾Ð²ÐºÐ¸ -->
+<!--  -->
 		  <alife_presentation_faction_duty>
 			<level_map spot="alife_presentation_faction_duty_spot"/>
 		  </alife_presentation_faction_duty>
@@ -316,7 +318,7 @@
 
 
 
-  <!-- Ð¡Ð¼Ð°Ñ€Ñ‚Ñ‚ÐµÑ€Ñ€ÐµÐ¹Ð½Ñ‹ -->
+  <!--  -->
   <alife_presentation_smart>
     <level_map spot="alife_presentation_smart_spot"/>
   </alife_presentation_smart>
@@ -481,7 +483,7 @@
 
 
 
-        <!-- ÐžÑ‚Ñ€ÑÐ´Ñ‹ -->
+        <!--  -->
   <alife_presentation_squad_friend>
 <!--	<level_map spot="alife_presentation_squad_friend_spot"/> -->
     <mini_map spot="alife_presentation_squad_friend_spot_mini"/>
@@ -491,7 +493,9 @@
   </alife_presentation_squad_friend_spot>
   <alife_presentation_squad_friend_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="186" g="255" b="96">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_squad_leader_2</compass>
+    <compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_squad_leader_2
+        <shadows thickness="0" a="0"/>
+    </compass>
   </alife_presentation_squad_friend_spot_mini>
 
   <alife_presentation_squad_neutral>
@@ -503,7 +507,9 @@
   </alife_presentation_squad_neutral_spot>
   <alife_presentation_squad_neutral_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="236" g="236" b="236">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_squad_leader_2</compass>
+    <compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_squad_leader_2
+        <shadows thickness="0" a="0"/>
+    </compass>
   </alife_presentation_squad_neutral_spot_mini>
 
 
@@ -516,7 +522,9 @@
   </alife_presentation_squad_enemy_spot>
   <alife_presentation_squad_enemy_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
     <texture r="255" g="47" b="47">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_squad_leader_2</compass>
+    <compass x="0" y="40" width="11" height="11" max_dist="5" vert_align="center">ui_mmap_squad_leader_2
+        <shadows thickness="0" a="0"/>
+    </compass>
   </alife_presentation_squad_enemy_spot_mini>
 
   <alife_presentation_squad_monster>
@@ -595,7 +603,7 @@
     <texture r="170" g="255" b="170">ui_minimap_squad_leader</texture>
   </alife_presentation_friend_squad_attack_point_spot_mini>
 -->
-	<!-- Ð¡ÑŽÐ¶ÐµÑ‚Ð½Ñ‹Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ñ -->
+	<!--   -->
 	<storyline_task_location>
 	    <level_map spot="storyline_task_spot" pointer="quest_pointer2"/>
 	    <mini_map spot="storyline_task_spot_mini" pointer="quest_pointer2"/>
@@ -610,7 +618,7 @@
 	    <texture_below>storyline_task_spot_below</texture_below>
 	    <texture_above>storyline_task_spot_above</texture_above>
 	</storyline_task_spot_mini>
-	<!-- Ð’Ñ‚Ð¾Ñ€Ð¾ÑÑ‚ÐµÐ¿ÐµÐ½Ð½Ñ‹Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ñ -->
+	<!--   -->
 	<secondary_task_location>
 		<level_map spot="secondary_task_spot" pointer="quest_pointer"/>
 		<mini_map spot="secondary_task_spot_mini" pointer="quest_pointer"/>

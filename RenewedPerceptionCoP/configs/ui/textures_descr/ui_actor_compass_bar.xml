@@ -5,5 +5,7 @@
 
         <texture id="ui_inGame2_compass_altitude_up" x="25" y="660" width="16" height="16" />
         <texture id="ui_inGame2_compass_altitude_down" x="55" y="660" width="16" height="16" />
+
+        <texture id="ui_inGame2_compass_motion_icon" x="26" y="204" width="500" height="50" />
    </file>
 </w>

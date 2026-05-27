@@ -29,13 +29,16 @@
 
         <spots align="c" show="1" stretch="1">
             <spot_template width="32" height="32">
-                <shadows thickness="1" r="0" g="0" b="0" a="140"/>
+                <shadows thickness="1" r="0" g="0" b="0" a="80"/>
             </spot_template>
         </spots>
 
         <active_target x="0" y="0" width="30" height="40" padding="8" smoothing_speed="10" altitude_deadzone="1.8" stretch="1">
             <altitude_arrow x="-4" y="19" width="15" height="15" texture_up="ui_inGame2_compass_altitude_up" texture_down="ui_inGame2_compass_altitude_down" stretch="1"/>
-            <marker x="0" y="10" width="40" height="40" texture="ui_inGame2_hint_wnd_main_window" stretch="1"/>
+            <marker x="0" y="10" width="40" height="40" stretch="1">
+                <shadows thickness="1" r="0" g="0" b="0" a="40"/>
+                <texture>ui_inGame2_hint_wnd_main_window</texture>
+            </marker>
             <distance_text x="5" y="0" width="80" height="14" align="l" vert_align="c" color="ui_1">
                 <text align="l" font="font_rubik_12" vert_align="c"/>
             </distance_text>

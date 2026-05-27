@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="windows-1251"?>
 <!-- Embedded phrase UI: engine reads only the pda_dialog node in this file (not pda_dialog_16.xml). -->
 <window>
 	<main_wnd x="0" y="0" width="1024" height="768"/>
@@ -9,7 +9,7 @@
 
 	<left_frame_line x="0" y="0" width="571" height="30">
 		<title x="15" y="4" width="560" height="20">
-			<text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_btn_contacts</text>
+			<text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_tab_contacts</text>
 		</title>
 		<texture a="128">ui_inGame2_pda_background_text</texture>
 	</left_frame_line>

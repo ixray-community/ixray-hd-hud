@@ -1,5 +1,14 @@
 <w>
 	<main_wnd x="0" y="0" width="1024" height="768"/>
+
+	<tab_caption_frame x="35" y="85" width="966" height="30">
+		<auto_frameline x="0" y="0" width="966" height="30" vertical="0">
+			<title x="15" y="4" width="950" height="20">
+				<text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_tab_statistics</text>
+			</title>
+			<texture a="128">ui_inGame2_pda_background_text</texture>
+		</auto_frameline>
+	</tab_caption_frame>
 	
 	<actor_ch_info x="70" y="92" width="169" height="138">
 		<name_static x="2" y="112" width="165" height="26">
@@ -57,7 +66,7 @@
 			<texture a="128">ui_inGame2_pda_background_text</texture>
 		</auto_frameline>
 		<auto_static x="6" y="-22" width="188" height="22" stretch="1">
-			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">st_ui_pda_ranking_valuable_artifact</text>
+			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">pda_ranking_valuable_artifact</text>
 		</auto_static>
 	</valuable_artifact_over>
 	<valuable_artifact_back x="684" y="594" width="318" height="135" stretch="1">
@@ -159,12 +168,12 @@
 			<texture a="128">ui_inGame2_pda_background_text</texture>
 		</auto_frameline>
 		<auto_static x="10" y="2" width="360" height="25" stretch="1">
-			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">ui_ranking_center_caption</text>
+			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">pda_ranking_achievements</text>
 		</auto_static>
     </achievements_background>
 
 	<achievements_layout>
-		<icon width="90" height="80"/>
+		<icon width="60" height="80"/>
 		<name width="250" height="22"/>
 		<descr width="250" height="20"/>
 		<hint_wnd width="210" height="120"/>
@@ -204,7 +213,7 @@
 			<texture a="128">ui_inGame2_pda_background_text</texture>
 		</auto_frameline>
 		<auto_static x="10" y="-22" width="380" height="22" stretch="1">
-			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">pda_stat_mutant_killed</text>
+			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">pda_ranking_mutant_killed</text>
 		</auto_static>
     </monster_over>
     <monster_icon_back x="685" y="105" width="314" height="226" stretch="1"/>
@@ -216,7 +225,7 @@
 			<texture a="128">ui_inGame2_pda_background_text</texture>
 		</auto_frameline>
 		<auto_static x="6" y="-22" width="240" height="22" stretch="1">
-			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">pda_stat_favorite_weapon</text>
+			<text align="l" vert_align="c" font="font_oswald_20" r="220" g="220" b="220">pda_ranking_favorite_weapon</text>
 		</auto_static>
     </favorite_weapon_over>
     <favorite_weapon_back x="665" y="315" width="332" height="180" stretch="1">

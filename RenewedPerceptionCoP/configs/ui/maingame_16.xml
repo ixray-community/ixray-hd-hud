@@ -127,14 +127,16 @@
 	</disk_io>
 
 	<flashing_icons>
-		<flashing_icon x="13" y="210" width="48" height="29" type="pda" light_anim="ui_slow_blinking_alpha">
-			<texture>ui_hud_icon_PDA</texture>
+		<flashing_icon x="-1300000000000" y="210" width="48" height="29" type="pda" light_anim="ui_slow_blinking_alpha">
+			<texture a="0">ui_hud_icon_PDA</texture>
 		</flashing_icon>
 	</flashing_icons>
 
 	<pick_up_item x="452" y="400" width="120" height="100"/>
 
 	<new_contact_snd>detectors\contact_1</new_contact_snd>
+
+	<quick_slots_panel show_speed="3.0" hide_speed="4.0" hide_delay="2.0" empty_red_glow_counter="1" empty_red_glow_icon="1" empty_red_intensity="1.0"/>
 	
     <quick_slot0 x="16" y="705" width="20" height="25" stretch="1">
 	    <auto_static x="-7" y="-9" width="38" height="60" stretch="1">
