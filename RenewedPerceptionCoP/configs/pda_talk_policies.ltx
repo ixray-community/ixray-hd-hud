@@ -1,0 +1,28 @@
+; Policies:
+;   inherit        - engine default (physical actions deferred over PDA)
+;   blocked        - hidden in PDA talk only
+;   info_only      - info/actions ok; physical phrase actions deferred until meet
+;   meet_required  - same defer rule for the phrase action
+;   allowed        - run phrase actions even over PDA (explicit opt-in)
+;   pda_only       - visible only in PDA, hidden in face-to-face talk
+;
+; Phrase keys: dialog_id:phrase_id
+
+[pda_talk_dialog]
+ixray_pda_beta_smoke_dialog = info_only
+
+; --- Vanilla CoP examples (uncomment and set real dialog ids from gameplay XML) ---
+; dm_transfer_money = blocked
+; dm_help_wounded = info_only
+; dm_some_quest_give_item = info_only
+
+; --- PDA-only radio lines (example) ---
+; ixray_pda_radio_status_dialog = pda_only
+
+[pda_talk_phrase]
+; Smoke test: bandage action is deferred; meet hint uses st_pda_talk_reward_meet_text
+ixray_pda_beta_smoke_dialog:2 = meet_required
+
+; --- Phrase-level overrides (examples) ---
+; dm_help_wounded:give_medkit = meet_required
+; dm_transfer_money:pay_cash = blocked

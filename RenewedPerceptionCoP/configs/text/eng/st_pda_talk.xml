@@ -34,6 +34,7 @@
 		<text>PDA</text>
 	</string>
 	<string id="st_pda_talk_reward_meet_text">
-		<text>Pick up items in person when you meet this stalker.</text>
+		<text>Items and money can only be exchanged in person when you meet this stalker.</text>
 	</string>
 </string_table>
+

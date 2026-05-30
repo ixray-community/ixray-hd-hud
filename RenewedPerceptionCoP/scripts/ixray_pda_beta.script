@@ -1,6 +1,5 @@
--- IX-Ray PDA remote talk Beta smoke helpers.
-
 function smoke_give_bandage(first, second)
+
 	local npc = first
 	if first ~= nil and first:id() == db.actor:id() then
 		npc = second
@@ -10,3 +9,5 @@ function smoke_give_bandage(first, second)
 	end
 	dialogs.relocate_item_section(npc, "bandage", "in", 1)
 end
+
+

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <string_table>
+	<string id="ixray_pda_beta_smoke_caption">
+		<text>[Beta] Тест связи PDA</text>
+	</string>
 	<string id="ixray_pda_beta_smoke_info_phrase">
-		<text>[Beta] Отправить инфо-пакет по PDA.</text>
+		<text>[Beta] Передать тестовую инфопорцию по PDA.</text>
 	</string>
 	<string id="ixray_pda_beta_smoke_reward_phrase">
-		<text>[Beta] Награда при личной встрече.</text>
+		<text>[Beta] Договориться о бинте (выдача только при личной встрече).</text>
 	</string>
 </string_table>
