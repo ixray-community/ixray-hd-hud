@@ -1,0 +1,13 @@
+<w>
+	<loading_progress_background x="308" y="591" width="407" height="5" stretch="1" override="replace">
+		<texture width="405" height="4" color="black" a="255" stretch="1">ui_mm_loading_progress_bar</texture>
+	</loading_progress_background>
+
+	<loading_progress x="308" y="591" width="407" height="5" override="replace">
+		<texture>ui_mm_loading_progress_bar</texture>
+	</loading_progress>
+
+	<loading_tip x="298" y="676" width="430" height="80" complex_mode="1" stretch="1" override="replace">
+		<text alignment="c" align="c" r="103" g="103" b="103" font="letterica18"/>
+	</loading_tip>
+</w>

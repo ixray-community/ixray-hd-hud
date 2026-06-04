@@ -102,11 +102,11 @@
     <!-- Finish -->
 
 	<actor_money_static x="800" y="76" width="104" height="22">
-		<text align="r" font="font_rubik_regular_22" r="211" g="211" b="211" a="255"/>
+		<text align="r" font="font_rubik_22" r="211" g="211" b="211" a="255"/>
 	</actor_money_static>
 
 	<partner_money_static x="155" y="76" width="104" height="22">
-		<text align="r" font="font_rubik_regular_22" r="211" g="211" b="211" a="255"/>
+		<text align="r" font="font_rubik_22" r="211" g="211" b="211" a="255"/>
 	</partner_money_static>
 
 	<inventory_slot_wnd>
@@ -302,7 +302,7 @@
 	</artefact_slot_highlight>
 
 	<quick_slot1_text x="429" y="415" width="14" height="13">
-		<text align="c" r="152" g="152" b="152"font="font_rubik_16">quick_use_str_1</text>
+		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_1</text>
 	</quick_slot1_text>
 	<quick_slot2_text x="494" y="415" width="14" height="13">
 		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_2</text>

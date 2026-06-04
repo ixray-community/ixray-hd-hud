@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_ui_group_hd_hud">
+		<text>HD HUD</text>
+	</string>
+	<string id="st_ui_hud_show">
+		<text>Show HUD</text>
+	</string>
+	<string id="st_ui_hud_navigation_mode">
+		<text>HUD navigation type</text>
+	</string>
+	<string id="st_ui_hud_nav_minimap">
+		<text>Minimap</text>
+	</string>
+	<string id="st_ui_hud_nav_compass_bar">
+		<text>Horizontal compass bar</text>
+	</string>
+	<string id="st_ui_hud_navigation_visible">
+		<text>Show HUD navigation</text>
+	</string>
+	<string id="st_ui_hud_show_quick_slots">
+		<text>Show quick slots</text>
+	</string>
+	<string id="st_ui_group_crosshair">
+		<text>Crosshair</text>
+	</string>
+	<string id="st_ui_hud_show_crosshair">
+		<text>Show crosshair</text>
+	</string>
+	<string id="st_ui_hud_use_crosshair_point_mode">
+		<text>Crosshair dot mode</text>
+	</string>
+	<string id="st_ui_hud_show_crosshair_target_distance">
+		<text>Show target distance under crosshair</text>
+	</string>
+</string_table>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="windows-1251" ?>
-<keybingidg>
-	<group name="kb_grp_inventory" override="add">
-		<command id="kb_weapon7" exe="wpn_7"/>
-		<command id="kb_inventory_sort_prev" exe="inv_sort_prev"/>
-		<command id="kb_inventory_sort_next" exe="inv_sort_next"/>
-		<command id="kb_show_quick_slots" exe="show_quick_slots"/>
-	</group>
-</keybingidg>
