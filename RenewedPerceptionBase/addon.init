@@ -1,0 +1,3 @@
+name: RenewedPerceptionCop
+platform: cop
+depends: RenewedPerceptionBase
