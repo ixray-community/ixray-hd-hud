@@ -1,0 +1,9 @@
+<w>
+    <file name="ui\ui_hud_new">
+	    <texture id="ui_inGame2_minimap_new_background"    		x="0" y="0" width="450" height="450" />
+	    <texture id="ui_inGame2_weapons_new_background"    		x="417" y="18" width="420" height="54" />
+	    <texture id="ui_inGame2_health_new_background"    		x="465" y="115" width="400" height="125" />
+	    <texture id="ui_inGame2_health_new_progress"    		x="481" y="271" width="298" height="16" />
+	    <texture id="ui_inGame2_armor_new_progress"    		x="481" y="298" width="298" height="16" />
+	</file>
+</w>
