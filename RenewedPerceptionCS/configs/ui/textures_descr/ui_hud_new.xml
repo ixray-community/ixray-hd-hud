@@ -4,6 +4,31 @@
 	    <texture id="ui_inGame2_weapons_new_background"    		x="417" y="18" width="420" height="54" />
 	    <texture id="ui_inGame2_health_new_background"    		x="465" y="115" width="400" height="125" />
 	    <texture id="ui_inGame2_health_new_progress"    		x="481" y="271" width="298" height="16" />
-	    <texture id="ui_inGame2_armor_new_progress"    		x="481" y="298" width="298" height="16" />
+	    <texture id="ui_inGame2_armor_new_progress"    			x="481" y="298" width="298" height="16" />
+	    <texture id="ui_inGame2_quick_slot_background"    		x="480" y="342" width="78" height="90" />
+	    <texture id="ui_inGame2_indicator_rad_new"    			x="910" y="48" width="38" height="38" />
+	    <texture id="ui_inGame2_indicator_chem_new"    			x="910" y="91" width="38" height="38" />
+	    <texture id="ui_inGame2_indicator_burn_new"    			x="910" y="134" width="38" height="38" />
+	    <texture id="ui_inGame2_indicator_psi_new"    			x="910" y="177" width="38" height="38" />
+
+	    <texture id="ui_inGame2_circle_hunger_green" x="230" y="460" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_hunger_yellow" x="230" y="520" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_hunger_red" x="230" y="580" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_bloodloose_green" x="50" y="460" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_bloodloose_yellow" x="50" y="520" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_bloodloose_red" x="50" y="580" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_Overweight_green" x="340" y="460" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_Overweight_yellow" x="340" y="520" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_Overweight_red" x="340" y="580" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_thirst_green" x="290" y="460" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_thirst_yellow" x="290" y="520" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_thirst_red" x="290" y="580" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_psy_green" x="170" y="460" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_psy_yellow" x="170" y="520" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_psy_red" x="170" y="580" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_radiation_green" x="110" y="460" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_radiation_yellow" x="110" y="520" width="60" height="60" />
+	    <texture id="ui_inGame2_circle_radiation_red" x="110" y="580" width="60" height="60" />
+
 	</file>
 </w>
