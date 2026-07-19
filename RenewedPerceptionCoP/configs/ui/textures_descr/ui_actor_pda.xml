@@ -40,10 +40,10 @@
 	    <texture id="ui_inGame2_pda_Current_tasks_t" x="547" y="117" width="46" height="46" />
 	    <texture id="ui_inGame2_pda_Current_tasks_d" x="547" y="9" width="46" height="46" />
 
-	    <texture id="ui_inGame2_pda_button_filters_e" x="2048" y="0" width="211" height="28" />
-	    <texture id="ui_inGame2_pda_button_filters_h" x="2048" y="45" width="211" height="28" />
-	    <texture id="ui_inGame2_pda_button_filters_t" x="2048" y="81" width="211" height="28" />
-	    <texture id="ui_inGame2_pda_button_filters_d" x="2048" y="9" width="211" height="28" />
+	    <texture id="ui_inGame2_pda_button_filters_e" x="266" y="124" width="211" height="28" />
+	    <texture id="ui_inGame2_pda_button_filters_h" x="266" y="124" width="211" height="28" />
+	    <texture id="ui_inGame2_pda_button_filters_t" x="266" y="124" width="211" height="28" />
+	    <texture id="ui_inGame2_pda_button_filters_d" x="266" y="124" width="211" height="28" />
 
 	    <texture id="ui_inGame2_pda_map_background_b"       x="0" y="153" width="955" height="16" />
 	    <texture id="ui_inGame2_pda_map_background_back"    x="0" y="159" width="955" height="16" />

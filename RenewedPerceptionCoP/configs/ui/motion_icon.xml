@@ -1,16 +1,21 @@
 
 <window>
+	<!-- Compass bar only -->
 	<compass_layout x="0" y="1.0" width="1.0" height="0.893" align="c" stretch="1"
-	                contextual_fade="1" fade_in_speed="5" fade_out_speed="4"
+	                contextual_fade="1" fade_in_speed="5" fade_out_speed="2"
 	                min_visible_alpha="0.01" visibility_threshold="0.5"/>
 
 	<background x="0" y="0" width="500" height="35" alignment="l" stretch="1">
 		<texture a="128">ui_inGame2_compass_motion_icon</texture>
 	</background>
 
-	<luminosity_progress x="8" y="8" width="334" height="8" horz="1" min="0" max="200" stretch="1">
-		<progress>
-			<texture r="120" g="200" b="80">ui_inGame2_Radar_green_bar</texture>
-		</progress>
-	</luminosity_progress>
+	<!-- Minimap only -->
+	<minimap_layout contextual_fade="1" fade_in_speed="5" fade_out_speed="2"
+	                min_visible_alpha="0.01" visibility_threshold="0.5"/>
+
+	<window rel_size="1.25" width="10" height="10" alignment="c"/>
+
+	<luminosity_overlay x="13" y="-28" width="135" height="180" stretch="1">
+		<texture r="255" g="79" b="79" a="165">ui_inGame_vignette_luminosity</texture>
+	</luminosity_overlay>
 </window>

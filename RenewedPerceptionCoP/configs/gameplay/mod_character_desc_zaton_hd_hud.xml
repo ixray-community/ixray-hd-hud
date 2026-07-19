@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 
 <xml>
-    <specific_character id="zat_b30_owl_stalker_trader" override="add">
-        <actor_dialog>ixray_pda_beta_smoke_dialog</actor_dialog>
+    <specific_character id="zat_b30_owl_stalker_trader">
+        <actor_dialog override="add">ixray_pda_beta_smoke_dialog</actor_dialog>
     </specific_character>
 </xml>
-
-
