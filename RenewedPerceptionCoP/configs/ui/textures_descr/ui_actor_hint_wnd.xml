@@ -2,6 +2,12 @@
     <file name="ui\ui_actor_hint_wnd" scale="2">
 	    <texture id="ui_inGame2_inv_trash"    x="5" y="651" width="29" height="36" />
 
+		<texture id="ui_rp_quick_slot_back_b"    x="435" y="644" width="7" height="17" />
+		<texture id="ui_rp_quick_slot_back_back" x="442" y="644" width="13" height="17" />
+		<texture id="ui_rp_quick_slot_back_e"    x="455" y="644" width="7" height="17" />
+
+		<texture id="ui_rp_quick_slot_counter" x="435" y="617" width="27" height="17" />
+
 	    <texture id="ui_inGame2_hint_wnd_main_window_lt"    x="0" y="0" width="60" height="150" />
 	    <texture id="ui_inGame2_hint_wnd_main_window_t"     x="60" y="0" width="25" height="150" />
 	    <texture id="ui_inGame2_hint_wnd_main_window_rt"    x="211" y="0" width="65" height="150" />

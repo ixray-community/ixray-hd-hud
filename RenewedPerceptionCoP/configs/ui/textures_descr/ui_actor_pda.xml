@@ -175,6 +175,21 @@
 
     <file name="ui\ui_actor_pda_stat_back" scale="2">
         <texture id="ui_inGame2_stat_back" x="0" y="256" width="1280" height="768" />
+
+	    <texture id="ui_inGame2_pda_button_tasks_e" x="31" y="31" width="152" height="34" />
+	    <texture id="ui_inGame2_pda_button_tasks_h" x="31" y="85" width="152" height="34" />
+	    <texture id="ui_inGame2_pda_button_tasks_t" x="31" y="138" width="152" height="34" />
+	    <texture id="ui_inGame2_pda_button_tasks_d" x="31" y="31" width="152" height="34" />
+
+	    <texture id="ui_inGame2_pda_button_filters_01_e" x="515" y="31" width="141" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_01_h" x="364" y="31" width="141" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_01_t" x="213" y="31" width="141" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_01_d" x="515" y="31" width="141" height="34" />
+
+	    <texture id="ui_inGame2_pda_button_filters_02_e" x="213" y="84" width="141" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_02_h" x="364" y="84" width="141" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_02_t" x="515" y="84" width="141" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_02_d" x="213" y="84" width="141" height="34" />
     </file>
 
     <file name="ui\ui_actor_pda_journal_back" scale="2">

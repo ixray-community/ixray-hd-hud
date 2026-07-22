@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ui_fire_mode_single">
+		<text>SIN</text>
+	</string>
+	<string id="ui_fire_mode_auto">
+		<text>AUT</text>
+	</string>
+	<string id="ui_fire_mode_burst_2">
+		<text>2-BT</text>
+	</string>
+	<string id="ui_fire_mode_burst_3">
+		<text>3-BT</text>
+	</string>
+</string_table>

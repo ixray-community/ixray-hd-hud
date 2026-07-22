@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ui_fire_mode_single">
+		<text>ОДН</text>
+	</string>
+	<string id="ui_fire_mode_auto">
+		<text>АВТ</text>
+	</string>
+	<string id="ui_fire_mode_burst_2">
+		<text>2-ОТ</text>
+	</string>
+	<string id="ui_fire_mode_burst_3">
+		<text>3-ОТ</text>
+	</string>
+</string_table>
