@@ -1,7 +1,7 @@
 
 <window>
 	<!-- Compass bar only -->
-	<compass_layout x="0" y="1.0" width="1.0" height="0.893" align="c" stretch="1"
+	<compass_layout x="0" y="0.9" width="1.0" height="0.893" align="c" stretch="1"
 	                contextual_fade="1" fade_in_speed="5" fade_out_speed="2"
 	                min_visible_alpha="0.01" visibility_threshold="0.5"/>
 

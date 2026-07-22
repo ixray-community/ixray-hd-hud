@@ -1,7 +1,8 @@
 <w>
     <file name="ui\ui_actor_compass_bar" scale="2">
-	    <texture id="ui_inGame2_compass_bar_window" x="0" y="0" width="504" height="56" />
-	    <texture id="ui_inGame2_compass_dial" x="0" y="100" width="1024" height="14" />
+	    <texture id="ui_inGame2_compass_bar_window" x="0" y="24" width="512" height="28" />
+	    <texture id="ui_inGame2_compass_dial" x="0" y="95" width="1024" height="6" />
+	    <texture id="ui_inGame2_compass_cardinal_tick" x="26" y="632" width="8" height="8" />
 
         <texture id="ui_inGame2_compass_altitude_up" x="25" y="660" width="16" height="16" />
         <texture id="ui_inGame2_compass_altitude_down" x="55" y="660" width="16" height="16" />

@@ -1,5 +1,7 @@
 local con = nil
 local crosshair_console_armed = false
+this.crosshair_console_armed = false
+this.navigation_mode = "compass_bar"
 
 local function arm_crosshair_console()
 	crosshair_console_armed = true
@@ -36,7 +38,38 @@ function OnGetPdaStatById(stat_id)
 	elseif stat_id == "player_deaths" or stat_id == "deaths" or stat_id == "death" or stat_id == "actor_deaths" or stat_id == "pda_stat_11" then
 		return tostring(db.actor:actor_deaths())
 	elseif stat_id == "distance_km" or stat_id == "distance" or stat_id == "km" or stat_id == "traveled_km" or stat_id == "player_distance" or stat_id == "pda_stat_12" then
-		return string.format("%.2f км", db.actor:actor_distance_km())
+		return string.format("%.2f km", db.actor:actor_distance_km())
+	end
+
+	return ""
+end
+
+function get_maingame()
+	if db and db.actor then
+		return ActorMenu.get_maingame()
+	end
+end
+
+function apply_navigation_mode(value)
+	this.navigation_mode = value
+
+	local maingame = get_maingame()
+	if not maingame then
+		return
+	end
+
+	maingame:SetNavigationMode(value == "compass_bar")
+end
+
+function sync_navigation_mode()
+	local maingame = get_maingame()
+	if not maingame then
+		return
+	end
+
+	local want_compass = this.navigation_mode == "compass_bar"
+	if maingame:IsCompassBarMode() ~= want_compass then
+		maingame:SetNavigationMode(want_compass)
 	end
 
 	return ""
@@ -45,33 +78,28 @@ end
 function on_game_start()
 	RegisterScriptCallback("main_menu_update", arm_crosshair_console)
 	RegisterScriptCallback("actor_on_update", arm_crosshair_console)
+	RegisterScriptCallback("actor_on_update", sync_navigation_mode)
 
 	RegisterScriptCallback("on_init_ixr_options", function (_ref)
-		_ref.register_option(nil, "hud_visible", "st_ui_hud_show", _ref.check_box(true), 
+		_ref.register_option(nil, "hud_visible", "st_ui_hud_show", _ref.check_box(true),
 			function (group, name, value)
 				execute_command("hud_draw", value)
 			end
 		)
 
-		_ref.register_option("st_ui_group_hd_hud", "minimap_visible", "st_ui_hud_show_minimap", _ref.check_box(true), 
+		_ref.register_option("st_ui_group_hd_hud", "minimap_visible", "st_ui_hud_show_minimap", _ref.check_box(true),
 			function (group, name, value)
 				execute_command("hud_minimap", value)
 			end
 		)
 
-		_ref.register_option("st_ui_group_hd_hud", "quick_slots_visible", "st_ui_hud_show_quick_slots", _ref.check_box(true), 
+		_ref.register_option("st_ui_group_hd_hud", "quick_slots_visible", "st_ui_hud_show_quick_slots", _ref.check_box(true),
 			function (group, name, value)
 				execute_command("hud_hide_quick_slots", not value)
 			end
 		)
 
-		_ref.register_option("st_ui_group_hd_hud", "contextual_hud", "st_ui_hud_contextual", _ref.check_box(true),
-			function (group, name, value)
-				execute_command("hud_contextual", value)
-			end
-		)
-
-		_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true), 
+		_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true),
 			function (group, name, value)
 				if not crosshair_console_armed then
 					return
@@ -80,13 +108,13 @@ function on_game_start()
 			end
 		)
 
-		_ref.register_option("st_ui_group_crosshair", "switch_to_crosshair_point_mode", "st_ui_hud_use_crosshair_point_mode", _ref.check_box(false), 
+		_ref.register_option("st_ui_group_crosshair", "switch_to_crosshair_point_mode", "st_ui_hud_use_crosshair_point_mode", _ref.check_box(false),
 			function (group, name, value)
 				execute_command("hud_crosshair_point", value)
 			end
 		)
 
-		_ref.register_option("st_ui_group_crosshair", "show_crosshair_target_distance", "st_ui_hud_show_crosshair_target_distance", _ref.check_box(false), 
+		_ref.register_option("st_ui_group_crosshair", "show_crosshair_target_distance", "st_ui_hud_show_crosshair_target_distance", _ref.check_box(false),
 			function (group, name, value)
 				execute_command("hud_crosshair_dist", value)
 			end

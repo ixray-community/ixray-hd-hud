@@ -1,0 +1,41 @@
+<window>
+	<compass_bar alignment="c" fade_in_speed="5" fade_out_speed="4" fov_angle="45" x="0.5" y="0.07" width="0.5" height="0.04" stretch="1" override="replace">
+		<background x="0" y="0" width="0.5" height="0.85" alignment="l" stretch="1">
+			<texture>ui_inGame2_compass_bar_window</texture>
+		</background>
+
+		<strip x="0.5" y="0.4" width="1.0" height="1.0" tex_loop="1" tex_width="1024" alignment="c" stretch="1">
+			<texture x="0" y="14.5" width="1.0" height="0.15" stretch="1" a="255">ui_inGame2_compass_dial</texture>
+			<cardinal_points alignment="c" x="0" y="0" width="0.065" height="0.4" stretch="1">
+				<text align="c" font="font_blender_pro_b_20" vert_align="c" stretch="1"/>
+					<marker width="5" height="5" offset_y="0" stretch="1">
+						<texture>ui_inGame2_compass_cardinal_tick</texture>
+					</marker>
+				<main_cardinals>
+					<text align="c" font="font_blender_pro_b_14" vert_align="c" stretch="1"
+						r="211" g="211" b="211"/>
+					<n r="227" g="79" b="56">N</n>
+					<e align="r">E</e>
+					<s>S</s>
+					<w align="l">W</w>
+				</main_cardinals>
+				<inter_cardinals>
+					<text align="c" font="font_blender_pro_b_12" vert_align="c" stretch="1"
+						r="211" g="211" b="211"/>
+					<ne>NE</ne>
+					<se>SE</se>
+					<sw>SW</sw>
+					<nw>NW</nw>
+				</inter_cardinals>
+			</cardinal_points>
+		</strip>
+
+		<active_target x="0" y="0" width="10" height="22" padding="8" smoothing_speed="10" altitude_deadzone="1.8" stretch="1">
+			<altitude_arrow x="-5" y="-24" width="12" height="12" texture_up="ui_inGame2_compass_altitude_up" texture_down="ui_inGame2_compass_altitude_down" stretch="1"/>
+			<marker x="0" y="-16" width="40" height="40" texture="ui_inGame2_hint_wnd_main_window" stretch="1"/>
+			<distance_text x="5" y="-24" width="80" height="14" align="l" vert_align="c" color="ui_1">
+				<text align="l" font="font_rubik_12" vert_align="c"/>
+			</distance_text>
+		</active_target>
+	</compass_bar>
+</window>
