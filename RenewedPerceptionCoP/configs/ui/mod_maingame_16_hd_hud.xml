@@ -232,7 +232,7 @@
 			<mode_label text="a" st="ui_fire_mode_auto"/>
 			<mode_label text="2" st="ui_fire_mode_burst_2"/>
 			<mode_label text="3" st="ui_fire_mode_burst_3"/>
-			<text font="font_blender_pro_b_14" r="236" g="154" b="23" align="c" vert_align="c"/>
+			<text font="font_blender_pro_b_14" r="199" g="199" b="199" align="c" vert_align="c"/>
 		</static_fire_mode>
 	</hud_states>
 </w>

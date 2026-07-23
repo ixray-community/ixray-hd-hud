@@ -1,7 +1,7 @@
 <w>
 	<properties_box>
 		<texture>ui_inGame2_demo_player_info_window</texture>
-		<list x="0" y="0" width="10" height="10" item_height="18" always_show_scroll="1" can_select="1"
+		<list x="0" y="0" width="10" height="10" item_height="18" always_show_scroll="0" can_select="1"
 			top_indent="0" bottom_indent="0" right_ident="0" left_ident="25">
 	        <font_s r="220" g="220" b="220"/>
 	        <font r="150" g="150" b="150" font="letterica16"/>
