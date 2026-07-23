@@ -119,8 +119,8 @@
 
 	<quick_slots_panel override="remove"/>
 
-	<quick_slot0 x="16" y="705" width="33" height="40" stretch="1" override="replace">
-		<counter x="1" y="1" width="23" height="16" stretch="1">
+	<quick_slot0 x="16" y="710" width="33" height="40" stretch="1" override="replace">
+		<counter x="0" y="0" width="18" height="16" stretch="1">
 			<window_name>counter</window_name>
 			<texture a="255">ui_rp_quick_slot_counter</texture>
 			<text font="font_rubik_16" r="236" g="154" b="23" align="c" vert_align="c"/>
@@ -130,8 +130,8 @@
 		</auto_frameline>
 	</quick_slot0>
 
-	<quick_slot1 x="56" y="705" width="33" height="40" stretch="1" override="replace">
-		<counter x="1" y="1" width="23" height="16" stretch="1">
+	<quick_slot1 x="56" y="710" width="33" height="40" stretch="1" override="replace">
+		<counter x="0" y="0" width="18" height="16" stretch="1">
 			<window_name>counter</window_name>
 			<texture a="255">ui_rp_quick_slot_counter</texture>
 			<text font="font_rubik_16" r="236" g="154" b="23" align="c" vert_align="c"/>
@@ -141,8 +141,8 @@
 		</auto_frameline>
 	</quick_slot1>
 
-	<quick_slot2 x="96" y="705" width="33" height="40" stretch="1" override="replace">
-		<counter x="1" y="1" width="23" height="16" stretch="1">
+	<quick_slot2 x="96" y="710" width="33" height="40" stretch="1" override="replace">
+		<counter x="0" y="0" width="18" height="16" stretch="1">
 			<window_name>counter</window_name>
 			<texture a="255">ui_rp_quick_slot_counter</texture>
 			<text font="font_rubik_16" r="236" g="154" b="23" align="c" vert_align="c"/>
@@ -152,8 +152,8 @@
 		</auto_frameline>
 	</quick_slot2>
 
-	<quick_slot3 x="136" y="705" width="33" height="40" stretch="1" override="replace">
-		<counter x="1" y="1" width="23" height="16" stretch="1">
+	<quick_slot3 x="136" y="710" width="33" height="40" stretch="1" override="replace">
+		<counter x="0" y="0" width="18" height="16" stretch="1">
 			<window_name>counter</window_name>
 			<texture a="255">ui_rp_quick_slot_counter</texture>
 			<text font="font_rubik_16" r="236" g="154" b="23" align="c" vert_align="c"/>
@@ -163,16 +163,16 @@
 		</auto_frameline>
 	</quick_slot3>
 
-	<quick_slot0_text x="33" y="737" width="17" height="13" override="replace">
+	<quick_slot0_text x="33" y="742" width="17" height="13" override="replace">
 		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_1</text>
 	</quick_slot0_text>
-	<quick_slot1_text x="73" y="737" width="17" height="13" override="replace">
+	<quick_slot1_text x="73" y="742" width="17" height="13" override="replace">
 		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_2</text>
 	</quick_slot1_text>
-	<quick_slot2_text x="113" y="737" width="17" height="13" override="replace">
+	<quick_slot2_text x="113" y="742" width="17" height="13" override="replace">
 		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_3</text>
 	</quick_slot2_text>
-	<quick_slot3_text x="153" y="737" width="17" height="13" override="replace">
+	<quick_slot3_text x="153" y="742" width="17" height="13" override="replace">
 		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_4</text>
 	</quick_slot3_text>
 

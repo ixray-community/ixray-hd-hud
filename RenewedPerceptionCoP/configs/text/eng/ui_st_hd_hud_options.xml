@@ -5,42 +5,41 @@
 	</string>
 
 	<string id="st_ui_hud_show">
-		<text>Показывать HUD</text>
+		<text>Show HUD</text>
 	</string>
 	<string id="st_ui_hud_navigation_mode">
-		<text>Режим навигации</text>
+		<text>Navigation mode</text>
 	</string>
 	<string id="st_ui_hud_nav_compass">
-		<text>Компас</text>
+		<text>Compass</text>
 	</string>
 	<string id="st_ui_hud_nav_minimap">
-		<text>Мини-карта</text>
+		<text>Minimap</text>
 	</string>
 	<string id="st_ui_hud_show_navigation">
-		<text>Показывать навигацию</text>
+		<text>Show navigation HUD</text>
 	</string>
 	<string id="st_ui_hud_show_minimap">
-		<text>Показывать навигацию</text>
+		<text>Show navigation HUD</text>
 	</string>
 	<string id="st_ui_hud_use_compass_bar">
-		<text>Горизонтальный компас</text>
+		<text>Horizontal compass</text>
 	</string>
-
 	<string id="st_ui_hud_show_quick_slots">
-		<text>Показывать панель быстрых слотов</text>
+		<text>Show quick slots panel</text>
 	</string>
 	
 	<string id="st_ui_group_crosshair">
-		<text>Прицел</text>
+		<text>Crosshair</text>
 	</string>
 	
 	<string id="st_ui_hud_show_crosshair">
-		<text>Показывать перекрестие прицела</text>
+		<text>Show crosshair</text>
 	</string>
 	<string id="st_ui_hud_use_crosshair_point_mode">
-		<text>Точка прицела</text>
+		<text>Dot crosshair</text>
 	</string>
 	<string id="st_ui_hud_show_crosshair_target_distance">
-		<text>Показывать дистанцию до цели при прицеливании</text>
+		<text>Show target distance while aiming</text>
 	</string>
 </string_table>

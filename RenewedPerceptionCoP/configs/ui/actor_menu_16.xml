@@ -113,7 +113,7 @@
 		<slot> <!-- Knife -->
 		</slot>
 		<slot> <!-- INV_SLOT_2 -->
-			<slot_highlight x="384" y="618" width="255" height="98" stretch="1">
+			<slot_highlight x="384" y="510" width="255" height="98" stretch="1">
 				<texture>ui_inGame2_weapon_highlighter</texture>
 			</slot_highlight>
 			<slot_dragdrop x="384" y="615" width="255" height="100"
@@ -141,7 +141,7 @@
 			</slot_progress_percent>
 		</slot>
 		<slot> <!-- INV_SLOT_3 -->
-			<slot_highlight x="384" y="510" width="255" height="98" stretch="1">
+			<slot_highlight x="384" y="618" width="255" height="98" stretch="1">
 				<texture>ui_inGame2_weapon_highlighter</texture>
 			</slot_highlight>
 			<slot_dragdrop x="384" y="510" width="255" height="100"

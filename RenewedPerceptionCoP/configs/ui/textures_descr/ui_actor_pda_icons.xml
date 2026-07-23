@@ -15,6 +15,13 @@
 			<texture id="npc_marker_squad_leader" x="389" y="449" width="20" height="20" />
 			<texture id="npc_marker_common" x="361" y="449" width="20" height="20" />
 			<texture id="npc_marker_deadbody" x="338" y="449" width="20" height="20" />
+
+			<texture id="ui_mmap_squad_leader_2" x="389" y="449" width="20" height="20" />
+			<texture id="ui_pda2_squad_leader_2" x="389" y="449" width="20" height="20" />
+			<texture id="ui_mmap_common_actor_2" x="361" y="449" width="20" height="20" />
+			<texture id="ui_pda2_common_actor_2" x="361" y="449" width="20" height="20" />
+			<texture id="ui_mmap_death_actor_2" x="338" y="449" width="20" height="20" />
+			<texture id="ui_pda2_death_actor_2" x="338" y="449" width="20" height="20" />
 	</file>
 
     <file name="ui\ui_actor_sleep_screen">

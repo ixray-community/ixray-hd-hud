@@ -1,123 +1,207 @@
-local con = nil
-local crosshair_console_armed = false
-this.crosshair_console_armed = false
-this.navigation_mode = "compass_bar"
+this.MODE_COMPASS = "compass_bar"
+this.MODE_MINIMAP = "minimap"
 
-local function arm_crosshair_console()
-	crosshair_console_armed = true
-end
+this.crosshair_ready = false
+this._boot_compass_cached = false
+this._boot_use_compass = true
+this.navigation_mode = this.MODE_COMPASS
+this._console = nil
 
-local function execute_command(command, arg)
-	if not con then con = get_console() end
+this.PDA_STAT_ALIAS = {
+	money_earned = "money_earned",
+	money_spent = "money_spent",
+	help_stalkers = "help_wounded",
+	help_wounded = "help_wounded",
+	headshots = "headshots",
+	player_deaths = "deaths",
+	deaths = "deaths",
+	death = "deaths",
+	actor_deaths = "deaths",
+	pda_stat_11 = "deaths",
+	distance_km = "distance",
+	distance = "distance",
+	km = "distance",
+	traveled_km = "distance",
+	player_distance = "distance",
+	pda_stat_12 = "distance",
+}
+
+this.PDA_STAT_GETTER = {
+	money_earned = function (actor)
+		return tostring(actor:actor_money_earned())
+	end,
+	money_spent = function (actor)
+		return tostring(actor:actor_money_spent())
+	end,
+	help_wounded = function (actor)
+		return tostring(actor:actor_help_wounded())
+	end,
+	headshots = function (actor)
+		return tostring(actor:actor_headshots())
+	end,
+	deaths = function (actor)
+		return tostring(actor:actor_deaths())
+	end,
+	distance = function (actor)
+		return string.format("%.2f km", actor:actor_distance_km())
+	end,
+}
+
+function run_console(command, arg)
+	if ffx_console_utils and ffx_console_utils.execute_command then
+		ffx_console_utils.execute_command(command, arg)
+		return
+	end
+
+	if not this._console then
+		this._console = get_console()
+	end
 
 	if tostring(arg) == "true" then
 		arg = 1
-	end
-
-	if tostring(arg) == "false" then
+	elseif tostring(arg) == "false" then
 		arg = 0
 	end
 
-	con:execute(tostring(command) .. " " .. tostring(arg))
+	this._console:execute(tostring(command) .. " " .. tostring(arg))
 end
 
--- PDA ranking stats are stored on the actor in C++ (see CActor::Register* and actor save block).
+function read_boot_use_compass_bar()
+	if this._boot_compass_cached then
+		return this._boot_use_compass
+	end
+
+	this._boot_compass_cached = true
+	this._boot_use_compass = true
+
+	local ok, value = pcall(function ()
+		local ini = ini_file("engine_external.ltx")
+		if not ini or not ini:section_exist("ui") or not ini:line_exist("ui", "UseCompassBar") then
+			return true
+		end
+		return ini:r_bool("ui", "UseCompassBar") == true
+	end)
+
+	if ok then
+		this._boot_use_compass = value == true
+	end
+
+	return this._boot_use_compass
+end
+
+function normalize_navigation_mode(value)
+	if value == true or value == 1 or value == "1" or value == this.MODE_COMPASS then
+		return this.MODE_COMPASS
+	end
+	return this.MODE_MINIMAP
+end
+
+function get_maingame()
+	if not db or not db.actor then
+		return nil
+	end
+	return ActorMenu.get_maingame()
+end
+
+function apply_navigation_mode(value)
+	this.navigation_mode = normalize_navigation_mode(value)
+
+	local maingame = get_maingame()
+	if not maingame then
+		return
+	end
+
+	maingame:SetNavigationMode(this.navigation_mode == this.MODE_COMPASS)
+end
+
+function resolve_navigation_default_index()
+	-- 1 = compass, 2 = minimap
+	return read_boot_use_compass_bar() and 1 or 2
+end
+
+function on_main_menu_ready()
+	this.crosshair_ready = true
+end
+
+function on_actor_hud_ready()
+	this.crosshair_ready = true
+	apply_navigation_mode(this.navigation_mode)
+end
+
 function OnGetPdaStatById(stat_id)
 	if not stat_id or stat_id == "" or not db or not db.actor then
 		return ""
 	end
 
-	if stat_id == "money_earned" then
-		return tostring(db.actor:actor_money_earned())
-	elseif stat_id == "money_spent" then
-		return tostring(db.actor:actor_money_spent())
-	elseif stat_id == "help_stalkers" or stat_id == "help_wounded" then
-		return tostring(db.actor:actor_help_wounded())
-	elseif stat_id == "headshots" then
-		return tostring(db.actor:actor_headshots())
-	elseif stat_id == "player_deaths" or stat_id == "deaths" or stat_id == "death" or stat_id == "actor_deaths" or stat_id == "pda_stat_11" then
-		return tostring(db.actor:actor_deaths())
-	elseif stat_id == "distance_km" or stat_id == "distance" or stat_id == "km" or stat_id == "traveled_km" or stat_id == "player_distance" or stat_id == "pda_stat_12" then
-		return string.format("%.2f km", db.actor:actor_distance_km())
+	local key = this.PDA_STAT_ALIAS[stat_id]
+	local getter = key and this.PDA_STAT_GETTER[key]
+	if not getter then
+		return ""
 	end
 
-	return ""
+	return getter(db.actor)
 end
 
-function get_maingame()
-	if db and db.actor then
-		return ActorMenu.get_maingame()
-	end
-end
+function register_options(_ref)
+	local default_index = resolve_navigation_default_index()
 
-function apply_navigation_mode(value)
-	this.navigation_mode = value
+	_ref.register_option(nil, "hud_visible", "st_ui_hud_show", _ref.check_box(true),
+		function (group, name, value)
+			run_console("hud_draw", value)
+		end
+	)
 
-	local maingame = get_maingame()
-	if not maingame then
-		return
-	end
+	_ref.register_option("st_ui_group_hd_hud", "navigation_hud", "st_ui_hud_navigation_mode",
+		_ref.combo_box(default_index, {
+			_ref.combo_box_item("st_ui_hud_nav_compass", true, this.MODE_COMPASS),
+			_ref.combo_box_item("st_ui_hud_nav_minimap", true, this.MODE_MINIMAP),
+		}),
+		function (group, name, value)
+			apply_navigation_mode(value)
+		end
+	)
 
-	maingame:SetNavigationMode(value == "compass_bar")
-end
+	_ref.register_option("st_ui_group_hd_hud", "navigation_visible", "st_ui_hud_show_navigation",
+		_ref.check_box(true),
+		function (group, name, value)
+			run_console("hud_minimap", value)
+		end
+	)
 
-function sync_navigation_mode()
-	local maingame = get_maingame()
-	if not maingame then
-		return
-	end
+	_ref.register_option("st_ui_group_hd_hud", "quick_slots_visible", "st_ui_hud_show_quick_slots", _ref.check_box(true),
+		function (group, name, value)
+			run_console("hud_hide_quick_slots", not value)
+		end
+	)
 
-	local want_compass = this.navigation_mode == "compass_bar"
-	if maingame:IsCompassBarMode() ~= want_compass then
-		maingame:SetNavigationMode(want_compass)
-	end
+	_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true),
+		function (group, name, value)
+			if not this.crosshair_ready then
+				return
+			end
+			run_console("hud_crosshair", value)
+		end
+	)
 
-	return ""
+	_ref.register_option("st_ui_group_crosshair", "switch_to_crosshair_point_mode", "st_ui_hud_use_crosshair_point_mode",
+		_ref.check_box(false),
+		function (group, name, value)
+			run_console("hud_crosshair_point", value)
+		end
+	)
+
+	_ref.register_option("st_ui_group_crosshair", "show_crosshair_target_distance", "st_ui_hud_show_crosshair_target_distance",
+		_ref.check_box(false),
+		function (group, name, value)
+			run_console("hud_crosshair_dist", value)
+		end
+	)
 end
 
 function on_game_start()
-	RegisterScriptCallback("main_menu_update", arm_crosshair_console)
-	RegisterScriptCallback("actor_on_update", arm_crosshair_console)
-	RegisterScriptCallback("actor_on_update", sync_navigation_mode)
+	this.navigation_mode = read_boot_use_compass_bar() and this.MODE_COMPASS or this.MODE_MINIMAP
 
-	RegisterScriptCallback("on_init_ixr_options", function (_ref)
-		_ref.register_option(nil, "hud_visible", "st_ui_hud_show", _ref.check_box(true),
-			function (group, name, value)
-				execute_command("hud_draw", value)
-			end
-		)
-
-		_ref.register_option("st_ui_group_hd_hud", "minimap_visible", "st_ui_hud_show_minimap", _ref.check_box(true),
-			function (group, name, value)
-				execute_command("hud_minimap", value)
-			end
-		)
-
-		_ref.register_option("st_ui_group_hd_hud", "quick_slots_visible", "st_ui_hud_show_quick_slots", _ref.check_box(true),
-			function (group, name, value)
-				execute_command("hud_hide_quick_slots", not value)
-			end
-		)
-
-		_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true),
-			function (group, name, value)
-				if not crosshair_console_armed then
-					return
-				end
-				execute_command("hud_crosshair", value)
-			end
-		)
-
-		_ref.register_option("st_ui_group_crosshair", "switch_to_crosshair_point_mode", "st_ui_hud_use_crosshair_point_mode", _ref.check_box(false),
-			function (group, name, value)
-				execute_command("hud_crosshair_point", value)
-			end
-		)
-
-		_ref.register_option("st_ui_group_crosshair", "show_crosshair_target_distance", "st_ui_hud_show_crosshair_target_distance", _ref.check_box(false),
-			function (group, name, value)
-				execute_command("hud_crosshair_dist", value)
-			end
-		)
-	end)
+	RegisterScriptCallback("main_menu_on_init", on_main_menu_ready)
+	RegisterScriptCallback("actor_on_first_update", on_actor_hud_ready)
+	RegisterScriptCallback("on_init_ixr_options", register_options)
 end
