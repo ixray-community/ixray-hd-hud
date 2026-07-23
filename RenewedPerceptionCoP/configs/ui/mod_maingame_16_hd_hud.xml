@@ -9,7 +9,7 @@
 	<indicator_radiation override="remove"/>
 	<indicator_bleeding override="remove"/>
 
-	<indicator_stack_panel x="850" y="645" width="200" height="20" sp_align="right" spacing="5" override="add"/>
+	<indicator_stack_panel x="825" y="645" width="200" height="20" sp_align="right" spacing="5" override="add"/>
 	<indicator_starvation x="0" y="0" width="18" height="26" stretch="1" override="add"/>
 	<indicator_helmet_broken x="0" y="0" width="18" height="26" stretch="1" override="add"/>
 	<indicator_outfit_broken x="0" y="0" width="18" height="26" stretch="1" override="add"/>
@@ -220,10 +220,10 @@
 		</static_ammo_adaptive>
 
 		<static_wpn_icon x="992" y="694" width="50" height="30" align="l" alignment="c" stretch="1" caliber="1" hud_group_catalog="hud_group_catalog.xml" override="replace">
-			<caliber_text x="25" y="0" width="16" height="30" stretch="1">
+			<caliber_text x="0" y="6`" width="30" height="20" stretch="1">
 				<text font="font_blender_pro_b_14" align="c" vert_align="c" r="199" g="199" b="199" a="255"/>
 			</caliber_text>
-			<caliber_icon x="0" y="4" width="19" height="24" align="c" stretch="1"/>
+			<caliber_icon x="29" y="4" width="19" height="24" align="c" stretch="1"/>
 		</static_wpn_icon>
 
 		<static_fire_mode x="898" y="685" width="20" height="20" stretch="1" use_text_labels="1" override="replace">
