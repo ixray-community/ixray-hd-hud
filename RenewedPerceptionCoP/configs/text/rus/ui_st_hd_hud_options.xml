@@ -30,6 +30,16 @@
 		<text>Показывать панель быстрых слотов</text>
 	</string>
 	
+	<string id="st_ui_hud_inventory_sort_system">
+		<text>Режим сортировки инвентаря</text>
+	</string>
+	<string id="st_ui_hud_inv_sort_categories">
+		<text>По категориям</text>
+	</string>
+	<string id="st_ui_hud_inv_sort_ordering">
+		<text>По порядку</text>
+	</string>
+	
 	<string id="st_ui_group_crosshair">
 		<text>Прицел</text>
 	</string>

@@ -363,4 +363,47 @@
 	<string id="st_put_in_quick_slot_4">
 		<text>Положить в слот 4</text>
 	</string>
+
+	<string id="st_inv_sort_order_general">
+		<text>Общее</text>
+	</string>
+	<string id="st_inv_sort_order_general_hint">
+		<text>Сортировка по размеру в сетке инвентаря</text>
+	</string>
+	<string id="st_inv_sort_order_by_type">
+		<text>По типу</text>
+	</string>
+	<string id="st_inv_sort_order_by_type_hint">
+		<text>Сортировка по типу. Повторный клик или Alt меняет фокус типа</text>
+	</string>
+	<string id="st_inv_sort_order_by_weight">
+		<text>По весу</text>
+	</string>
+	<string id="st_inv_sort_order_by_weight_hint">
+		<text>Сортировка по весу. Повторный клик или Alt меняет направление</text>
+	</string>
+	<string id="st_inv_sort_order_by_condition">
+		<text>Состояние</text>
+	</string>
+	<string id="st_inv_sort_order_by_condition_hint">
+		<text>Сортировка по состоянию. Повторный клик или Alt меняет направление</text>
+	</string>
+	<string id="st_inv_sort_order_by_cost">
+		<text>По цене</text>
+	</string>
+	<string id="st_inv_sort_order_by_cost_hint">
+		<text>Сортировка по цене. Повторный клик или Alt меняет направление</text>
+	</string>
+	<string id="st_inv_sort_order_by_novelty">
+		<text>Новое</text>
+	</string>
+	<string id="st_inv_sort_order_by_novelty_hint">
+		<text>Сортировка по времени взятия. Повторный клик или Alt меняет направление</text>
+	</string>
+	<string id="st_inv_sort_order_by_importance">
+		<text>Важное</text>
+	</string>
+	<string id="st_inv_sort_order_by_importance_hint">
+		<text>Квестовые предметы сверху</text>
+	</string>
 </string_table>

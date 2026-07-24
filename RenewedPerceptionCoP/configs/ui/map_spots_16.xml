@@ -96,14 +96,14 @@
                 <level_map spot="actor_level_spot"/>
         </actor_location>
         <actor_level_spot x="0" y="0" width="49" height="49" alignment="c" stretch="1" location_level="-1">
-                <texture shader="ui_actor_wave">ui\ui_actor_wave_mask<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture shader="ui_actor_wave">ui\ui_actor_wave_mask<shadows thickness="0.5" r="0" g="0" b="0" a="0"/></texture>
         </actor_level_spot>
 
         <actor_location_p hint="disable_hint">
                 <level_map spot="actor_level_spot_p"/>
         </actor_location_p>
         <actor_level_spot_p x="0" y="0" width="100" height="100" heading="1" alignment="c" stretch="1" location_level="-2">
-                <texture>ui_icons_newPDA_manArrow_2<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture>ui_icons_newPDA_manArrow_2<shadows thickness="0.5" r="0" g="0" b="0" a="0"/></texture>
         </actor_level_spot_p>
 
         <level_changer_up>

@@ -1,10 +1,15 @@
 this.MODE_COMPASS = "compass_bar"
 this.MODE_MINIMAP = "minimap"
+this.SORT_CATEGORIES = "categories"
+this.SORT_ORDERING = "ordering"
 
 this.crosshair_ready = false
 this._boot_compass_cached = false
 this._boot_use_compass = true
+this._boot_sort_cached = false
+this._boot_sort_system = this.SORT_ORDERING
 this.navigation_mode = this.MODE_COMPASS
+this.inventory_sort_system = this.SORT_ORDERING
 this._console = nil
 
 this.PDA_STAT_ALIAS = {
@@ -89,6 +94,29 @@ function read_boot_use_compass_bar()
 	return this._boot_use_compass
 end
 
+function read_boot_inventory_sort_system()
+	if this._boot_sort_cached then
+		return this._boot_sort_system
+	end
+
+	this._boot_sort_cached = true
+	this._boot_sort_system = this.SORT_ORDERING
+
+	local ok, value = pcall(function ()
+		local ini = system_ini()
+		if not ini or not ini:section_exist("inventory_sort") or not ini:line_exist("inventory_sort", "system") then
+			return this.SORT_ORDERING
+		end
+		return ini:r_string("inventory_sort", "system")
+	end)
+
+	if ok and value then
+		this._boot_sort_system = normalize_inventory_sort_system(value)
+	end
+
+	return this._boot_sort_system
+end
+
 function normalize_navigation_mode(value)
 	if value == true or value == 1 or value == "1" or value == this.MODE_COMPASS then
 		return this.MODE_COMPASS
@@ -96,11 +124,28 @@ function normalize_navigation_mode(value)
 	return this.MODE_MINIMAP
 end
 
+function normalize_inventory_sort_system(value)
+	if value == this.SORT_ORDERING or value == "ordering" then
+		return this.SORT_ORDERING
+	end
+	return this.SORT_CATEGORIES
+end
+
 function get_maingame()
 	if not db or not db.actor then
 		return nil
 	end
 	return ActorMenu.get_maingame()
+end
+
+function get_actor_menu()
+	if not db or not db.actor then
+		return nil
+	end
+	if not ActorMenu or not ActorMenu.get_actor_menu then
+		return nil
+	end
+	return ActorMenu.get_actor_menu()
 end
 
 function apply_navigation_mode(value)
@@ -114,9 +159,25 @@ function apply_navigation_mode(value)
 	maingame:SetNavigationMode(this.navigation_mode == this.MODE_COMPASS)
 end
 
+function apply_inventory_sort_system(value)
+	this.inventory_sort_system = normalize_inventory_sort_system(value)
+
+	local actor_menu = get_actor_menu()
+	if not actor_menu or not actor_menu.SetInventorySortSystem then
+		return
+	end
+
+	actor_menu:SetInventorySortSystem(this.inventory_sort_system)
+end
+
 function resolve_navigation_default_index()
 	-- 1 = compass, 2 = minimap
 	return read_boot_use_compass_bar() and 1 or 2
+end
+
+function resolve_inventory_sort_default_index()
+	-- 1 = categories, 2 = ordering
+	return read_boot_inventory_sort_system() == this.SORT_ORDERING and 2 or 1
 end
 
 function on_main_menu_ready()
@@ -126,6 +187,7 @@ end
 function on_actor_hud_ready()
 	this.crosshair_ready = true
 	apply_navigation_mode(this.navigation_mode)
+	apply_inventory_sort_system(this.inventory_sort_system)
 end
 
 function OnGetPdaStatById(stat_id)
@@ -144,6 +206,7 @@ end
 
 function register_options(_ref)
 	local default_index = resolve_navigation_default_index()
+	local sort_default_index = resolve_inventory_sort_default_index()
 
 	_ref.register_option(nil, "hud_visible", "st_ui_hud_show", _ref.check_box(true),
 		function (group, name, value)
@@ -174,6 +237,16 @@ function register_options(_ref)
 		end
 	)
 
+	_ref.register_option("st_ui_group_hd_hud", "inventory_sort_system", "st_ui_hud_inventory_sort_system",
+		_ref.combo_box(sort_default_index, {
+			_ref.combo_box_item("st_ui_hud_inv_sort_categories", true, this.SORT_CATEGORIES),
+			_ref.combo_box_item("st_ui_hud_inv_sort_ordering", true, this.SORT_ORDERING),
+		}),
+		function (group, name, value)
+			apply_inventory_sort_system(value)
+		end
+	)
+
 	_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true),
 		function (group, name, value)
 			if not this.crosshair_ready then
@@ -200,6 +273,7 @@ end
 
 function on_game_start()
 	this.navigation_mode = read_boot_use_compass_bar() and this.MODE_COMPASS or this.MODE_MINIMAP
+	this.inventory_sort_system = read_boot_inventory_sort_system()
 
 	RegisterScriptCallback("main_menu_on_init", on_main_menu_ready)
 	RegisterScriptCallback("actor_on_first_update", on_actor_hud_ready)

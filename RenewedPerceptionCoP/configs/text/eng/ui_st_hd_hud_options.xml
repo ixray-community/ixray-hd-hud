@@ -28,6 +28,15 @@
 	<string id="st_ui_hud_show_quick_slots">
 		<text>Show quick slots panel</text>
 	</string>
+	<string id="st_ui_hud_inventory_sort_system">
+		<text>Inventory sort mode</text>
+	</string>
+	<string id="st_ui_hud_inv_sort_categories">
+		<text>By category</text>
+	</string>
+	<string id="st_ui_hud_inv_sort_ordering">
+		<text>By order</text>
+	</string>
 	
 	<string id="st_ui_group_crosshair">
 		<text>Crosshair</text>

@@ -73,7 +73,7 @@
 		<text>move to slot</text>
 	</string>
 	<string id="st_no_trade_tip_1">
-		<text>The trader isnít interested in items like this.</text>
+		<text>The trader isnùt interested in items like this.</text>
 	</string>
 	<string id="st_no_trade_tip_2">
 		<text>The item is too damaged to be traded.</text>
@@ -362,5 +362,47 @@
 	</string>
 	<string id="st_inv_sort_attachments_hint">
 		<text>Show attachments only</text>
+	</string>
+	<string id="st_inv_sort_order_general">
+		<text>General</text>
+	</string>
+	<string id="st_inv_sort_order_general_hint">
+		<text>Sort by inventory grid size</text>
+	</string>
+	<string id="st_inv_sort_order_by_type">
+		<text>By type</text>
+	</string>
+	<string id="st_inv_sort_order_by_type_hint">
+		<text>Sort by type. Click again or press Alt to cycle type focus</text>
+	</string>
+	<string id="st_inv_sort_order_by_weight">
+		<text>By weight</text>
+	</string>
+	<string id="st_inv_sort_order_by_weight_hint">
+		<text>Sort by weight. Click again or press Alt to invert direction</text>
+	</string>
+	<string id="st_inv_sort_order_by_condition">
+		<text>Condition</text>
+	</string>
+	<string id="st_inv_sort_order_by_condition_hint">
+		<text>Sort by condition. Click again or press Alt to invert direction</text>
+	</string>
+	<string id="st_inv_sort_order_by_cost">
+		<text>By cost</text>
+	</string>
+	<string id="st_inv_sort_order_by_cost_hint">
+		<text>Sort by cost. Click again or press Alt to invert direction</text>
+	</string>
+	<string id="st_inv_sort_order_by_novelty">
+		<text>New</text>
+	</string>
+	<string id="st_inv_sort_order_by_novelty_hint">
+		<text>Sort by take time. Click again or press Alt to invert direction</text>
+	</string>
+	<string id="st_inv_sort_order_by_importance">
+		<text>Important</text>
+	</string>
+	<string id="st_inv_sort_order_by_importance_hint">
+		<text>Quest items first</text>
 	</string>
 </string_table>

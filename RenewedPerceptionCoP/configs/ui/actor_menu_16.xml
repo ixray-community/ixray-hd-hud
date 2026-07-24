@@ -689,4 +689,111 @@
 			<sound_t>interface\inv_open</sound_t>
 		</button>
 	</inventory_sort_tabs>
+
+	<!-- ordering: used only when [inventory_sort] system = ordering; categories tabs above stay untouched -->
+	<inventory_sort_order_tabs_container_upgrade 			x="662" y="110" width="352" height="40"/>
+	<inventory_sort_order_tabs_container_trade_actor_bag 	x="662" y="333" width="352" height="40"/>
+	<inventory_sort_order_tabs_container_trade_partner_bag 	x="14" 	y="333" width="352" height="40"/>
+	<inventory_sort_order_tabs_container_deadbody_bag 		x="14" 	y="110" width="352" height="40"/>
+
+	<inventory_sort_order_tabs x="662" y="110" width="352" height="40">
+		<button x="0" y="0" width="50" height="33" stretch="1" id="general" hint="st_inv_sort_order_general_hint">
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_general</text>
+			<texture_e>ui_inv_sort_order_general_e</texture_e>
+			<texture_h>ui_inv_sort_order_general_h</texture_h>
+			<texture_t>ui_inv_sort_order_general_t</texture_t>
+			<texture_d>ui_inv_sort_order_general_d</texture_d>
+			<text_color>
+				<e r="141" g="130" b="119"/>
+				<h r="206" g="188" b="170"/>
+				<t r="248" g="226" b="203"/>
+				<d r="141" g="130" b="119"/>
+			</text_color>
+			<sound_t>interface\inv_open</sound_t>
+		</button>
+		<button x="50" y="0" width="50" height="33" stretch="1" id="by_type" hint="st_inv_sort_order_by_type_hint">
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_type</text>
+			<texture_e>ui_inv_sort_order_by_type_e</texture_e>
+			<texture_h>ui_inv_sort_order_by_type_h</texture_h>
+			<texture_t>ui_inv_sort_order_by_type_t</texture_t>
+			<texture_d>ui_inv_sort_order_by_type_d</texture_d>
+			<text_color>
+				<e r="141" g="130" b="119"/>
+				<h r="206" g="188" b="170"/>
+				<t r="248" g="226" b="203"/>
+				<d r="141" g="130" b="119"/>
+			</text_color>
+			<sound_t>interface\inv_open</sound_t>
+		</button>
+		<button x="100" y="0" width="50" height="33" stretch="1" id="by_weight" hint="st_inv_sort_order_by_weight_hint">
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_weight</text>
+			<texture_e>ui_inv_sort_order_by_weight_e</texture_e>
+			<texture_h>ui_inv_sort_order_by_weight_h</texture_h>
+			<texture_t>ui_inv_sort_order_by_weight_t</texture_t>
+			<texture_d>ui_inv_sort_order_by_weight_d</texture_d>
+			<text_color>
+				<e r="141" g="130" b="119"/>
+				<h r="206" g="188" b="170"/>
+				<t r="248" g="226" b="203"/>
+				<d r="141" g="130" b="119"/>
+			</text_color>
+			<sound_t>interface\inv_open</sound_t>
+		</button>
+		<button x="150" y="0" width="50" height="33" stretch="1" id="by_condition" hint="st_inv_sort_order_by_condition_hint">
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_condition</text>
+			<texture_e>ui_inv_sort_order_by_condition_e</texture_e>
+			<texture_h>ui_inv_sort_order_by_condition_h</texture_h>
+			<texture_t>ui_inv_sort_order_by_condition_t</texture_t>
+			<texture_d>ui_inv_sort_order_by_condition_d</texture_d>
+			<text_color>
+				<e r="141" g="130" b="119"/>
+				<h r="206" g="188" b="170"/>
+				<t r="248" g="226" b="203"/>
+				<d r="141" g="130" b="119"/>
+			</text_color>
+			<sound_t>interface\inv_open</sound_t>
+		</button>
+		<button x="200" y="0" width="50" height="33" stretch="1" id="by_cost" hint="st_inv_sort_order_by_cost_hint">
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_cost</text>
+			<texture_e>ui_inv_sort_order_by_cost_e</texture_e>
+			<texture_h>ui_inv_sort_order_by_cost_h</texture_h>
+			<texture_t>ui_inv_sort_order_by_cost_t</texture_t>
+			<texture_d>ui_inv_sort_order_by_cost_d</texture_d>
+			<text_color>
+				<e r="141" g="130" b="119"/>
+				<h r="206" g="188" b="170"/>
+				<t r="248" g="226" b="203"/>
+				<d r="141" g="130" b="119"/>
+			</text_color>
+			<sound_t>interface\inv_open</sound_t>
+		</button>
+		<button x="250" y="0" width="50" height="33" stretch="1" id="by_novelty" hint="st_inv_sort_order_by_novelty_hint">
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_novelty</text>
+			<texture_e>ui_inv_sort_order_by_novelty_e</texture_e>
+			<texture_h>ui_inv_sort_order_by_novelty_h</texture_h>
+			<texture_t>ui_inv_sort_order_by_novelty_t</texture_t>
+			<texture_d>ui_inv_sort_order_by_novelty_d</texture_d>
+			<text_color>
+				<e r="141" g="130" b="119"/>
+				<h r="206" g="188" b="170"/>
+				<t r="248" g="226" b="203"/>
+				<d r="141" g="130" b="119"/>
+			</text_color>
+			<sound_t>interface\inv_open</sound_t>
+		</button>
+		<button x="300" y="0" width="52" height="33" stretch="1" id="by_importance" hint="st_inv_sort_order_by_importance_hint">
+			<text align="c" vert_align="c" x="0" y="0" width="52" height="33" font="font_oswald_18">st_inv_sort_order_by_importance</text>
+			<texture_e>ui_inv_sort_order_by_importance_e</texture_e>
+			<texture_h>ui_inv_sort_order_by_importance_h</texture_h>
+			<texture_t>ui_inv_sort_order_by_importance_t</texture_t>
+			<texture_d>ui_inv_sort_order_by_importance_d</texture_d>
+			<text_color>
+				<e r="141" g="130" b="119"/>
+				<h r="206" g="188" b="170"/>
+				<t r="248" g="226" b="203"/>
+				<d r="141" g="130" b="119"/>
+			</text_color>
+			<sound_t>interface\inv_open</sound_t>
+		</button>
+	</inventory_sort_order_tabs>
 </w>
