@@ -1,62 +1,62 @@
 <w>
-	<split_item x="256" y="200" width="512" height="260" stretch="1" override="replace">
-		<texture>ui_drop_amount_split_bg</texture>
+  <split_item x="256" y="200" width="512" height="260" stretch="1">
+    <texture>ui_drop_amount_split_bg</texture>
 
-		<item_title x="0" y="16" width="512" height="24" complex_mode="1">
-			<text font="ui_font_graffiti18" align="c">st_drop_amount_title</text>
-		</item_title>
+    <item_title x="0" y="16" width="512" height="24" complex_mode="1">
+      <text font="ui_font_graffiti18" align="c">st_drop_amount_title</text>
+    </item_title>
 
-		<item_name x="0" y="60" width="512" height="24" complex_mode="1">
-			<text font="ui_font_graffiti18" align="c"></text>
-		</item_name>
+    <item_name x="0" y="60" width="512" height="24" complex_mode="1">
+      <text font="ui_font_graffiti18" align="c"></text>
+    </item_name>
 
-		<weight_text x="0" y="85" width="512" height="20" complex_mode="1">
-			<text font="font_rubik_18" align="c"></text>
-		</weight_text>
+    <weight_text x="0" y="85" width="512" height="20" complex_mode="1">
+      <text font="font_rubik_18" align="c"></text>
+    </weight_text>
 
-		<edit_amount x="53" y="113.5" width="411" height="30" max_symb_count="8" num_only="1" placeholder_text="st_drop_amount_placeholder" placeholder_blink="1">
-			<text font="font_rubik_16" r="255" g="255" b="255" a="255" align="c"></text>
-			<texture>ui_drop_amount_edit_box</texture>
-		</edit_amount>
+    <edit_amount x="53" y="113.5" width="411" height="30" max_symb_count="8" num_only="1" placeholder_text="st_drop_amount_placeholder" placeholder_blink="1">
+      <text font="font_rubik_16" r="255" g="255" b="255" a="255" align="c"></text>
+      <texture>ui_drop_amount_edit_box</texture>
+    </edit_amount>
 
-		<button_decrement x="32" y="115" width="22" height="28" check_mode="0">
-			<text font="font_rubik_16"></text>
-			<texture>ui_drop_amount_btn_dec</texture>
-		</button_decrement>
+    <button_decrement x="32" y="115" width="22" height="28" check_mode="0">
+      <text font="font_rubik_16"></text>
+      <texture>ui_drop_amount_btn_dec</texture>
+    </button_decrement>
 
-		<button_increment x="464" y="115" width="22" height="28" check_mode="0">
-			<text font="font_rubik_16"></text>
-			<texture>ui_drop_amount_btn_inc</texture>
-		</button_increment>
+    <button_increment x="464" y="115" width="22" height="28" check_mode="0">
+      <text font="font_rubik_16"></text>
+      <texture>ui_drop_amount_btn_inc</texture>
+    </button_increment>
 
-		<trackbar x="32" y="155" width="451" height="20" mode="integer" step="1" show_value="1"/>
+    <trackbar x="32" y="155" width="451" height="20" mode="integer" step="1" show_value="1"/>
 
-		<value_min x="36" y="180" width="50" height="20" complex_mode="1">
-			<text font="font_rubik_16" align="l">1</text>
-		</value_min>
+    <value_min x="36" y="180" width="50" height="20" complex_mode="1">
+      <text font="font_rubik_16" align="l">1</text>
+    </value_min>
 
-		<value_max x="430" y="180" width="50" height="20" complex_mode="1">
-			<text font="font_rubik_16" align="r">999</text>
-		</value_max>
+    <value_max x="430" y="180" width="50" height="20" complex_mode="1">
+      <text font="font_rubik_16" align="r">999</text>
+    </value_max>
 
-		<button_half x="20" y="215" width="120" height="26" check_mode="0">
-			<text font="ui_font_graffiti18">st_split_item_half</text>
-			<texture>ui_drop_amount_btn_common</texture>
-		</button_half>
+    <button_half x="20" y="215" width="120" height="26" check_mode="0">
+      <text font="ui_font_graffiti18">st_split_item_half</text>
+      <texture>ui_drop_amount_btn_common</texture>
+    </button_half>
+    
+    <button_all x="140" y="215" width="120" height="26" check_mode="0">
+      <text font="ui_font_graffiti18">st_split_item_all</text>
+      <texture>ui_drop_amount_btn_common</texture>
+    </button_all>
 
-		<button_all x="140" y="215" width="120" height="26" check_mode="0">
-			<text font="ui_font_graffiti18">st_split_item_all</text>
-			<texture>ui_drop_amount_btn_common</texture>
-		</button_all>
+    <button_cancel x="260" y="215" width="120" height="26" check_mode="0">
+      <text font="ui_font_graffiti18">st_split_item_cancel</text>
+      <texture>ui_drop_amount_btn_common</texture>
+    </button_cancel>
 
-		<button_cancel x="260" y="215" width="120" height="26" check_mode="0">
-			<text font="ui_font_graffiti18">st_split_item_cancel</text>
-			<texture>ui_drop_amount_btn_common</texture>
-		</button_cancel>
-
-		<button_accept x="380" y="215" width="120" height="26" check_mode="0">
-			<text font="ui_font_graffiti18">st_split_item_accept</text>
-			<texture>ui_drop_amount_btn_common</texture>
-		</button_accept>
-	</split_item>
+    <button_accept x="380" y="215" width="120" height="26" check_mode="0">
+      <text font="ui_font_graffiti18">st_split_item_accept</text>
+      <texture>ui_drop_amount_btn_common</texture>
+    </button_accept>
+  </split_item>
 </w>

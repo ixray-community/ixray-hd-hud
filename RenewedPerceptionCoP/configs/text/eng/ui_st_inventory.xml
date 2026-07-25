@@ -63,6 +63,12 @@
 	<string id="st_kg">
 		<text>kg</text>
 	</string>
+	<string id="st_ui_inv_weight_bar_hint">
+		<text>%.1f %s / %.1f %s</text>
+	</string>
+	<string id="st_ui_inv_weight_bar_hint_volume">
+		<text>%.1f %s / %.1f %s\n%.1f / %.1f (x%.2f)</text>
+	</string>
 	<string id="st_move_on_belt">
 		<text>attach to belt</text>
 	</string>
@@ -73,7 +79,7 @@
 		<text>move to slot</text>
 	</string>
 	<string id="st_no_trade_tip_1">
-		<text>The trader isnt interested in items like this.</text>
+		<text>The trader isn't interested in items like this.</text>
 	</string>
 	<string id="st_no_trade_tip_2">
 		<text>The item is too damaged to be traded.</text>

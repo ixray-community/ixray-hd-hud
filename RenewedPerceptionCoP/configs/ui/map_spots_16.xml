@@ -172,8 +172,7 @@
         </treasure_spot>
         <treasure_spot_mini width="48" height="52" alignment="c" stretch="1">
                 <texture r="151" g="169" b="202">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass x="0" y="3" vert_align="center" width="40" height="40" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret
-                        <shadows thickness="0.5" r="0" g="0" b="0" a="100"/>
+                <compass x="0" y="-10" vert_align="center" width="40" height="40" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/>
                 </compass>
         </treasure_spot_mini>
 		

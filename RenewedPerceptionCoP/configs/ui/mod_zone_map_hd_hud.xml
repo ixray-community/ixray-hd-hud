@@ -6,8 +6,8 @@
 			<texture>ui_inGame2_Radar_main_window</texture>
 		</background>
 
-		<clock_wnd x="0.170" y="0.132" width="36" height="20" alignment="c" override="replace">
-			<text font="font_blender_pro_b_16" r="211" g="211" b="211" a="255" align="c" vert_align="c"/>
+		<clock_wnd x="0.170" y="0.125" width="36" height="20" alignment="c" override="replace">
+			<text font="font_rubik_bold_16" r="211" g="211" b="211" a="255" align="c" vert_align="c"/>
 		</clock_wnd>
 
 		<compass x="0.5" y="0.5" width="164" height="164" heading="1" stretch="1" alignment="c" override="replace">
@@ -19,9 +19,9 @@
 			<texture>ui_inGame_actor_point</texture>
 		</center>
 
-		<static_counter x="0.160" y="0.815" width="18" height="16" alignment="c" override="replace">
+		<static_counter x="0.160" y="0.812" width="18" height="16" alignment="c" override="replace">
 			<text_static width="18" height="17">
-				<text align="c" font="font_blender_pro_b_16" r="211" g="211" b="211" a="255"/>
+				<text align="c" font="font_rubik_bold_16" r="211" g="211" b="211" a="255"/>
 			</text_static>
 		</static_counter>
 	</minimap>

@@ -15,7 +15,7 @@
 
 	<window rel_size="1.25" width="10" height="10" alignment="c"/>
 
-	<luminosity_overlay x="13" y="-28" width="135" height="180" stretch="1">
+	<luminosity_overlay x="-69" y="-90" width="135" height="180" stretch="1">
 		<texture r="255" g="79" b="79" a="165">ui_inGame_vignette_luminosity</texture>
 	</luminosity_overlay>
 </window>

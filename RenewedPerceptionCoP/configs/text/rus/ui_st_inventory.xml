@@ -63,6 +63,12 @@
 	<string id="st_kg">
 		<text>кг</text>
 	</string>
+	<string id="st_ui_inv_weight_bar_hint">
+		<text>%.1f %s / %.1f %s</text>
+	</string>
+	<string id="st_ui_inv_weight_bar_hint_volume">
+		<text>%.1f %s / %.1f %s\n%.1f / %.1f (x%.2f)</text>
+	</string>
 	<string id="st_move_on_belt">
 		<text>повесить на пояс</text>
 	</string>
@@ -303,65 +309,17 @@
 	<string id="st_dress_helmet">
 		<text>надеть шлем</text>
 	</string>
-	<string id="st_inv_sort_all">
-		<text>Все предметы</text>
-	</string>
-	<string id="st_inv_sort_all_hint">
-		<text>Показать все предметы</text>
-	</string>
-	<string id="st_inv_sort_weapons">
-		<text>Оружие</text>
-	</string>
-	<string id="st_inv_sort_weapons_hint">
-		<text>Показать только оружие</text>
-	</string>
-	<string id="st_inv_sort_ammo">
-		<text>Боеприпасы</text>
-	</string>
-	<string id="st_inv_sort_ammo_hint">
-		<text>Показать только боеприпасы</text>
-	</string>
-	<string id="st_inv_sort_armor">
-		<text>Броня</text>
-	</string>
-	<string id="st_inv_sort_armor_hint">
-		<text>Показать только броню</text>
-	</string>
-	<string id="st_inv_sort_devices">
-		<text>Устройства</text>
-	</string>
-	<string id="st_inv_sort_devices_hint">
-		<text>Показать только устройства</text>
-	</string>
-	<string id="st_inv_sort_consumables">
-		<text>Расходники</text>
-	</string>
-	<string id="st_inv_sort_consumables_hint">
-		<text>Показать расходуемые предметы</text>
-	</string>
-	<string id="st_inv_sort_artefacts">
-		<text>Артефакты</text>
-	</string>
-	<string id="st_inv_sort_artefacts_hint">
-		<text>Показать только артефакты</text>
-	</string>
-	<string id="st_inv_sort_attachments">
-		<text>Обвесы</text>
-	</string>
-	<string id="st_inv_sort_attachments_hint">
-		<text>Показать только обвесы</text>
-	</string>
 	<string id="st_put_in_quick_slot_1">
-		<text>Положить в слот 1</text>
+		<text>положить в слот 1</text>
 	</string>
 	<string id="st_put_in_quick_slot_2">
-		<text>Положить в слот 2</text>
+		<text>положить в слот 2</text>
 	</string>
 	<string id="st_put_in_quick_slot_3">
-		<text>Положить в слот 3</text>
+		<text>положить в слот 3</text>
 	</string>
 	<string id="st_put_in_quick_slot_4">
-		<text>Положить в слот 4</text>
+		<text>положить в слот 4</text>
 	</string>
 
 	<string id="st_inv_sort_order_general">

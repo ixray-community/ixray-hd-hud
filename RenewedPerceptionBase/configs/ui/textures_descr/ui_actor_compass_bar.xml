@@ -1,23 +1,25 @@
 <w>
     <file name="ui\ui_actor_compass_bar" scale="2">
-	    <texture id="ui_inGame2_compass_bar_window" x="0" y="24" width="512" height="28" />
-	    <texture id="ui_inGame2_compass_dial" x="0" y="95" width="1024" height="6" />
-	    <texture id="ui_inGame2_compass_cardinal_tick" x="26" y="632" width="8" height="8" />
+	<texture id="ui_inGame2_compass_bar_window" x="0" y="24" width="512" height="28" />
+	<texture id="ui_inGame2_compass_dial" x="0" y="95" width="1024" height="6" />
+	<texture id="ui_inGame2_compass_cardinal_tick" x="26" y="632" width="8" height="8" />
 
-	    <texture id="ui_inGame2_Story_quest" x="14" y="702" width="36" height="36" />  
-        <texture id="ui_inGame2_Side_quest" x="59" y="702" width="36" height="36" /> 
+	<texture id="ui_inGame2_Story_quest" x="14" y="702" width="36" height="36" />
+        <texture id="ui_inGame2_Side_quest" x="59" y="702" width="36" height="36" />
 
-        <texture id="ui_inGame2_PDA_place_to_sleep" x="14" y="747" width="36" height="36" />  
-        <texture id="ui_inGame2_PDA_personal_box" x="59" y="747" width="36" height="36" /> 
+        <texture id="ui_inGame2_PDA_place_to_sleep" x="14" y="747" width="36" height="36" />
+        <texture id="ui_inGame2_PDA_personal_box" x="59" y="747" width="36" height="36" />
         <texture id="ui_inGame2_PDA_icon_guide" x="104" y="747" width="36" height="36" />
         <texture id="ui_inGame2_PDA_icon_medic" x="149" y="747" width="36" height="36" />
-        <texture id="ui_inGame2_PDA_icon_trader" x="194" y="747" width="36" height="36" /> 
+        <texture id="ui_inGame2_PDA_icon_trader" x="194" y="747" width="36" height="36" />
         <texture id="ui_inGame2_PDA_icon_engineer" x="239" y="747" width="36" height="36" />
 
         <texture id="ui_inGame2_PDA_personal_spot_2" x="149" y="702" width="29" height="29" />
-        <texture id="ui_inGame2_PDA_stash" x="194" y="702" width="29" height="29" />  
+        <texture id="ui_inGame2_PDA_stash" x="194" y="702" width="29" height="29" />
 
         <texture id="ui_inGame2_compass_altitude_up" x="25" y="660" width="16" height="16" />
         <texture id="ui_inGame2_compass_altitude_down" x="55" y="660" width="16" height="16" />
+
+        <texture id="ui_inGame2_compass_motion_icon" x="26" y="204" width="500" height="50" />
    </file>
 </w>

@@ -172,7 +172,7 @@ end
 
 function resolve_navigation_default_index()
 	-- 1 = compass, 2 = minimap
-	return read_boot_use_compass_bar() and 1 or 2
+	return this.navigation_mode == this.MODE_COMPASS and 1 or 2
 end
 
 function resolve_inventory_sort_default_index()
@@ -186,7 +186,14 @@ end
 
 function on_actor_hud_ready()
 	this.crosshair_ready = true
-	apply_navigation_mode(this.navigation_mode)
+
+	local maingame = get_maingame()
+	if maingame and maingame.IsCompassBarMode then
+		this.navigation_mode = maingame:IsCompassBarMode() and this.MODE_COMPASS or this.MODE_MINIMAP
+	else
+		apply_navigation_mode(this.navigation_mode)
+	end
+
 	apply_inventory_sort_system(this.inventory_sort_system)
 end
 
