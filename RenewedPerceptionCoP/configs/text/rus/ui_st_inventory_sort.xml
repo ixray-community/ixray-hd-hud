@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
-	<string id="ui_inv_thirst">
-		<text>Жажда</text>
-	</string>
 	<string id="st_inv_sort_all">
 		<text>Все предметы</text>
 	</string>

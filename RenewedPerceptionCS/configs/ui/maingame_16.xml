@@ -1,0 +1,201 @@
+<w>
+  <main x="0" y="0" width="1024" height="768">
+    <_auto_static x="512" y="384" width="115" height="115" alignment="c" stretch="1" heading="1" xform_anim="xfrom_rotate_3sec" xform_anim_cyclic="1">
+      <texture>ui_icons_newPDA_Crclbig_h</texture>
+    </_auto_static>
+  </main>
+	<speech_menu x="260" y="550" width="300" height="265" always_show_scroll="0">
+		<text font="letterica16" r="238" g="224" b="198"/>		
+	</speech_menu>
+	
+	<progress_bar_health x="33" y="5" width="110" height="10" horz="1" min="0" max="100" pos="0">
+		<progress>
+			<texture>ui_hud_shk_health</texture>
+		</progress>
+	</progress_bar_health>
+
+	
+	<static_armor x="860" y="622" width="155" height="34" stretch="1">
+		<texture>ui_hud_shkala_armor</texture>		
+		<auto_static x="4" y="6" width="15" height="18" stretch="1">
+			<texture>ui_hud_icon_armour</texture>
+		</auto_static>
+	</static_armor>
+
+	<progress_bar_armor x="33" y="24" width="110" height="10" horz="1" min="0" max="100" pos="0">
+		<progress>
+			<texture>ui_hud_shk_armour</texture>
+		</progress>
+	</progress_bar_armor>
+	
+	<quick_info x="1" y="700" width="1022" height="50" complex_mode="1" light_anim="ui_btn_hint"  la_cyclic="0" la_texture="0" la_text="1" la_alpha="1">
+		<text align="c" font="graffiti22" r="225" g="225" b="250" a="255" />
+	</quick_info>
+
+
+	<icons_scroll_view  x="900" y="350" width="55" height="270" right_ident="2" always_show_scroll="0" vert_interval="16" inverse_dir="1" flip_vert="0"/>
+
+	<weapon_jammed_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_weapon</texture>
+	</weapon_jammed_static>
+
+	<radiation_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_radiation</texture>
+	</radiation_static>
+
+	<wound_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_drop</texture>
+	</wound_static>
+
+	<starvation_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_eat</texture>
+	</starvation_static>
+
+	<psy_health_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_psycho</texture>
+	</psy_health_static>
+
+    <indicator_starvation x="935" y="704" width="26" height="35" stretch="1"/>
+    <indicator_thrist x="959" y="704" width="26" height="35" stretch="1"/>
+    <indicator_psy x="911" y="704" width="26" height="35" stretch="1"/>
+    <indicator_overweight x="980" y="704" width="26" height="35" stretch="1"/>
+    <indicator_radiation x="887" y="704" width="26" height="35" stretch="1"/>
+    <indicator_bleeding x="863" y="704" width="26" height="35" stretch="1"/>
+
+	<invincible_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_goodmode</texture>
+	</invincible_static>
+	
+	<can_sleep_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_sleep</texture>
+	</can_sleep_static>
+
+	<artefact_static x="0" y="0" width="53" height="64" stretch="1">
+		<texture>ui_hud_icon_artefact</texture>
+	</artefact_static>
+
+	<disk_io x="760" y="750" width="12" height="16" stretch="1"/>
+
+	<flashing_icons>
+		<flashing_icon x="13" y="210" width="48" height="29" type="pda" light_anim="ui_slow_blinking_alpha">
+			<texture>ui_hud_icon_PDA</texture>
+		</flashing_icon>
+	</flashing_icons>
+
+	<pick_up_item x="437" y="400" width="150" height="100"/>
+
+	<new_contact_snd>detectors\contact_1</new_contact_snd>	
+
+	<quick_slot0 x="436" y="705" width="20" height="27" stretch="1">
+		<auto_static x="-7" y="-9" width="38" height="50" stretch="1">
+			<texture>ui_inGame2_quick_slot_background</texture>
+		</auto_static>
+		<counter x="9" y="23.5" width="20" height="18" stretch="1">
+			<window_name>counter</window_name>
+			<text font="font_rubik_16" align="c" vert_align="c"/>
+		</counter>
+	</quick_slot0>
+	<quick_slot1 x="476" y="705" width="20" height="27" stretch="1">
+		<auto_static x="-7" y="-9" width="38" height="50" stretch="1">
+			<texture>ui_inGame2_quick_slot_background</texture>
+		</auto_static>
+		<counter x="9" y="23.5" width="20" height="18" stretch="1">
+			<window_name>counter</window_name>
+			<text font="font_rubik_16" align="c" vert_align="c"/>
+		</counter>
+	</quick_slot1>
+	<quick_slot2 x="516" y="705" width="20" height="27" stretch="1">
+		<auto_static x="-7" y="-9" width="38" height="50" stretch="1">
+			<texture>ui_inGame2_quick_slot_background</texture>
+		</auto_static>
+		<counter x="9" y="23.5" width="20" height="18" stretch="1">
+			<window_name>counter</window_name>
+			<text font="font_rubik_16" align="c" vert_align="c"/>
+		</counter>
+	</quick_slot2>
+	<quick_slot3 x="556" y="705" width="20" height="27" stretch="1">
+		<auto_static x="-7" y="-9" width="38" height="50" stretch="1">
+			<texture>ui_inGame2_quick_slot_background</texture>
+		</auto_static>
+		<counter x="9" y="23.5" width="20" height="18" stretch="1">
+			<window_name>counter</window_name>
+			<text font="font_rubik_16" align="c" vert_align="c"/>
+		</counter>
+	</quick_slot3>
+
+	<quick_slot0_text x="430" y="702" width="17" height="13">
+		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_1</text>
+	</quick_slot0_text>
+	<quick_slot1_text x="470" y="702" width="17" height="13">
+		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_2</text>
+	</quick_slot1_text>
+	<quick_slot2_text x="510" y="702" width="17" height="13">
+		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_3</text>
+	</quick_slot2_text>
+	<quick_slot3_text x="550" y="702" width="17" height="13">
+		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_4</text>
+	</quick_slot3_text>
+
+	<hud_states x="857" y="687" width="222" height="121">
+
+		<back x="0" y="0" width="160" height="67" stretch="1">
+			<texture>ui_inGame2_health_new_background</texture>
+			<auto_static x="-11" y="-27" width="170" height="29" stretch="1">
+				<texture>ui_inGame2_weapons_new_background</texture>
+			</auto_static>
+		</back>
+
+		<indik_rad  x="-698" y="-42" width="15" height="20" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_inGame2_indicator_rad_new</texture>
+		</indik_rad>
+		<indik_fire x="-698" y="6" width="15" height="20" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_inGame2_indicator_burn_new</texture>
+		</indik_fire>
+		<indik_acid x="-698" y="-18" width="15" height="20" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_inGame2_indicator_chem_new</texture>
+		</indik_acid>
+		<indik_psi x="-698" y="30" width="15" height="20" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_inGame2_indicator_psi_new</texture>
+		</indik_psi>
+
+		<progress_bar_health x="17" y="5" width="120" height="9" horz="1" min="0" max="1" pos="0"
+		expression="fltPlayerHealth">
+			<progress stretch="1">
+				<texture>ui_inGame2_health_new_progress</texture>
+			</progress>
+		</progress_bar_health>
+
+    <progress_bar_stamina x="17" y="56" width="120" height="9" horz="1" min="0" max="1" pos="0"
+	expression="fltPlayerPower">
+      <progress stretch="1">
+        <texture>ui_inGame2_armor_new_progress</texture>
+      </progress>
+    </progress_bar_stamina>
+
+		<static_ammo_adaptive x="17" y="-28" width="60" height="34" separator="/">
+			<clip_text x="0" y="0" width="40" height="37">
+				<text complex_mode="0" font="ui_font_graffiti28" r="235" g="220" b="187" a="255" align="r" vert_align="c"/>
+			</clip_text>
+			<total_text x="40" y="4" width="55" height="27">
+				<text complex_mode="0" font="graffiti19" r="187" g="178" b="158" a="255" align="l" vert_align="c"/>
+			</total_text>
+		</static_ammo_adaptive>
+
+		<static_wpn_icon x="93" y="-12" width="50" height="30" align="l" alignment="c" stretch="1" caliber="1" hud_group_catalog="hud_group_catalog.xml" override="replace">
+			<caliber_text x="22" y="0" width="16" height="30" stretch="1">
+				<text font="font_oswald_22" align="l" vert_align="c" r="179" g="179" b="179" a="255"/>
+			</caliber_text>
+			<caliber_icon x="45" y="5" width="18" height="21" align="r" stretch="1"/>
+		</static_wpn_icon>
+
+		<static_fire_mode x="17" y="-22" width="15" height="20" stretch="1" use_icon="1">
+			<mode_mapping text="1" icon="ui_inGame2_icon_fmode_single"/>
+			<mode_mapping text="A" icon="ui_inGame2_icon_fmode_auto"/>
+			<mode_mapping text="2" icon="ui_inGame2_icon_fmode_2burst"/>
+			<mode_mapping text="3" icon="ui_inGame2_icon_fmode_3burst"/>
+			<text font="arial_14" align="c" color="ui_2" />
+		</static_fire_mode>
+	
+	</hud_states>
+
+</w>

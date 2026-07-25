@@ -1,0 +1,33 @@
+<w>
+	<ixr_product_sans_16_l x="0" y="0" width="1" height="1" stretch="1" override="replace">
+		<text align="l" complex_mode="1" font="letterica16"> </text>
+		<text_color>
+			<e r="255" g="255" b="255" a="150"/>
+			<h r="255" g="0" b="0" a="150"/>
+		</text_color>
+	</ixr_product_sans_16_l>
+
+	<ixr_product_sans_12_l x="0" y="0" width="1" height="1" stretch="1" override="replace">
+		<text align="l" complex_mode="1" font="letterica16"> </text>
+		<text_color>
+			<e r="255" g="255" b="255" a="150"/>
+			<h r="255" g="0" b="0" a="150"/>
+		</text_color>
+	</ixr_product_sans_12_l>
+
+	<text_box x="0" y="0" width="556" height="64" file_name_mode="1" override="replace">
+		<text x="3" width="500" font="letterica16" vert_align="c"/>
+		<text_color>
+			<e r="255" g="255" b="255" a="200"/>
+			<h r="255" g="255" b="255" a="200"/>
+		</text_color>
+	</text_box>
+
+	<text_box_middle x="0" y="0" width="1" height="1" stretch="1" override="replace">
+		<text x="3" vert_align="c" horiz_align="c" align="c" complex_mode="1" font="letterica16"> </text>
+		<text_color>
+			<e r="255" g="255" b="255" a="150"/>
+			<h r="255" g="0" b="0" a="150"/>
+		</text_color>
+	</text_box_middle>
+</w>

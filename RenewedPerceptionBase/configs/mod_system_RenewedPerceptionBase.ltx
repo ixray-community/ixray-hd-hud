@@ -1,3 +1,4 @@
+; Параметры жажды и сонливости для EnableThirst/EnableSleepiness
 ![actor_condition]
 thirst_critical		= 0.3
 thirst_v				= 0.00002
@@ -9,17 +10,26 @@ sleepiness_v				= 0.00001
 sleepiness_power_v		= 0.005
 sleepiness_health_v		= 0.0001
 
+; Oswald
 [font_oswald]:font_default
 shader = hud\font
 name = Oswald-Medium
 opentype = true
 
-[font_oswald_22]:font_oswald
-size = 22
+[font_oswald_16]:font_oswald
+size = 16
 letter_spacing = 0.3
 
-[font_oswald_40]:font_oswald
-size = 40
+[font_oswald_18]:font_oswald
+size = 18
+letter_spacing = 0.3
+
+[font_oswald_20]:font_oswald
+size = 20
+letter_spacing = 0.3
+
+[font_oswald_22]:font_oswald
+size = 22
 letter_spacing = 0.3
 
 [font_oswald_24]:font_oswald
@@ -30,21 +40,9 @@ letter_spacing = 0.3
 size = 30
 letter_spacing = 0.3
 
-[font_oswald_20]:font_oswald
-size = 20
+[font_oswald_40]:font_oswald
+size = 40
 letter_spacing = 0.3
-
-[font_oswald_18]:font_oswald
-size = 18
-letter_spacing = 0.3
-
-[font_oswald_16]:font_oswald
-size = 16
-letter_spacing = 0.3
-
-[font_oswald_10]:font_oswald
-size = 10
-letter_spacing = 0.0
 
 [font_oswald_semibold]:font_default
 shader = hud\font
@@ -55,6 +53,7 @@ opentype = true
 size = 40
 letter_spacing = 0.3
 
+; Rubik
 [font_rubik]:font_default
 shader = hud\font
 name = Rubik-Regular
@@ -84,19 +83,6 @@ letter_spacing = 0.3
 size = 22
 letter_spacing = 0.3
 
-[font_rubik_regular]:font_default
-shader = hud\font
-name = Rubik-Regular
-opentype = true
-
-[font_rubik_regular_20]:font_rubik_regular
-size = 20
-letter_spacing = 0.3
-
-[font_rubik_regular_22]:font_rubik_regular
-size = 22
-letter_spacing = 0.3
-
 [font_rubik_light]:font_default
 shader = hud\font
 name = Rubik-Light
@@ -106,48 +92,7 @@ opentype = true
 size = 20
 letter_spacing = 0.3
 
-[font_rubik_bold]:font_default
-shader = hud\font
-name = Rubik-Bold
-opentype = true
-
-[font_rubik_bold_10]:font_rubik_bold
-size = 10
-letter_spacing = 0.3
-
-[font_rubik_bold_12]:font_rubik_bold
-size = 12
-letter_spacing = 0.3
-
-[font_rubik_bold_14]:font_rubik_bold
-size = 14
-letter_spacing = 0.3
-
-[font_rubik_bold_16]:font_rubik_bold
-size = 16
-letter_spacing = 0.3
-
-[font_rubik_bold_18]:font_rubik_bold
-size = 18
-letter_spacing = 0.3
-
-[font_rubik_bold_20]:font_rubik_bold
-size = 20
-letter_spacing = 0.3
-
-[font_rubik_bold_22]:font_rubik_bold
-size = 22
-letter_spacing = 0.3
-
-[font_rubik_bold_24]:font_rubik_bold
-size = 24
-letter_spacing = 0.3
-
-[font_rubik_bold_30]:font_rubik_bold
-size = 30
-letter_spacing = 0.3
-
-; Graffiti fonts
+; Graffiti (vanilla base sizes)
 [ui_font_graffiti30]:font_graffiti
 size = 30
 
@@ -163,6 +108,7 @@ size = 16
 [ui_font_graffiti14]:font_graffiti
 size = 14
 
+; Blender Pro
 [font_blender_pro_b]:font_default
 shader = hud\font
 name = BlenderPro-Bold
@@ -205,9 +151,61 @@ letter_spacing = 0.3
 size = 20
 letter_spacing = 0.3
 
-![dialogs]
->files = dialogs_ixray_pda_beta
-; PDA talk policy overlay: configs/pda_talk_policies.ltx via [pda_talk] policy_files
+; Extra aliases used by CoP actor_menu / quick slots
+[font_oswald_10]:font_oswald
+size = 10
+letter_spacing = 0.0
 
-![info_portions]
-files = info_portions, info_zaton, info_jupiter, info_pripyat, info_upgrades
+[font_rubik_regular]:font_default
+shader = hud\font
+name = Rubik-Regular
+opentype = true
+
+[font_rubik_regular_20]:font_rubik_regular
+size = 20
+letter_spacing = 0.3
+
+[font_rubik_regular_22]:font_rubik_regular
+size = 22
+letter_spacing = 0.3
+
+[font_rubik_bold]:font_default
+shader = hud\font
+name = Rubik-Bold
+opentype = true
+
+[font_rubik_bold_10]:font_rubik_bold
+size = 10
+letter_spacing = 0.3
+
+[font_rubik_bold_12]:font_rubik_bold
+size = 12
+letter_spacing = 0.3
+
+[font_rubik_bold_14]:font_rubik_bold
+size = 14
+letter_spacing = 0.3
+
+[font_rubik_bold_16]:font_rubik_bold
+size = 16
+letter_spacing = 0.3
+
+[font_rubik_bold_18]:font_rubik_bold
+size = 18
+letter_spacing = 0.3
+
+[font_rubik_bold_20]:font_rubik_bold
+size = 20
+letter_spacing = 0.3
+
+[font_rubik_bold_22]:font_rubik_bold
+size = 22
+letter_spacing = 0.3
+
+[font_rubik_bold_24]:font_rubik_bold
+size = 24
+letter_spacing = 0.3
+
+[font_rubik_bold_30]:font_rubik_bold
+size = 30
+letter_spacing = 0.3

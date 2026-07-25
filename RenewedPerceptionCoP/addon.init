@@ -1,5 +1,4 @@
 name: RenewedPerceptionCoP
 platform: cop
 script: ixr_hd_hud
-depends:
-  - GunslingerModCop
+depends: RenewedPerceptionBase

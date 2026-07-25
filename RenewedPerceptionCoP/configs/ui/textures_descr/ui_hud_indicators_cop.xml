@@ -97,11 +97,5 @@
 		<texture id="ui_inGame2_triangle_Psy_yellow" x="27" y="295" width="47" height="41" />
 	    <texture id="ui_inGame2_triangle_Psy_orange" x="27" y="385" width="47" height="41" />
 	    <texture id="ui_inGame2_triangle_Psy_red" x="27" y="392" width="47" height="41" />
-
-		<!--Caliber icon-->
-		<texture id="ui_ammo_caliber_icon_type_1" x="30" y="461" width="30" height="30"/>
-		<texture id="ui_ammo_caliber_icon_type_2" x="72" y="461" width="30" height="30"/>
-		<texture id="ui_ammo_caliber_icon_type_3" x="111" y="461" width="30" height="30"/>
-		<texture id="ui_ammo_caliber_icon_type_4" x="152" y="461" width="30" height="30"/>
 	</file> 
 </w>
