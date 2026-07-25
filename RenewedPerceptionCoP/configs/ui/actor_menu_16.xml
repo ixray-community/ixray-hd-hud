@@ -2,7 +2,7 @@
 	<properties_box>
 		<texture>ui_inGame2_demo_player_info_window</texture>
 		<list x="0" y="0" width="10" height="10" item_height="18" always_show_scroll="0" can_select="1"
-			top_indent="0" bottom_indent="0" right_ident="0" left_ident="25">
+			bottom_indent="10" right_ident="10" left_ident="20">
 	        <font_s r="220" g="220" b="220"/>
 	        <font r="150" g="150" b="150" font="letterica16"/>
 		</list>
@@ -128,12 +128,12 @@
 				<middle_color r="230" g="215" b="75"/>
 				<max_color r="242" g="242" b="242"/>
     		</slot_progress-->
-			<slot_progress_percent x="615" y="695" width="24" height="19" horz="1" min="0" max="1" pos="0">
+			<slot_progress_percent x="616" y="698" width="24" height="19" horz="1" min="0" max="1" pos="0">
 				<percent_display>
-					<background width="24" height="19" stretch="1">
+					<background width="25" height="20" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="0" width="24" height="19" font="font_blender_pro_b_14" format="percent" align="c" vert_align="c"/>
+					<text x="0" y="1" width="24" height="19" font="font_oswald_18" format="percent" align="c" vert_align="c"/>
 				</percent_display>
 					<min_color r="180" g="0" b="0"/>
 					<middle_color r="255" g="255" b="255"/>
@@ -161,7 +161,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="0" width="24" height="19" font="font_blender_pro_b_14" format="percent" align="c" vert_align="c"/>
+					<text x="0" y="1" width="24" height="19" font="font_oswald_18" format="percent" align="c" vert_align="c"/>
 				</percent_display>
 					<min_color r="180" g="0" b="0"/>
 					<middle_color r="255" g="255" b="255"/>
@@ -192,7 +192,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="0" width="24" height="19" align="c" vert_align="c" font="font_blender_pro_b_14" format="percent"/>
+					<text x="0" y="1" width="24" height="19" align="c" vert_align="c" font="font_oswald_18" format="percent"/>
 				</percent_display>
 					<min_color r="180" g="0" b="0"/>
 					<middle_color r="255" g="255" b="255"/>
@@ -234,7 +234,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="0" width="24" height="19" font="font_blender_pro_b_14" format="percent" align="c" vert_align="c"/>
+					<text x="0" y="1" width="24" height="19" font="font_oswald_18" format="percent" align="c" vert_align="c"/>
 				</percent_display>
 					<min_color r="180" g="0" b="0"/>
 					<middle_color r="255" g="255" b="255"/>
@@ -284,7 +284,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="0" width="24" height="19" font="font_blender_pro_b_14" format="percent" align="c" vert_align="c"/>
+					<text x="0" y="1" width="24" height="19" font="font_oswald_18" format="percent" align="c" vert_align="c"/>
 				</percent_display>
 					<min_color r="180" g="0" b="0"/>
 					<middle_color r="255" g="255" b="255"/>
@@ -301,17 +301,17 @@
 		<texture>ui_inGame2_artefakt_highlighter</texture>
 	</artefact_slot_highlight>
 
-	<quick_slot1_text x="429" y="415" width="14" height="13">
-		<text align="c" r="152" g="152" b="152"font="font_rubik_16">quick_use_str_1</text>
+	<quick_slot1_text x="429" y="414" width="14" height="13">
+		<text align="c" r="152" g="152" b="152"font="font_rubik_bold_16">quick_use_str_1</text>
 	</quick_slot1_text>
-	<quick_slot2_text x="494" y="415" width="14" height="13">
-		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_2</text>
+	<quick_slot2_text x="494" y="414" width="14" height="13">
+		<text align="c" r="152" g="152" b="152" font="font_rubik_bold_16">quick_use_str_2</text>
 	</quick_slot2_text>
-	<quick_slot3_text x="559" y="415" width="14" height="13">
-		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_3</text>
+	<quick_slot3_text x="559" y="414" width="14" height="13">
+		<text align="c" r="152" g="152" b="152" font="font_rubik_bold_16">quick_use_str_3</text>
 	</quick_slot3_text>
-	<quick_slot4_text x="623" y="415" width="14" height="13">
-		<text align="c" r="152" g="152" b="152" font="font_rubik_16">quick_use_str_4</text>
+	<quick_slot4_text x="623" y="414" width="14" height="13">
+		<text align="c" r="152" g="152" b="152" font="font_rubik_bold_16">quick_use_str_4</text>
 	</quick_slot4_text>
 
 	<!-- legacy (caption / actor_weight / actor_weight_max)
@@ -690,15 +690,15 @@
 		</button>
 	</inventory_sort_tabs>
 
-	<!-- ordering: used only when [inventory_sort] system = ordering; categories tabs above stay untouched -->
-	<inventory_sort_order_tabs_container_upgrade 			x="662" y="110" width="352" height="40"/>
+	<!-- ordering -->
+<inventory_sort_order_tabs_container_upgrade 			x="662" y="110" width="352" height="40"/>
 	<inventory_sort_order_tabs_container_trade_actor_bag 	x="662" y="333" width="352" height="40"/>
 	<inventory_sort_order_tabs_container_trade_partner_bag 	x="14" 	y="333" width="352" height="40"/>
 	<inventory_sort_order_tabs_container_deadbody_bag 		x="14" 	y="110" width="352" height="40"/>
 
 	<inventory_sort_order_tabs x="662" y="110" width="352" height="40">
 		<button x="0" y="0" width="50" height="33" stretch="1" id="general" hint="st_inv_sort_order_general_hint">
-			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_general</text>
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_16">st_inv_sort_order_general</text>
 			<texture_e>ui_inv_sort_order_general_e</texture_e>
 			<texture_h>ui_inv_sort_order_general_h</texture_h>
 			<texture_t>ui_inv_sort_order_general_t</texture_t>
@@ -712,7 +712,7 @@
 			<sound_t>interface\inv_open</sound_t>
 		</button>
 		<button x="50" y="0" width="50" height="33" stretch="1" id="by_type" hint="st_inv_sort_order_by_type_hint">
-			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_type</text>
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_16">st_inv_sort_order_by_type</text>
 			<texture_e>ui_inv_sort_order_by_type_e</texture_e>
 			<texture_h>ui_inv_sort_order_by_type_h</texture_h>
 			<texture_t>ui_inv_sort_order_by_type_t</texture_t>
@@ -726,7 +726,7 @@
 			<sound_t>interface\inv_open</sound_t>
 		</button>
 		<button x="100" y="0" width="50" height="33" stretch="1" id="by_weight" hint="st_inv_sort_order_by_weight_hint">
-			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_weight</text>
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_16">st_inv_sort_order_by_weight</text>
 			<texture_e>ui_inv_sort_order_by_weight_e</texture_e>
 			<texture_h>ui_inv_sort_order_by_weight_h</texture_h>
 			<texture_t>ui_inv_sort_order_by_weight_t</texture_t>
@@ -740,7 +740,7 @@
 			<sound_t>interface\inv_open</sound_t>
 		</button>
 		<button x="150" y="0" width="50" height="33" stretch="1" id="by_condition" hint="st_inv_sort_order_by_condition_hint">
-			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_condition</text>
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_16">st_inv_sort_order_by_condition</text>
 			<texture_e>ui_inv_sort_order_by_condition_e</texture_e>
 			<texture_h>ui_inv_sort_order_by_condition_h</texture_h>
 			<texture_t>ui_inv_sort_order_by_condition_t</texture_t>
@@ -754,7 +754,7 @@
 			<sound_t>interface\inv_open</sound_t>
 		</button>
 		<button x="200" y="0" width="50" height="33" stretch="1" id="by_cost" hint="st_inv_sort_order_by_cost_hint">
-			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_cost</text>
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_16">st_inv_sort_order_by_cost</text>
 			<texture_e>ui_inv_sort_order_by_cost_e</texture_e>
 			<texture_h>ui_inv_sort_order_by_cost_h</texture_h>
 			<texture_t>ui_inv_sort_order_by_cost_t</texture_t>
@@ -768,7 +768,7 @@
 			<sound_t>interface\inv_open</sound_t>
 		</button>
 		<button x="250" y="0" width="50" height="33" stretch="1" id="by_novelty" hint="st_inv_sort_order_by_novelty_hint">
-			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_18">st_inv_sort_order_by_novelty</text>
+			<text align="c" vert_align="c" x="0" y="0" width="50" height="33" font="font_oswald_16">st_inv_sort_order_by_novelty</text>
 			<texture_e>ui_inv_sort_order_by_novelty_e</texture_e>
 			<texture_h>ui_inv_sort_order_by_novelty_h</texture_h>
 			<texture_t>ui_inv_sort_order_by_novelty_t</texture_t>
@@ -782,7 +782,7 @@
 			<sound_t>interface\inv_open</sound_t>
 		</button>
 		<button x="300" y="0" width="52" height="33" stretch="1" id="by_importance" hint="st_inv_sort_order_by_importance_hint">
-			<text align="c" vert_align="c" x="0" y="0" width="52" height="33" font="font_oswald_18">st_inv_sort_order_by_importance</text>
+			<text align="c" vert_align="c" x="0" y="0" width="52" height="33" font="font_oswald_16">st_inv_sort_order_by_importance</text>
 			<texture_e>ui_inv_sort_order_by_importance_e</texture_e>
 			<texture_h>ui_inv_sort_order_by_importance_h</texture_h>
 			<texture_t>ui_inv_sort_order_by_importance_t</texture_t>

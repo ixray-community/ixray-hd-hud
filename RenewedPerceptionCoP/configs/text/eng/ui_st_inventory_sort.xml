@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ui_inv_thirst">
+		<text>Quenching thirst</text>
+	</string>
+	<string id="st_inv_sort_all">
+		<text>All</text>
+	</string>
+	<string id="st_inv_sort_all_hint">
+		<text>Show all items</text>
+	</string>
+	<string id="st_inv_sort_weapons">
+		<text>Weapons</text>
+	</string>
+	<string id="st_inv_sort_weapons_hint">
+		<text>Show weapons only</text>
+	</string>
+	<string id="st_inv_sort_ammo">
+		<text>Ammo</text>
+	</string>
+	<string id="st_inv_sort_ammo_hint">
+		<text>Show ammo only</text>
+	</string>
+	<string id="st_inv_sort_armor">
+		<text>Armor</text>
+	</string>
+	<string id="st_inv_sort_armor_hint">
+		<text>Show armor only</text>
+	</string>
+	<string id="st_inv_sort_devices">
+		<text>Devices</text>
+	</string>
+	<string id="st_inv_sort_devices_hint">
+		<text>Show devices only</text>
+	</string>
+	<string id="st_inv_sort_consumables">
+		<text>Consumables</text>
+	</string>
+	<string id="st_inv_sort_consumables_hint">
+		<text>Show consumables only</text>
+	</string>
+	<string id="st_inv_sort_artefacts">
+		<text>Trophies</text>
+	</string>
+	<string id="st_inv_sort_artefacts_hint">
+		<text>Show only artifacts</text>
+	</string>
+	<string id="st_inv_sort_attachments">
+		<text>Attachments</text>
+	</string>
+	<string id="st_inv_sort_attachments_hint">
+		<text>Show attachments only</text>
+	</string>
+	<string id="st_inv_sort_order_general">
+		<text>General</text>
+	</string>
+	<string id="st_inv_sort_order_general_hint">
+		<text>Sort by inventory grid size</text>
+	</string>
+	<string id="st_inv_sort_order_by_type">
+		<text>By type</text>
+	</string>
+	<string id="st_inv_sort_order_by_type_hint">
+		<text>Sort by type. Click again or press Alt to cycle type focus</text>
+	</string>
+	<string id="st_inv_sort_order_by_weight">
+		<text>By weight</text>
+	</string>
+	<string id="st_inv_sort_order_by_weight_hint">
+		<text>Sort by weight. Click again or press Alt to invert direction</text>
+	</string>
+	<string id="st_inv_sort_order_by_condition">
+		<text>Condition</text>
+	</string>
+	<string id="st_inv_sort_order_by_condition_hint">
+		<text>Sort by condition. Click again or press Alt to invert direction</text>
+	</string>
+	<string id="st_inv_sort_order_by_cost">
+		<text>By cost</text>
+	</string>
+	<string id="st_inv_sort_order_by_cost_hint">
+		<text>Sort by cost. Click again or press Alt to invert direction</text>
+	</string>
+	<string id="st_inv_sort_order_by_novelty">
+		<text>New</text>
+	</string>
+	<string id="st_inv_sort_order_by_novelty_hint">
+		<text>Sort by take time. Click again or press Alt to invert direction</text>
+	</string>
+	<string id="st_inv_sort_order_by_importance">
+		<text>Important</text>
+	</string>
+	<string id="st_inv_sort_order_by_importance_hint">
+		<text>Quest items first</text>
+	</string>
+</string_table>

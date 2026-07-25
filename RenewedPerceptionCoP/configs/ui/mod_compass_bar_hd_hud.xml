@@ -50,7 +50,7 @@
 				<texture>ui_inGame2_hint_wnd_main_window<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 			</marker>
 			<distance_text x="5" y="-24" width="80" height="14" align="l" vert_align="c">
-				<text align="l" font="font_rubik_12" vert_align="c">
+				<text align="l" font="font_rubik_bold_14" vert_align="c">
 					<shadows thickness="0.5" r="0" g="0" b="0" a="100"/>
 				</text>
 			</distance_text>

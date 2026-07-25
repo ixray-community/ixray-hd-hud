@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="kb_weapon7">
+		<text>Пистолет</text>
+	</string>
+	<string id="kb_inventory_sort_prev">
+		<text>Сортировка: предыдущая вкладка</text>
+	</string>
+	<string id="kb_inventory_sort_next">
+		<text>Сортировка: следующая вкладка</text>
+	</string>
+</string_table>
