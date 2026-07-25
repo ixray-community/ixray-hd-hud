@@ -54,27 +54,6 @@
 	    <texture id="ui_inGame2_blood_icon_part_2" x="503" y="218" width="17" height="26" />
 	    <texture id="ui_inGame2_blood_icon_part_3" x="500" y="289" width="23" height="33" />
 
-	    <texture id="ui_inGame2_triangle_Radiation_yellow" x="419000" y="816000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Radiation_orange" x="419000" y="856000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Radiation_red" x="419000" y="898000" width="37" height="32" />
-		
-	    <texture id="ui_inGame2_triangle_Fire_yellow" x="379000" y="816000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Fire_orange" x="379000" y="856000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Fire_red" x="379000" y="898000" width="37" height="32" />
-		
-	    <texture id="ui_inGame2_triangle_Biological_yellow" x="339000" y="816000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Biological_orange" x="339000" y="856000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Biological_red" x="339000" y="898000" width="37" height="32" />
-		
-	    <texture id="ui_inGame2_triangle_Psy_yellow" x="459000" y="816000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Psy_orange" x="459000" y="856000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Psy_red" x="459000" y="898000" width="37" height="32" />
-		
-	    <texture id="ui_inGame2_triangle_Psy_green" x="459000" y="721000" width="37" height="32" /> 
-	    <texture id="ui_inGame2_triangle_Fire_green" x="379000" y="721000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Radiation_green" x="419000" y="721000" width="37" height="32" />
-	    <texture id="ui_inGame2_triangle_Biological_green" x="339000" y="721000" width="37" height="32" />
-
 	    <texture id="ui_inGame2_shield_Psy" x="80" y="485" width="40" height="40" />
 	    <texture id="ui_inGame2_shield_Radiation" x="120" y="485" width="40" height="40" />
 	    <texture id="ui_inGame2_shield_biological" x="160" y="485" width="40" height="40" />

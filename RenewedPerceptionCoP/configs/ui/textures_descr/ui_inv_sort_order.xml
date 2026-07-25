@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<w>
+	<file name="ui\ui_inv_sort_order" scale="2">
+		<!-- 1. general -->
+		<texture id="ui_inv_sort_order_general_e" x="15" y="14" width="64" height="36" />
+		<texture id="ui_inv_sort_order_general_h" x="15" y="61" width="64" height="36" />
+		<texture id="ui_inv_sort_order_general_t" x="15" y="108" width="64" height="36" />
+		<texture id="ui_inv_sort_order_general_d" x="15" y="14" width="64" height="36" />
+
+		<!-- 2. by_type -->
+		<texture id="ui_inv_sort_order_by_type_e" x="79" y="14" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_type_h" x="79" y="61" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_type_t" x="79" y="108" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_type_d" x="79" y="14" width="63" height="36" />
+
+		<!-- 3. by_weight -->
+		<texture id="ui_inv_sort_order_by_weight_e" x="142" y="14" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_weight_h" x="142" y="61" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_weight_t" x="142" y="108" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_weight_d" x="142" y="14" width="63" height="36" />
+
+		<!-- 4. by_condition -->
+		<texture id="ui_inv_sort_order_by_condition_e" x="205" y="14" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_condition_h" x="205" y="61" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_condition_t" x="205" y="108" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_condition_d" x="205" y="14" width="63" height="36" />
+
+		<!-- 5. by_cost -->
+		<texture id="ui_inv_sort_order_by_cost_e" x="268" y="14" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_cost_h" x="268" y="61" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_cost_t" x="268" y="108" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_cost_d" x="268" y="14" width="63" height="36" />
+
+		<!-- 6. by_novelty -->
+		<texture id="ui_inv_sort_order_by_novelty_e" x="331" y="14" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_novelty_h" x="331" y="61" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_novelty_t" x="331" y="108" width="63" height="36" />
+		<texture id="ui_inv_sort_order_by_novelty_d" x="331" y="14" width="63" height="36" />
+
+		<!-- 7. by_importance -->
+		<texture id="ui_inv_sort_order_by_importance_e" x="394" y="14" width="64" height="36" />
+		<texture id="ui_inv_sort_order_by_importance_h" x="394" y="61" width="64" height="36" />
+		<texture id="ui_inv_sort_order_by_importance_t" x="394" y="108" width="64" height="36" />
+		<texture id="ui_inv_sort_order_by_importance_d" x="394" y="14" width="64" height="36" />
+	</file>
+</w>
