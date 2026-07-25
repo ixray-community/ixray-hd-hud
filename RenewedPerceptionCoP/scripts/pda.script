@@ -16,8 +16,6 @@ end
 
 -- вызывается  1 раз в 3 секунды
 function fill_faction_state(state)
-	local board = sim_board.get_sim_board()
-
 	state.member_count = 0
 	state.resource = 0
 	state.power = 0
@@ -555,7 +553,9 @@ function change_anomalies_names()
 			local hint = game.translate_string(v.hint).."\\n".." \\n"
 			local has_af = false
 			local af_table = {}
-			has_af, af_table = xr_conditions.anomaly_has_artefact(db.actor, nil, {v.zone})
+			if xr_conditions and xr_conditions.anomaly_has_artefact then
+				has_af, af_table = xr_conditions.anomaly_has_artefact(db.actor, nil, {v.zone})
+			end
 			if has_af then
 				hint = hint..game.translate_string("st_jup_b32_has_af")
 				for k,v in pairs(af_table) do

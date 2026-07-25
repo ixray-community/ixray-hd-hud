@@ -1,12 +1,12 @@
 
 <window>
 	<!-- Compass bar only -->
-	<compass_layout x="0" y="0.9" width="1.0" height="0.893" align="c" stretch="1"
+	<compass_layout x="0.5" y="1.30" width="1.0" height="0.9" align="c" stretch="1"
 	                contextual_fade="1" fade_in_speed="5" fade_out_speed="2"
 	                min_visible_alpha="0.01" visibility_threshold="0.5"/>
 
 	<background x="0" y="0" width="500" height="35" alignment="l" stretch="1">
-		<texture a="128">ui_inGame2_compass_motion_icon</texture>
+		<texture a="150">ui_inGame2_compass_motion_icon</texture>
 	</background>
 
 	<!-- Minimap only -->
@@ -15,7 +15,7 @@
 
 	<window rel_size="1.25" width="10" height="10" alignment="c"/>
 
-	<luminosity_overlay x="-69" y="-90" width="135" height="180" stretch="1">
+	<luminosity_overlay x="12" y="-28" width="135" height="180" stretch="1">
 		<texture r="255" g="79" b="79" a="165">ui_inGame_vignette_luminosity</texture>
 	</luminosity_overlay>
 </window>

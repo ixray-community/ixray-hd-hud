@@ -135,6 +135,9 @@ function get_maingame()
 	if not db or not db.actor then
 		return nil
 	end
+	if not ActorMenu or not ActorMenu.get_maingame then
+		return nil
+	end
 	return ActorMenu.get_maingame()
 end
 
@@ -186,15 +189,13 @@ end
 
 function on_actor_hud_ready()
 	this.crosshair_ready = true
+	apply_navigation_mode(this.navigation_mode)
+	apply_inventory_sort_system(this.inventory_sort_system)
 
 	local maingame = get_maingame()
 	if maingame and maingame.IsCompassBarMode then
 		this.navigation_mode = maingame:IsCompassBarMode() and this.MODE_COMPASS or this.MODE_MINIMAP
-	else
-		apply_navigation_mode(this.navigation_mode)
 	end
-
-	apply_inventory_sort_system(this.inventory_sort_system)
 end
 
 function OnGetPdaStatById(stat_id)
