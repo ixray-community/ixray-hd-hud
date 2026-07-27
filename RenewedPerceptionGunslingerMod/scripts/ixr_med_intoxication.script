@@ -1,0 +1,23 @@
+function on_game_start()
+	local original_potion = dialogs.medic_magic_potion
+	local original_needs = dialogs.actor_needs_bless
+
+	dialogs.medic_magic_potion = function(first_speaker, second_speaker)
+		original_potion(first_speaker, second_speaker)
+		if db.actor then
+			db.actor.intoxication = -1
+		end
+	end
+
+	dialogs.actor_needs_bless = function(first_speaker, second_speaker)
+		if original_needs(first_speaker, second_speaker) then
+			return true
+		end
+
+		return db.actor ~= nil and db.actor.intoxication > 0
+	end
+
+	dialogs.actor_is_damn_healthy = function(first_speaker, second_speaker)
+		return not dialogs.actor_needs_bless(first_speaker, second_speaker)
+	end
+end

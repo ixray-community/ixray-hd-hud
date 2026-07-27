@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ui_inv_intoxication">
+		<text>Intoxication</text>
+	</string>
+	<string id="st_ui_intoxication_sensor">
+		<text>Medication intoxication. Stacks from drugs and chemicals. Lowers stamina, and past a threshold weakens healing and damages health. Cleared by antidote, drinks, a medic, or over time.</text>
+	</string>
+	<string id="ui_inv_intoxication_clear">
+		<text>Clears intoxication</text>
+	</string>
+	<string id="ui_inv_intoxication_reduce">
+		<text>Reduces intoxication</text>
+	</string>
+	<string id="ui_inv_intoxication_raise_light">
+		<text>Slightly raises intoxication</text>
+	</string>
+	<string id="ui_inv_intoxication_raise">
+		<text>Raises intoxication</text>
+	</string>
+	<string id="ui_inv_intoxication_raise_heavy">
+		<text>Strongly raises intoxication</text>
+	</string>
+</string_table>

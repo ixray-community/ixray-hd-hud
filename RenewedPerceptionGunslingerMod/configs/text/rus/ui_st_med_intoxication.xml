@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="ui_inv_intoxication">
+		<text>Интоксикация</text>
+	</string>
+	<string id="st_ui_intoxication_sensor">
+		<text>Медикаментозная интоксикация. Растет от препаратов и химии. Снижает стамину, а после порога ослабляет лечение и бьет по здоровью. Снимается антидотом, напитками, медиком или со временем.</text>
+	</string>
+	<string id="ui_inv_intoxication_clear">
+		<text>Снимает интоксикацию</text>
+	</string>
+	<string id="ui_inv_intoxication_reduce">
+		<text>Снижает интоксикацию</text>
+	</string>
+	<string id="ui_inv_intoxication_raise_light">
+		<text>Слабо повышает интоксикацию</text>
+	</string>
+	<string id="ui_inv_intoxication_raise">
+		<text>Повышает интоксикацию</text>
+	</string>
+	<string id="ui_inv_intoxication_raise_heavy">
+		<text>Сильно повышает интоксикацию</text>
+	</string>
+</string_table>

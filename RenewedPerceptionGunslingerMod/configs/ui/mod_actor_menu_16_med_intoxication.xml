@@ -1,0 +1,14 @@
+<w>
+	<actor_state_info x="486" y="9" width="154" height="274">
+		<starvation_state x="15" y="222" width="136" height="16"
+			override="replace">
+			<hint_text delay="800">st_ui_intoxication_sensor</hint_text>
+			<state_progress x="0" y="0" width="134" height="16" horz="1" min="0" max="1" pos="0"
+				expression="floor(fltPlayerIntoxication * 55.0) / 55.0">
+				<progress stretch="1">
+					<texture r="130" g="150" b="90" a="255">ui_inGame2_inventory_health_bar</texture>
+				</progress>
+			</state_progress>
+		</starvation_state>
+	</actor_state_info>
+</w>
