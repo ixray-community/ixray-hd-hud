@@ -24,7 +24,7 @@ float4 main(p_ui I) : COLOR
     rings *= 0.58f;
 
     float alpha = saturate(core + innerGlow + rings) * mask * I.color.a;
-    float3 beaconColor = float3(0.36f, 0.78f, 1.0f);
+    float3 beaconColor = float3(126.0f / 255.0f, 1.0f, 143.0f / 255.0f);
     float3 coreColor = lerp(beaconColor, float3(1.0f, 1.0f, 1.0f), 0.85f);
     float3 color = beaconColor * (innerGlow * 0.9f + rings * 1.1f) + coreColor * core * 1.25f;
 

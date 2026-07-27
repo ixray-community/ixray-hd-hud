@@ -19,7 +19,7 @@
 		<text>яо-6</text>
 	</string>
 	<string id="ui_hud_caliber_45">
-		<text>.45</text>
+		<text>0.45</text>
 	</string>
 	<string id="ui_hud_caliber_1270">
 		<text>дПНАЭ</text>
@@ -37,16 +37,16 @@
 		<text>оц</text>
 	</string>
 	<string id="ui_hud_caliber_9x18_ap">
-		<text>9x18олл</text>
+		<text>9x18 олл</text>
 	</string>
 	<string id="ui_hud_caliber_9x19_ap">
-		<text>9x19JHP</text>
+		<text>9x19 JHP</text>
 	</string>
 	<string id="ui_hud_caliber_545_ap">
-		<text>5.45ао</text>
+		<text>5.45 ао</text>
 	</string>
 	<string id="ui_hud_caliber_556_ap">
-		<text>5.56AP</text>
+		<text>5.56 AP</text>
 	</string>
 	<string id="ui_hud_caliber_9x39_ap">
 		<text>яо-5</text>

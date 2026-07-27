@@ -322,7 +322,7 @@
 		<legend_list x="0" y="45" width="200" height="600" item_height="25" scroll_profile="default" always_show_scroll="0">
 			<item x="0" y="0" width="200" height="35">
 				<image x="-2" y="-10" width="36" height="46" align="c" stretch="1">
-					<texture r="255" g="156" b="0">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="255" g="179" b="71">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_main_task</text>
@@ -330,7 +330,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35">
 				<image x="-2" y="-10" width="36" height="40" align="c" stretch="1">
-					<texture r="32" g="206" b="255">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="224" g="230" b="235">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_side_task</text>
@@ -338,7 +338,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35">
 				<image x="-1" y="-12" width="32" height="40" align="c" stretch="1">
-					<texture r="151" g="169" b="202">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="195" g="149" b="238">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_stashes</text>
@@ -346,7 +346,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35">
 				<image x="-2" y="-15" width="36.8" height="46" align="c" stretch="1">
-					<texture r="221" g="35" b="96">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="245" g="91" b="116">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_personal_spots</text>
@@ -354,7 +354,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture>ui_inGame2_PDA_icon_location_2<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="240" g="248" b="255">ui_inGame2_PDA_icon_location_2<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" align="c" complex_mode="1">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_locations</text>
@@ -362,7 +362,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture r="232" g="181" b="96">ui_inGame2_PDA_icon_Place_to_rest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="102" g="204" b="255">ui_inGame2_PDA_icon_Place_to_rest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_rest</text>
@@ -370,7 +370,7 @@
 			</item>
 			<item x="135" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture r="232" g="181" b="96">ui_inGame2_PDA_icon_Actor_Box<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="102" g="204" b="255">ui_inGame2_PDA_icon_Actor_Box<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_actor_box</text>
@@ -378,7 +378,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_Trader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="185" g="220" b="237">ui_inGame2_PDA_icon_Stalker_Trader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_trader</text>
@@ -386,7 +386,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_guide<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="185" g="220" b="237">ui_inGame2_PDA_icon_Stalker_guide<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_guide</text>
@@ -394,7 +394,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_machanik<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="185" g="220" b="237">ui_inGame2_PDA_icon_Stalker_machanik<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_mechanic</text>
@@ -402,7 +402,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="0" y="-12" width="32" height="40" stretch="1">
-					<texture r="220" g="220" b="220">ui_inGame2_PDA_icon_Stalker_Medic<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+					<texture r="185" g="220" b="237">ui_inGame2_PDA_icon_Stalker_Medic<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_medic</text>
@@ -418,7 +418,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="7" y="0" width="15" height="20" stretch="1">
-					<texture r="30" g="215" b="30">npc_marker_common</texture>
+					<texture r="122" g="204" b="102">npc_marker_common</texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_friends</text>
@@ -426,7 +426,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="7" y="0" width="15" height="20" stretch="1">
-					<texture r="225" g="225" b="225">npc_marker_common</texture>
+					<texture r="224" g="230" b="235">npc_marker_common</texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_neutrals</text>
@@ -434,7 +434,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="7" y="0" width="15" height="20" stretch="1">
-					<texture r="215" g="30" b="30">npc_marker_common</texture>
+					<texture r="230" g="69" b="69">npc_marker_common</texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_enemies</text>
@@ -442,7 +442,7 @@
 			</item>
 			<item x="0" y="0" width="200" height="35" align="c">
 				<image x="7" y="0" width="15" height="20" stretch="1">
-					<texture r="225" g="225" b="225">npc_marker_deadbody</texture>
+					<texture r="130" g="141" b="150">npc_marker_deadbody</texture>
 				</image>
 				<text_static x="35" y="3" width="230" height="16" complex_mode="1" align="c">
 					<text align="l" font="font_rubik_16" r="250" g="250" b="250" a="128">pda_legend_deadbodies</text>

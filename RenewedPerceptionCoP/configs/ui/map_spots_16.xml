@@ -22,21 +22,21 @@
                 <level_map spot="crlc_big_spot"                pointer="quest_pointer"/>
         </crlc_big>
         <crlc_big_spot  x="0" y="0" width="115" height="115" alignment="c" scale="1" scale_min="1" scale_max="3" stretch = "1">
-                <texture x="730" y="456" width="128" height="128">ui\ui_common<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture x="730" y="456" width="128" height="128">ui\ui_common<shadows thickness="0.5" r="0" g="0" b="0" a="0"/></texture>
         </crlc_big_spot>
 
         <crlc_mdl>
                 <level_map spot="crlc_mdl_spot"                pointer="quest_pointer"/>
         </crlc_mdl>
         <crlc_mdl_spot  x="0" y="0" width="62" height="62" alignment="c" scale="1" scale_min="1" scale_max="3" stretch = "1">
-                <texture x="858" y="392" width="128" height="128">ui\ui_common<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture x="858" y="392" width="128" height="128">ui\ui_common<shadows thickness="0.5" r="0" g="0" b="0" a="0"/></texture>
         </crlc_mdl_spot>
 
         <crlc_small>
                 <level_map spot="crlc_small_spot"        pointer="quest_pointer"/>
         </crlc_small>
         <crlc_small_spot  x="0" y="0" width="31" height="31" alignment="c" scale="1" scale_min="1" scale_max="3" stretch = "1">
-                <texture x="633" y="789" width="128" height="128">ui\ui_common<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture x="633" y="789" width="128" height="128">ui\ui_common<shadows thickness="0.5" r="0" g="0" b="0" a="0"/></texture>
         </crlc_small_spot>
 
         <blue_location>
@@ -168,11 +168,11 @@
                 <mini_map spot="treasure_spot_mini"/>
         </treasure>
         <treasure_spot width="52" height="52" alignment="c" stretch="1"><!-- scale="1" scale_min="1.1" scale_max="3.1" light_anim="map_spot_secrets" la_cyclic="0" la_texture="1" la_text="0" la_alpha="1"-->
-                <texture r="151" g="169" b="202">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="195" g="149" b="238">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </treasure_spot>
         <treasure_spot_mini width="48" height="52" alignment="c" stretch="1">
-                <texture r="151" g="169" b="202">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass x="0" y="-10" vert_align="center" width="40" height="40" r="151" g="169" b="202">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/>
+                <texture r="195" g="149" b="238">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <compass x="0" y="-10" vert_align="center" width="40" height="40" r="195" g="149" b="238">ui_inGame2_PDA_icon_secret<shadows thickness="0.5" r="0" g="0" b="0" a="100"/>
                 </compass>
         </treasure_spot_mini>
 		
@@ -181,11 +181,11 @@
                 <mini_map spot="personal_spot_mini"/>
         </personal_spot>
         <personal_spot_main width="48" height="52" alignment="c" stretch="1">
-                <texture r="221" g="35" b="96">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="245" g="91" b="116">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </personal_spot_main>
         <personal_spot_mini width="52" height="52" alignment="c" stretch="1">
-                <texture r="221" g="35" b="96">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass x="0" y="3" vert_align="center" width="40" height="40" r="221" g="35" b="96">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+                <texture r="245" g="91" b="116">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <compass x="0" y="-10" vert_align="center" width="40" height="40" r="245" g="91" b="116">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </personal_spot_mini>
 
         <alife_combat_fight>
@@ -224,7 +224,6 @@
                 <compass max_dist="150" vert_align="center"></compass>
         </alife_combat_attack_spot_mini>
 
-  <!--     -->
         <alife_combat>
                 <level_map spot="alife_combat_spot"/>
         </alife_combat>
@@ -241,10 +240,6 @@
                 <texture r="50" g="255" b="0">ui_minimap_point<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </debug_stalker_spot>
 
-
-
-
-<!--  -->
 		  <alife_presentation_faction_duty>
 			<level_map spot="alife_presentation_faction_duty_spot"/>
 		  </alife_presentation_faction_duty>
@@ -365,23 +360,23 @@
     <level_map spot="alife_presentation_smart_default_friend_spot"/>
   </alife_presentation_smart_default_friend>
   <alife_presentation_smart_default_friend_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="0" g="255" b="0">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="122" g="204" b="102">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_default_friend_spot>
   <alife_presentation_smart_territory_friend>
     <level_map spot="alife_presentation_smart_territory_friend_spot"/>
   </alife_presentation_smart_territory_friend>
   <alife_presentation_smart_territory_friend_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="0" g="255" b="0">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="122" g="204" b="102">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_territory_friend_spot>
   <alife_presentation_smart_base_friend>
     <level_map spot="alife_presentation_smart_base_friend_spot"/>
     <mini_map spot="alife_presentation_smart_base_friend_spot_mini"/>
   </alife_presentation_smart_base_friend>
   <alife_presentation_smart_base_friend_spot x="0" y="0" width="21" height="21" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="0" location_level="0">
-    <texture r="0" g="255" b="0">ui_pda2_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="122" g="204" b="102">ui_pda2_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_base_friend_spot>
         <alife_presentation_smart_base_friend_spot_mini  x="0" y="0" width="15" height="15" alignment="c" stretch="1" scale="0" scale_min="1" scale_max="3" location_level="0">
-                <texture r="0" g="255" b="0">ui_mmap_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="122" g="204" b="102">ui_mmap_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
                 <compass max_dist="5" vert_align="center"></compass>
         </alife_presentation_smart_base_friend_spot_mini>
 
@@ -389,36 +384,36 @@
     <level_map spot="alife_presentation_smart_science_friend_spot"/>
   </alife_presentation_smart_science_friend>
   <alife_presentation_smart_science_friend_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="0" g="255" b="0">ui_pda2_pt_science<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="122" g="204" b="102">ui_pda2_pt_science<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_science_friend_spot>
   <alife_presentation_smart_resource_friend>
     <level_map spot="alife_presentation_smart_resource_friend_spot"/>
   </alife_presentation_smart_resource_friend>
   <alife_presentation_smart_resource_friend_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="0" g="255" b="0">ui_pda2_pt_resource<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="122" g="204" b="102">ui_pda2_pt_resource<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_resource_friend_spot>
 
   <alife_presentation_smart_default_enemy>
     <level_map spot="alife_presentation_smart_default_enemy_spot"/>
   </alife_presentation_smart_default_enemy>
   <alife_presentation_smart_default_enemy_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="237" g="28" b="36">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="230" g="69" b="69">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_default_enemy_spot>
   <alife_presentation_smart_territory_enemy>
     <level_map spot="alife_presentation_smart_territory_enemy_spot"/>
   </alife_presentation_smart_territory_enemy>
   <alife_presentation_smart_territory_enemy_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="237" g="28" b="36">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="230" g="69" b="69">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_territory_enemy_spot>
   <alife_presentation_smart_base_enemy>
     <level_map spot="alife_presentation_smart_base_enemy_spot"/>
     <mini_map spot="alife_presentation_smart_base_enemy_spot_mini"/>
   </alife_presentation_smart_base_enemy>
   <alife_presentation_smart_base_enemy_spot x="0" y="0" width="21" height="21" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="0" location_level="0">
-    <texture r="237" g="28" b="36">ui_pda2_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="230" g="69" b="69">ui_pda2_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_base_enemy_spot>
         <alife_presentation_smart_base_enemy_spot_mini  x="0" y="0" width="15" height="15" alignment="c" stretch="1" scale="0" scale_min="1" scale_max="3" location_level="0">
-                <texture r="237" g="28" b="36">ui_mmap_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="230" g="69" b="69">ui_mmap_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
                 <compass max_dist="5" vert_align="center"></compass>
         </alife_presentation_smart_base_enemy_spot_mini>
 
@@ -427,13 +422,13 @@
     <level_map spot="alife_presentation_smart_science_enemy_spot"/>
   </alife_presentation_smart_science_enemy>
   <alife_presentation_smart_science_enemy_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="237" g="28" b="36">ui_pda2_pt_science<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="230" g="69" b="69">ui_pda2_pt_science<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_science_enemy_spot>
   <alife_presentation_smart_resource_enemy>
     <level_map spot="alife_presentation_smart_resource_enemy_spot"/>
   </alife_presentation_smart_resource_enemy>
   <alife_presentation_smart_resource_enemy_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="237" g="28" b="36">ui_pda2_pt_resource<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="230" g="69" b="69">ui_pda2_pt_resource<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_resource_enemy_spot>
 
 
@@ -441,23 +436,23 @@
     <level_map spot="alife_presentation_smart_default_neutral_spot"/>
   </alife_presentation_smart_default_neutral>
   <alife_presentation_smart_default_neutral_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="193" g="193" b="193">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="224" g="230" b="235">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_default_neutral_spot>
   <alife_presentation_smart_territory_neutral>
     <level_map spot="alife_presentation_smart_territory_neutral_spot"/>
   </alife_presentation_smart_territory_neutral>
   <alife_presentation_smart_territory_neutral_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="193" g="193" b="193">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="224" g="230" b="235">ui_pda2_pt_territory<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_territory_neutral_spot>
   <alife_presentation_smart_base_neutral>
     <level_map spot="alife_presentation_smart_base_neutral_spot"/>
     <mini_map spot="alife_presentation_smart_base_neutral_spot_mini"/>
   </alife_presentation_smart_base_neutral>
   <alife_presentation_smart_base_neutral_spot x="0" y="0" width="21" height="21" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="0" location_level="0">
-    <texture r="193" g="193" b="193">ui_pda2_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="224" g="230" b="235">ui_pda2_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_base_neutral_spot>
         <alife_presentation_smart_base_neutral_spot_mini  x="0" y="0" width="15" height="15" alignment="c" stretch="1" scale="0" scale_min="1" scale_max="3" location_level="0">
-                <texture r="193" g="193" b="193">ui_mmap_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="224" g="230" b="235">ui_mmap_base<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
                 <compass max_dist="5" vert_align="center"></compass>
         </alife_presentation_smart_base_neutral_spot_mini>
 
@@ -466,13 +461,13 @@
     <level_map spot="alife_presentation_smart_science_neutral_spot"/>
   </alife_presentation_smart_science_neutral>
   <alife_presentation_smart_science_neutral_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="193" g="193" b="193">ui_pda2_pt_science<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="224" g="230" b="235">ui_pda2_pt_science<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_science_neutral_spot>
   <alife_presentation_smart_resource_neutral>
     <level_map spot="alife_presentation_smart_resource_neutral_spot"/>
   </alife_presentation_smart_resource_neutral>
   <alife_presentation_smart_resource_neutral_spot x="0" y="0" width="27" height="27" alignment="c" stretch="1" scale_min="1" scale_max="3" scale="1" location_level="0">
-    <texture r="193" g="193" b="193">ui_pda2_pt_resource<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="224" g="230" b="235">ui_pda2_pt_resource<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_smart_resource_neutral_spot>
 
 
@@ -485,11 +480,11 @@
     <mini_map spot="alife_presentation_squad_friend_spot_mini"/>
   </alife_presentation_squad_friend>
   <alife_presentation_squad_friend_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="186" g="255" b="96">ui_mmap_squad_leader_2</texture>
+    <texture r="122" g="204" b="102">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_friend_spot>
   <alife_presentation_squad_friend_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="186" g="255" b="96">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="186" g="255" b="96">ui_mmap_squad_leader_2<shadows thickness="0"/></compass>
+    <texture r="122" g="204" b="102">ui_mmap_squad_leader_2</texture>
+    <compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="122" g="204" b="102">ui_mmap_squad_leader_2<shadows thickness="0"/></compass>
   </alife_presentation_squad_friend_spot_mini>
 
   <alife_presentation_squad_neutral>
@@ -497,11 +492,11 @@
     <mini_map spot="alife_presentation_squad_neutral_spot_mini"/>
   </alife_presentation_squad_neutral>
   <alife_presentation_squad_neutral_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="236" g="236" b="236">ui_mmap_squad_leader_2</texture>
+    <texture r="224" g="230" b="235">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_neutral_spot>
   <alife_presentation_squad_neutral_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="236" g="236" b="236">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="236" g="236" b="236">ui_mmap_squad_leader_2<shadows thickness="0"/></compass>
+    <texture r="224" g="230" b="235">ui_mmap_squad_leader_2</texture>
+    <compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="224" g="230" b="235">ui_mmap_squad_leader_2<shadows thickness="0"/></compass>
   </alife_presentation_squad_neutral_spot_mini>
 
 
@@ -510,11 +505,11 @@
 	<mini_map spot="alife_presentation_squad_enemy_spot_mini"/>
   </alife_presentation_squad_enemy>
   <alife_presentation_squad_enemy_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="255" g="47" b="47">ui_mmap_squad_leader_2</texture>
+    <texture r="230" g="69" b="69">ui_mmap_squad_leader_2</texture>
   </alife_presentation_squad_enemy_spot>
   <alife_presentation_squad_enemy_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="255" g="47" b="47">ui_mmap_squad_leader_2</texture>
-    <compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="255" g="47" b="47">ui_mmap_squad_leader_2<shadows thickness="0"/></compass>
+    <texture r="230" g="69" b="69">ui_mmap_squad_leader_2</texture>
+    <compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="230" g="69" b="69">ui_mmap_squad_leader_2<shadows thickness="0"/></compass>
   </alife_presentation_squad_enemy_spot_mini>
 
   <alife_presentation_squad_monster>
@@ -522,10 +517,10 @@
     <mini_map spot="alife_presentation_squad_monster_spot_mini" />
   </alife_presentation_squad_monster>
   <alife_presentation_squad_monster_spot x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="237" g="28" b="36">ui_pda2_squad_leader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="230" g="69" b="69">ui_pda2_squad_leader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_squad_monster_spot>
   <alife_presentation_squad_monster_spot_mini x="0" y="0" width="11" height="11" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
-    <texture r="237" g="28" b="36">ui_mmap_squad_leader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <texture r="230" g="69" b="69">ui_mmap_squad_leader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
   </alife_presentation_squad_monster_spot_mini>
   
   <alife_presentation_squad_friend_debug>
@@ -599,12 +594,12 @@
 	    <mini_map spot="storyline_task_spot_mini" pointer="quest_pointer2"/>
 	</storyline_task_location>
 	<storyline_task_spot x="0" y="0" width="60" height="60" stretch="1" alignment="c" location_level="5">
-	    <texture r="255" g="156" b="0" shader="hud\cursor">ui\ui_anim_quest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+	    <texture r="255" g="179" b="71">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 	</storyline_task_spot>
 
 	<storyline_task_spot_mini x="0" y="0" width="19" height="19" stretch="1" alignment="c" location_level="5">
-	    <texture r="255" g="156" b="0" shader="hud\cursor">ui\ui_anim_quest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-      <compass x="0" y="-9" vert_align="center" width="40" height="40" r="255" g="156" b="0">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+	    <texture r="255" g="179" b="71">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+      <compass x="0" y="-9" vert_align="center" width="40" height="40" r="255" g="179" b="71">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
 	    <texture_below>storyline_task_spot_below</texture_below>
 	    <texture_above>storyline_task_spot_above</texture_above>
 	</storyline_task_spot_mini>
@@ -615,12 +610,12 @@
 	</secondary_task_location>
 
 	<secondary_task_spot x="0" y="0" width="60" height="60" stretch="1" alignment="c" location_level="5">
-	    <texture r="32" g="206" b="255" shader="hud\cursor">ui\ui_anim_quest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+	    <texture r="224" g="230" b="235">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
 	</secondary_task_spot>
 
 	<secondary_task_spot_mini x="0" y="0" width="19" height="19" stretch="1" alignment="c" location_level="5">
-	    <texture r="32" g="206" b="255" shader="hud\cursor">ui\ui_anim_quest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-      <compass x="0" y="-9" vert_align="center" width="40" height="40" r="32" g="206" b="255">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+	    <texture r="224" g="230" b="235">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+      <compass x="0" y="-9" vert_align="center" width="40" height="40" r="224" g="230" b="235">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
 	    <texture_below>secondary_task_spot_below</texture_below>
 	    <texture_above>secondary_task_spot_above</texture_above>
 	</secondary_task_spot_mini>
@@ -628,13 +623,15 @@
     <ui_storyline_task_blink ttl="15" hint="disable_hint" location_level="-1">
         <level_map spot="ui_storyline_task_blink_spot"/>
     </ui_storyline_task_blink>
-    <ui_storyline_task_blink_spot x="0" y="0" width="0" height="0" stretch="1" alignment="c" location_level="-1">
+    <ui_storyline_task_blink_spot x="0" y="0" width="72" height="72" stretch="1" light_anim="new_task_highlight" light_anim_cyclic="1" la_texture="1" la_text="0" la_alpha="1" xform_anim="new_task_highlight_xform" xform_anim_cyclic="1" alignment="c" location_level="-1">
+        <texture r="255" g="179" b="71" shader="hud\cursor">ui\ui_anim_quest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
     </ui_storyline_task_blink_spot>
 
     <ui_secondary_task_blink ttl="15" hint="disable_hint" location_level="-1">
         <level_map spot="ui_secondary_task_blink_spot"/>
     </ui_secondary_task_blink>
-    <ui_secondary_task_blink_spot x="0" y="0" width="0" height="0" stretch="1" alignment="c" location_level="-1">
+    <ui_secondary_task_blink_spot x="0" y="0" width="72" height="72" stretch="1" light_anim="new_task_highlight_00" light_anim_cyclic="1" la_texture="1" la_text="0" la_alpha="1" xform_anim="new_task_highlight_xform" xform_anim_cyclic="1" alignment="c" location_level="-1">
+        <texture r="224" g="230" b="235" shader="hud\cursor">ui\ui_anim_quest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
     </ui_secondary_task_blink_spot>
 
         <!-- level_spot -->
@@ -643,11 +640,11 @@
                 <mini_map spot="ui_pda2_mechanic_location_mini_spot"/>
         </ui_pda2_mechanic_location>
         <ui_pda2_mechanic_location_spot x="0" y="0" width="50" height="50" stretch="1" alignment="c" location_level="-1" scale_min="3">
-                <texture>ui_inGame2_PDA_icon_Stalker_machanik<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_Stalker_machanik<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </ui_pda2_mechanic_location_spot>
         <ui_pda2_mechanic_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
                 <texture>ui_inGame2_PDA_icon_Stalker_machanik_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_machanik<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40" r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_Stalker_machanik<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </ui_pda2_mechanic_location_mini_spot>
 
         <ui_pda2_trader_location hint="st_ui_pda_legend_trader">
@@ -655,11 +652,11 @@
 				<mini_map spot="ui_pda2_trader_location_mini_spot" pointer="quest_pointer"/>
         </ui_pda2_trader_location>
         <ui_pda2_trader_location_spot x="0" y="0" width="50" height="50" stretch="1" alignment="c" location_level="-1" scale_min="3">
-                <texture>ui_inGame2_PDA_icon_Stalker_Trader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_Stalker_Trader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </ui_pda2_trader_location_spot>
         <ui_pda2_trader_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
                 <texture>ui_inGame2_PDA_icon_Stalker_Trader_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_Trader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40" r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_Stalker_Trader<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </ui_pda2_trader_location_mini_spot>
 
         <ui_pda2_scout_location hint="st_ui_pda_legend_scout">
@@ -670,8 +667,8 @@
                 <texture>ui_inGame2_PDA_icon_Stalker_guide<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </ui_pda2_scout_location_spot>
         <ui_pda2_scout_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
-                <texture>ui_inGame2_PDA_icon_Stalker_guide_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_guide<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+                <texture r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_Stalker_guide_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40" r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_Stalker_guide<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </ui_pda2_scout_location_mini_spot>
 
         <ui_pda2_quest_npc_location hint="st_ui_pda_legend_vip">
@@ -682,8 +679,8 @@
                 <texture>ui_inGame2_PDA_icon_Stalker_VIP<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </ui_pda2_quest_npc_location_spot>
         <ui_pda2_quest_npc_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
-                <texture>ui_inGame2_PDA_icon_Stalker_VIP<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass x="0" y="-8" width="18" height="18" max_dist="150" vert_align="center">ui_inGame2_PDA_icon_VIP<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+                <texture r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_Stalker_VIP<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <compass x="0" y="-8" width="18" height="18" max_dist="150" vert_align="center" r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_VIP<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </ui_pda2_quest_npc_location_mini_spot>
 
         <ui_pda2_medic_location hint="st_ui_pda_legend_medic">
@@ -694,8 +691,8 @@
                 <texture>ui_inGame2_PDA_icon_Stalker_Medic<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </ui_pda2_medic_location_spot>
         <ui_pda2_medic_location_mini_spot x="0" y="0" width="40" height="40" stretch="1" alignment="c" location_level="-1">
-                <texture>ui_inGame2_PDA_icon_Stalker_Medic_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_Medic<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+                <texture r="185" g="220" b="237" a="255">ui_inGame2_PDA_icon_Stalker_Medic_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <compass r="185" g="220" b="237" a="255" max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Stalker_Medic<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </ui_pda2_medic_location_mini_spot>
 
         <ui_pda2_actor_box_location hint="st_ui_pda_actor_box">
@@ -703,11 +700,11 @@
                 <mini_map spot="ui_pda2_actor_box_location_mini_spot"/>
         </ui_pda2_actor_box_location>
         <ui_pda2_actor_box_location_spot width="50" height="50" stretch="1" alignment="c" location_level="-1" scale_min="3">
-                <texture r="232" g="181" b="96">ui_inGame2_PDA_icon_Actor_Box<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="102" g="204" b="255" a="255">ui_inGame2_PDA_icon_Actor_Box<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </ui_pda2_actor_box_location_spot>
         <ui_pda2_actor_box_location_mini_spot width="40" height="40" stretch="1" alignment="c" location_level="-1">
-                <texture r="232" g="181" b="96">ui_inGame2_PDA_icon_Actor_Box_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40" r="232" g="181" b="96">ui_inGame2_PDA_icon_Actor_Box<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+                <texture r="102" g="204" b="255" a="255">ui_inGame2_PDA_icon_Actor_Box_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <compass r="102" g="204" b="255" a="255" max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Actor_Box<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </ui_pda2_actor_box_location_mini_spot>
 
         <ui_pda2_actor_sleep_location hint="st_ui_pda_sleep_place">
@@ -715,11 +712,11 @@
                 <mini_map spot="ui_pda2_actor_sleep_location_mini_spot"/>
         </ui_pda2_actor_sleep_location>
         <ui_pda2_actor_sleep_location_spot width="50" height="50" stretch="1" alignment="c" location_level="-1" scale_min="3">
-                <texture r="232" g="181" b="96">ui_inGame2_PDA_icon_Place_to_rest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="102" g="204" b="255" a="255">ui_inGame2_PDA_icon_Place_to_rest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </ui_pda2_actor_sleep_location_spot>
         <ui_pda2_actor_sleep_location_mini_spot width="40" height="40" stretch="1" alignment="c" location_level="-1">
-                <texture r="232" g="181" b="96">ui_inGame2_PDA_icon_Place_to_rest_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
-                <compass max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40" r="232" g="181" b="96">ui_inGame2_PDA_icon_Place_to_rest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
+                <texture r="102" g="204" b="255" a="255">ui_inGame2_PDA_icon_Place_to_rest_small<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <compass r="102" g="204" b="255" a="255" max_dist="150" x="0" y="-10" vert_align="center" width="40" height="40">ui_inGame2_PDA_icon_Place_to_rest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </ui_pda2_actor_sleep_location_mini_spot>
 
         <primary_object>
@@ -727,7 +724,7 @@
 <!--                <mini_map spot="primary_object_spot_mini"/> -->
         </primary_object>
         <primary_object_spot width="20" height="20" stretch="1" alignment="c" location_level="0" scale="1" scale_min="1" scale_max="10">
-                <texture r="255" g="255" b="255" a="255">ui_inGame2_PDA_icon_location_2<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <texture r="240" g="248" b="255" a="255">ui_inGame2_PDA_icon_location_2<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
         </primary_object_spot>
 <!--
         <primary_object_spot_mini  x="0" y="0" width="15" height="15" stretch="1" alignment="c" location_level="5">

@@ -15,23 +15,23 @@
 	</deadbody_location>
 
 	<enemy_mini_spot width="11" height="11" stretch="1" alignment="c" >
-		<texture r="255" g="47" b="47">ui_mmap_common_actor_2</texture>
-		<compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="255" g="47" b="47">ui_mmap_common_actor_2<shadows thickness="0"/></compass>
+		<texture r="230" g="69" b="69">ui_mmap_common_actor_2</texture>
+		<compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="230" g="69" b="69">ui_mmap_common_actor_2<shadows thickness="0"/></compass>
 	</enemy_mini_spot>
 
 	<neutral_mini_spot width="11" height="11" stretch="1" alignment="c">
-		<texture r="236" g="236" b="236">ui_mmap_common_actor_2</texture>
-		<compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="236" g="236" b="236">ui_mmap_common_actor_2<shadows thickness="0"/></compass>
+		<texture r="224" g="230" b="235">ui_mmap_common_actor_2</texture>
+		<compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="224" g="230" b="235">ui_mmap_common_actor_2<shadows thickness="0"/></compass>
 	</neutral_mini_spot>
 
 	<friend_mini_spot width="11" height="11" stretch="1" alignment="c">
-		<texture r="186" g="255" b="96">ui_mmap_common_actor_2</texture>
-		<compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="186" g="255" b="96">ui_mmap_common_actor_2<shadows thickness="0"/></compass>
+		<texture r="122" g="204" b="102">ui_mmap_common_actor_2</texture>
+		<compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="122" g="204" b="102">ui_mmap_common_actor_2<shadows thickness="0"/></compass>
 	</friend_mini_spot>
 
 	<deadbody_mini_spot width="11" height="11" stretch="1" alignment="c">
-		<texture r="160" g="160" b="160">ui_mmap_death_actor_2</texture>
-		<compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="160" g="160" b="160">ui_mmap_death_actor_2<shadows thickness="0"/></compass>
+		<texture r="130" g="141" b="150">ui_mmap_death_actor_2</texture>
+		<compass x="0" y="14" width="14" height="14" max_dist="5" vert_align="bottom" r="130" g="141" b="150">ui_mmap_death_actor_2<shadows thickness="0"/></compass>
 	</deadbody_mini_spot>
 	
 <!-- map_spot_new_xform

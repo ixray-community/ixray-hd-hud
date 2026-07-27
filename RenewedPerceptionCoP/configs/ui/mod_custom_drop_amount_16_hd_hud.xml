@@ -1,5 +1,5 @@
 <w>
-  <split_item x="256" y="200" width="512" height="260" stretch="1">
+  <split_item x="256" y="200" width="512" height="260" stretch="1" override="replace">
     <texture>ui_drop_amount_split_bg</texture>
 
     <item_title x="0" y="16" width="512" height="24" complex_mode="1">
@@ -22,14 +22,26 @@
     <button_decrement x="32" y="115" width="22" height="28" check_mode="0">
       <text font="font_rubik_16"></text>
       <texture>ui_drop_amount_btn_dec</texture>
+      <text_color>
+        <e r="193" g="201" b="209" a="255"/>
+        <t r="214" g="223" b="232" a="255"/>
+        <d r="122" g="135" b="148" a="255"/>
+        <h r="160" g="175" b="190" a="255"/>
+      </text_color>
     </button_decrement>
 
     <button_increment x="464" y="115" width="22" height="28" check_mode="0">
       <text font="font_rubik_16"></text>
       <texture>ui_drop_amount_btn_inc</texture>
+      <text_color>
+        <e r="193" g="201" b="209" a="255"/>
+        <t r="214" g="223" b="232" a="255"/>
+        <d r="122" g="135" b="148" a="255"/>
+        <h r="160" g="175" b="190" a="255"/>
+      </text_color>
     </button_increment>
 
-    <trackbar x="32" y="155" width="451" height="20" mode="integer" step="1" show_value="1"/>
+    <trackbar x="32" y="155" width="451" height="20" mode="float" step="1" show_value="1" out_num_of_signs="0"/>
 
     <value_min x="36" y="180" width="50" height="20" complex_mode="1">
       <text font="font_rubik_16" align="l">1</text>
@@ -42,21 +54,45 @@
     <button_half x="20" y="215" width="120" height="26" check_mode="0">
       <text font="ui_font_graffiti18">st_split_item_half</text>
       <texture>ui_drop_amount_btn_common</texture>
+      <text_color>
+        <e r="193" g="201" b="209" a="255"/>
+        <t r="214" g="223" b="232" a="255"/>
+        <d r="122" g="135" b="148" a="255"/>
+        <h r="160" g="175" b="190" a="255"/>
+      </text_color>
     </button_half>
     
     <button_all x="140" y="215" width="120" height="26" check_mode="0">
       <text font="ui_font_graffiti18">st_split_item_all</text>
       <texture>ui_drop_amount_btn_common</texture>
+      <text_color>
+        <e r="193" g="201" b="209" a="255"/>
+        <t r="214" g="223" b="232" a="255"/>
+        <d r="122" g="135" b="148" a="255"/>
+        <h r="160" g="175" b="190" a="255"/>
+      </text_color>
     </button_all>
 
     <button_cancel x="260" y="215" width="120" height="26" check_mode="0">
       <text font="ui_font_graffiti18">st_split_item_cancel</text>
       <texture>ui_drop_amount_btn_common</texture>
+      <text_color>
+        <e r="193" g="201" b="209" a="255"/>
+        <t r="214" g="223" b="232" a="255"/>
+        <d r="122" g="135" b="148" a="255"/>
+        <h r="160" g="175" b="190" a="255"/>
+      </text_color>
     </button_cancel>
 
     <button_accept x="380" y="215" width="120" height="26" check_mode="0">
       <text font="ui_font_graffiti18">st_split_item_accept</text>
       <texture>ui_drop_amount_btn_common</texture>
+      <text_color>
+        <e r="193" g="201" b="209" a="255"/>
+        <t r="214" g="223" b="232" a="255"/>
+        <d r="122" g="135" b="148" a="255"/>
+        <h r="160" g="175" b="190" a="255"/>
+      </text_color>
     </button_accept>
   </split_item>
 </w>
