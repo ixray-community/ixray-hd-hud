@@ -182,9 +182,15 @@
         </personal_spot>
         <personal_spot_main width="48" height="52" alignment="c" stretch="1">
                 <texture r="245" g="91" b="116">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <static_border x="-0.5" y="0" width="48" height="52" stretch="1" location_level="-1">
+                        <texture r="245" g="91" b="116" shader="hud\cursor">ui\quest_active</texture>
+                </static_border>
         </personal_spot_main>
         <personal_spot_mini width="52" height="52" alignment="c" stretch="1">
                 <texture r="245" g="91" b="116">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+                <static_border x="-0.5" y="0" width="52" height="52" stretch="1" location_level="-1">
+                        <texture r="245" g="91" b="116" shader="hud\cursor">ui\quest_active</texture>
+                </static_border>
                 <compass x="0" y="-10" vert_align="center" width="40" height="40" r="245" g="91" b="116">ui_inGame2_PDA_personal_spot<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
         </personal_spot_mini>
 
@@ -595,10 +601,16 @@
 	</storyline_task_location>
 	<storyline_task_spot x="0" y="0" width="60" height="60" stretch="1" alignment="c" location_level="5">
 	    <texture r="255" g="179" b="71">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+	    <static_border x="-0.5" y="0" width="60" height="60" stretch="1" location_level="-1">
+	        <texture r="255" g="179" b="71" shader="hud\cursor">ui\quest_active</texture>
+	    </static_border>
 	</storyline_task_spot>
 
 	<storyline_task_spot_mini x="0" y="0" width="19" height="19" stretch="1" alignment="c" location_level="5">
 	    <texture r="255" g="179" b="71">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+	    <static_border x="-0.5" y="0" width="19" height="19" stretch="1" location_level="-1">
+	        <texture r="255" g="179" b="71" shader="hud\cursor">ui\quest_active</texture>
+	    </static_border>
       <compass x="0" y="-9" vert_align="center" width="40" height="40" r="255" g="179" b="71">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
 	    <texture_below>storyline_task_spot_below</texture_below>
 	    <texture_above>storyline_task_spot_above</texture_above>
@@ -611,10 +623,16 @@
 
 	<secondary_task_spot x="0" y="0" width="60" height="60" stretch="1" alignment="c" location_level="5">
 	    <texture r="224" g="230" b="235">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+	    <static_border x="-0.5" y="0" width="60" height="60" stretch="1" location_level="-1">
+	        <texture r="224" g="230" b="235" shader="hud\cursor">ui\quest_active</texture>
+	    </static_border>
 	</secondary_task_spot>
 
 	<secondary_task_spot_mini x="0" y="0" width="19" height="19" stretch="1" alignment="c" location_level="5">
 	    <texture r="224" g="230" b="235">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+	    <static_border x="-0.5" y="0" width="19" height="19" stretch="1" location_level="-1">
+	        <texture r="224" g="230" b="235" shader="hud\cursor">ui\quest_active</texture>
+	    </static_border>
       <compass x="0" y="-9" vert_align="center" width="40" height="40" r="224" g="230" b="235">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></compass>
 	    <texture_below>secondary_task_spot_below</texture_below>
 	    <texture_above>secondary_task_spot_above</texture_above>
@@ -623,15 +641,13 @@
     <ui_storyline_task_blink ttl="15" hint="disable_hint" location_level="-1">
         <level_map spot="ui_storyline_task_blink_spot"/>
     </ui_storyline_task_blink>
-    <ui_storyline_task_blink_spot x="0" y="0" width="72" height="72" stretch="1" light_anim="new_task_highlight" light_anim_cyclic="1" la_texture="1" la_text="0" la_alpha="1" xform_anim="new_task_highlight_xform" xform_anim_cyclic="1" alignment="c" location_level="-1">
-        <texture r="255" g="179" b="71" shader="hud\cursor">ui\ui_anim_quest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <ui_storyline_task_blink_spot x="0" y="0" width="0" height="0" stretch="1" alignment="c" location_level="-1">
     </ui_storyline_task_blink_spot>
 
     <ui_secondary_task_blink ttl="15" hint="disable_hint" location_level="-1">
         <level_map spot="ui_secondary_task_blink_spot"/>
     </ui_secondary_task_blink>
-    <ui_secondary_task_blink_spot x="0" y="0" width="72" height="72" stretch="1" light_anim="new_task_highlight_00" light_anim_cyclic="1" la_texture="1" la_text="0" la_alpha="1" xform_anim="new_task_highlight_xform" xform_anim_cyclic="1" alignment="c" location_level="-1">
-        <texture r="224" g="230" b="235" shader="hud\cursor">ui\ui_anim_quest<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
+    <ui_secondary_task_blink_spot x="0" y="0" width="0" height="0" stretch="1" alignment="c" location_level="-1">
     </ui_secondary_task_blink_spot>
 
         <!-- level_spot -->
