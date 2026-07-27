@@ -179,30 +179,30 @@
 		<hint_wnd width="210" height="120"/>
 	</achievements_layout>
 
-	<achievements_wnd x="312" y="108" width="380" height="638"
+	<achievements_wnd x="312" y="110" width="367" height="620"
 		scroll_profile="default"
-		always_show_scroll="0"
+		always_show_scroll="1"
 		stretch="1"
-		vert_interval="0"
-		top_indent="4"
+		vert_interval="-3"
+		top_indent="8"
 		bottom_indent="4"
 		right_ident="10"/>
     <achievements_itm x="0" y="0" width="360" height="86" inverse_dir="0" stretch="1">
-		<achievements_row_stack x="0" y="0" width="360" height="86" sp_align="left" spacing="10"/>
-		<achievements_text_stack x="0" y="0" width="250" height="86" sp_align="top" spacing="4"/>
+		<achievements_row_stack x="0" y="0" width="360" height="86" sp_align="left" spacing="5"/>
+		<achievements_text_stack x="0" y="0" width="280" height="86" sp_align="top" spacing="10"/>
         <icon x="0" y="0" use_layout_size="1" stretch="1"/>
         <name x="0" y="0" use_layout_size="1">
-            <text align="l" font="font_oswald_20" r="200" g="200" b="200">test</text>
+            <text align="l" font="font_oswald_semibold_36" r="200" g="200" b="200">test</text>
         </name>
         <descr x="0" y="0" width="250" height="20" complex_mode="1">
-            <text align="l" font="font_rubik_16" r="150" g="150" b="150">test</text>
+            <text align="l" font="font_rubik_14" r="150" g="150" b="150">test</text>
         </descr>
 	    <hint_wnd x="0" y="0" use_layout_size="1">
 	        <background x="0" y="0" width="210" height="100" border="5">
 	            <texture>ui_icons_PDA_tooltips</texture>
 	        </background>
 	        <text x="10" y="10" width="190" height="100">
-	            <text font="font_rubik_16" r="150" g="150" b="150" complex_mode="1" align="l" vert_align="t"/>
+	            <text font="font_rubik_14" r="150" g="150" b="150" complex_mode="1" align="l" vert_align="t"/>
 	        </text>
 	    </hint_wnd>
     </achievements_itm>
