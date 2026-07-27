@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<w>
+	<file name="ui\ui_addon_inventory_16" scale="2">
+		<texture id="ui_inGame2_repair_panel_16" x="0" y="0" width="469" height="768" />
+		<texture id="ui_invaddon_backpack_16" x="555" y="0" width="469" height="768" />
+		<texture id="ui_invaddon_trade_16" x="555" y="862" width="469" height="162" />
+		<texture id="ui_invaddon_bigbutton_16_e" x="5" y="947" width="317" height="24" />
+		<texture id="ui_invaddon_bigbutton_16_h" x="5" y="971" width="317" height="24" />
+		<texture id="ui_invaddon_bigbutton_16_t" x="5" y="995" width="317" height="24" />
+		<texture id="ui_invaddon_bigbutton_16_d" x="5" y="947" width="317" height="24" />
+
+		<texture id="ui_inv_sort_all_e" x="12" y="780" width="54" height="29" />
+		<texture id="ui_inv_sort_all_h" x="12" y="813" width="54" height="29" />
+		<texture id="ui_inv_sort_all_t" x="12" y="847" width="54" height="29" />
+
+		<texture id="ui_inv_sort_weapons_e" x="66" y="780" width="54" height="29" />
+		<texture id="ui_inv_sort_weapons_h" x="66" y="813" width="54" height="29" />
+		<texture id="ui_inv_sort_weapons_t" x="66" y="847" width="54" height="29" />
+
+		<texture id="ui_inv_sort_ammo_e" x="120" y="780" width="54" height="29" />
+		<texture id="ui_inv_sort_ammo_h" x="120" y="813" width="54" height="29" />
+		<texture id="ui_inv_sort_ammo_t" x="120" y="847" width="54" height="29" />
+
+		<texture id="ui_inv_sort_armor_e" x="174" y="780" width="54" height="29" />
+		<texture id="ui_inv_sort_armor_h" x="174" y="813" width="54" height="29" />
+		<texture id="ui_inv_sort_armor_t" x="174" y="847" width="54" height="29" />
+
+		<texture id="ui_inv_sort_devices_e" x="228" y="780" width="54" height="29" />
+		<texture id="ui_inv_sort_devices_h" x="228" y="813" width="54" height="29" />
+		<texture id="ui_inv_sort_devices_t" x="228" y="847" width="54" height="29" />
+
+		<texture id="ui_inv_sort_consumables_e" x="282" y="780" width="54" height="29" />
+		<texture id="ui_inv_sort_consumables_h" x="282" y="813" width="54" height="29" />
+		<texture id="ui_inv_sort_consumables_t" x="282" y="847" width="54" height="29" />
+
+		<texture id="ui_inv_sort_artefacts_e" x="336" y="780" width="54" height="29" />
+		<texture id="ui_inv_sort_artefacts_h" x="336" y="813" width="54" height="29" />
+		<texture id="ui_inv_sort_artefacts_t" x="336" y="847" width="54" height="29" />
+
+		<texture id="ui_inv_sort_attachments_e" x="390" y="780" width="54" height="29" />
+		<texture id="ui_inv_sort_attachments_h" x="390" y="813" width="54" height="29" />
+		<texture id="ui_inv_sort_attachments_t" x="390" y="847" width="54" height="29" />
+	</file>
+</w>

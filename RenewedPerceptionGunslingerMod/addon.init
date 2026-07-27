@@ -1,3 +1,5 @@
 name: RenewedPerceptionGunslingerMod
 platform: cop
-depends: RenewedPerceptionCop, GunslingerModCop
+depends:
+  - RenewedPerceptionCoP
+  - GunslingerModCop

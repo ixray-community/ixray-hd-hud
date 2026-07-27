@@ -12,11 +12,6 @@
 		<texture>ui_inGame2_repair_button</texture>
 		<text align="c" font="letterica18" r="200" g="200" b="200">ui_st_inv_repair</text>
 	</repair_button>
-	<disassemble_button x="16" y="111" width="68" height="29" hint="ui_gunsl_disassemble_button_hint" stretch="1">
-		<window_name>gunsl_disassemble_button</window_name>
-		<texture>ui_inGame2_repair_button</texture>
-		<text align="c" font="letterica18" r="200" g="200" b="200">ui_gunsl_disassemble</text>
-	</disassemble_button>
 	<cell_states>
 	    <state>
 	        <type>enabled</type>

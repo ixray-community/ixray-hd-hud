@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<w>
+	<file name="ui\ui_hud_indicators" scale="2">
+		<texture id="ui_inGame2_circle_thirst_green" x="535" y="23" width="38" height="38" />
+		<texture id="ui_inGame2_circle_thirst_yellow" x="535" y="76" width="38" height="38" />
+		<texture id="ui_inGame2_circle_thirst_orange" x="535" y="129" width="38" height="38" />
+		<texture id="ui_inGame2_circle_thirst_red" x="535" y="183" width="38" height="38" />
+
+		<texture id="ui_inGame2_circle_sleepiness_green" x="433" y="23" width="38" height="38" />
+		<texture id="ui_inGame2_circle_sleepiness_yellow" x="433" y="76" width="38" height="38" />
+		<texture id="ui_inGame2_circle_sleepiness_orange" x="433" y="129" width="38" height="38" />
+		<texture id="ui_inGame2_circle_sleepiness_red" x="433" y="183" width="38" height="38" />
+	</file>
+</w>
