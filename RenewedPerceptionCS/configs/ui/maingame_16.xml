@@ -87,7 +87,7 @@
 	<new_contact_snd>detectors\contact_1</new_contact_snd>	
 
 	<quick_slot0 x="436" y="705" width="20" height="27" stretch="1">
-		<auto_static x="-7" y="-9" width="38" height="50" stretch="1">
+		<auto_static x="-5" y="-9" width="32" height="50" stretch="1">
 			<texture>ui_inGame2_quick_slot_background</texture>
 		</auto_static>
 		<counter x="9" y="23.5" width="20" height="18" stretch="1">
@@ -96,7 +96,7 @@
 		</counter>
 	</quick_slot0>
 	<quick_slot1 x="476" y="705" width="20" height="27" stretch="1">
-		<auto_static x="-7" y="-9" width="38" height="50" stretch="1">
+		<auto_static x="-5" y="-9" width="32" height="50" stretch="1">
 			<texture>ui_inGame2_quick_slot_background</texture>
 		</auto_static>
 		<counter x="9" y="23.5" width="20" height="18" stretch="1">
@@ -105,7 +105,7 @@
 		</counter>
 	</quick_slot1>
 	<quick_slot2 x="516" y="705" width="20" height="27" stretch="1">
-		<auto_static x="-7" y="-9" width="38" height="50" stretch="1">
+		<auto_static x="-5" y="-9" width="32" height="50" stretch="1">
 			<texture>ui_inGame2_quick_slot_background</texture>
 		</auto_static>
 		<counter x="9" y="23.5" width="20" height="18" stretch="1">
@@ -114,7 +114,7 @@
 		</counter>
 	</quick_slot2>
 	<quick_slot3 x="556" y="705" width="20" height="27" stretch="1">
-		<auto_static x="-7" y="-9" width="38" height="50" stretch="1">
+		<auto_static x="-5" y="-9" width="32" height="50" stretch="1">
 			<texture>ui_inGame2_quick_slot_background</texture>
 		</auto_static>
 		<counter x="9" y="23.5" width="20" height="18" stretch="1">

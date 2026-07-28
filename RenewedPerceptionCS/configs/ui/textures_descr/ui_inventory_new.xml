@@ -1,0 +1,9 @@
+<w>
+    <file name="ui\ui_inventory_new">
+	    <texture id="ui_inGame2_inventory_backpack_new" x="2822" y="0" width="1274" height="2048" />
+	    <texture id="ui_inGame2_inventory_slots_new" x="1714" y="0" width="1108" height="2048" />
+	    <texture id="ui_inGame2_inventory_health_progess_new" x="1073" y="13" width="616" height="32" />
+	    <texture id="ui_inGame2_inventory_condition_progess_new" x="1465" y="47" width="224" height="10" />
+
+	</file>
+</w>
