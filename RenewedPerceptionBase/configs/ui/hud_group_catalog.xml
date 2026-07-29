@@ -23,12 +23,14 @@
 		<section name="ammo_9x18_pmm">ui_hud_caliber_9x18_ap</section>
 		<section name="ammo_9x19_pbp">ui_hud_caliber_9x19_ap</section>
 		<section name="ammo_11.43x23_hydro">ui_hud_caliber_45</section>
+		<section name="ammo_7.62x54_7h14">ui_hud_caliber_762</section>
 	</group>
 	<group icon="ui_ammo_caliber_icon_buck">
 		<section name="ammo_12x70_buck">ui_hud_caliber_1270</section>
 	</group>
 	<group icon="ui_ammo_caliber_icon_zhekan">
 		<section name="ammo_12x76_zhekan">ui_hud_caliber_1270</section>
+		<section name="ammo_12x76_dart">ui_hud_caliber_1270</section>
 	</group>
 	<group icon="ui_ammo_caliber_icon_rpg">
 		<section name="ammo_og-7b">ui_hud_caliber_gl</section>
