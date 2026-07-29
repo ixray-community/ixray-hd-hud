@@ -50,8 +50,8 @@
     <text align="r" font="font_oswald_30"/>
   </actor_money_static>
 
-  <partner_money_static x="5" y="116" width="67" height="20">
-    <text align="r" font="graffiti22" color="ui_7"/>
+  <partner_money_static x="5" y="106" width="67" height="20">
+    <text align="r" font="font_oswald_30"/>
   </partner_money_static>
   
   	<inventory_slot_wnd>
@@ -135,8 +135,8 @@
 		</slot>
 	</inventory_slot_wnd>
 	
-	<quick_slot_highlight x="380" y="363" width="60" height="59" dx="67" stretch="1">
-		<texture>ui_inGame2_quick_item_highlighter</texture>
+	<quick_slot_highlight x="376.5" y="360" width="64" height="69" dx="67.5" stretch="1">
+		<texture>ui_inGame2_inventory_detector_highlight_cs</texture>
 	</quick_slot_highlight>
 	<artefact_slot_highlight x="383" y="476" width="48" height="58" dx="65" stretch="1">
 		<texture>ui_inGame2_artefakt_highlighter</texture>
@@ -165,11 +165,11 @@
 		<text align="l" font="font_oswald_24" color="gray"/>
 	</actor_weight_max>
 
-	<partner_weight_caption x="160" y="738" width="71" height="14">
-        <text align="r" font="letterica16" color="ui_3">ui_total_weight</text>
+	<partner_weight_caption x="160" y="732" width="71" height="14">
+        <text align="r" font="font_oswald_24" color="gray">ui_total_weight</text>
     </partner_weight_caption>
-   <partner_weight x="335" y="738" width="38" height="14">
-    <text align="l" font="letterica16" color="ui_7"/>
+   <partner_weight x="335" y="732" width="38" height="14">
+    <text align="l" font="font_oswald_24"/>
   </partner_weight>
 
   <left_delimiter_frl  x="-5" y="326" width="280" height="39" stretch="1">
@@ -210,8 +210,8 @@
     <texture>ui_inGame2_inventory_backpack_new</texture>
   </left_background>
 	
-  <belt_list_over x="375" y="445" width="48" height="58" dx="56" stretch="1">
-	<texture a="255">ui_closed_af_slot</texture>
+  <belt_list_over x="373" y="445" width="46" height="58" dx="56" stretch="1">
+	<texture a="255">ui_inGame2_inventory_af_block</texture>
   </belt_list_over>
 
   <dragdrop_trash x="0" y="0" width="353" height="768"
@@ -221,7 +221,7 @@
           cell_width="32" cell_height="41" rows_num="13" cols_num="10"
           unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
 
-  <dragdrop_belt x="390" y="377" width="320" height="38"
+  <dragdrop_belt x="385" y="457" width="320" height="38"
           cell_width="27" cell_height="35" rows_num="1" cols_num="5"
 		  cell_sp_x="27" cell_sp_y="0" a="0"/>
 
@@ -322,18 +322,18 @@
   <actor_state_info x="360" y="450" width="300" height="310">
 	
 	<hint_wnd x="0" y="0" width="175" height="100">
-		<background x="0" y="0" width="175" height="100" border="10" stretch="1">
-			<texture a="100">ui_temp_frame</texture>
-		</background>
-		<text x="17" y="20" width="158" height="100">
-			<text font="letterica16" color="ui_6" complex_mode="1" align="l" vert_align="t"/>
-		</text>
+	    <background x="0" y="0" width="210" height="100">
+		    <texture>ui_inGame2_hint_wnd_main_window</texture>
+	    </background>
+	    <text x="20" y="20" width="190" height="100">
+	    	<text font="letterica16" color="ui_6" complex_mode="1" align="l" vert_align="t"/>
+	    </text>
 	</hint_wnd>
 
   <health_state x="23" y="92" width="260" height="30">
         <hint_text delay="800">st_ui_health_static</hint_text>
-		<icon x="3" y="5" width="18" height="22" magnitude="100" light_anim="ui_slow_blinking" la_cyclic="1" la_texture="1" la_text="0" la_alpha="1" stretch="1">
-			<texture a="255">ui_char_bleeding</texture>
+		<icon x="3" y="0" width="23" height="32" magnitude="100" light_anim="ui_slow_blinking" la_cyclic="1" la_texture="1" la_text="0" la_alpha="1" stretch="1">
+			<texture a="255">ui_inGame2_inventory_bleeding</texture>
 		</icon>
 		<state_progress x="43.5" y="10" width="175" height="14" horz="1" min="0" max="1" pos="0"
 		expression="fltPlayerHealth">
@@ -345,66 +345,49 @@
 
 	<main_sensor x="110" y="150" width="83" height="100">
 		<hint_text delay="800">st_ui_main_sensor</hint_text>
-		<icon x="15" y="54" width="55" height="51" stretch="1">
-			<texture>ui_hud2_rad01_over</texture>
+		<icon x="0" y="3" width="75" height="104" stretch="1">
+			<texture>ui_inGame2_inventory_rad_overlay</texture>
 		</icon>
-		<arrow x="38" y="32" width="9" height="97" heading="1" clockwise="1" begin_angle="0.75" end_angle="-0.75" ang_velocity="0.75">
-			<texture a="255">ui_hud2_rad01_arrow</texture>
+		<arrow x="32" y="35" width="13" height="85" heading="1" clockwise="1" begin_angle="0.75" end_angle="-0.75" ang_velocity="0.75" stretch="1">
+			<texture a="255">ui_inGame2_inventory_indicator_arrow_main</texture>
 		</arrow>
-		<arrow_shadow x="40" y="34" width="9" height="97" heading="1" clockwise="1" begin_angle="0.75" end_angle="-0.8" ang_velocity="0.75">
-			<texture a="250">ui_hud2_rad01_arrow_shadow</texture>
-		</arrow_shadow>
 		
-		<progress_shape x="3" y="40" width="96" height="96" sector_count="36" clockwise="1" blend="0" begin_angle="0.75" end_angle="-0.75">
-			<front x="0" y="0" width="80" height="96" stretch="1">
+		<progress_shape x="6" y="34" width="96" height="96" sector_count="36" clockwise="1" blend="0" begin_angle="0.75" end_angle="-0.75">
+			<front x="0" y="0" width="62" height="96" stretch="1">
 				<texture>ui_hud2_rad01_progress</texture>
 			</front>
 		</progress_shape>
 
 	</main_sensor>
 	
-	<radia_sensor x="25" y="132" width="78" height="67">
+	<radia_sensor x="25" y="134" width="78" height="67">
 		<hint_text delay="800">st_ui_radia_sensor</hint_text>
 		<icon x="6" y="46" width="17" height="20" magnitude="100">
 			<text align="c" vert_align="c" font="font_oswald_30" r="233" g="232" b="226">99</text>
 		</icon>
-		<arrow x="48" y="14" width="9" height="39" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.4">
-			<texture a="255">ui_char_arrow</texture>
+		<arrow x="48" y="18" width="5" height="30" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.4" stretch="1">
+			<texture a="255">ui_inGame2_inventory_indicator_arrow</texture>
 		</arrow>
-		<arrow_shadow x="49" y="16" width="9" height="39" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.45">
-			<texture a="150">ui_char_arrow_shadow</texture>
-		</arrow_shadow>
 	</radia_sensor>
 	
-	<fire_sensor x="200" y="132" width="78" height="67">
+	<fire_sensor x="200" y="134" width="78" height="67">
 		<hint_text delay="800">st_ui_fire_sensor</hint_text>
 		<icon x="57" y="46" width="17" height="20" magnitude="100">
 			<text align="c" vert_align="c" font="font_oswald_30" r="233" g="232" b="226">99</text>
 		</icon>
-		<arrow x="14" y="14" width="9" height="39" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.4">
-			<texture a="255">ui_char_arrow</texture>
+		<arrow x="14" y="18" width="5" height="30" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.4" stretch="1">
+			<texture a="255">ui_inGame2_inventory_indicator_arrow</texture>
 		</arrow>
-		<arrow_shadow x="15" y="16" width="9" height="39" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.45">
-			<texture a="150">ui_char_arrow_shadow</texture>
-		</arrow_shadow>
 	</fire_sensor>
 
-	<acid_sensor x="25" y="206" width="78" height="67">
+	<acid_sensor x="25" y="208" width="78" height="67">
 		<hint_text delay="800">st_ui_acid_sensor</hint_text>
 		<icon x="6" y="13" width="17" height="20" magnitude="100">
 			<text align="c" vert_align="c" font="font_oswald_30" r="233" g="232" b="226">99</text>
 		</icon>
-		<arrow x="48" y="14" width="9" height="39" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.4">
-			<texture a="255">ui_char_arrow</texture>
+		<arrow x="48" y="18" width="5" height="30" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.4" stretch="1">
+			<texture a="255">ui_inGame2_inventory_indicator_arrow</texture>
 		</arrow>
-		<arrow_shadow x="49" y="16" width="9" height="39" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.45">
-			<texture a="150">ui_char_arrow_shadow</texture>
-		</arrow_shadow>
-		<!--progress_shape x="38" y="15" width="31" height="31" sector_count="24" clockwise="1" blend="0" begin_angle="2.4" end_angle="-2.4">
-			<front x="0" y="0" width="26" height="31" stretch="1">
-				<texture>ui_char_resist_acid</texture>
-			</front>
-		</progress_shape-->
 	</acid_sensor>
 
 	<psi_sensor x="200" y="208" width="78" height="67">
@@ -412,17 +395,9 @@
 		<icon x="57" y="13" width="17" height="20" magnitude="100">
 			<text align="c" vert_align="c" font="font_oswald_30" r="233" g="232" b="226">99</text>
 		</icon>
-		<arrow x="14" y="14" width="9" height="39" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.4">
-			<texture a="255">ui_char_arrow</texture>
+		<arrow x="14" y="18" width="5" height="30" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.4" stretch="1">
+			<texture a="255">ui_inGame2_inventory_indicator_arrow</texture>
 		</arrow>
-		<arrow_shadow x="15" y="16" width="9" height="39" heading="1" clockwise="1" begin_angle="2.4" end_angle="-2.45">
-			<texture a="150">ui_char_arrow_shadow</texture>
-		</arrow_shadow>
-		<!--progress_shape x="14" y="15" width="31" height="31" sector_count="24" clockwise="1" blend="0" begin_angle="2.4" end_angle="-2.4">
-			<front x="0" y="0" width="26" height="31" stretch="1">
-				<texture>ui_char_resist_psi</texture>
-			</front>
-		</progress_shape-->
 	</psi_sensor>
 
   </actor_state_info>

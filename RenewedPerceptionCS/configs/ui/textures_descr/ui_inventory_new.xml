@@ -8,6 +8,11 @@
 	    <texture id="ui_inGame2_inventory_detector_highlight_cs" x="1076" y="543" width="280" height="165" />
 	    <texture id="ui_inGame2_inventory_outfit_highlight_cs" x="1076" y="70" width="280" height="441" />
 	    <texture id="ui_inGame2_inventory_weapon_highlight_cs" x="1418" y="70" width="275" height="835" />
+	    <texture id="ui_inGame2_inventory_bleeding" x="1301" y="724" width="84" height="84" />
+		<texture id="ui_inGame2_inventory_rad_overlay" x="569" y="23" width="275" height="275"/>
+		<texture id="ui_inGame2_inventory_indicator_arrow" x="897" y="107" width="14" height="70"/>
+		<texture id="ui_inGame2_inventory_indicator_arrow_main" x="919" y="107" width="14" height="70"/>
+		<texture id="ui_inGame2_inventory_af_block" x="1077" y="717" width="180" height="180"/>
 
 	</file>
 </w>
