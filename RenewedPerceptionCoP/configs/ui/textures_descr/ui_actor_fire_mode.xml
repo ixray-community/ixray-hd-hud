@@ -3,7 +3,7 @@
     <file name="ui\ui_actor_fire_mode">
 		<texture id="ui_inGame2_icon_fmode_1" x="0" y="0" width="256" height="256" />
 		<texture id="ui_inGame2_icon_fmode_a" x="256" y="0" width="256" height="256" />
-		<texture id="ui_inGame2_icon_fmode_3" x="0" y="256" width="326" height="256" />
+		<texture id="ui_inGame2_icon_fmode_3" x="0" y="256" width="256" height="256" />
 		<texture id="ui_inGame2_icon_fmode_2" x="256" y="256" width="256" height="256" />
     </file>
 </w>

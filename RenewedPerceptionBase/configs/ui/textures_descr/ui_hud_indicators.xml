@@ -1,9 +1,0 @@
-<w>
-    <file name="ui\ui_hud_indicators" scale="2">
-		<!--Caliber icon-->
-		<texture id="ui_ammo_caliber_icon_type_1" x="30" y="461" width="30" height="30"/>
-		<texture id="ui_ammo_caliber_icon_type_2" x="72" y="461" width="30" height="30"/>
-		<texture id="ui_ammo_caliber_icon_type_3" x="111" y="461" width="30" height="30"/>
-		<texture id="ui_ammo_caliber_icon_type_4" x="152" y="461" width="30" height="30"/>
-	</file> 
-</w>

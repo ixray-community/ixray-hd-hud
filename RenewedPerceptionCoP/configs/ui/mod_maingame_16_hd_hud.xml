@@ -225,7 +225,7 @@
 			<caliber_text x="-2" y="6.5" width="30" height="20" stretch="1">
 				<text font="font_oswald_18" align="r" vert_align="l" r="230" g="236" b="236" a="255"/>
 			</caliber_text>
-			<caliber_icon x="29" y="4" width="16" height="20" align="l" stretch="1"/>
+			<caliber_icon x="29" y="2" width="18" height="24" align="l" stretch="1"/>
 		</static_wpn_icon>
 
 <!--
