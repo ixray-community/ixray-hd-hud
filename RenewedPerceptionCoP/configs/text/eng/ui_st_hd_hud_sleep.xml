@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<string_table>
+	<string id="st_hd_sleep_time_now">
+		<text>Now: %s</text>
+	</string>
+	<string id="st_hd_sleep_duration">
+		<text>Sleep: %d%s</text>
+	</string>
+	<string id="st_hd_sleep_wake_time">
+		<text>Wake: %s</text>
+	</string>
+</string_table>

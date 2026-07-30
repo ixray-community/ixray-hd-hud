@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<w>
+	<sleep_params
+		panorama_texture="ui_sleep_wnd_new_panorama"
+		panorama_mode="0"
+		panorama_hours="24"
+		panorama_bind="wake"
+		panorama_smooth_speed="25"
+		panorama_scale="native"
+		panorama_tex_scale="2"
+		panorama_wrap="1"
+		min_hours="1"
+		max_hours="24"
+		preset_spacing="4"
+		presets_confirm="0"
+		marker_min_x="0"
+		track_smooth_speed="25"
+		fmt_time_now="st_hd_sleep_time_now"
+		fmt_sleep_duration="st_hd_sleep_duration"
+		fmt_wake_time="st_hd_sleep_wake_time"
+		time_precision="minutes"
+		time_separator=":"
+	/>
+
+	<background x="266" y="249" width="500" height="270" stretch="1">
+		<texture>ui_sleep_wnd_new_bg</texture>
+	</background>
+
+	<st_time_now x="26" y="24" width="156" height="18" complex_mode="0">
+		<text align="l" vert_align="c" font="font_rubik_16" r="160" g="170" b="180"/>
+	</st_time_now>
+	<st_sleep_duration x="162" y="24" width="156" height="18" complex_mode="0">
+		<text align="c" vert_align="c" font="font_rubik_16" r="160" g="170" b="180"/>
+	</st_sleep_duration>
+	<st_wake_time x="322" y="24" width="156" height="18" complex_mode="0">
+		<text align="r" vert_align="c" font="font_rubik_16" r="160" g="170" b="180"/>
+	</st_wake_time>
+
+	<static_cover x="15" y="18" width="474" height="186" stretch="1">
+		<texture>ui_sleep_wnd_new_cover</texture>
+	</static_cover>
+
+	<sleep_static x="16" y="44" width="470" height="100" stretch="1">
+		<texture>ui_sleep_wnd_new_panorama</texture>
+	</sleep_static>
+
+	<st_marker x="16" y="44" width="18" height="100" stretch="1">
+		<texture>ui_sleep_wnd_new_marker</texture>
+	</st_marker>
+
+	<time_track x="16" y="175" width="470" height="14" is_integer="1" step="1">
+		<options_item entry="g_sleep_time" group="sleep" depend="runtime"/>
+	</time_track>
+
+	<sleep_hours_strip x="16" y="154" width="470" height="14" count="24" complex_mode="0">
+		<text align="c" vert_align="c" font="font_rubik_14" r="160" g="170" b="180"/>
+	</sleep_hours_strip>
+
+	<sleep_preset_btn x="110" y="212" width="67" height="24" check_mode="0" stretch="1">
+		<text font="font_oswald_22" align="c"/>
+		<texture_e>ui_inGame2_big_inventory_button_e</texture_e>
+		<texture_h>ui_inGame2_big_inventory_button_h</texture_h>
+		<texture_t>ui_inGame2_big_inventory_button_t</texture_t>
+		<texture_d>ui_inGame2_big_inventory_button_d</texture_d>
+		<text_color>
+	        <e r="193" g="201" b="209" a="255"/>
+	        <t r="214" g="223" b="232" a="255"/>
+	        <d r="122" g="135" b="148" a="255"/>
+	        <h r="160" g="175" b="190" a="255"/>
+		</text_color>
+	</sleep_preset_btn>
+
+	<btn_sleep x="110" y="240" width="138" height="24" check_mode="0" stretch="1">
+		<window_name>button_yes</window_name>
+		<text font="font_oswald_22">sleep_ok_button</text>
+		<texture_e>ui_inGame2_big_inventory_button_e</texture_e>
+		<texture_h>ui_inGame2_big_inventory_button_h</texture_h>
+		<texture_t>ui_inGame2_big_inventory_button_t</texture_t>
+		<texture_d>ui_inGame2_big_inventory_button_d</texture_d>
+		<text_color>
+	        <e r="193" g="201" b="209" a="255"/>
+	        <t r="214" g="223" b="232" a="255"/>
+	        <d r="122" g="135" b="148" a="255"/>
+	        <h r="160" g="175" b="190" a="255"/>
+		</text_color>
+	</btn_sleep>
+
+	<btn_cancel x="253" y="240" width="138" height="24" check_mode="0" stretch="1">
+		<window_name>button_no</window_name>
+		<text font="font_oswald_22">Btn_Cancel</text>
+		<texture_e>ui_inGame2_big_inventory_button_e</texture_e>
+		<texture_h>ui_inGame2_big_inventory_button_h</texture_h>
+		<texture_t>ui_inGame2_big_inventory_button_t</texture_t>
+		<texture_d>ui_inGame2_big_inventory_button_d</texture_d>
+		<text_color>
+	        <e r="193" g="201" b="209" a="255"/>
+	        <t r="214" g="223" b="232" a="255"/>
+	        <d r="122" g="135" b="148" a="255"/>
+	        <h r="160" g="175" b="190" a="255"/>
+		</text_color>
+	</btn_cancel>
+</w>

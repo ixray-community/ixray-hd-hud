@@ -1,0 +1,42 @@
+this.pending = false
+this.presets = { 1, 3, 6, 12 }
+
+function sleep()
+	this.pending = true
+end
+
+function main()
+	sleep()
+end
+
+function open()
+	local hud = get_hud()
+	if not hud then
+		printf("! [hd_hud] sleep: get_hud() is nil")
+		return false
+	end
+
+	local ok, err = pcall(function()
+		hud:SetSleepHourPresets(this.presets)
+		hud:ShowSleepDialog()
+	end)
+	if not ok then
+		printf("! [hd_hud] sleep: ShowSleepDialog failed: %s", tostring(err))
+		return false
+	end
+	return true
+end
+
+function consume_pending()
+	if not this.pending then
+		return
+	end
+	this.pending = false
+	if not open() then
+		printf("! [hd_hud] sleep: native CUISleepWnd unavailable")
+	end
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_update", this.consume_pending)
+end

@@ -1,0 +1,22 @@
+<w>
+	<file name="ui\ui_actor_sleep_wnd_new" scale="2">
+		<texture id="ui_sleep_wnd_new_bg" x="0" y="0" width="676" height="270" />
+
+		<texture id="ui_sleep_wnd_new_cover_lt"   x="14"  y="282" width="32"  height="32"  />
+		<texture id="ui_sleep_wnd_new_cover_t"    x="46"  y="282" width="577" height="32"  />
+		<texture id="ui_sleep_wnd_new_cover_rt"   x="623" y="282" width="32"  height="32"  />
+
+		<texture id="ui_sleep_wnd_new_cover_l"    x="14"  y="314" width="32"  height="124" />
+		<texture id="ui_sleep_wnd_new_cover_back" x="46"  y="314" width="577" height="124" />
+		<texture id="ui_sleep_wnd_new_cover_r"    x="623" y="314" width="32"  height="124" />
+
+		<texture id="ui_sleep_wnd_new_cover_lb"   x="14"  y="438" width="32"  height="32"  />
+		<texture id="ui_sleep_wnd_new_cover_b"    x="46"  y="438" width="577" height="32"  />
+		<texture id="ui_sleep_wnd_new_cover_rb"   x="623" y="438" width="32"  height="32"  />
+
+		<texture id="ui_sleep_wnd_new_marker" x="14" y="617" width="31" height="117" />
+	</file>
+	<file name="ui\ui_actor_sleep_panorama" scale="2">
+		<texture id="ui_sleep_wnd_new_panorama" x="0" y="0" width="1024" height="128" />
+	</file>
+</w>
