@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<w>
+	<cell_item_text x="0" y="0" width="24" height="16" stretch="1" anchor="bottom_right" override="replace">
+		<texture a="0">ui_item_count_back_2</texture>
+		<text x="-3" y="0" width="24" height="16" font="font_rubik_24" r="225" g="225" b="225" align="r" vert_align="b">
+			<shadows thickness="0.75" r="0" g="0" b="0" a="255"/>
+		</text>
+	</cell_item_text>
+</w>
