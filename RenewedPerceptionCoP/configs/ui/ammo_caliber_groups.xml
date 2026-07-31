@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <ammo_caliber_groups>
-	<group icon="ui_ammo_caliber_icon_fmj">
+	<group icon="ui_ammo_caliber_icon_regular">
 		<section name="ammo_9x18_fmj">9x18</section>
+		<section name="ammo_9x18_pmm">9x18</section>
 		<section name="ammo_9x19_fmj">9x19</section>
 		<section name="ammo_5.45x39_fmj">5.45</section>
 		<section name="ammo_5.56x45_ss190">5.56</section>
-		<section name="ammo_7.62x54_7h1">7.62</section>
 		<section name="ammo_pkm_100">7.62</section>
-		<section name="ammo_9x39_pab9">9x39</section>
 		<section name="ammo_11.43x23_fmj">.45</section>
-		<section name="ammo_11.43x23_hydro">.45</section>
 		<section name="ammo_12x70_buck">12/70</section>
-		<section name="ammo_12x76_zhekan">12/70</section>
-		<section name="ammo_gauss">Gauss</section>
 		<section name="ammo_gauss_cardan">Gauss</section>
 		<section name="ammo_vog-25">GL</section>
 		<section name="ammo_m209">GL</section>
 		<section name="ammo_og-7b">GL</section>
 	</group>
 	<group icon="ui_ammo_caliber_icon_ap">
-		<section name="ammo_9x18_pmm">9x18 AP</section>
-		<section name="ammo_9x19_pbp">9x19 AP</section>
 		<section name="ammo_5.45x39_ap">5.45 AP</section>
 		<section name="ammo_5.56x45_ap">5.56 AP</section>
 		<section name="ammo_9x39_ap">9x39 AP</section>
+		<section name="ammo_11.43x23_hydro">.45</section>
+		<section name="ammo_12x76_zhekan">12/70</section>
+		<section name="ammo_gauss">Gauss</section>
 	</group>
-		<group icon="ui_item_icon_binoc">
-		<section name="wpn_binoc">BINOC</section>
+	<group icon="ui_ammo_caliber_icon_expansive">
+		<section name="ammo_9x19_pbp">9x19</section>
 	</group>
-	<group icon="ui_item_icon_grenade">
-		<section name="wpn_grenade">GRENADE</section>
+	<group icon="ui_ammo_caliber_icon_flat">
+		<section name="ammo_7.62x54_7h1">7.62</section>
+		<section name="ammo_9x39_pab9">9x39</section>
 	</group>
 </ammo_caliber_groups>

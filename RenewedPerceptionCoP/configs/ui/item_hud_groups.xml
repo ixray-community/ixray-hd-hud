@@ -1,13 +1,3 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <item_hud_groups>
-	<group icon="ui_ammo_caliber_icon_fmj">
-		<section name="bolt">BOLT</section>
-	</group>
-	<group icon="ui_ammo_caliber_icon_fmj">
-		<section name="wpn_knife">KNIFE</section>
-	</group>
-	<group icon="ui_ammo_caliber_icon_fmj">
-		<section name="wpn_binoc">BINOC</section>
-	</group>
 </item_hud_groups>
-
