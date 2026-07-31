@@ -268,9 +268,9 @@
 		</properties>
 	</upgrade_info>
 
-	<cell_item_text x="0" y="0" width="24" height="16" stretch="1" anchor="bottom_right">
+	<cell_item_text x="0" y="0" width="24" height="16" stretch="1" anchor="bottom_right" override="replace">
 		<texture a="0">ui_item_count_back_2</texture>
-		<text x="-3" y="0" width="24" height="16" font="font_rubik_bold_20" color="ui_1" align="r" vert_align="b">
+		<text x="-3" y="0" width="24" height="16" font="font_rubik_18" r="225" g="225" b="225" align="r" vert_align="b">
 			<shadows thickness="0.75" r="0" g="0" b="0" a="255"/>
 		</text>
 	</cell_item_text>
@@ -291,12 +291,12 @@
 		<text x="2" y="6" width="24" height="16" font="letterica16" color="ui_1" align="r" vert_align="c"/>
 	</cell_item_custom_text>
 
-	<condition_progess_bar x="0" y="0" width="24" height="16" horz="1" min="0" max="1" pos="0" stretch="1" anchor="bottom_left">
+	<condition_progess_bar x="0" y="0" width="24" height="16" horz="1" min="0" max="1" pos="0" stretch="1" anchor="bottom_left" override="replace">
 		<percent_display>
 			<background width="24" height="16" stretch="1">
 				<texture a="0">ui_inGame2_inventory_percent_status</texture>
 			</background>
-			<text x="0" y="0" width="24" height="16" r="255" g="255" b="255" font="font_rubik_bold_18" format="portion" align="l" vert_align="b">
+			<text x="0" y="0" width="24" height="16" r="225" g="225" b="225" font="font_rubik_18" format="portion" align="l" vert_align="b">
 				<shadows thickness="0.75" r="0" g="0" b="0" a="255"/>
 			</text>
 		</percent_display>
