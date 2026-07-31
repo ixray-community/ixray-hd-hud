@@ -31,6 +31,27 @@
             <text align="r" font="font_oswald_24" r="193" g="201" b="209"/>
         </name_static>
 
+        <community_caption x="5" y="19" width="145" height="14">
+            <text align="l" vert_align="c" font="arial_14" color="ui_3">ui_st_community</text>
+        </community_caption>
+        <community_static x="110" y="19" width="145" height="14">
+            <text align="r" vert_align="c" font="arial_14" color="ui_3"/>
+        </community_static>
+
+        <rank_caption x="5" y="32" width="145" height="14">
+            <text align="l" vert_align="c" font="arial_14" color="ui_3">ui_st_rank</text>
+        </rank_caption>
+        <rank_static x="110" y="32" width="145" height="14">
+            <text align="r" vert_align="c" font="arial_14" color="ui_3"/>
+        </rank_static>
+
+        <reputation_caption x="5" y="44" width="145" height="14">
+            <text align="l" vert_align="c" font="arial_14" color="ui_3">ui_st_reputation</text>
+        </reputation_caption>
+        <reputation_static x="110" y="44" width="145" height="14">
+            <text align="r" vert_align="c" font="arial_14" color="ui_3"/>
+        </reputation_static>
+
         <game_time_caption x="5" y="5" width="25" height="14">
             <text align="l" vert_align="c" font="font_rubik_16" r="193" g="201" b="209" a="128">ui_inv_time</text>
         </game_time_caption>
@@ -46,13 +67,37 @@
 
     <!-- NPC Information -->
     <!-- Start -->
-    <partner_ch_info x="116" y="10" width="257" height="89">
-        <name_static align="r" x="0" y="2" width="145" height="24">
+    <partner_ch_info x="110" y="10" width="257" height="89">
+        <name_static align="r" x="4" y="0" width="145" height="24">
             <text align="r" font="font_oswald_24" r="193" g="201" b="209"/>
         </name_static>
         <icon x="158" y="1" width="99" height="87" stretch="1">
             <deadbody r="255" g="160" b="160" a="205"/>
         </icon>
+        <community_caption x="-97" y="14" width="145" height="14">
+            <text align="l" vert_align="c" font="arial_14" color="ui_3">ui_st_community</text>
+        </community_caption>
+        <community_static x="5" y="14" width="145" height="14">
+            <text align="r" vert_align="c" font="arial_14" color="ui_3"/>
+        </community_static>
+        <rank_caption x="-97" y="25" width="145" height="14">
+            <text align="l" vert_align="c" font="arial_14" color="ui_3">ui_st_rank</text>
+        </rank_caption>
+        <rank_static x="5" y="25" width="145" height="14">
+            <text align="r" vert_align="c" font="arial_14" color="ui_3"/>
+        </rank_static>
+        <reputation_caption x="-97" y="36" width="145" height="14">
+            <text align="l" vert_align="c" font="arial_14" color="ui_3">ui_st_reputation</text>
+        </reputation_caption>
+        <reputation_static x="5" y="36" width="145" height="14">
+            <text align="r" vert_align="c" font="arial_14" color="ui_3"/>
+        </reputation_static>
+        <relation_caption x="-97" y="47" width="145" height="14">
+            <text align="l" vert_align="c" font="arial_14" color="ui_3">ui_st_relation</text>
+        </relation_caption>
+        <relation_static x="5" y="47" width="145" height="14">
+            <text align="r" vert_align="c" font="arial_14" color="ui_3"/>
+        </relation_static>
     </partner_ch_info>
     <!-- Finish -->
 
