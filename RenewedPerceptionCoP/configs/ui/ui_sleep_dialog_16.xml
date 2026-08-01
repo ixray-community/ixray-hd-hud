@@ -20,6 +20,13 @@
 		fmt_wake_time="st_hd_sleep_wake_time"
 		time_precision="minutes"
 		time_separator=":"
+		snd_open=""
+		snd_close=""
+		snd_sleep=""
+		snd_cancel=""
+		snd_track=""
+		snd_preset=""
+		snd_warning=""
 	/>
 
 	<background x="266" y="249" width="500" height="270" stretch="1">
