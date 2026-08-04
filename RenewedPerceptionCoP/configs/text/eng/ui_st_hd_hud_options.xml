@@ -37,7 +37,10 @@
 	<string id="st_ui_hud_inv_sort_ordering">
 		<text>By order</text>
 	</string>
-	
+	<string id="st_ui_hud_inventory_volume">
+		<text>Inventory volume</text>
+	</string>
+
 	<string id="st_ui_group_crosshair">
 		<text>Crosshair</text>
 	</string>

@@ -10,6 +10,7 @@ this._boot_sort_cached = false
 this._boot_sort_system = this.SORT_ORDERING
 this.navigation_mode = this.MODE_COMPASS
 this.inventory_sort_system = this.SORT_ORDERING
+this.inventory_volume_enabled = false
 this._console = nil
 
 this.PDA_STAT_ALIAS = {
@@ -173,6 +174,37 @@ function apply_inventory_sort_system(value)
 	actor_menu:SetInventorySortSystem(this.inventory_sort_system)
 end
 
+function normalize_inventory_volume(value)
+	return value == true or value == 1 or value == "1"
+end
+
+function apply_inventory_volume(value)
+	this.inventory_volume_enabled = normalize_inventory_volume(value)
+
+	if level and level.set_inventory_volume_enabled then
+		level.set_inventory_volume_enabled(this.inventory_volume_enabled)
+	end
+end
+
+function read_boot_inventory_volume()
+	local ok, value = pcall(function ()
+		if level and level.is_inventory_volume_enabled then
+			return level.is_inventory_volume_enabled()
+		end
+		local ini = ini_file("engine_external.ltx")
+		if not ini or not ini:section_exist("gameplay") or not ini:line_exist("gameplay", "EnableInventoryVolume") then
+			return false
+		end
+		return ini:r_bool("gameplay", "EnableInventoryVolume") == true
+	end)
+
+	if ok then
+		return value == true
+	end
+
+	return false
+end
+
 function resolve_navigation_default_index()
 	-- 1 = compass, 2 = minimap
 	return this.navigation_mode == this.MODE_COMPASS and 1 or 2
@@ -191,6 +223,7 @@ function on_actor_hud_ready()
 	this.crosshair_ready = true
 	apply_navigation_mode(this.navigation_mode)
 	apply_inventory_sort_system(this.inventory_sort_system)
+	apply_inventory_volume(this.inventory_volume_enabled)
 
 	local maingame = get_maingame()
 	if maingame and maingame.IsCompassBarMode then
@@ -255,6 +288,13 @@ function register_options(_ref)
 		end
 	)
 
+	_ref.register_option("st_ui_group_hd_hud", "inventory_volume", "st_ui_hud_inventory_volume",
+		_ref.check_box(read_boot_inventory_volume()),
+		function (group, name, value)
+			apply_inventory_volume(value)
+		end
+	)
+
 	_ref.register_option("st_ui_group_crosshair", "crosshair_visible", "st_ui_hud_show_crosshair", _ref.check_box(true),
 		function (group, name, value)
 			if not this.crosshair_ready then
@@ -282,6 +322,7 @@ end
 function on_game_start()
 	this.navigation_mode = read_boot_use_compass_bar() and this.MODE_COMPASS or this.MODE_MINIMAP
 	this.inventory_sort_system = read_boot_inventory_sort_system()
+	this.inventory_volume_enabled = read_boot_inventory_volume()
 
 	RegisterScriptCallback("main_menu_on_init", on_main_menu_ready)
 	RegisterScriptCallback("actor_on_first_update", on_actor_hud_ready)

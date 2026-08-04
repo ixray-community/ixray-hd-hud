@@ -39,7 +39,10 @@
 	<string id="st_ui_hud_inv_sort_ordering">
 		<text>По порядку</text>
 	</string>
-	
+	<string id="st_ui_hud_inventory_volume">
+		<text>Объем инвентаря</text>
+	</string>
+
 	<string id="st_ui_group_crosshair">
 		<text>Прицел</text>
 	</string>

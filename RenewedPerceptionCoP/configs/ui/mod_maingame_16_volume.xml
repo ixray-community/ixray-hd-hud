@@ -1,0 +1,5 @@
+<w>
+	<!-- Replace vanilla fixed-position indicator with HD HUD stack entry -->
+	<indicator_overvolume override="remove"/>
+	<indicator_overvolume x="0" y="0" width="18" height="26" stretch="1" override="add"/>
+</w>
