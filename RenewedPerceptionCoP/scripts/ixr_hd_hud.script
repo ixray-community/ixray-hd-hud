@@ -278,6 +278,12 @@ function register_options(_ref)
 		end
 	)
 
+	_ref.register_option("st_ui_group_hd_hud", "contextual_status_widget", "st_ui_hud_contextual_status", _ref.check_box(false),
+		function (group, name, value)
+			run_console("hud_contextual_status", value)
+		end
+	)
+
 	_ref.register_option("st_ui_group_hd_hud", "inventory_sort_system", "st_ui_hud_inventory_sort_system",
 		_ref.combo_box(sort_default_index, {
 			_ref.combo_box_item("st_ui_hud_inv_sort_categories", true, this.SORT_CATEGORIES),

@@ -30,7 +30,11 @@
 		<text>Показывать панель быстрых слотов</text>
 	</string>
 	
-	<string id="st_ui_hud_inventory_sort_system">
+		<string id="st_ui_hud_contextual_status">
+		<text>Контекстный виджет состояния</text>
+	</string>
+	
+<string id="st_ui_hud_inventory_sort_system">
 		<text>Режим сортировки инвентаря</text>
 	</string>
 	<string id="st_ui_hud_inv_sort_categories">

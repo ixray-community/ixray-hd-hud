@@ -28,6 +28,9 @@
 	<string id="st_ui_hud_show_quick_slots">
 		<text>Show quick slots panel</text>
 	</string>
+	<string id="st_ui_hud_contextual_status">
+		<text>Contextual status widget</text>
+	</string>
 	<string id="st_ui_hud_inventory_sort_system">
 		<text>Inventory sort mode</text>
 	</string>

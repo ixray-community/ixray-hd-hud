@@ -254,5 +254,7 @@
 			<mode_mapping text="2" icon="ui_inGame2_icon_fmode_2"/>
 			<mode_mapping text="3" icon="ui_inGame2_icon_fmode_3"/>
 		</static_fire_mode>
+
+		<contextual_display show_speed="4" hide_speed="3" hide_delay="2.5" health_threshold="0.002" override="add"/>
 	</hud_states>
 </w>
