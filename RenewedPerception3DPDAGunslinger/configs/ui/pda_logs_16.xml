@@ -1,0 +1,167 @@
+<w>
+    <main_wnd x="0" y="0" width="1024" height="768" update_delay="2500"/>
+
+    <center_caption x="55" y="157" width="650" height="16">
+        <text align="l" font="letterica16" r="100" g="100" b="100" a="0"/>
+    </center_caption>
+
+    <gamepad_legend x="0" y="724" width="1024" height="30" spacing="5">
+        <auto_static x="0" y="0" width="22" height="30">
+            <text font="graffiti19" vert_align="c">ui_pda_tabs</text>
+        </auto_static>
+        <auto_static x="0" y="0" width="22" height="30">
+            <text font="graffiti19" vert_align="c">ui_pda_log_to_start</text>
+        </auto_static>
+        <auto_static x="0" y="0" width="22" height="30">
+            <text font="graffiti19" vert_align="c">ui_pda_log_to_end</text>
+        </auto_static>
+        <auto_static x="0" y="0" width="22" height="30">
+            <text font="graffiti19" vert_align="c">ui_pda_log_date_prev</text>
+        </auto_static>
+        <auto_static x="0" y="0" width="22" height="30">
+            <text font="graffiti19" vert_align="c">ui_pda_log_date_next</text>
+        </auto_static>
+        <auto_static x="0" y="0" width="22" height="30">
+            <text font="graffiti19" vert_align="c">ui_pda_log_show_news</text>
+        </auto_static>
+        <auto_static x="0" y="0" width="22" height="30">
+            <text font="graffiti19" vert_align="c">ui_pda_log_show_dialogs</text>
+        </auto_static>
+        <auto_static x="0" y="0" width="22" height="30">
+            <text font="graffiti19" vert_align="c">ui_mm_back_gp</text>
+        </auto_static>
+    </gamepad_legend>
+
+    <filter_news x="320" y="85" width="14" height="17">
+        <window_name>filter_news</window_name>
+        <texture>ui_PDA_checker</texture>
+        <text x="18" font="letterica16" r="170" g="170" b="170">pda_filter_news</text>
+        <options_item entry="pda_filter_news" group="pda_filter_logs"/>
+    </filter_news>
+
+    <filter_talk x="470" y="85" width="14" height="17">
+        <window_name>filter_talk</window_name>
+        <texture>ui_PDA_checker</texture>
+        <text x="18" font="letterica16" r="170" g="170" b="170">pda_filter_talk</text>
+        <options_item entry="pda_filter_talk" group="pda_filter_logs"/>
+    </filter_talk>
+
+    <tab_caption_frame x="35" y="85" width="280" height="30">
+        <auto_frameline x="0" y="0" width="280" height="30" vertical="0">
+            <title x="15" y="4" width="260" height="20">
+                <text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_tab_journal</text>
+            </title>
+            <texture a="255">ui_inGame2_pda_background_text</texture>
+        </auto_frameline>
+    </tab_caption_frame>
+
+    <logs_list_news x="35" y="122" width="280" height="580" item_height="35" top_indent="36" vert_interval="5"
+        scroll_profile="pda_logs" always_show_scroll="1">
+        <font font="letterica18" color="ui_4"/>
+        <auto_frameline x="0" y="0" width="275" height="30" vertical="0">
+            <title x="15" y="4" width="255" height="20">
+                <text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_log_journal_events</text>
+            </title>
+            <texture a="255">ui_inGame2_pda_background_text</texture>
+        </auto_frameline>
+        <logs_item x="0" y="0" width="260" height="45">
+            <date_static x="55" y="1" width="100" height="14">
+                <text align="l" font="letterica16" color="ui_3"/>
+            </date_static>
+            <caption_static x="160" y="3" width="580" height="14">
+                <text align="l" font="letterica16" color="ui_1"/>
+            </caption_static>
+            <text_static x="55" y="16" width="218" height="14" complex_mode="1">
+                <text align="l" font="letterica16" color="ui_4"/>
+            </text_static>
+            <image x="5" y="0" width="46.000" height="30.000" stretch="1"/>
+        </logs_item>
+    </logs_list_news>
+
+    <logs_list_dialogs x="320" y="122" width="654" height="580" item_height="35" top_indent="36"
+        scroll_profile="pda_logs" always_show_scroll="1">
+        <font font="letterica18" color="ui_4"/>
+        <auto_frameline x="0" y="0" width="649" height="30" vertical="0">
+            <title x="450" y="4" width="190" height="20">
+                <text font="font_oswald_24" r="170" g="170" b="170" a="255" align="l">pda_log_journal_dialogs</text>
+            </title>
+            <texture a="128">ui_inGame2_pda_background_text</texture>
+        </auto_frameline>
+
+        <btn_talk_sort_oldest x="0" y="3" width="24" height="24" stretch="1" hint="pda_log_sort_oldest_hint">
+            <texture>ui_inGame2_pda_sort_oldest</texture>
+        </btn_talk_sort_oldest>
+
+        <btn_talk_sort_newest x="25" y="3" width="24" height="24" stretch="1" hint="pda_log_sort_newest_hint">
+            <texture>ui_inGame2_pda_sort_newest</texture>
+        </btn_talk_sort_newest>
+
+        <btn_talk_pin_last x="50" y="3" width="24" height="24" stretch="1" hint="pda_log_pin_last_hint">
+            <texture>ui_inGame2_pda_log_pin_last</texture>
+        </btn_talk_pin_last>
+
+        <logs_item x="0" y="0" width="646" height="38">
+            <date_static x="55" y="1" width="100" height="14">
+                <text align="l" font="letterica16" color="ui_3"/>
+            </date_static>
+            <caption_static x="150" y="1" width="750" height="14">
+                <text align="l" font="letterica16" color="ui_1"/>
+            </caption_static>
+            <text_static x="55" y="16" width="584" height="14" complex_mode="1">
+                <text align="l" font="letterica16" color="ui_4"/>
+            </text_static>
+            <image x="5" y="0" width="40" height="29" stretch="1"/>
+        </logs_item>
+    </logs_list_dialogs>
+
+    <period_caption x="665.000" y="85" width="80" height="23">
+        <text align="r" vert_align="c" font="letterica18" r="220" g="220" b="220">pda_date_filter</text>
+    </period_caption>
+    <period x="794.000" y="79" width="120" height="40" stretch="1">
+        <text align="c" vert_align="c" font="letterica18" r="170" g="170" b="170"/>
+    </period>
+
+    <btn_prev_period x="760.000" y="79" width="37" height="37" stretch="1" hint="pda_date_prev_hint">
+        <window_name>btn_prev_period</window_name>
+        <texture>ui_inGame2_pda_Filtr_arrow_left</texture>
+    </btn_prev_period>
+
+    <btn_calendar x="914.000" y="79" width="37" height="37" stretch="1" hint="pda_calendar_hint">
+        <window_name>btn_calendar</window_name>
+        <texture>ui_pda_cal_btn</texture>
+    </btn_calendar>
+
+    <btn_next_period x="951.000" y="79" width="37" height="37" stretch="1" hint="pda_date_next_hint">
+        <window_name>btn_next_period</window_name>
+        <texture>ui_inGame2_pda_Filtr_arrow_right</texture>
+    </btn_next_period>
+
+    <calendar_popup x="749.500" y="118.500" width="205" height="228" anchor_gap="4" anchor_to_btn="0" free_month_nav="1" free_month_year_min="1986" free_month_year_max="2099">
+        <background x="0" y="0" width="205" height="228" stretch="1">
+            <texture>ui_inGame2_pda_cal_popup</texture>
+        </background>
+
+        <month_stepper x="8" y="8" width="189" height="37">
+            <btn_prev_month x="0" y="0" width="30" height="37" hint="pda_calendar_prev_month_hint">
+                <texture>ui_inGame2_pda_Filtr_arrow_left</texture>
+            </btn_prev_month>
+            <month_caption x="41" y="0" width="107" height="37">
+                <text align="c" vert_align="c" font="letterica16" r="220" g="220" b="220"/>
+            </month_caption>
+            <btn_next_month x="152" y="0" width="30" height="37" hint="pda_calendar_next_month_hint">
+                <texture>ui_inGame2_pda_Filtr_arrow_right</texture>
+            </btn_next_month>
+        </month_stepper>
+
+        <weekdays_row x="16" y="50" width="173" height="16">
+            <auto_static x="0" y="0" width="23" height="16"><text align="c" font="letterica16" r="140" g="140" b="140">pda_weekday_mon</text></auto_static>
+            <auto_static x="25" y="0" width="23" height="16"><text align="c" font="letterica16" r="140" g="140" b="140">pda_weekday_tue</text></auto_static>
+            <auto_static x="50" y="0" width="23" height="16"><text align="c" font="letterica16" r="140" g="140" b="140">pda_weekday_wed</text></auto_static>
+            <auto_static x="75" y="0" width="23" height="16"><text align="c" font="letterica16" r="140" g="140" b="140">pda_weekday_thu</text></auto_static>
+            <auto_static x="100" y="0" width="23" height="16"><text align="c" font="letterica16" r="140" g="140" b="140">pda_weekday_fri</text></auto_static>
+            <auto_static x="125" y="0" width="23" height="16"><text align="c" font="letterica16" r="140" g="140" b="140">pda_weekday_sat</text></auto_static>
+            <auto_static x="150" y="0" width="23" height="16"><text align="c" font="letterica16" r="140" g="140" b="140">pda_weekday_sun</text></auto_static>
+        </weekdays_row>
+        <days_host x="16" y="68" width="173" height="148" columns="7" rows="6" cell_size="23" spacing="2" cell_texture="ui_pda_cal_day"/>
+    </calendar_popup>
+</w>

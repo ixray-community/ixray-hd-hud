@@ -1,0 +1,143 @@
+<w>
+	<main x="0" y="0" width="1024" height="768"/>
+	<background_static x="0" y="0" width="1024" height="768" stretch="1">
+		<texture>ui_inGame2_pda_texture</texture>
+		<!--
+			<auto_frameline x="432" y="46" width="1" height="16" vertical="1">
+				<texture a="255">ui_inGame2_PDA_vert_divider</texture>
+			</auto_frameline>
+			<auto_frameline x="517" y="46" width="0.5" height="16" vertical="1">
+				<texture a="255">ui_inGame2_PDA_vert_divider</texture>
+			</auto_frameline>
+			<auto_frameline x="600" y="46" width="1" height="16" vertical="1">
+				<texture a="255">ui_inGame2_PDA_vert_divider</texture>
+			</auto_frameline>
+		-->
+		<auto_frameline x="36" y="37" width="120" height="35" vertical="0">
+			<texture a="255">ui_inGame2_datetime_bg</texture>
+		</auto_frameline>
+		<auto_frameline x="151" y="37" width="450.000" height="35" vertical="0">
+			<texture a="255">ui_inGame2_bg_tab_stub</texture>
+		</auto_frameline>
+	</background_static>
+
+	<tab_backgrounds>
+		<eptTasks>
+			<auto_static x="35" y="35" width="954" height="698" stretch="1">
+				<texture a="150">ui_inGame2_map_back</texture>
+			</auto_static>
+		</eptTasks>
+		<eptRanking>
+			<auto_static x="35" y="35" width="954" height="698" stretch="1">
+				<texture a="150">ui_inGame2_stat_back</texture>
+			</auto_static>
+		</eptRanking>
+		<eptLogs>
+			<auto_static x="35" y="35" width="954" height="698" stretch="1">
+				<texture a="150">ui_inGame2_journal_back</texture>
+			</auto_static>
+		</eptLogs>
+		<!-- PDA Dialogs disabled
+		<eptContacts>
+			<auto_static x="35" y="35" width="954" height="698" stretch="1">
+				<texture a="150">ui_inGame2_pda_msg_frame</texture>
+			</auto_static>
+		</eptContacts>
+		-->
+	</tab_backgrounds>
+
+	<!-- Baked glass replaced by model_pda_screen glass layer (pda_glass.hlsli) -->
+	<!--
+	<noice_static x="0" y="-45" width="1024" height="813" stretch="1">
+		<texture a="255">ui_inGame2_pda_glass_effect</texture>
+	</noice_static>
+	-->
+
+	<caption_location_static x="160" y="35.5" width="200" height="34">
+		<text font="font_rubik_16" align="l" x="0" y="12" r="214" g="223" b="232" a="150"/>
+	</caption_location_static>
+
+	<caption_date_static x="45" y="35.5" width="100" height="34">
+		<text font="font_rubik_16" align="l" x="0" y="12" r="214" g="223" b="232" a="150"/>
+	</caption_date_static>
+
+	<close_button x="937" y="37" width="50" height="35" hint="pda_btn_close" frame_mode="1">
+		<texture_e>ui_inGame2_pda_power_off_e</texture_e>
+		<texture_h>ui_inGame2_pda_power_off_h</texture_h>
+		<texture_t>ui_inGame2_pda_power_off_t</texture_t>
+		<texture_d>ui_inGame2_pda_power_off_d</texture_d>
+	</close_button>
+
+	<hint_wnd x="0" y="0" width="210" height="120">
+		<background x="0" y="0" width="210" height="100" border="5">
+			<texture a="255">ui_icons_PDA_tooltips</texture>
+		</background>
+		<text x="10" y="10" width="190" height="100">
+			<text font="letterica16" color="ui_6" complex_mode="1" align="l" vert_align="t"/>
+		</text>
+	</hint_wnd>
+
+	<snd_key_tab>device\pda\pda_tab_switch</snd_key_tab>
+	<snd_filter_toggle>device\pda\pda_filter_toggle</snd_filter_toggle>
+	<snd_panel_open>device\pda\pda_filter_toggle</snd_panel_open>
+	<snd_panel_close>device\pda\pda_filter_toggle</snd_panel_close>
+	<snd_open>device\pda\pda_open</snd_open>
+	<snd_close>device\pda\pda_close</snd_close>
+
+	<tab x="595" y="35" width="420" height="40">
+		<!-- PDA Dialogs / Contacts disabled for 3D PDA
+		<button x="82" y="3" width="95" height="35" id="eptContacts" hint="pda_tab_contacts_hint" frame_mode="1">
+			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
+			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
+			<texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
+			<texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_22">pda_tab_contacts</text>
+			<text_color>
+				<e r="193" g="201" b="209" a="100"/>
+				<t r="214" g="223" b="232" a="255"/>
+				<d r="122" g="135" b="148" a="255"/>
+				<h r="160" g="175" b="190" a="255"/>
+			</text_color>
+		</button>
+		-->
+		<button x="0" y="3" width="120" height="35" id="eptTasks" hint="pda_tab_planner_hint" frame_mode="1">
+			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
+			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
+			<texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
+			<texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_22">pda_tab_planner</text>
+			<text_color>
+				<e r="193" g="201" b="209" a="100"/>
+				<t r="214" g="223" b="232" a="255"/>
+				<d r="122" g="135" b="148" a="255"/>
+				<h r="160" g="175" b="190" a="255"/>
+			</text_color>
+		</button>
+		<button x="115" y="3" width="120" height="35" id="eptRanking" hint="pda_tab_statistics_hint" frame_mode="1">
+			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
+			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
+			<texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
+			<texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_22">pda_tab_statistics</text>
+			<text_color>
+				<e r="193" g="201" b="209" a="100"/>
+				<t r="214" g="223" b="232" a="255"/>
+				<d r="122" g="135" b="148" a="255"/>
+				<h r="160" g="175" b="190" a="255"/>
+			</text_color>
+		</button>
+		<button x="230" y="3" width="120" height="35" id="eptLogs" hint="pda_tab_journal_hint" frame_mode="1">
+			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
+			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
+			<texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
+			<texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_22">pda_tab_journal</text>
+			<text_color>
+				<e r="193" g="201" b="209" a="100"/>
+				<t r="214" g="223" b="232" a="255"/>
+				<d r="122" g="135" b="148" a="255"/>
+				<h r="160" g="175" b="190" a="255"/>
+			</text_color>
+		</button>
+	</tab>
+</w>

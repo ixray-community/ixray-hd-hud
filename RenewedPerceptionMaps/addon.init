@@ -1,0 +1,5 @@
+﻿name: RenewedPerceptionMaps
+platform: cop
+depends:
+  - RenewedPerceptionCoP
+  - ixray-paradox-an4

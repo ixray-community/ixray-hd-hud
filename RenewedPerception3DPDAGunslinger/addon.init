@@ -1,0 +1,5 @@
+name: RenewedPerception3DPDAGunslinger
+platform: cop
+depends:
+  - RenewedPerceptionCoP
+  - GunslingerModCop

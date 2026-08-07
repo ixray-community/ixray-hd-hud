@@ -1,0 +1,171 @@
+local SCOPE_FLAG = 1 
+local PKA_SCOPE_IDX = 3
+local START_MONEY = 3000
+
+local REMOVE_SECTIONS = {
+	"wpn_pm_actor",
+	"wpn_ak74u",
+	"ammo_5.45x39_fmj",
+	"ammo_5.45x39_ap",
+	"ammo_9x18_fmj",
+	"ammo_9x18_pmm",
+	"grenade_rgd5",
+	"grenade_f1",
+	"bread",
+	"kolbasa",
+	"conserva",
+	"vodka",
+	"energy_drink",
+	"medkit",
+	"medkit_army",
+	"medkit_scientic",
+	"bandage",
+	"antirad",
+	"water",
+}
+
+local KEEP_CONDITION = {
+	{ section = "helm_respirator", condition = 0.80 },
+	{ section = "stalker_outfit", condition = 0.56 },
+}
+
+local GIVE_ITEMS = {
+	{ section = "wpn_vintorez", condition = 0.90, scope_mask = SCOPE_FLAG, scope_idx = PKA_SCOPE_IDX },
+	{ section = "wpn_apb", condition = 0.91 },
+	{ section = "grenade_rgn", count = 2 },
+	{ section = "conserva", count = 2 },
+	{ section = "water", count = 1 },
+	{ section = "medkit", count = 2 },
+	{ section = "bandage", count = 4 },
+	{ section = "antirad", count = 2 },
+}
+
+local GIVE_AMMO = {
+	{ section = "ammo_9x39_pab9", total = 150 },
+	{ section = "ammo_9x18_fmj", total = 150 },
+}
+
+function on_game_start()
+	xr_effects.damage_actor_items_on_start = apply_start_loadout
+end
+
+function apply_start_loadout(actor, npc)
+	local a = db.actor
+	if not a then
+		return
+	end
+
+	clear_sections(a, REMOVE_SECTIONS)
+	ensure_conditioned_items(a, KEEP_CONDITION)
+	give_loadout(a, GIVE_ITEMS)
+	give_ammo(a, GIVE_AMMO)
+	set_actor_money(a, START_MONEY)
+end
+
+function clear_sections(actor, sections)
+	local to_release = {}
+	local want = {}
+
+	for i = 1, #sections do
+		want[sections[i]] = true
+	end
+
+	actor:iterate_inventory(function(_, item)
+		if item and want[item:section()] then
+			table.insert(to_release, item:id())
+		end
+	end, actor)
+
+	for i = 1, #to_release do
+		release_by_id(to_release[i])
+	end
+end
+
+function ensure_conditioned_items(actor, list)
+	for i = 1, #list do
+		local entry = list[i]
+		local obj = actor:object(entry.section)
+		if obj then
+			obj:set_condition(entry.condition)
+		else
+			local se = spawn_to_actor(actor, entry.section)
+			if se then
+				gunsl_addon_attacher.update_condition(se.id, entry.condition)
+			end
+		end
+	end
+end
+
+function give_loadout(actor, list)
+	for i = 1, #list do
+		local entry = list[i]
+		local count = entry.count or 1
+
+		for j = 1, count do
+			local se = spawn_to_actor(actor, entry.section)
+			if se then
+				if entry.condition then
+					gunsl_addon_attacher.update_condition(se.id, entry.condition)
+				end
+				if entry.scope_mask then
+					gunsl_addon_attacher.attach_addon(se.id, entry.scope_mask, entry.scope_idx or 0)
+				end
+			end
+		end
+	end
+end
+
+function give_ammo(actor, list)
+	local pos = actor:position()
+	local lvid = actor:level_vertex_id()
+	local gvid = actor:game_vertex_id()
+	local pid = actor:id()
+	local ini = system_ini()
+
+	for i = 1, #list do
+		local entry = list[i]
+		local left = entry.total or entry.rounds or 0
+		local box_size = 1
+
+		if ini:section_exist(entry.section) and ini:line_exist(entry.section, "box_size") then
+			box_size = ini:r_u32(entry.section, "box_size")
+		end
+
+		if box_size < 1 then
+			box_size = 1
+		end
+
+		while left > 0 do
+			local chunk = left
+			if chunk > box_size then
+				chunk = box_size
+			end
+			alife():create_ammo(entry.section, pos, lvid, gvid, pid, chunk)
+			left = left - chunk
+		end
+	end
+end
+
+function set_actor_money(actor, target)
+	local delta = target - actor:money()
+	if delta ~= 0 then
+		actor:give_money(delta)
+	end
+end
+
+function spawn_to_actor(actor, section)
+	return alife():create(
+		section,
+		actor:position(),
+		actor:level_vertex_id(),
+		actor:game_vertex_id(),
+		actor:id()
+	)
+end
+
+function release_by_id(id)
+	local sobj = alife():object(id)
+	if sobj then
+		alife():release(sobj, true)
+	end
+end
