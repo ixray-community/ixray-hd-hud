@@ -3,10 +3,16 @@
 	<string id="kb_weapon7">
 		<text>Пистолет</text>
 	</string>
+	<string id="kb_show_quick_slots">
+		<text>Показ панели быстрого доступа</text>
+	</string>
 	<string id="kb_inventory_sort_prev">
 		<text>Сортировка: предыдущая вкладка</text>
 	</string>
 	<string id="kb_inventory_sort_next">
 		<text>Сортировка: следующая вкладка</text>
+	</string>
+	<string id="kb_inv_unload_ruck">
+		<text>Разрядить все оружие в рюкзаке</text>
 	</string>
 </string_table>

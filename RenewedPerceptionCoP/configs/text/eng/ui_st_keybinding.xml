@@ -237,4 +237,7 @@
 	<string id="kb_inventory_sort_next">
 		<text>Inventory sort: next tab</text>
 	</string>
+	<string id="kb_inv_unload_ruck">
+		<text>Unload all weapons in backpack</text>
+	</string>
 </string_table>

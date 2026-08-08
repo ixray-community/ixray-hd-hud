@@ -1,19 +1,23 @@
 <w>
-	<volume_caption x="760" y="700" width="57" height="22" override="add">
-		<text align="r" font="font_oswald_22" r="139" g="149" b="158" a="255">ui_total_volume</text>
+	<actor_weight_row override="remove"/>
+
+	<volume_caption x="670" y="736" width="30" height="22" override="add">
+		<text align="l" font="font_oswald_22" r="139" g="149" b="158" a="255">ui_total_volume</text>
 	</volume_caption>
-	<volume_status_bar x="825" y="700" width="120" height="15" stretch="1" horz="1" min="0" max="1" pos="0" override="add">
-		<progress x="0" y="0" width="120" height="16" stretch="1">
-			<texture>ui_inGame2_inventory_progress_bar</texture>
-		</progress>
-		<min_color r="120" g="220" b="120"/>
-		<middle_color r="220" g="180" b="80"/>
-		<max_color r="220" g="80" b="80"/>
-	</volume_status_bar>
-	<actor_volume x="975" y="700" width="40" height="22" override="add">
+	<actor_volume x="703" y="736" width="20" height="22" override="add">
 		<text align="c" font="font_oswald_22" r="214" g="223" b="232" a="255"/>
 	</actor_volume>
-	<actor_volume_max x="990" y="700" width="68" height="22" override="add">
+	<actor_volume_max x="720" y="736" width="30" height="22" override="add">
 		<text align="l" font="font_oswald_22" r="139" g="149" b="158" a="255"/>
 	</actor_volume_max>
+
+	<actor_weight_caption x="878.000" y="736" width="90" height="22" override="add">
+		<text align="r" font="font_oswald_22" r="139" g="149" b="158" a="255">ui_total_weight</text>
+	</actor_weight_caption>
+	<actor_weight x="924" y="736" width="30" height="22" override="add">
+		<text align="c" font="font_oswald_22" r="214" g="223" b="232" a="255"/>
+	</actor_weight>
+	<actor_weight_max x="955" y="736" width="110" height="22" override="add">
+		<text align="r" font="font_oswald_22" r="139" g="149" b="158" a="255"/>
+	</actor_weight_max>
 </w>

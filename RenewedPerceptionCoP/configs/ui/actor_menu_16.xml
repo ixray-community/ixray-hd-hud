@@ -490,6 +490,7 @@
 	    <snd_attach_addon>interface\inv_attach_addon</snd_attach_addon>
 	    <snd_detach_addon>interface\inv_detach_addon</snd_detach_addon>
 	    <snd_item_use>interface\inv_slot</snd_item_use>
+	    <snd_unload_magazine>interface\inv_unload</snd_unload_magazine>
 	</action_sounds>
 
 	<hint_wnd x="0" y="0" width="210" height="100">
