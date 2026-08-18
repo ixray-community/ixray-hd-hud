@@ -11,7 +11,7 @@
 	<indicator_thirst override="remove"/>
 	<indicator_sleepiness override="remove"/>
 
-	<indicator_stack_panel x="815" y="645" width="200" height="20" sp_align="right" spacing="5" override="add"/>
+	<indicator_stack_panel x="795" y="645" width="200" height="20" sp_align="right" spacing="5" override="add"/>
 	<indicator_starvation x="0" y="0" width="18" height="26" stretch="1" override="add"/>
 	<indicator_helmet_broken x="0" y="0" width="18" height="26" stretch="1" override="add"/>
 	<indicator_outfit_broken x="0" y="0" width="18" height="26" stretch="1" override="add"/>
