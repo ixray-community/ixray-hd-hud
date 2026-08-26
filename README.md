@@ -1,7 +1,6 @@
 # Renewed Perception (ver. 1.2) for IX-Ray Platform
+
 <img width="1499" height="520" alt="Без имени-1" src="https://github.com/user-attachments/assets/3bb976cd-a6b4-420f-bc7b-17998d9c1a20" />
-
-
 
 ## Overview
 
@@ -56,8 +55,6 @@ Link to the current __IX-Ray__ [release](https://github.com/ixray-team/ixray-1.6
 ![ss_admin_02-06-26_13-58-21_(Затон)](https://github.com/user-attachments/assets/94746202-d222-447a-8fa8-f744ffe52de5)
 
 ![ss_admin_02-06-26_13-57-38_(Затон)](https://github.com/user-attachments/assets/ca062660-e109-476b-95bf-e4ca21c79044)
-
-![ss_admin_02-06-26_13-56-42_(Затон)](https://github.com/user-attachments/assets/1a83f93d-0f6b-4e5a-a61d-b6ed241346c5)
 
 Ссылка на текущую версию __IX-Ray__ [релиз](https://github.com/ixray-team/ixray-1.6-stcop/releases/latest)
 

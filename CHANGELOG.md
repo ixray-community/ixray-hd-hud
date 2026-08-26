@@ -2,6 +2,10 @@
 
 Full changelog
 
+## Release 1.2 (August 2026)
+
+- Updated mod (@mrGlock5 (Desert Cliff), @Drombeys)
+
 ## Release 1.1 (December 2025)
 
 - Applied Stack Panel control for boosters, indicators and anomaly fields (@St4lker0k765)
@@ -14,6 +18,10 @@ Full changelog
 ---
 
 Полный список изменений
+
+## Релиз 1.2 (Август 2026)
+
+- Обновлен мод (@mrGlock5 (Desert Cliff), @Drombeys)
 
 ## Релиз 1.1 (Декабрь 2025)
 
