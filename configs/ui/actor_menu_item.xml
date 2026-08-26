@@ -382,7 +382,7 @@
 				<progress stretch="1">
 	                <texture a="150">ui_inGame2_hint_wnd_bar_alfa_line</texture>
 	            </progress>
-	            <background  stretch="1">
+	            <background stretch="1">
 	                <texture>ui_inGame2_hint_wnd_bar</texture>
 	            </background>
 				<color_less color="pda_red"  />

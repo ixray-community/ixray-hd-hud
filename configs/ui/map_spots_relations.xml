@@ -15,15 +15,15 @@
 	</deadbody_location>
 
 	<enemy_mini_spot width="10" height="10" stretch="1" alignment="c" >
-		<texture r="255" g="68" b="43">ui_mmap_common_actor_2</texture>
+		<texture r="255" g="89" b="89">ui_mmap_common_actor_2</texture>
 	</enemy_mini_spot>
 
 	<neutral_mini_spot width="10" height="10" stretch="1" alignment="c">
-		<texture r="255" g="246" b="97">ui_mmap_common_actor_2</texture>
+		<texture r="255" g="255" b="255">ui_mmap_common_actor_2</texture>
 	</neutral_mini_spot>
 
 	<friend_mini_spot width="10" height="10" stretch="1" alignment="c">
-		<texture r="0" g="225" b="0">ui_mmap_common_actor_2</texture>
+		<texture r="181" g="251" b="99">ui_mmap_common_actor_2</texture>
 	</friend_mini_spot>
 
 	<deadbody_mini_spot width="10" height="10" stretch="1" alignment="c">

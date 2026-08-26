@@ -745,11 +745,22 @@
                 <level_map spot="ui_pda2_quest_npc_location_spot"/>
                 <mini_map spot="ui_pda2_quest_npc_location_mini_spot"/>
         </ui_pda2_quest_npc_location>
-        <ui_pda2_quest_npc_location_spot width="19" height="19" stretch="1" alignment="c" location_level="-1" scale_min="3">
+        <ui_pda2_quest_npc_location_spot x="0" y="0" width="19" height="19" stretch="1" alignment="c" location_level="-1" scale_min="3">
                 <texture>ui_inGame2_PDA_icon_Stalker_VIP</texture>
         </ui_pda2_quest_npc_location_spot>
-        <ui_pda2_quest_npc_location_mini_spot width="14" height="14" stretch="1" alignment="c" location_level="-1">
+        <ui_pda2_quest_npc_location_mini_spot x="0" y="0" width="14" height="14" stretch="1" alignment="c" location_level="-1">
                 <texture>ui_inGame2_PDA_icon_Stalker_VIP</texture>
+        </ui_pda2_quest_npc_location_mini_spot>
+
+        <ui_pda2_quest_npc_location hint="st_ui_pda_Question">
+                <level_map spot="ui_pda2_quest_npc_location_spot"/>
+                <mini_map spot="ui_pda2_quest_npc_location_mini_spot"/>
+        </ui_pda2_quest_npc_location>
+        <ui_pda2_quest_npc_location_spot x="0" y="0" width="19" height="19" stretch="1" alignment="c" location_level="-1" scale_min="3">
+                <texture>ui_inGame2_PDA_icon_Question</texture>
+        </ui_pda2_quest_npc_location_spot>
+        <ui_pda2_quest_npc_location_mini_spot x="0" y="0" width="14" height="14" stretch="1" alignment="c" location_level="-1">
+                <texture>ui_inGame2_PDA_icon_Question_small</texture>
         </ui_pda2_quest_npc_location_mini_spot>
 
         <ui_pda2_medic_location hint="st_ui_pda_legend_medic">
