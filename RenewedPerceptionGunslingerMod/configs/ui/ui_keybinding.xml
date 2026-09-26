@@ -1,0 +1,80 @@
+<keybingidg>
+	<group name="gunsl_keys_movement">
+
+		<command id="gunsl_keys_move_forward"					exe="forward"/>
+		<command id="gunsl_keys_move_back"					exe="back"/>
+		<command id="gunsl_keys_move_left"			exe="lstrafe"/>
+		<command id="gunsl_keys_move_right"			exe="rstrafe"/>
+		<command id="gunsl_keys_left_lookout"			exe="llookout"/>
+		<command id="gunsl_keys_right_lookout"		exe="rlookout"/>		
+		<command id="gunsl_keys_jump"						  exe="jump"/>
+		<command id="gunsl_keys_crouch"						exe="crouch"/>
+		<command id="gunsl_keys_accel"				exe="accel"/>
+		<command id="gunsl_keys_sprint"						exe="sprint_toggle"/>				
+	</group>
+	
+	<group name="gunsl_keys_weapon">
+		<command id="gunsl_keys_fire"						  exe="wpn_fire"/>
+		<command id="gunsl_keys_zoom"						  exe="wpn_zoom"/>
+		<command id="gunsl_keys_alter_zoom"						  exe="wpn_zoom_alter"/>
+		<command id="gunsl_keys_reload"						exe="wpn_reload"/>
+		<command id="gunsl_keys_changeammo"					exe="wpn_next"/>
+		<command id="gunsl_keys_grenade_launcher"						  exe="wpn_func"/>				
+		<command id="gunsl_keys_laser"					exe="wpn_laser"/>		
+		<command id="gunsl_keys_torch"					exe="wpn_torch"/>
+		<command id="gunsl_keys_firemode_next"		exe="wpn_firemode_next"/>
+		<command id="gunsl_keys_firemode_prev"		exe="wpn_firemode_prev"/>		
+		<command id="gunsl_keys_scope_brightness_plus"		exe="scope_brightness_plus"/>
+		<command id="gunsl_keys_scope_brightness_minus"		exe="scope_brightness_minus"/>				
+	</group>
+	
+	<group name="gunsl_keys_inventory">		
+		<command id="gunsl_keys_open_inventory"				exe="inventory"/>
+		<command id="gunsl_keys_open_pda"			exe="active_jobs"/>		
+		<command id="gunsl_keys_headlight"						exe="torch"/>
+		<command id="gunsl_keys_night_vision"			exe="night_vision"/>
+		<command id="gunsl_keys_detector"					exe="show_detector"/>
+		<command id="kb_clear_gasmask"			exe="clear_gasmask"/>
+	</group>
+	
+	<group name="gunsl_keys_quickuse">
+		<command id="gunsl_keys_quick_use_1"			exe="quick_use_1"/>
+		<command id="gunsl_keys_quick_use_2"			exe="quick_use_2"/>
+		<command id="gunsl_keys_quick_use_3"			exe="quick_use_3"/>
+		<command id="gunsl_keys_quick_use_4"			exe="quick_use_4"/>
+		<command id="gunsl_keys_quick_grenade"			exe="quick_grenade"/>
+		<command id="gunsl_keys_quick_kick"				exe="quick_kick"/>
+	</group>	
+	
+	<group name="gunsl_keys_slots">
+		<command id="gunsl_keys_slot_knife"					exe="wpn_1"/>
+		<command id="gunsl_keys_slot_pistol"					exe="wpn_7"/>
+		<command id="gunsl_keys_slot_assault"					exe="wpn_2"/>
+		<command id="kb_weapon3"								exe="wpn_3"/>
+		<command id="gunsl_keys_slot_grenade"					exe="wpn_4"/>
+		<command id="gunsl_keys_slot_binocle"					exe="wpn_5"/>
+		<command id="gunsl_keys_slot_bolt"					exe="wpn_6"/>			
+		<command id="gunsl_keys_slot_next"				exe="next_slot"/>
+		<command id="gunsl_keys_slot_prev"				exe="prev_slot"/>			
+	</group>	   
+	
+	<group name="gunsl_keys_view">
+		<command id="gunsl_keys_view_left"						  exe="left"/>
+		<command id="gunsl_keys_view_right"						exe="right"/>
+		<command id="gunsl_keys_view_up"							  exe="up"/>
+		<command id="gunsl_keys_view_down"						  exe="down"/>
+	</group>
+	
+	<group name="gunsl_keys_other">
+		<command id="kb_cam_2"								  exe="cam_2"/>
+		<command id="gunsl_keys_use"						  exe="use"/>
+		<command id="gunsl_keys_drop"						  exe="drop"/>
+		<command id="gunsl_keys_tasks"						  exe="scores"/>
+		
+		<command id="gunsl_keys_pause"						exe="pause"/>
+		<command id="gunsl_keys_screenshot"				exe="screenshot"/>
+		<command id="gunsl_keys_quit"						  exe="quit"/>		
+		<command id="gunsl_keys_quicksave"			exe="quick_save"/>
+		<command id="gunsl_keys_quickload"			exe="quick_load"/>	
+	</group>
+</keybingidg>
