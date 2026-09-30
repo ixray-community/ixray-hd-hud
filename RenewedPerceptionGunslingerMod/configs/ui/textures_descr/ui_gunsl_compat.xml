@@ -1,0 +1,12 @@
+<w>
+	<file name="ui\ui_actor_sleep_screen">
+		<texture id="ui_gunsl_electro_anomaly" x="16" y="944" width="64" height="64" />
+		<texture id="ui_gunsl_fire_anomaly" x="80" y="944" width="64" height="64" />
+		<texture id="ui_gunsl_toxin_anomaly" x="145" y="944" width="64" height="64" />
+		<texture id="ui_gunsl_gravity_anomaly" x="209" y="944" width="64" height="64" />
+		<texture id="ui_gunsl_artefact" x="17" y="922" width="16" height="16" />
+	</file>
+	<file name="ui\ui_gunsl_achivments">
+		<texture id="gunsl_ui_icon_stealthy_stalker" x="0" y="848" width="121" height="121" />
+	</file>
+</w>
