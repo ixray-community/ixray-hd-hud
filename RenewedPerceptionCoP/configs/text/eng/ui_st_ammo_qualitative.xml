@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_hud_ammo_qual_empty">
+		<text>EMPTY</text>
+	</string>
+	<string id="st_hud_ammo_qual_almost_empty">
+		<text>ALMOST EMPTY</text>
+	</string>
+	<string id="st_hud_ammo_qual_low">
+		<text>LOW</text>
+	</string>
+	<string id="st_hud_ammo_qual_enough">
+		<text>ENOUGH</text>
+	</string>
+	<string id="st_hud_ammo_qual_full">
+		<text>FULL</text>
+	</string>
+</string_table>

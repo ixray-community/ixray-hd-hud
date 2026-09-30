@@ -38,9 +38,9 @@
 		<texture id="ui_inGame_vignette_luminosity" x="561" y="226" width="190" height="190" />
 		<texture id="ui_inGame_vignette_noise" x="778" y="226" width="190" height="190" />	
 
-        <texture id="ui_inGame2_Patroni_HUD_main_window" x="782" y="14" width="190" height="89" />
-        <texture id="ui_inGame2_Patroni_HUD_red_bar" x="782" y="122" width="144" height="18" />
-        <texture id="ui_inGame2_Patroni_HUD_blue_bar" x="782" y="155" width="144" height="15" />
+        <texture id="ui_inGame2_Patroni_HUD_main_window" x="785" y="8" width="191" height="100" />
+        <texture id="ui_inGame2_Patroni_HUD_red_bar" x="788" y="128" width="158" height="16" />
+        <texture id="ui_inGame2_Patroni_HUD_blue_bar" x="788" y="128" width="158" height="16" />
 
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_b" 		x="414" y="240" width="44" height="45" />
 		<texture id="ui_inGame2_Patroni_HUD_active_items_icon_back" 	x="411" y="240" width="47" height="45" />
