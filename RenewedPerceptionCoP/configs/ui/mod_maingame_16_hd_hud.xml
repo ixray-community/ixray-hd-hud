@@ -121,7 +121,7 @@
 
 	<quick_slots_panel override="remove"/>
 
-	<quick_slot0 x="16" y="720" width="27" height="33" stretch="1" override="replace">
+	<quick_slot0 x="16" y="720" width="32" height="39" stretch="1" override="replace">
 		<counter x="0" y="0" width="16" height="16" stretch="1">
 			<window_name>counter</window_name>
 			<texture a="255">ui_rp_quick_slot_counter</texture>
@@ -132,7 +132,7 @@
 		</auto_frameline>
 	</quick_slot0>
 
-	<quick_slot1 x="51" y="720" width="27" height="33" stretch="1" override="replace">
+	<quick_slot1 x="51" y="720" width="32" height="39" stretch="1" override="replace">
 		<counter x="0" y="0" width="16" height="16" stretch="1">
 			<window_name>counter</window_name>
 			<texture a="255">ui_rp_quick_slot_counter</texture>
@@ -143,7 +143,7 @@
 		</auto_frameline>
 	</quick_slot1>
 
-	<quick_slot2 x="86" y="720" width="27" height="33" stretch="1" override="replace">
+	<quick_slot2 x="86" y="720" width="32" height="39" stretch="1" override="replace">
 		<counter x="0" y="0" width="16" height="16" stretch="1">
 			<window_name>counter</window_name>
 			<texture a="255">ui_rp_quick_slot_counter</texture>
@@ -154,7 +154,7 @@
 		</auto_frameline>
 	</quick_slot2>
 
-	<quick_slot3 x="121" y="720" width="27" height="33" stretch="1" override="replace">
+	<quick_slot3 x="121" y="720" width="32" height="39" stretch="1" override="replace">
 		<counter x="0" y="0" width="16" height="16" stretch="1">
 			<window_name>counter</window_name>
 			<texture a="255">ui_rp_quick_slot_counter</texture>
@@ -166,16 +166,16 @@
 	</quick_slot3>
 
 	<quick_slot0_text x="26" y="743" width="17" height="13" override="replace">
-		<text align="c" vert_align="c" font="font_rubik_bold_14" r="201" g="198" b="198" a="128">quick_use_str_1</text>
+		<text align="c" vert_align="c" font="font_rubik_bold_14" r="201" g="198" b="198">quick_use_str_1</text>
 	</quick_slot0_text>
 	<quick_slot1_text x="62" y="743" width="17" height="13" override="replace">
-		<text align="c" vert_align="c" font="font_rubik_bold_14" r="201" g="198" b="198" a="128">quick_use_str_2</text>
+		<text align="c" vert_align="c" font="font_rubik_bold_14" r="201" g="198" b="198">quick_use_str_2</text>
 	</quick_slot1_text>
 	<quick_slot2_text x="96" y="743" width="17" height="13" override="replace">
-		<text align="c" vert_align="c" font="font_rubik_bold_14" r="201" g="198" b="198" a="128">quick_use_str_3</text>
+		<text align="c" vert_align="c" font="font_rubik_bold_14" r="201" g="198" b="198">quick_use_str_3</text>
 	</quick_slot2_text>
 	<quick_slot3_text x="132" y="743" width="17" height="13" override="replace">
-		<text align="c" vert_align="c" font="font_rubik_bold_14" r="201" g="198" b="198" a="128">quick_use_str_4</text>
+		<text align="c" vert_align="c" font="font_rubik_bold_14" r="201" g="198" b="198">quick_use_str_4</text>
 	</quick_slot3_text>
 
 	<hud_states x="0" y="0" width="1024" height="768" stretch="1">
@@ -190,18 +190,18 @@
 		<indik_psi x="0" y="0" width="22" height="26" stretch="1" override="add"/>
 		<indik_acid x="0" y="0" width="22" height="26" stretch="1" override="add"/>
 
-		<back x="855.000" y="640.000" width="160.000" height="115.000" stretch="1" override="replace">
+		<back x="880.000" y="663.000" width="140.000" height="100.000" stretch="1" override="replace">
 			<texture a="255">ui_inGame2_Patroni_HUD_main_window</texture>
 		</back>
 
-		<progress_bar_health x="866" y="705" width="130.000" height="20.000" stretch="1" horz="1" min="0" max="1" pos="0"
+		<progress_bar_health x="889" y="715" width="114.000" height="16.000" stretch="1" horz="1" min="0" max="1" pos="0"
 			expression="floor(fltPlayerHealth * 55.0) / 55.0" override="replace">
 			<progress stretch="1">
 				<texture r="141" g="0" b="11">ui_inGame2_Patroni_HUD_red_bar</texture>
 			</progress>
 		</progress_bar_health>
 
-		<progress_bar_stamina x="866" y="725" width="130.000" height="14.000" stretch="1" horz="1" min="0" max="1" pos="0"
+		<progress_bar_stamina x="889" y="734" width="114.000" height="11.000" stretch="1" horz="1" min="0" max="1" pos="0"
 			expression="floor(fltPlayerPower * 55.0) / 55.0" override="replace">
 			<progress stretch="1">
 				<texture r="17" g="119" b="101">ui_inGame2_Patroni_HUD_blue_bar</texture>
@@ -212,7 +212,7 @@
 		<static_fmj_ammo override="remove"/>
 		<static_ap_ammo override="remove"/>
 
-		<static_ammo_adaptive x="890.000" y="651.000" width="72.000" height="36.000" separator="/" override="add">
+		<static_ammo_adaptive x="910.000" y="670.000" width="72.000" height="36.000" separator="/" override="add">
 			<clip_text x="-2" y="0" width="30" height="36">
 				<text complex_mode="0" font="font_oswald_semibold_40" r="201" g="198" b="198" a="255" align="r" vert_align="c"/>
 			</clip_text>
@@ -233,12 +233,12 @@
 		</static_ammo_qualitative>
 -->
 
-		<static_wpn_icon x="980.000" y="663.000" width="45" height="24" align="c" alignment="c" stretch="1" 
+		<static_wpn_icon x="990.000" y="682.000" width="45" height="24" align="c" alignment="c" stretch="1" 
 						caliber="1" hud_group_catalog="hud_group_catalog.xml" override="replace">
 			<caliber_text x="-2" y="9" width="30" height="20" stretch="1">
-				<text font="font_oswald_22" align="r" vert_align="l" r="201" g="198" b="198"/>
+				<text font="font_oswald_20" align="r" vert_align="l" r="201" g="198" b="198"/>
 			</caliber_text>
-			<caliber_icon x="32" y="9" width="16" height="20" align="l" stretch="1"/>
+			<caliber_icon x="32" y="9" width="12.8" height="16" align="l" stretch="1"/>
 		</static_wpn_icon>
 
 <!--
@@ -249,13 +249,13 @@
 		</static_wpn_icon>
 -->
 
-		<static_fire_mode x="861" y="660" width="30" height="20" stretch="1" use_text_labels="1" override="replace">
+		<static_fire_mode x="885" y="680" width="30" height="20" stretch="1" use_text_labels="1" override="replace">
 			<mode_label text="1" st="ui_fire_mode_single"/>
 			<mode_label text="A" st="ui_fire_mode_auto"/>
 			<mode_label text="a" st="ui_fire_mode_auto"/>
 			<mode_label text="2" st="ui_fire_mode_burst_2"/>
 			<mode_label text="3" st="ui_fire_mode_burst_3"/>
-			<text font="font_oswald_22" r="230" g="236" b="236" a="255" align="c" vert_align="c"/>
+			<text font="font_oswald_20" r="201" g="198" b="198" a="255" align="c" vert_align="c"/>
 		</static_fire_mode>
 
 <!--
