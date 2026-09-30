@@ -210,9 +210,6 @@
 	<string id="pda_missions_list_caption">
 		<text>Mission list</text>
 	</string>
-	<string id="pda_pda_dialog_title">
-		<text>PDA dialog</text>
-	</string>
 	<string id="pda_ranking_achievements">
 		<text>Achievements</text>
 	</string>
@@ -587,21 +584,6 @@
 	</string>
 	<string id="ui_pda_all_task">
 		<text>All missions</text>
-	</string>
-	<string id="ui_pda_dialog_answers">
-		<text>Available answers</text>
-	</string>
-	<string id="ui_pda_dialog_hint_select">
-		<text>LMB: select answer</text>
-	</string>
-	<string id="ui_pda_dialog_history">
-		<text>Dialogue history</text>
-	</string>
-	<string id="ui_pda_dialog_no_contact">
-		<text>No active contact</text>
-	</string>
-	<string id="ui_pda_dialog_status_idle">
-		<text>Status: idle</text>
 	</string>
 	<string id="ui_pda_log_date_next">
 		<text>$$ACTION_PDA_LOG_DATE_NEXT$$ Next date</text>
