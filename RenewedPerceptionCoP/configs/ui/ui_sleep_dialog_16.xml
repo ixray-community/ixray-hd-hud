@@ -2,11 +2,10 @@
 <w>
 	<sleep_params
 		panorama_texture="ui_sleep_wnd_new_panorama"
-		panorama_mode="0"
 		panorama_hours="24"
 		panorama_bind="wake"
-		panorama_smooth_speed="25"
-		panorama_scale="native"
+		panorama_smooth_speed="0"
+		panorama_scale="stretch"
 		panorama_tex_scale="2"
 		panorama_wrap="1"
 		min_hours="1"
@@ -33,14 +32,14 @@
 		<texture>ui_sleep_wnd_new_bg</texture>
 	</background>
 
-	<st_time_now x="26" y="24" width="156" height="18" complex_mode="0">
-		<text align="l" vert_align="c" font="font_rubik_16" r="160" g="170" b="180"/>
+	<st_time_now x="26" y="22" width="156" height="18" complex_mode="0">
+		<text align="l" vert_align="c" font="font_roboto_16" r="160" g="170" b="180"/>
 	</st_time_now>
-	<st_sleep_duration x="162" y="24" width="156" height="18" complex_mode="0">
-		<text align="c" vert_align="c" font="font_rubik_16" r="160" g="170" b="180"/>
+	<st_sleep_duration x="162" y="22" width="156" height="18" complex_mode="0">
+		<text align="c" vert_align="c" font="font_roboto_16" r="160" g="170" b="180"/>
 	</st_sleep_duration>
-	<st_wake_time x="322" y="24" width="156" height="18" complex_mode="0">
-		<text align="r" vert_align="c" font="font_rubik_16" r="160" g="170" b="180"/>
+	<st_wake_time x="322" y="22" width="156" height="18" complex_mode="0">
+		<text align="r" vert_align="c" font="font_roboto_16" r="160" g="170" b="180"/>
 	</st_wake_time>
 
 	<static_cover x="15" y="18" width="474" height="186" stretch="1">
@@ -60,7 +59,7 @@
 	</time_track>
 
 	<sleep_hours_strip x="16" y="154" width="470" height="14" count="24" complex_mode="0">
-		<text align="c" vert_align="c" font="font_rubik_14" r="160" g="170" b="180"/>
+		<text align="c" vert_align="c" font="font_roboto_14" r="160" g="170" b="180"/>
 	</sleep_hours_strip>
 
 	<sleep_preset_btn x="110" y="212" width="67" height="24" check_mode="0" stretch="1">

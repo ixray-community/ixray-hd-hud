@@ -16,7 +16,7 @@
 		<text>«Долг»</text>
 	</string>
 	<string id="ecolog">
-		<text>Учёный</text>
+		<text>Ученый</text>
 	</string>
 	<string id="enemy">
 		<text>Враг</text>
@@ -70,7 +70,7 @@
 		<text>Путепровод «Припять-1»</text>
 	</string>
 	<string id="killer">
-		<text>Наёмник</text>
+		<text>Наемник</text>
 	</string>
 	<string id="labx8">
 		<text>Лаборатория X8</text>
@@ -409,10 +409,10 @@
 		<text>Градирня</text>
 	</string>
 	<string id="st_jup_b6_name">
-		<text>Бункер учёных</text>
+		<text>Бункер ученых</text>
 	</string>
 	<string id="st_jup_b9_name">
-		<text>Вертолётные площадки</text>
+		<text>Вертолетные площадки</text>
 	</string>
 	<string id="st_location">
 		<text>Местонахождение:</text>
@@ -562,7 +562,7 @@
 		<text>Портовые краны</text>
 	</string>
 	<string id="st_zat_b53_name">
-		<text>Аномалия «Котёл»</text>
+		<text>Аномалия «Котел»</text>
 	</string>
 	<string id="st_zat_b54_name">
 		<text>Аномалия «Рубец»</text>

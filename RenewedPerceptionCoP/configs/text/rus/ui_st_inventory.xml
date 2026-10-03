@@ -22,7 +22,7 @@
 		<text>активировать артефакт</text>
 	</string>
 	<string id="st_attach_gl_to_rifle">
-		<text>прикрепить гранатомёт к</text>
+		<text>прикрепить гранатомет к</text>
 	</string>
 	<string id="st_attach_scope_to_pistol">
 		<text>прикрепить прицел к</text>
@@ -40,7 +40,7 @@
 		<text>Состояние</text>
 	</string>
 	<string id="st_detach_gl">
-		<text>отсоединить гранатомёт</text>
+		<text>отсоединить гранатомет</text>
 	</string>
 	<string id="st_detach_scope">
 		<text>отсоединить прицел</text>
@@ -55,7 +55,7 @@
 		<text>выбросить</text>
 	</string>
 	<string id="st_drop_all">
-		<text>выбросить всё</text>
+		<text>выбросить все</text>
 	</string>
 	<string id="st_eat">
 		<text>съесть</text>
@@ -109,7 +109,7 @@
 		<text>Вес</text>
 	</string>
 	<string id="ui_ammo_count">
-		<text>Ёмк. магазина</text>
+		<text>Емк. магазина</text>
 	</string>
 	<string id="ui_inv_accuracy">
 		<text>Точность</text>
@@ -157,10 +157,10 @@
 		<text>Восст. здоровья</text>
 	</string>
 	<string id="ui_inv_heavy_weapons">
-		<text>Тяжёлое</text>
+		<text>Тяжелое</text>
 	</string>
 	<string id="ui_inv_last_buy">
-		<text>Купить последний приобретённый набор</text>
+		<text>Купить последний приобретенный набор</text>
 	</string>
 	<string id="ui_inv_last_buy(F4)">
 		<text>Предыдущий (F4)</text>
@@ -271,7 +271,7 @@
 		<text>Стартовый</text>
 	</string>
 	<string id="ui_st_preset_stored_to">
-		<text>Приобретённый набор сохранён как</text>
+		<text>Приобретенный набор сохранен как</text>
 	</string>
 	<string id="ui_total_weight">
 		<text>Общий вес:</text>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_hd_actor_state_radia">
+		<text>Radiation prot.</text>
+	</string>
+	<string id="st_hd_actor_state_acid">
+		<text>Chemical prot.</text>
+	</string>
+	<string id="st_hd_actor_state_shock">
+		<text>Electrical prot.</text>
+	</string>
+	<string id="st_hd_actor_state_fire">
+		<text>Thermal prot.</text>
+	</string>
+	<string id="st_hd_actor_state_psi">
+		<text>Psi protection</text>
+	</string>
+	<string id="st_hd_actor_state_wound">
+		<text>Impact mitigation</text>
+	</string>
+	<string id="st_hd_actor_state_fire_wound">
+		<text>Armor protection</text>
+	</string>
+	<string id="st_hd_actor_state_power">
+		<text>Stamina recovery</text>
+	</string>
+	<string id="st_hd_actor_state_health">
+		<text>Overall health</text>
+	</string>
+	<string id="st_hd_actor_state_radiation">
+		<text>Radiation</text>
+	</string>
+	<string id="st_hd_actor_state_thirst">
+		<text>Thirst</text>
+	</string>
+	<string id="st_hd_actor_state_intoxication">
+		<text>Intoxication</text>
+	</string>
+</string_table>

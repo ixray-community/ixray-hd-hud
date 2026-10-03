@@ -58,7 +58,7 @@
 		<text>Режим стрельбы пред.</text>
 	</string>
 	<string id="kb_forward">
-		<text>Вперёд</text>
+		<text>Вперед</text>
 	</string>
 	<string id="kb_func">
 		<text>Подствольник</text>
@@ -224,6 +224,9 @@
 	</string>
 	<string id="kb_quick_use_4">
 		<text>Ячейка быстрого доступа 4</text>
+	</string>
+	<string id="kb_clear_gasmask">
+		<text>Протирание маски</text>
 	</string>
 	<string id="kb_show_quick_slots">
 		<text>Показ панели быстрого доступа</text>

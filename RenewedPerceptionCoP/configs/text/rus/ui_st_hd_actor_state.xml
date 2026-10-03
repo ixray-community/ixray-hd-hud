@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_hd_actor_state_radia">
+		<text>Радиационная защ.</text>
+	</string>
+	<string id="st_hd_actor_state_acid">
+		<text>Химическая защ.</text>
+	</string>
+	<string id="st_hd_actor_state_shock">
+		<text>Электрическая защ.</text>
+	</string>
+	<string id="st_hd_actor_state_fire">
+		<text>Термическая защ.</text>
+	</string>
+	<string id="st_hd_actor_state_psi">
+		<text>Пси защита</text>
+	</string>
+	<string id="st_hd_actor_state_wound">
+		<text>Гашение удара</text>
+	</string>
+	<string id="st_hd_actor_state_fire_wound">
+		<text>Бронезащита</text>
+	</string>
+	<string id="st_hd_actor_state_power">
+		<text>Восстановление сил</text>
+	</string>
+	<string id="st_hd_actor_state_health">
+		<text>Общее здоровье</text>
+	</string>
+	<string id="st_hd_actor_state_radiation">
+		<text>Облучение</text>
+	</string>
+	<string id="st_hd_actor_state_thirst">
+		<text>Жажда</text>
+	</string>
+	<string id="st_hd_actor_state_intoxication">
+		<text>Интоксикация</text>
+	</string>
+</string_table>
