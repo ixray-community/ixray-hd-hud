@@ -12,7 +12,7 @@
 	<indicator_sleepiness override="remove"/>
 
 	<indicator_stack_panel override="remove"/>
-	<indicator_stack_panel x="8" y="435" width="21" height="350" sp_align="bottom" spacing="6" override="add"/>
+	<indicator_stack_panel x="8" y="420" width="21" height="350" sp_align="bottom" spacing="6" override="add"/>
 	<indicator_starvation x="0" y="0" width="22" height="30" stretch="1" override="add"/>
 	<indicator_helmet_broken x="0" y="0" width="22" height="30" stretch="1" override="add"/>
 	<indicator_outfit_broken x="0" y="0" width="22" height="30" stretch="1" override="add"/>
@@ -236,10 +236,15 @@
 
 		<static_wpn_icon x="990.000" y="682.000" width="45" height="24" align="c" alignment="c" stretch="1" 
 						caliber="1" hud_group_catalog="hud_group_catalog.xml" override="replace">
-			<caliber_text x="-2" y="9" width="30" height="20" stretch="1">
+			<caliber_text x="-4" y="9" width="30" height="20" stretch="1">
 				<text font="font_oswald_20" align="r" vert_align="l" r="201" g="198" b="198"/>
 			</caliber_text>
-			<caliber_icon x="32" y="9" width="12.8" height="16" align="l" stretch="1"/>
+			<caliber_icon x="30" y="10" width="10" height="13" align="l" stretch="1">
+				<svg icon="ui_ammo_caliber_icon_regular">ui_ammo_caliber_icon_regular_hud.svg</svg>
+				<svg icon="ui_ammo_caliber_icon_ap">ui_ammo_caliber_icon_ap_hud.svg</svg>
+				<svg icon="ui_ammo_caliber_icon_expansive">ui_ammo_caliber_icon_expansive_hud.svg</svg>
+				<svg icon="ui_ammo_caliber_icon_flat">ui_ammo_caliber_icon_flat.svg</svg>
+			</caliber_icon>
 		</static_wpn_icon>
 
 <!--

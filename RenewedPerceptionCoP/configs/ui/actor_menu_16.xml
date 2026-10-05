@@ -26,37 +26,37 @@
 
     <!-- Player Information -->
     <!-- Start -->
-    <actor_ch_info x="657" y="10" width="257" height="89">
-        <name_static x="110" y="2" width="145" height="24">
-            <text align="r" font="font_oswald_24" r="193" g="201" b="209"/>
+    <actor_ch_info x="657" y="12" width="257" height="89">
+        <name_static x="110" y="4" width="145" height="24">
+            <text align="r" font="font_roboto_light_16" color="ui_7"/>
         </name_static>
 
         <community_caption x="5" y="19" width="145" height="14">
-            <text align="l" vert_align="c" font="font_rubik_14" color="ui_3">ui_st_community</text>
+            <text align="l" vert_align="c" font="font_roboto_light_16" r="255" g="255" b="255" a="128">ui_st_community</text>
         </community_caption>
         <community_static x="110" y="19" width="145" height="14">
-            <text align="r" vert_align="c" font="font_rubik_14" color="ui_3"/>
+            <text align="r" vert_align="c" font="font_roboto_light_16" r="255" g="255" b="255" a="255"/>
         </community_static>
 
         <rank_caption x="5" y="32" width="145" height="14">
-            <text align="l" vert_align="c" font="font_rubik_14" color="ui_3">ui_st_rank</text>
+            <text align="l" vert_align="c" font="font_roboto_light_16" r="255" g="255" b="255" a="128">ui_st_rank</text>
         </rank_caption>
         <rank_static x="110" y="32" width="145" height="14">
-            <text align="r" vert_align="c" font="font_rubik_14" color="ui_3"/>
+            <text align="r" vert_align="c" font="font_roboto_light_16" r="255" g="255" b="255" a="255"/>
         </rank_static>
 
         <reputation_caption x="5" y="44" width="145" height="14">
-            <text align="l" vert_align="c" font="font_rubik_14" color="ui_3">ui_st_reputation</text>
+            <text align="l" vert_align="c" font="font_roboto_light_16" r="255" g="255" b="255" a="128">ui_st_reputation</text>
         </reputation_caption>
         <reputation_static x="110" y="44" width="145" height="14">
-            <text align="r" vert_align="c" font="font_rubik_14" color="ui_3"/>
+            <text align="r" vert_align="c" font="font_roboto_light_16" r="255" g="255" b="255" a="255"/>
         </reputation_static>
 
-        <game_time_caption x="5" y="5" width="25" height="14">
-            <text align="l" vert_align="c" font="font_rubik_14" r="193" g="201" b="209" a="128">ui_inv_time</text>
+        <game_time_caption x="5" y="4" width="25" height="14">
+            <text align="l" vert_align="c" font="font_roboto_light_16" r="255" g="255" b="255" a="128">ui_inv_time</text>
         </game_time_caption>
-        <game_time_static x="30" y="5" width="25" height="14">
-            <text align="r" vert_align="c" font="font_rubik_14" r="193" g="201" b="209" a="255"/>
+        <game_time_static x="28" y="4" width="25" height="14">
+            <text align="r" vert_align="c" font="font_roboto_light_16" r="255" g="255" b="255" a="255"/>
         </game_time_static>
 
         <icon x="260.5" y="1" width="99" height="87" stretch="1">
@@ -101,12 +101,12 @@
     </partner_ch_info>
     <!-- Finish -->
 
-	<actor_money_static x="804" y="72" width="104" height="22">
-		<text align="r" font="font_oswald_30" r="255" g="255" b="255" a="150"/>
+	<actor_money_static x="804" y="78" width="104" height="22">
+		<text align="r" font="font_oswald_22" r="255" g="255" b="255" a="255"/>
 	</actor_money_static>
 
-	<partner_money_static x="155" y="72" width="104" height="22">
-		<text align="r" font="font_oswald_30" r="255" g="255" b="255" a="150"/>
+	<partner_money_static x="155" y="78" width="104" height="22">
+		<text align="r" font="font_oswald_22" r="255" g="255" b="255" a="255"/>
 	</partner_money_static>
 
 	<inventory_slot_wnd>
@@ -135,8 +135,8 @@
 					</background>
 					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="number" align="c" vert_align="c"/>
 				</percent_display>
-					<min_color r="180" g="0" b="0"/>
-					<middle_color r="255" g="255" b="255"/>
+					<min_color r="202" g="46" b="46"/>
+					<middle_color r="210" g="201" b="2"/>
 					<max_color r="255" g="255" b="255"/>
 			</slot_progress_percent>
 		</slot>
@@ -163,8 +163,8 @@
 					</background>
 					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="number" align="c" vert_align="c"/>
 				</percent_display>
-					<min_color r="180" g="0" b="0"/>
-					<middle_color r="255" g="255" b="255"/>
+					<min_color r="202" g="46" b="46"/>
+					<middle_color r="210" g="201" b="2"/>
 					<max_color r="255" g="255" b="255"/>
 			</slot_progress_percent>
 		</slot>
@@ -194,8 +194,8 @@
 					</background>
 					<text x="0" y="1" width="24" height="19" align="c" vert_align="c" font="font_roboto_16" format="number"/>
 				</percent_display>
-					<min_color r="180" g="0" b="0"/>
-					<middle_color r="255" g="255" b="255"/>
+					<min_color r="202" g="46" b="46"/>
+					<middle_color r="210" g="201" b="2"/>
 					<max_color r="255" g="255" b="255"/>
 			</slot_progress_percent>
 			<slot_highlight x="385.5" y="111" width="96" height="174" stretch="1">
@@ -236,8 +236,8 @@
 					</background>
 					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="number" align="c" vert_align="c"/>
 				</percent_display>
-					<min_color r="180" g="0" b="0"/>
-					<middle_color r="255" g="255" b="255"/>
+					<min_color r="202" g="46" b="46"/>
+					<middle_color r="210" g="201" b="2"/>
 					<max_color r="255" g="255" b="255"/>
 			</slot_progress_percent>
 			<slot_dragdrop x="386" y="8" width="95" height="107"
@@ -286,8 +286,8 @@
 					</background>
 					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="number" align="c" vert_align="c"/>
 				</percent_display>
-					<min_color r="180" g="0" b="0"/>
-					<middle_color r="255" g="255" b="255"/>
+					<min_color r="202" g="46" b="46"/>
+					<middle_color r="210" g="201" b="2"/>
 					<max_color r="255" g="255" b="255"/>
 			</slot_progress_percent>
 		</slot>
@@ -314,45 +314,21 @@
 		<text align="c" color="ui_3" font="font_roboto_16">quick_use_str_4</text>
 	</quick_slot4_text>
 
-	<!-- legacy (caption / actor_weight / actor_weight_max)
-	<actor_weight_caption x="820" y="736" width="57" height="16">
-		<text align="r" font="font_rubik_18" r="211" g="211" b="211" a="255">ui_total_weight</text>
+	<actor_weight_caption x="820" y="735" width="57" height="16">
+		<text align="r" font="font_oswald_22" r="255" g="255" b="255" a="128">ui_total_weight</text>
 	</actor_weight_caption>
-	<actor_weight x="908" y="736" width="35" height="16">
-		<text align="c" font="font_rubik_18"/>
+	<actor_weight x="908" y="735" width="35" height="16">
+		<text align="c" font="font_oswald_22" r="255" g="255" b="255" a="255"/>
 	</actor_weight>
-	<actor_weight_max x="940" y="736" width="68" height="16">
-		<text align="l" font="font_rubik_18" color="ui_3"/>
+	<actor_weight_max x="955" y="735" width="68" height="16">
+		<text align="l" font="font_oswald_22" r="255" g="255" b="255" a="128"/>
 	</actor_weight_max>
-	-->
-
-	<!-- Row container -->
-	<actor_weight_row x="760" y="735" width="260" height="24">
-		<actor_weight_caption x="16" y="0" width="57" height="24">
-			<text align="r" font="font_oswald_22" r="139" g="149" b="158" a="255">ui_total_weight</text>
-		</actor_weight_caption>
-		<weight_status_bar x="65" y="3.5" width="120" height="15" stretch="1" horz="1" min="0" max="1" pos="0">
-			<progress x="0" y="0" width="120" height="16" stretch="1">
-				<texture>ui_inGame2_inventory_progress_bar</texture>
-			</progress>
-			<min_color r="184" g="111" b="41"/>
-			<middle_color r="120" g="133" b="139"/>
-			<max_color r="214" g="223" b="232"/>
-			<hint>
-				<text font="font_oswald_22" r="214" g="223" b="232" a="255">st_ui_inv_weight_bar_hint</text>
-				<volume_text>st_ui_inv_weight_bar_hint_volume</volume_text>
-			</hint>
-		</weight_status_bar>
-		<actor_weight_max x="190" y="0" width="68" height="24">
-			<text align="l" font="font_oswald_22" r="139" g="149" b="158" a="255"/>
-		</actor_weight_max>
-	</actor_weight_row>
 
 	<partner_weight_caption x="265" y="735" width="68" height="14">
-		<text align="r" font="font_oswald_22" r="139" g="149" b="158" a="255">ui_total_weight</text>
+		<text align="r" font="font_oswald_22" r="255" g="255" b="255" a="255">ui_total_weight</text>
 	</partner_weight_caption>
 	<partner_weight x="360" y="735" width="36" height="14">
-		<text align="l" font="font_oswald_22" r="139" g="149" b="158" a="255"/>
+		<text align="l" font="font_oswald_22" r="255" g="255" b="255" a="255"/>
 	</partner_weight>
 
 	<!-- partner  -->
@@ -424,10 +400,10 @@
 	    <texture>ui_inGame2_inventory_button</texture>
 	    <text font="font_oswald_30" align="c">ui_st_buy</text>
 	    <text_color>
-	        <e r="193" g="201" b="209" a="255"/>
-	        <t r="214" g="223" b="232" a="255"/>
-	        <d r="122" g="135" b="148" a="255"/>
-	        <h r="184" g="111" b="41" a="255"/>
+	        <e color ="ui_6"/>
+	        <t color ="ui_black"/>
+	        <d color ="ui_5"/>
+	        <h color ="ui_black"/>
 	    </text_color>
 	</trade_buy_button>
 
@@ -436,10 +412,10 @@
 	    <texture>ui_inGame2_inventory_button</texture>
 	    <text font="font_oswald_30" align="c">ui_st_sell</text>
 	    <text_color>
-	        <e r="193" g="201" b="209" a="255"/>
-	        <t r="214" g="223" b="232" a="255"/>
-	        <d r="122" g="135" b="148" a="255"/>
-	        <h r="184" g="111" b="41" a="255"/>
+	        <e color ="ui_6"/>
+	        <t color ="ui_black"/>
+	        <d color ="ui_5"/>
+	        <h color ="ui_black"/>
 	    </text_color>
 	</trade_sell_button>
 
@@ -448,10 +424,10 @@
 	    <texture>ui_invaddon_bigbutton_16</texture>
 	    <text font="font_oswald_30" align="c">ui_st_take_all</text>
 	    <text_color>
-	        <e r="193" g="201" b="209" a="255"/>
-	        <t r="214" g="223" b="232" a="255"/>
-	        <d r="122" g="135" b="148" a="255"/>
-	        <h r="184" g="111" b="41" a="255"/>
+	        <e color ="ui_6"/>
+	        <t color ="ui_black"/>
+	        <d color ="ui_5"/>
+	        <h color ="ui_black"/>
 	    </text_color>
 	</takeall_button>
 
@@ -460,22 +436,22 @@
 	    <texture>ui_invaddon_bigbutton_16</texture>
 	    <text font="font_oswald_30" align="c">ui_st_put_all</text>
 	    <text_color>
-	        <e r="193" g="201" b="209" a="255"/>
-	        <t r="214" g="223" b="232" a="255"/>
-	        <d r="122" g="135" b="148" a="255"/>
-	        <h r="184" g="111" b="41" a="255"/>
+	        <e color ="ui_6"/>
+	        <t color ="ui_black"/>
+	        <d color ="ui_5"/>
+	        <h color ="ui_black"/>
 	    </text_color>
 	</putall_button>
 
-	<exit_button x="384" y="730" width="254" height="28" stretch="1" hint="ui_st_exit_hint">
+	<exit_button x="420" y="730" width="200" height="26" stretch="1" hint="ui_st_exit_hint">
 	    <window_name>exit_button</window_name>
 	    <texture>ui_inGame2_big_inventory_button</texture>
-	    <text font="font_oswald_30" align="c">ui_inv_exit</text>
+	    <text font="font_oswald_22" align="c">ui_inv_exit</text>
 	    <text_color>
-	        <e r="193" g="201" b="209" a="255"/>
-	        <t r="214" g="223" b="232" a="255"/>
-	        <d r="122" g="135" b="148" a="255"/>
-	        <h r="160" g="175" b="190" a="255"/>
+	        <e color ="ui_6"/>
+	        <t color ="ui_black"/>
+	        <d color ="ui_5"/>
+	        <h color ="ui_black"/>
 	    </text_color>
 	</exit_button>
 
@@ -502,7 +478,7 @@
 	    </text>
 	</hint_wnd>
 
-	<actor_state_info x="490.000" y="13" width="150.000" height="274.000">
+	<actor_state_info x="490.000" y="13" width="145.000" height="274.000">
 	    <hint_wnd x="0" y="0" width="192" height="100">
 	        <background x="0" y="0" width="192" height="100">
 		        <texture>ui_inGame2_hint_wnd_main_window</texture>
@@ -512,7 +488,7 @@
 	        </text>
 	    </hint_wnd>
 
-		<state_list x="0" y="0" width="180" height="274" sp_align="top" spacing="1"
+		<state_list x="0" y="0" width="145" height="274" sp_align="top" spacing="1"
 			row_height="20"
 			icon_size="12,16"
 			icon_color="235,142,22,255"
@@ -527,6 +503,7 @@
 			caption_x="18"
 			value_x="100">
 
+			<separator height="5" color="255,255,255,40"/>
 			<item type="radia" caption="st_hd_actor_state_radia" hint_text="ui_inv_outfit_radiation_protection"
 				icon="ui_hd_actor_state_radia"/>
 			<item type="acid" caption="st_hd_actor_state_acid" hint_text="ui_inv_outfit_chemical_burn_protection"
@@ -543,6 +520,7 @@
 				icon="ui_hd_actor_state_fire_wound"/>
 			<item type="power" caption="st_hd_actor_state_power" hint_text="ui_inv_outfit_power_restore"
 				icon="ui_hd_actor_state_power"/>
+			<separator height="5" color="255,255,255,40"/>
 			<item type="health" caption="st_hd_actor_state_health" hint_text="st_ui_health_sensor"
 				icon="ui_hd_actor_state_health" icon_color="65,216,163,255"/>
 			<item type="radiation" caption="st_hd_actor_state_radiation" hint_text="st_ui_main_sensor"
