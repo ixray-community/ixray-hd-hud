@@ -133,7 +133,7 @@
 					<background width="25" height="20" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="number" align="c" vert_align="c"/>
+					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="percent" align="c" vert_align="c"/>
 				</percent_display>
 					<min_color r="202" g="46" b="46"/>
 					<middle_color r="210" g="201" b="2"/>
@@ -161,7 +161,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="number" align="c" vert_align="c"/>
+					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="percent	" align="c" vert_align="c"/>
 				</percent_display>
 					<min_color r="202" g="46" b="46"/>
 					<middle_color r="210" g="201" b="2"/>
@@ -192,7 +192,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="1" width="24" height="19" align="c" vert_align="c" font="font_roboto_16" format="number"/>
+					<text x="0" y="1" width="24" height="19" align="c" vert_align="c" font="font_roboto_16" format="percent"/>
 				</percent_display>
 					<min_color r="202" g="46" b="46"/>
 					<middle_color r="210" g="201" b="2"/>
@@ -234,7 +234,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="number" align="c" vert_align="c"/>
+					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="percent" align="c" vert_align="c"/>
 				</percent_display>
 					<min_color r="202" g="46" b="46"/>
 					<middle_color r="210" g="201" b="2"/>
@@ -284,7 +284,7 @@
 					<background width="24" height="19" stretch="1">
 						<texture a="255">ui_inGame2_inventory_percent_status</texture>
 					</background>
-					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="number" align="c" vert_align="c"/>
+					<text x="0" y="1" width="24" height="19" font="font_roboto_16" format="percent" align="c" vert_align="c"/>
 				</percent_display>
 					<min_color r="202" g="46" b="46"/>
 					<middle_color r="210" g="201" b="2"/>
@@ -491,10 +491,10 @@
 		<state_list x="0" y="0" width="145" height="274" sp_align="top" spacing="1"
 			row_height="20"
 			icon_size="12,16"
-			icon_color="235,142,22,255"
+			icon_color="147,154,159,255"
 			caption_color="128,128,128,255"
 			value_color="255,255,255,225"
-			value_format="%d"
+			value_format="%d%%"
 			value_magnitude="100"
 			font="font_roboto_16"
 			layout="icon,caption,value"
@@ -522,13 +522,13 @@
 				icon="ui_hd_actor_state_power"/>
 			<separator height="5" color="255,255,255,40"/>
 			<item type="health" caption="st_hd_actor_state_health" hint_text="st_ui_health_sensor"
-				icon="ui_hd_actor_state_health" icon_color="65,216,163,255"/>
+				icon="ui_hd_actor_state_health" icon_color="84,166,213,255"/>
 			<item type="radiation" caption="st_hd_actor_state_radiation" hint_text="st_ui_main_sensor"
-				icon="ui_hd_actor_state_radiation" icon_color="65,216,163,255"/>
+				icon="ui_hd_actor_state_radiation" icon_color="84,166,213,255"/>
 			<item type="thirst" caption="st_hd_actor_state_thirst" hint_text="ui_inv_thirst"
-				icon="ui_hd_actor_state_thirst" icon_color="65,216,163,255"/>
+				icon="ui_hd_actor_state_thirst" icon_color="84,166,213,255"/>
 			<item type="intoxication" caption="st_hd_actor_state_intoxication" hint_text="st_ui_intoxication_sensor"
-				icon="ui_hd_actor_state_intoxication" icon_color="65,216,163,255"/>
+				icon="ui_hd_actor_state_intoxication" icon_color="84,166,213,255"/>
 		</state_list>
 	</actor_state_info>
 

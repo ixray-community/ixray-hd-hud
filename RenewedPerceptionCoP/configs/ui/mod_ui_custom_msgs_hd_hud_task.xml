@@ -1,0 +1,13 @@
+<header>
+	<main_task x="235" y="120" width="554" height="60" complex_mode="1" override="replace">
+		<text align="c" font="font_oswald_32" r="255" g="255" b="255" a="220">
+			<shadows thickness="0.5" r="0" g="0" b="0" a="50"/>
+		</text>
+	</main_task>
+
+	<secondary_task x="235" y="145" width="554" height="60" complex_mode="1" light_anim="ui_tesk_description" la_alpha="1" la_text="1" la_cyclic="0" override="replace">
+		<text align="c" font="font_oswald_20" r="255" g="255" b="255" a="220">
+			<shadows thickness="0.5" r="0" g="0" b="0" a="50"/>
+		</text>
+	</secondary_task>
+</header>

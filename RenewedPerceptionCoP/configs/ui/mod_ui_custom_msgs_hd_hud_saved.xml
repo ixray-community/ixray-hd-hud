@@ -1,0 +1,7 @@
+<header>
+	<game_saved x="100" y="730" width="800" height="30" ttl="3" override="replace">
+		<text font="font_oswald_20" r="255" g="255" b="255" a="220" align="c">
+			<shadows thickness="0.5" r="0" g="0" b="0" a="50"/>
+		</text>
+	</game_saved>
+</header>
