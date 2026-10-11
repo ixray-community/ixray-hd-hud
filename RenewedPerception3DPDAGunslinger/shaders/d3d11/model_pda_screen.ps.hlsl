@@ -1,8 +1,6 @@
 #include "common.hlsli"
 #include "pda_glass.hlsli"
 
-uniform float4 m_affects;
-
 Texture2D s_vp2;
 Texture2D s_load;
 
