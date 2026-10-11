@@ -109,6 +109,11 @@ this.GOALS = {
 	},
 	friend_of_stalkers = {steps = {"jup_b220_trapper_zaton_chimera_hunted_told", "jup_a12_stalker_prisoner_helped",
 		"jup_a10_vano_give_task_end", "zat_b5_stalker_leader_end", "zat_b7_task_end"}},
+	-- Gunslinger Quests (gunsl_statistic.stealthy_stalker_functor).
+	stealthy_stalker = {
+		steps = {"gunsl_zat_stealthy_achievement_allowed", "zat_b40_find_information_comlpete"},
+		blocked_by = {"zat_b40_merc_hurt", "zat_b40_merc_in_combat", "zat_b40_merc_gone"},
+	},
 }
 
 this.species_by_id = {}

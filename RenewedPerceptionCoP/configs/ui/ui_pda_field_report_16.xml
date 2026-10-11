@@ -1,4 +1,9 @@
+<w>
 	<main x="31" y="79" width="966" height="665"/>
+
+	<!-- Row layout used by the script: equipment rows fill y..bottom, relation rows start at y -->
+	<gear_rows y="551" bottom="662" step_max="27" bar_height="4"/>
+	<relation_rows y="40" step="29" bar_offset="7"/>
 
 	<!-- Section headers -->
 	<hdr_zone x="6" y="139" width="268" height="30" vertical="0">

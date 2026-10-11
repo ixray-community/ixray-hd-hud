@@ -91,12 +91,12 @@
 				<h r="160" g="175" b="190" a="255"/>
 			</text_color>
 		</button>
-		<button x="115" y="3" width="120" height="35" id="eptRanking" hint="pda_tab_statistics_hint" frame_mode="1">
+		<button x="115" y="3" width="120" height="35" id="eptRanking" hint="pda_tab_field_report_hint" frame_mode="1">
 			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
 			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
 			<texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
 			<texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
-			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_22">pda_tab_statistics</text>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_22">pda_tab_field_report</text>
 			<text_color>
 				<e r="193" g="201" b="209" a="100"/>
 				<t r="214" g="223" b="232" a="255"/>

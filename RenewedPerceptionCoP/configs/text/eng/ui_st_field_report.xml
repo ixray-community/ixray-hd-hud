@@ -269,6 +269,10 @@
 		<text>Help free stalkers who are in trouble.</text>
 	</string>
 
+	<string id="st_fr_goal_stealthy_stalker">
+		<text>Secretly obtain the information at the mercenary camp in Zaton: no fighting, no wounded.</text>
+	</string>
+
 	<string id="st_fr_fac_stalker">
 		<text>Stalkers</text>
 	</string>

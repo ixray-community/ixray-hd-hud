@@ -1,12 +1,12 @@
 this.XML_FILE = "ui_pda_field_report_16.xml"
 this.LIGHT_REFRESH_MS = 2000
-this.GEAR_ROW_Y = 551
-this.GEAR_AREA_BOTTOM = 662
-this.GEAR_ROW_STEP_MAX = 27
-this.GEAR_BAR_HEIGHT = 4
-this.RELATION_ROW_Y = 40
-this.RELATION_ROW_STEP = 29
 this.CARD_PADDING = 8
+
+-- Row layout defaults; every PDA variant can override them in its XML (gear_rows, relation_rows).
+this.ROW_LAYOUT_DEFAULTS = {
+	gear_rows = {y = 551, bottom = 662, step_max = 27, bar_height = 4},
+	relation_rows = {y = 40, step = 29, bar_offset = 7},
+}
 
 this.COLOR_DEFAULT = {220, 220, 220}
 this.COLOR_GOOD = {120, 200, 120}
@@ -53,6 +53,15 @@ function fit_height(wnd, height)
 	wnd:SetWndSize(vector2():set(wnd:GetWidth(), height))
 end
 
+-- Reads numeric attributes of a layout node, falling back to ROW_LAYOUT_DEFAULTS.
+function read_row_layout(xml, node)
+	local layout = {}
+	for name, default in pairs(this.ROW_LAYOUT_DEFAULTS[node]) do
+		layout[name] = xml:NodeExist(node, 0) and tonumber(xml:ReadAttribute(node, 0, name)) or default
+	end
+	return layout
+end
+
 class "ui_pda_field_report" (CUIScriptWnd)
 
 function ui_pda_field_report:__init()
@@ -60,12 +69,17 @@ function ui_pda_field_report:__init()
 	self.next_light_refresh = 0
 	self.gear_rows = {}
 	self.relation_rows = {}
-	self:InitControls()
+	self.ready = self:InitControls()
 end
 
+-- Returns false when the layout is missing or broken; the PDA then keeps its native statistics window.
 function ui_pda_field_report:InitControls()
 	self.xml = CScriptXmlInit()
 	self.xml:ParseFile(this.XML_FILE)
+	if not self.xml:NodeExist("main", 0) then
+		printf("! ui_pda_field_report: node <main> not found in ui\\%s, field report disabled", this.XML_FILE)
+		return false
+	end
 	self.xml:InitWindow("main", 0, self)
 
 	for _, name in ipairs({"hdr_zone", "hdr_gear", "hdr_chronicle", "hdr_goals", "hdr_relations", "hdr_knowledge"}) do
@@ -88,24 +102,27 @@ function ui_pda_field_report:InitControls()
 	self.knowledge_summary = self.xml:InitStatic("knowledge_summary", self)
 	self.knowledge_list = self.xml:InitScrollView("knowledge_list", self)
 
+	-- Equipment rows share their panel; the step shrinks when the holster slot adds a row.
+	local gear = read_row_layout(self.xml, "gear_rows")
 	local gear_count = #ixr_field_report.get_gear_slots()
-	local gear_step = math.min(this.GEAR_ROW_STEP_MAX,
-		math.floor((this.GEAR_AREA_BOTTOM - this.GEAR_ROW_Y - this.GEAR_BAR_HEIGHT) / math.max(gear_count, 1)))
+	local gear_step = math.min(gear.step_max, math.floor((gear.bottom - gear.y - gear.bar_height) / math.max(gear_count, 1)))
 	for i = 1, gear_count do
 		self.gear_rows[i] = {
-			name = move_to_row(self.xml:InitStatic("gear_name", self), this.GEAR_ROW_Y + (i - 1) * gear_step),
-			value = move_to_row(self.xml:InitStatic("gear_value", self), this.GEAR_ROW_Y + (i - 1) * gear_step),
-			bar = move_to_row(self.xml:InitProgressBar("gear_bar", self), this.GEAR_ROW_Y + i * gear_step - this.GEAR_BAR_HEIGHT - 1),
+			name = move_to_row(self.xml:InitStatic("gear_name", self), gear.y + (i - 1) * gear_step),
+			value = move_to_row(self.xml:InitStatic("gear_value", self), gear.y + (i - 1) * gear_step),
+			bar = move_to_row(self.xml:InitProgressBar("gear_bar", self), gear.y + i * gear_step - gear.bar_height - 1),
 		}
 	end
 
+	local relation = read_row_layout(self.xml, "relation_rows")
 	for i = 1, #ixr_field_report.FACTIONS do
 		self.relation_rows[i] = {
-			name = move_to_row(self.xml:InitStatic("rel_name", self), this.RELATION_ROW_Y + (i - 1) * this.RELATION_ROW_STEP),
-			bar = move_to_row(self.xml:InitProgressBar("rel_bar", self), this.RELATION_ROW_Y + (i - 1) * this.RELATION_ROW_STEP + 7),
-			status = move_to_row(self.xml:InitStatic("rel_status", self), this.RELATION_ROW_Y + (i - 1) * this.RELATION_ROW_STEP),
+			name = move_to_row(self.xml:InitStatic("rel_name", self), relation.y + (i - 1) * relation.step),
+			bar = move_to_row(self.xml:InitProgressBar("rel_bar", self), relation.y + (i - 1) * relation.step + relation.bar_offset),
+			status = move_to_row(self.xml:InitStatic("rel_status", self), relation.y + (i - 1) * relation.step),
 		}
 	end
+	return true
 end
 
 -- ################################
@@ -296,6 +313,9 @@ end
 function get_ui()
 	if this.ui_instance == nil then
 		this.ui_instance = ui_pda_field_report()
+	end
+	if not this.ui_instance.ready then
+		return nil
 	end
 	this.ui_instance:RefreshAll()
 	return this.ui_instance

@@ -269,6 +269,10 @@
 		<text>Помогать вольным сталкерам, попавшим в беду.</text>
 	</string>
 
+	<string id="st_fr_goal_stealthy_stalker">
+		<text>Тайно добыть сведения в лагере наёмников на Затоне: без боя и без раненых.</text>
+	</string>
+
 	<string id="st_fr_fac_stalker">
 		<text>Сталкеры</text>
 	</string>
