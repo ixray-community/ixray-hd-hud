@@ -16,7 +16,7 @@
 		<auto_frameline x="36" y="37" width="95" height="35" vertical="0">
 			<texture a="255">ui_inGame2_datetime_bg</texture>
 		</auto_frameline>
-		<auto_frameline x="125" y="37" width="501" height="35" vertical="0">
+		<auto_frameline x="125" y="37" width="590" height="35" vertical="0">
 			<texture a="255">ui_inGame2_bg_tab_stub</texture>
 		</auto_frameline>
 	</background_static>
@@ -37,11 +37,6 @@
 				<texture a="128">ui_inGame2_journal_back</texture>
 			</auto_static>
 		</eptLogs>
-		<eptContacts>
-			<auto_static x="35" y="35" width="966" height="710" stretch="1">
-				<texture a="128">ui_inGame2_pda_msg_frame</texture>
-			</auto_static>
-		</eptContacts>
 	</tab_backgrounds>
 
 	<noice_static x="0" y="-50" width="1024" height="816" stretch="1">
@@ -80,19 +75,6 @@
 	<snd_close>device\pda\pda_close</snd_close>
 
 	<tab x="532" y="35" width="420" height="40">
-		<button x="82" y="3" width="95" height="35" id="eptContacts" hint="pda_tab_contacts_hint" frame_mode="1">
-			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
-			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
-			<texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
-			<texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
-			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">pda_tab_contacts</text>
-			<text_color>
-				<e r="193" g="201" b="209" a="100"/>
-				<t r="214" g="223" b="232" a="255"/>
-				<d r="122" g="135" b="148" a="255"/>
-				<h r="160" g="175" b="190" a="255"/>
-			</text_color>
-		</button>
 		<button x="171" y="3" width="90" height="35" id="eptTasks" hint="pda_tab_planner_hint" frame_mode="1">
 			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
 			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
@@ -106,12 +88,12 @@
 				<h r="160" g="175" b="190" a="255"/>
 			</text_color>
 		</button>
-		<button x="255" y="3" width="90" height="35" id="eptRanking" hint="pda_tab_statistics_hint" frame_mode="1">
+		<button x="255" y="3" width="90" height="35" id="eptRanking" hint="pda_tab_field_report_hint" frame_mode="1">
 			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
 			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
 			<texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
 			<texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
-			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">pda_tab_statistics</text>
+			<text align="c" vert_align="c" x="0" y="0" font="font_oswald_20">pda_tab_field_report</text>
 			<text_color>
 				<e r="193" g="201" b="209" a="100"/>
 				<t r="214" g="223" b="232" a="255"/>

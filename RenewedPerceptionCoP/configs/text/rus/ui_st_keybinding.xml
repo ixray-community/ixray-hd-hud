@@ -30,9 +30,6 @@
 	<string id="kb_console">
 		<text>Консоль</text>
 	</string>
-	<string id="kb_contacts">
-		<text>Контакты в КПК</text>
-	</string>
 	<string id="kb_crouch">
 		<text>Присесть</text>
 	</string>

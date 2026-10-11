@@ -99,12 +99,6 @@
 	<string id="pda_btn_close">
 		<text>Deactivate PDA</text>
 	</string>
-	<string id="pda_btn_contacts">
-		<text>Contacts</text>
-	</string>
-	<string id="pda_btn_contacts_hint">
-		<text>Show stalker contact list</text>
-	</string>
 	<string id="pda_btn_logs_hint">
 		<text>Show message history</text>
 	</string>
@@ -266,12 +260,6 @@
 	</string>
 	<string id="pda_stat_mutant_killed">
 		<text>Most powerful mutant killed</text>
-	</string>
-	<string id="pda_tab_contacts">
-		<text>Contacts</text>
-	</string>
-	<string id="pda_tab_contacts_hint">
-		<text>Stalker contact list</text>
 	</string>
 	<string id="pda_tab_journal">
 		<text>Journal</text>

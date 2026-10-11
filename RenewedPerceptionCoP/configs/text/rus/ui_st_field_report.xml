@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="pda_tab_field_report">
+		<text>Сводка</text>
+	</string>
+	<string id="pda_tab_field_report_hint">
+		<text>Полевая сводка: состояние Зоны, цели, отношения и знание мутантов</text>
+	</string>
+
+	<string id="st_fr_hdr_zone">
+		<text>Состояние Зоны</text>
+	</string>
+	<string id="st_fr_hdr_gear">
+		<text>Снаряжение</text>
+	</string>
+	<string id="st_fr_hdr_chronicle">
+		<text>Хроника</text>
+	</string>
+	<string id="st_fr_hdr_goals">
+		<text>Цели и награды</text>
+	</string>
+	<string id="st_fr_hdr_relations">
+		<text>Отношения</text>
+	</string>
+	<string id="st_fr_hdr_knowledge">
+		<text>Знание Зоны</text>
+	</string>
+
+	<string id="st_fr_sep">
+		<text>·</text>
+	</string>
+	<string id="st_fr_dash">
+		<text>—</text>
+	</string>
+	<string id="st_fr_none">
+		<text>нет</text>
+	</string>
+	<string id="st_fr_stamp">
+		<text>День %d, %02d:%02d</text>
+	</string>
+
+	<string id="st_fr_rank_next">
+		<text>Ранг: %s · до «%s» %d</text>
+	</string>
+	<string id="st_fr_rank_max">
+		<text>Ранг: %s · высший</text>
+	</string>
+	<string id="st_fr_money">
+		<text>Деньги: %s RU</text>
+	</string>
+	<string id="st_fr_style">
+		<text>Почерк: %s</text>
+	</string>
+	<string id="st_fr_style_newbie">
+		<text>Отмычка</text>
+	</string>
+	<string id="st_fr_style_hunter">
+		<text>Охотник</text>
+	</string>
+	<string id="st_fr_style_cutthroat">
+		<text>Головорез</text>
+	</string>
+	<string id="st_fr_style_sharpshooter">
+		<text>Меткий стрелок</text>
+	</string>
+	<string id="st_fr_style_medic">
+		<text>Добрый самаритянин</text>
+	</string>
+	<string id="st_fr_style_prospector">
+		<text>Артефактчик</text>
+	</string>
+	<string id="st_fr_style_treasure">
+		<text>Кладоискатель</text>
+	</string>
+	<string id="st_fr_style_dealer">
+		<text>Делец</text>
+	</string>
+	<string id="st_fr_style_wanderer">
+		<text>Бродяга</text>
+	</string>
+
+	<string id="st_fr_row_time">
+		<text>Время в Зоне</text>
+	</string>
+	<string id="st_fr_time_value">
+		<text>%d д. %d ч.</text>
+	</string>
+	<string id="st_fr_row_surge">
+		<text>С последнего выброса</text>
+	</string>
+	<string id="st_fr_surge_value">
+		<text>%d ч. · риск: %s</text>
+	</string>
+	<string id="st_fr_surge_now">
+		<text>идёт выброс!</text>
+	</string>
+	<string id="st_fr_risk_low">
+		<text>низкий</text>
+	</string>
+	<string id="st_fr_risk_medium">
+		<text>умеренный</text>
+	</string>
+	<string id="st_fr_risk_high">
+		<text>высокий</text>
+	</string>
+	<string id="st_fr_risk_very_high">
+		<text>очень высокий</text>
+	</string>
+	<string id="st_fr_row_fields">
+		<text>Поля обновились</text>
+	</string>
+	<string id="st_fr_fields_hint">
+		<text>Возьмите артефакт в аномальном поле, и КПК начнёт следить, когда оно обновится после выброса.</text>
+	</string>
+	<string id="st_fr_row_stashes">
+		<text>Тайники не вскрыты</text>
+	</string>
+	<string id="st_fr_row_artefacts">
+		<text>Артефакты</text>
+	</string>
+	<string id="st_fr_artefacts_value">
+		<text>%d · видов %d/%d</text>
+	</string>
+	<string id="st_fr_row_money_flow">
+		<text>Заработано / потрачено</text>
+	</string>
+	<string id="st_fr_row_quests">
+		<text>Заданий выполнено</text>
+	</string>
+	<string id="st_fr_row_kills">
+		<text>Убито мутантов / людей</text>
+	</string>
+	<string id="st_fr_row_headshots">
+		<text>Попаданий в голову</text>
+	</string>
+	<string id="st_fr_row_wounded">
+		<text>Помощь раненым</text>
+	</string>
+	<string id="st_fr_row_distance">
+		<text>Пройдено</text>
+	</string>
+	<string id="st_fr_distance_value">
+		<text>%.1f км</text>
+	</string>
+	<string id="st_fr_row_deaths">
+		<text>Гибелей</text>
+	</string>
+
+	<string id="st_fr_gear_primary">
+		<text>Основное</text>
+	</string>
+	<string id="st_fr_gear_secondary">
+		<text>Пистолет</text>
+	</string>
+	<string id="st_fr_gear_second">
+		<text>Второе</text>
+	</string>
+	<string id="st_fr_gear_outfit">
+		<text>Броня</text>
+	</string>
+	<string id="st_fr_gear_helmet">
+		<text>Шлем</text>
+	</string>
+
+	<string id="st_fr_chronicle_empty">
+		<text>Записей пока нет. Здесь появятся первые выбросы, находки и встречи с мутантами.</text>
+	</string>
+	<string id="st_fr_chr_kill_first">
+		<text>Впервые убит мутант: %s</text>
+	</string>
+	<string id="st_fr_chr_knowledge">
+		<text>Знание Зоны: %s — %s</text>
+	</string>
+	<string id="st_fr_chr_artefact">
+		<text>Новый вид артефакта: %s</text>
+	</string>
+	<string id="st_fr_chr_surge">
+		<text>Пережит выброс (%s)</text>
+	</string>
+	<string id="st_fr_chr_stash">
+		<text>Вскрыт тайник (%s)</text>
+	</string>
+	<string id="st_fr_chr_level">
+		<text>Впервые на локации: %s</text>
+	</string>
+	<string id="st_fr_chr_rank">
+		<text>Новый ранг: %s</text>
+	</string>
+	<string id="st_fr_chr_achievement">
+		<text>Достижение: %s</text>
+	</string>
+
+	<string id="st_fr_goals_summary">
+		<text>Получено %d из %d · в работе %d</text>
+	</string>
+	<string id="st_fr_goal_done">
+		<text>получено</text>
+	</string>
+	<string id="st_fr_goal_blocked">
+		<text>путь закрыт</text>
+	</string>
+	<string id="st_fr_goal_reward">
+		<text>Награда:</text>
+	</string>
+	<string id="st_fr_goal_reward_hidden">
+		<text>Награда станет известна после первого шага.</text>
+	</string>
+	<string id="st_fr_goal_pioneer">
+		<text>Исследовать уникальные аномальные образования, ещё не изученные наукой.</text>
+	</string>
+	<string id="st_fr_goal_mutant_hunter">
+		<text>Выполнить заказы на охоту за самыми опасными мутантами.</text>
+	</string>
+	<string id="st_fr_goal_detective">
+		<text>Раскрыть тайну исчезновения сталкеров со «Скадовска».</text>
+	</string>
+	<string id="st_fr_goal_one_of_the_lads">
+		<text>Дать отпор Султану и его бандитам на Затоне.</text>
+	</string>
+	<string id="st_fr_goal_kingpin">
+		<text>Помочь Султану взять под контроль дела Бороды.</text>
+	</string>
+	<string id="st_fr_goal_herald_of_justice">
+		<text>Не дать сталкеру Сороке уйти от правосудия.</text>
+	</string>
+	<string id="st_fr_goal_seeker">
+		<text>Найти все виды артефактов, известные исследователям Зоны.</text>
+	</string>
+	<string id="st_fr_goal_battle_systems_master">
+		<text>Добыть для Кардана все наборы инструментов.</text>
+	</string>
+	<string id="st_fr_goal_high_tech_master">
+		<text>Добыть для Азота все наборы инструментов.</text>
+	</string>
+	<string id="st_fr_goal_skilled_stalker">
+		<text>Побывать почти во всех аномальных местах Затона, Юпитера и Припяти.</text>
+	</string>
+	<string id="st_fr_goal_leader">
+		<text>Собрать надёжный отряд для перехода в Припять.</text>
+	</string>
+	<string id="st_fr_goal_diplomat">
+		<text>Решать конфликты на Юпитере переговорами, а не стрельбой.</text>
+	</string>
+	<string id="st_fr_goal_research_man">
+		<text>Выполнять исследовательские заказы учёных на Юпитере.</text>
+	</string>
+	<string id="st_fr_goal_friend_of_duty">
+		<text>Принимать сторону «Долга» в спорных ситуациях.</text>
+	</string>
+	<string id="st_fr_goal_friend_of_freedom">
+		<text>Принимать сторону «Свободы» в спорных ситуациях.</text>
+	</string>
+	<string id="st_fr_goal_balance_advocate">
+		<text>Не отдавать предпочтения ни «Долгу», ни «Свободе».</text>
+	</string>
+	<string id="st_fr_goal_wealthy">
+		<text>Скопить 100 000 RU.</text>
+	</string>
+	<string id="st_fr_goal_keeper_of_secrets">
+		<text>Собрать записки группы Стрелка и вернуть их владельцу.</text>
+	</string>
+	<string id="st_fr_goal_marked_by_zone">
+		<text>Трижды пережить выброс вне укрытия, приняв анабиотик.</text>
+	</string>
+	<string id="st_fr_goal_information_dealer">
+		<text>Продавать найденную информацию: КПК, документы, записи.</text>
+	</string>
+	<string id="st_fr_goal_friend_of_stalkers">
+		<text>Помогать вольным сталкерам, попавшим в беду.</text>
+	</string>
+
+	<string id="st_fr_fac_stalker">
+		<text>Сталкеры</text>
+	</string>
+	<string id="st_fr_fac_dolg">
+		<text>«Долг»</text>
+	</string>
+	<string id="st_fr_fac_freedom">
+		<text>«Свобода»</text>
+	</string>
+	<string id="st_fr_fac_bandit">
+		<text>Бандиты</text>
+	</string>
+	<string id="st_fr_fac_army">
+		<text>Военные</text>
+	</string>
+	<string id="st_fr_fac_killer">
+		<text>Наёмники</text>
+	</string>
+	<string id="st_fr_fac_ecolog">
+		<text>Учёные</text>
+	</string>
+	<string id="st_fr_rel_friend">
+		<text>друг</text>
+	</string>
+	<string id="st_fr_rel_neutral">
+		<text>нейтрал</text>
+	</string>
+	<string id="st_fr_rel_enemy">
+		<text>враг</text>
+	</string>
+
+	<string id="st_fr_knowledge_summary">
+		<text>Изучено видов: %d из %d</text>
+	</string>
+	<string id="st_fr_knowledge_empty">
+		<text>Убейте мутанта, чтобы начать записи о его повадках. Чем больше опыта, тем точнее заметки и сильнее удар.</text>
+	</string>
+	<string id="st_fr_knowledge_kills">
+		<text>убито: %d</text>
+	</string>
+	<string id="st_fr_knowledge_next">
+		<text>До «%s»: ещё %d</text>
+	</string>
+	<string id="st_fr_knowledge_complete">
+		<text>Вид изучен полностью</text>
+	</string>
+	<string id="st_fr_bonus_damage">
+		<text>+%d%% урона</text>
+	</string>
+	<string id="st_fr_tier_1">
+		<text>Повадки</text>
+	</string>
+	<string id="st_fr_tier_2">
+		<text>Уязвимости</text>
+	</string>
+	<string id="st_fr_tier_3">
+		<text>Мастерство</text>
+	</string>
+	<string id="st_fr_note_mastery">
+		<text>Вы знаете этого зверя как свои пять пальцев и бьёте наверняка.</text>
+	</string>
+
+	<string id="st_fr_mon_tushkano">
+		<text>Тушкан</text>
+	</string>
+	<string id="st_fr_note_tushkano_1">
+		<text>Нападают стаями, быстро и низко. Держите спину к стене.</text>
+	</string>
+	<string id="st_fr_note_tushkano_2">
+		<text>Хлипкие: хватает ножа или одного выстрела. Не тратьте на них дорогие патроны.</text>
+	</string>
+	<string id="st_fr_mon_flesh">
+		<text>Плоть</text>
+	</string>
+	<string id="st_fr_note_flesh_1">
+		<text>Неповоротлива, но в ближнем бою сбивает с ног таранным ударом.</text>
+	</string>
+	<string id="st_fr_note_flesh_2">
+		<text>Не подпускайте вплотную: пара выстрелов с дистанции надёжнее драки.</text>
+	</string>
+	<string id="st_fr_mon_dog">
+		<text>Слепой пёс</text>
+	</string>
+	<string id="st_fr_note_dog_1">
+		<text>Охотятся стаями и стараются окружить жертву.</text>
+	</string>
+	<string id="st_fr_note_dog_2">
+		<text>Потеряв часть стаи, псы часто бегут. Бейте тех, кто ближе.</text>
+	</string>
+	<string id="st_fr_mon_boar">
+		<text>Кабан</text>
+	</string>
+	<string id="st_fr_note_boar_1">
+		<text>Атакует с разгона по прямой. Уходите в сторону в последний момент.</text>
+	</string>
+	<string id="st_fr_note_boar_2">
+		<text>Стреляйте, пока он разворачивается после промаха: в этот момент он открыт.</text>
+	</string>
+	<string id="st_fr_mon_pseudodog">
+		<text>Псевдособака</text>
+	</string>
+	<string id="st_fr_note_pseudodog_1">
+		<text>Сильнее и выносливее слепого пса, нередко водит стаю.</text>
+	</string>
+	<string id="st_fr_note_pseudodog_2">
+		<text>Атакует прыжком: отходите в сторону и бейте, пока она приземляется.</text>
+	</string>
+	<string id="st_fr_mon_psy_dog">
+		<text>Пси-собака</text>
+	</string>
+	<string id="st_fr_note_psy_dog_1">
+		<text>Создаёт призрачных двойников, которые отвлекают и ранят.</text>
+	</string>
+	<string id="st_fr_note_psy_dog_2">
+		<text>Найдите настоящую: с её гибелью фантомы исчезают.</text>
+	</string>
+	<string id="st_fr_mon_snork">
+		<text>Снорк</text>
+	</string>
+	<string id="st_fr_note_snork_1">
+		<text>Передвигается на четвереньках и атакует длинными прыжками.</text>
+	</string>
+	<string id="st_fr_note_snork_2">
+		<text>В прыжке беззащитен: встречайте дробовиком в момент приземления.</text>
+	</string>
+	<string id="st_fr_mon_bloodsucker">
+		<text>Кровосос</text>
+	</string>
+	<string id="st_fr_note_bloodsucker_1">
+		<text>Становится невидимым. Выдают его дыхание и дрожание воздуха.</text>
+	</string>
+	<string id="st_fr_note_bloodsucker_2">
+		<text>После удара он на миг проявляется: стреляйте сразу, лучше из дробовика.</text>
+	</string>
+	<string id="st_fr_mon_poltergeist">
+		<text>Полтергейст</text>
+	</string>
+	<string id="st_fr_note_poltergeist_1">
+		<text>Невидим и швыряет предметы; огненный полтергейст поджигает всё вокруг.</text>
+	</string>
+	<string id="st_fr_note_poltergeist_2">
+		<text>Цельтесь в светящееся ядро и держитесь подальше от тяжёлых предметов.</text>
+	</string>
+	<string id="st_fr_mon_controller">
+		<text>Контролёр</text>
+	</string>
+	<string id="st_fr_note_controller_1">
+		<text>Бьёт по разуму, пока видит вас. Не задерживайтесь на открытом месте.</text>
+	</string>
+	<string id="st_fr_note_controller_2">
+		<text>Сближайтесь, прерывая прямую видимость укрытиями: вблизи он уязвим.</text>
+	</string>
+	<string id="st_fr_mon_burer">
+		<text>Бюрер</text>
+	</string>
+	<string id="st_fr_note_burer_1">
+		<text>Телекинезом швыряет предметы и может вырвать оружие из рук.</text>
+	</string>
+	<string id="st_fr_note_burer_2">
+		<text>Прикрывается щитом: выжидайте, пока он его опустит, и бейте в упор.</text>
+	</string>
+	<string id="st_fr_mon_chimera">
+		<text>Химера</text>
+	</string>
+	<string id="st_fr_note_chimera_1">
+		<text>Огромные прыжки и сокрушительные удары; чаще охотится ночью.</text>
+	</string>
+	<string id="st_fr_note_chimera_2">
+		<text>Нужен крупный калибр и запас патронов. Препятствия сбивают её прыжки.</text>
+	</string>
+	<string id="st_fr_mon_gigant">
+		<text>Псевдогигант</text>
+	</string>
+	<string id="st_fr_note_gigant_1">
+		<text>Удар по земле порождает волну, сбивающую с ног.</text>
+	</string>
+	<string id="st_fr_note_gigant_2">
+		<text>Держите дистанцию и пускайте в ход самое мощное оружие и гранаты.</text>
+	</string>
+</string_table>

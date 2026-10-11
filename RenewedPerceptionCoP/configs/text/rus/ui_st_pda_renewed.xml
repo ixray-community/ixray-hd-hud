@@ -129,12 +129,6 @@
 	<string id="pda_btn_close">
 		<text>Выключить КПК</text>
 	</string>
-	<string id="pda_btn_contacts">
-		<text>Контакты</text>
-	</string>
-	<string id="pda_btn_contacts_hint">
-		<text>Показать список контактов сталкеров</text>
-	</string>
 	<string id="pda_btn_logs_hint">
 		<text>Показать историю сообщений</text>
 	</string>
@@ -299,12 +293,6 @@
 	</string>
 	<string id="pda_stat_mutant_killed">
 		<text>Самый сильный убитый мутант</text>
-	</string>
-	<string id="pda_tab_contacts">
-		<text>Связь</text>
-	</string>
-	<string id="pda_tab_contacts_hint">
-		<text>Список контактов сталкеров</text>
 	</string>
 	<string id="pda_tab_journal">
 		<text>Журнал</text>
@@ -629,9 +617,6 @@
 	</string>
 	<string id="ui_pda_dialog_history">
 		<text>История диалога</text>
-	</string>
-	<string id="ui_pda_dialog_no_contact">
-		<text>Нет активного контакта</text>
 	</string>
 	<string id="ui_pda_dialog_status_idle">
 		<text>Статус: ожидание</text>

@@ -30,9 +30,6 @@
 	<string id="kb_console">
 		<text>Console</text>
 	</string>
-	<string id="kb_contacts">
-		<text>Contacts in PDA</text>
-	</string>
 	<string id="kb_crouch">
 		<text>Crouch</text>
 	</string>

@@ -605,8 +605,6 @@ function set_active_subdialog(section)
 	
 	elseif (section == "eptRelations") then 
 		--return ui_pda_relations_tab.get_ui()
-	elseif (section == "eptContacts") then
-		--return ui_pda_contacts_tab.get_ui()
 	elseif (section == "eptEncyclopedia") then
 		--return ui_pda_encyclopedia_tab.get_ui()
 	end

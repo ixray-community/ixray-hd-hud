@@ -98,7 +98,6 @@
 	    <texture id="ui_icons_newPDA_man" x="734" y="13" width="45" height="45" />
 	    <texture id="ui_icons_newPDA_manArrow" x="792" y="13" width="107" height="107" />
 
-	    <texture id="ui_pda_contacts_online_2" x="1815" y="950" width="28" height="28" />
 
 	    <texture id="ui_inGame2_PDA_vert_divider_back" x="14" y="246" width="4" height="36" />
 	    <texture id="ui_inGame2_PDA_vert_divider_b" x="14" y="238" width="4" height="8" />

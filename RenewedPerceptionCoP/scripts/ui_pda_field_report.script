@@ -1,0 +1,312 @@
+this.XML_FILE = "ui_pda_field_report_16.xml"
+this.LIGHT_REFRESH_MS = 2000
+this.GEAR_ROW_Y = 551
+this.GEAR_AREA_BOTTOM = 662
+this.GEAR_ROW_STEP_MAX = 27
+this.GEAR_BAR_HEIGHT = 4
+this.RELATION_ROW_Y = 40
+this.RELATION_ROW_STEP = 29
+this.CARD_PADDING = 8
+
+this.COLOR_DEFAULT = {220, 220, 220}
+this.COLOR_GOOD = {120, 200, 120}
+this.COLOR_WARN = {230, 150, 70}
+this.COLOR_DIM = {170, 170, 170}
+
+this.ui_instance = nil
+
+function tr(id)
+	return ixr_field_report.tr(id)
+end
+
+function set_color(wnd, color, alpha)
+	if wnd and color then
+		wnd:SetTextColor(alpha or 255, color[1], color[2], color[3])
+	end
+	return wnd
+end
+
+-- Moves a window created from an XML template to another row, keeping its x.
+function move_to_row(wnd, y)
+	wnd:SetWndPos(vector2():set(wnd:GetWndPos().x, y))
+	return wnd
+end
+
+function bottom_of(wnd)
+	return wnd:GetWndPos().y + wnd:GetHeight()
+end
+
+function add_text(xml, path, parent, text, color)
+	local wnd = xml:InitStatic(path, parent)
+	wnd:SetText(text)
+	return set_color(wnd, color)
+end
+
+-- Multi-line text: the static grows to fit its content
+function add_wrapped(xml, path, parent, text)
+	local wnd = add_text(xml, path, parent, text)
+	wnd:AdjustHeightToText()
+	return wnd
+end
+
+function fit_height(wnd, height)
+	wnd:SetWndSize(vector2():set(wnd:GetWidth(), height))
+end
+
+class "ui_pda_field_report" (CUIScriptWnd)
+
+function ui_pda_field_report:__init()
+	super()
+	self.next_light_refresh = 0
+	self.gear_rows = {}
+	self.relation_rows = {}
+	self:InitControls()
+end
+
+function ui_pda_field_report:InitControls()
+	self.xml = CScriptXmlInit()
+	self.xml:ParseFile(this.XML_FILE)
+	self.xml:InitWindow("main", 0, self)
+
+	for _, name in ipairs({"hdr_zone", "hdr_gear", "hdr_chronicle", "hdr_goals", "hdr_relations", "hdr_knowledge"}) do
+		self.xml:InitFrameLine(name, self)
+		self.xml:InitStatic(name .. "_text", self)
+	end
+
+	self.profile_icon = self.xml:InitStatic("profile_icon", self)
+	self.xml:InitFrame("profile_icon_frame", self)
+	self.profile_name = self.xml:InitStatic("profile_name", self)
+	self.profile_rank = self.xml:InitStatic("profile_rank", self)
+	self.profile_rank_bar = self.xml:InitProgressBar("profile_rank_bar", self)
+	self.profile_style = self.xml:InitStatic("profile_style", self)
+	self.profile_money = self.xml:InitStatic("profile_money", self)
+
+	self.zone_list = self.xml:InitScrollView("zone_list", self)
+	self.chronicle_list = self.xml:InitScrollView("chronicle_list", self)
+	self.goals_summary = self.xml:InitStatic("goals_summary", self)
+	self.goals_list = self.xml:InitScrollView("goals_list", self)
+	self.knowledge_summary = self.xml:InitStatic("knowledge_summary", self)
+	self.knowledge_list = self.xml:InitScrollView("knowledge_list", self)
+
+	local gear_count = #ixr_field_report.get_gear_slots()
+	local gear_step = math.min(this.GEAR_ROW_STEP_MAX,
+		math.floor((this.GEAR_AREA_BOTTOM - this.GEAR_ROW_Y - this.GEAR_BAR_HEIGHT) / math.max(gear_count, 1)))
+	for i = 1, gear_count do
+		self.gear_rows[i] = {
+			name = move_to_row(self.xml:InitStatic("gear_name", self), this.GEAR_ROW_Y + (i - 1) * gear_step),
+			value = move_to_row(self.xml:InitStatic("gear_value", self), this.GEAR_ROW_Y + (i - 1) * gear_step),
+			bar = move_to_row(self.xml:InitProgressBar("gear_bar", self), this.GEAR_ROW_Y + i * gear_step - this.GEAR_BAR_HEIGHT - 1),
+		}
+	end
+
+	for i = 1, #ixr_field_report.FACTIONS do
+		self.relation_rows[i] = {
+			name = move_to_row(self.xml:InitStatic("rel_name", self), this.RELATION_ROW_Y + (i - 1) * this.RELATION_ROW_STEP),
+			bar = move_to_row(self.xml:InitProgressBar("rel_bar", self), this.RELATION_ROW_Y + (i - 1) * this.RELATION_ROW_STEP + 7),
+			status = move_to_row(self.xml:InitStatic("rel_status", self), this.RELATION_ROW_Y + (i - 1) * this.RELATION_ROW_STEP),
+		}
+	end
+end
+
+-- ################################
+-- #        LIGHT SECTIONS        #
+-- ################################
+
+function ui_pda_field_report:FillProfile()
+	local profile = ixr_field_report.get_profile()
+	if profile.icon and profile.icon ~= "" then
+		self.profile_icon:InitTexture(profile.icon)
+	end
+	self.profile_name:SetText(profile.name)
+	self.profile_rank:SetText(profile.rank_text)
+	self.profile_rank_bar:SetProgressPos(profile.rank_progress * 100)
+	self.profile_style:SetText(profile.style_text)
+	self.profile_money:SetText(profile.money_text)
+end
+
+-- Rows are rebuilt only when their layout changes (a detail line appears, disappears or changes)
+-- otherwise the values are updated in place so the scroll position is kept
+function ui_pda_field_report:FillZone(force_rebuild)
+	local rows = ixr_field_report.get_zone_rows()
+	local layout = {}
+	for i, data in ipairs(rows) do
+		layout[i] = data.caption .. "|" .. (data.detail or "")
+	end
+
+	if force_rebuild or table.concat(layout, "\n") ~= self.zone_signature then
+		self.zone_signature = table.concat(layout, "\n")
+		self.zone_values = {}
+		self.zone_list:Clear()
+		for i, data in ipairs(rows) do
+			local row = self.xml:InitStatic("zone_row", self.zone_list)
+			add_text(self.xml, "zone_row:caption", row, data.caption)
+			self.zone_values[i] = self.xml:InitStatic("zone_row:value", row)
+			if data.detail and data.detail ~= "" then
+				fit_height(row, bottom_of(add_wrapped(self.xml, "zone_row:detail", row, data.detail)) + 2)
+			end
+		end
+		self.zone_list:ScrollToBegin()
+	end
+
+	for i, data in ipairs(rows) do
+		self.zone_values[i]:SetText(data.value)
+		set_color(self.zone_values[i], data.color or this.COLOR_DEFAULT)
+	end
+end
+
+function ui_pda_field_report:FillGear()
+	for i, data in ipairs(ixr_field_report.get_gear()) do
+		local row = self.gear_rows[i]
+		row.name:SetText(data.label .. ": " .. (data.name or tr("st_fr_none")))
+		row.value:SetText(data.value or "")
+		set_color(row.value, data.warn and this.COLOR_WARN or this.COLOR_DEFAULT)
+		row.bar:SetProgressPos((data.condition or 0) * 100)
+		row.bar:Show(data.name ~= nil)
+	end
+end
+
+function ui_pda_field_report:RefreshLight(force_rebuild)
+	self:FillProfile()
+	self:FillZone(force_rebuild)
+	self:FillGear()
+end
+
+-- ################################
+-- #        HEAVY SECTIONS        #
+-- ################################
+
+function ui_pda_field_report:AddGoalCard(goal)
+	local card = self.xml:InitStatic("goal_card", self.goals_list)
+	local icon = self.xml:InitStatic("goal_card:icon", card)
+	if goal.icon ~= "" then
+		icon:InitTexture(goal.icon)
+	end
+	local name = add_text(self.xml, "goal_card:name", card, goal.name)
+	self.xml:InitProgressBar("goal_card:bar", card):SetProgressPos(goal.ratio * 100)
+
+	if goal.state == "done" then
+		add_text(self.xml, "goal_card:state", card, tr("st_fr_goal_done"), this.COLOR_GOOD)
+	elseif goal.state == "blocked" then
+		add_text(self.xml, "goal_card:state", card, tr("st_fr_goal_blocked"), {160, 110, 100})
+		set_color(name, {130, 130, 130})
+		icon:SetTextureColor(GetARGB(110, 255, 255, 255))
+	else
+		add_text(self.xml, "goal_card:state", card, goal.progress_text)
+		if goal.state == "new" then
+			set_color(name, this.COLOR_DIM)
+			icon:SetTextureColor(GetARGB(150, 255, 255, 255))
+		end
+	end
+
+	local last = add_wrapped(self.xml, "goal_card:descr", card, goal.goal)
+	if goal.state ~= "blocked" then
+		local reward_text = tr("st_fr_goal_reward_hidden")
+		if goal.show_reward then
+			reward_text = tr("st_fr_goal_reward") .. " " .. goal.reward
+		end
+		-- The arguments are evaluated before the assignment, so bottom_of(last) is still the description
+		last = move_to_row(add_wrapped(self.xml, "goal_card:reward", card, reward_text), bottom_of(last) + 4)
+	end
+	fit_height(card, math.max(bottom_of(last), bottom_of(icon)) + this.CARD_PADDING)
+end
+
+function ui_pda_field_report:FillGoals()
+	self.goals_list:Clear()
+	local goals, done_count = ixr_field_report.get_goals()
+	local in_progress = 0
+	for _, goal in ipairs(goals) do
+		if goal.state == "progress" then
+			in_progress = in_progress + 1
+		end
+		self:AddGoalCard(goal)
+	end
+	self.goals_summary:SetText(string.format(tr("st_fr_goals_summary"), done_count, #goals, in_progress))
+	self.goals_list:ScrollToBegin()
+end
+
+function ui_pda_field_report:FillRelations()
+	for i, data in ipairs(ixr_field_report.take_relations_snapshot()) do
+		local row = self.relation_rows[i]
+		row.name:SetText(data.name)
+		row.bar:SetProgressPos(data.position)
+		row.status:SetText(data.delta ~= 0 and string.format("%s %+d", data.status, data.delta) or data.status)
+		set_color(row.status, data.color)
+	end
+end
+
+function ui_pda_field_report:AddKnowledgeCard(entry)
+	local card = self.xml:InitStatic("know_card", self.knowledge_list)
+	self.xml:InitStatic("know_card:icon", card):InitTexture(entry.icon)
+	add_text(self.xml, "know_card:name", card, entry.name)
+	add_text(self.xml, "know_card:count", card, string.format(tr("st_fr_knowledge_kills"), entry.kills))
+	add_text(self.xml, "know_card:tier", card, entry.tier_text,
+		entry.tier >= 3 and this.COLOR_GOOD or (entry.tier == 2 and {210, 200, 110} or this.COLOR_DIM))
+	self.xml:InitProgressBar("know_card:bar", card):SetProgressPos(entry.progress * 100)
+	add_text(self.xml, "know_card:next", card, entry.next_text)
+	fit_height(card, bottom_of(add_wrapped(self.xml, "know_card:notes", card, entry.notes)) + this.CARD_PADDING)
+end
+
+function ui_pda_field_report:FillKnowledge()
+	self.knowledge_list:Clear()
+	local list, total = ixr_field_report.get_knowledge()
+	for _, entry in ipairs(list) do
+		self:AddKnowledgeCard(entry)
+	end
+	if #list == 0 then
+		add_wrapped(self.xml, "list_empty", self.knowledge_list, tr("st_fr_knowledge_empty"))
+	end
+	self.knowledge_summary:SetText(string.format(tr("st_fr_knowledge_summary"), #list, total))
+	self.knowledge_list:ScrollToBegin()
+end
+
+function ui_pda_field_report:FillChronicle()
+	self.chronicle_list:Clear()
+	local entries = ixr_field_report.get_chronicle()
+	for _, entry in ipairs(entries) do
+		add_wrapped(self.xml, "chronicle_item", self.chronicle_list, entry.stamp .. " " .. tr("st_fr_dash") .. " " .. entry.text)
+	end
+	if #entries == 0 then
+		add_wrapped(self.xml, "list_empty", self.chronicle_list, tr("st_fr_chronicle_empty"))
+	end
+	self.chronicle_list:ScrollToBegin()
+end
+
+function ui_pda_field_report:RefreshAll()
+	if not db.actor then
+		return
+	end
+	ixr_field_report.poll()
+	self:RefreshLight(true)
+	self:FillGoals()
+	self:FillRelations()
+	self:FillKnowledge()
+	self:FillChronicle()
+	self.next_light_refresh = time_global() + this.LIGHT_REFRESH_MS
+end
+
+function ui_pda_field_report:Update()
+	CUIScriptWnd.Update(self)
+	if not self:IsShown() or not db.actor or time_global() < self.next_light_refresh then
+		return
+	end
+	self.next_light_refresh = time_global() + this.LIGHT_REFRESH_MS
+	self:RefreshLight()
+end
+
+function get_ui()
+	if this.ui_instance == nil then
+		this.ui_instance = ui_pda_field_report()
+	end
+	this.ui_instance:RefreshAll()
+	return this.ui_instance
+end
+
+function on_pda_set_active_subdialog(pda_ref, section, tbl_dialog)
+	if section == "eptRanking" then
+		tbl_dialog.ui_wnd = get_ui()
+	end
+end
+
+function on_game_start()
+	RegisterScriptCallback("on_pda_set_active_subdialog", on_pda_set_active_subdialog)
+end
