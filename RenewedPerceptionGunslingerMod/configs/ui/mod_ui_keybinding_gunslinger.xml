@@ -1,4 +1,4 @@
-<keybingidg>
+<keybingidg override="replace">
 	<group name="gunsl_keys_movement">
 
 		<command id="gunsl_keys_move_forward"					exe="forward"/>

@@ -1,0 +1,122 @@
+<w>
+	<quick_info x="1" y="650" width="1022" height="50" complex_mode="1" light_anim="ui_btn_hint" la_cyclic="0" la_texture="0" la_text="1" la_alpha="1" override="replace">
+		<text align="c" font="graffiti22" r="225" g="225" b="250" a="255"/>
+	</quick_info>
+
+	<indicator_starvation x="935" y="704" width="26" height="35" stretch="1" override="add"/>
+	<indicator_thrist x="959" y="704" width="26" height="35" stretch="1" override="add"/>
+	<indicator_psy x="911" y="704" width="26" height="35" stretch="1" override="add"/>
+	<indicator_overweight x="980" y="704" width="26" height="35" stretch="1" override="add"/>
+	<indicator_radiation x="887" y="704" width="26" height="35" stretch="1" override="add"/>
+	<indicator_bleeding x="863" y="704" width="26" height="35" stretch="1" override="add"/>
+
+	<disk_io x="760" y="750" width="12" height="16" stretch="1" override="replace"/>
+
+	<quick_slot0 x="436" y="705" width="20" height="27" stretch="1" override="add">
+		<auto_static x="-5" y="-9" width="32" height="50" stretch="1">
+			<texture>ui_inGame2_quick_slot_background</texture>
+		</auto_static>
+		<counter x="9" y="23.5" width="20" height="18" stretch="1">
+			<window_name>counter</window_name>
+			<text font="font_rubik_16" align="c" vert_align="c"/>
+		</counter>
+	</quick_slot0>
+	<quick_slot1 x="476" y="705" width="20" height="27" stretch="1" override="add">
+		<auto_static x="-5" y="-9" width="32" height="50" stretch="1">
+			<texture>ui_inGame2_quick_slot_background</texture>
+		</auto_static>
+		<counter x="9" y="23.5" width="20" height="18" stretch="1">
+			<window_name>counter</window_name>
+			<text font="font_rubik_16" align="c" vert_align="c"/>
+		</counter>
+	</quick_slot1>
+	<quick_slot2 x="516" y="705" width="20" height="27" stretch="1" override="add">
+		<auto_static x="-5" y="-9" width="32" height="50" stretch="1">
+			<texture>ui_inGame2_quick_slot_background</texture>
+		</auto_static>
+		<counter x="9" y="23.5" width="20" height="18" stretch="1">
+			<window_name>counter</window_name>
+			<text font="font_rubik_16" align="c" vert_align="c"/>
+		</counter>
+	</quick_slot2>
+	<quick_slot3 x="556" y="705" width="20" height="27" stretch="1" override="add">
+		<auto_static x="-5" y="-9" width="32" height="50" stretch="1">
+			<texture>ui_inGame2_quick_slot_background</texture>
+		</auto_static>
+		<counter x="9" y="23.5" width="20" height="18" stretch="1">
+			<window_name>counter</window_name>
+			<text font="font_rubik_16" align="c" vert_align="c"/>
+		</counter>
+	</quick_slot3>
+
+	<quick_slot0_text x="430" y="702" width="17" height="13" override="add">
+		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_1</text>
+	</quick_slot0_text>
+	<quick_slot1_text x="470" y="702" width="17" height="13" override="add">
+		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_2</text>
+	</quick_slot1_text>
+	<quick_slot2_text x="510" y="702" width="17" height="13" override="add">
+		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_3</text>
+	</quick_slot2_text>
+	<quick_slot3_text x="550" y="702" width="17" height="13" override="add">
+		<text align="c" vert_align="c" font="font_rubik_16" r="199" g="199" b="199" a="255">quick_use_str_4</text>
+	</quick_slot3_text>
+
+	<hud_states x="857" y="687" width="222" height="121" override="replace">
+		<back x="0" y="0" width="160" height="67" stretch="1">
+			<texture>ui_inGame2_health_new_background</texture>
+			<auto_static x="-11" y="-27" width="170" height="29" stretch="1">
+				<texture>ui_inGame2_weapons_new_background</texture>
+			</auto_static>
+		</back>
+
+		<indik_rad x="-698" y="-42" width="15" height="20" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_inGame2_indicator_rad_new</texture>
+		</indik_rad>
+		<indik_fire x="-698" y="6" width="15" height="20" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_inGame2_indicator_burn_new</texture>
+		</indik_fire>
+		<indik_acid x="-698" y="-18" width="15" height="20" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_inGame2_indicator_chem_new</texture>
+		</indik_acid>
+		<indik_psi x="-698" y="30" width="15" height="20" stretch="1" light_anim="la_hud1" la_cyclic="1" la_texture="1" la_text="0" la_alpha="0">
+			<texture>ui_inGame2_indicator_psi_new</texture>
+		</indik_psi>
+
+		<progress_bar_health x="17" y="5" width="120" height="9" horz="1" min="0" max="1" pos="0" expression="fltPlayerHealth">
+			<progress stretch="1">
+				<texture>ui_inGame2_health_new_progress</texture>
+			</progress>
+		</progress_bar_health>
+
+		<progress_bar_stamina x="17" y="56" width="120" height="9" horz="1" min="0" max="1" pos="0" expression="fltPlayerPower">
+			<progress stretch="1">
+				<texture>ui_inGame2_armor_new_progress</texture>
+			</progress>
+		</progress_bar_stamina>
+
+		<static_ammo_adaptive x="17" y="-28" width="60" height="34" separator="/">
+			<clip_text x="0" y="0" width="40" height="37">
+				<text complex_mode="0" font="ui_font_graffiti28" r="235" g="220" b="187" a="255" align="r" vert_align="c"/>
+			</clip_text>
+			<total_text x="40" y="4" width="55" height="27">
+				<text complex_mode="0" font="graffiti19" r="187" g="178" b="158" a="255" align="l" vert_align="c"/>
+			</total_text>
+		</static_ammo_adaptive>
+
+		<static_wpn_icon x="93" y="-12" width="50" height="30" align="l" alignment="c" stretch="1" caliber="1" hud_group_catalog="hud_group_catalog.xml" override="replace">
+			<caliber_text x="22" y="0" width="16" height="30" stretch="1">
+				<text font="font_oswald_22" align="l" vert_align="c" r="179" g="179" b="179" a="255"/>
+			</caliber_text>
+			<caliber_icon x="45" y="5" width="18" height="21" align="r" stretch="1"/>
+		</static_wpn_icon>
+
+		<static_fire_mode x="17" y="-22" width="15" height="20" stretch="1" use_icon="1">
+			<mode_mapping text="1" icon="ui_inGame2_icon_fmode_single"/>
+			<mode_mapping text="A" icon="ui_inGame2_icon_fmode_auto"/>
+			<mode_mapping text="2" icon="ui_inGame2_icon_fmode_2burst"/>
+			<mode_mapping text="3" icon="ui_inGame2_icon_fmode_3burst"/>
+			<text font="arial_14" align="c" color="ui_2"/>
+		</static_fire_mode>
+	</hud_states>
+</w>

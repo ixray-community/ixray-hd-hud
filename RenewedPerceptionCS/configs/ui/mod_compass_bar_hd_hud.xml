@@ -1,5 +1,5 @@
 <window>
-	<compass_bar alignment="c" fade_in_speed="5" fade_out_speed="4" fov_angle="45" x="0.5" y="0.05" width="0.5" height="0.08" stretch="1">
+	<compass_bar alignment="c" fade_in_speed="5" fade_out_speed="4" fov_angle="45" x="0.5" y="0.05" width="0.5" height="0.08" stretch="1" override="replace">
 		<background x="0" y="0" width="1.0" height="1.0" alignment="l" stretch="1">
 			<texture>ui_inGame2_compass_bar_window</texture>
 		</background>

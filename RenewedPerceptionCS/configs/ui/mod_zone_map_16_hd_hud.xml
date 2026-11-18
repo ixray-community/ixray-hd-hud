@@ -1,0 +1,22 @@
+<window>
+	<minimap>
+		<level_frame x="14" y="570" width="140" height="170" override="replace"/>
+
+		<background x="-6" y="534" width="187" height="250" stretch="1" override="replace"> 
+			<texture>ui_inGame2_minimap_new_background</texture>
+			<dist_text x="35" y="210" width="38" height="14">
+				<text align="l" font="font_oswald_20"/>
+			</dist_text>
+		</background>
+
+		<compass x="117" y="18" width="31" height="31" heading="1" s_tretch="0" override="replace">
+			<texture a="0">ui_hud_compas</texture>
+		</compass>
+
+		<static_counter x="80" y="210" width="29" height="29" light_anim="ui_pda_contacts" la_cyclic="0" la_texture="0" la_text="1" la_alpha="1" stretch="1" override="replace">
+			<text_static x="0" y="0" width="12" height="14">
+				<text align="l" font="font_oswald_20"/>
+			</text_static>
+		</static_counter>
+	</minimap>
+</window>

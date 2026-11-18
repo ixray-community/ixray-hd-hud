@@ -1,5 +1,15 @@
 <w>
-  <main x="0" y="0" width="1024" height="768">
+	<item_colors override="remove"/>
+	<gamepad_legend override="remove"/>
+	<clock_value override="remove"/>
+	<dragdrop_detector override="remove"/>
+	<trade_button override="remove"/>
+	<ui_c_navi_inventory override="remove"/>
+	<ui_c_navi_deadbody override="remove"/>
+	<ui_c_navi_trade override="remove"/>
+	<ui_c_navi_upgrade override="remove"/>
+
+	<main x="0" y="0" width="1024" height="768" override="replace">
     <auto_static x="355" y="0" width="311" height="768" stretch="1">
       <texture>ui_inGame2_inventory_slots_new</texture>
     </auto_static>
@@ -9,8 +19,7 @@
     </auto_static>
 
   </main>
-  
-  <actor_ch_info x="668" y="0" width="270" height="135">
+	<actor_ch_info x="668" y="0" width="270" height="135" override="replace">
     <name_static x="8" y="08" width="116" height="16">
       <text align="l" font="font_oswald_30"/>
     </name_static>
@@ -27,8 +36,7 @@
 
     <rank_icon      x="7" y="70" width="24" height="32" stretch="1"/>
   </actor_ch_info>
- 
-  <partner_ch_info x="3" y="0" width="270" height="135">
+	<partner_ch_info x="3" y="0" width="270" height="135" override="replace">
     <name_static x="8" y="08" width="116" height="16">
       <text align="l" font="font_oswald_30"/>
     </name_static>
@@ -45,16 +53,13 @@
 
     <rank_icon      x="7" y="70" width="24" height="32" stretch="1"/>
   </partner_ch_info>
-  
-  <actor_money_static x="710" y="106" width="67" height="20">
+	<actor_money_static x="710" y="106" width="67" height="20" override="replace">
     <text align="r" font="font_oswald_30"/>
   </actor_money_static>
-
-  <partner_money_static x="5" y="106" width="67" height="20">
+	<partner_money_static x="5" y="106" width="67" height="20" override="replace">
     <text align="r" font="font_oswald_30"/>
   </partner_money_static>
-  
-  	<inventory_slot_wnd>
+	<inventory_slot_wnd override="replace">
 		<slot> <!-- Knife -->
 		</slot>
 		<slot> <!-- Pistol -->
@@ -134,50 +139,41 @@
 		<slot> <!-- Backpack -->
 		</slot>
 	</inventory_slot_wnd>
-	
-	<quick_slot_highlight x="376.5" y="360" width="64" height="69" dx="67.5" stretch="1">
+	<quick_slot_highlight x="376.5" y="360" width="64" height="69" dx="67.5" stretch="1" override="add">
 		<texture>ui_inGame2_inventory_detector_highlight_cs</texture>
 	</quick_slot_highlight>
-	<artefact_slot_highlight x="383" y="476" width="48" height="58" dx="65" stretch="1">
+	<artefact_slot_highlight x="383" y="476" width="48" height="58" dx="65" stretch="1" override="replace">
 		<texture>ui_inGame2_artefakt_highlighter</texture>
 	</artefact_slot_highlight>
-	
-	<quick_slot1_text x="382" y="410" width="14" height="13">
+	<quick_slot1_text x="382" y="410" width="14" height="13" override="add">
 		<text align="c" font="font_rubik_16" r="186" g="193" b="197">quick_use_str_1</text>
 	</quick_slot1_text>
-	<quick_slot2_text x="448" y="410" width="14" height="13">
+	<quick_slot2_text x="448" y="410" width="14" height="13" override="add">
 		<text align="c" font="font_rubik_16" r="186" g="193" b="197">quick_use_str_2</text>
 	</quick_slot2_text>
-	<quick_slot3_text x="516" y="410" width="14" height="13">
+	<quick_slot3_text x="516" y="410" width="14" height="13" override="add">
 		<text align="c" font="font_rubik_16" r="186" g="193" b="197">quick_use_str_3</text>
 	</quick_slot3_text>
-	<quick_slot4_text x="584" y="410" width="14" height="13">
+	<quick_slot4_text x="584" y="410" width="14" height="13" override="add">
 		<text align="c" font="font_rubik_16" r="186" g="193" b="197">quick_use_str_4</text>
 	</quick_slot4_text>
-
-	<actor_weight_caption x="823" y="732" width="71" height="14">
+	<actor_weight_caption x="823" y="732" width="71" height="14" override="replace">
 		<text align="l" font="font_oswald_24" color="gray">ui_total_weight</text>
 	</actor_weight_caption>
-    <actor_weight x="898" y="732" width="38" height="14">
+	<actor_weight x="898" y="732" width="38" height="14" override="replace">
 		<text align="l" font="font_oswald_24"/>
 	</actor_weight>
-	<actor_weight_max x="940" y="732" width="71" height="14">
+	<actor_weight_max x="940" y="732" width="71" height="14" override="replace">
 		<text align="l" font="font_oswald_24" color="gray"/>
 	</actor_weight_max>
-
-	<partner_weight_caption x="160" y="732" width="71" height="14">
+	<partner_weight_caption x="160" y="732" width="71" height="14" override="replace">
         <text align="r" font="font_oswald_24" color="gray">ui_total_weight</text>
     </partner_weight_caption>
-   <partner_weight x="335" y="732" width="38" height="14">
+	<partner_weight x="335" y="732" width="38" height="14" override="replace">
     <text align="l" font="font_oswald_24"/>
   </partner_weight>
-
-  <left_delimiter_frl  x="-5" y="326" width="280" height="39" stretch="1">
-    <texture>ui_inv_delimiter</texture>
-  </left_delimiter_frl>
-  <!-- partner  ---------------------------------------------------------------- -->
- <left_delimiter  x="0" y="326" width="360" height="47" stretch="1">
-    <texture>ui_gunsl_trade_16</texture>
+	<left_delimiter  x="0" y="326" width="360" height="47" stretch="1" override="replace">
+    <texture>ui_invaddon_trade_16</texture>
     <trade_caption x="85" y="8" width="71" height="14">
       <text align="l" font="letterica16" color="ui_3">ui_total_price</text>
     </trade_caption>
@@ -188,13 +184,8 @@
 		<text align="l" font="letterica16" color="ui_3"/>
 	</trade_weight_max>
   </left_delimiter>
-  
-  <right_delimiter_frl x="658" y="326" width="280" height="39" stretch="1">
-    <texture>ui_inv_delimiter</texture>
-  </right_delimiter_frl>
-  <!-- actor  ---------------------------------------------------------------- -->
-  <right_delimiter x="662" y="326" width="360" height="47" stretch="1">
-    <texture>ui_gunsl_trade_16</texture>
+	<right_delimiter x="662" y="326" width="360" height="47" stretch="1" override="replace">
+    <texture>ui_invaddon_trade_16</texture>
     <trade_caption x="85" y="8" width="71" height="14">
       <text align="l" font="letterica16" color="ui_3">ui_total_price</text>
     </trade_caption>
@@ -205,63 +196,37 @@
 		<text align="l" font="letterica16" color="ui_3"/>
 	</trade_weight_max>
   </right_delimiter>
-
-  <left_background x="0" y="0" width="358.5" height="768" stretch="1">
+	<left_background x="0" y="0" width="358.5" height="768" stretch="1" override="replace">
     <texture>ui_inGame2_inventory_backpack_new</texture>
   </left_background>
-	
-  <belt_list_over x="373" y="445" width="46" height="58" dx="56" stretch="1">
+	<belt_list_over x="373" y="445" width="46" height="58" dx="56" stretch="1" override="replace">
 	<texture a="255">ui_inGame2_inventory_af_block</texture>
   </belt_list_over>
-
-  <dragdrop_trash x="0" y="0" width="353" height="768"
-    	cell_width="353" cell_height="768" rows_num="1" cols_num="1" a="0"/>
-
-  <dragdrop_bag x="673" y="140" width="344" height="550"
+	<dragdrop_bag x="673" y="140" width="344" height="550"
           cell_width="32" cell_height="41" rows_num="13" cols_num="10"
-          unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
-
-  <dragdrop_belt x="385" y="457" width="320" height="38"
+          unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1" override="replace"/>
+	<dragdrop_belt x="385" y="457" width="320" height="38"
           cell_width="27" cell_height="35" rows_num="1" cols_num="5"
-		  cell_sp_x="27" cell_sp_y="0" a="0"/>
-
-  <dragdrop_actor_trade x="673" y="144" width="344" height="180"
+		  cell_sp_x="27" cell_sp_y="0" a="0" override="replace"/>
+	<dragdrop_actor_trade x="673" y="144" width="344" height="180"
           cell_width="32" cell_height="41" rows_num="4" cols_num="10"
-          unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
-
-  <dragdrop_actor_trade_bag x="673" y="365" width="344" height="363"
+          unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1" override="replace"/>
+	<dragdrop_actor_trade_bag x="673" y="365" width="344" height="363"
           cell_width="32" cell_height="41" rows_num="8" cols_num="10"
-          unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
-
-  <dragdrop_partner_trade x="10" y="144" width="344" height="180"
+          unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1" override="replace"/>
+	<dragdrop_partner_trade x="10" y="144" width="344" height="180"
             cell_width="32" cell_height="41" rows_num="4" cols_num="10"
-            unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
-
-  <dragdrop_partner_bag x="10" y="365" width="344" height="363"
+            unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1" override="replace"/>
+	<dragdrop_partner_bag x="10" y="365" width="344" height="363"
             cell_width="32" cell_height="41" rows_num="8" cols_num="10"
-            unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
-
-  <dragdrop_deadbody_bag x="10" y="140" width="344" height="550"
+            unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1" override="replace"/>
+	<dragdrop_deadbody_bag x="10" y="140" width="344" height="550"
             cell_width="32" cell_height="41" rows_num="13" cols_num="10"
-            unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1"/>
-
+            unlimited="1" group_similar="1" always_show_scroll="1" condition_progress_bar="1" override="replace"/>
 	<dragdrop_quick_slots x="390" y="367" width="227" height="41"
 	    cell_width="33" cell_height="41" a="0" rows_num="1"	cols_num="4"
-		cell_sp_x="35" cell_sp_y="0" custom_placement="1"/>
-
-  <!--trade_button x="381" y="725" width="131" height="48" stretch="1">
-   <window_name>trade_button</window_name>
-    <texture>ui_button_main01</texture>
-    <text font="graffiti22" align="c">ui_st_trade</text>
-    <text_color>
-      <e color ="ui_6"/>
-      <t color ="ui_black"/>
-      <d color ="ui_5"/>
-      <h color ="ui_black"/>
-    </text_color>
-  </trade_button-->
-
-	<takeall_button x="0" y="695" width="352" height="31" stretch="1" hint="ui_st_take_all_hint">
+		cell_sp_x="35" cell_sp_y="0" custom_placement="1" override="add"/>
+	<takeall_button x="0" y="695" width="352" height="31" stretch="1" hint="ui_st_take_all_hint" override="replace">
 	    <window_name>takeall_button</window_name>
 	    <texture>ui_invaddon_bigbutton_16</texture>
 	    <text font="font_oswald_30" align="c">ui_st_take_all</text>
@@ -272,8 +237,7 @@
 	        <h r="184" g="111" b="41" a="255"/>
 	    </text_color>
 	</takeall_button>
-
-	<putall_button x="666" y="695" width="352" height="31" stretch="1" hint="ui_st_put_all_hint">
+	<putall_button x="666" y="695" width="352" height="31" stretch="1" hint="ui_st_put_all_hint" override="add">
 	    <window_name>putall_button</window_name>
 	    <texture>ui_invaddon_bigbutton_16</texture>
 	    <text font="font_oswald_30" align="c">ui_st_put_all</text>
@@ -284,8 +248,7 @@
 	        <h r="184" g="111" b="41" a="255"/>
 	    </text_color>
 	</putall_button>
-
-  <exit_button x="450" y="733" width="125" height="28" stretch="1">
+	<exit_button x="450" y="733" width="125" height="28" stretch="1" override="replace">
 		<window_name>exit_button</window_name>
 		<texture>ui_inGame2_big_inventory_button</texture>
 	    <text font="font_oswald_30" align="c">ui_inv_exit</text>
@@ -296,8 +259,7 @@
 	        <h r="160" g="175" b="190" a="255"/>
 	    </text_color>
   </exit_button>
-
-  <action_sounds>
+	<action_sounds override="replace">
     <snd_open>interface\inv_open</snd_open>
     <snd_close>interface\inv_close</snd_close>
     <snd_item_to_slot>interface\inv_slot</snd_item_to_slot>
@@ -310,17 +272,7 @@
     <snd_item_use>interface\inv_slot</snd_item_use>
     <snd_unload_magazine>interface\inv_unload</snd_unload_magazine>
   </action_sounds>
-  
-	<hint_wnd x="0" y="0" width="210" height="100">
-		<background x="0" y="0" width="210" height="100" border="10" stretch="1">
-			<texture a="100">ui_temp_frame</texture>
-		</background>
-		<text x="17" y="20" width="158" height="100">
-			<text font="letterica16" color="ui_6" complex_mode="1" align="l" vert_align="t"/>
-		</text>
-	</hint_wnd>
-
-  <actor_state_info x="360" y="450" width="300" height="310">
+	<actor_state_info x="360" y="450" width="300" height="310" override="replace">
 	
 	<hint_wnd x="0" y="0" width="175" height="100">
 	    <background x="0" y="0" width="210" height="100">
@@ -402,5 +354,4 @@
 	</psi_sensor>
 
   </actor_state_info>
-
 </w>
