@@ -1,0 +1,294 @@
+<w>
+    <file name="ui\ui_actor_pda_btn_set" scale="2">
+		<!-- tab btn -->
+		<texture id="ui_inGame2_pda_new_tab_btn_e_b"    x="716" y="125" width="16" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_e_back" x="732" y="125" width="98" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_e_e"    x="830" y="125" width="16" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_h_b"    x="716" y="70" width="16" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_h_back" x="732" y="70" width="98" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_h_e"    x="830" y="70" width="16" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_t_b"    x="716" y="15" width="16" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_t_back" x="732" y="15" width="98" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_t_e"    x="830" y="15" width="16" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_d_b"    x="716" y="125" width="16" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_d_back" x="732" y="125" width="98" height="34" />
+		<texture id="ui_inGame2_pda_new_tab_btn_d_e"    x="830" y="125" width="16" height="34" />
+
+		<!-- power off -->
+	    <texture id="ui_inGame2_pda_power_off_e_b"    x="859" y="125" width="8" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_e_back" x="867" y="125" width="36" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_e_e"    x="903" y="125" width="8" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_h_b"    x="859" y="70" width="8" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_h_back" x="867" y="70" width="36" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_h_e"    x="903" y="70" width="8" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_t_b"    x="859" y="15" width="8" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_t_back" x="867" y="15" width="36" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_t_e"    x="903" y="15" width="8" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_d_b"    x="859" y="125" width="8" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_d_back" x="867" y="125" width="36" height="34" />
+	    <texture id="ui_inGame2_pda_power_off_d_e"    x="903" y="125" width="8" height="34" />
+
+		<!-- filters: CheckButton -->
+	    <texture id="ui_inGame2_pda_button_filters_left_e" x="563" y="173" width="151" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_left_h" x="563" y="231" width="151" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_left_t" x="563" y="289" width="151" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_left_d" x="563" y="173" width="151" height="34" />
+
+	    <texture id="ui_inGame2_pda_button_filters_right_e" x="727" y="173" width="134" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_right_h" x="727" y="231" width="134" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_right_t" x="727" y="289" width="134" height="34" />
+	    <texture id="ui_inGame2_pda_button_filters_right_d" x="727" y="173" width="134" height="34" />
+
+		<!-- Buttons Tasks -->
+	    <texture id="ui_inGame2_pda_button_new_task_e_b"    x="563" y="336" width="16" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_e_back" x="579" y="336" width="201" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_e_e"    x="780" y="336" width="16" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_h_b"    x="563" y="381" width="16" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_h_back" x="579" y="381" width="201" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_h_e"    x="780" y="381" width="16" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_t_b"    x="563" y="426" width="16" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_t_back" x="579" y="426" width="201" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_t_e"    x="780" y="426" width="16" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_d_b"    x="563" y="438" width="16" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_d_back" x="579" y="438" width="201" height="34" />
+	    <texture id="ui_inGame2_pda_button_new_task_d_e"    x="780" y="438" width="16" height="34" />
+
+		<!-- Control Map Buttons -->
+	    <texture id="ui_inGame2_pda_control_map_button_0_e" x="145" y="336" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_1_e" x="145" y="400" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_2_e" x="145" y="464" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_3_e" x="145" y="528" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_4_e" x="145" y="592" width="52" height="52" />
+
+	    <texture id="ui_inGame2_pda_control_map_button_0_t" x="15" y="336" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_1_t" x="15" y="400" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_2_t" x="15" y="464" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_3_t" x="15" y="528" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_4_t" x="15" y="592" width="52" height="52" />
+
+	    <texture id="ui_inGame2_pda_control_map_button_0_h" x="80" y="336" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_1_h" x="80" y="400" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_2_h" x="80" y="464" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_3_h" x="80" y="528" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_4_h" x="80" y="592" width="52" height="52" />
+
+	    <texture id="ui_inGame2_pda_control_map_button_0_d" x="145" y="336" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_1_d" x="145" y="400" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_2_d" x="145" y="464" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_3_d" x="145" y="528" width="52" height="52" />
+	    <texture id="ui_inGame2_pda_control_map_button_4_d" x="145" y="592" width="52" height="52" />
+
+		<!-- tab background -->
+	    <texture id="ui_inGame2_datetime_bg_b"    x="15" y="15" width="16" height="34" />
+	    <texture id="ui_inGame2_datetime_bg_back" x="31" y="15" width="80" height="34" />
+	    <texture id="ui_inGame2_datetime_bg_e"    x="113" y="15" width="16" height="34" />
+
+	    <texture id="ui_inGame2_bg_tab_stub_b"    x="143" y="15" width="16" height="34" />
+	    <texture id="ui_inGame2_bg_tab_stub_back" x="159" y="15" width="527" height="34" />
+	    <texture id="ui_inGame2_bg_tab_stub_e"    x="686" y="15" width="16" height="34" />
+
+	    <texture id="ui_inGame2_bg_filter_stub_b"    x="15" y="173" width="16" height="34" />
+	    <texture id="ui_inGame2_bg_filter_stub_back" x="31" y="173" width="502" height="34" />
+	    <texture id="ui_inGame2_bg_filter_stub_e"    x="533" y="173" width="16" height="34" />
+    </file>
+
+    <file name="ui\ui_actor_pda" scale="2">
+	    <texture id="ui_inGame2_pda_texture" x="0" y="304" width="1280" height="720" />
+
+	    <texture id="ui_icons_newPDA_man" x="734" y="13" width="45" height="45" />
+	    <texture id="ui_icons_newPDA_manArrow" x="792" y="13" width="107" height="107" />
+
+
+	    <texture id="ui_inGame2_PDA_vert_divider_back" x="14" y="246" width="4" height="36" />
+	    <texture id="ui_inGame2_PDA_vert_divider_b" x="14" y="238" width="4" height="8" />
+	    <texture id="ui_inGame2_PDA_vert_divider_e" x="14" y="282" width="4" height="8" />
+
+	    <texture id="ui_inGame2_PDA_horiz_divider_back" x="21" y="221" width="38" height="4" />
+	    <texture id="ui_inGame2_PDA_horiz_divider_b" x="14" y="221" width="7" height="4" />
+	    <texture id="ui_inGame2_PDA_horiz_divider_e" x="59" y="221" width="7" height="4" />
+
+	    <texture id="ui_inGame2_PDA_button_close_e" x="14" y="14" width="13" height="13" />
+	    <texture id="ui_inGame2_PDA_button_close_h" x="14" y="39" width="13" height="13" />
+		<texture id="ui_inGame2_PDA_button_close_t" x="14" y="64" width="13" height="13" />
+		<texture id="ui_inGame2_PDA_button_close_d" x="14" y="14" width="13" height="13" />
+
+	    <texture id="ui_inGame2_pda_button_e" x="263" y="77" width="129" height="39" />
+	    <texture id="ui_inGame2_pda_button_h" x="263" y="77" width="129" height="39" />
+	    <texture id="ui_inGame2_pda_button_t" x="263" y="28" width="129" height="39" />
+	    <texture id="ui_inGame2_pda_button_d" x="263" y="77" width="129" height="39" />
+
+	    <texture id="ui_inGame2_pda_center_on_mission_button_e" x="174" y="64" width="18" height="18" />
+	    <texture id="ui_inGame2_pda_center_on_mission_button_h" x="149" y="64" width="18" height="18" />
+	    <texture id="ui_inGame2_pda_center_on_mission_button_t" x="124" y="64" width="18" height="18" />
+	    <texture id="ui_inGame2_pda_center_on_mission_button_d" x="174" y="64" width="18" height="18" />
+
+	    <texture id="ui_inGame2_pda_Current_tasks_e" x="547" y="9" width="46" height="46" />
+	    <texture id="ui_inGame2_pda_Current_tasks_h" x="547" y="63" width="46" height="46" />
+	    <texture id="ui_inGame2_pda_Current_tasks_t" x="547" y="117" width="46" height="46" />
+	    <texture id="ui_inGame2_pda_Current_tasks_d" x="547" y="9" width="46" height="46" />
+
+	    <texture id="ui_inGame2_pda_map_background_b"       x="0" y="153" width="955" height="16" />
+	    <texture id="ui_inGame2_pda_map_background_back"    x="0" y="159" width="955" height="16" />
+	    <texture id="ui_inGame2_pda_map_background_e"       x="0" y="169" width="955" height="16" />
+
+	    <texture id="ui_inGame2_pda_map_frame_b"    x="0" y="190" width="923" height="12" />
+	    <texture id="ui_inGame2_pda_map_frame_back" x="0" y="196" width="923" height="12" />
+	    <texture id="ui_inGame2_pda_map_frame_e"    x="0" y="202" width="923" height="12" />
+
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_lt"     x="165" y="29" width="11" height="11" />
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_t"      x="176" y="29" width="74" height="11" />
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_rt"     x="250" y="29" width="11" height="11" />
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_l"      x="165" y="40" width="11" height="11" />
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_back"   x="176" y="40" width="74" height="11" />
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_r"      x="250" y="40" width="11" height="11" />
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_lb"     x="165" y="51" width="11" height="12" />
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_b"      x="176" y="51" width="66" height="12" />
+	    <texture id="ui_inGame2_pda_secondary_tasks_list_bckgnd_rb"     x="242" y="51" width="19" height="12" />
+
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_bckgrnd_b"       x="0" y="215" width="17" height="2" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_bckgrnd_back"    x="0" y="217" width="17" height="2" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_bckgrnd_e"       x="0" y="247" width="17" height="2" />
+
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_box_E_b"         x="118" y="215" width="13" height="2" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_box_E_back"      x="118" y="217" width="13" height="2" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_box_E_e"         x="118" y="235" width="13" height="2" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_box_H_T_b"       x="154" y="233" width="13" height="2" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_box_H_T_back"    x="154" y="234" width="13" height="2" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_box_H_T_e"       x="154" y="253" width="13" height="2" />
+
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_top_arrow_E" x="244" y="215" width="17" height="18" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_top_arrow_H_T" x="208" y="215" width="17" height="18" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_bottom_arrow_E" x="262" y="215" width="17" height="26" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_vertical_bottom_arrow_H_T" x="226" y="215" width="17" height="26" />
+
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_bckgrnd_b"     x="18" y="215" width="2" height="17" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_bckgrnd_back"  x="20" y="215" width="73" height="17" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_bckgrnd_e"     x="93" y="215" width="2" height="17" />
+
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_box_E_b"       x="96" y="215" width="2" height="13" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_box_E_back"    x="98" y="215" width="17" height="13" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_box_E_e"       x="115" y="215" width="2" height="13" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_box_H_T_b"     x="132" y="233" width="2" height="13" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_box_H_T_back"  x="134" y="233" width="17" height="13" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_box_H_T_e"     x="151" y="233" width="2" height="13" />
+
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_left_arrow_E" x="170" y="215" width="18" height="17" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_left_arrow_H_T" x="132" y="215" width="18" height="17" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_right_arrow_E" x="189" y="215" width="18" height="17" />
+	    <texture id="ui_inGame2_pda_map_scrollbar_horisontal_right_arrow_H_T" x="151" y="215" width="18" height="17" />
+
+	    <texture id="ui_inGame2_pda_ranking_center_caption_b"       x="197" y="1" width="3" height="27" />
+	    <texture id="ui_inGame2_pda_ranking_center_caption_back"    x="200" y="1" width="12" height="27" />
+	    <texture id="ui_inGame2_pda_ranking_center_caption_e"       x="289" y="1" width="8" height="27" />
+
+	    <texture id="ui_inGame2_pda_background_text_b"       x="1315" y="951" width="42" height="42" />
+	    <texture id="ui_inGame2_pda_background_text_back"    x="1357" y="951" width="368" height="42" />
+	    <texture id="ui_inGame2_pda_background_text_e"       x="1725" y="951" width="42" height="42" />
+
+	    <texture id="ui_inGame2_pda_ranking_icon_over_lt"   x="0" y="193" width="2" height="2" />
+	    <texture id="ui_inGame2_pda_ranking_icon_over_l"    x="0" y="195" width="2" height="2" />
+	    <texture id="ui_inGame2_pda_ranking_icon_over_lb"   x="0" y="212" width="2" height="2" />
+	    <texture id="ui_inGame2_pda_ranking_icon_over_t"    x="2" y="193" width="300" height="2" />
+	    <texture id="ui_inGame2_pda_ranking_icon_over_back" x="2" y="195" width="300" height="17" />
+	    <texture id="ui_inGame2_pda_ranking_icon_over_b"    x="2" y="212" width="300" height="2" />
+	    <texture id="ui_inGame2_pda_ranking_icon_over_rt"   x="921" y="193" width="2" height="2" />
+	    <texture id="ui_inGame2_pda_ranking_icon_over_r"    x="921" y="195" width="2" height="2" />
+	    <texture id="ui_inGame2_pda_ranking_icon_over_rb"   x="921" y="212" width="2" height="2" />
+
+	    <texture id="btn_task_focus_e" x="174" y="64" width="18" height="18" />
+	    <texture id="btn_task_focus_h" x="149" y="64" width="18" height="18" />
+	    <texture id="btn_task_focus_t" x="124" y="64" width="18" height="18" />
+
+	    <texture id="ui_inGame2_rail_timeline" x="1889" y="18" width="15" height="260" />
+	    <texture id="ui_inGame2_thumb_timeline" x="1863" y="19" width="14" height="12" />
+
+		<texture id="ui_icons_PDA_dialog_2_lt"   x="1324" y="303" width="20"  height="20"  />
+		<texture id="ui_icons_PDA_dialog_2_t"    x="1344" y="303" width="413" height="20"  />
+		<texture id="ui_icons_PDA_dialog_2_rt"   x="1757" y="303" width="20"  height="20"  />
+		<texture id="ui_icons_PDA_dialog_2_l"    x="1324" y="323" width="20"  height="413" />
+		<texture id="ui_icons_PDA_dialog_2_back" x="1344" y="323" width="413" height="413" />
+		<texture id="ui_icons_PDA_dialog_2_r"    x="1757" y="323" width="20"  height="413" />
+		<texture id="ui_icons_PDA_dialog_2_lb"   x="1324" y="736" width="20"  height="20"  />
+		<texture id="ui_icons_PDA_dialog_2_b"    x="1344" y="736" width="413" height="20"  />
+		<texture id="ui_icons_PDA_dialog_2_rb"   x="1757" y="736" width="20"  height="20"  />
+
+		<texture id="ui_icons_PDA_legend_list_lt"   x="1324" y="19" width="20"  height="20"  />
+		<texture id="ui_icons_PDA_legend_list_t"    x="1344" y="19" width="413" height="20"  />
+		<texture id="ui_icons_PDA_legend_list_rt"   x="1757" y="19" width="20"  height="20"  />
+		<texture id="ui_icons_PDA_legend_list_l"    x="1324" y="39" width="20"  height="203" />
+		<texture id="ui_icons_PDA_legend_list_back" x="1344" y="39" width="413" height="203" />
+		<texture id="ui_icons_PDA_legend_list_r"    x="1757" y="39" width="20"  height="203" />
+		<texture id="ui_icons_PDA_legend_list_lb"   x="1324" y="242" width="20"  height="20"  />
+		<texture id="ui_icons_PDA_legend_list_b"    x="1344" y="242" width="413" height="20"  />
+		<texture id="ui_icons_PDA_legend_list_rb"   x="1757" y="242" width="20"  height="20"  />
+	</file>
+
+    <file name="ui\ui_actor_pda_map_back" scale="2">
+        <texture id="ui_inGame2_map_back" x="0" y="256" width="1280" height="768" />
+    </file>
+
+    <file name="ui\ui_actor_pda_stat_back" scale="2">
+        <texture id="ui_inGame2_stat_back" x="0" y="256" width="1280" height="768" />
+    </file>
+
+    <file name="ui\ui_actor_pda_journal_back" scale="2">
+        <texture id="ui_inGame2_journal_back" x="0" y="256" width="1280" height="768" />
+
+	    <texture id="ui_inGame2_pda_log_pin_last_e" x="955" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_log_pin_last_h" x="1005" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_log_pin_last_t" x="1052" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_log_pin_last_d" x="955" y="10" width="37" height="37" />
+
+	    <texture id="ui_inGame2_pda_sort_oldest_e" x="1219" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_oldest_h" x="1172" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_oldest_t" x="1124" y="10" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_oldest_d" x="1219" y="10" width="37" height="37" />
+
+	    <texture id="ui_inGame2_pda_sort_newest_e" x="1219" y="55" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_newest_h" x="1172" y="55" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_newest_t" x="1124" y="55" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_sort_newest_d" x="1219" y="55" width="37" height="37" />
+
+	    <texture id="ui_inGame2_pda_Filtr_arrow_left_e" x="1324" y="175" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_left_h" x="1324" y="125" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_left_t" x="1324" y="80" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_left_d" x="1324" y="175" width="37" height="37" />
+
+	    <texture id="ui_inGame2_pda_Filtr_arrow_right_e" x="1394" y="175" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_right_h" x="1394" y="125" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_right_t" x="1394" y="80" width="37" height="37" />
+	    <texture id="ui_inGame2_pda_Filtr_arrow_right_d" x="1394" y="175" width="37" height="37" />
+
+	    <texture id="ui_pda_cal_btn_e" x="1324" y="10" width="37" height="37" />
+	    <texture id="ui_pda_cal_btn_h" x="1374" y="10" width="37" height="37" />
+	    <texture id="ui_pda_cal_btn_t" x="1419" y="10" width="37" height="37" />
+	    <texture id="ui_pda_cal_btn_d" x="1324" y="10" width="37" height="37" />
+
+	    <texture id="ui_pda_cal_day_e" x="1323" y="523" width="23" height="23" />
+	    <texture id="ui_pda_cal_day_h" x="1352" y="523" width="23" height="23" />
+	    <texture id="ui_pda_cal_day_t" x="1380" y="523" width="23" height="23" />
+	    <texture id="ui_pda_cal_day_d" x="1323" y="523" width="23" height="23" />
+
+		<texture id="ui_inGame2_pda_cal_popup_lt"   x="1323" y="254" width="32"  height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_t"    x="1355" y="254" width="141" height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_rt"   x="1496" y="254" width="32"  height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_l"    x="1323" y="286" width="32"  height="164" />
+		<texture id="ui_inGame2_pda_cal_popup_back" x="1355" y="286" width="141" height="164" />
+		<texture id="ui_inGame2_pda_cal_popup_r"    x="1496" y="286" width="32"  height="164" />
+		<texture id="ui_inGame2_pda_cal_popup_lb"   x="1323" y="450" width="32"  height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_b"    x="1355" y="450" width="141" height="32"  />
+		<texture id="ui_inGame2_pda_cal_popup_rb"   x="1496" y="450" width="32"  height="32"  />
+    </file>
+
+    <file name="ui\ui_actor_pda_msg_frame" scale="2">
+        <texture id="ui_inGame2_pda_msg_frame" x="0" y="256" width="1280" height="768" />
+    </file>
+
+    <file name="ui\ui_actor_pda_pattern" scale="2">
+        <texture id="ui_inGame2_pda_pattern" x="0" y="274" width="1500" height="750" />
+    </file>
+
+    <file name="ui\ui_actor_pda_glass_effect" scale="2">
+        <texture id="ui_inGame2_pda_glass_effect" x="0" y="304" width="1280" height="720" />
+    </file>
+</w>

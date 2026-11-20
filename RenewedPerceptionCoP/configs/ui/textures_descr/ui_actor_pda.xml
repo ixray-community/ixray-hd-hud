@@ -289,6 +289,6 @@
     </file>
 
     <file name="ui\ui_actor_pda_glass_effect" scale="2">
-        <texture id="ui_inGame2_pda_glass_effect" x="0" y="256" width="1280" height="768" />
+        <texture id="ui_inGame2_pda_glass_effect" x="0" y="304" width="1280" height="720" />
     </file>
 </w>

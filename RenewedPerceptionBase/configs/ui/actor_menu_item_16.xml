@@ -4,8 +4,8 @@
 		<texture>ui_inGame2_hint_wnd_main_window</texture>
 	</background_frame>
 
-	<static_name x="16" y="16" width="308" height="22" stretch="1" complex_desc="1">
-		<text font="font_oswald_18" complex_mode="1" align="l" vert_align="c" r="193" g="201" b="209"/>
+	<static_name x="16" y="14" width="308" height="26" stretch="1" complex_desc="1">
+		<text font="font_oswald_22" complex_mode="1" align="l" vert_align="c" r="193" g="201" b="209"/>
 	</static_name>
 
 	<static_weight x="16" y="40" width="200" height="18">
@@ -63,7 +63,7 @@
 			<text font="font_rubik_16" r="150" g="155" b="160" align="l">ui_inv_rate_of_fire</text>
 		</cap_rpm>
 
-		<progress_accuracy x="112" y="14" width="120" height="9" horz="1">
+		<progress_accuracy x="112" y="14" width="120" height="9" horz="1" stretch="1">
 			<progress stretch="1">
 				<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 			</progress>
@@ -73,7 +73,7 @@
 			<color_less color="pda_red"/>
 			<color_more color="pda_green"/>
 		</progress_accuracy>
-		<progress_handling x="112" y="32" width="120" height="9" horz="1">
+		<progress_handling x="112" y="32" width="120" height="9" horz="1" stretch="1">
 			<progress stretch="1">
 				<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 			</progress>
@@ -83,7 +83,7 @@
 			<color_less color="pda_red"/>
 			<color_more color="pda_green"/>
 		</progress_handling>
-		<progress_damage x="112" y="50" width="120" height="9" horz="1">
+		<progress_damage x="112" y="50" width="120" height="9" horz="1" stretch="1">
 			<progress stretch="1">
 				<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 			</progress>
@@ -93,7 +93,7 @@
 			<color_less color="pda_red"/>
 			<color_more color="pda_green"/>
 		</progress_damage>
-		<progress_rpm x="112" y="68" width="120" height="9" horz="1">
+		<progress_rpm x="112" y="68" width="120" height="9" horz="1" stretch="1">
 			<progress stretch="1">
 				<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 			</progress>
@@ -145,7 +145,7 @@
 			<text font="font_rubik_16" r="150" g="155" b="160" align="l">ui_inv_dist</text>
 		</cap_dist>
 
-		<progress_damage x="112" y="14" width="120" height="9" horz="1">
+		<progress_damage x="112" y="14" width="120" height="9" horz="1" stretch="1">
 			<progress stretch="1">
 				<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 			</progress>
@@ -155,7 +155,7 @@
 			<color_less color="pda_red"/>
 			<color_more color="pda_green"/>
 		</progress_damage>
-		<progress_handling x="112" y="32" width="120" height="9" horz="1">
+		<progress_handling x="112" y="32" width="120" height="9" horz="1" stretch="1">
 			<progress stretch="1">
 				<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 			</progress>
@@ -268,9 +268,9 @@
 		</properties>
 	</upgrade_info>
 
-	<cell_item_text x="0" y="0" width="24" height="16" stretch="1" anchor="bottom_right" override="replace">
+	<cell_item_text x="0" y="0" width="24" height="16" stretch="1" anchor="top_right" override="replace">
 		<texture a="0">ui_item_count_back_2</texture>
-		<text x="-3" y="0" width="24" height="16" font="font_rubik_18" r="225" g="225" b="225" align="r" vert_align="b">
+		<text x="-3" y="1" width="24" height="16" font="font_rubik_18" r="225" g="225" b="225" align="r" vert_align="t">
 			<shadows thickness="0.75" r="0" g="0" b="0" a="255"/>
 		</text>
 	</cell_item_text>
@@ -310,7 +310,7 @@
 		<burn_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_prop_thermo</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>
@@ -328,7 +328,7 @@
 		<shock_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_prop_electro</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>
@@ -346,7 +346,7 @@
 		<chemical_burn_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_prop_chem</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>
@@ -364,7 +364,7 @@
 		<radiation_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_propery_09</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>
@@ -382,7 +382,7 @@
 		<telepatic_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_propery_11</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>
@@ -400,7 +400,7 @@
 		<wound_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_prop_damage</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>
@@ -418,7 +418,7 @@
 		<fire_wound_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_propery_01</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>
@@ -436,7 +436,7 @@
 		<strike_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_prop_strike</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>
@@ -454,7 +454,7 @@
 		<explosion_immunity x="0" y="0" width="14" height="18" stretch="1">
 			<texture>ui_am_prop_explo</texture>
 			<text font="font_rubik_16" x="18" y="0" r="150" g="155" b="160" align="l" vert_align="c"/>
-			<progress_immunity x="140" y="4" width="100" height="9" horz="1">
+			<progress_immunity x="140" y="4" width="100" height="9" horz="1" stretch="1">
 				<progress stretch="1">
 					<texture a="150">ui_inGame2_hint_wnd_bar_alfa_line_16</texture>
 				</progress>

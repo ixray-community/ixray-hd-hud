@@ -1,0 +1,261 @@
+<w>
+	<main_wnd x="0" y="0" width="1024" height="768" override="replace">
+		<window_name>pda_tasks</window_name>
+	</main_wnd>
+
+	<right_bottom_background override="remove"/>
+
+	<background x="0" y="48" width="1024" height="102" vertical="1" stretch="1" override="replace">
+		<texture>ui_pda2_fr2</texture>
+		<auto_frameline x="6" y="1" width="1012" height="4">
+			<texture>ui_pda2_line_d</texture>
+		</auto_frameline>
+		<auto_frameline x="1018" y="6" width="3" height="70" vertical="1">
+			<texture>ui_pda2_line_v</texture>
+		</auto_frameline>
+	</background>
+
+	<center_background x="0" y="127" width="1024" height="31" stretch="1" override="replace">
+		<texture>ui_pda2_delimiter_03</texture>
+	</center_background>
+
+	<task_split x="45" y="91" width="970" height="7" stretch="1" override="replace">
+		<texture>ui_pda2_split</texture>
+	</task_split>
+
+	<btn_second_task x="15" y="97" width="30" height="33" stretch="1" override="replace">
+		<window_name>btn_second_task</window_name>
+		<texture>ui_task_bt_tslist</texture>
+		<hint_text delay="700">ui_show_second_task_wnd</hint_text>
+	</btn_second_task>
+
+	<second_task_index x="965" y="105" width="28" height="16" override="replace">
+		<text align="r" font="letterica18" color="ui_4"/>
+	</second_task_index>
+
+	<storyline_task_item x="15" y="55" width="965" height="35" override="replace">
+		<window_name>pda_task_item1</window_name>
+		<t_icon x="0" y="2" width="31" height="33" stretch="1"/>
+
+		<t_icon_over x="-1" y="0" width="33" height="37" stretch="1">
+			<texture>ui_pda2_mtask_overlay</texture>
+		</t_icon_over>
+
+		<t_caption x="43" y="4" width="910" height="22" stretch="1">
+			<text align="l" font="letterica25" color="ui_1"/>
+		</t_caption>
+	</storyline_task_item>
+
+	<secondary_task_item x="55" y="98" width="900" height="35" override="replace">
+		<window_name>pda_task_item2</window_name>
+
+		<t_caption x="0" y="8" width="890" height="20" stretch="1">
+			<text align="l" font="letterica18" color="ui_4"/>
+		</t_caption>
+	</secondary_task_item>
+
+	<btn_task_focus x="995" y="63" width="16" height="21" stretch="1" override="replace">
+		<window_name>btn_task_focus</window_name>
+		<texture>ui_task_bt_center</texture>
+		<hint_text delay="700">ui_task_btn_focus_center</hint_text>
+	</btn_task_focus>
+
+	<btn_task_focus2 x="995" y="104" width="16" height="21" stretch="1" override="replace">
+		<window_name>btn_task_focus2</window_name>
+		<texture>ui_task_bt_center</texture>
+		<hint_text delay="700">ui_task_btn_focus_center2</hint_text>
+	</btn_task_focus2>
+
+	<map_wnd scroll_enable="1" map_move_step="11" override="replace">
+		<main_wnd x="0" y="150" width="1024" height="618"/>
+
+		<main_map_frame x="0" y="0" width="1024" height="618" dx="0" dy="0" sx="6" sy="6">
+			<texture>ui_pda2_mapframe</texture>
+		</main_map_frame>
+
+		<level_frame x="0" y="0" width="1024" height="618"/>
+
+		<map_hint_item x="0" y="0" width="250" height="200" stretch="1">
+			<texture>ui_icons_PDA_tooltips</texture>
+
+			<simple_text x="7" y="12" width="154" height="192" complex_mode="1">
+				<text align="l" font="letterica18"/>
+			</simple_text>
+
+			<t_icon x="9" y="11" width="35" height="37" stretch="1"/>
+
+			<t_caption x="54" y="12" width="175" height="18" complex_mode="1">
+				<text align="l" font="letterica18"/>
+			</t_caption>
+
+			<t_time x="54" y="38" width="175" height="18">
+				<text align="l" font="letterica16" color="ui_9"/>
+			</t_time>
+
+			<t_time_rem x="54" y="58" width="175" height="18" _light_anim="ui_too_slow_blinking" la_cyclic="1" la_texture="0" la_text="1" la_alpha="1">
+				<text align="l" font="letterica16" color="ui_9"/>
+			</t_time_rem>
+
+			<t_hint_text x="7" y="75" width="229" height="18" complex_mode="1">
+				<text align="l" font="letterica18"/>
+			</t_hint_text>
+		</map_hint_item>
+	</map_wnd>
+
+	<btn_nav_parent x="919" y="500" width="60" height="72" stretch="1" override="replace">
+		<btn_nav_0 x="0" y="0" width="16" height="21" stretch="1">
+			<window_name>btn_nav_legend</window_name>
+			<texture>ui_mnav_bt_legend</texture>
+			<hint_text delay="700">ui_map_btn_legend</hint_text>
+		</btn_nav_0>
+		<btn_nav_1 x="18" y="0" width="16" height="21" stretch="1">
+			<window_name>btn_nav_up</window_name>
+			<texture>ui_mnav_bt_up</texture>
+			<hint_text delay="700">ui_map_btn_up</hint_text>
+		</btn_nav_1>
+		<btn_nav_2 x="36" y="0" width="16" height="21" stretch="1">
+			<window_name>btn_nav_zoom_in</window_name>
+			<texture>ui_mnav_bt_zoom_in</texture>
+			<hint_text delay="700">ui_map_btn_zoom_in</hint_text>
+		</btn_nav_2>
+
+		<btn_nav_3 x="0" y="24" width="16" height="21" stretch="1">
+			<window_name>btn_nav_left</window_name>
+			<texture>ui_mnav_bt_left</texture>
+			<hint_text delay="700">ui_map_btn_left</hint_text>
+		</btn_nav_3>
+		<btn_nav_4 x="18" y="24" width="16" height="21" stretch="1">
+			<window_name>btn_nav_center</window_name>
+			<texture>ui_mnav_bt_center</texture>
+			<hint_text delay="700">ui_map_btn_center</hint_text>
+		</btn_nav_4>
+		<btn_nav_5 x="36" y="24" width="16" height="21" stretch="1">
+			<window_name>btn_nav_right</window_name>
+			<texture>ui_mnav_bt_right</texture>
+			<hint_text delay="700">ui_map_btn_right</hint_text>
+		</btn_nav_5>
+
+		<btn_nav_6 x="0" y="48" width="16" height="21" stretch="1">
+			<window_name>btn_nav_zoom_out</window_name>
+			<texture>ui_mnav_bt_zoom_out</texture>
+			<hint_text delay="700">ui_map_btn_zoom_out</hint_text>
+		</btn_nav_6>
+		<btn_nav_7 x="18" y="48" width="16" height="21" stretch="1">
+			<window_name>btn_nav_down</window_name>
+			<texture>ui_mnav_bt_down</texture>
+			<hint_text delay="700">ui_map_btn_down</hint_text>
+		</btn_nav_7>
+		<btn_nav_8 x="36" y="48" width="16" height="21" stretch="1">
+			<window_name>btn_nav_zmreset</window_name>
+			<texture>ui_mnav_bt_zmreset</texture>
+			<hint_text delay="700">ui_map_btn_zmreset</hint_text>
+		</btn_nav_8>
+	</btn_nav_parent>
+
+	<second_task_wnd x="15" y="10" width="340" height="560" stretch="1" override="replace">
+		<background_frame x="0" y="0" width="340" height="560" stretch="1">
+			<texture>ui_icons_PDA_dialog</texture>
+			<auto_frameline x="12" y="33" width="316" height="4" stretch="1">
+				<texture>ui_pda2_line_d</texture>
+			</auto_frameline>
+		</background_frame>
+
+		<t_caption x="13" y="15" width="150" height="14" stretch="1">
+			<text align="l" font="letterica16" r="128" g="128" b="128" a="160">ui_pda_secondary_task</text>
+		</t_caption>
+
+		<t_counter x="230" y="15" width="42" height="14" stretch="1">
+			<text align="r" font="letterica16" color="ui_4"/>
+		</t_counter>
+
+		<btn_close x="315" y="10" width="13" height="15" stretch="1">
+			<window_name>task_btn_close</window_name>
+			<texture>ui_task_bt_close</texture>
+		</btn_close>
+
+		<task_list x="8" y="44" width="324" height="500" item_height="40" scroll_profile="pda" always_show_scroll="1" />
+
+		<task_item x="0" y="0" width="300" height="40" stretch="1">
+			<activ color="ui_1"/>
+			<unread color="ui_4"/>
+			<read color="ui_3"/>
+
+			<t_icon x="2" y="4" width="32" height="32" stretch="1"/>
+
+			<name x="38" y="2" width="235" height="34" stretch="1">
+				<text align="l" font="letterica16" color="ui_1" complex_mode="1"/>
+			</name>
+
+			<btn_focus x="278" y="9" width="16" height="21" stretch="1">
+				<window_name>task_item_btn_focus</window_name>
+				<texture>ui_task_bt_center</texture>
+				<hint_text delay="700">ui_task_btn_focus_center2</hint_text>
+			</btn_focus>
+		</task_item>
+	</second_task_wnd>
+
+	<map_legend_wnd x="745" y="10" width="260" height="420" stretch="1" override="replace">
+		<background_frame x="0" y="0" width="260" height="420" stretch="1">
+			<texture>ui_icons_PDA_dialog</texture>
+			<auto_frameline x="12" y="33" width="236" height="4" stretch="1">
+				<texture>ui_pda2_line_d</texture>
+			</auto_frameline>
+		</background_frame>
+
+		<t_caption x="13" y="15" width="67" height="14" stretch="1">
+			<text align="l" font="letterica16" r="128" g="128" b="128" a="160">st_ui_pda_legend</text>
+		</t_caption>
+
+		<btn_close x="235" y="10" width="11.5" height="15" stretch="1">
+			<window_name>legend_btn_close</window_name>
+			<texture>ui_task_bt_close</texture>
+		</btn_close>
+
+		<legend_list x="8" y="40" width="244" height="370" item_height="26" always_show_scroll="1" scroll_profile="pda">
+			<item x="0" y="0" width="229" height="26">
+				<image x="10" y="2" width="9.5" height="12" stretch="1">
+					<texture>ui_pda2_actor_box</texture>
+				</image>
+				<text_static x="33" y="2" width="192" height="16" complex_mode="1">
+					<text align="l" font="letterica16" color="ui_3">st_ui_pda_legend_actor</text>
+				</text_static>
+			</item>
+
+			<item x="0" y="0" width="229" height="26">
+				<image x="9" y="0" width="11" height="15" stretch="1">
+					<texture>ui_pda2_main_task</texture>
+				</image>
+				<text_static x="33" y="2" width="192" height="16" complex_mode="1">
+					<text align="l" font="letterica16" color="ui_3">st_ui_pda_legend_main_task</text>
+				</text_static>
+			</item>
+
+			<item x="0" y="0" width="229" height="26">
+				<image x="9" y="0" width="11" height="15" stretch="1">
+					<texture r="242" g="231" b="11">ui_pda2_secondary_task</texture>
+				</image>
+				<text_static x="33" y="2" width="192" height="16" complex_mode="1">
+					<text align="l" font="letterica16" color="ui_3">st_ui_pda_legend_additional_task</text>
+				</text_static>
+			</item>
+
+			<item x="0" y="0" width="229" height="26">
+				<image x="10" y="3" width="8.5" height="11" stretch="1">
+					<texture>ui_pda2_squad_leader</texture>
+				</image>
+				<text_static x="33" y="2" width="192" height="16" complex_mode="1">
+					<text align="l" font="letterica16" color="ui_3">st_ui_pda_legend_squad_leader</text>
+				</text_static>
+			</item>
+
+			<item x="0" y="0" width="229" height="26">
+				<image x="10" y="3" width="8.5" height="11" stretch="1">
+					<texture>ui_pda2_secret</texture>
+				</image>
+				<text_static x="33" y="2" width="192" height="16" complex_mode="1">
+					<text align="l" font="letterica16" color="ui_3">st_ui_pda_legend_secrets</text>
+				</text_static>
+			</item>
+		</legend_list>
+	</map_legend_wnd>
+</w>

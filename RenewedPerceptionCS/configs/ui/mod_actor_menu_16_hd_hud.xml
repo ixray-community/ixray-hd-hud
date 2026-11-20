@@ -56,13 +56,13 @@
 	<actor_money_static x="710" y="106" width="67" height="20" override="replace">
     <text align="r" font="font_oswald_30"/>
   </actor_money_static>
-	<partner_money_static x="5" y="106" width="67" height="20" override="replace">
+	<partner_money_static x="48" y="106" width="67" height="20" override="replace">
     <text align="r" font="font_oswald_30"/>
   </partner_money_static>
 	<inventory_slot_wnd override="replace">
 		<slot> <!-- Knife -->
 		</slot>
-		<slot> <!-- Pistol -->
+		<slot> <!-- INV_SLOT_2 -->
 			<slot_progress x="383.5" y="348" width="63" height="3" horz="1" min="0" max="1" pos="0">
     		    <progress stretch="1">
     		        <texture>ui_inGame2_inventory_condition_progess_new</texture>
@@ -79,7 +79,7 @@
           custom_placement="0" vertical_placement="1" a="0" virtual_cells="1" vc_vert_align="c"
 		vc_horiz_align="c" />
  		</slot>
-		<slot> <!-- Auto -->
+		<slot> <!-- INV_SLOT_3 -->
 			<slot_progress x="573.5" y="348" width="63" height="3" horz="1" min="0" max="1" pos="0">
     		    <progress stretch="1">
     		        <texture>ui_inGame2_inventory_condition_progess_new</texture>
@@ -138,6 +138,27 @@
 		</slot>
 		<slot> <!-- Backpack -->
 		</slot>
+		<slot> <!-- POWER_BANK_SLOT -->
+		</slot>
+		<slot> <!-- NVG_SLOT -->
+		</slot>
+		<slot> <!-- PISTOL_SLOT_NEW -->
+			<slot_progress x="478.5" y="348" width="63" height="3" horz="1" min="0" max="1" pos="0">
+				<progress stretch="1">
+					<texture>ui_inGame2_inventory_condition_progess_new</texture>
+				</progress>
+				<min_color r="255" g="0" b="0"/>
+				<middle_color r="255" g="255" b="0"/>
+				<max_color r="0" g="255" b="0"/>
+			</slot_progress>
+			<slot_highlight x="471" y="287" width="78" height="63" stretch="1">
+				<texture>ui_inGame2_inventory_detector_highlight_cs</texture>
+			</slot_highlight>
+			<slot_dragdrop x="471" y="288" width="78" height="58"
+				cell_width="34" cell_height="41" rows_num="1" cols_num="2"
+				custom_placement="0" vertical_placement="0" a="0" virtual_cells="1" vc_vert_align="c"
+				vc_horiz_align="c" />
+		</slot>
 	</inventory_slot_wnd>
 	<quick_slot_highlight x="376.5" y="360" width="64" height="69" dx="67.5" stretch="1" override="add">
 		<texture>ui_inGame2_inventory_detector_highlight_cs</texture>
@@ -172,30 +193,32 @@
 	<partner_weight x="335" y="732" width="38" height="14" override="replace">
     <text align="l" font="font_oswald_24"/>
   </partner_weight>
-	<left_delimiter  x="0" y="326" width="360" height="47" stretch="1" override="replace">
-    <texture>ui_invaddon_trade_16</texture>
-    <trade_caption x="85" y="8" width="71" height="14">
-      <text align="l" font="letterica16" color="ui_3">ui_total_price</text>
-    </trade_caption>
-	<trade_price x="240"  y="8" width="38" height="14">
-		<text align="l" font="letterica16" color="ui_7"/>
-	</trade_price>
-	<trade_weight_max x="288" y="8" width="71" height="14">
-		<text align="l" font="letterica16" color="ui_3"/>
-	</trade_weight_max>
-  </left_delimiter>
-	<right_delimiter x="662" y="326" width="360" height="47" stretch="1" override="replace">
-    <texture>ui_invaddon_trade_16</texture>
-    <trade_caption x="85" y="8" width="71" height="14">
-      <text align="l" font="letterica16" color="ui_3">ui_total_price</text>
-    </trade_caption>
-    <trade_price x="240"  y="8" width="38" height="14">
-		<text align="l" font="letterica16" color="ui_7"/>
-	</trade_price>
-	<trade_weight_max x="288" y="8" width="71" height="14">
-		<text align="l" font="letterica16" color="ui_3"/>
-	</trade_weight_max>
-  </right_delimiter>
+	<left_delimiter_frl override="remove"/>
+	<right_delimiter_frl override="remove"/>
+	<left_delimiter x="0" y="326" width="358.5" height="47" stretch="1" override="replace">
+		<texture>ui_inGame2_delimiter_02</texture>
+		<trade_caption x="120" y="16" width="71" height="14">
+			<text align="l" font="letterica16" color="ui_3">ui_total_price</text>
+		</trade_caption>
+		<trade_price x="240" y="16" width="38" height="14">
+			<text align="l" font="letterica16" color="ui_7"/>
+		</trade_price>
+		<trade_weight_max x="330" y="16" width="71" height="14">
+			<text align="l" font="letterica16" color="ui_3"/>
+		</trade_weight_max>
+	</left_delimiter>
+	<right_delimiter x="665.5" y="326" width="358.5" height="47" stretch="1" override="replace">
+		<texture>ui_inGame2_delimiter_02</texture>
+		<trade_caption x="120" y="16" width="71" height="14">
+			<text align="l" font="letterica16" color="ui_3">ui_total_price</text>
+		</trade_caption>
+		<trade_price x="240" y="16" width="38" height="14">
+			<text align="l" font="letterica16" color="ui_7"/>
+		</trade_price>
+		<trade_weight_max x="330" y="16" width="71" height="14">
+			<text align="l" font="letterica16" color="ui_3"/>
+		</trade_weight_max>
+	</right_delimiter>
 	<left_background x="0" y="0" width="358.5" height="768" stretch="1" override="replace">
     <texture>ui_inGame2_inventory_backpack_new</texture>
   </left_background>

@@ -1,4 +1,27 @@
 <w>
+	<static_name x="16" y="14" width="308" height="26" stretch="1" complex_desc="1" override="replace">
+		<text font="font_oswald_22" complex_mode="1" align="l" vert_align="c" r="193" g="201" b="209"/>
+	</static_name>
+
+	<cell_item_text x="0" y="0" width="24" height="16" stretch="1" anchor="top_right" override="replace">
+		<texture a="0">ui_item_count_back_2</texture>
+		<text x="-3" y="1" width="24" height="16" font="font_rubik_18" r="225" g="225" b="225" align="r" vert_align="t">
+			<shadows thickness="0.75" r="0" g="0" b="0" a="255"/>
+		</text>
+	</cell_item_text>
+
+	<condition_progess_bar x="1" y="1" width="30" height="3" horz="1" min="0" max="1" pos="1" stretch="1" anchor="bottom_left" override="replace">
+		<background x="0" y="0" width="30" height="3" stretch="1">
+			<texture a="80" r="50" g="50" b="50">ui_inGame2_inventory_condition_progess_new</texture>
+		</background>
+		<progress stretch="1">
+			<texture>ui_inGame2_inventory_condition_progess_new</texture>
+		</progress>
+		<min_color r="255" g="0" b="0"/>
+		<middle_color r="255" g="255" b="0"/>
+		<max_color r="0" g="255" b="0"/>
+	</condition_progess_bar>
+
 	<upgrade_info>
 		<info_cost override="remove"/>
 	</upgrade_info>

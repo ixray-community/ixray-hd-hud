@@ -1,0 +1,61 @@
+<w>
+    <file name="ui\ui_actor_hint_wnd" scale="2">
+
+	    	<texture id="ui_inGame2_PDA_icon_Stalker_VIP" x="426" y="544" width="22" height="22" />
+	    	<texture id="ui_inGame2_PDA_icon_Question" x="426" y="575" width="22" height="22" />
+		
+	    	<texture id="ui_inGame2_PDA_icon_Stalker_VIP_small" x="458" y="544" width="16" height="16" />
+	    	<texture id="ui_inGame2_PDA_icon_Question_small" x="458" y="575" width="16" height="16" />
+
+	    	<texture id="ui_inGame2_PDA_icon_Primary_mission" x="3" y="562" width="25" height="25" />
+	    	<texture id="ui_inGame2_PDA_icon_Secondary_mission" x="3" y="532" width="25" height="25" />
+
+	    	<texture id="ui_inGame2_PDA_icon_location_legend" x="3" y="587" width="42" height="42" />
+			
+			<texture id="npc_marker_squad_leader" x="389" y="449" width="20" height="20" />
+			<texture id="npc_marker_common" x="361" y="449" width="20" height="20" />
+			<texture id="npc_marker_deadbody" x="338" y="449" width="20" height="20" />
+
+			<texture id="ui_mmap_squad_leader_2" x="389" y="449" width="20" height="20" />
+			<texture id="ui_pda2_squad_leader_2" x="389" y="449" width="20" height="20" />
+			<texture id="ui_mmap_common_actor_2" x="361" y="449" width="20" height="20" />
+			<texture id="ui_pda2_common_actor_2" x="361" y="449" width="20" height="20" />
+			<texture id="ui_mmap_death_actor_2" x="338" y="449" width="20" height="20" />
+			<texture id="ui_pda2_death_actor_2" x="338" y="449" width="20" height="20" />
+	</file>
+
+    <file name="ui\ui_actor_sleep_screen">
+
+		<texture id="ui_inGame2_Detector_icon_electro_big" x="0" y="532" width="34" height="34" />
+		<texture id="ui_inGame2_Detector_icon_fire_big" x="35" y="532" width="34" height="34" />
+		<texture id="ui_inGame2_Detector_icon_acid_big" x="70" y="532" width="34" height="34" />
+		<texture id="ui_inGame2_Detector_icon_gravity_big" x="105" y="532" width="34" height="34" />
+
+		<texture id="ui_inGame2_Detector_icon_artefact" x="2" y="569" width="8" height="8" />
+
+	    <texture id="ui_inGame2_PDA_icon_location" x="0" y="585" width="205" height="205" />
+   </file>
+
+	<file name="ui\ui_pda_isons_set" scale="2">
+		<texture id="ui_inGame2_PDA_icon_location_2" x="0" y="0" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_secret" x="256" y="0" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_personal_spot" x="128" y="0" width="128" height="128" />
+
+		<texture id="ui_inGame2_PDA_icon_Stalker_machanik" x="0" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Stalker_Trader" x="128" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Stalker_Medic" x="384" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Stalker_guide" x="256" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Actor_Box" x="512" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Place_to_rest" x="640" y="128" width="128" height="128" />
+
+		<texture id="ui_inGame2_PDA_icon_Stalker_machanik_small" x="0" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Stalker_Trader_small" x="128" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Stalker_Medic_small" x="384" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Stalker_guide_small" x="256" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Actor_Box_small" x="512" y="128" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_Place_to_rest_small" x="640" y="128" width="128" height="128" />
+
+		<texture id="ui_icons_newPDA_manArrow_2" x="0" y="384" width="128" height="128" />
+		<texture id="ui_inGame2_PDA_icon_NewQuest_white" x="0" y="256" width="128" height="128" />
+	</file>
+</w>

@@ -12,4 +12,10 @@
 	<string id="quick_use_str_4">
 		<text>$$ACTION_QUICK_USE_4$$</text>
 	</string>
+	<string id="ui_inv_repair">
+		<text>Починить</text>
+	</string>
+	<string id="ui_st_inv_repair">
+		<text>Починить</text>
+	</string>
 </string_table>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<w>
+	<main x="0" y="0" width="358.5" height="768" override="replace">
+		<auto_static x="0" y="0" width="358.5" height="768" stretch="1">
+			<texture>ui_inGame2_inventory_backpack_new</texture>
+		</auto_static>
+	</main>
+	<background override="remove"/>
+	<scheme x="43" y="280" width="276" height="488" override="replace"/>
+	<repair_button x="270" y="215" width="80" height="28" hint="ui_repair_button_hint" stretch="1" override="replace">
+		<window_name>repair_button</window_name>
+		<texture>ui_inGame2_repair_button</texture>
+		<text align="c" font="letterica18" r="200" g="200" b="200">ui_inv_repair</text>
+	</repair_button>
+</w>
