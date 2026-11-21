@@ -771,4 +771,289 @@
 	<string id="pda_tj_group_side">
 		<text>Дополнительные</text>
 	</string>
+	<string id="pda_tab_records">
+		<text>Записи</text>
+	</string>
+	<string id="pda_tab_records_hint">
+		<text>Записи: тайники, заметки и другие сведения</text>
+	</string>
+	<string id="pda_rec_list_caption">
+		<text>Записи</text>
+	</string>
+	<string id="pda_rec_cat_stashes">
+		<text>Тайники</text>
+	</string>
+	<string id="pda_rec_cat_notes">
+		<text>Заметки</text>
+	</string>
+	<string id="pda_rec_empty">
+		<text>Здесь пока пусто.</text>
+	</string>
+	<string id="pda_rec_empty_stashes">
+		<text>Наводок на тайники пока нет.</text>
+	</string>
+	<string id="pda_rec_empty_notes">
+		<text>Заметок пока нет.</text>
+	</string>
+	<string id="pda_rec_select">
+		<text>Выберите запись в списке слева.</text>
+	</string>
+	<string id="pda_rec_show_on_map">
+		<text>Показать на карте</text>
+	</string>
+	<string id="pda_rec_track">
+		<text>Отслеживать</text>
+	</string>
+	<string id="pda_rec_action">
+		<text>Действие</text>
+	</string>
+	<string id="pda_rec_stamp">
+		<text>День %d, %02d:%02d</text>
+	</string>
+	<string id="pda_rec_location">
+		<text>Локация: %s</text>
+	</string>
+	<string id="pda_rec_stash_title">
+		<text>Тайник: %s</text>
+	</string>
+	<string id="pda_rec_stash_hint">
+		<text>%s — около %d м на %s</text>
+	</string>
+	<string id="pda_rec_stash_hint_near">
+		<text>%s — совсем рядом</text>
+	</string>
+	<string id="pda_rec_dir_n">
+		<text>север</text>
+	</string>
+	<string id="pda_rec_dir_ne">
+		<text>северо-восток</text>
+	</string>
+	<string id="pda_rec_dir_e">
+		<text>восток</text>
+	</string>
+	<string id="pda_rec_dir_se">
+		<text>юго-восток</text>
+	</string>
+	<string id="pda_rec_dir_s">
+		<text>юг</text>
+	</string>
+	<string id="pda_rec_dir_sw">
+		<text>юго-запад</text>
+	</string>
+	<string id="pda_rec_dir_w">
+		<text>запад</text>
+	</string>
+	<string id="pda_rec_dir_nw">
+		<text>северо-запад</text>
+	</string>
+	<string id="pda_rec_stash_source_npc">
+		<text>Наводка от %s · %s</text>
+	</string>
+	<string id="pda_rec_stash_source_pda">
+		<text>Координаты из КПК · %s</text>
+	</string>
+	<string id="pda_rec_stash_source_unknown">
+		<text>Координаты получены ранее</text>
+	</string>
+	<string id="pda_rec_stash_group">
+		<text>%s · найдено %d из %d</text>
+	</string>
+	<string id="pda_rec_stash_state_new">
+		<text>новая</text>
+	</string>
+	<string id="pda_rec_stash_state_known">
+		<text>не вскрыт</text>
+	</string>
+	<string id="pda_rec_stash_state_partial">
+		<text>частично</text>
+	</string>
+	<string id="pda_rec_stash_state_stale">
+		<text>устарела</text>
+	</string>
+	<string id="pda_rec_stash_state_done">
+		<text>опустошён</text>
+	</string>
+	<string id="pda_rec_stash_state_empty">
+		<text>пусто</text>
+	</string>
+	<string id="pda_rec_stash_status_new">
+		<text>Тайник ещё не вскрыт.</text>
+	</string>
+	<string id="pda_rec_stash_status_known">
+		<text>Тайник ещё не вскрыт.</text>
+	</string>
+	<string id="pda_rec_stash_status_partial">
+		<text>Вскрыт частично, осталось предметов: %d.</text>
+	</string>
+	<string id="pda_rec_stash_status_stale">
+		<text>Наводка устарела: тайник снова закрыт.</text>
+	</string>
+	<string id="pda_rec_stash_status_done">
+		<text>Опустошён · %s</text>
+	</string>
+	<string id="pda_rec_stash_status_empty">
+		<text>Пусто: здесь кто-то побывал раньше вас.</text>
+	</string>
+	<string id="pda_rec_stash_items">
+		<text>Внутри было</text>
+	</string>
+	<string id="pda_rec_cat_contacts">
+		<text>Контакты</text>
+	</string>
+	<string id="pda_rec_empty_contacts">
+		<text>Разговоров пока не было.</text>
+	</string>
+	<string id="pda_rec_contacts_you">
+		<text>Вы</text>
+	</string>
+	<string id="pda_rec_contacts_day_short">
+		<text>День %u</text>
+	</string>
+	<string id="pda_rec_contacts_group">
+		<text>День %u</text>
+	</string>
+	<string id="pda_rec_contacts_day">
+		<text>— День %u —</text>
+	</string>
+	<string id="pda_rec_contacts_last">
+		<text>Последний разговор: %s</text>
+	</string>
+	<string id="pda_rec_cat_achievements">
+		<text>Достижения</text>
+	</string>
+	<string id="pda_rec_empty_achievements">
+		<text>Список достижений пуст.</text>
+	</string>
+	<string id="pda_rec_ach_group_progress">
+		<text>В работе (%d)</text>
+	</string>
+	<string id="pda_rec_ach_group_done">
+		<text>Получено (%d)</text>
+	</string>
+	<string id="pda_rec_ach_group_new">
+		<text>Не начато (%d)</text>
+	</string>
+	<string id="pda_rec_ach_group_blocked">
+		<text>Путь закрыт (%d)</text>
+	</string>
+	<string id="pda_rec_ach_sub_done">
+		<text>получено</text>
+	</string>
+	<string id="pda_rec_ach_sub_blocked">
+		<text>закрыто</text>
+	</string>
+	<string id="pda_rec_ach_status_done">
+		<text>Получено: %s</text>
+	</string>
+	<string id="pda_rec_ach_status_done_early">
+		<text>Получено раньше, чем был установлен журнал.</text>
+	</string>
+	<string id="pda_rec_ach_status_progress">
+		<text>Прогресс: %s</text>
+	</string>
+	<string id="pda_rec_ach_status_new">
+		<text>Ещё не начато.</text>
+	</string>
+	<string id="pda_rec_ach_status_blocked">
+		<text>Путь закрыт: выбран другой вариант.</text>
+	</string>
+	<string id="pda_rec_ach_goal_caption">
+		<text>Цель</text>
+	</string>
+	<string id="pda_rec_ach_reward_caption">
+		<text>Награда</text>
+	</string>
+	<string id="pda_tab_reference">
+		<text>Справка</text>
+	</string>
+	<string id="pda_tab_reference_hint">
+		<text>Справочник по Зоне: статьи о мутантах, аномалиях, группировках и местах</text>
+	</string>
+	<string id="pda_tab_contacts">
+		<text>Контакты</text>
+	</string>
+	<string id="pda_tab_contacts_hint">
+		<text>Люди, с которыми вы на связи</text>
+	</string>
+	<string id="pda_rec_ach_reward_hidden">
+		<text>Награда станет известна после первого шага.</text>
+	</string>
+	<string id="pda_rec_ach_goal_pioneer">
+		<text>Исследовать уникальные аномальные образования, ещё не изученные наукой.</text>
+	</string>
+	<string id="pda_rec_ach_goal_mutant_hunter">
+		<text>Выполнить заказы на охоту за самыми опасными мутантами.</text>
+	</string>
+	<string id="pda_rec_ach_goal_detective">
+		<text>Раскрыть тайну исчезновения сталкеров со «Скадовска».</text>
+	</string>
+	<string id="pda_rec_ach_goal_one_of_the_lads">
+		<text>Дать отпор Султану и его бандитам на Затоне.</text>
+	</string>
+	<string id="pda_rec_ach_goal_kingpin">
+		<text>Помочь Султану взять под контроль дела Бороды.</text>
+	</string>
+	<string id="pda_rec_ach_goal_herald_of_justice">
+		<text>Не дать сталкеру Сороке уйти от правосудия.</text>
+	</string>
+	<string id="pda_rec_ach_goal_seeker">
+		<text>Найти все виды артефактов, известные исследователям Зоны.</text>
+	</string>
+	<string id="pda_rec_ach_goal_battle_systems_master">
+		<text>Добыть для Кардана все наборы инструментов.</text>
+	</string>
+	<string id="pda_rec_ach_goal_high_tech_master">
+		<text>Добыть для Азота все наборы инструментов.</text>
+	</string>
+	<string id="pda_rec_ach_goal_skilled_stalker">
+		<text>Побывать почти во всех аномальных местах Затона, Юпитера и Припяти.</text>
+	</string>
+	<string id="pda_rec_ach_goal_leader">
+		<text>Собрать надёжный отряд для перехода в Припять.</text>
+	</string>
+	<string id="pda_rec_ach_goal_diplomat">
+		<text>Решать конфликты на Юпитере переговорами, а не стрельбой.</text>
+	</string>
+	<string id="pda_rec_ach_goal_research_man">
+		<text>Выполнять исследовательские заказы учёных на Юпитере.</text>
+	</string>
+	<string id="pda_rec_ach_goal_friend_of_duty">
+		<text>Принимать сторону «Долга» в спорных ситуациях.</text>
+	</string>
+	<string id="pda_rec_ach_goal_friend_of_freedom">
+		<text>Принимать сторону «Свободы» в спорных ситуациях.</text>
+	</string>
+	<string id="pda_rec_ach_goal_balance_advocate">
+		<text>Не отдавать предпочтения ни «Долгу», ни «Свободе».</text>
+	</string>
+	<string id="pda_rec_ach_goal_wealthy">
+		<text>Скопить 100 000 RU.</text>
+	</string>
+	<string id="pda_rec_ach_goal_keeper_of_secrets">
+		<text>Собрать записки группы Стрелка и вернуть их владельцу.</text>
+	</string>
+	<string id="pda_rec_ach_goal_marked_by_zone">
+		<text>Трижды пережить выброс вне укрытия, приняв анабиотик.</text>
+	</string>
+	<string id="pda_rec_ach_goal_information_dealer">
+		<text>Продавать найденную информацию: КПК, документы, записи.</text>
+	</string>
+	<string id="pda_rec_ach_goal_friend_of_stalkers">
+		<text>Помогать вольным сталкерам, попавшим в беду.</text>
+	</string>
+	<string id="pda_rec_ach_goal_stealthy_stalker">
+		<text>Тайно добыть сведения в лагере наёмников на Затоне: без боя и без раненых.</text>
+	</string>
+	<string id="pda_enc_index_caption">
+		<text>Разделы</text>
+	</string>
+	<string id="pda_enc_article_caption">
+		<text>Статья</text>
+	</string>
+	<string id="pda_contacts_list_caption">
+		<text>Связь</text>
+	</string>
+	<string id="pda_contacts_details_caption">
+		<text>Сведения</text>
+	</string>
 </string_table>

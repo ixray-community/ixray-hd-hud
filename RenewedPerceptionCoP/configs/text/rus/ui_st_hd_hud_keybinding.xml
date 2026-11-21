@@ -36,4 +36,28 @@
 	<string id="kb_pda_tj_track">
 		<text>Задания: отслеживать</text>
 	</string>
+	<string id="kb_grp_pda_records">
+		<text>ПДА: записи</text>
+	</string>
+	<string id="kb_pda_rec_category_prev">
+		<text>Записи: предыдущая категория</text>
+	</string>
+	<string id="kb_pda_rec_category_next">
+		<text>Записи: следующая категория</text>
+	</string>
+	<string id="kb_pda_rec_prev">
+		<text>Записи: предыдущая</text>
+	</string>
+	<string id="kb_pda_rec_next">
+		<text>Записи: следующая</text>
+	</string>
+	<string id="kb_pda_rec_show_on_map">
+		<text>Записи: показать на карте</text>
+	</string>
+	<string id="kb_pda_rec_track">
+		<text>Записи: отслеживать</text>
+	</string>
+	<string id="kb_pda_rec_action">
+		<text>Записи: действие</text>
+	</string>
 </string_table>

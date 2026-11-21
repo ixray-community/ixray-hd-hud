@@ -1,0 +1,194 @@
+<w>
+    <main_wnd x="0" y="0" width="1024" height="768" provider="pda_records.collect" on_select="pda_records.on_select" on_action="pda_records.on_action" refresh_ms="2000">
+        <auto_frameline x="366" y="80" width="635" height="34" vertical="0">
+            <texture a="110">ui_inGame2_pda_background_text</texture>
+        </auto_frameline>
+        <auto_static x="378" y="84" width="400" height="26">
+            <text align="l" vert_align="c" font="font_rubik_14" r="120" g="120" b="120">pda_tj_details_caption</text>
+        </auto_static>
+    </main_wnd>
+
+    <category_tabs x="72" y="81" width="260" height="30" counters="1">
+        <button x="0" y="0" width="90" height="30" id="stashes" frame_mode="1">
+            <texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
+            <texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
+            <texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
+            <texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
+            <text align="c" vert_align="c" x="0" y="0" font="font_rubik_12">pda_rec_cat_stashes</text>
+            <text_color>
+                <e r="193" g="201" b="209" a="140"/>
+                <t r="215" g="205" b="90" a="255"/>
+                <d r="122" g="135" b="148" a="255"/>
+                <h r="160" g="175" b="190" a="255"/>
+            </text_color>
+        </button>
+        <button x="85" y="0" width="90" height="30" id="contacts" frame_mode="1">
+            <texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
+            <texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
+            <texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
+            <texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
+            <text align="c" vert_align="c" x="0" y="0" font="font_rubik_12">pda_rec_cat_contacts</text>
+            <text_color>
+                <e r="193" g="201" b="209" a="140"/>
+                <t r="215" g="205" b="90" a="255"/>
+                <d r="122" g="135" b="148" a="255"/>
+                <h r="160" g="175" b="190" a="255"/>
+            </text_color>
+        </button>
+        <button x="170" y="0" width="90" height="30" id="achievements" frame_mode="1">
+            <texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
+            <texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
+            <texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>
+            <texture_d>ui_inGame2_pda_new_tab_btn_d</texture_d>
+            <text align="c" vert_align="c" x="0" y="0" font="font_rubik_12">pda_rec_cat_achievements</text>
+            <text_color>
+                <e r="193" g="201" b="209" a="140"/>
+                <t r="215" g="205" b="90" a="255"/>
+                <d r="122" g="135" b="148" a="255"/>
+                <h r="160" g="175" b="190" a="255"/>
+            </text_color>
+        </button>
+    </category_tabs>
+
+    <category_hint_prev x="48" y="85" width="22" height="22" key_padding="5" key_min_width="20" chips_align="l">
+        <key_back type="line" x="0" y="0" width="20" height="20">
+            <texture>ui_inGame2_pda_new_tab_btn_e</texture>
+        </key_back>
+        <key x="0" y="0" width="20" height="20">
+            <text align="c" vert_align="c" font="font_rubik_12" r="225" g="225" b="225"/>
+        </key>
+        <label x="0" y="0" width="2" height="20">
+            <text align="l" vert_align="c" font="font_rubik_12" r="190" g="190" b="190"/>
+        </label>
+        <item action="pda_records_category_prev" gamepad_action="pda_records_category_prev"/>
+    </category_hint_prev>
+    <category_hint_next x="337" y="85" width="22" height="22" key_padding="5" key_min_width="20" chips_align="l">
+        <key_back type="line" x="0" y="0" width="20" height="20">
+            <texture>ui_inGame2_pda_new_tab_btn_e</texture>
+        </key_back>
+        <key x="0" y="0" width="20" height="20">
+            <text align="c" vert_align="c" font="font_rubik_12" r="225" g="225" b="225"/>
+        </key>
+        <label x="0" y="0" width="2" height="20">
+            <text align="l" vert_align="c" font="font_rubik_12" r="190" g="190" b="190"/>
+        </label>
+        <item action="pda_records_category_next" gamepad_action="pda_records_category_next"/>
+    </category_hint_next>
+
+    <record_list x="39" y="119" width="318" height="622" top_indent="2" vert_interval="2"
+        scroll_profile="pda_logs" always_show_scroll="1"/>
+
+    <group_header x="0" y="0" width="300" height="22">
+        <text x="8" align="l" vert_align="c" font="font_rubik_12" r="110" g="110" b="110"/>
+    </group_header>
+
+    <record_item x="0" y="0" width="300" height="38" padding="10">
+        <selection x="0" y="0" width="300" height="38" stretch="1">
+            <texture a="110">ui_inGame2_pda_background_text</texture>
+        </selection>
+        <new_mark x="0" y="0" width="2" height="38" stretch="1">
+            <texture r="220" g="190" b="80">ui_inGame2_hint_wnd_bar</texture>
+        </new_mark>
+        <icon x="4" y="8" width="33" height="22" stretch="1"/>
+        <icon_achievements x="9" y="4" width="23" height="30"/>
+        <title x="46" y="11" width="160" height="16">
+            <text align="l" font="font_rubik_14" r="210" g="210" b="210"/>
+        </title>
+        <subtitle x="190" y="11" width="80" height="16">
+            <text align="r" font="font_rubik_12" r="150" g="150" b="150"/>
+        </subtitle>
+        <btn_focus x="276" y="11" width="14" height="17" hint="ui_task_btn_focus_center" stretch="1">
+            <texture>ui_inGame2_pda_center_on_mission_button</texture>
+        </btn_focus>
+        <colors>
+            <normal r="210" g="210" b="210"/>
+            <new r="245" g="235" b="190"/>
+            <known r="210" g="210" b="210"/>
+            <partial r="225" g="205" b="140"/>
+            <stale r="140" g="140" b="140"/>
+            <done r="130" g="190" b="120"/>
+            <empty r="150" g="135" b="125"/>
+            <contact r="215" g="215" b="215"/>
+            <ach_progress r="225" g="205" b="140"/>
+            <ach_done r="130" g="190" b="120"/>
+            <ach_new r="165" g="165" b="165"/>
+            <ach_blocked r="140" g="120" b="110"/>
+        </colors>
+    </record_item>
+
+    <t_empty x="49" y="130" width="290" height="40" complex_mode="1"
+        text="pda_rec_empty" text_stashes="pda_rec_empty_stashes" text_contacts="pda_rec_empty_contacts" text_achievements="pda_rec_empty_achievements">
+        <text align="l" font="font_rubik_14" r="120" g="120" b="120"/>
+    </t_empty>
+
+    <details x="366" y="117" width="635" height="628"
+        image_level_intro="1" image_default="intro\intro_no_start_picture">
+        <empty x="14" y="12" width="600" height="20">
+            <text align="l" font="font_rubik_14" r="120" g="120" b="120">pda_rec_select</text>
+        </empty>
+        <image x="1" y="0" width="633" height="186" stretch="1"/>
+        <icon x="12" y="8" width="126" height="83" gap="8" stretch="1"/>
+        <icon_achievements x="12" y="8" width="60" height="80"/>
+        <body x="0" y="194" width="635" height="324" vert_interval="4" top_indent="2"
+            scroll_profile="pda_logs" always_show_scroll="0"/>
+
+        <btn_map x="8" y="530" width="300" height="26">
+            <text x="32" align="l" vert_align="c" font="font_rubik_14" r="200" g="200" b="200">pda_rec_show_on_map</text>
+            <hint x="0" y="1" width="26" height="24" key_padding="6" key_min_width="22" chips_align="l">
+                <key_back type="line" x="0" y="0" width="22" height="22"><texture>ui_inGame2_pda_new_tab_btn_e</texture></key_back>
+                <key x="0" y="0" width="22" height="22"><text align="c" vert_align="c" font="font_rubik_12" r="225" g="225" b="225"/></key>
+                <label x="0" y="0" width="2" height="22"><text align="l" vert_align="c" font="font_rubik_12" r="190" g="190" b="190"/></label>
+                <item action="pda_records_show_on_map" gamepad_action="pda_records_show_on_map"/>
+            </hint>
+        </btn_map>
+        <btn_track x="8" y="562" width="300" height="26">
+            <text x="32" align="l" vert_align="c" font="font_rubik_14" r="200" g="200" b="200">pda_rec_track</text>
+            <hint x="0" y="1" width="26" height="24" key_padding="6" key_min_width="22" chips_align="l">
+                <key_back type="line" x="0" y="0" width="22" height="22"><texture>ui_inGame2_pda_new_tab_btn_e</texture></key_back>
+                <key x="0" y="0" width="22" height="22"><text align="c" vert_align="c" font="font_rubik_12" r="225" g="225" b="225"/></key>
+                <label x="0" y="0" width="2" height="22"><text align="l" vert_align="c" font="font_rubik_12" r="190" g="190" b="190"/></label>
+                <item action="pda_records_track" gamepad_action="pda_records_track"/>
+            </hint>
+        </btn_track>
+        <btn_action x="8" y="594" width="300" height="26">
+            <text x="32" align="l" vert_align="c" font="font_rubik_14" r="200" g="200" b="200">pda_rec_action</text>
+            <hint x="0" y="1" width="26" height="24" key_padding="6" key_min_width="22" chips_align="l">
+                <key_back type="line" x="0" y="0" width="22" height="22"><texture>ui_inGame2_pda_new_tab_btn_e</texture></key_back>
+                <key x="0" y="0" width="22" height="22"><text align="c" vert_align="c" font="font_rubik_12" r="225" g="225" b="225"/></key>
+                <label x="0" y="0" width="2" height="22"><text align="l" vert_align="c" font="font_rubik_12" r="190" g="190" b="190"/></label>
+                <item action="pda_records_action" gamepad_action="pda_records_action"/>
+            </hint>
+        </btn_action>
+
+        <line_heading x="0" y="0" width="615" height="28" complex_mode="1">
+            <text align="l" font="font_oswald_24" r="215" g="215" b="215"/>
+        </line_heading>
+        <line_text x="0" y="0" width="615" height="16" complex_mode="1">
+            <text align="l" font="font_rubik_14" r="195" g="195" b="195"/>
+        </line_text>
+        <line_hint x="0" y="0" width="615" height="18" complex_mode="1">
+            <text align="l" font="font_rubik_16" r="225" g="215" b="170"/>
+        </line_hint>
+        <line_info x="0" y="0" width="615" height="16">
+            <text align="l" font="font_rubik_12" r="140" g="140" b="140"/>
+        </line_info>
+        <line_status x="0" y="0" width="615" height="18" complex_mode="1">
+            <text align="l" font="font_rubik_14" r="205" g="205" b="205"/>
+        </line_status>
+        <line_caption x="0" y="0" width="615" height="26">
+            <text align="l" vert_align="b" font="font_oswald_20" r="200" g="200" b="200"/>
+        </line_caption>
+        <line_day x="0" y="0" width="615" height="24">
+            <text align="c" vert_align="c" font="font_rubik_12" r="120" g="120" b="120"/>
+        </line_day>
+        <line_npc x="0" y="0" width="560" height="16" complex_mode="1">
+            <text align="l" font="font_rubik_14" r="225" g="215" b="185"/>
+        </line_npc>
+        <line_actor x="55" y="0" width="560" height="16" complex_mode="1">
+            <text align="l" font="font_rubik_14" r="170" g="190" b="205"/>
+        </line_actor>
+        <line_item x="12" y="0" width="600" height="16" complex_mode="1">
+            <text align="l" font="font_rubik_14" r="200" g="200" b="200"/>
+        </line_item>
+    </details>
+</w>

@@ -1,0 +1,322 @@
+this.CATEGORY = "stashes"
+this.ICON = "ui_inGame2_Polucheni_koordinaty_taynika"
+this.NEAR_DISTANCE = 25
+this.LEVEL_ORDER = {zaton = 1, jupiter = 2, pripyat = 3}
+this.STATE_ORDER = {new = 1, known = 2, partial = 3, stale = 4, done = 5, empty = 6}
+this.DIRECTIONS = {"n", "ne", "e", "se", "s", "sw", "w", "nw"}
+
+this.KEY = {
+	source = "prs_src_",
+	opened = "prs_open_",
+	items = "prs_items_",
+	new = "prs_new_",
+}
+
+this.place_cache = {}
+this.patched = false
+
+function tr(id)
+	return game.translate_string(id)
+end
+
+function pget(key, default)
+	return pda_records.pget(key, default)
+end
+
+function pset(key, value)
+	pda_records.pset(key, value)
+end
+
+function format_stamp(minutes)
+	minutes = tonumber(minutes) or 0
+	local _, _, _, hours, mins = level.get_start_time():get(0, 0, 0, 0, 0, 0, 0)
+	local clock = ((hours or 0) * 60 + (mins or 0) + minutes) % 1440
+	return string.format(tr("pda_rec_stamp"), math.floor(minutes / 1440) + 1, math.floor(clock / 60), clock % 60)
+end
+
+function manager()
+	return treasure_manager.get_treasure_manager()
+end
+
+function restrictor_object(id)
+	local restrictor_id = manager().secret_restrs[id]
+	return restrictor_id and alife():object(restrictor_id)
+end
+
+function object_level(se_obj)
+	local vertex = se_obj and game_graph():vertex(se_obj.m_game_vertex_id)
+	return vertex and alife():level_name(vertex:level_id())
+end
+
+function nearest_place(level_name, position)
+	if next(smart_names.smart_names_table) == nil then
+		smart_names.init_smart_names_table()
+	end
+	local names = smart_names.smart_names_table[level_name]
+	local board = sim_board.get_sim_board()
+	if not names or not board then
+		return nil, nil
+	end
+
+	local best_name, best_smart, best_distance = nil, nil, nil
+	for _, data in pairs(board.smarts) do
+		local smart = data.smrt
+		local name_id = smart and names[smart:name()]
+		if name_id and object_level(smart) == level_name then
+			local distance = smart.position:distance_to(position)
+			if not best_distance or distance < best_distance then
+				best_name, best_smart, best_distance = tr(name_id), smart, distance
+			end
+		end
+	end
+	return best_name, best_smart
+end
+
+function place_info(id, se_obj, level_name)
+	local cached = this.place_cache[id]
+	if cached then
+		return cached
+	end
+
+	local info = {level = level_name, position = se_obj.position}
+	local override = "pda_records_stash_" .. id
+	local ini = system_ini()
+	local has_override = ini:section_exist(override)
+
+	local place, smart = nearest_place(level_name, se_obj.position)
+	info.place = place or tr(level_name)
+	if has_override and ini:line_exist(override, "place") then
+		info.place = tr(ini:r_string(override, "place"))
+	end
+
+	if has_override and ini:line_exist(override, "hint") then
+		info.hint = tr(ini:r_string(override, "hint"))
+	elseif smart then
+		local dx = se_obj.position.x - smart.position.x
+		local dz = se_obj.position.z - smart.position.z
+		local distance = math.sqrt(dx * dx + dz * dz)
+		if distance < this.NEAR_DISTANCE then
+			info.hint = string.format(tr("pda_rec_stash_hint_near"), info.place)
+		else
+			local angle = math.deg(math.atan2(dx, dz)) % 360
+			local sector = math.floor((angle + 22.5) / 45) % 8 + 1
+			local rounded = math.max(10, math.floor(distance / 10 + 0.5) * 10)
+			info.hint = string.format(tr("pda_rec_stash_hint"), info.place, rounded, tr("pda_rec_dir_" .. this.DIRECTIONS[sector]))
+		end
+	end
+
+	if has_override and ini:line_exist(override, "image") then
+		info.image = ini:r_string(override, "image")
+	end
+
+	this.place_cache[id] = info
+	return info
+end
+
+function taken_items(id)
+	local raw = pget(this.KEY.items .. id, "")
+	local counts, order = {}, {}
+	for section in string.gmatch(raw, "[^,]+") do
+		if not counts[section] then
+			counts[section] = 0
+			table.insert(order, section)
+		end
+		counts[section] = counts[section] + 1
+	end
+	return order, counts
+end
+
+function stash_state(id, secret)
+	local taken = pget(this.KEY.items .. id, "") ~= ""
+	if secret.checked then
+		return taken and "done" or "empty"
+	end
+	if secret.given then
+		if taken then
+			return "partial"
+		end
+		return pget(this.KEY.new .. id, false) and "new" or "known"
+	end
+	return "stale"
+end
+
+function source_line(id)
+	local raw = pget(this.KEY.source .. id, nil)
+	if type(raw) ~= "string" then
+		return tr("pda_rec_stash_source_unknown")
+	end
+	local minutes, giver = string.match(raw, "^(%-?%d+)|(.*)$")
+	local stamp = format_stamp(minutes)
+	if giver and giver ~= "" then
+		return string.format(tr("pda_rec_stash_source_npc"), giver, stamp)
+	end
+	return string.format(tr("pda_rec_stash_source_pda"), stamp)
+end
+
+function item_name(section)
+	local ini = system_ini()
+	if ini:section_exist(section) and ini:line_exist(section, "inv_name") then
+		return tr(ini:r_string(section, "inv_name"))
+	end
+	return section
+end
+
+function collect(list)
+	local secrets = manager().secrets
+	local stashes = {}
+	local level_stats = {}
+
+	for id, secret in pairs(secrets) do
+		local known = secret.given or secret.checked or pget(this.KEY.source .. id, nil) ~= nil
+		local se_obj = known and restrictor_object(id)
+		local level_name = se_obj and object_level(se_obj)
+		if level_name then
+			local state = stash_state(id, secret)
+			local raw = pget(this.KEY.source .. id, nil)
+			local time = type(raw) == "string" and tonumber(string.match(raw, "^(%-?%d+)|")) or -1
+			table.insert(stashes, {id = id, secret = secret, se_obj = se_obj, level = level_name, state = state, time = time})
+
+			local stats = level_stats[level_name] or {known = 0, found = 0}
+			stats.known = stats.known + 1
+			if state == "done" or state == "empty" then
+				stats.found = stats.found + 1
+			end
+			level_stats[level_name] = stats
+		end
+	end
+
+	table.sort(stashes, function (a, b)
+		if a.level ~= b.level then
+			local oa, ob = this.LEVEL_ORDER[a.level] or 100, this.LEVEL_ORDER[b.level] or 100
+			if oa ~= ob then
+				return oa < ob
+			end
+			return a.level < b.level
+		end
+		if a.state ~= b.state then
+			return (this.STATE_ORDER[a.state] or 10) < (this.STATE_ORDER[b.state] or 10)
+		end
+		if a.time ~= b.time then
+			return a.time > b.time
+		end
+		return a.id < b.id
+	end)
+
+	for _, stash in ipairs(stashes) do
+		local info = place_info(stash.id, stash.se_obj, stash.level)
+		local stats = level_stats[stash.level]
+		local entry = list:add(stash.id)
+
+		entry:set_title(string.format(tr("pda_rec_stash_title"), info.place))
+		entry:set_subtitle(tr("pda_rec_stash_state_" .. stash.state))
+		entry:set_state(stash.state)
+		entry:set_icon(this.ICON)
+		entry:set_new(stash.state == "new")
+		entry:set_level(stash.level)
+		entry:set_group(stash.level, string.format(tr("pda_rec_stash_group"), tr(stash.level), stats.found, stats.known))
+		if info.image then
+			entry:set_image(info.image)
+		end
+
+		if not stash.secret.checked and stash.secret.given then
+			entry:set_map(stash.level, info.position)
+			entry:set_trackable(true)
+		end
+
+		if info.hint then
+			entry:add_line("hint", info.hint)
+		end
+		entry:add_line("info", source_line(stash.id))
+		entry:add_line("info", string.format(tr("pda_rec_location"), tr(stash.level)))
+
+		if stash.state == "partial" then
+			entry:add_line("status", string.format(tr("pda_rec_stash_status_partial"), stash.secret.to_find or 0))
+		elseif stash.state == "done" then
+			local opened = pget(this.KEY.opened .. stash.id, nil)
+			entry:add_line("status", opened and string.format(tr("pda_rec_stash_status_done"), format_stamp(opened)) or tr("pda_rec_stash_state_done"))
+		else
+			entry:add_line("status", tr("pda_rec_stash_status_" .. stash.state))
+		end
+
+		local order, counts = taken_items(stash.id)
+		if #order > 0 then
+			entry:add_line("caption", tr("pda_rec_stash_items"))
+			for _, section in ipairs(order) do
+				local count = counts[section]
+				entry:add_line("item", count > 1 and string.format("%s x%d", item_name(section), count) or item_name(section))
+			end
+		end
+	end
+end
+
+function on_select(id)
+	pset(this.KEY.new .. id, nil)
+end
+
+function giver_name()
+	local partner_id = pda_records_talk_partner and pda_records_talk_partner()
+	local partner = partner_id and partner_id ~= 65535 and level.object_by_id(partner_id)
+	return partner and partner:character_name() or ""
+end
+
+function remember_given()
+	local minutes = pda_records.game_minutes()
+	local giver = nil
+	for id, secret in pairs(manager().secrets) do
+		if secret.given and not secret.checked and pget(this.KEY.source .. id, nil) == nil then
+			giver = giver or giver_name()
+			pset(this.KEY.source .. id, string.format("%d|%s", minutes, giver))
+			pset(this.KEY.new .. id, true)
+		end
+	end
+end
+
+function remember_opened()
+	local minutes = pda_records.game_minutes()
+	for id, secret in pairs(manager().secrets) do
+		if secret.checked and pget(this.KEY.opened .. id, nil) == nil then
+			pset(this.KEY.opened .. id, minutes)
+		end
+	end
+end
+
+function on_item_take(item)
+	if not item then
+		return
+	end
+	local tm = manager()
+	local restrictor_id = tm.items_from_secrets[item:id()]
+	if not restrictor_id then
+		return
+	end
+	for id, rid in pairs(tm.secret_restrs) do
+		if rid == restrictor_id then
+			local raw = pget(this.KEY.items .. id, "")
+			pset(this.KEY.items .. id, raw == "" and item:section() or (raw .. "," .. item:section()))
+			pset(this.KEY.new .. id, nil)
+			return
+		end
+	end
+end
+
+function patch_news()
+	if this.patched then
+		return
+	end
+	this.patched = true
+	local original = news_manager.send_treasure
+	news_manager.send_treasure = function(param)
+		if param == 0 then
+			remember_given()
+		elseif param == 1 then
+			remember_opened()
+		end
+		return original(param)
+	end
+end
+
+function on_game_start()
+	pda_records.register_provider(this.CATEGORY, {collect = collect, on_select = on_select})
+	patch_news()
+	RegisterScriptCallback("actor_on_item_take", on_item_take)
+end

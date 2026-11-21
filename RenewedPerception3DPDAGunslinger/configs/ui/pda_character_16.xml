@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <name_static x="0" y="2" width="415" height="22">
+        <text x="10" y="0" font="font_oswald_18" r="220" g="220" b="220"/>
+    </name_static>
+    <icon_static x="435" y="6" width="79" height="65" stretch="1"/>
+    <community_caption x="10" y="24" width="109" height="15">
+        <text x="0" y="0" font="font_rubik_14" r="130" g="130" b="130">ui_st_community</text>
+    </community_caption>
+    <community_static x="119" y="24" width="296" height="15">
+        <text x="0" y="0" font="font_rubik_14" r="200" g="200" b="200"/>
+    </community_static>
+    <reputation_caption x="10" y="38" width="109" height="15">
+        <text x="0" y="0" font="font_rubik_14" r="130" g="130" b="130">ui_st_reputation</text>
+    </reputation_caption>
+    <reputation_static x="119" y="38" width="296" height="15">
+        <text x="0" y="0" font="font_rubik_14" r="200" g="200" b="200"/>
+    </reputation_static>
+    <relation_caption x="10" y="53" width="109" height="15">
+        <text x="0" y="0" font="font_rubik_14" r="130" g="130" b="130">ui_st_relation</text>
+    </relation_caption>
+    <relation_static x="119" y="53" width="296" height="15">
+        <text x="0" y="0" font="font_rubik_14" r="200" g="200" b="200"/>
+    </relation_static>
+    <rank_caption x="10" y="68" width="109" height="15">
+        <text x="0" y="0" font="font_rubik_14" r="130" g="130" b="130">ui_st_rank</text>
+    </rank_caption>
+    <rank_static x="119" y="68" width="296" height="15">
+        <text x="0" y="0" font="font_rubik_14" r="200" g="200" b="200"/>
+    </rank_static>
+    <pda_char_auto_statics>
+        <auto_static x="0" y="83" width="523" height="1" stretch="1">
+            <texture a="90">ui_inGame2_hint_wnd_bar</texture>
+        </auto_static>
+    </pda_char_auto_statics>
+</window>

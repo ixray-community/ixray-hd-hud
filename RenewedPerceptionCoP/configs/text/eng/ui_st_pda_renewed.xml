@@ -714,4 +714,289 @@
 	<string id="pda_tj_group_side">
 		<text>Side</text>
 	</string>
+	<string id="pda_tab_records">
+		<text>Records</text>
+	</string>
+	<string id="pda_tab_records_hint">
+		<text>Records: stashes, notes and other intel</text>
+	</string>
+	<string id="pda_rec_list_caption">
+		<text>Records</text>
+	</string>
+	<string id="pda_rec_cat_stashes">
+		<text>Stashes</text>
+	</string>
+	<string id="pda_rec_cat_notes">
+		<text>Notes</text>
+	</string>
+	<string id="pda_rec_empty">
+		<text>Nothing here yet.</text>
+	</string>
+	<string id="pda_rec_empty_stashes">
+		<text>No stash tips yet.</text>
+	</string>
+	<string id="pda_rec_empty_notes">
+		<text>No notes yet.</text>
+	</string>
+	<string id="pda_rec_select">
+		<text>Select an entry in the list on the left.</text>
+	</string>
+	<string id="pda_rec_show_on_map">
+		<text>Show on map</text>
+	</string>
+	<string id="pda_rec_track">
+		<text>Track</text>
+	</string>
+	<string id="pda_rec_action">
+		<text>Action</text>
+	</string>
+	<string id="pda_rec_stamp">
+		<text>Day %d, %02d:%02d</text>
+	</string>
+	<string id="pda_rec_location">
+		<text>Location: %s</text>
+	</string>
+	<string id="pda_rec_stash_title">
+		<text>Stash: %s</text>
+	</string>
+	<string id="pda_rec_stash_hint">
+		<text>%s: about %d m to the %s</text>
+	</string>
+	<string id="pda_rec_stash_hint_near">
+		<text>%s: right next to it</text>
+	</string>
+	<string id="pda_rec_dir_n">
+		<text>north</text>
+	</string>
+	<string id="pda_rec_dir_ne">
+		<text>north-east</text>
+	</string>
+	<string id="pda_rec_dir_e">
+		<text>east</text>
+	</string>
+	<string id="pda_rec_dir_se">
+		<text>south-east</text>
+	</string>
+	<string id="pda_rec_dir_s">
+		<text>south</text>
+	</string>
+	<string id="pda_rec_dir_sw">
+		<text>south-west</text>
+	</string>
+	<string id="pda_rec_dir_w">
+		<text>west</text>
+	</string>
+	<string id="pda_rec_dir_nw">
+		<text>north-west</text>
+	</string>
+	<string id="pda_rec_stash_source_npc">
+		<text>Tip from %s, %s</text>
+	</string>
+	<string id="pda_rec_stash_source_pda">
+		<text>Coordinates from a PDA, %s</text>
+	</string>
+	<string id="pda_rec_stash_source_unknown">
+		<text>Coordinates received earlier</text>
+	</string>
+	<string id="pda_rec_stash_group">
+		<text>%s - found %d of %d</text>
+	</string>
+	<string id="pda_rec_stash_state_new">
+		<text>new</text>
+	</string>
+	<string id="pda_rec_stash_state_known">
+		<text>not opened</text>
+	</string>
+	<string id="pda_rec_stash_state_partial">
+		<text>partial</text>
+	</string>
+	<string id="pda_rec_stash_state_stale">
+		<text>outdated</text>
+	</string>
+	<string id="pda_rec_stash_state_done">
+		<text>emptied</text>
+	</string>
+	<string id="pda_rec_stash_state_empty">
+		<text>empty</text>
+	</string>
+	<string id="pda_rec_stash_status_new">
+		<text>The stash has not been opened yet.</text>
+	</string>
+	<string id="pda_rec_stash_status_known">
+		<text>The stash has not been opened yet.</text>
+	</string>
+	<string id="pda_rec_stash_status_partial">
+		<text>Partly opened, items left: %d.</text>
+	</string>
+	<string id="pda_rec_stash_status_stale">
+		<text>The tip is outdated: the stash is closed again.</text>
+	</string>
+	<string id="pda_rec_stash_status_done">
+		<text>Emptied, %s</text>
+	</string>
+	<string id="pda_rec_stash_status_empty">
+		<text>Empty: someone got here before you.</text>
+	</string>
+	<string id="pda_rec_stash_items">
+		<text>Found inside</text>
+	</string>
+	<string id="pda_rec_cat_contacts">
+		<text>Contacts</text>
+	</string>
+	<string id="pda_rec_empty_contacts">
+		<text>No conversations yet.</text>
+	</string>
+	<string id="pda_rec_contacts_you">
+		<text>You</text>
+	</string>
+	<string id="pda_rec_contacts_day_short">
+		<text>Day %u</text>
+	</string>
+	<string id="pda_rec_contacts_group">
+		<text>Day %u</text>
+	</string>
+	<string id="pda_rec_contacts_day">
+		<text>- Day %u -</text>
+	</string>
+	<string id="pda_rec_contacts_last">
+		<text>Last conversation: %s</text>
+	</string>
+	<string id="pda_rec_cat_achievements">
+		<text>Achievements</text>
+	</string>
+	<string id="pda_rec_empty_achievements">
+		<text>No achievements.</text>
+	</string>
+	<string id="pda_rec_ach_group_progress">
+		<text>In progress (%d)</text>
+	</string>
+	<string id="pda_rec_ach_group_done">
+		<text>Earned (%d)</text>
+	</string>
+	<string id="pda_rec_ach_group_new">
+		<text>Not started (%d)</text>
+	</string>
+	<string id="pda_rec_ach_group_blocked">
+		<text>Path closed (%d)</text>
+	</string>
+	<string id="pda_rec_ach_sub_done">
+		<text>earned</text>
+	</string>
+	<string id="pda_rec_ach_sub_blocked">
+		<text>closed</text>
+	</string>
+	<string id="pda_rec_ach_status_done">
+		<text>Earned: %s</text>
+	</string>
+	<string id="pda_rec_ach_status_done_early">
+		<text>Earned before the journal was installed.</text>
+	</string>
+	<string id="pda_rec_ach_status_progress">
+		<text>Progress: %s</text>
+	</string>
+	<string id="pda_rec_ach_status_new">
+		<text>Not started yet.</text>
+	</string>
+	<string id="pda_rec_ach_status_blocked">
+		<text>Path closed: another option was chosen.</text>
+	</string>
+	<string id="pda_rec_ach_goal_caption">
+		<text>Goal</text>
+	</string>
+	<string id="pda_rec_ach_reward_caption">
+		<text>Reward</text>
+	</string>
+	<string id="pda_tab_reference">
+		<text>Reference</text>
+	</string>
+	<string id="pda_tab_reference_hint">
+		<text>Zone reference: articles on mutants, anomalies, factions and places</text>
+	</string>
+	<string id="pda_tab_contacts">
+		<text>Contacts</text>
+	</string>
+	<string id="pda_tab_contacts_hint">
+		<text>People you are in touch with</text>
+	</string>
+	<string id="pda_rec_ach_reward_hidden">
+		<text>The reward will be revealed after the first step.</text>
+	</string>
+	<string id="pda_rec_ach_goal_pioneer">
+		<text>Explore unique anomalous formations unknown to science.</text>
+	</string>
+	<string id="pda_rec_ach_goal_mutant_hunter">
+		<text>Complete hunting contracts on the most dangerous mutants.</text>
+	</string>
+	<string id="pda_rec_ach_goal_detective">
+		<text>Solve the disappearances of stalkers from Skadovsk.</text>
+	</string>
+	<string id="pda_rec_ach_goal_one_of_the_lads">
+		<text>Stand up to Sultan and his bandits at Zaton.</text>
+	</string>
+	<string id="pda_rec_ach_goal_kingpin">
+		<text>Help Sultan take over Beard's business.</text>
+	</string>
+	<string id="pda_rec_ach_goal_herald_of_justice">
+		<text>Do not let the stalker Magpie escape justice.</text>
+	</string>
+	<string id="pda_rec_ach_goal_seeker">
+		<text>Find every type of artifact known to Zone researchers.</text>
+	</string>
+	<string id="pda_rec_ach_goal_battle_systems_master">
+		<text>Get all the tool kits for Cardan.</text>
+	</string>
+	<string id="pda_rec_ach_goal_high_tech_master">
+		<text>Get all the tool kits for Azot.</text>
+	</string>
+	<string id="pda_rec_ach_goal_skilled_stalker">
+		<text>Visit almost every anomalous place at Zaton, Jupiter and Pripyat.</text>
+	</string>
+	<string id="pda_rec_ach_goal_leader">
+		<text>Put together a reliable squad for the trip to Pripyat.</text>
+	</string>
+	<string id="pda_rec_ach_goal_diplomat">
+		<text>Settle conflicts at Jupiter by talking, not shooting.</text>
+	</string>
+	<string id="pda_rec_ach_goal_research_man">
+		<text>Complete research requests from the Jupiter scientists.</text>
+	</string>
+	<string id="pda_rec_ach_goal_friend_of_duty">
+		<text>Side with Duty in disputes.</text>
+	</string>
+	<string id="pda_rec_ach_goal_friend_of_freedom">
+		<text>Side with Freedom in disputes.</text>
+	</string>
+	<string id="pda_rec_ach_goal_balance_advocate">
+		<text>Favor neither Duty nor Freedom.</text>
+	</string>
+	<string id="pda_rec_ach_goal_wealthy">
+		<text>Save up 100 000 RU.</text>
+	</string>
+	<string id="pda_rec_ach_goal_keeper_of_secrets">
+		<text>Collect the notes of Strelok's group and return them to their owner.</text>
+	</string>
+	<string id="pda_rec_ach_goal_marked_by_zone">
+		<text>Survive an emission outside a shelter three times using anabiotics.</text>
+	</string>
+	<string id="pda_rec_ach_goal_information_dealer">
+		<text>Sell the information you find: PDAs, documents, records.</text>
+	</string>
+	<string id="pda_rec_ach_goal_friend_of_stalkers">
+		<text>Help free stalkers who are in trouble.</text>
+	</string>
+	<string id="pda_rec_ach_goal_stealthy_stalker">
+		<text>Secretly obtain the information at the mercenary camp in Zaton: no fighting, no wounded.</text>
+	</string>
+	<string id="pda_enc_index_caption">
+		<text>Sections</text>
+	</string>
+	<string id="pda_enc_article_caption">
+		<text>Article</text>
+	</string>
+	<string id="pda_contacts_list_caption">
+		<text>In touch</text>
+	</string>
+	<string id="pda_contacts_details_caption">
+		<text>Details</text>
+	</string>
 </string_table>

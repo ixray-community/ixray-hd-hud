@@ -14,4 +14,13 @@
 		<command id="kb_pda_tj_show_on_map" exe="pda_task_journal_show_on_map"/>
 		<command id="kb_pda_tj_track" exe="pda_task_journal_track"/>
 	</group>
+	<group name="kb_grp_pda_records" override="add">
+		<command id="kb_pda_rec_category_prev" exe="pda_records_category_prev"/>
+		<command id="kb_pda_rec_category_next" exe="pda_records_category_next"/>
+		<command id="kb_pda_rec_prev" exe="pda_records_prev"/>
+		<command id="kb_pda_rec_next" exe="pda_records_next"/>
+		<command id="kb_pda_rec_show_on_map" exe="pda_records_show_on_map"/>
+		<command id="kb_pda_rec_track" exe="pda_records_track"/>
+		<command id="kb_pda_rec_action" exe="pda_records_action"/>
+	</group>
 </keybingidg>

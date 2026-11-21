@@ -36,4 +36,28 @@
 	<string id="kb_pda_tj_track">
 		<text>Tasks: track</text>
 	</string>
+	<string id="kb_grp_pda_records">
+		<text>PDA: records</text>
+	</string>
+	<string id="kb_pda_rec_category_prev">
+		<text>Records: previous category</text>
+	</string>
+	<string id="kb_pda_rec_category_next">
+		<text>Records: next category</text>
+	</string>
+	<string id="kb_pda_rec_prev">
+		<text>Records: previous entry</text>
+	</string>
+	<string id="kb_pda_rec_next">
+		<text>Records: next entry</text>
+	</string>
+	<string id="kb_pda_rec_show_on_map">
+		<text>Records: show on map</text>
+	</string>
+	<string id="kb_pda_rec_track">
+		<text>Records: track</text>
+	</string>
+	<string id="kb_pda_rec_action">
+		<text>Records: action</text>
+	</string>
 </string_table>

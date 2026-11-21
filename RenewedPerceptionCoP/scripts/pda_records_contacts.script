@@ -1,0 +1,37 @@
+this.CATEGORY = "contacts"
+this.MAX_LINES = 150
+this.KEY_SEEN = "prc_seen_"
+this.KEY_INIT = "prc_init"
+
+function collect(list)
+	if not pda_records_fill_contacts then
+		return
+	end
+
+	local first = list:count()
+	pda_records_fill_contacts(list, this.MAX_LINES)
+
+	local initialized = pda_records.pget(this.KEY_INIT, false)
+	for index = first, list:count() - 1 do
+		local entry = list:get(index)
+		if entry then
+			local key = this.KEY_SEEN .. entry:id()
+			if not initialized then
+				pda_records.pset(key, entry:time())
+			elseif entry:time() > pda_records.pget(key, -1) then
+				entry:set_new(true)
+			end
+		end
+	end
+	if not initialized then
+		pda_records.pset(this.KEY_INIT, true)
+	end
+end
+
+function on_select(id)
+	pda_records.pset(this.KEY_SEEN .. id, pda_records.game_minutes())
+end
+
+function on_game_start()
+	pda_records.register_provider(this.CATEGORY, {collect = collect, on_select = on_select})
+end

@@ -1,0 +1,368 @@
+this.CATEGORY = "achievements"
+this.POLL_INTERVAL_MS = 5000
+this.KEY_GAINED = "frg_"
+this.KEY_GAINED_TIME = "frt_"
+this.KEY_BASELINE = "pra_baseline"
+this.KEY_SEEN = "pra_seen_"
+this.KEY_INIT = "pra_init"
+this.GROUP_ORDER = {progress = 1, done = 2, new = 3, blocked = 4}
+this.RATIO_ORDER = {progress = 1, new = 2, done = 3, blocked = 4}
+
+this.GOALS = {
+	pioneer = {steps = {"zat_b14_give_item_linker", "jup_b1_complete_end", "jup_b206_anomalous_grove_done"}},
+	mutant_hunter = {steps = {"jup_b208_burers_hunt_done", "jup_b211_scene_done", "jup_b212_jupiter_chimera_hunt_done"}},
+	detective = {steps = {"zat_b22_barmen_gave_reward"}},
+	one_of_the_lads = {
+		steps = {"zat_b30_sultan_loose", "zat_b7_actor_help_stalkers"},
+		blocked_by = {"zat_b30_barmen_under_sultan", "zat_b7_actor_help_bandits"},
+	},
+	kingpin = {
+		steps = {"zat_b30_barmen_under_sultan", "zat_b7_actor_help_bandits"},
+		blocked_by = {"zat_b30_sultan_loose", "zat_b7_actor_help_stalkers"},
+	},
+	herald_of_justice = {steps = {{"jup_b25_flint_blame_done_to_duty", "jup_b25_flint_blame_done_to_freedom", "zat_b106_found_soroka_done"}}},
+	seeker = {artefacts = true},
+	battle_systems_master = {steps = {"zat_b3_tech_instrument_1_brought", "zat_b3_tech_instrument_2_brought", "zat_b3_tech_instrument_3_brought"}},
+	high_tech_master = {steps = {"jup_b217_tech_instrument_1_brought", "jup_b217_tech_instrument_2_brought", "jup_b217_tech_instrument_3_brought"}},
+	skilled_stalker = {counter = "anomalies_visited", need = 19},
+	leader = {steps = {"jup_a10_vano_agree_go_und", "jup_b218_soldier_hired", "jup_b218_monolith_hired"}},
+	diplomat = {steps = {"jup_a12_wo_shooting", {"jup_a10_bandit_take_all_money", "jup_a10_bandit_take_money"}}},
+	research_man = {
+		count = {"jup_b16_task_done", "jup_b1_task_done", "jup_b46_task_done", "jup_b47_task_end",
+			"jup_b32_task_done", "jup_b6_task_done", "jup_b206_task_done", "jup_b209_task_done"},
+		need = 4,
+	},
+	friend_of_duty = {
+		steps = {"jup_b4_monolith_squad_in_duty", "jup_b46_duty_founder_pda_to_duty", "jup_b207_sell_dealers_pda_duty", "jup_b25_flint_blame_done_to_duty"},
+		blocked_by = {"jup_b4_monolith_squad_in_freedom", "jup_b46_duty_founder_pda_to_freedom", "jup_b46_duty_founder_pda_to_stalkers",
+			"jup_b207_sell_dealers_pda_freedom", "jup_b207_dealers_pda_sold_owl", "jup_b25_flint_blame_done_to_freedom"},
+	},
+	friend_of_freedom = {
+		steps = {"jup_b4_monolith_squad_in_freedom", "jup_b46_duty_founder_pda_to_freedom", "jup_b207_sell_dealers_pda_freedom", "jup_b25_flint_blame_done_to_freedom"},
+		blocked_by = {"jup_b4_monolith_squad_in_duty", "jup_b46_duty_founder_pda_to_duty", "jup_b46_duty_founder_pda_to_stalkers",
+			"jup_b207_sell_dealers_pda_duty", "jup_b207_dealers_pda_sold_owl", "jup_b25_flint_blame_done_to_duty"},
+	},
+	balance_advocate = {
+		steps = {"jup_b46_duty_founder_pda_to_stalkers", "jup_b207_dealers_pda_sold_owl", "zat_b106_found_soroka_done"},
+		blocked_by = {"jup_b46_duty_founder_pda_to_duty", "jup_b46_duty_founder_pda_to_freedom",
+			"jup_b207_sell_dealers_pda_duty", "jup_b207_sell_dealers_pda_freedom"},
+	},
+	wealthy = {money = 100000},
+	keeper_of_secrets = {items = {"jup_b10_notes_01", "jup_b10_notes_02", "jup_b10_notes_03"}},
+	marked_by_zone = {counter = "actor_marked_by_zone_cnt", need = 3},
+	information_dealer = {
+		count = {"zat_b40_pda_1_saled", "zat_b40_pda_2_saled", "jup_b46_duty_founder_pda_sold", "jup_b207_merc_pda_with_contract_sold",
+			"jup_b207_dealers_pda_sold", "jup_a9_evacuation_info_sold", "jup_a9_meeting_info_sold", "jup_a9_losses_info_sold",
+			"jup_a9_delivery_info_sold", "zat_b12_documents_sold_1", "zat_b12_documents_sold_2", "zat_b12_documents_sold_3",
+			"zat_b40_notebook_saled", "device_flash_snag_sold", "device_pda_port_bandit_leader_sold", "jup_b10_ufo_memory_2_sold"},
+		need = 10,
+	},
+	friend_of_stalkers = {steps = {"jup_b220_trapper_zaton_chimera_hunted_told", "jup_a12_stalker_prisoner_helped",
+		"jup_a10_vano_give_task_end", "zat_b5_stalker_leader_end", "zat_b7_task_end"}},
+	stealthy_stalker = {
+		steps = {"gunsl_zat_stealthy_achievement_allowed", "zat_b40_find_information_comlpete"},
+		blocked_by = {"zat_b40_merc_hurt", "zat_b40_merc_in_combat", "zat_b40_merc_gone"},
+	},
+}
+
+this.achievements_cache = nil
+this.next_poll_time = 0
+
+function tr(id)
+	return game.translate_string(id)
+end
+
+function pget(key, default)
+	return pda_records.pget(key, default)
+end
+
+function pset(key, value)
+	pda_records.pset(key, value)
+end
+
+function format_number(value)
+	local sign, digits = string.match(tostring(math.floor(value or 0)), "^(%-?)(%d+)$")
+	if not digits then
+		return tostring(value)
+	end
+	local grouped = string.reverse(string.gsub(string.reverse(digits), "(%d%d%d)", "%1 "))
+	return sign .. string.gsub(grouped, "^%s+", "")
+end
+
+function format_stamp(minutes)
+	local _, _, _, hours, mins = level.get_start_time():get(0, 0, 0, 0, 0, 0, 0)
+	local clock = ((hours or 0) * 60 + (mins or 0) + minutes) % 1440
+	return string.format(tr("pda_rec_stamp"), math.floor(minutes / 1440) + 1, math.floor(clock / 60), clock % 60)
+end
+
+function count_infos(list)
+	local count = 0
+	for _, info in ipairs(list) do
+		if type(info) == "table" then
+			for _, alternative in ipairs(info) do
+				if has_alife_info(alternative) then
+					count = count + 1
+					break
+				end
+			end
+		elseif has_alife_info(info) then
+			count = count + 1
+		end
+	end
+	return count
+end
+
+function load_achievements()
+	if this.achievements_cache then
+		return this.achievements_cache
+	end
+	this.achievements_cache = {}
+	local ini = system_ini()
+	if not ini:section_exist("achievements") then
+		return this.achievements_cache
+	end
+	for i = 0, ini:line_count("achievements") - 1 do
+		local ok, id = ini:r_line("achievements", i, "", "")
+		if ok and id and id ~= "" and ini:section_exist(id) then
+			local module_name, function_name = string.match(
+				ini:line_exist(id, "functor") and ini:r_string(id, "functor") or "", "^([%w_]+)%.([%w_]+)$")
+			table.insert(this.achievements_cache, {
+				id = id,
+				module_name = module_name,
+				function_name = function_name,
+				name = ini:line_exist(id, "name") and ini:r_string(id, "name") or id,
+				desc = ini:line_exist(id, "desc") and ini:r_string(id, "desc") or "",
+				hint = ini:line_exist(id, "hint") and ini:r_string(id, "hint") or "",
+				icon = ini:line_exist(id, "icon") and ini:r_string(id, "icon") or "",
+			})
+		end
+	end
+	return this.achievements_cache
+end
+
+function call_functor(achievement)
+	local module = achievement.module_name and _G[achievement.module_name]
+	local fn = module and module[achievement.function_name]
+	if type(fn) ~= "function" then
+		return false
+	end
+	local ok, result = pcall(fn)
+	return ok and result == true
+end
+
+function poll_achievements()
+	if not db.actor or not db.storage[db.actor:id()] then
+		return
+	end
+	local baseline = pget(this.KEY_BASELINE, false)
+	for _, achievement in ipairs(load_achievements()) do
+		if not pget(this.KEY_GAINED .. achievement.id, false) and call_functor(achievement) then
+			pset(this.KEY_GAINED .. achievement.id, true)
+			if baseline then
+				pset(this.KEY_GAINED_TIME .. achievement.id, pda_records.game_minutes())
+			end
+		end
+	end
+	if not baseline then
+		pset(this.KEY_BASELINE, true)
+	end
+end
+
+function artefact_types()
+	local found, total = 0, 0
+	for _, is_found in pairs(xr_statistic.artefacts_table or {}) do
+		total = total + 1
+		if is_found then
+			found = found + 1
+		end
+	end
+	return found, total
+end
+
+function goal_progress(definition)
+	if not definition then
+		return nil
+	end
+	if definition.steps then
+		return count_infos(definition.steps), #definition.steps
+	elseif definition.count then
+		return math.min(count_infos(definition.count), definition.need), definition.need
+	elseif definition.items then
+		local found = 0
+		for _, section in ipairs(definition.items) do
+			if db.actor:object(section) ~= nil then
+				found = found + 1
+			end
+		end
+		return found, #definition.items
+	elseif definition.money then
+		return math.min(db.actor:money(), definition.money), definition.money
+	elseif definition.counter then
+		return math.min(math.floor(pget(definition.counter, 0)), definition.need), definition.need
+	elseif definition.artefacts then
+		return artefact_types()
+	end
+	return nil
+end
+
+function goal_state(definition, gained, current)
+	if gained then
+		return "done"
+	elseif definition and definition.blocked_by and count_infos(definition.blocked_by) > 0 then
+		return "blocked"
+	elseif current > 0 then
+		return "progress"
+	end
+	return "new"
+end
+
+function get_goals()
+	local list = {}
+	for _, achievement in ipairs(load_achievements()) do
+		local definition = this.GOALS[achievement.id]
+		local gained = pget(this.KEY_GAINED .. achievement.id, false)
+		local current, maximum = goal_progress(definition)
+		if not current then
+			current, maximum = gained and 1 or 0, 1
+		end
+		if gained then
+			current = maximum
+		end
+
+		local goal = {
+			id = achievement.id,
+			name = tr(achievement.name),
+			icon = achievement.icon,
+			goal = tr("pda_rec_ach_goal_" .. achievement.id),
+			reward = tr(achievement.hint),
+			ratio = maximum > 0 and current / maximum or 0,
+			progress_text = string.format("%d/%d", current, maximum),
+			state = goal_state(definition, gained, current),
+			gained_time = gained and pget(this.KEY_GAINED_TIME .. achievement.id, nil) or nil,
+		}
+		if goal.goal == "pda_rec_ach_goal_" .. achievement.id then
+			goal.goal = tr(achievement.desc)
+		end
+		if definition and definition.money then
+			goal.progress_text = string.format("%s/%s", format_number(current), format_number(maximum))
+		end
+		goal.show_reward = goal.state == "done" or goal.state == "progress"
+		table.insert(list, goal)
+	end
+	return list
+end
+
+function sorted_goals()
+	local goals = get_goals()
+	table.sort(goals, function (a, b)
+		if a.state ~= b.state then
+			return this.GROUP_ORDER[a.state] < this.GROUP_ORDER[b.state]
+		end
+		if a.state == "done" and (a.gained_time or -1) ~= (b.gained_time or -1) then
+			return (a.gained_time or -1) > (b.gained_time or -1)
+		end
+		if a.ratio ~= b.ratio then
+			return a.ratio > b.ratio
+		end
+		return a.name < b.name
+	end)
+	return goals
+end
+
+function subtitle(goal)
+	if goal.state == "done" then
+		return tr("pda_rec_ach_sub_done")
+	elseif goal.state == "blocked" then
+		return tr("pda_rec_ach_sub_blocked")
+	end
+	return goal.progress_text
+end
+
+function status_line(goal)
+	if goal.state == "done" then
+		if goal.gained_time then
+			return string.format(tr("pda_rec_ach_status_done"), format_stamp(goal.gained_time))
+		end
+		return tr("pda_rec_ach_status_done_early")
+	elseif goal.state == "progress" then
+		return string.format(tr("pda_rec_ach_status_progress"), goal.progress_text)
+	elseif goal.state == "blocked" then
+		return tr("pda_rec_ach_status_blocked")
+	end
+	return tr("pda_rec_ach_status_new")
+end
+
+function is_new(goal, initialized)
+	if goal.state ~= "done" or not goal.gained_time or not initialized then
+		return false
+	end
+	return goal.gained_time > pget(this.KEY_SEEN .. goal.id, -1)
+end
+
+function collect(list)
+	if not db.actor then
+		return
+	end
+	poll_achievements()
+
+	local goals = sorted_goals()
+	local counts = {}
+	for _, goal in ipairs(goals) do
+		counts[goal.state] = (counts[goal.state] or 0) + 1
+	end
+
+	local initialized = pget(this.KEY_INIT, false)
+	for _, goal in ipairs(goals) do
+		local entry = list:add("ach:" .. goal.id)
+		entry:set_title(goal.name)
+		entry:set_subtitle(subtitle(goal))
+		entry:set_icon(goal.icon)
+		entry:set_image("none")
+		entry:set_state("ach_" .. goal.state)
+		entry:set_group(goal.state, string.format(tr("pda_rec_ach_group_" .. goal.state), counts[goal.state]))
+		if goal.gained_time then
+			entry:set_time(goal.gained_time)
+		end
+		entry:set_new(is_new(goal, initialized))
+
+		entry:add_line("status", status_line(goal))
+		entry:add_line("caption", tr("pda_rec_ach_goal_caption"))
+		entry:add_line("text", goal.goal)
+		if goal.state ~= "blocked" then
+			entry:add_line("caption", tr("pda_rec_ach_reward_caption"))
+			if goal.show_reward then
+				entry:add_line("hint", goal.reward)
+			else
+				entry:add_line("info", tr("pda_rec_ach_reward_hidden"))
+			end
+		end
+
+		if not initialized and goal.gained_time then
+			pset(this.KEY_SEEN .. goal.id, goal.gained_time)
+		end
+	end
+
+	if not initialized then
+		pset(this.KEY_INIT, true)
+	end
+end
+
+function on_select(id)
+	local goal_id = string.match(id or "", "^ach:(.+)$")
+	if goal_id then
+		pset(this.KEY_SEEN .. goal_id, pda_records.game_minutes())
+	end
+end
+
+function on_actor_update()
+	if time_global() < this.next_poll_time then
+		return
+	end
+	this.next_poll_time = time_global() + this.POLL_INTERVAL_MS
+	poll_achievements()
+end
+
+function on_game_start()
+	pda_records.register_provider(this.CATEGORY, {collect = collect, on_select = on_select})
+	RegisterScriptCallback("actor_on_update", on_actor_update)
+end
