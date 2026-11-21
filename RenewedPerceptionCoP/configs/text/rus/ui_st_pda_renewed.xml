@@ -690,4 +690,85 @@
 	<string id="zombied">
 		<text>Зомбированный</text>
 	</string>
+	<string id="pda_tab_task_journal">
+		<text>Задания</text>
+	</string>
+	<string id="pda_tab_task_journal_hint">
+		<text>Журнал заданий: текущие, выполненные и отменённые</text>
+	</string>
+	<string id="pda_tj_filter_active">
+		<text>Текущие</text>
+	</string>
+	<string id="pda_tj_filter_completed">
+		<text>Выполненные</text>
+	</string>
+	<string id="pda_tj_filter_failed">
+		<text>Отменённые</text>
+	</string>
+	<string id="pda_tj_empty_active">
+		<text>Текущих заданий нет.</text>
+	</string>
+	<string id="pda_tj_empty_completed">
+		<text>Выполненных заданий пока нет.</text>
+	</string>
+	<string id="pda_tj_empty_failed">
+		<text>Отменённых заданий нет.</text>
+	</string>
+	<string id="pda_tj_select_task">
+		<text>Выберите задание в списке слева.</text>
+	</string>
+	<string id="pda_tj_item_completed">
+		<text>выполнено</text>
+	</string>
+	<string id="pda_tj_item_failed">
+		<text>отменено</text>
+	</string>
+	<string id="pda_tj_type_story">
+		<text>Сюжетное задание</text>
+	</string>
+	<string id="pda_tj_type_side">
+		<text>Дополнительное задание</text>
+	</string>
+	<string id="pda_tj_state_progress">
+		<text>В процессе</text>
+	</string>
+	<string id="pda_tj_state_active">
+		<text>Отслеживается</text>
+	</string>
+	<string id="pda_tj_state_completed">
+		<text>Выполнено</text>
+	</string>
+	<string id="pda_tj_state_failed">
+		<text>Отменено</text>
+	</string>
+	<string id="pda_tj_received">
+		<text>Получено: {value}</text>
+	</string>
+	<string id="pda_tj_finished">
+		<text>Завершено: {value}</text>
+	</string>
+	<string id="pda_tj_location">
+		<text>Место: {value}</text>
+	</string>
+	<string id="pda_tj_objectives">
+		<text>Этапы</text>
+	</string>
+	<string id="pda_tj_show_on_map">
+		<text>Показать на карте</text>
+	</string>
+	<string id="pda_tj_set_active">
+		<text>Отслеживать</text>
+	</string>
+	<string id="pda_tj_list_caption">
+		<text>Список задач</text>
+	</string>
+	<string id="pda_tj_details_caption">
+		<text>Подробное описание</text>
+	</string>
+	<string id="pda_tj_group_story">
+		<text>Сюжетные</text>
+	</string>
+	<string id="pda_tj_group_side">
+		<text>Дополнительные</text>
+	</string>
 </string_table>

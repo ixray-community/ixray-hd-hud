@@ -15,4 +15,25 @@
 	<string id="kb_inv_unload_ruck">
 		<text>Unload all weapons in backpack</text>
 	</string>
+	<string id="kb_grp_pda_task_journal">
+		<text>PDA: tasks</text>
+	</string>
+	<string id="kb_pda_tj_filter_prev">
+		<text>Tasks: previous filter</text>
+	</string>
+	<string id="kb_pda_tj_filter_next">
+		<text>Tasks: next filter</text>
+	</string>
+	<string id="kb_pda_tj_prev">
+		<text>Tasks: previous task</text>
+	</string>
+	<string id="kb_pda_tj_next">
+		<text>Tasks: next task</text>
+	</string>
+	<string id="kb_pda_tj_show_on_map">
+		<text>Tasks: show on map</text>
+	</string>
+	<string id="kb_pda_tj_track">
+		<text>Tasks: track</text>
+	</string>
 </string_table>

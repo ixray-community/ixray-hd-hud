@@ -633,4 +633,85 @@
 	<string id="zombied">
 		<text>Zombie</text>
 	</string>
+	<string id="pda_tab_task_journal">
+		<text>Tasks</text>
+	</string>
+	<string id="pda_tab_task_journal_hint">
+		<text>Task journal: current, completed and cancelled</text>
+	</string>
+	<string id="pda_tj_filter_active">
+		<text>Current</text>
+	</string>
+	<string id="pda_tj_filter_completed">
+		<text>Completed</text>
+	</string>
+	<string id="pda_tj_filter_failed">
+		<text>Cancelled</text>
+	</string>
+	<string id="pda_tj_empty_active">
+		<text>No current tasks.</text>
+	</string>
+	<string id="pda_tj_empty_completed">
+		<text>No completed tasks yet.</text>
+	</string>
+	<string id="pda_tj_empty_failed">
+		<text>No cancelled tasks.</text>
+	</string>
+	<string id="pda_tj_select_task">
+		<text>Select a task in the list on the left.</text>
+	</string>
+	<string id="pda_tj_item_completed">
+		<text>completed</text>
+	</string>
+	<string id="pda_tj_item_failed">
+		<text>cancelled</text>
+	</string>
+	<string id="pda_tj_type_story">
+		<text>Story task</text>
+	</string>
+	<string id="pda_tj_type_side">
+		<text>Side task</text>
+	</string>
+	<string id="pda_tj_state_progress">
+		<text>In progress</text>
+	</string>
+	<string id="pda_tj_state_active">
+		<text>Tracked</text>
+	</string>
+	<string id="pda_tj_state_completed">
+		<text>Completed</text>
+	</string>
+	<string id="pda_tj_state_failed">
+		<text>Cancelled</text>
+	</string>
+	<string id="pda_tj_received">
+		<text>Received: {value}</text>
+	</string>
+	<string id="pda_tj_finished">
+		<text>Finished: {value}</text>
+	</string>
+	<string id="pda_tj_location">
+		<text>Location: {value}</text>
+	</string>
+	<string id="pda_tj_objectives">
+		<text>Stages</text>
+	</string>
+	<string id="pda_tj_show_on_map">
+		<text>Show on map</text>
+	</string>
+	<string id="pda_tj_set_active">
+		<text>Track</text>
+	</string>
+	<string id="pda_tj_list_caption">
+		<text>Task list</text>
+	</string>
+	<string id="pda_tj_details_caption">
+		<text>Details</text>
+	</string>
+	<string id="pda_tj_group_story">
+		<text>Story</text>
+	</string>
+	<string id="pda_tj_group_side">
+		<text>Side</text>
+	</string>
 </string_table>

@@ -15,4 +15,25 @@
 	<string id="kb_inv_unload_ruck">
 		<text>Разрядить все оружие в рюкзаке</text>
 	</string>
+	<string id="kb_grp_pda_task_journal">
+		<text>ПДА: задания</text>
+	</string>
+	<string id="kb_pda_tj_filter_prev">
+		<text>Задания: предыдущий фильтр</text>
+	</string>
+	<string id="kb_pda_tj_filter_next">
+		<text>Задания: следующий фильтр</text>
+	</string>
+	<string id="kb_pda_tj_prev">
+		<text>Задания: предыдущее</text>
+	</string>
+	<string id="kb_pda_tj_next">
+		<text>Задания: следующее</text>
+	</string>
+	<string id="kb_pda_tj_show_on_map">
+		<text>Задания: показать на карте</text>
+	</string>
+	<string id="kb_pda_tj_track">
+		<text>Задания: отслеживать</text>
+	</string>
 </string_table>

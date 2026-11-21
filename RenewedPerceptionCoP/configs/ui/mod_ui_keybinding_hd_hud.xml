@@ -6,4 +6,12 @@
 	<group name="kb_grp_inventory" override="add">
 		<command id="kb_show_quick_slots" exe="show_quick_slots"/>
 	</group>
+	<group name="kb_grp_pda_task_journal" override="add">
+		<command id="kb_pda_tj_filter_prev" exe="pda_task_journal_filter_prev"/>
+		<command id="kb_pda_tj_filter_next" exe="pda_task_journal_filter_next"/>
+		<command id="kb_pda_tj_prev" exe="pda_task_journal_prev"/>
+		<command id="kb_pda_tj_next" exe="pda_task_journal_next"/>
+		<command id="kb_pda_tj_show_on_map" exe="pda_task_journal_show_on_map"/>
+		<command id="kb_pda_tj_track" exe="pda_task_journal_track"/>
+	</group>
 </keybingidg>
