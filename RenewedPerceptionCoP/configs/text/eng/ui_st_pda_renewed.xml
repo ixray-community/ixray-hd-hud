@@ -999,4 +999,154 @@
 	<string id="pda_contacts_details_caption">
 		<text>Details</text>
 	</string>
+	<string id="pda_ref_list_caption">
+		<text>Sections</text>
+	</string>
+	<string id="pda_ref_empty">
+		<text>The reference is empty for now. Everything you find and meet in the Zone will appear here.</text>
+	</string>
+	<string id="pda_ref_select">
+		<text>Select an article.</text>
+	</string>
+	<string id="pda_ref_grp_artefacts">
+		<text>Artefacts</text>
+	</string>
+	<string id="pda_ref_grp_weapons">
+		<text>Weapons</text>
+	</string>
+	<string id="pda_ref_grp_outfits">
+		<text>Equipment</text>
+	</string>
+	<string id="pda_ref_grp_mutants">
+		<text>Mutants</text>
+	</string>
+	<string id="pda_ref_grp_zone">
+		<text>Zone</text>
+	</string>
+	<string id="pda_ref_price">
+		<text>Price</text>
+	</string>
+	<string id="pda_ref_unit_money">
+		<text>RU</text>
+	</string>
+	<string id="pda_ref_unit_kg">
+		<text>kg</text>
+	</string>
+	<string id="pda_ref_stat_caliber">
+		<text>Caliber</text>
+	</string>
+	<string id="pda_ref_stat_damage">
+		<text>Damage</text>
+	</string>
+	<string id="pda_ref_stat_rpm">
+		<text>Rate of fire</text>
+	</string>
+	<string id="pda_ref_stat_magazine">
+		<text>Magazine</text>
+	</string>
+	<string id="pda_ref_stat_weight">
+		<text>Weight</text>
+	</string>
+	<string id="pda_ref_stat_belt">
+		<text>Artefact slots</text>
+	</string>
+	<string id="pda_ref_stat_kills">
+		<text>Killed</text>
+	</string>
+	<string id="pda_ref_mon_tushkano">
+		<text>Tushkano</text>
+	</string>
+	<string id="pda_ref_mon_tushkano_text">
+		<text>A small mutant rodent. Nearly harmless alone, but a pack swarms its prey and wears it down fast.</text>
+	</string>
+	<string id="pda_ref_mon_flesh">
+		<text>Flesh</text>
+	</string>
+	<string id="pda_ref_mon_flesh_text">
+		<text>A mutated pig. Slow and clumsy, but it can knock you down and trample you.</text>
+	</string>
+	<string id="pda_ref_mon_dog">
+		<text>Blind dog</text>
+	</string>
+	<string id="pda_ref_mon_dog_text">
+		<text>Lost its sight but tracks prey by smell and sound. Hunts in packs and surrounds its target.</text>
+	</string>
+	<string id="pda_ref_mon_boar">
+		<text>Boar</text>
+	</string>
+	<string id="pda_ref_mon_boar_text">
+		<text>A large, tough mutant. Charges at its prey and takes a lot of hits.</text>
+	</string>
+	<string id="pda_ref_mon_pseudodog">
+		<text>Pseudodog</text>
+	</string>
+	<string id="pda_ref_mon_pseudodog_text">
+		<text>A strong and fast predator that often leads a pack of blind dogs.</text>
+	</string>
+	<string id="pda_ref_mon_psy_dog">
+		<text>Psy-dog</text>
+	</string>
+	<string id="pda_ref_mon_psy_dog_text">
+		<text>Creates phantom copies of itself. Kill the real one and the copies vanish.</text>
+	</string>
+	<string id="pda_ref_mon_snork">
+		<text>Snork</text>
+	</string>
+	<string id="pda_ref_mon_snork_text">
+		<text>A former human in a torn gas mask. Moves on all fours and leaps from far away.</text>
+	</string>
+	<string id="pda_ref_mon_bloodsucker">
+		<text>Bloodsucker</text>
+	</string>
+	<string id="pda_ref_mon_bloodsucker_text">
+		<text>Can turn almost invisible. Gives itself away by heavy breathing and footsteps.</text>
+	</string>
+	<string id="pda_ref_mon_poltergeist">
+		<text>Poltergeist</text>
+	</string>
+	<string id="pda_ref_mon_poltergeist_text">
+		<text>An invisible anomalous entity. Throws objects; the fire variety attacks with flames.</text>
+	</string>
+	<string id="pda_ref_mon_controller">
+		<text>Controller</text>
+	</string>
+	<string id="pda_ref_mon_controller_text">
+		<text>A mutant with a powerful psy attack. Breaks the will and strikes the mind from a distance.</text>
+	</string>
+	<string id="pda_ref_mon_burer">
+		<text>Burer</text>
+	</string>
+	<string id="pda_ref_mon_burer_text">
+		<text>A telekinetic: tears weapons from hands, throws grenades back and hides behind a force shield.</text>
+	</string>
+	<string id="pda_ref_mon_chimera">
+		<text>Chimera</text>
+	</string>
+	<string id="pda_ref_mon_chimera_text">
+		<text>One of the deadliest predators in the Zone. Leaps over huge distances and inflicts heavy wounds.</text>
+	</string>
+	<string id="pda_ref_mon_gigant">
+		<text>Pseudogiant</text>
+	</string>
+	<string id="pda_ref_mon_gigant_text">
+		<text>A huge mutant. Its ground slam knocks down everyone nearby.</text>
+	</string>
+	<string id="pda_ref_art_zone_intro">
+		<text>The Zone</text>
+	</string>
+	<string id="pda_ref_art_zone_intro_text">
+		<text>The area around the Chernobyl NPP, changed after the second blast in 2006. Anomalies, mutants and emissions make every step dangerous, and artefacts make it worth the risk.</text>
+	</string>
+	<string id="pda_ref_art_emission">
+		<text>Emission</text>
+	</string>
+	<string id="pda_ref_art_emission_text">
+		<text>A powerful energy burst from the center of the Zone. Before it the sky turns red and a hum grows. Hide in buildings or underground: in the open an emission kills everything alive and moves the anomalies.</text>
+	</string>
+	<string id="pda_ref_art_anomalies">
+		<text>Anomalies</text>
+	</string>
+	<string id="pda_ref_art_anomalies_text">
+		<text>Patches of space where physics works differently. Look for distorted air, electric sparks or clouds of steam. A detector and a thrown bolt help find a safe path. Artefacts are born around anomalies.</text>
+	</string>
 </string_table>

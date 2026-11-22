@@ -27,11 +27,11 @@
 				<texture a="128">ui_inGame2_map_back</texture>
 			</auto_static>
 		</eptTasks>
-		<eptEncyclopedia>
+		<eptReference>
 			<auto_static x="35" y="35" width="966" height="710" stretch="1">
 				<texture a="128">ui_inGame2_stat_back</texture>
 			</auto_static>
-		</eptEncyclopedia>
+		</eptReference>
 		<eptContacts>
 			<auto_static x="35" y="35" width="966" height="710" stretch="1">
 				<texture a="128">ui_inGame2_journal_back</texture>
@@ -124,7 +124,7 @@
 				<h r="160" g="175" b="190" a="255"/>
 			</text_color>
 		</button>
-		<button x="255" y="3" width="90" height="35" id="eptEncyclopedia" hint="pda_tab_reference_hint" frame_mode="1">
+		<button x="255" y="3" width="90" height="35" id="eptReference" hint="pda_tab_reference_hint" frame_mode="1">
 			<texture_e>ui_inGame2_pda_new_tab_btn_e</texture_e>
 			<texture_h>ui_inGame2_pda_new_tab_btn_h</texture_h>
 			<texture_t>ui_inGame2_pda_new_tab_btn_t</texture_t>

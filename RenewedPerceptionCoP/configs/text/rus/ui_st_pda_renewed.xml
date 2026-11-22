@@ -1056,4 +1056,154 @@
 	<string id="pda_contacts_details_caption">
 		<text>Сведения</text>
 	</string>
+	<string id="pda_ref_list_caption">
+		<text>Разделы</text>
+	</string>
+	<string id="pda_ref_empty">
+		<text>Справка пока пуста. Здесь появится всё, что вы найдёте и встретите в Зоне.</text>
+	</string>
+	<string id="pda_ref_select">
+		<text>Выберите статью.</text>
+	</string>
+	<string id="pda_ref_grp_artefacts">
+		<text>Артефакты</text>
+	</string>
+	<string id="pda_ref_grp_weapons">
+		<text>Оружие</text>
+	</string>
+	<string id="pda_ref_grp_outfits">
+		<text>Снаряжение</text>
+	</string>
+	<string id="pda_ref_grp_mutants">
+		<text>Мутанты</text>
+	</string>
+	<string id="pda_ref_grp_zone">
+		<text>Зона</text>
+	</string>
+	<string id="pda_ref_price">
+		<text>Цена</text>
+	</string>
+	<string id="pda_ref_unit_money">
+		<text>RU</text>
+	</string>
+	<string id="pda_ref_unit_kg">
+		<text>кг</text>
+	</string>
+	<string id="pda_ref_stat_caliber">
+		<text>Калибр</text>
+	</string>
+	<string id="pda_ref_stat_damage">
+		<text>Урон</text>
+	</string>
+	<string id="pda_ref_stat_rpm">
+		<text>Скорострельность</text>
+	</string>
+	<string id="pda_ref_stat_magazine">
+		<text>Магазин</text>
+	</string>
+	<string id="pda_ref_stat_weight">
+		<text>Вес</text>
+	</string>
+	<string id="pda_ref_stat_belt">
+		<text>Слоты для артефактов</text>
+	</string>
+	<string id="pda_ref_stat_kills">
+		<text>Убито</text>
+	</string>
+	<string id="pda_ref_mon_tushkano">
+		<text>Тушкан</text>
+	</string>
+	<string id="pda_ref_mon_tushkano_text">
+		<text>Мелкий грызун-мутант. В одиночку почти безвреден, но в стае нападает толпой и быстро изматывает.</text>
+	</string>
+	<string id="pda_ref_mon_flesh">
+		<text>Плоть</text>
+	</string>
+	<string id="pda_ref_mon_flesh_text">
+		<text>Мутировавшая свинья. Медлительна и неуклюжа, но может сбить с ног и затоптать.</text>
+	</string>
+	<string id="pda_ref_mon_dog">
+		<text>Слепой пёс</text>
+	</string>
+	<string id="pda_ref_mon_dog_text">
+		<text>Потерял зрение, но отлично ориентируется по нюху и слуху. Охотится стаями и окружает добычу.</text>
+	</string>
+	<string id="pda_ref_mon_boar">
+		<text>Кабан</text>
+	</string>
+	<string id="pda_ref_mon_boar_text">
+		<text>Крупный и выносливый мутант. Атакует с разбега и выдерживает много попаданий.</text>
+	</string>
+	<string id="pda_ref_mon_pseudodog">
+		<text>Псевдособака</text>
+	</string>
+	<string id="pda_ref_mon_pseudodog_text">
+		<text>Сильный и быстрый хищник. Часто водит за собой стаю слепых псов.</text>
+	</string>
+	<string id="pda_ref_mon_psy_dog">
+		<text>Пси-собака</text>
+	</string>
+	<string id="pda_ref_mon_psy_dog_text">
+		<text>Создаёт фантомные копии себя. Убейте настоящую, и копии исчезнут.</text>
+	</string>
+	<string id="pda_ref_mon_snork">
+		<text>Снорк</text>
+	</string>
+	<string id="pda_ref_mon_snork_text">
+		<text>Бывший человек в рваном противогазе. Передвигается на четвереньках и прыгает с большого расстояния.</text>
+	</string>
+	<string id="pda_ref_mon_bloodsucker">
+		<text>Кровосос</text>
+	</string>
+	<string id="pda_ref_mon_bloodsucker_text">
+		<text>Умеет становиться почти невидимым. Выдаёт себя тяжёлым дыханием и шорохом шагов.</text>
+	</string>
+	<string id="pda_ref_mon_poltergeist">
+		<text>Полтергейст</text>
+	</string>
+	<string id="pda_ref_mon_poltergeist_text">
+		<text>Невидимая аномальная сущность. Швыряет предметы, а огненная разновидность атакует пламенем.</text>
+	</string>
+	<string id="pda_ref_mon_controller">
+		<text>Контролёр</text>
+	</string>
+	<string id="pda_ref_mon_controller_text">
+		<text>Мутант с мощным пси-воздействием. Подавляет волю и бьёт по сознанию на расстоянии.</text>
+	</string>
+	<string id="pda_ref_mon_burer">
+		<text>Бюрер</text>
+	</string>
+	<string id="pda_ref_mon_burer_text">
+		<text>Телекинетик: вырывает оружие из рук, отбрасывает гранаты и закрывается силовым щитом.</text>
+	</string>
+	<string id="pda_ref_mon_chimera">
+		<text>Химера</text>
+	</string>
+	<string id="pda_ref_mon_chimera_text">
+		<text>Один из самых опасных хищников Зоны. Прыгает на огромные расстояния и наносит тяжёлые раны.</text>
+	</string>
+	<string id="pda_ref_mon_gigant">
+		<text>Псевдогигант</text>
+	</string>
+	<string id="pda_ref_mon_gigant_text">
+		<text>Огромный мутант. Удар о землю сбивает с ног всех вокруг.</text>
+	</string>
+	<string id="pda_ref_art_zone_intro">
+		<text>Зона</text>
+	</string>
+	<string id="pda_ref_art_zone_intro_text">
+		<text>Территория вокруг ЧАЭС, изменившаяся после второго взрыва 2006 года. Аномалии, мутанты и выбросы делают каждый шаг опасным, а артефакты — ценной добычей.</text>
+	</string>
+	<string id="pda_ref_art_emission">
+		<text>Выброс</text>
+	</string>
+	<string id="pda_ref_art_emission_text">
+		<text>Мощный энергетический всплеск из центра Зоны. Перед выбросом небо краснеет и нарастает гул. Укрывайтесь в зданиях или подземельях: на открытом месте выброс убивает всё живое и меняет расположение аномалий.</text>
+	</string>
+	<string id="pda_ref_art_anomalies">
+		<text>Аномалии</text>
+	</string>
+	<string id="pda_ref_art_anomalies_text">
+		<text>Участки пространства с изменёнными физическими законами. Их выдают искажение воздуха, электрические разряды или облака пара. Детектор и брошенный болт помогают найти безопасный путь. Вокруг аномалий рождаются артефакты.</text>
+	</string>
 </string_table>

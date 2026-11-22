@@ -1,0 +1,413 @@
+this.CATEGORY = "reference"
+this.CONFIG = "pda_reference"
+this.ARTICLES = "pda_reference_articles"
+this.MUTANTS = "pda_reference_mutants"
+this.OVERRIDE_PREFIX = "pda_reference_"
+
+this.KEY = {
+	list = "prf_list",
+	known = "prf_k_",
+	seen = "prf_s_",
+	kills = "prf_m_",
+	init = "prf_init",
+}
+
+this.COLOR_LABEL = "%c[255,140,140,140]"
+this.COLOR_VALUE = "%c[255,220,220,220]"
+this.COLOR_GOOD = "%c[255,110,210,110]"
+this.COLOR_BAD = "%c[255,225,95,85]"
+
+this.ARTEFACT_CLASSES = {ARTEFACT = true, SCRPTART = true}
+this.OUTFIT_CLASSES = {E_STLK = true, E_HLMET = true}
+
+this.IMMUNITIES = {
+	{key = "burn_immunity", caption = "ui_inv_outfit_burn_protection", zone = "fire_zone_max_power"},
+	{key = "shock_immunity", caption = "ui_inv_outfit_shock_protection", zone = "electra_zone_max_power"},
+	{key = "chemical_burn_immunity", caption = "ui_inv_outfit_chemical_burn_protection", zone = "acid_zone_max_power"},
+	{key = "radiation_immunity", caption = "ui_inv_outfit_radiation_protection", zone = "radio_zone_max_power"},
+	{key = "telepatic_immunity", caption = "ui_inv_outfit_telepatic_protection", zone = "psi_zone_max_power"},
+	{key = "wound_immunity", caption = "ui_inv_outfit_wound_protection"},
+	{key = "fire_wound_immunity", caption = "ui_inv_outfit_fire_wound_protection"},
+	{key = "strike_immunity", caption = "ui_inv_outfit_strike_protection"},
+	{key = "explosion_immunity", caption = "ui_inv_outfit_explosion_protection"},
+}
+
+this.RESTORES = {
+	{key = "health_restore_speed", caption = "ui_inv_health", magnitude = 100, unit = "%"},
+	{key = "satiety_restore_speed", caption = "ui_inv_satiety", magnitude = 100, unit = "%"},
+	{key = "power_restore_speed", caption = "ui_inv_power", magnitude = 1},
+	{key = "bleeding_restore_speed", caption = "ui_inv_bleeding", magnitude = 100, unit = "%"},
+	{key = "radiation_restore_speed", caption = "ui_inv_radiation", magnitude = 1, inverse = true},
+}
+
+this.PROTECTIONS = {
+	{key = "burn_protection", caption = "ui_inv_outfit_burn_protection"},
+	{key = "shock_protection", caption = "ui_inv_outfit_shock_protection"},
+	{key = "chemical_burn_protection", caption = "ui_inv_outfit_chemical_burn_protection"},
+	{key = "radiation_protection", caption = "ui_inv_outfit_radiation_protection"},
+	{key = "telepatic_protection", caption = "ui_inv_outfit_telepatic_protection"},
+	{key = "wound_protection", caption = "ui_inv_outfit_wound_protection"},
+	{key = "fire_wound_protection", caption = "ui_inv_outfit_fire_wound_protection"},
+	{key = "strike_protection", caption = "ui_inv_outfit_strike_protection"},
+	{key = "explosion_protection", caption = "ui_inv_outfit_explosion_protection"},
+}
+
+function tr(id)
+	return game.translate_string(id)
+end
+
+function ini()
+	return system_ini()
+end
+
+function read_string(section, key, default)
+	local file = ini()
+	if section and file:section_exist(section) and file:line_exist(section, key) then
+		return file:r_string(section, key)
+	end
+	return default
+end
+
+function read_number(section, key, default)
+	local value = tonumber(read_string(section, key, nil))
+	if value == nil then
+		return default
+	end
+	return value
+end
+
+function first_item(list)
+	return list and string.match(list, "^%s*([^,%s]+)") or nil
+end
+
+function format_value(value, unit)
+	local rounded = math.abs(value) >= 10 and string.format("%d", math.floor(value + (value >= 0 and 0.5 or -0.5))) or string.format("%.1f", value)
+	rounded = string.gsub(rounded, "%.0$", "")
+	if value > 0 then
+		rounded = "+" .. rounded
+	end
+	return rounded .. (unit or "")
+end
+
+function stat_line(caption, value_text, color)
+	return this.COLOR_LABEL .. tr(caption) .. ":  " .. (color or this.COLOR_VALUE) .. value_text
+end
+
+function signed_stat(caption, value, unit, inverse)
+	local good = (value > 0) ~= (inverse == true)
+	return stat_line(caption, format_value(value, unit), good and this.COLOR_GOOD or this.COLOR_BAD)
+end
+
+function group_of(section)
+	local class = read_string(section, "class", "")
+	if this.ARTEFACT_CLASSES[class] then
+		return "artefacts"
+	elseif string.sub(class, 1, 3) == "WP_" then
+		return "weapons"
+	elseif this.OUTFIT_CLASSES[class] then
+		return "outfits"
+	end
+	return nil
+end
+
+function known_list()
+	local list = {}
+	for section in string.gmatch(pda_records.pget(this.KEY.list, ""), "[^,]+") do
+		list[section] = true
+	end
+	return list
+end
+
+function remember_item(section, quiet)
+	if not section or not db.actor or not group_of(section) then
+		return
+	end
+	if known_list()[section] then
+		return
+	end
+	local text = pda_records.pget(this.KEY.list, "")
+	pda_records.pset(this.KEY.list, text == "" and section or (text .. "," .. section))
+	local now = pda_records.game_minutes()
+	pda_records.pset(this.KEY.known .. section, now)
+	if quiet then
+		pda_records.pset(this.KEY.seen .. section, now)
+	end
+end
+
+function scan_inventory(quiet)
+	if not db.actor then
+		return
+	end
+	db.actor:iterate_inventory(function (_, item)
+		if item then
+			remember_item(item:section(), quiet)
+		end
+	end, db.actor)
+end
+
+function is_new(id_key)
+	local known = pda_records.pget(this.KEY.known .. id_key, nil)
+	return known ~= nil and known > pda_records.pget(this.KEY.seen .. id_key, -1)
+end
+
+function group_caption(group)
+	return tr("pda_ref_grp_" .. group)
+end
+
+function path_line(group, name)
+	return "#/" .. group_caption(group) .. "/" .. name
+end
+
+function apply_override(entry, override, lines)
+	if not override then
+		return
+	end
+	local text = read_string(override, "text", nil)
+	if text then
+		table.insert(lines, {"text", tr(text)})
+	end
+	local image = read_string(override, "image", nil)
+	if image then
+		entry:set_image(image)
+	end
+end
+
+function artefact_lines(section, lines)
+	local absorbation = read_string(section, "hit_absorbation_sect", nil)
+	for _, item in ipairs(this.IMMUNITIES) do
+		local value = read_number(absorbation, item.key, 0)
+		if value ~= 0 then
+			local zone = item.zone and read_number("actor_condition", item.zone, 1) or 1
+			table.insert(lines, {"stat", signed_stat(item.caption, value / zone * 100, "%")})
+		end
+	end
+	for _, item in ipairs(this.RESTORES) do
+		local value = read_number(section, item.key, 0)
+		if value ~= 0 then
+			table.insert(lines, {"stat", signed_stat(item.caption, value * item.magnitude, item.unit, item.inverse)})
+		end
+	end
+	local weight = read_number(section, "additional_inventory_weight", 0)
+	if weight ~= 0 then
+		table.insert(lines, {"stat", signed_stat("ui_inv_outfit_additional_weight", weight, " " .. tr("pda_ref_unit_kg"))})
+	end
+end
+
+function weapon_lines(section, lines)
+	local ammo = first_item(read_string(section, "ammo_class", nil))
+	if ammo then
+		table.insert(lines, {"stat", stat_line("pda_ref_stat_caliber", tr(read_string(ammo, "inv_name_short", read_string(ammo, "inv_name", ammo))))})
+	end
+	local hit = tonumber(first_item(read_string(section, "hit_power", nil)))
+	if hit then
+		table.insert(lines, {"stat", stat_line("pda_ref_stat_damage", string.format("%d", math.floor(hit * 100 + 0.5)))})
+	end
+	local rpm = read_number(section, "rpm", 0)
+	if rpm > 0 then
+		table.insert(lines, {"stat", stat_line("pda_ref_stat_rpm", string.format("%d", math.floor(rpm + 0.5)))})
+	end
+	local magazine = read_number(section, "ammo_mag_size", 0)
+	if magazine > 0 then
+		table.insert(lines, {"stat", stat_line("pda_ref_stat_magazine", string.format("%d", math.floor(magazine)))})
+	end
+end
+
+function outfit_lines(section, lines)
+	for _, item in ipairs(this.PROTECTIONS) do
+		local value = read_number(section, item.key, 0)
+		if value ~= 0 then
+			table.insert(lines, {"stat", stat_line(item.caption, string.format("%d%%", math.floor(value * 100 + 0.5)), this.COLOR_GOOD)})
+		end
+	end
+	local weight = read_number(section, "additional_inventory_weight", 0)
+	if weight ~= 0 then
+		table.insert(lines, {"stat", signed_stat("ui_inv_outfit_additional_weight", weight, " " .. tr("pda_ref_unit_kg"))})
+	end
+	local belt = read_number(section, "artefact_count", 0)
+	if belt > 0 then
+		table.insert(lines, {"stat", stat_line("pda_ref_stat_belt", string.format("%d", math.floor(belt)))})
+	end
+end
+
+function fill_entry(entry, group, name, lines, subtitle)
+	entry:set_title(name)
+	entry:set_state("ref")
+	entry:set_group(group, group_caption(group))
+	entry:set_subtitle(subtitle or "")
+	entry:add_line("path", path_line(group, name))
+	entry:add_line("heading", name)
+	for _, line in ipairs(lines) do
+		entry:add_line(line[1], line[2])
+	end
+end
+
+function collect_items(group, list)
+	local items = {}
+	for section in pairs(known_list()) do
+		if group_of(section) == group then
+			table.insert(items, {section = section, name = tr(read_string(section, "inv_name", section))})
+		end
+	end
+	table.sort(items, function (a, b) return a.name < b.name end)
+
+	for _, item in ipairs(items) do
+		local section = item.section
+		local entry = list:add("ref:" .. section)
+		local lines = {}
+		local description = read_string(section, "description", nil)
+		if description then
+			table.insert(lines, {"text", tr(description)})
+		end
+		if group == "artefacts" then
+			artefact_lines(section, lines)
+		elseif group == "weapons" then
+			weapon_lines(section, lines)
+		else
+			outfit_lines(section, lines)
+		end
+		local weight = read_number(section, "inv_weight", 0)
+		if weight > 0 then
+			table.insert(lines, {"stat", stat_line("pda_ref_stat_weight", string.format("%.2f %s", weight, tr("pda_ref_unit_kg")))})
+		end
+
+		local override = this.OVERRIDE_PREFIX .. section
+		override = ini():section_exist(override) and override or nil
+		apply_override(entry, override, lines)
+
+		local cost = read_number(section, "cost", 0)
+		local subtitle = ""
+		if cost > 0 then
+			local price = string.format("%d %s", math.floor(cost), tr("pda_ref_unit_money"))
+			if read_string(override, "image", nil) then
+				table.insert(lines, {"stat", stat_line("pda_ref_price", price)})
+			else
+				subtitle = this.COLOR_LABEL .. tr("pda_ref_price") .. ":  " .. this.COLOR_VALUE .. price
+			end
+		end
+		fill_entry(entry, group, item.name, lines, subtitle)
+		entry:set_item_icon(section)
+		if not read_string(override, "image", nil) then
+			entry:set_image("none")
+		end
+		entry:set_new(is_new(section))
+	end
+end
+
+function collect_mutants(list)
+	local file = ini()
+	if not file:section_exist(this.MUTANTS) then
+		return
+	end
+	local items = {}
+	for i = 0, file:line_count(this.MUTANTS) - 1 do
+		local ok, species, icon = file:r_line(this.MUTANTS, i, "", "")
+		local kills = ok and pda_records.pget(this.KEY.kills .. species, 0) or 0
+		if ok and kills > 0 then
+			table.insert(items, {species = species, icon = icon, kills = kills, name = tr("pda_ref_mon_" .. species)})
+		end
+	end
+	table.sort(items, function (a, b) return a.name < b.name end)
+
+	for _, item in ipairs(items) do
+		local key = "mon_" .. item.species
+		local entry = list:add("ref:" .. key)
+		local lines = {{"text", tr("pda_ref_mon_" .. item.species .. "_text")}}
+		table.insert(lines, {"stat", stat_line("pda_ref_stat_kills", string.format("%d", math.floor(item.kills)))})
+		local override = this.OVERRIDE_PREFIX .. key
+		override = file:section_exist(override) and override or nil
+		apply_override(entry, override, lines)
+		fill_entry(entry, "mutants", item.name, lines)
+		entry:set_icon(item.icon)
+		if not read_string(override, "image", nil) then
+			entry:set_image("none")
+		end
+		entry:set_new(is_new(key))
+	end
+end
+
+function collect_articles(group, list)
+	local file = ini()
+	if not file:section_exist(this.ARTICLES) then
+		return
+	end
+	for i = 0, file:line_count(this.ARTICLES) - 1 do
+		local ok, id = file:r_line(this.ARTICLES, i, "", "")
+		local section = ok and this.OVERRIDE_PREFIX .. id or nil
+		if section and file:section_exist(section) and read_string(section, "group", "zone") == group then
+			local info = read_string(section, "info", nil)
+			if not info or has_alife_info(info) then
+				local key = "art_" .. id
+				if pda_records.pget(this.KEY.known .. key, nil) == nil then
+					pda_records.pset(this.KEY.known .. key, pda_records.game_minutes())
+				end
+				local entry = list:add("ref:" .. key)
+				local lines = {}
+				apply_override(entry, section, lines)
+				fill_entry(entry, group, tr(read_string(section, "name", id)), lines)
+				local icon = read_string(section, "icon", nil)
+				if icon then
+					entry:set_icon(icon)
+				end
+				if not read_string(section, "image", nil) then
+					entry:set_image("none")
+				end
+				entry:set_new(is_new(key))
+			end
+		end
+	end
+end
+
+function collect(list)
+	if not db.actor then
+		return
+	end
+	local initialized = pda_records.pget(this.KEY.init, false)
+	scan_inventory(not initialized)
+	if not initialized then
+		pda_records.pset(this.KEY.init, true)
+	end
+
+	for group in string.gmatch(read_string(this.CONFIG, "groups", "artefacts, weapons, outfits, mutants, zone"), "[^,%s]+") do
+		if group == "artefacts" or group == "weapons" or group == "outfits" then
+			collect_items(group, list)
+		elseif group == "mutants" then
+			collect_mutants(list)
+		end
+		collect_articles(group, list)
+	end
+end
+
+function on_select(id)
+	local key = string.match(id or "", "^ref:(.+)$")
+	if key then
+		pda_records.pset(this.KEY.seen .. key, pda_records.game_minutes())
+	end
+end
+
+function on_item_take(item)
+	if item then
+		remember_item(item:section(), false)
+	end
+end
+
+function on_monster_death(victim, who)
+	if not victim or not who or not db.actor or who:id() ~= db.actor:id() then
+		return
+	end
+	local species = xr_statistic.monster_classes and xr_statistic.monster_classes[get_clsid(victim)]
+	if not species then
+		return
+	end
+	local key = "mon_" .. species
+	local kills = pda_records.pget(this.KEY.kills .. species, 0) + 1
+	pda_records.pset(this.KEY.kills .. species, kills)
+	if kills == 1 then
+		pda_records.pset(this.KEY.known .. key, pda_records.game_minutes())
+	end
+end
+
+function on_game_start()
+	pda_records.register_provider(this.CATEGORY, {collect = collect, on_select = on_select})
+	RegisterScriptCallback("actor_on_item_take", on_item_take)
+	RegisterScriptCallback("monster_on_death", on_monster_death)
+end

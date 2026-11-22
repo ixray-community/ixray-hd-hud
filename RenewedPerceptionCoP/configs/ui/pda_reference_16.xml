@@ -1,0 +1,77 @@
+<w>
+    <main_wnd x="0" y="0" width="1024" height="768" category="reference" refresh_ms="2000">
+        <auto_frameline x="35" y="80" width="326" height="34" vertical="0">
+            <texture a="110">ui_inGame2_pda_background_text</texture>
+        </auto_frameline>
+        <auto_static x="47" y="84" width="300" height="26">
+            <text align="l" vert_align="c" font="font_rubik_14" r="120" g="120" b="120">pda_ref_list_caption</text>
+        </auto_static>
+        <auto_frameline x="366" y="80" width="635" height="34" vertical="0">
+            <texture a="110">ui_inGame2_pda_background_text</texture>
+        </auto_frameline>
+    </main_wnd>
+
+    <record_list x="39" y="119" width="318" height="622" top_indent="2" vert_interval="2"
+        scroll_profile="pda_logs" always_show_scroll="1"/>
+
+    <group_header x="0" y="0" width="300" height="26" collapsible="1" prefix_open="[-] " prefix_closed="[+] ">
+        <text x="6" align="l" vert_align="c" font="font_rubik_16" r="200" g="200" b="200"/>
+    </group_header>
+
+    <record_item x="0" y="0" width="300" height="28" padding="6">
+        <selection x="0" y="0" width="300" height="28" stretch="1">
+            <texture a="110">ui_inGame2_pda_background_text</texture>
+        </selection>
+        <new_mark x="0" y="0" width="2" height="28" stretch="1">
+            <texture r="220" g="190" b="80">ui_inGame2_hint_wnd_bar</texture>
+        </new_mark>
+        <icon x="22" y="3" width="32" height="22" stretch="1" keep_aspect="1"/>
+        <title x="60" y="6" width="235" height="16">
+            <text align="l" font="font_rubik_14" r="210" g="210" b="210"/>
+        </title>
+        <colors>
+            <normal r="210" g="210" b="210"/>
+            <ref r="210" g="210" b="210"/>
+            <new r="225" g="215" b="90"/>
+        </colors>
+    </record_item>
+
+    <t_empty x="49" y="130" width="290" height="40" complex_mode="1" text="pda_ref_empty">
+        <text align="l" font="font_rubik_14" r="120" g="120" b="120"/>
+    </t_empty>
+
+    <details x="366" y="80" width="635" height="665" auto_heading="0">
+        <empty x="14" y="48" width="600" height="20">
+            <text align="l" font="font_rubik_14" r="120" g="120" b="120">pda_ref_select</text>
+        </empty>
+        <image x="1" y="2" width="633" height="186" stretch="1"/>
+        <subtitle x="420" y="44" width="200" height="26" complex_mode="1">
+            <text align="r" vert_align="c" font="font_rubik_14" r="220" g="220" b="220"/>
+        </subtitle>
+        <icon x="480" y="80" width="140" height="110" gap="8" stretch="1" keep_aspect="1" push_body="0"/>
+        <body x="0" y="196" width="635" height="466" vert_interval="4" top_indent="2"
+            scroll_profile="pda_logs" always_show_scroll="0"/>
+
+        <line_path x="12" y="0" width="600" height="30">
+            <text align="l" vert_align="c" font="font_rubik_14" r="120" g="120" b="120"/>
+        </line_path>
+        <line_heading x="20" y="0" width="440" height="34" complex_mode="1">
+            <text align="l" vert_align="c" font="font_oswald_24" r="215" g="215" b="215"/>
+        </line_heading>
+        <line_text x="20" y="0" width="440" height="16" complex_mode="1">
+            <text align="l" font="font_rubik_14" r="195" g="195" b="195"/>
+        </line_text>
+        <line_stat x="40" y="0" width="420" height="18" complex_mode="1">
+            <text align="l" font="font_rubik_14" r="210" g="210" b="210"/>
+        </line_stat>
+        <line_caption x="20" y="0" width="440" height="26">
+            <text align="l" vert_align="b" font="font_oswald_20" r="200" g="200" b="200"/>
+        </line_caption>
+        <line_hint x="20" y="0" width="440" height="18" complex_mode="1">
+            <text align="l" font="font_rubik_16" r="225" g="215" b="170"/>
+        </line_hint>
+        <line_info x="20" y="0" width="440" height="16">
+            <text align="l" font="font_rubik_12" r="140" g="140" b="140"/>
+        </line_info>
+    </details>
+</w>
