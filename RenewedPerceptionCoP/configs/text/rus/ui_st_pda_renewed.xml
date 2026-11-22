@@ -1212,4 +1212,40 @@
 	<string id="pda_legend_hide_all">
 		<text>Скрыть все</text>
 	</string>
+	<string id="pda_hint_journal">
+		<text>Журнал</text>
+	</string>
+	<string id="pda_hint_legend">
+		<text>Легенда</text>
+	</string>
+	<string id="pda_hint_show_me">
+		<text>Где я</text>
+	</string>
+	<string id="pda_hint_zoom">
+		<text>Масштаб</text>
+	</string>
+	<string id="pda_hint_spot_cursor">
+		<text>Метка у курсора</text>
+	</string>
+	<string id="pda_hint_spot_actor">
+		<text>Метка на мне</text>
+	</string>
+	<string id="pda_hint_spot_track">
+		<text>Вести</text>
+	</string>
+	<string id="pda_hint_spot_remove">
+		<text>Удалить метку</text>
+	</string>
+	<string id="pda_hint_spot_browse">
+		<text>Листать метки</text>
+	</string>
+	<string id="pda_hint_tabs">
+		<text>Вкладки</text>
+	</string>
+	<string id="pda_hint_target">
+		<text>К цели</text>
+	</string>
+	<string id="pda_hint_spot_list">
+		<text>Мои метки</text>
+	</string>
 </string_table>

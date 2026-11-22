@@ -99,5 +99,15 @@
 
 		<texture id="ui_RP2_vert_divider"   	x="1703" y="189" width="3"  height="66"  />
 		<texture id="ui_RP2_horz_divider"   	x="1703" y="189" width="66"  height="3"  />
+
+		<texture id="ui_RP2_SpotBack_lt"   	x="1767" y="213" width="20"  height="20"  />
+		<texture id="ui_RP2_SpotBack_t"    	x="1787" y="213" width="212" height="20"  />
+		<texture id="ui_RP2_SpotBack_rt"   	x="1999" y="213" width="20"  height="20"  />
+		<texture id="ui_RP2_SpotBack_l"    	x="1767" y="233" width="20"  height="558" />
+		<texture id="ui_RP2_SpotBack_back" 	x="1787" y="233" width="212" height="558" />
+		<texture id="ui_RP2_SpotBack_r"    	x="1999" y="233" width="20"  height="558" />
+		<texture id="ui_RP2_SpotBack_lb"   	x="1767" y="791" width="20"  height="20"  />
+		<texture id="ui_RP2_SpotBack_b"    	x="1787" y="791" width="212" height="20"  />
+		<texture id="ui_RP2_SpotBack_rb"   	x="1999" y="791" width="20"  height="20"  />
     </file>
 </w>

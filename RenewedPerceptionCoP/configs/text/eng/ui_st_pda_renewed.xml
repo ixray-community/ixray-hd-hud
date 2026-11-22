@@ -1155,4 +1155,40 @@
 	<string id="pda_legend_hide_all">
 		<text>Hide all</text>
 	</string>
+	<string id="pda_hint_journal">
+		<text>Journal</text>
+	</string>
+	<string id="pda_hint_legend">
+		<text>Legend</text>
+	</string>
+	<string id="pda_hint_show_me">
+		<text>Find me</text>
+	</string>
+	<string id="pda_hint_zoom">
+		<text>Zoom</text>
+	</string>
+	<string id="pda_hint_spot_cursor">
+		<text>Mark at cursor</text>
+	</string>
+	<string id="pda_hint_spot_actor">
+		<text>Mark here</text>
+	</string>
+	<string id="pda_hint_spot_track">
+		<text>Track</text>
+	</string>
+	<string id="pda_hint_spot_remove">
+		<text>Remove mark</text>
+	</string>
+	<string id="pda_hint_spot_browse">
+		<text>Browse marks</text>
+	</string>
+	<string id="pda_hint_tabs">
+		<text>Tabs</text>
+	</string>
+	<string id="pda_hint_target">
+		<text>Target</text>
+	</string>
+	<string id="pda_hint_spot_list">
+		<text>My marks</text>
+	</string>
 </string_table>

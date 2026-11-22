@@ -23,16 +23,50 @@
 	<center_background x="35" y="124" width="955" height="30">
 	</center_background>
 
-	<map_wnd scroll_enable="1" map_move_step="20" map_zoom_step="0.1" map_zoom_min="0.5" map_zoom_max="2">
+	<hotkeys_hint x="50" y="710" width="470" height="22" key_padding="6" key_min_width="22" key_spacing="3" label_spacing="6" item_spacing="16" chips_align="l">
+		<key_back type="line" x="0" y="0" width="22" height="22">
+			<texture>ui_RP2_HotKey</texture>
+		</key_back>
+		<key x="0" y="0" width="22" height="22">
+			<text align="c" vert_align="c" font="font_rubik_12" r="225" g="225" b="225"/>
+		</key>
+		<label x="0" y="0" width="10" height="22">
+			<text align="l" vert_align="c" font="font_rubik_12" r="190" g="190" b="190"/>
+		</label>
+		<item action="pda_tasks_toggle_list" gamepad_action="pda_tasks_toggle_list">pda_hint_journal</item>
+		<item action="pda_tasks_toggle_legend" gamepad_action="pda_tasks_toggle_legend">pda_hint_legend</item>
+		<item action="pda_tasks_map_show_me" gamepad_action="pda_tasks_map_show_me">pda_hint_show_me</item>
+		<item action="pda_tasks_map_show_target" gamepad_action="pda_tasks_map_show_target">pda_hint_target</item>
+		<item action="pda_tasks_map_zoom_in,pda_tasks_map_zoom_out" gamepad_action="pda_tasks_map_zoom_in,pda_tasks_map_zoom_out">pda_hint_zoom</item>
+	</hotkeys_hint>
+	<hotkeys_hint x="525" y="714" width="466" height="22" key_padding="6" key_min_width="22" key_spacing="3" label_spacing="6" item_spacing="16" chips_align="r">
+		<key_back type="line" x="0" y="0" width="22" height="22">
+			<texture>ui_RP2_HotKey</texture>
+		</key_back>
+		<key x="0" y="0" width="22" height="22">
+			<text align="c" vert_align="c" font="font_rubik_12" r="225" g="225" b="225"/>
+		</key>
+		<label x="0" y="0" width="10" height="22">
+			<text align="l" vert_align="c" font="font_rubik_12" r="190" g="190" b="190"/>
+		</label>
+		<item action="pda_tasks_personal_spot_cursor" gamepad_action="pda_tasks_personal_spot_cursor">pda_hint_spot_cursor</item>
+		<item action="pda_tasks_personal_spot_actor" gamepad_action="pda_tasks_personal_spot_actor">pda_hint_spot_actor</item>
+		<item action="pda_tasks_personal_spot_track" gamepad_action="pda_tasks_personal_spot_track">pda_hint_spot_track</item>
+		<item action="pda_tasks_personal_spot_remove" gamepad_action="pda_tasks_personal_spot_remove">pda_hint_spot_remove</item>
+		<item action="pda_tasks_personal_spot_prev,pda_tasks_personal_spot_next" gamepad_action="pda_tasks_personal_spot_prev,pda_tasks_personal_spot_next">pda_hint_spot_browse</item>
+		<item action="pda_tasks_personal_spots_list" gamepad_action="pda_tasks_personal_spots_list">pda_hint_spot_list</item>
+	</hotkeys_hint>
+
+	<map_wnd scroll_enable="0" map_move_step="20" map_zoom_step="0.1" map_zoom_min="0.5" map_zoom_max="2">
 		<snd_map_zoom_in>device\pda\pda_open</snd_map_zoom_in>
 		<snd_map_zoom_out>device\pda\pda_open</snd_map_zoom_out>
-		<main_wnd x="43" y="81" width="950" height="618"/>
-		<level_frame x="10" y="10" width="930" height="598"/>
-		<main_map_frame x="0" y="0" width="950" height="618" dx="0" dy="0" sx="-1.5" sy="-1.5">
+		<main_wnd x="40" y="70" width="950" height="618"/>
+		<level_frame x="4" y="8" width="956" height="616"/>
+		<main_map_frame x="2" y="4" width="961" height="623" dx="0" dy="0" sx="0" sy="0">
 			<texture>ui_RP2_MID_frame</texture>
 		</main_map_frame>
 		<map_pattern_overlay x="0" y="0" width="930" height="598" stretch="1">
-			<texture a="50">ui_RP2_MID_frame_back</texture>
+			<texture a="0">ui_RP2_MID_frame_back</texture>
 		</map_pattern_overlay>
 		<map_hint_item x="0" y="0" width="300" height="200">
 			<texture>ui_icons_PDA_tooltips</texture>
@@ -53,7 +87,7 @@
 				<text  align="l" font="letterica18"/>
 			</t_hint_text>
 		</map_hint_item>
-		<zoom_scale x="0" y="150" width="44" height="150" inertion="0.85" label_format="x%.1f"
+		<zoom_scale x="-100000" y="150" width="44" height="150" inertion="0.85" label_format="x%.1f"
 					horizontal="0" bound_labels="0" thumb_scaling="0"
 					value_label_align_thumb="1" thumb_align_bound_text_top="1"
 					value_label_hide_at_bounds="0" align="r">
@@ -74,7 +108,7 @@
 
 	<snd_filter_toggle>interface\filter_toggle</snd_filter_toggle>
 
-	<filter_primary_objects x="652" y="708" width="90" height="35">
+	<filter_primary_objects x="-65200" y="708" width="90" height="35">
 			<window_name>filter_primary_objects</window_name>
 			<texture>ui_RP2_Close_btn</texture>
 			<text x="-300" y="0" align="c" vert_align="c" font="font_oswald_20">filter_rp_locations_text</text>
@@ -86,7 +120,7 @@
 			</text_color>
 	</filter_primary_objects>
 
-	<filter_quest_npcs x="738" y="708" width="90" height="35">
+	<filter_quest_npcs x="-73800" y="708" width="90" height="35">
 			<window_name>filter_quest_npcs</window_name>
 			<texture>ui_RP2_Close_btn</texture>
 			<text x="-300" y="0" align="c" vert_align="c" font="font_oswald_20">filter_rp_npcs_text</text>
@@ -98,7 +132,7 @@
 			</text_color>
 	</filter_quest_npcs>
 
-	<filter_personal_spots x="909" y="708" width="90" height="35">
+	<filter_personal_spots x="-90900" y="708" width="90" height="35">
 			<window_name>filter_personal_spots</window_name>
 			<texture>ui_RP2_Close_btn</texture>
 			<text x="-265" y="0" align="c" vert_align="c" font="font_oswald_20">filter_rp_marks_text</text>
@@ -110,7 +144,7 @@
 			</text_color>
 	</filter_personal_spots>
 
-	<filter_treasures x="824" y="708" width="90" height="35">
+	<filter_treasures x="-82400" y="708" width="90" height="35">
 			<window_name>filter_treasures</window_name>
 			<texture>ui_RP2_Close_btn</texture>
 			<text x="-305" y="0" align="c" vert_align="c" font="font_oswald_20">filter_rp_stashes_text</text>
@@ -122,7 +156,7 @@
 			</text_color>
 	</filter_treasures>
 
-	<btn_nav_parent x="932" y="150" width="21" height="135">
+	<btn_nav_parent x="-93200" y="150" width="21" height="135">
 		<btn_nav_0 x="0" y="0" width="19" height="25" hint="ui_map_btn_legend" stretch="1">
 			<window_name>btn_nav_legend</window_name>
 			<texture_e>ui_RP2_Close_btn_e</texture_e>
@@ -160,11 +194,11 @@
 		</btn_nav_4>
 	</btn_nav_parent>
 
-	<map_legend_wnd x="780" y="150" width="150" height="415">
-		<background_frame x="0" y="0" width="150" height="415">
-			<texture a="255">ui_RP2_main_plane</texture>
-			<auto_frameline x="0" y="30" width="150" height="1" vertical="0">
-				<texture a="180">ui_RP2_horz_divider</texture>
+	<map_legend_wnd x="781" y="7" width="180" height="618">
+		<background_frame x="0" y="0" width="180" height="618">
+			<texture a="255">ui_RP2_SpotBack</texture>
+			<auto_frameline x="0" y="0" width="180" height="30" vertical="0">
+				<texture></texture>
 			</auto_frameline>
 			<!--auto_frameline x="0" y="70" width="200" height="1" vertical="0">
 				<texture a="50">ui_RP2_horz_divider</texture>
@@ -222,12 +256,12 @@
 			<texture>ui_RP2_Close_btn</texture>
 		</btn_close>
 
-		<btn_toggle_all x="10" y="377" width="130" height="28" frame_mode="1" text_show="pda_legend_show_all" text_hide="pda_legend_hide_all">
-			<texture>ui_RP2_pda_tab_btn</texture>
-			<text align="c" vert_align="c" font="font_rubik_14">pda_legend_hide_all</text>
+		<btn_toggle_all x="1" y="585" width="177" height="25" frame_mode="1" text_show="pda_legend_show_all" text_hide="pda_legend_hide_all">
+			<texture>ui_RP2_hide_tab_btn</texture>
+			<text align="c" vert_align="c" font="font_roboto_16" r="119" g="123" b="123">pda_legend_hide_all</text>
 		</btn_toggle_all>
 
-		<legend_list x="3" y="40" width="200" height="325" item_height="36" vert_interval="-1" scroll_profile="default" always_show_scroll="0" hidden_alpha="70">
+		<legend_list x="3" y="40" width="200" height="525" item_height="36" vert_interval="-1" scroll_profile="default" always_show_scroll="0" hidden_alpha="70">
 			<item x="0" y="0" width="200" height="36" category="pda_filter_main_tasks">
 				<image x="0" y="-9" width="28" height="36" align="c" stretch="1">
 					<texture r="255" g="179" b="71">ui_inGame2_PDA_icon_NewQuest_white<shadows thickness="0.5" r="0" g="0" b="0" a="100"/></texture>
