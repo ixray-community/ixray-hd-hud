@@ -97,8 +97,14 @@
 
 		<texture id="ui_RP2_Index"   	x="1773" y="189" width="8"  height="8"  />
 
-		<texture id="ui_RP2_vert_divider"   	x="1703" y="189" width="3"  height="66"  />
-		<texture id="ui_RP2_horz_divider"   	x="1703" y="189" width="66"  height="3"  />
+		<texture id="ui_RP2_vert_divider"      x="1704" y="196" width="1"  height="64" />
+		<texture id="ui_RP2_vert_divider_b"    x="1704" y="196" width="1"  height="2"  />
+		<texture id="ui_RP2_vert_divider_back" x="1704" y="198" width="1"  height="60" />
+		<texture id="ui_RP2_vert_divider_e"    x="1704" y="258" width="1"  height="2"  />
+		<texture id="ui_RP2_horz_divider"      x="1704" y="190" width="64" height="1"  />
+		<texture id="ui_RP2_horz_divider_b"    x="1704" y="190" width="2"  height="1"  />
+		<texture id="ui_RP2_horz_divider_back" x="1706" y="190" width="60" height="1"  />
+		<texture id="ui_RP2_horz_divider_e"    x="1766" y="190" width="2"  height="1"  />
 
 		<texture id="ui_RP2_SpotBack_lt"   	x="1767" y="213" width="20"  height="20"  />
 		<texture id="ui_RP2_SpotBack_t"    	x="1787" y="213" width="212" height="20"  />

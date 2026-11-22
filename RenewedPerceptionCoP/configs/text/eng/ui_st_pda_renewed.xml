@@ -1191,4 +1191,52 @@
 	<string id="pda_hint_spot_list">
 		<text>My marks</text>
 	</string>
+	<string id="pda_hint_to_player">
+		<text>To player</text>
+	</string>
+	<string id="pda_hint_geomarks">
+		<text>Player marks</text>
+	</string>
+	<string id="pda_hint_legend_full">
+		<text>Map legend</text>
+	</string>
+	<string id="pda_hint_close_pda">
+		<text>Close PDA</text>
+	</string>
+	<string id="pda_spots_caption">
+		<text>Geomarks</text>
+	</string>
+	<string id="pda_spots_empty">
+		<text>No personal marks yet.</text>
+	</string>
+	<string id="pda_spots_limit">
+		<text>Mark limit reached: %u</text>
+	</string>
+	<string id="pda_spots_tip">
+		<text>Click - show, double click - rename</text>
+	</string>
+	<string id="pda_spots_distance">
+		<text>%s - %d m</text>
+	</string>
+	<string id="pda_spots_track_hint">
+		<text>Track mark</text>
+	</string>
+	<string id="pda_spots_hk_mark">
+		<text>Mark</text>
+	</string>
+	<string id="pda_spots_hk_self">
+		<text>On me</text>
+	</string>
+	<string id="pda_spots_hk_close">
+		<text>Close</text>
+	</string>
+	<string id="pda_spots_hk_track">
+		<text>Track</text>
+	</string>
+	<string id="pda_spots_hk_remove">
+		<text>Remove</text>
+	</string>
+	<string id="pda_spots_hk_browse">
+		<text>Browse</text>
+	</string>
 </string_table>

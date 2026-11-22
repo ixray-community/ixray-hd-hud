@@ -1248,4 +1248,52 @@
 	<string id="pda_hint_spot_list">
 		<text>Мои метки</text>
 	</string>
+	<string id="pda_hint_to_player">
+		<text>К игроку</text>
+	</string>
+	<string id="pda_hint_geomarks">
+		<text>Геометки игрока</text>
+	</string>
+	<string id="pda_hint_legend_full">
+		<text>Условные обозначения</text>
+	</string>
+	<string id="pda_hint_close_pda">
+		<text>Закрыть PDA</text>
+	</string>
+	<string id="pda_spots_caption">
+		<text>Геометки</text>
+	</string>
+	<string id="pda_spots_empty">
+		<text>Личных меток пока нет.</text>
+	</string>
+	<string id="pda_spots_limit">
+		<text>Достигнут лимит меток: %u</text>
+	</string>
+	<string id="pda_spots_tip">
+		<text>Клик - показать, двойной клик - переименовать</text>
+	</string>
+	<string id="pda_spots_distance">
+		<text>%s - %d м</text>
+	</string>
+	<string id="pda_spots_track_hint">
+		<text>Вести к метке</text>
+	</string>
+	<string id="pda_spots_hk_mark">
+		<text>Метка</text>
+	</string>
+	<string id="pda_spots_hk_self">
+		<text>На себе</text>
+	</string>
+	<string id="pda_spots_hk_close">
+		<text>Закрыть</text>
+	</string>
+	<string id="pda_spots_hk_track">
+		<text>Вести</text>
+	</string>
+	<string id="pda_spots_hk_remove">
+		<text>Удалить</text>
+	</string>
+	<string id="pda_spots_hk_browse">
+		<text>Листать</text>
+	</string>
 </string_table>

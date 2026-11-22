@@ -60,4 +60,64 @@
 	<string id="kb_pda_rec_action">
 		<text>Записи: действие</text>
 	</string>
+	<string id="kb_grp_pda_map">
+		<text>ПДА: карта</text>
+	</string>
+	<string id="kb_pda_map_journal">
+		<text>Журнал заданий</text>
+	</string>
+	<string id="kb_pda_map_legend">
+		<text>Легенда карты</text>
+	</string>
+	<string id="kb_pda_map_show_me">
+		<text>Показать себя</text>
+	</string>
+	<string id="kb_pda_map_show_target">
+		<text>Показать цель</text>
+	</string>
+	<string id="kb_pda_map_zoom_in">
+		<text>Приблизить карту</text>
+	</string>
+	<string id="kb_pda_map_zoom_out">
+		<text>Отдалить карту</text>
+	</string>
+	<string id="kb_pda_map_spot_cursor">
+		<text>Метка у курсора</text>
+	</string>
+	<string id="kb_pda_map_spot_actor">
+		<text>Метка на себе</text>
+	</string>
+	<string id="kb_pda_map_spot_track">
+		<text>Вести к метке</text>
+	</string>
+	<string id="kb_pda_map_spot_remove">
+		<text>Удалить метку</text>
+	</string>
+	<string id="kb_pda_map_spot_prev">
+		<text>Предыдущая метка</text>
+	</string>
+	<string id="kb_pda_map_spot_next">
+		<text>Следующая метка</text>
+	</string>
+	<string id="kb_pda_map_spots_list">
+		<text>Список меток</text>
+	</string>
+	<string id="kb_layer_ui">
+		<text>Окна</text>
+	</string>
+	<string id="kb_layer_pda">
+		<text>ПДА</text>
+	</string>
+	<string id="kb_layer_pda_map">
+		<text>ПДА: карта</text>
+	</string>
+	<string id="kb_layer_pda_journal">
+		<text>ПДА: журнал</text>
+	</string>
+	<string id="kb_layer_pda_records">
+		<text>ПДА: записи</text>
+	</string>
+	<string id="kb_layer_pda_reference">
+		<text>ПДА: справка</text>
+	</string>
 </string_table>

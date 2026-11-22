@@ -60,4 +60,64 @@
 	<string id="kb_pda_rec_action">
 		<text>Records: action</text>
 	</string>
+	<string id="kb_grp_pda_map">
+		<text>PDA: map</text>
+	</string>
+	<string id="kb_pda_map_journal">
+		<text>Task journal</text>
+	</string>
+	<string id="kb_pda_map_legend">
+		<text>Map legend</text>
+	</string>
+	<string id="kb_pda_map_show_me">
+		<text>Show me</text>
+	</string>
+	<string id="kb_pda_map_show_target">
+		<text>Show target</text>
+	</string>
+	<string id="kb_pda_map_zoom_in">
+		<text>Zoom in</text>
+	</string>
+	<string id="kb_pda_map_zoom_out">
+		<text>Zoom out</text>
+	</string>
+	<string id="kb_pda_map_spot_cursor">
+		<text>Mark at cursor</text>
+	</string>
+	<string id="kb_pda_map_spot_actor">
+		<text>Mark on me</text>
+	</string>
+	<string id="kb_pda_map_spot_track">
+		<text>Track mark</text>
+	</string>
+	<string id="kb_pda_map_spot_remove">
+		<text>Remove mark</text>
+	</string>
+	<string id="kb_pda_map_spot_prev">
+		<text>Previous mark</text>
+	</string>
+	<string id="kb_pda_map_spot_next">
+		<text>Next mark</text>
+	</string>
+	<string id="kb_pda_map_spots_list">
+		<text>Marks list</text>
+	</string>
+	<string id="kb_layer_ui">
+		<text>Windows</text>
+	</string>
+	<string id="kb_layer_pda">
+		<text>PDA</text>
+	</string>
+	<string id="kb_layer_pda_map">
+		<text>PDA: map</text>
+	</string>
+	<string id="kb_layer_pda_journal">
+		<text>PDA: journal</text>
+	</string>
+	<string id="kb_layer_pda_records">
+		<text>PDA: records</text>
+	</string>
+	<string id="kb_layer_pda_reference">
+		<text>PDA: reference</text>
+	</string>
 </string_table>
