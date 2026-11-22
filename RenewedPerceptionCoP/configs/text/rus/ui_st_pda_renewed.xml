@@ -1206,4 +1206,10 @@
 	<string id="pda_ref_art_anomalies_text">
 		<text>Участки пространства с изменёнными физическими законами. Их выдают искажение воздуха, электрические разряды или облака пара. Детектор и брошенный болт помогают найти безопасный путь. Вокруг аномалий рождаются артефакты.</text>
 	</string>
+	<string id="pda_legend_show_all">
+		<text>Показать все</text>
+	</string>
+	<string id="pda_legend_hide_all">
+		<text>Скрыть все</text>
+	</string>
 </string_table>

@@ -1149,4 +1149,10 @@
 	<string id="pda_ref_art_anomalies_text">
 		<text>Patches of space where physics works differently. Look for distorted air, electric sparks or clouds of steam. A detector and a thrown bolt help find a safe path. Artefacts are born around anomalies.</text>
 	</string>
+	<string id="pda_legend_show_all">
+		<text>Show all</text>
+	</string>
+	<string id="pda_legend_hide_all">
+		<text>Hide all</text>
+	</string>
 </string_table>
