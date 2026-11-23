@@ -50,10 +50,10 @@
         </button>
     </category_tabs>
 
-    <category_hint_prev x="48" y="85" width="22" height="22" key_padding="5" key_min_width="20" chips_align="l" style="pda_small">
+    <category_hint_prev x="48" y="85" width="22" height="22" chips_align="l" style="pda_small">
         <item action="pda_records_category_prev" gamepad_action="pda_records_category_prev"/>
     </category_hint_prev>
-    <category_hint_next x="337" y="85" width="22" height="22" key_padding="5" key_min_width="20" chips_align="l" style="pda_small">
+    <category_hint_next x="337" y="85" width="22" height="22" chips_align="l" style="pda_small">
         <item action="pda_records_category_next" gamepad_action="pda_records_category_next"/>
     </category_hint_next>
 
@@ -116,19 +116,19 @@
 
         <btn_map x="8" y="530" width="300" height="26">
             <text x="32" align="l" vert_align="c" font="font_rubik_14" r="200" g="200" b="200">pda_rec_show_on_map</text>
-            <hint x="0" y="1" width="26" height="24" key_padding="6" key_min_width="22" chips_align="l" style="pda">
+            <hint x="0" y="1" width="26" height="24" chips_align="l" style="pda">
                 <item action="pda_records_show_on_map" gamepad_action="pda_records_show_on_map"/>
             </hint>
         </btn_map>
         <btn_track x="8" y="562" width="300" height="26">
             <text x="32" align="l" vert_align="c" font="font_rubik_14" r="200" g="200" b="200">pda_rec_track</text>
-            <hint x="0" y="1" width="26" height="24" key_padding="6" key_min_width="22" chips_align="l" style="pda">
+            <hint x="0" y="1" width="26" height="24" chips_align="l" style="pda">
                 <item action="pda_records_track" gamepad_action="pda_records_track"/>
             </hint>
         </btn_track>
         <btn_action x="8" y="594" width="300" height="26">
             <text x="32" align="l" vert_align="c" font="font_rubik_14" r="200" g="200" b="200">pda_rec_action</text>
-            <hint x="0" y="1" width="26" height="24" key_padding="6" key_min_width="22" chips_align="l" style="pda">
+            <hint x="0" y="1" width="26" height="24" chips_align="l" style="pda">
                 <item action="pda_records_action" gamepad_action="pda_records_action"/>
             </hint>
         </btn_action>

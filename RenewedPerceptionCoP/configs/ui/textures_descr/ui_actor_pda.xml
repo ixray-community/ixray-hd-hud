@@ -3,11 +3,11 @@
 		<texture id="ui_RP2_back"    x="0" y="256" width="1024" height="768" />
 
 		<texture id="ui_RP2_bottom_frame_b"    x="0" y="183" width="32" height="32" />
-		<texture id="ui_RP2_bottom_frame_back"    x="32" y="183" width="1185" height="32" />
+		<texture id="ui_RP2_bottom_frame_back" x="32" y="183" width="1185" height="32" />
 		<texture id="ui_RP2_bottom_frame_e"    x="1217" y="183" width="32" height="32" />
 
 		<texture id="ui_RP2_top_frame_b"    x="0" y="219" width="32" height="32" />
-		<texture id="ui_RP2_top_frame_back"    x="32" y="219" width="1185" height="32" />
+		<texture id="ui_RP2_top_frame_back" x="32" y="219" width="1185" height="32" />
 		<texture id="ui_RP2_top_frame_e"    x="1217" y="219" width="32" height="32" />
 
 		<texture id="ui_RP2_MAIN_frame_lt"   	x="1029" y="255" width="24"  height="24"  />
@@ -32,9 +32,9 @@
 
 		<texture id="ui_RP2_header_back"   		x="1029" y="650" width="415"  height="32"  />
 
-		<texture id="ui_RP2_chips1_b"   			x="1029" y="686" width="16" height="32"  />	
-		<texture id="ui_RP2_chips1_back"   		x="1045" y="686" width="98" height="32"  />	
-		<texture id="ui_RP2_chips1_e"   			x="1143" y="686" width="16" height="32"  />
+		<texture id="ui_RP2_chips_b"   		x="1029" y="686" width="16" height="32"  />	
+		<texture id="ui_RP2_chips_back"   		x="1045" y="686" width="98" height="32"  />	
+		<texture id="ui_RP2_chips_e"   		x="1143" y="686" width="16" height="32"  />
 
 		<texture id="ui_RP2_chips2"   			x="1029" y="722" width="130" height="22"  />	
 

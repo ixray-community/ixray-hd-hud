@@ -48,9 +48,18 @@
 		</eptContacts>
 		<eptTaskJournal>
 			<auto_static x="40" y="70" width="966" height="630">
-				<auto_framewindow x="0" y="0" width="966" height="630">
+				<auto_framewindow x="0" y="0" width="320" height="630">
 					<texture a="255">ui_RP2_MID_frame</texture>
 				</auto_framewindow>
+				<auto_static x="2" y="3" width="317" height="30" stretch="1">
+					<texture a="255">ui_RP2_header_back</texture>
+				</auto_static>
+				<auto_framewindow x="326" y="0" width="640" height="630">
+					<texture a="255">ui_RP2_MID_frame</texture>
+				</auto_framewindow>
+				<auto_static x="328" y="6" width="636" height="34" stretch="1">
+					<texture a="255">ui_RP2_header_back</texture>
+				</auto_static>
 			</auto_static>
 		</eptTaskJournal>
 		<eptRecords>

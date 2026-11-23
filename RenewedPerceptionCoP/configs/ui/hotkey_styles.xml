@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <w>
-	<style id="pda" key_padding="6" key_min_width="22" key_spacing="3" label_spacing="6" item_spacing="16">
-		<key_back x="0" y="0" width="20" height="22" stretch="1">
+	<style id="pda" key_padding="5" key_min_width="18" key_spacing="2" label_spacing="5" item_spacing="14">
+		<key_back x="0" y="0" width="18" height="20" stretch="1">
 			<svg>hotkey_frame.svg</svg>
 			<texture>ui_RP2_HotKey_back</texture>
 		</key_back>
-		<key x="0" y="0" width="22" height="22">
-			<text align="c" vert_align="c" font="font_roboto_medium_22" r="225" g="225" b="225"/>
+		<key x="0" y="0" width="18" height="20">
+			<text align="c" vert_align="c" font="font_roboto_medium_18" r="225" g="225" b="225"/>
 		</key>
-		<label x="0" y="0" width="10" height="22">
-			<text align="l" vert_align="c" font="font_roboto_medium_18" r="119" g="123" b="123"/>
+		<label x="0" y="0" width="10" height="20">
+			<text align="l" vert_align="c" font="font_roboto_medium_14" r="119" g="123" b="123"/>
 		</label>
 	</style>
-	<style id="pda_small" key_padding="5" key_min_width="20" key_spacing="3" label_spacing="6" item_spacing="16">
-		<key_back x="0" y="0" width="20" height="20" stretch="1">
+	<style id="pda_small" key_padding="5" key_min_width="18" key_spacing="2" label_spacing="5" item_spacing="14">
+		<key_back x="0" y="0" width="18" height="20" stretch="1">
 			<svg>hotkey_frame.svg</svg>
 			<texture>ui_RP2_HotKey_back</texture>
 		</key_back>
-		<key x="0" y="0" width="20" height="20">
-			<text align="c" vert_align="c" font="font_roboto_medium_22" r="225" g="225" b="225"/>
+		<key x="0" y="0" width="18" height="20">
+			<text align="c" vert_align="c" font="font_roboto_medium_18" r="225" g="225" b="225"/>
 		</key>
 		<label x="0" y="0" width="2" height="20">
-			<text align="l" vert_align="c" font="font_roboto_medium_18" r="119" g="123" b="123"/>
+			<text align="l" vert_align="c" font="font_roboto_medium_14" r="119" g="123" b="123"/>
 		</label>
 	</style>
 </w>

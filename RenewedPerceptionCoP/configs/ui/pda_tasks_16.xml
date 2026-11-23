@@ -23,13 +23,13 @@
 	<center_background x="35" y="124" width="955" height="30">
 	</center_background>
 
-	<hotkey_bar x="50" y="710" width="470" height="22" key_padding="6" key_min_width="22" key_spacing="3" label_spacing="6" item_spacing="16" chips_align="l" style="pda">
+	<hotkey_bar x="50" y="710" width="470" height="22" chips_align="l" style="pda">
 		<item action="pda_tasks_map_show_me" gamepad_action="pda_tasks_map_show_me">pda_hint_to_player</item>
 		<item action="pda_tasks_map_show_target" gamepad_action="pda_tasks_map_show_target">pda_hint_target</item>
 		<item action="pda_tasks_personal_spots_list" gamepad_action="pda_tasks_personal_spots_list">pda_hint_geomarks</item>
 		<item action="pda_tasks_toggle_legend" gamepad_action="pda_tasks_toggle_legend">pda_hint_legend_full</item>
 	</hotkey_bar>
-	<hotkey_bar x="525" y="710" width="466" height="22" key_padding="6" key_min_width="22" key_spacing="3" label_spacing="6" item_spacing="16" chips_align="r" style="pda">
+	<hotkey_bar x="525" y="710" width="466" height="22" chips_align="r" style="pda">
 		<item action="quit" gamepad_action="quit" key="Esc">pda_hint_close_pda</item>
 	</hotkey_bar>
 
@@ -306,12 +306,12 @@
 			<text align="c" vert_align="c" font="font_rubik_12" r="160" g="160" b="160">pda_spots_tip</text>
 		</t_tip>
 
-		<hotkey_bar x="0" y="306" width="210" height="22" style="pda" chips_align="c" item_spacing="14">
+		<hotkey_bar x="0" y="306" width="210" height="22" style="pda" chips_align="c">
 			<item action="pda_tasks_personal_spot_cursor" gamepad_action="pda_tasks_personal_spot_cursor">pda_spots_hk_mark</item>
 			<item action="pda_tasks_personal_spot_actor" gamepad_action="pda_tasks_personal_spot_actor">pda_spots_hk_self</item>
 			<item action="pda_tasks_personal_spots_list" gamepad_action="pda_tasks_personal_spots_list">pda_spots_hk_close</item>
 		</hotkey_bar>
-		<hotkey_bar x="0" y="334" width="210" height="22" style="pda" chips_align="c" item_spacing="14">
+		<hotkey_bar x="0" y="334" width="210" height="22" style="pda" chips_align="c">
 			<item action="pda_tasks_personal_spot_track" gamepad_action="pda_tasks_personal_spot_track">pda_spots_hk_track</item>
 			<item action="pda_tasks_personal_spot_remove" gamepad_action="pda_tasks_personal_spot_remove">pda_spots_hk_remove</item>
 			<item action="pda_tasks_personal_spot_prev,pda_tasks_personal_spot_next" gamepad_action="pda_tasks_personal_spot_prev,pda_tasks_personal_spot_next">pda_spots_hk_browse</item>
