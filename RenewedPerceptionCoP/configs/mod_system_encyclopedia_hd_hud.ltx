@@ -1,5 +1,5 @@
 [encyclopedia_catalog]
-sections    = zone, weapons, ammo, outfits, helmets, artefacts, medicine, devices, mutants, anomalies
+sections    = zone, mechanics, factions, locations, weapons, attachments, ammo, explosives, outfits, helmets, artefacts, medicine, devices, equipment, misc, mutants, anomalies
 color_label = 255,140,140,140
 color_value = 255,220,220,220
 color_good  = 255,110,210,110
@@ -11,11 +11,49 @@ source  = articles
 unlock  = always
 list    = zone_intro, emission, anomalies_intro
 
+[encyclopedia_section.mechanics]
+caption = pda_enc_grp_mechanics
+source  = list
+unlock  = always
+list    = mech_radiation, mech_bleeding, mech_psy, mech_hunger, mech_stamina, mech_weight, mech_belt, mech_detectors, mech_upgrades, mech_trade, mech_sleep, mech_stashes, mech_relations
+
+[encyclopedia_section.factions]
+caption = pda_enc_grp_factions
+source  = list
+unlock  = always
+list    = fac_stalker, fac_dolg, fac_freedom, fac_bandit, fac_killer, fac_army, fac_ecolog, fac_monolith, fac_zombied
+
+[encyclopedia_section.locations]
+caption = pda_enc_grp_locations
+source  = list
+unlock  = always
+list    = loc_zaton, loc_jupiter, loc_underpass, loc_pripyat, loc_labx8
+
 [encyclopedia_section.weapons]
 caption = pda_ref_grp_weapons
 classes = WP_*
-exclude = wpn_binoc, wpn_knife
+exclude = WP_SCOPE, WP_SILEN, WP_GLAUN, WP_KNIFE, WP_BINOC
 scheme  = weapon
+
+[encyclopedia_section.attachments]
+caption = pda_enc_grp_attachments
+classes = WP_SCOPE, WP_SILEN, WP_GLAUN
+scheme  = attachment
+
+[encyclopedia_section.explosives]
+caption = pda_enc_grp_explosives
+classes = G_F1, G_RGD5, G_RPG7, G_FAKE, II_EXPLO, S_EXPLO
+scheme  = explosive
+
+[encyclopedia_section.equipment]
+caption = pda_enc_grp_equipment
+classes = WP_KNIFE, WP_BINOC, D_PDA, II_BOLT, TORCH_S, D_TORCH
+scheme  = equipment
+
+[encyclopedia_section.misc]
+caption = pda_enc_grp_misc
+classes = II_ATTCH, II_DOC, II_BTTCH
+scheme  = common
 
 [encyclopedia_section.ammo]
 caption = pda_enc_grp_ammo
@@ -66,11 +104,35 @@ weight = inv_weight, pda_ref_stat_weight, format=f2, unit=pda_ref_unit_kg
 [encyclopedia_scheme.weapon]
 title    = pda_enc_caption_stats
 include  = common
-order    = caliber, damage, rpm, magazine
+order    = caliber, damage, rpm, magazine, distance, speed
 caliber  = ammo_class>inv_name_short, pda_ref_stat_caliber, name
 damage   = hit_power, pda_ref_stat_damage, mul=100, format=int
 rpm      = rpm, pda_ref_stat_rpm, format=int
 magazine = ammo_mag_size, pda_ref_stat_magazine, format=int
+distance = fire_distance, pda_enc_stat_fire_distance, format=int, unit=pda_enc_unit_m
+speed    = bullet_speed, pda_enc_stat_bullet_speed, format=int, unit=pda_enc_unit_mps
+
+[encyclopedia_scheme.attachment]
+title   = pda_enc_caption_stats
+include = common
+order   = zoom
+zoom    = scope_zoom_factor, pda_enc_stat_zoom, format=f1
+
+[encyclopedia_scheme.explosive]
+title   = pda_enc_caption_stats
+include = common
+order   = blast, radius, frags, frag_hit
+blast    = blast, pda_enc_stat_blast, mul=100, format=int
+radius   = blast_r, pda_enc_stat_blast_radius, format=f1, unit=pda_enc_unit_m
+frags    = frags, pda_enc_stat_frags, format=int
+frag_hit = frag_hit, pda_enc_stat_frag_hit, mul=100, format=int
+
+[encyclopedia_scheme.equipment]
+title   = pda_enc_caption_stats
+include = common
+order   = damage, zoom
+damage  = hit_power, pda_ref_stat_damage, mul=100, format=int
+zoom    = scope_zoom_factor, pda_enc_stat_zoom, format=f1
 
 [encyclopedia_scheme.ammo]
 title   = pda_enc_caption_stats
@@ -254,3 +316,111 @@ text = pda_enc_anom_torrd_text
 [encyclopedia.class.ZS_RADIO]
 name = pda_enc_anom_radio
 text = pda_enc_anom_radio_text
+
+[encyclopedia.mech_radiation]
+name = pda_enc_mech_radiation
+text = pda_enc_mech_radiation_text
+
+[encyclopedia.mech_bleeding]
+name = pda_enc_mech_bleeding
+text = pda_enc_mech_bleeding_text
+
+[encyclopedia.mech_psy]
+name = pda_enc_mech_psy
+text = pda_enc_mech_psy_text
+
+[encyclopedia.mech_hunger]
+name = pda_enc_mech_hunger
+text = pda_enc_mech_hunger_text
+
+[encyclopedia.mech_stamina]
+name = pda_enc_mech_stamina
+text = pda_enc_mech_stamina_text
+
+[encyclopedia.mech_weight]
+name = pda_enc_mech_weight
+text = pda_enc_mech_weight_text
+
+[encyclopedia.mech_belt]
+name = pda_enc_mech_belt
+text = pda_enc_mech_belt_text
+
+[encyclopedia.mech_detectors]
+name = pda_enc_mech_detectors
+text = pda_enc_mech_detectors_text
+
+[encyclopedia.mech_upgrades]
+name = pda_enc_mech_upgrades
+text = pda_enc_mech_upgrades_text
+
+[encyclopedia.mech_trade]
+name = pda_enc_mech_trade
+text = pda_enc_mech_trade_text
+
+[encyclopedia.mech_sleep]
+name = pda_enc_mech_sleep
+text = pda_enc_mech_sleep_text
+
+[encyclopedia.mech_stashes]
+name = pda_enc_mech_stashes
+text = pda_enc_mech_stashes_text
+
+[encyclopedia.mech_relations]
+name = pda_enc_mech_relations
+text = pda_enc_mech_relations_text
+
+[encyclopedia.fac_stalker]
+name = pda_enc_fac_stalker
+text = pda_enc_fac_stalker_text
+
+[encyclopedia.fac_dolg]
+name = pda_enc_fac_dolg
+text = pda_enc_fac_dolg_text
+
+[encyclopedia.fac_freedom]
+name = pda_enc_fac_freedom
+text = pda_enc_fac_freedom_text
+
+[encyclopedia.fac_bandit]
+name = pda_enc_fac_bandit
+text = pda_enc_fac_bandit_text
+
+[encyclopedia.fac_killer]
+name = pda_enc_fac_killer
+text = pda_enc_fac_killer_text
+
+[encyclopedia.fac_army]
+name = pda_enc_fac_army
+text = pda_enc_fac_army_text
+
+[encyclopedia.fac_ecolog]
+name = pda_enc_fac_ecolog
+text = pda_enc_fac_ecolog_text
+
+[encyclopedia.fac_monolith]
+name = pda_enc_fac_monolith
+text = pda_enc_fac_monolith_text
+
+[encyclopedia.fac_zombied]
+name = pda_enc_fac_zombied
+text = pda_enc_fac_zombied_text
+
+[encyclopedia.loc_zaton]
+name = pda_enc_loc_zaton
+text = pda_enc_loc_zaton_text
+
+[encyclopedia.loc_jupiter]
+name = pda_enc_loc_jupiter
+text = pda_enc_loc_jupiter_text
+
+[encyclopedia.loc_underpass]
+name = pda_enc_loc_underpass
+text = pda_enc_loc_underpass_text
+
+[encyclopedia.loc_pripyat]
+name = pda_enc_loc_pripyat
+text = pda_enc_loc_pripyat_text
+
+[encyclopedia.loc_labx8]
+name = pda_enc_loc_labx8
+text = pda_enc_loc_labx8_text

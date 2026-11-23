@@ -1416,4 +1416,211 @@
 	<string id="pda_enc_anom_radio_text">
 		<text>Участок с высоким радиационным фоном. Без защиты и антирада долго здесь не продержаться.</text>
 	</string>
+	<string id="pda_enc_grp_mechanics">
+		<text>Механика Зоны</text>
+	</string>
+	<string id="pda_enc_grp_factions">
+		<text>Группировки</text>
+	</string>
+	<string id="pda_enc_grp_locations">
+		<text>Локации</text>
+	</string>
+	<string id="pda_enc_grp_attachments">
+		<text>Обвесы</text>
+	</string>
+	<string id="pda_enc_grp_explosives">
+		<text>Взрывчатка</text>
+	</string>
+	<string id="pda_enc_grp_equipment">
+		<text>Снаряжение</text>
+	</string>
+	<string id="pda_enc_grp_misc">
+		<text>Прочее</text>
+	</string>
+	<string id="pda_enc_stat_fire_distance">
+		<text>Дальность стрельбы</text>
+	</string>
+	<string id="pda_enc_stat_bullet_speed">
+		<text>Скорость пули</text>
+	</string>
+	<string id="pda_enc_unit_mps">
+		<text>м/с</text>
+	</string>
+	<string id="pda_enc_stat_zoom">
+		<text>Кратность</text>
+	</string>
+	<string id="pda_enc_stat_blast">
+		<text>Сила взрыва</text>
+	</string>
+	<string id="pda_enc_stat_blast_radius">
+		<text>Радиус взрыва</text>
+	</string>
+	<string id="pda_enc_stat_frags">
+		<text>Осколков</text>
+	</string>
+	<string id="pda_enc_stat_frag_hit">
+		<text>Урон осколка</text>
+	</string>
+	<string id="pda_enc_mech_radiation">
+		<text>Радиация</text>
+	</string>
+	<string id="pda_enc_mech_radiation_text">
+		<text>Радиация накапливается в теле незаметно: от аномальных пятен, заражённой воды, некоторых артефактов и еды. Счётчик Гейгера трещит тем чаще, чем выше фон. Большая доза отнимает здоровье. Выводят радиацию антирад, водка и артефакты с обратным эффектом, а костюм с хорошей защитой замедляет облучение.</text>
+	</string>
+	<string id="pda_enc_mech_bleeding">
+		<text>Кровотечение</text>
+	</string>
+	<string id="pda_enc_mech_bleeding_text">
+		<text>Пули, когти и осколки оставляют открытые раны. Пока кровь не остановлена, здоровье медленно убывает. Бинт останавливает слабое кровотечение, аптечка закрывает и сильное. Некоторые артефакты ускоряют свёртывание крови.</text>
+	</string>
+	<string id="pda_enc_mech_psy">
+		<text>Пси-воздействие</text>
+	</string>
+	<string id="pda_enc_mech_psy_text">
+		<text>Контролёры, бюреры и некоторые места Зоны бьют по разуму. Пси-удар искажает зрение и отнимает здоровье. Защищают шлемы с пси-защитой, пси-блокада и артефакты. От контролёра лучше держаться вне прямой видимости.</text>
+	</string>
+	<string id="pda_enc_mech_hunger">
+		<text>Голод</text>
+	</string>
+	<string id="pda_enc_mech_hunger_text">
+		<text>Сталкер со временем голодает. Голод снижает восстановление сил, а сильный голод отнимает здоровье. Хлеб, колбаса и консервы утоляют его, энергетик ненадолго возвращает силы.</text>
+	</string>
+	<string id="pda_enc_mech_stamina">
+		<text>Выносливость</text>
+	</string>
+	<string id="pda_enc_mech_stamina_text">
+		<text>Бег, прыжки и перегруз тратят силы. Без сил нельзя бежать, а прицел начинает плавать. Силы возвращаются в покое, быстрее с энергетиком и артефактами выносливости.</text>
+	</string>
+	<string id="pda_enc_mech_weight">
+		<text>Переносимый вес</text>
+	</string>
+	<string id="pda_enc_mech_weight_text">
+		<text>У каждого предмета есть вес. Когда груз превышает предел, сталкер быстрее устаёт, а при сильном перегрузе не может идти. Предел поднимают экзоскелеты, улучшения костюма и некоторые артефакты.</text>
+	</string>
+	<string id="pda_enc_mech_belt">
+		<text>Артефакты на поясе</text>
+	</string>
+	<string id="pda_enc_mech_belt_text">
+		<text>Артефакт действует, только когда висит на поясе. Число слотов задаёт костюм и его улучшения. Свойства артефактов складываются, поэтому радиацию от одного можно погасить другим.</text>
+	</string>
+	<string id="pda_enc_mech_detectors">
+		<text>Поиск артефактов</text>
+	</string>
+	<string id="pda_enc_mech_detectors_text">
+		<text>Артефакты появляются в аномальных полях, особенно после выброса. Без детектора их не увидеть. Простой детектор только подаёт сигнал, лучшие модели показывают направление и делают невидимые артефакты видимыми.</text>
+	</string>
+	<string id="pda_enc_mech_upgrades">
+		<text>Улучшения</text>
+	</string>
+	<string id="pda_enc_mech_upgrades_text">
+		<text>Техники улучшают оружие и костюмы: точность, урон, защиту, переносимый вес. Для сложных улучшений нужны наборы инструментов, которые техник просит принести. Ремонт у техника возвращает вещи состояние.</text>
+	</string>
+	<string id="pda_enc_mech_trade">
+		<text>Торговля</text>
+	</string>
+	<string id="pda_enc_mech_trade_text">
+		<text>Торговцы покупают и продают снаряжение. Цена зависит от состояния вещи и от торговца: одни охотно берут артефакты, другие оружие. Деньги в Зоне также приносят задания.</text>
+	</string>
+	<string id="pda_enc_mech_sleep">
+		<text>Сон</text>
+	</string>
+	<string id="pda_enc_mech_sleep_text">
+		<text>Поспать можно в безопасном месте у бармена или на базе. Сон проматывает время, например до утра или до конца выброса.</text>
+	</string>
+	<string id="pda_enc_mech_stashes">
+		<text>Тайники</text>
+	</string>
+	<string id="pda_enc_mech_stashes_text">
+		<text>Сталкеры прячут вещи в тайниках. Координаты тайников можно найти у погибших или получить в награду. Найденный тайник отмечается в ПДА.</text>
+	</string>
+	<string id="pda_enc_mech_relations">
+		<text>Отношения</text>
+	</string>
+	<string id="pda_enc_mech_relations_text">
+		<text>Группировки помнят поступки игрока. Помощь и выполненные задания улучшают отношение, нападения на своих его портят. Враждебные группировки атакуют при встрече.</text>
+	</string>
+	<string id="pda_enc_fac_stalker">
+		<text>Сталкеры</text>
+	</string>
+	<string id="pda_enc_fac_stalker_text">
+		<text>Одиночки и небольшие компании, которые ищут в Зоне артефакты и заработок. Держатся вместе на базах вроде Скадовска и редко воюют с другими без причины.</text>
+	</string>
+	<string id="pda_enc_fac_dolg">
+		<text>Долг</text>
+	</string>
+	<string id="pda_enc_fac_dolg_text">
+		<text>Военизированная группировка, которая считает Зону угрозой человечеству и борется с мутантами. Дисциплинированы, хорошо вооружены, враждуют со Свободой.</text>
+	</string>
+	<string id="pda_enc_fac_freedom">
+		<text>Свобода</text>
+	</string>
+	<string id="pda_enc_fac_freedom_text">
+		<text>Анархисты, которые считают, что Зона должна быть открыта для всех. Ведут свободный образ жизни и враждуют с Долгом.</text>
+	</string>
+	<string id="pda_enc_fac_bandit">
+		<text>Бандиты</text>
+	</string>
+	<string id="pda_enc_fac_bandit_text">
+		<text>Уголовники, которые грабят сталкеров и торгуют добычей. Опасны для одиночек, но с ними можно договориться.</text>
+	</string>
+	<string id="pda_enc_fac_killer">
+		<text>Наёмники</text>
+	</string>
+	<string id="pda_enc_fac_killer_text">
+		<text>Профессиональные бойцы, которые работают на тех, кто платит. Хорошо экипированы и не задают лишних вопросов.</text>
+	</string>
+	<string id="pda_enc_fac_army">
+		<text>Военные</text>
+	</string>
+	<string id="pda_enc_fac_army_text">
+		<text>Регулярные войска, которые охраняют периметр и проводят операции внутри Зоны. Сталкеров считают нарушителями.</text>
+	</string>
+	<string id="pda_enc_fac_ecolog">
+		<text>Учёные</text>
+	</string>
+	<string id="pda_enc_fac_ecolog_text">
+		<text>Исследователи Зоны. Платят за артефакты, данные и помощь в экспедициях. Сами почти не воюют и нанимают охрану.</text>
+	</string>
+	<string id="pda_enc_fac_monolith">
+		<text>Монолит</text>
+	</string>
+	<string id="pda_enc_fac_monolith_text">
+		<text>Фанатики, которые охраняют центр Зоны и поклоняются Монолиту. Враждебны ко всем и не идут на переговоры.</text>
+	</string>
+	<string id="pda_enc_fac_zombied">
+		<text>Зомбированные</text>
+	</string>
+	<string id="pda_enc_fac_zombied_text">
+		<text>Сталкеры, лишившиеся разума под пси-воздействием. Бродят без цели и стреляют во всех, кого видят.</text>
+	</string>
+	<string id="pda_enc_loc_zaton">
+		<text>Затон</text>
+	</string>
+	<string id="pda_enc_loc_zaton_text">
+		<text>Болотистая местность у реки с ржавыми кораблями. Центр жизни сталкеров здесь баржа Скадовск: торговец, техник и бар. Много аномалий и бандитов.</text>
+	</string>
+	<string id="pda_enc_loc_jupiter">
+		<text>Окрестности Юпитера</text>
+	</string>
+	<string id="pda_enc_loc_jupiter_text">
+		<text>Промзона вокруг завода Юпитер. Опорный пункт станция Янов, где уживаются Долг и Свобода. Отсюда идут пути к Припяти.</text>
+	</string>
+	<string id="pda_enc_loc_underpass">
+		<text>Путепровод Припять-1</text>
+	</string>
+	<string id="pda_enc_loc_underpass_text">
+		<text>Подземный путь от Юпитера к Припяти. Тёмный, полный аномалий и мутантов. Пройти его без хорошего снаряжения тяжело.</text>
+	</string>
+	<string id="pda_enc_loc_pripyat">
+		<text>Припять</text>
+	</string>
+	<string id="pda_enc_loc_pripyat_text">
+		<text>Мёртвый город у станции. Здесь стоит военный отряд, а на улицах встречаются монолитовцы и опасные мутанты.</text>
+	</string>
+	<string id="pda_enc_loc_labx8">
+		<text>Лаборатория X8</text>
+	</string>
+	<string id="pda_enc_loc_labx8_text">
+		<text>Секретная подземная лаборатория в Припяти. Хранит следы экспериментов над пси-полем и людьми.</text>
+	</string>
 </string_table>

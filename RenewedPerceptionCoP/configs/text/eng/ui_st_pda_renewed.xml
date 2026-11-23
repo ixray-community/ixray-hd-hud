@@ -1359,4 +1359,211 @@
 	<string id="pda_enc_anom_radio_text">
 		<text>An area with a high radiation level. Without protection and antirad you will not last long here.</text>
 	</string>
+	<string id="pda_enc_grp_mechanics">
+		<text>Zone mechanics</text>
+	</string>
+	<string id="pda_enc_grp_factions">
+		<text>Factions</text>
+	</string>
+	<string id="pda_enc_grp_locations">
+		<text>Locations</text>
+	</string>
+	<string id="pda_enc_grp_attachments">
+		<text>Attachments</text>
+	</string>
+	<string id="pda_enc_grp_explosives">
+		<text>Explosives</text>
+	</string>
+	<string id="pda_enc_grp_equipment">
+		<text>Equipment</text>
+	</string>
+	<string id="pda_enc_grp_misc">
+		<text>Miscellaneous</text>
+	</string>
+	<string id="pda_enc_stat_fire_distance">
+		<text>Firing range</text>
+	</string>
+	<string id="pda_enc_stat_bullet_speed">
+		<text>Bullet speed</text>
+	</string>
+	<string id="pda_enc_unit_mps">
+		<text>m/s</text>
+	</string>
+	<string id="pda_enc_stat_zoom">
+		<text>Magnification</text>
+	</string>
+	<string id="pda_enc_stat_blast">
+		<text>Blast power</text>
+	</string>
+	<string id="pda_enc_stat_blast_radius">
+		<text>Blast radius</text>
+	</string>
+	<string id="pda_enc_stat_frags">
+		<text>Fragments</text>
+	</string>
+	<string id="pda_enc_stat_frag_hit">
+		<text>Fragment damage</text>
+	</string>
+	<string id="pda_enc_mech_radiation">
+		<text>Radiation</text>
+	</string>
+	<string id="pda_enc_mech_radiation_text">
+		<text>Radiation builds up in the body unnoticed: from hot spots, contaminated water, some artefacts and food. The Geiger counter clicks faster as the level rises. A high dose drains health. Antirad, vodka and artefacts with the opposite effect remove it, and a suit with good protection slows exposure.</text>
+	</string>
+	<string id="pda_enc_mech_bleeding">
+		<text>Bleeding</text>
+	</string>
+	<string id="pda_enc_mech_bleeding_text">
+		<text>Bullets, claws and shrapnel leave open wounds. Until the bleeding stops, health slowly drains. A bandage stops light bleeding, a medkit closes heavy wounds too. Some artefacts speed up clotting.</text>
+	</string>
+	<string id="pda_enc_mech_psy">
+		<text>Psy effects</text>
+	</string>
+	<string id="pda_enc_mech_psy_text">
+		<text>Controllers, burers and some places in the Zone strike at the mind. A psy hit distorts vision and drains health. Helmets with psy protection, psy-block and artefacts protect. Stay out of a controller's line of sight.</text>
+	</string>
+	<string id="pda_enc_mech_hunger">
+		<text>Hunger</text>
+	</string>
+	<string id="pda_enc_mech_hunger_text">
+		<text>A stalker gets hungry over time. Hunger slows stamina recovery, and starvation drains health. Bread, sausage and canned food satisfy it, an energy drink briefly restores stamina.</text>
+	</string>
+	<string id="pda_enc_mech_stamina">
+		<text>Stamina</text>
+	</string>
+	<string id="pda_enc_mech_stamina_text">
+		<text>Running, jumping and overload use up stamina. Without stamina you cannot run and the aim starts to sway. It recovers at rest, faster with an energy drink and stamina artefacts.</text>
+	</string>
+	<string id="pda_enc_mech_weight">
+		<text>Carry weight</text>
+	</string>
+	<string id="pda_enc_mech_weight_text">
+		<text>Every item has weight. When the load exceeds the limit, the stalker tires faster, and when heavily overloaded he cannot move. Exoskeletons, suit upgrades and some artefacts raise the limit.</text>
+	</string>
+	<string id="pda_enc_mech_belt">
+		<text>Artefacts on the belt</text>
+	</string>
+	<string id="pda_enc_mech_belt_text">
+		<text>An artefact works only on the belt. The suit and its upgrades set the number of slots. Artefact properties add up, so the radiation of one can be offset by another.</text>
+	</string>
+	<string id="pda_enc_mech_detectors">
+		<text>Finding artefacts</text>
+	</string>
+	<string id="pda_enc_mech_detectors_text">
+		<text>Artefacts appear in anomaly fields, especially after an emission. Without a detector you cannot see them. A basic detector only beeps, better models show the direction and make invisible artefacts visible.</text>
+	</string>
+	<string id="pda_enc_mech_upgrades">
+		<text>Upgrades</text>
+	</string>
+	<string id="pda_enc_mech_upgrades_text">
+		<text>Technicians upgrade weapons and suits: accuracy, damage, protection, carry weight. Complex upgrades require tool kits the technician asks you to bring. Repairs restore an item's condition.</text>
+	</string>
+	<string id="pda_enc_mech_trade">
+		<text>Trading</text>
+	</string>
+	<string id="pda_enc_mech_trade_text">
+		<text>Traders buy and sell gear. The price depends on the item's condition and on the trader: some readily buy artefacts, others weapons. Jobs also bring money in the Zone.</text>
+	</string>
+	<string id="pda_enc_mech_sleep">
+		<text>Sleep</text>
+	</string>
+	<string id="pda_enc_mech_sleep_text">
+		<text>You can sleep in a safe place at a bar or a base. Sleep skips time, for example until morning or until an emission is over.</text>
+	</string>
+	<string id="pda_enc_mech_stashes">
+		<text>Stashes</text>
+	</string>
+	<string id="pda_enc_mech_stashes_text">
+		<text>Stalkers hide things in stashes. Stash coordinates can be found on the dead or received as a reward. A found stash is marked in the PDA.</text>
+	</string>
+	<string id="pda_enc_mech_relations">
+		<text>Relations</text>
+	</string>
+	<string id="pda_enc_mech_relations_text">
+		<text>Factions remember the player's actions. Help and completed jobs improve relations, attacks on their members ruin them. Hostile factions attack on sight.</text>
+	</string>
+	<string id="pda_enc_fac_stalker">
+		<text>Loners</text>
+	</string>
+	<string id="pda_enc_fac_stalker_text">
+		<text>Loners and small crews who search the Zone for artefacts and money. They keep together at bases like the Skadovsk and rarely fight others without a reason.</text>
+	</string>
+	<string id="pda_enc_fac_dolg">
+		<text>Duty</text>
+	</string>
+	<string id="pda_enc_fac_dolg_text">
+		<text>A paramilitary faction that sees the Zone as a threat to mankind and fights mutants. Disciplined, well armed, at war with Freedom.</text>
+	</string>
+	<string id="pda_enc_fac_freedom">
+		<text>Freedom</text>
+	</string>
+	<string id="pda_enc_fac_freedom_text">
+		<text>Anarchists who believe the Zone should be open to everyone. They live freely and are at war with Duty.</text>
+	</string>
+	<string id="pda_enc_fac_bandit">
+		<text>Bandits</text>
+	</string>
+	<string id="pda_enc_fac_bandit_text">
+		<text>Criminals who rob stalkers and sell the loot. Dangerous for loners, but you can make deals with them.</text>
+	</string>
+	<string id="pda_enc_fac_killer">
+		<text>Mercenaries</text>
+	</string>
+	<string id="pda_enc_fac_killer_text">
+		<text>Professional fighters who work for whoever pays. Well equipped and ask no questions.</text>
+	</string>
+	<string id="pda_enc_fac_army">
+		<text>Military</text>
+	</string>
+	<string id="pda_enc_fac_army_text">
+		<text>Regular troops who guard the perimeter and run operations inside the Zone. They see stalkers as trespassers.</text>
+	</string>
+	<string id="pda_enc_fac_ecolog">
+		<text>Scientists</text>
+	</string>
+	<string id="pda_enc_fac_ecolog_text">
+		<text>Researchers of the Zone. They pay for artefacts, data and help with expeditions. They rarely fight and hire guards.</text>
+	</string>
+	<string id="pda_enc_fac_monolith">
+		<text>Monolith</text>
+	</string>
+	<string id="pda_enc_fac_monolith_text">
+		<text>Fanatics who guard the centre of the Zone and worship the Monolith. Hostile to everyone and never negotiate.</text>
+	</string>
+	<string id="pda_enc_fac_zombied">
+		<text>Zombified</text>
+	</string>
+	<string id="pda_enc_fac_zombied_text">
+		<text>Stalkers who lost their minds to psy effects. They wander aimlessly and shoot anyone they see.</text>
+	</string>
+	<string id="pda_enc_loc_zaton">
+		<text>Zaton</text>
+	</string>
+	<string id="pda_enc_loc_zaton_text">
+		<text>A swampy riverside area with rusting ships. The centre of stalker life here is the Skadovsk barge: a trader, a technician and a bar. Many anomalies and bandits.</text>
+	</string>
+	<string id="pda_enc_loc_jupiter">
+		<text>Jupiter outskirts</text>
+	</string>
+	<string id="pda_enc_loc_jupiter_text">
+		<text>An industrial area around the Jupiter plant. The base is Yanov station, where Duty and Freedom coexist. Routes to Pripyat start here.</text>
+	</string>
+	<string id="pda_enc_loc_underpass">
+		<text>Pripyat-1 underpass</text>
+	</string>
+	<string id="pda_enc_loc_underpass_text">
+		<text>An underground route from Jupiter to Pripyat. Dark, full of anomalies and mutants. Hard to get through without good gear.</text>
+	</string>
+	<string id="pda_enc_loc_pripyat">
+		<text>Pripyat</text>
+	</string>
+	<string id="pda_enc_loc_pripyat_text">
+		<text>A dead city near the plant. A military squad is stationed here, and Monolith fighters and dangerous mutants roam the streets.</text>
+	</string>
+	<string id="pda_enc_loc_labx8">
+		<text>Laboratory X8</text>
+	</string>
+	<string id="pda_enc_loc_labx8_text">
+		<text>A secret underground laboratory in Pripyat. It holds traces of experiments with the psy field and people.</text>
+	</string>
 </string_table>
