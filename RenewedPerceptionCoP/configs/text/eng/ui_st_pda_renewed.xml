@@ -1239,4 +1239,31 @@
 	<string id="pda_spots_hk_browse">
 		<text>Browse</text>
 	</string>
+	<string id="pda_compass_format">
+		<text>%s %d</text>
+	</string>
+	<string id="pda_compass_n">
+		<text>N</text>
+	</string>
+	<string id="pda_compass_ne">
+		<text>NE</text>
+	</string>
+	<string id="pda_compass_e">
+		<text>E</text>
+	</string>
+	<string id="pda_compass_se">
+		<text>SE</text>
+	</string>
+	<string id="pda_compass_s">
+		<text>S</text>
+	</string>
+	<string id="pda_compass_sw">
+		<text>SW</text>
+	</string>
+	<string id="pda_compass_w">
+		<text>W</text>
+	</string>
+	<string id="pda_compass_nw">
+		<text>NW</text>
+	</string>
 </string_table>

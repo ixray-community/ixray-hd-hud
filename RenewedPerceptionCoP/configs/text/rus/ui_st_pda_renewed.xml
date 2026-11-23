@@ -1296,4 +1296,31 @@
 	<string id="pda_spots_hk_browse">
 		<text>Листать</text>
 	</string>
+	<string id="pda_compass_format">
+		<text>%s %d°</text>
+	</string>
+	<string id="pda_compass_n">
+		<text>С</text>
+	</string>
+	<string id="pda_compass_ne">
+		<text>СВ</text>
+	</string>
+	<string id="pda_compass_e">
+		<text>В</text>
+	</string>
+	<string id="pda_compass_se">
+		<text>ЮВ</text>
+	</string>
+	<string id="pda_compass_s">
+		<text>Ю</text>
+	</string>
+	<string id="pda_compass_sw">
+		<text>ЮЗ</text>
+	</string>
+	<string id="pda_compass_w">
+		<text>З</text>
+	</string>
+	<string id="pda_compass_nw">
+		<text>СЗ</text>
+	</string>
 </string_table>

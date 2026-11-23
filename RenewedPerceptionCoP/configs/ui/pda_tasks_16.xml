@@ -63,23 +63,15 @@
 				<text  align="l" font="letterica18"/>
 			</t_hint_text>
 		</map_hint_item>
-		<zoom_scale x="-100000" y="150" width="44" height="150" inertion="0.85" label_format="x%.1f"
-					horizontal="0" bound_labels="0" thumb_scaling="0"
-					value_label_align_thumb="1" thumb_align_bound_text_top="1"
-					value_label_hide_at_bounds="0" align="r">
-			<rail x="0" y="0" width="10" height="150" stretch="1" align="c">
-				<texture>ui_RP2_horz_divider</texture>
-				<thumb x="-12" y="0" width="10" height="12" stretch="1" clamp_cross="0">
-					<texture>ui_RP2_Index</texture>
-				</thumb>
-			</rail>
-			<tick_label_bound x="10" y="0" width="18" height="14">
-				<text align="l" font="font_rubik_14" r="255" g="255" b="255"/>
-			</tick_label_bound>
-			<tick_label_value x="10" y="0" width="24" height="14">
-				<text align="l" font="font_rubik_14" r="255" g="255" b="255"/>
-			</tick_label_value>
-		</zoom_scale>
+		<actor_compass x="16" y="536" width="120" height="80" smooth_speed="12">
+			<arrow x="43" y="22" width="34" height="36" stretch="1">
+				<svg>ui_pda_compass.svg</svg>
+				<texture>ui_hud_map_arrow</texture>
+			</arrow>
+			<label x="0" y="-4" width="120" height="24">
+				<text align="c" vert_align="c" font="font_roboto_medium_18" r="215" g="215" b="215"/>
+			</label>
+		</actor_compass>
 	</map_wnd>
 
 	<snd_filter_toggle>interface\filter_toggle</snd_filter_toggle>
