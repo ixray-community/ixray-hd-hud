@@ -1,0 +1,256 @@
+[encyclopedia]
+sections    = zone, weapons, ammo, outfits, helmets, artefacts, medicine, devices, mutants, anomalies
+color_label = 255,140,140,140
+color_value = 255,220,220,220
+color_good  = 255,110,210,110
+color_bad   = 255,225,95,85
+
+[encyclopedia_section.zone]
+caption = pda_ref_grp_zone
+source  = articles
+unlock  = always
+list    = zone_intro, emission, anomalies_intro
+
+[encyclopedia_section.weapons]
+caption = pda_ref_grp_weapons
+classes = WP_*
+exclude = wpn_binoc, wpn_knife
+scheme  = weapon
+
+[encyclopedia_section.ammo]
+caption = pda_enc_grp_ammo
+classes = AMMO, AMMO_S, S_VOG25, S_OG7B, S_M209
+scheme  = ammo
+
+[encyclopedia_section.outfits]
+caption = pda_ref_grp_outfits
+classes = E_STLK
+scheme  = outfit
+
+[encyclopedia_section.helmets]
+caption = pda_enc_grp_helmets
+classes = E_HLMET
+scheme  = outfit
+
+[encyclopedia_section.artefacts]
+caption = pda_ref_grp_artefacts
+classes = ARTEFACT, SCRPTART
+scheme  = artefact
+
+[encyclopedia_section.medicine]
+caption = pda_enc_grp_medicine
+classes = II_MEDKI, II_BANDG, II_ANTIR, II_FOOD, II_BOTTL, S_FOOD
+scheme  = eatable
+
+[encyclopedia_section.devices]
+caption = pda_enc_grp_devices
+classes = DET_SIMP, DET_ADVA, DET_ELIT, DET_SCIE
+scheme  = detector
+
+[encyclopedia_section.mutants]
+caption = pda_ref_grp_mutants
+source  = classes
+classes = SM_TUSHK, SM_FLESH, SM_DOG_S, SM_BOARW, SM_P_DOG, SM_DOG_P, SM_SNORK, SM_BLOOD, SM_POLTR, SM_CONTR, SM_BURER, SM_CHIMS, SM_GIANT
+scheme  = mutant
+
+[encyclopedia_section.anomalies]
+caption = pda_enc_grp_anomalies
+source  = classes
+classes = ZS_MBALD, ZS_GALAN, ZS_MINCE, ZS_BFUZZ, ZS_TORRD, ZS_RADIO
+scheme  = anomaly
+
+[encyclopedia_scheme.common]
+order  = weight
+weight = inv_weight, pda_ref_stat_weight, format=f2, unit=pda_ref_unit_kg
+
+[encyclopedia_scheme.weapon]
+title    = pda_enc_caption_stats
+include  = common
+order    = caliber, damage, rpm, magazine
+caliber  = ammo_class>inv_name_short, pda_ref_stat_caliber, name
+damage   = hit_power, pda_ref_stat_damage, mul=100, format=int
+rpm      = rpm, pda_ref_stat_rpm, format=int
+magazine = ammo_mag_size, pda_ref_stat_magazine, format=int
+
+[encyclopedia_scheme.ammo]
+title   = pda_enc_caption_stats
+include = common
+order   = box, hit, ap, pellets, dist
+box     = box_size, pda_enc_stat_box, format=int
+hit     = k_hit, pda_enc_stat_k_hit, mul=100, format=int, unit=%
+ap      = k_ap, pda_enc_stat_k_ap, mul=100, format=int, unit=%
+pellets = buck_shot, pda_enc_stat_pellets, format=int
+dist    = k_dist, pda_enc_stat_k_dist, mul=100, format=int, unit=%
+
+[encyclopedia_scheme.outfit]
+title     = pda_enc_caption_protection
+include   = common
+order     = burn, shock, chemical, radiation, telepatic, wound, fire_wound, strike, explosion, weight_add, belt
+burn       = burn_protection, ui_inv_outfit_burn_protection, mul=100, format=int, unit=%, good
+shock      = shock_protection, ui_inv_outfit_shock_protection, mul=100, format=int, unit=%, good
+chemical   = chemical_burn_protection, ui_inv_outfit_chemical_burn_protection, mul=100, format=int, unit=%, good
+radiation  = radiation_protection, ui_inv_outfit_radiation_protection, mul=100, format=int, unit=%, good
+telepatic  = telepatic_protection, ui_inv_outfit_telepatic_protection, mul=100, format=int, unit=%, good
+wound      = wound_protection, ui_inv_outfit_wound_protection, mul=100, format=int, unit=%, good
+fire_wound = fire_wound_protection, ui_inv_outfit_fire_wound_protection, mul=100, format=int, unit=%, good
+strike     = strike_protection, ui_inv_outfit_strike_protection, mul=100, format=int, unit=%, good
+explosion  = explosion_protection, ui_inv_outfit_explosion_protection, mul=100, format=int, unit=%, good
+weight_add = additional_inventory_weight, ui_inv_outfit_additional_weight, signed, unit=pda_ref_unit_kg
+belt       = artefact_count, pda_ref_stat_belt, format=int
+
+[encyclopedia_scheme.artefact]
+title      = pda_enc_caption_effects
+include    = common
+order      = burn, shock, chemical, radiation, telepatic, wound, fire_wound, strike, explosion, health, satiety, power, bleeding, radiation_out, weight_add
+burn          = hit_absorbation_sect>burn_immunity, ui_inv_outfit_burn_protection, div=actor_condition>fire_zone_max_power, mul=100, signed, unit=%
+shock         = hit_absorbation_sect>shock_immunity, ui_inv_outfit_shock_protection, div=actor_condition>electra_zone_max_power, mul=100, signed, unit=%
+chemical      = hit_absorbation_sect>chemical_burn_immunity, ui_inv_outfit_chemical_burn_protection, div=actor_condition>acid_zone_max_power, mul=100, signed, unit=%
+radiation     = hit_absorbation_sect>radiation_immunity, ui_inv_outfit_radiation_protection, div=actor_condition>radio_zone_max_power, mul=100, signed, unit=%
+telepatic     = hit_absorbation_sect>telepatic_immunity, ui_inv_outfit_telepatic_protection, div=actor_condition>psi_zone_max_power, mul=100, signed, unit=%
+wound         = hit_absorbation_sect>wound_immunity, ui_inv_outfit_wound_protection, mul=100, signed, unit=%
+fire_wound    = hit_absorbation_sect>fire_wound_immunity, ui_inv_outfit_fire_wound_protection, mul=100, signed, unit=%
+strike        = hit_absorbation_sect>strike_immunity, ui_inv_outfit_strike_protection, mul=100, signed, unit=%
+explosion     = hit_absorbation_sect>explosion_immunity, ui_inv_outfit_explosion_protection, mul=100, signed, unit=%
+health        = health_restore_speed, ui_inv_health, mul=100, signed, unit=%
+satiety       = satiety_restore_speed, ui_inv_satiety, mul=100, signed, unit=%
+power         = power_restore_speed, ui_inv_power, signed
+bleeding      = bleeding_restore_speed, ui_inv_bleeding, mul=100, signed, unit=%
+radiation_out = radiation_restore_speed, ui_inv_radiation, signed, inverse
+weight_add    = additional_inventory_weight, ui_inv_outfit_additional_weight, signed, unit=pda_ref_unit_kg
+
+[encyclopedia_scheme.eatable]
+title     = pda_enc_caption_effects
+include   = common
+order     = health, wounds, satiety, power, radiation, uses
+health    = eat_health, ui_inv_health, mul=100, signed, format=int, unit=%
+wounds    = wounds_heal_perc, ui_inv_bleeding, mul=100, signed, format=int, unit=%
+satiety   = eat_satiety, ui_inv_satiety, mul=100, signed, format=int, unit=%
+power     = eat_power, ui_inv_power, mul=100, signed, format=int, unit=%
+radiation = eat_radiation, ui_inv_radiation, mul=100, signed, inverse, format=int, unit=%
+uses      = max_uses, pda_enc_stat_uses, format=int
+
+[encyclopedia_scheme.detector]
+title   = pda_enc_caption_stats
+include = common
+order   = radius
+radius  = af_radius, pda_enc_stat_detect_radius, format=int, unit=pda_enc_unit_m
+
+[encyclopedia_scheme.mutant]
+title      = pda_enc_caption_vulnerability
+order      = burn, shock, chemical, radiation, telepatic, wound, fire_wound, strike, explosion
+burn       = immunities_sect>burn_immunity, ui_inv_outfit_burn_protection, mul=100, format=int, unit=%
+shock      = immunities_sect>shock_immunity, ui_inv_outfit_shock_protection, mul=100, format=int, unit=%
+chemical   = immunities_sect>chemical_burn_immunity, ui_inv_outfit_chemical_burn_protection, mul=100, format=int, unit=%
+radiation  = immunities_sect>radiation_immunity, ui_inv_outfit_radiation_protection, mul=100, format=int, unit=%
+telepatic  = immunities_sect>telepatic_immunity, ui_inv_outfit_telepatic_protection, mul=100, format=int, unit=%
+wound      = immunities_sect>wound_immunity, ui_inv_outfit_wound_protection, mul=100, format=int, unit=%
+fire_wound = immunities_sect>fire_wound_immunity, ui_inv_outfit_fire_wound_protection, mul=100, format=int, unit=%
+strike     = immunities_sect>strike_immunity, ui_inv_outfit_strike_protection, mul=100, format=int, unit=%
+explosion  = immunities_sect>explosion_immunity, ui_inv_outfit_explosion_protection, mul=100, format=int, unit=%
+
+[encyclopedia_scheme.anomaly]
+title  = pda_enc_caption_stats
+order  = power, radius
+power  = max_start_power, pda_enc_stat_anomaly_power, mul=100, format=int
+radius = effective_radius, pda_enc_stat_anomaly_radius, mul=100, format=int, unit=%
+
+[encyclopedia.zone_intro]
+name = pda_ref_art_zone_intro
+text = pda_ref_art_zone_intro_text
+
+[encyclopedia.emission]
+name = pda_ref_art_emission
+text = pda_ref_art_emission_text
+
+[encyclopedia.anomalies_intro]
+name = pda_ref_art_anomalies
+text = pda_ref_art_anomalies_text
+
+[encyclopedia.class.SM_TUSHK]
+name = pda_ref_mon_tushkano
+text = pda_ref_mon_tushkano_text
+icon = ui_inGame2_Tushkan
+
+[encyclopedia.class.SM_FLESH]
+name = pda_ref_mon_flesh
+text = pda_ref_mon_flesh_text
+icon = ui_inGame2_Flesh_1
+
+[encyclopedia.class.SM_DOG_S]
+name = pda_ref_mon_dog
+text = pda_ref_mon_dog_text
+icon = ui_inGame2_Blind_Dog
+
+[encyclopedia.class.SM_BOARW]
+name = pda_ref_mon_boar
+text = pda_ref_mon_boar_text
+icon = ui_inGame2_Kaban
+
+[encyclopedia.class.SM_P_DOG]
+name = pda_ref_mon_pseudodog
+text = pda_ref_mon_pseudodog_text
+icon = ui_inGame2_PseudoDog
+
+[encyclopedia.class.SM_DOG_P]
+name = pda_ref_mon_psy_dog
+text = pda_ref_mon_psy_dog_text
+icon = ui_inGame2_PseudoDog_1
+
+[encyclopedia.class.SM_SNORK]
+name = pda_ref_mon_snork
+text = pda_ref_mon_snork_text
+icon = ui_inGame2_Snork
+
+[encyclopedia.class.SM_BLOOD]
+name = pda_ref_mon_bloodsucker
+text = pda_ref_mon_bloodsucker_text
+icon = ui_inGame2_Krovosos_2
+
+[encyclopedia.class.SM_POLTR]
+name = pda_ref_mon_poltergeist
+text = pda_ref_mon_poltergeist_text
+icon = ui_inGame2_Poltergeyst
+
+[encyclopedia.class.SM_CONTR]
+name = pda_ref_mon_controller
+text = pda_ref_mon_controller_text
+icon = ui_inGame2_Controller
+
+[encyclopedia.class.SM_BURER]
+name = pda_ref_mon_burer
+text = pda_ref_mon_burer_text
+icon = ui_inGame2_Burer
+
+[encyclopedia.class.SM_CHIMS]
+name = pda_ref_mon_chimera
+text = pda_ref_mon_chimera_text
+icon = ui_inGame2_Himera
+
+[encyclopedia.class.SM_GIANT]
+name = pda_ref_mon_gigant
+text = pda_ref_mon_gigant_text
+icon = ui_inGame2_Pseudo_Gigant
+
+[encyclopedia.class.ZS_MBALD]
+name = pda_enc_anom_mbald
+text = pda_enc_anom_mbald_text
+
+[encyclopedia.class.ZS_GALAN]
+name = pda_enc_anom_galan
+text = pda_enc_anom_galan_text
+
+[encyclopedia.class.ZS_MINCE]
+name = pda_enc_anom_mince
+text = pda_enc_anom_mince_text
+
+[encyclopedia.class.ZS_BFUZZ]
+name = pda_enc_anom_bfuzz
+text = pda_enc_anom_bfuzz_text
+
+[encyclopedia.class.ZS_TORRD]
+name = pda_enc_anom_torrd
+text = pda_enc_anom_torrd_text
+
+[encyclopedia.class.ZS_RADIO]
+name = pda_enc_anom_radio
+text = pda_enc_anom_radio_text

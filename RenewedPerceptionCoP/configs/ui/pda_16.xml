@@ -32,13 +32,13 @@
 				</auto_framewindow>
 			</auto_static>
 		</eptTasks>
-		<eptReference>
+		<eptEncyclopedia>
 			<auto_static x="40" y="70" width="966" height="630">
 				<auto_framewindow x="0" y="0" width="966" height="630">
 					<texture a="255">ui_RP2_MID_frame</texture>
 				</auto_framewindow>
 			</auto_static>
-		</eptReference>
+		</eptEncyclopedia>
 		<eptContacts>
 			<auto_static x="40" y="70" width="966" height="630">
 				<auto_framewindow x="0" y="0" width="966" height="630">
@@ -149,7 +149,7 @@
 				<h r="160" g="175" b="190" a="255"/>
 			</text_color>
 		</button>
-		<button x="285" y="0" width="110" height="30" id="eptReference" hint="pda_tab_reference_hint" frame_mode="1">
+		<button x="285" y="0" width="110" height="30" id="eptEncyclopedia" hint="pda_tab_reference_hint" frame_mode="1">
 			<texture_e>ui_RP2_pda_tab_btn_e</texture_e>
 			<texture_h>ui_RP2_pda_tab_btn_h</texture_h>
 			<texture_t>ui_RP2_pda_tab_btn_t</texture_t>

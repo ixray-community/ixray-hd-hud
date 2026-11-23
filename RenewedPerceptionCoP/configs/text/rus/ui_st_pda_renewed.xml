@@ -1323,4 +1323,97 @@
 	<string id="pda_compass_nw">
 		<text>СЗ</text>
 	</string>
+	<string id="pda_enc_grp_ammo">
+		<text>Боеприпасы</text>
+	</string>
+	<string id="pda_enc_grp_helmets">
+		<text>Шлемы</text>
+	</string>
+	<string id="pda_enc_grp_medicine">
+		<text>Медицина и еда</text>
+	</string>
+	<string id="pda_enc_grp_devices">
+		<text>Детекторы</text>
+	</string>
+	<string id="pda_enc_grp_anomalies">
+		<text>Аномалии</text>
+	</string>
+	<string id="pda_enc_caption_stats">
+		<text>Характеристики</text>
+	</string>
+	<string id="pda_enc_caption_protection">
+		<text>Защита</text>
+	</string>
+	<string id="pda_enc_caption_effects">
+		<text>Эффекты</text>
+	</string>
+	<string id="pda_enc_caption_vulnerability">
+		<text>Получаемый урон</text>
+	</string>
+	<string id="pda_enc_stat_box">
+		<text>Патронов в пачке</text>
+	</string>
+	<string id="pda_enc_stat_k_hit">
+		<text>Множитель урона</text>
+	</string>
+	<string id="pda_enc_stat_k_ap">
+		<text>Бронебойность</text>
+	</string>
+	<string id="pda_enc_stat_pellets">
+		<text>Дробин в заряде</text>
+	</string>
+	<string id="pda_enc_stat_k_dist">
+		<text>Дальность</text>
+	</string>
+	<string id="pda_enc_stat_uses">
+		<text>Число применений</text>
+	</string>
+	<string id="pda_enc_stat_detect_radius">
+		<text>Радиус обнаружения</text>
+	</string>
+	<string id="pda_enc_unit_m">
+		<text>м</text>
+	</string>
+	<string id="pda_enc_stat_anomaly_power">
+		<text>Сила удара</text>
+	</string>
+	<string id="pda_enc_stat_anomaly_radius">
+		<text>Радиус действия</text>
+	</string>
+	<string id="pda_enc_anom_mbald">
+		<text>Трамплин</text>
+	</string>
+	<string id="pda_enc_anom_mbald_text">
+		<text>Гравитационная аномалия. Подбрасывает и бьёт о землю всё, что попадает в неё. Выдаёт себя дрожанием воздуха и опавшей листвой.</text>
+	</string>
+	<string id="pda_enc_anom_galan">
+		<text>Электра</text>
+	</string>
+	<string id="pda_enc_anom_galan_text">
+		<text>Электрическая аномалия. Бьёт разрядом всё, что приближается. Видна по голубым всполохам и треску.</text>
+	</string>
+	<string id="pda_enc_anom_mince">
+		<text>Воронка</text>
+	</string>
+	<string id="pda_enc_anom_mince_text">
+		<text>Гравитационная аномалия. Затягивает жертву к центру и разрывает. Самая смертоносная из гравитационных.</text>
+	</string>
+	<string id="pda_enc_anom_bfuzz">
+		<text>Жгучий пух</text>
+	</string>
+	<string id="pda_enc_anom_bfuzz_text">
+		<text>Свисающие с деревьев и стен нити, которые обжигают при касании. Опасна для тех, кто идёт напролом.</text>
+	</string>
+	<string id="pda_enc_anom_torrd">
+		<text>Жарка</text>
+	</string>
+	<string id="pda_enc_anom_torrd_text">
+		<text>Термическая аномалия. Выпускает столб огня, когда в неё кто-то входит.</text>
+	</string>
+	<string id="pda_enc_anom_radio">
+		<text>Радиационное пятно</text>
+	</string>
+	<string id="pda_enc_anom_radio_text">
+		<text>Участок с высоким радиационным фоном. Без защиты и антирада долго здесь не продержаться.</text>
+	</string>
 </string_table>

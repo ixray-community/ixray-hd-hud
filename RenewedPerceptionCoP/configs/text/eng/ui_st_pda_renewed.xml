@@ -1266,4 +1266,97 @@
 	<string id="pda_compass_nw">
 		<text>NW</text>
 	</string>
+	<string id="pda_enc_grp_ammo">
+		<text>Ammunition</text>
+	</string>
+	<string id="pda_enc_grp_helmets">
+		<text>Helmets</text>
+	</string>
+	<string id="pda_enc_grp_medicine">
+		<text>Medicine and food</text>
+	</string>
+	<string id="pda_enc_grp_devices">
+		<text>Detectors</text>
+	</string>
+	<string id="pda_enc_grp_anomalies">
+		<text>Anomalies</text>
+	</string>
+	<string id="pda_enc_caption_stats">
+		<text>Characteristics</text>
+	</string>
+	<string id="pda_enc_caption_protection">
+		<text>Protection</text>
+	</string>
+	<string id="pda_enc_caption_effects">
+		<text>Effects</text>
+	</string>
+	<string id="pda_enc_caption_vulnerability">
+		<text>Damage taken</text>
+	</string>
+	<string id="pda_enc_stat_box">
+		<text>Rounds per box</text>
+	</string>
+	<string id="pda_enc_stat_k_hit">
+		<text>Damage multiplier</text>
+	</string>
+	<string id="pda_enc_stat_k_ap">
+		<text>Armor piercing</text>
+	</string>
+	<string id="pda_enc_stat_pellets">
+		<text>Pellets per shot</text>
+	</string>
+	<string id="pda_enc_stat_k_dist">
+		<text>Range</text>
+	</string>
+	<string id="pda_enc_stat_uses">
+		<text>Uses</text>
+	</string>
+	<string id="pda_enc_stat_detect_radius">
+		<text>Detection radius</text>
+	</string>
+	<string id="pda_enc_unit_m">
+		<text>m</text>
+	</string>
+	<string id="pda_enc_stat_anomaly_power">
+		<text>Hit power</text>
+	</string>
+	<string id="pda_enc_stat_anomaly_radius">
+		<text>Effective radius</text>
+	</string>
+	<string id="pda_enc_anom_mbald">
+		<text>Springboard</text>
+	</string>
+	<string id="pda_enc_anom_mbald_text">
+		<text>A gravitational anomaly. It throws anything that enters it into the air and slams it into the ground. Betrayed by rippling air and scattered leaves.</text>
+	</string>
+	<string id="pda_enc_anom_galan">
+		<text>Electro</text>
+	</string>
+	<string id="pda_enc_anom_galan_text">
+		<text>An electrical anomaly. It strikes anything nearby with discharges. Visible by blue flashes and crackling.</text>
+	</string>
+	<string id="pda_enc_anom_mince">
+		<text>Vortex</text>
+	</string>
+	<string id="pda_enc_anom_mince_text">
+		<text>A gravitational anomaly. It pulls the victim to its center and tears it apart. The deadliest of the gravitational ones.</text>
+	</string>
+	<string id="pda_enc_anom_bfuzz">
+		<text>Burnt fuzz</text>
+	</string>
+	<string id="pda_enc_anom_bfuzz_text">
+		<text>Strands hanging from trees and walls that burn on contact. Dangerous for those who rush through.</text>
+	</string>
+	<string id="pda_enc_anom_torrd">
+		<text>Burner</text>
+	</string>
+	<string id="pda_enc_anom_torrd_text">
+		<text>A thermal anomaly. It releases a pillar of fire when something enters it.</text>
+	</string>
+	<string id="pda_enc_anom_radio">
+		<text>Radiation spot</text>
+	</string>
+	<string id="pda_enc_anom_radio_text">
+		<text>An area with a high radiation level. Without protection and antirad you will not last long here.</text>
+	</string>
 </string_table>
