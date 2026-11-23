@@ -1,0 +1,95 @@
+this.SECTION = "weapon_customize_dev"
+this.PENDING_TIMEOUT = 5000
+this.pending = {}
+
+function enabled()
+	return ui_weapon_customize.ini_bool(this.SECTION, "enabled", false)
+end
+
+function spawn(section)
+	if not db.actor or not alife() then
+		return false
+	end
+	alife():create(section, db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), db.actor:id())
+	printf("[weapon_customize_dev] spawned [%s]", section)
+	return true
+end
+
+function owned(wnd, section)
+	local loose = wnd.loose and wnd.loose[section]
+	if loose and loose[1] then
+		return true
+	end
+	for _, node in ipairs(wnd.slots or {}) do
+		if node.attached_section == section then
+			return true
+		end
+	end
+	return false
+end
+
+function on_missing_part(wnd, card, slot)
+	if not enabled() or not spawn(card.section) then
+		return false
+	end
+
+	if ui_weapon_customize.ini_bool(this.SECTION, "auto_install", true) then
+		table.insert(this.pending, {
+			root = wnd.root_id,
+			key = slot.key,
+			section = card.section,
+			time = time_global(),
+		})
+	end
+
+	wnd.pending_until = time_global() + this.PENDING_TIMEOUT
+	wnd.next_refresh = 0
+	wnd:show_toast("DEV: " .. ui_weapon_customize.part_name(card.section, true))
+	return true
+end
+
+function on_rebuilt(wnd)
+	local now = time_global()
+	for i = #this.pending, 1, -1 do
+		local item = this.pending[i]
+		local loose = wnd.loose and wnd.loose[item.section]
+		if item.root ~= wnd.root_id or now - item.time > this.PENDING_TIMEOUT then
+			table.remove(this.pending, i)
+		elseif loose and loose[1] and wnd.slot_by_key[item.key] then
+			table.remove(this.pending, i)
+			wnd.sel_key = item.key
+			wnd:apply_card({
+				kind = "part",
+				section = item.section,
+				part_id = loose[1].id,
+				condition = loose[1].condition,
+				count = #loose,
+			})
+		end
+	end
+end
+
+function on_opened(wnd)
+	if not enabled() or not ui_weapon_customize.ini_bool(this.SECTION, "spawn_all_on_open", false) then
+		return
+	end
+	local done = {}
+	for _, node in ipairs(wnd.slots or {}) do
+		for _, section in ipairs(node.allowed) do
+			if not done[section] and not owned(wnd, section) then
+				done[section] = true
+				spawn(section)
+			end
+		end
+	end
+	wnd.pending_until = time_global() + this.PENDING_TIMEOUT
+	wnd.next_refresh = 0
+end
+
+function on_game_start()
+	this.pending = {}
+	ui_weapon_customize.hooks.missing_part = on_missing_part
+	ui_weapon_customize.hooks.rebuilt = on_rebuilt
+	ui_weapon_customize.hooks.opened = on_opened
+	ui_weapon_customize.hooks.show_missing = enabled
+end

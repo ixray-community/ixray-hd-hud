@@ -1,0 +1,1713 @@
+this.NO_ID = 4294967295
+this.CONTEXT = "weapon_customize"
+this.UNDO_LIMIT = 32
+this.wnd = nil
+this.cfg = nil
+this.sounds = {}
+this.hooks = {
+	opened = nil,
+	rebuilt = nil,
+	missing_part = nil,
+	show_missing = nil,
+}
+
+this.ACTIONS = {
+	wc_slot_prev = "action_slot_prev",
+	wc_slot_next = "action_slot_next",
+	wc_part_prev = "action_part_prev",
+	wc_part_next = "action_part_next",
+	wc_apply = "action_apply",
+	wc_detach = "action_detach",
+	wc_undo = "action_undo",
+	wc_redo = "action_redo",
+	wc_revert = "action_revert",
+	wc_focus = "action_focus",
+	wc_reset_view = "action_reset_view",
+	wc_rotate_left = "action_rotate_left",
+	wc_rotate_right = "action_rotate_right",
+	wc_zoom_in = "action_zoom_in",
+	wc_zoom_out = "action_zoom_out",
+	wc_close = "action_close",
+}
+
+function tr(id)
+	return game.translate_string(id)
+end
+
+function trim(value)
+	return (string.gsub(value or "", "^%s*(.-)%s*$", "%1"))
+end
+
+function split(value)
+	local result = {}
+	for item in string.gmatch(value or "", "[^,]+") do
+		item = trim(item)
+		if item ~= "" then
+			result[#result + 1] = item
+		end
+	end
+	return result
+end
+
+function ini_string(section, key, default)
+	local ini = system_ini()
+	if not section or not ini:section_exist(section) or not ini:line_exist(section, key) then
+		return default
+	end
+	local ok, value = pcall(ini.r_string, ini, section, key)
+	if ok and value ~= nil then
+		return trim(value)
+	end
+	return default
+end
+
+function ini_number(section, key, default)
+	return tonumber(ini_string(section, key, nil)) or default
+end
+
+function ini_bool(section, key, default)
+	local value = ini_string(section, key, nil)
+	if value == nil then
+		return default
+	end
+	value = string.lower(value)
+	return value == "true" or value == "1" or value == "on" or value == "yes"
+end
+
+function show_missing()
+	if get_console():get_bool("g_god") then
+		return true
+	end
+	return this.hooks.show_missing and this.hooks.show_missing() or false
+end
+
+function load_config()
+	local s = "weapon_customize"
+	local cfg = {
+		xml = ini_string(s, "xml", "weapon_customize.xml"),
+		refresh_ms = ini_number(s, "refresh_ms", 250),
+		focus_zoom = ini_number(s, "focus_zoom", 1.9),
+		rotate_step = math.rad(ini_number(s, "rotate_step", 30)),
+		sounds = {},
+		groups = {},
+		slots = {},
+		stats = {},
+	}
+
+	for _, name in ipairs({"open", "close", "select", "attach", "detach", "error"}) do
+		cfg.sounds[name] = ini_string(s, "snd_" .. name, nil)
+	end
+
+	local xml = CScriptXmlInit()
+	xml:ParseFile(cfg.xml)
+
+	local function attr(path, index, name, default)
+		local value = xml:ReadAttribute(path, index, name)
+		if value == nil or value == "" then
+			return default
+		end
+		return value
+	end
+
+	local function flag(path, index, name)
+		local value = attr(path, index, name, "0")
+		return value == "1" or value == "true"
+	end
+
+	local function each(list, item, fn)
+		local count = xml:GetNodesNum(list, 0, item)
+		if count <= 0 or not xml:NavigateToNode(list, 0) then
+			return
+		end
+		for i = 0, count - 1 do
+			fn(i)
+		end
+		xml:NavigateToRoot()
+	end
+
+	each("groups", "group", function(i)
+		local id = attr("group", i, "id", nil)
+		if id then
+			cfg.groups[id] = {
+				label = attr("group", i, "label", id),
+				order = tonumber(attr("group", i, "order", "100")) or 100,
+			}
+		end
+	end)
+
+	each("slots", "slot", function(i)
+		local bone = attr("slot", i, "bone", nil)
+		if bone then
+			cfg.slots[bone] = {
+				label = attr("slot", i, "label", bone),
+				group = attr("slot", i, "group", "other"),
+				order = tonumber(attr("slot", i, "order", "1000")) or 1000,
+			}
+		end
+	end)
+
+	each("stats", "stat", function(i)
+		local id = attr("stat", i, "id", tostring(i))
+		cfg.stats[#cfg.stats + 1] = {
+			id = id,
+			label = attr("stat", i, "label", id),
+			key = attr("stat", i, "key", ""),
+			mode = attr("stat", i, "mode", "sum"),
+			include_root = flag("stat", i, "include_root"),
+			format = attr("stat", i, "format", "%.2f"),
+			unit = attr("stat", i, "unit", nil),
+			better = attr("stat", i, "better", "none"),
+			hide_zero = flag("stat", i, "hide_zero"),
+			hide_default = flag("stat", i, "hide_default"),
+			empty = attr("stat", i, "empty", "wc_none"),
+		}
+	end)
+
+	return cfg
+end
+
+function config()
+	if not this.cfg then
+		this.cfg = load_config()
+	end
+	return this.cfg
+end
+
+function play(name)
+	local path = config().sounds[name]
+	if not path or path == "" or not db.actor then
+		return
+	end
+	local snd = this.sounds[path]
+	if snd == nil then
+		local ok, result = pcall(sound_object, path)
+		snd = ok and result or false
+		this.sounds[path] = snd
+	end
+	if snd then
+		snd:play(db.actor, 0, sound_object.s2d)
+	end
+end
+
+function slot_meta(bone)
+	local meta = config().slots[bone]
+	if meta then
+		return meta
+	end
+	return {label = bone, group = "other", order = 1000}
+end
+
+function group_meta(id)
+	return config().groups[id] or config().groups.other or {label = "wc_group_other", order = 100}
+end
+
+function part_name(section, short)
+	local key = short and ini_string(section, "inv_name_short", nil) or nil
+	key = key or ini_string(section, "inv_name", nil) or section
+	return tr(key)
+end
+
+function part_description(section)
+	local key = ini_string(section, "description", nil)
+	if not key then
+		return ""
+	end
+	local text = tr(key)
+	return text ~= key and text or ""
+end
+
+function slot_label(slot)
+	local label = tr(slot.meta.label)
+	if label == slot.meta.label then
+		label = slot.bone
+	end
+	return label
+end
+
+-----------------------------------------------------------------------------
+
+class "weapon_customize_wnd" (CUIScriptWnd)
+
+function weapon_customize_wnd:__init(root_id) super()
+	self.root_id = root_id
+	self.opened = false
+	self.slots = {}
+	self.entries = {}
+	self.cards = {}
+	self.sel_key = nil
+	self.sel_card = 1
+	self.hover_card = nil
+	self.list_offset = 1
+	self.card_offset = 1
+	self.undo = {}
+	self.redo = {}
+	self.focus_mode = true
+	self.signature = -1
+	self.parts_signature = ""
+	self.next_refresh = 0
+	self.pending_until = 0
+	self.toast_until = 0
+	self.preview_key = nil
+
+	self:SetWndRect(Frect():set(0, 0, 1024, 768))
+	self:SetStopAnyMove(true)
+	self:InitControls()
+end
+
+function weapon_customize_wnd:__finalize()
+end
+
+function weapon_customize_wnd:read_layout()
+	local xml = self.xml
+	local function num(attr, default)
+		return tonumber(xml:ReadAttribute("layout", 0, attr)) or default
+	end
+	self.L = {
+		margin = num("margin", 26),
+		header_h = num("header_h", 46),
+		footer_h = num("footer_h", 34),
+		gap = num("gap", 12),
+		left_min = num("left_min", 230),
+		left_max = num("left_max", 300),
+		left_k = num("left_k", 0.21),
+		right_min = num("right_min", 270),
+		right_max = num("right_max", 350),
+		right_k = num("right_k", 0.25),
+		stats_h = num("stats_h", 96),
+		row_h = num("row_h", 27),
+		card_h = num("card_h", 32),
+	}
+
+	self.C = {}
+	for _, name in ipairs({"text", "dim", "accent", "good", "bad", "warn", "marker_full", "marker_empty", "marker_none", "line_full", "line_empty"}) do
+		self.C[name] = xml:GetColor("colors:" .. name, 0)
+	end
+end
+
+function weapon_customize_wnd:place(wnd, x, y, w, h)
+	local kx = self.kx
+	wnd:SetWndPos(x * kx, y)
+	wnd:SetWndSize(w * kx, h)
+	wnd:SetWidth(w * kx)
+	wnd:SetHeight(h)
+end
+
+function weapon_customize_wnd:InitControls()
+	local cfg = config()
+	self.xml = CScriptXmlInit()
+	local xml = self.xml
+	xml:ParseFile(cfg.xml)
+	self:read_layout()
+
+	local L = self.L
+	local width = device().width
+	local height = device().height
+	self.kx = (height / width) * (1024 / 768)
+	self.vw = 768 * width / height
+	local vw = self.vw
+	local vh = 768
+
+	self.left_w = math.max(L.left_min, math.min(L.left_max, vw * L.left_k))
+	self.right_w = math.max(L.right_min, math.min(L.right_max, vw * L.right_k))
+
+	local body_y = L.margin + L.header_h + 6
+	local footer_y = vh - L.margin - L.footer_h
+	local body_h = footer_y - 8 - body_y
+	local left_x = L.margin
+	local right_x = vw - L.margin - self.right_w
+	local center_x = left_x + self.left_w + L.gap
+	local center_w = right_x - L.gap - center_x
+	local view_h = body_h - L.stats_h - L.gap
+
+	self.bg = xml:InitStatic("background", self)
+	self.bg:SetWndPos(0, 0)
+	self.bg:SetWndSize(1024, 768)
+
+	self.frame = xml:InitFrame("main_frame", self)
+	self:place(self.frame, L.margin - 10, L.margin - 10, vw - (L.margin - 10) * 2, vh - (L.margin - 10) * 2)
+
+	self.header = xml:InitFrameLine("header_line", self)
+	self:place(self.header, L.margin, L.margin, vw - L.margin * 2, L.header_h - 10)
+
+	self.title = xml:InitTextWnd("title", self)
+	self:place(self.title, L.margin + 12, L.margin + 1, 520, 22)
+	self.subtitle = xml:InitTextWnd("subtitle", self)
+	self:place(self.subtitle, L.margin + 12, L.margin + 22, 520, 14)
+	self.subtitle:SetTextST("wc_subtitle")
+
+	self.summary = xml:InitTextWnd("summary", self)
+	self:place(self.summary, vw - L.margin - 52 - 420, L.margin + 6, 420, 22)
+
+	self.btn_close = xml:Init3tButton("btn_close", self)
+	self:place(self.btn_close, vw - L.margin - 36, L.margin + 6, 26, 22)
+	self:Register(self.btn_close, "btn_close")
+	self:AddCallback("btn_close", ui_events.BUTTON_CLICKED, function() self:Close() end, self)
+
+	-- left panel
+	self.left_panel = xml:InitFrame("panel", self)
+	self:place(self.left_panel, left_x, body_y, self.left_w, body_h)
+	self.left_caption = xml:InitTextWnd("section_caption", self.left_panel)
+	self:place(self.left_caption, 4, 6, self.left_w - 90, 26)
+	self.left_caption:SetTextST("wc_slots_caption")
+	self.left_counter = xml:InitTextWnd("section_counter", self.left_panel)
+	self:place(self.left_counter, self.left_w - 96, 6, 82, 26)
+	self.left_line = xml:InitFrameLine("section_line", self.left_panel)
+	self:place(self.left_line, 8, 32, self.left_w - 16, 3)
+
+	self.list_x = 10
+	self.list_y = 40
+	self.list_w = self.left_w - 20
+	self.list_h = body_h - self.list_y - 10
+	self.list = CUIWindow()
+	self.list:SetAutoDelete(true)
+	self.left_panel:AttachChild(self.list)
+	self:place(self.list, self.list_x, self.list_y, self.list_w, self.list_h)
+
+	self.row_pool = {}
+	local rows = math.max(4, math.floor(self.list_h / L.row_h))
+	for i = 1, rows do
+		local row = {}
+		row.btn = xml:Init3tButton("slot_row", self.list)
+		row.value = xml:InitTextWnd("slot_value", row.btn)
+		local name = "wc_row_" .. i
+		self:Register(row.btn, name)
+		self:AddCallback(name, ui_events.BUTTON_CLICKED, function() self:on_row_click(i) end, self)
+		row.btn:Show(false)
+		self.row_pool[i] = row
+	end
+	self.group_pool = {}
+	for i = 1, 8 do
+		local caption = xml:InitTextWnd("group_caption", self.list)
+		caption:Show(false)
+		self.group_pool[i] = caption
+	end
+	self.row_selection = xml:InitFrameLine("selection", self.list)
+	self.row_selection:Show(false)
+
+	-- center
+	self.viewport = xml:InitWeaponViewport("viewport", self)
+	self:place(self.viewport, center_x, body_y, center_w, view_h)
+	self.viewport:SetLineColors(self.C.line_full, self.C.accent, self.C.line_empty)
+	self.view_w = center_w
+	self.view_h = view_h
+
+	self.marker_pool = {}
+	for i = 1, 40 do
+		local marker = xml:InitStatic("marker", self.viewport)
+		marker:Show(false)
+		self.marker_pool[i] = marker
+	end
+
+	self.callouts = {}
+	for i = 1, 2 do
+		local callout = xml:InitTextWnd("callout", self.viewport)
+		callout:Show(false)
+		self.callouts[i] = callout
+	end
+
+	self.view_hint = xml:InitTextWnd("viewport_hint", self.viewport)
+	self:place(self.view_hint, 12, view_h - 24, center_w - 24, 18)
+	self.view_hint:SetTextST("wc_viewport_hint")
+
+	self.toast = xml:InitTextWnd("toast", self.viewport)
+	self:place(self.toast, (center_w - 420) * 0.5, 12, 420, 24)
+	self.toast:Show(false)
+
+	self.empty_view = xml:InitTextWnd("empty_text", self.viewport)
+	self:place(self.empty_view, 20, view_h * 0.5 - 20, center_w - 40, 40)
+	self.empty_view:Show(false)
+
+	-- stats
+	self.stats_panel = xml:InitFrame("panel", self)
+	self:place(self.stats_panel, center_x, body_y + view_h + L.gap, center_w, L.stats_h)
+	self.stats_w = center_w
+	self.stat_pool = {}
+	for i = 1, #config().stats do
+		local stat = {}
+		stat.label = xml:InitTextWnd("stat_label", self.stats_panel)
+		stat.value = xml:InitTextWnd("stat_value", self.stats_panel)
+		stat.delta = xml:InitTextWnd("stat_delta", self.stats_panel)
+		self.stat_pool[i] = stat
+	end
+
+	-- right panel
+	self.right_panel = xml:InitFrame("panel", self)
+	self:place(self.right_panel, right_x, body_y, self.right_w, body_h)
+	self.right_caption = xml:InitTextWnd("section_caption", self.right_panel)
+	self:place(self.right_caption, 4, 6, self.right_w - 90, 26)
+	self.right_counter = xml:InitTextWnd("section_counter", self.right_panel)
+	self:place(self.right_counter, self.right_w - 96, 6, 82, 26)
+	self.right_line = xml:InitFrameLine("section_line", self.right_panel)
+	self:place(self.right_line, 8, 32, self.right_w - 16, 3)
+
+	local details_h = 210
+	self.card_x = 10
+	self.card_y = 40
+	self.card_w = self.right_w - 20
+	self.card_h_total = body_h - self.card_y - details_h - 16
+	self.cards_wnd = CUIWindow()
+	self.cards_wnd:SetAutoDelete(true)
+	self.right_panel:AttachChild(self.cards_wnd)
+	self:place(self.cards_wnd, self.card_x, self.card_y, self.card_w, self.card_h_total)
+
+	self.card_pool = {}
+	local cards = math.max(3, math.floor(self.card_h_total / (L.card_h + 2)))
+	for i = 1, cards do
+		local card = {}
+		card.btn = xml:Init3tButton("part_card", self.cards_wnd)
+		card.mark = xml:InitStatic("part_mark", card.btn)
+		card.state = xml:InitTextWnd("part_state", card.btn)
+		local name = "wc_card_" .. i
+		self:Register(card.btn, name)
+		self:AddCallback(name, ui_events.BUTTON_CLICKED, function() self:on_card_click(i) end, self)
+		card.btn:Show(false)
+		self.card_pool[i] = card
+	end
+	self.card_selection = xml:InitFrameLine("selection", self.cards_wnd)
+	self.card_selection:Show(false)
+
+	self.cards_empty = xml:InitTextWnd("empty_text", self.cards_wnd)
+	self:place(self.cards_empty, 6, 6, self.card_w - 12, 60)
+	self.cards_empty:Show(false)
+
+	local details_y = body_h - details_h - 6
+	self.details_line = xml:InitFrameLine("section_line", self.right_panel)
+	self:place(self.details_line, 8, details_y, self.right_w - 16, 3)
+	self.details_title = xml:InitTextWnd("details_title", self.right_panel)
+	self:place(self.details_title, 14, details_y + 8, self.right_w - 28, 24)
+	self.details_text = xml:InitTextWnd("details_text", self.right_panel)
+	self:place(self.details_text, 14, details_y + 36, self.right_w - 28, 110)
+	self.details_warning = xml:InitTextWnd("details_warning", self.right_panel)
+	self:place(self.details_warning, 14, details_y + 150, self.right_w - 28, 52)
+
+	-- footer
+	self.footer = xml:InitFrameLine("footer_line", self)
+	self:place(self.footer, L.margin, footer_y, vw - L.margin * 2, L.footer_h - 4)
+	self.hotkeys = xml:InitHotkeyBar("hotkeys", self)
+	self.hotkeys:SetWndPos((L.margin + 14) * self.kx, footer_y + 6)
+end
+
+-----------------------------------------------------------------------------
+-- data
+
+function weapon_customize_wnd:root_object()
+	local obj = level.object_by_id(self.root_id)
+	if not obj or not db.actor then
+		return nil
+	end
+	local parent = obj:parent()
+	if not parent or parent:id() ~= db.actor:id() then
+		return nil
+	end
+	return obj
+end
+
+function weapon_customize_wnd:rebuild()
+	local raw = weapon_customize.slots(self.root_id)
+	local nodes = {}
+	local roots = {}
+	for i, item in ipairs(raw) do
+		local node = {
+			index = i,
+			owner = item.owner,
+			owner_section = item.owner_section,
+			bone = item.bone,
+			depth = item.depth or 0,
+			parent = item.parent or 0,
+			allowed = {},
+			attached = item.attached,
+			attached_section = item.attached_section,
+			children = {},
+		}
+		for _, section in ipairs(item.allowed or {}) do
+			node.allowed[#node.allowed + 1] = section
+		end
+		node.key = tostring(node.owner) .. ":" .. node.bone
+		node.meta = slot_meta(node.bone)
+		node.group = group_meta(node.meta.group)
+		nodes[i] = node
+		if node.parent > 0 and nodes[node.parent] then
+			table.insert(nodes[node.parent].children, node)
+		else
+			roots[#roots + 1] = node
+		end
+	end
+
+	local function by_order(a, b)
+		if a.depth == 0 and b.depth == 0 and a.group.order ~= b.group.order then
+			return a.group.order < b.group.order
+		end
+		if a.meta.order ~= b.meta.order then
+			return a.meta.order < b.meta.order
+		end
+		return a.bone < b.bone
+	end
+
+	local flat = {}
+	local function walk(list)
+		table.sort(list, by_order)
+		for _, node in ipairs(list) do
+			flat[#flat + 1] = node
+			walk(node.children)
+		end
+	end
+	walk(roots)
+
+	self.slots = flat
+	self.slot_by_key = {}
+	self.children_of = {}
+	self.attached_at = {}
+	for _, node in ipairs(flat) do
+		self.slot_by_key[node.key] = node
+		if node.attached then
+			self.children_of[node.owner] = self.children_of[node.owner] or {}
+			table.insert(self.children_of[node.owner], node.attached)
+			self.attached_at[node.attached] = node
+		end
+	end
+
+	self.entries = {}
+	local last_group = nil
+	for _, node in ipairs(flat) do
+		if node.depth == 0 and node.meta.group ~= last_group then
+			last_group = node.meta.group
+			self.entries[#self.entries + 1] = {kind = "group", label = node.group.label}
+		end
+		self.entries[#self.entries + 1] = {kind = "slot", slot = node}
+	end
+
+	self.loose = {}
+	for _, part in ipairs(weapon_customize.actor_parts()) do
+		local list = self.loose[part.section]
+		if not list then
+			list = {}
+			self.loose[part.section] = list
+		end
+		list[#list + 1] = part
+	end
+	for _, list in pairs(self.loose) do
+		table.sort(list, function(a, b) return a.condition > b.condition end)
+	end
+
+	if not self.sel_key or not self.slot_by_key[self.sel_key] then
+		self.sel_key = flat[1] and flat[1].key or nil
+	end
+
+	self:rebuild_cards()
+	self:refresh_all()
+
+	if this.hooks.rebuilt then
+		this.hooks.rebuilt(self)
+	end
+end
+
+function weapon_customize_wnd:parts_signature_now()
+	local count = 0
+	local sum = 0
+	for _, part in ipairs(weapon_customize.actor_parts()) do
+		count = count + 1
+		sum = (sum + part.id * 7) % 1000003
+	end
+	return tostring(count) .. ":" .. tostring(sum)
+end
+
+function weapon_customize_wnd:selected_slot()
+	return self.sel_key and self.slot_by_key[self.sel_key] or nil
+end
+
+function weapon_customize_wnd:subtree(id, result)
+	result = result or {}
+	result[id] = true
+	for _, child in ipairs(self.children_of[id] or {}) do
+		self:subtree(child, result)
+	end
+	return result
+end
+
+function weapon_customize_wnd:tree_sections(removed, add_section, add_after_key)
+	local result = {}
+	for _, node in ipairs(self.slots) do
+		if node.attached and not removed[node.attached] then
+			local inside = false
+			if removed[node.owner] then
+				inside = true
+			end
+			if not inside then
+				result[#result + 1] = node.attached_section
+			end
+		end
+		if add_section and node.key == add_after_key then
+			result[#result + 1] = add_section
+		end
+	end
+	return result
+end
+
+function weapon_customize_wnd:section_conflicts(section, slot)
+	local result = {}
+	local own = {}
+	for _, name in ipairs(split(ini_string(section, "conflicts", ""))) do
+		own[name] = true
+	end
+	for _, node in ipairs(self.slots) do
+		if node.attached and node.key ~= slot.key then
+			local other = {}
+			for _, name in ipairs(split(ini_string(node.attached_section, "conflicts", ""))) do
+				other[name] = true
+			end
+			if own[node.attached_section] or other[section] then
+				result[#result + 1] = node.attached
+			end
+		end
+	end
+	return result
+end
+
+function weapon_customize_wnd:best_instance(section, slot)
+	local list = self.loose[section]
+	if list and list[1] then
+		return list[1].id, list[1].condition, false
+	end
+	for _, node in ipairs(self.slots) do
+		if node.attached_section == section and node.key ~= slot.key then
+			return node.attached, nil, true
+		end
+	end
+	return nil
+end
+
+function weapon_customize_wnd:rebuild_cards()
+	local slot = self:selected_slot()
+	local cards = {}
+	if slot then
+		if slot.attached then
+			cards[#cards + 1] = {kind = "installed", section = slot.attached_section, part_id = slot.attached}
+			cards[#cards + 1] = {kind = "detach"}
+		end
+		local available = {}
+		local missing = {}
+		for _, section in ipairs(slot.allowed) do
+			if section ~= slot.attached_section then
+				local id, condition, moved = self:best_instance(section, slot)
+				local loose = self.loose[section]
+				local card = {
+					kind = "part",
+					section = section,
+					part_id = id,
+					condition = condition,
+					moved = moved,
+					count = loose and #loose or 0,
+				}
+				if id then
+					available[#available + 1] = card
+				elseif show_missing() then
+					missing[#missing + 1] = card
+				end
+			end
+		end
+		local function by_name(a, b)
+			return part_name(a.section) < part_name(b.section)
+		end
+		table.sort(available, by_name)
+		table.sort(missing, by_name)
+		for _, card in ipairs(available) do
+			cards[#cards + 1] = card
+		end
+		for _, card in ipairs(missing) do
+			cards[#cards + 1] = card
+		end
+	end
+	self.cards = cards
+	if self.sel_card > #cards then
+		self.sel_card = math.max(1, #cards)
+	end
+	self.hover_card = nil
+end
+
+-----------------------------------------------------------------------------
+-- view refresh
+
+function weapon_customize_wnd:refresh_all()
+	self:refresh_header()
+	self:refresh_slots()
+	self:refresh_cards()
+	self:refresh_preview()
+end
+
+function weapon_customize_wnd:refresh_header()
+	local obj = level.object_by_id(self.root_id)
+	if obj then
+		self.title:SetText(part_name(obj:section()))
+	end
+	local used = 0
+	for _, node in ipairs(self.slots) do
+		if node.attached then
+			used = used + 1
+		end
+	end
+	self.left_counter:SetText(string.format("%d / %d", used, #self.slots))
+	local weight = 0
+	if obj then
+		weight = ini_number(obj:section(), "inv_weight", 0)
+	end
+	for _, node in ipairs(self.slots) do
+		if node.attached_section then
+			weight = weight + ini_number(node.attached_section, "inv_weight", 0)
+		end
+	end
+	self.summary:SetText(string.format(tr("wc_summary"), used, #self.slots, weight))
+end
+
+function weapon_customize_wnd:entry_index_of_selection()
+	for i, entry in ipairs(self.entries) do
+		if entry.kind == "slot" and entry.slot.key == self.sel_key then
+			return i
+		end
+	end
+	return 1
+end
+
+function weapon_customize_wnd:entry_height(entry)
+	return entry.kind == "group" and 22 or self.L.row_h
+end
+
+function weapon_customize_wnd:refresh_slots()
+	for _, row in ipairs(self.row_pool) do
+		row.btn:Show(false)
+		row.entry = nil
+	end
+	for _, caption in ipairs(self.group_pool) do
+		caption:Show(false)
+	end
+	self.row_selection:Show(false)
+
+	if #self.entries == 0 then
+		self.list_offset = 1
+		return
+	end
+	self.list_offset = math.max(1, math.min(self.list_offset, #self.entries))
+
+	local selected = self:entry_index_of_selection()
+	if selected < self.list_offset then
+		self.list_offset = selected
+	end
+
+	local function fits(from, to)
+		local h = 0
+		for i = from, to do
+			h = h + self:entry_height(self.entries[i]) + 1
+		end
+		return h <= self.list_h
+	end
+	while self.list_offset < selected and not fits(self.list_offset, selected) do
+		self.list_offset = self.list_offset + 1
+	end
+	if self.list_offset > 1 and self.entries[self.list_offset - 1] and self.entries[self.list_offset - 1].kind == "group" and fits(self.list_offset - 1, selected) then
+		self.list_offset = self.list_offset - 1
+	end
+
+	local y = 0
+	local row_i = 0
+	local group_i = 0
+	for i = self.list_offset, #self.entries do
+		local entry = self.entries[i]
+		local h = self:entry_height(entry)
+		if y + h > self.list_h then
+			break
+		end
+		if entry.kind == "group" then
+			group_i = group_i + 1
+			local caption = self.group_pool[group_i]
+			if caption then
+				self:place(caption, 0, y, self.list_w, h)
+				caption:SetTextST(entry.label)
+				caption:Show(true)
+			end
+		else
+			row_i = row_i + 1
+			local row = self.row_pool[row_i]
+			if not row then
+				break
+			end
+			local slot = entry.slot
+			local indent = slot.depth * 14
+			self:place(row.btn, indent, y, self.list_w - indent, h)
+			self:place(row.value, (self.list_w - indent) - 150, 0, 140, h)
+			local prefix = slot.depth > 0 and "- " or ""
+			row.btn:SetText(prefix .. slot_label(slot))
+			if slot.attached then
+				row.value:SetText(part_name(slot.attached_section, true))
+				row.value:SetTextColor(self.C.text)
+			elseif #slot.allowed == 0 then
+				row.value:SetText(tr("wc_slot_locked"))
+				row.value:SetTextColor(self.C.dim)
+			else
+				row.value:SetText(tr("wc_slot_empty"))
+				row.value:SetTextColor(self.C.dim)
+			end
+			row.btn:Show(true)
+			row.entry = entry
+			if slot.key == self.sel_key then
+				self:place(self.row_selection, indent, y, self.list_w - indent, h)
+				self.row_selection:Show(true)
+			end
+		end
+		y = y + h + 1
+	end
+end
+
+function weapon_customize_wnd:card_text(card)
+	if card.kind == "detach" then
+		return tr("wc_card_detach"), "", self.C.bad
+	end
+	local name = part_name(card.section)
+	if card.kind == "installed" then
+		return name, tr("wc_state_installed"), self.C.accent
+	end
+	if card.part_id then
+		if card.moved then
+			return name, tr("wc_state_on_weapon"), self.C.warn
+		end
+		if card.count > 1 then
+			return name, string.format(tr("wc_state_count"), card.count), self.C.good
+		end
+		return name, tr("wc_state_in_bag"), self.C.good
+	end
+	return name, tr("wc_state_missing"), self.C.marker_none
+end
+
+function weapon_customize_wnd:refresh_cards()
+	local slot = self:selected_slot()
+	if slot then
+		self.right_caption:SetText(slot_label(slot))
+		local compatible = 0
+		for _, card in ipairs(self.cards) do
+			if card.kind ~= "detach" then
+				compatible = compatible + 1
+			end
+		end
+		self.right_counter:SetText(string.format(tr("wc_compatible"), compatible))
+	else
+		self.right_caption:SetTextST("wc_parts_caption")
+		self.right_counter:SetText("")
+	end
+
+	for _, card in ipairs(self.card_pool) do
+		card.btn:Show(false)
+		card.data = nil
+	end
+	self.card_selection:Show(false)
+
+	local visible = #self.card_pool
+	if self.sel_card < self.card_offset then
+		self.card_offset = self.sel_card
+	elseif self.sel_card >= self.card_offset + visible then
+		self.card_offset = self.sel_card - visible + 1
+	end
+	self.card_offset = math.max(1, math.min(self.card_offset, math.max(1, #self.cards - visible + 1)))
+
+	if #self.cards == 0 then
+		self.cards_empty:SetTextST(slot and "wc_no_parts" or "wc_no_slots")
+		self.cards_empty:Show(true)
+	else
+		self.cards_empty:Show(false)
+	end
+
+	local h = self.L.card_h
+	for i = 1, visible do
+		local index = self.card_offset + i - 1
+		local data = self.cards[index]
+		if not data then
+			break
+		end
+		local card = self.card_pool[i]
+		local y = (i - 1) * (h + 2)
+		self:place(card.btn, 0, y, self.card_w, h)
+		self:place(card.mark, 4, 4, 3, h - 8)
+		self:place(card.state, self.card_w - 140, 0, 128, h)
+		local name, state, color = self:card_text(data)
+		card.btn:SetText(name)
+		card.state:SetText(state)
+		card.state:SetTextColor(color)
+		card.mark:SetTextureColor(color)
+		card.btn:Show(true)
+		card.data = data
+		card.index = index
+		if index == self.sel_card then
+			self:place(self.card_selection, 0, y, self.card_w, h)
+			self.card_selection:Show(true)
+		end
+	end
+end
+
+function weapon_customize_wnd:focused_card()
+	local index = self.hover_card or self.sel_card
+	return self.cards[index], index
+end
+
+function weapon_customize_wnd:preview_plan(card, slot)
+	local removed = {}
+	local conflicts = {}
+	if not card or not slot then
+		return removed, conflicts, nil
+	end
+	if card.kind == "detach" then
+		if slot.attached then
+			self:subtree(slot.attached, removed)
+		end
+		return removed, conflicts, nil
+	end
+	if card.kind == "installed" then
+		return removed, conflicts, nil
+	end
+	if slot.attached then
+		self:subtree(slot.attached, removed)
+	end
+	local ids = nil
+	if card.part_id then
+		ids = weapon_customize.conflicts(self.root_id, card.part_id, slot.owner, slot.bone)
+	else
+		ids = self:section_conflicts(card.section, slot)
+	end
+	for _, id in ipairs(ids or {}) do
+		if id ~= slot.attached then
+			conflicts[#conflicts + 1] = id
+		end
+		self:subtree(id, removed)
+	end
+	if card.moved and card.part_id then
+		self:subtree(card.part_id, removed)
+	end
+	return removed, conflicts, card.section
+end
+
+function weapon_customize_wnd:refresh_preview()
+	local slot = self:selected_slot()
+	local card = self:focused_card()
+
+	local key = tostring(self.sel_key) .. "|" .. tostring(card and card.kind) .. "|" .. tostring(card and card.section) .. "|" .. tostring(self.signature)
+	if key == self.preview_key then
+		return
+	end
+	self.preview_key = key
+
+	if slot and card and card.kind == "part" then
+		self.viewport:SetPreview(slot.owner, slot.bone, card.section)
+	else
+		self.viewport:ClearPreview()
+	end
+
+	local removed, conflicts, added = self:preview_plan(card, slot)
+	self:refresh_stats(removed, added, slot and slot.key)
+	self:refresh_details(card, slot, conflicts)
+end
+
+function weapon_customize_wnd:refresh_details(card, slot, conflicts)
+	if not card or not slot then
+		self.details_title:SetText(slot and slot_label(slot) or "")
+		self.details_text:SetTextST(slot and "wc_details_pick" or "wc_no_slots")
+		self.details_warning:SetText("")
+		return
+	end
+
+	if card.kind == "detach" then
+		self.details_title:SetTextST("wc_card_detach")
+		self.details_text:SetText(string.format(tr("wc_details_detach"), part_name(slot.attached_section)))
+		local nested = {}
+		for id in pairs(self:subtree(slot.attached)) do
+			if id ~= slot.attached and self.attached_at[id] then
+				nested[#nested + 1] = part_name(self.attached_at[id].attached_section, true)
+			end
+		end
+		self.details_warning:SetText(#nested > 0 and string.format(tr("wc_details_nested"), table.concat(nested, ", ")) or "")
+		return
+	end
+
+	self.details_title:SetText(part_name(card.section))
+	local lines = {}
+	local description = part_description(card.section)
+	if description ~= "" then
+		lines[#lines + 1] = description
+	end
+	if card.kind == "installed" then
+		lines[#lines + 1] = tr("wc_details_installed")
+	elseif card.part_id then
+		if card.moved then
+			local from = self.attached_at[card.part_id]
+			lines[#lines + 1] = string.format(tr("wc_details_move"), from and slot_label(from) or "")
+		else
+			lines[#lines + 1] = string.format(tr("wc_details_in_bag"), card.count)
+			if card.condition then
+				lines[#lines + 1] = string.format(tr("wc_details_condition"), math.floor(card.condition * 100 + 0.5))
+			end
+		end
+	else
+		lines[#lines + 1] = tr("wc_details_missing")
+	end
+	self.details_text:SetText(table.concat(lines, " \\n"))
+
+	local names = {}
+	for _, id in ipairs(conflicts) do
+		local node = self.attached_at[id]
+		if node then
+			names[#names + 1] = part_name(node.attached_section, true)
+		end
+	end
+	local warnings = {}
+	if card.kind == "part" and slot.attached then
+		warnings[#warnings + 1] = string.format(tr("wc_details_replace"), part_name(slot.attached_section, true))
+	end
+	if #names > 0 then
+		warnings[#warnings + 1] = string.format(tr("wc_details_conflicts"), table.concat(names, ", "))
+	end
+
+	if card.kind == "part" then
+		local keep = card.moved and card.part_id and self:subtree(card.part_id) or {}
+		local carried = {}
+		local seen = {}
+		for _, id in ipairs(conflicts) do
+			seen[id] = true
+		end
+		local function collect(root)
+			for id in pairs(self:subtree(root)) do
+				local node = self.attached_at[id]
+				if id ~= root and node and not keep[id] and not seen[id] then
+					seen[id] = true
+					carried[#carried + 1] = part_name(node.attached_section, true)
+				end
+			end
+		end
+		if slot.attached and not keep[slot.attached] then
+			collect(slot.attached)
+		end
+		for _, id in ipairs(conflicts) do
+			collect(id)
+		end
+		if #carried > 0 then
+			table.sort(carried)
+			warnings[#warnings + 1] = string.format(tr("wc_details_carried"), table.concat(carried, ", "))
+		end
+	end
+	self.details_warning:SetText(table.concat(warnings, " \\n"))
+end
+
+function weapon_customize_wnd:stat_value(stat, sections, root_section)
+	local list = {}
+	if stat.include_root and root_section then
+		list[#list + 1] = root_section
+	end
+	for _, section in ipairs(sections) do
+		list[#list + 1] = section
+	end
+
+	local mode = stat.mode
+	if mode == "count" then
+		return #sections
+	elseif mode == "sum" then
+		local value = 0
+		for _, section in ipairs(list) do
+			value = value + ini_number(section, stat.key, 0)
+		end
+		return value
+	elseif mode == "mul" then
+		local value = 1
+		for _, section in ipairs(list) do
+			value = value * ini_number(section, stat.key, 1)
+		end
+		return value
+	elseif mode == "max" then
+		local value = 0
+		for _, section in ipairs(list) do
+			value = math.max(value, ini_number(section, stat.key, 0))
+		end
+		return value
+	elseif mode == "any" then
+		for _, section in ipairs(list) do
+			if ini_bool(section, stat.key, false) then
+				return 1
+			end
+		end
+		return 0
+	elseif mode == "first" then
+		for _, section in ipairs(list) do
+			if ini_string(section, stat.key, nil) then
+				return section
+			end
+		end
+		return false
+	end
+	return 0
+end
+
+function weapon_customize_wnd:stat_text(stat, value)
+	if stat.mode == "any" then
+		return tr(value == 1 and "wc_yes" or "wc_no")
+	elseif stat.mode == "first" then
+		return value and part_name(value, true) or tr(stat.empty)
+	end
+	local text = string.format(stat.format, stat.format:find("%%d") and math.floor(value + 0.5) or value)
+	if stat.unit then
+		text = text .. " " .. tr(stat.unit)
+	end
+	return text
+end
+
+function weapon_customize_wnd:refresh_stats(removed, added, added_key)
+	local obj = level.object_by_id(self.root_id)
+	local root_section = obj and obj:section() or nil
+	local current = self:tree_sections({}, nil, nil)
+	local preview = nil
+	if next(removed) or added then
+		preview = self:tree_sections(removed, added, added_key)
+	end
+
+	local shown = {}
+	for i, stat in ipairs(config().stats) do
+		local widget = self.stat_pool[i]
+		local old = self:stat_value(stat, current, root_section)
+		local new = preview and self:stat_value(stat, preview, root_section) or old
+		local hidden = false
+		if stat.hide_zero and old == 0 and new == 0 then
+			hidden = true
+		end
+		if stat.hide_default and old == 1 and new == 1 then
+			hidden = true
+		end
+		widget.label:Show(not hidden)
+		widget.value:Show(not hidden)
+		widget.delta:Show(not hidden)
+		if not hidden then
+			shown[#shown + 1] = widget
+			widget.label:SetTextST(stat.label)
+			widget.value:SetText(self:stat_text(stat, new))
+			widget.value:SetTextColor(new ~= old and self.C.accent or self.C.text)
+			widget.delta:SetText("")
+			if type(old) == "number" and type(new) == "number" and stat.mode ~= "any" and math.abs(new - old) > 0.0001 then
+				local integer = stat.format:find("%%d") ~= nil
+				widget.delta:SetText(integer and string.format("%+d", math.floor(new - old + 0.5)) or string.format("%+.2f", new - old))
+				local good = (stat.better == "higher" and new > old) or (stat.better == "lower" and new < old)
+				local bad = (stat.better == "higher" and new < old) or (stat.better == "lower" and new > old)
+				widget.delta:SetTextColor(good and self.C.good or bad and self.C.bad or self.C.accent)
+			elseif stat.mode == "any" and old ~= new then
+				widget.delta:SetText(tr(new == 1 and "wc_delta_on" or "wc_delta_off"))
+				local good = (stat.better == "higher") == (new == 1)
+				widget.delta:SetTextColor(good and self.C.good or self.C.bad)
+			end
+		end
+	end
+
+	local columns = math.max(1, math.min(#shown, math.floor((self.stats_w - 20) / 150)))
+	local rows = math.max(1, math.ceil(#shown / columns))
+	local cell_w = (self.stats_w - 24) / columns
+	local cell_h = math.min(42, (self.L.stats_h - 12) / rows)
+	for i, widget in ipairs(shown) do
+		local col = (i - 1) % columns
+		local row = math.floor((i - 1) / columns)
+		local x = 12 + col * cell_w
+		local y = 8 + row * cell_h
+		self:place(widget.label, x, y, cell_w - 8, 16)
+		self:place(widget.value, x, y + 15, cell_w - 70, 22)
+		self:place(widget.delta, x + cell_w - 78, y + 15, 68, 22)
+	end
+end
+
+-----------------------------------------------------------------------------
+-- frame update
+
+function weapon_customize_wnd:Update()
+	CUIScriptWnd.Update(self)
+	if not self.opened then
+		return
+	end
+
+	if not self:root_object() then
+		self:Close()
+		return
+	end
+
+	local now = time_global()
+	if now >= self.next_refresh or now < self.pending_until then
+		self.next_refresh = now + config().refresh_ms
+		local signature = weapon_customize.signature(self.root_id)
+		local parts = self:parts_signature_now()
+		if signature ~= self.signature or parts ~= self.parts_signature then
+			self.signature = signature
+			self.parts_signature = parts
+			self.preview_key = nil
+			self:rebuild()
+		end
+	end
+
+	local clicked = self.viewport:PopClickedSlot()
+	if clicked >= 0 then
+		local key = tostring(self.viewport:GetSlotOwner(clicked)) .. ":" .. self.viewport:GetSlotBone(clicked)
+		if self.slot_by_key[key] then
+			self:select_slot(key)
+		end
+	end
+
+	local hover = nil
+	for _, card in ipairs(self.card_pool) do
+		if card.data and card.btn:IsShown() and card.btn:IsCursorOverWindow() then
+			hover = card.index
+			break
+		end
+	end
+	if hover ~= self.hover_card then
+		self.hover_card = hover
+		self.preview_key = nil
+	end
+	self:refresh_preview()
+
+	self:update_markers()
+
+	if self.toast_until > 0 and now > self.toast_until then
+		self.toast:Show(false)
+		self.toast_until = 0
+	end
+end
+
+function weapon_customize_wnd:update_markers()
+	local vp = self.viewport
+	vp:ClearCallouts()
+	vp:SetSelected(self:selected_slot() and self:selected_slot().owner or NO_ID, self:selected_slot() and self:selected_slot().bone or "")
+
+	local hover_index = vp:GetHoverSlot()
+	local hover_key = nil
+	if hover_index >= 0 then
+		hover_key = tostring(vp:GetSlotOwner(hover_index)) .. ":" .. vp:GetSlotBone(hover_index)
+	end
+
+	local kx = self.kx
+	local used = 0
+	for _, slot in ipairs(self.slots) do
+		if used >= #self.marker_pool then
+			break
+		end
+		if vp:HasSlotPoint(slot.owner, slot.bone) then
+			used = used + 1
+			local marker = self.marker_pool[used]
+			local point = vp:GetSlotPoint(slot.owner, slot.bone)
+			local selected = slot.key == self.sel_key
+			local hovered = slot.key == hover_key
+			local size = (selected or hovered) and 26 or 18
+			marker:SetWndPos(point.x - size * kx * 0.5, point.y - size * 0.5)
+			marker:SetWndSize(size * kx, size)
+			local color = self.C.marker_empty
+			if selected then
+				color = self.C.accent
+			elseif hovered then
+				color = self.C.text
+			elseif slot.attached then
+				color = self.C.marker_full
+			elseif #slot.allowed == 0 then
+				color = self.C.marker_none
+			end
+			marker:SetTextureColor(color)
+			marker:Show(true)
+		end
+	end
+	for i = used + 1, #self.marker_pool do
+		self.marker_pool[i]:Show(false)
+	end
+
+	local labels = {}
+	if self.sel_key then
+		labels[#labels + 1] = self.sel_key
+	end
+	if hover_key and hover_key ~= self.sel_key then
+		labels[#labels + 1] = hover_key
+	end
+	for i, callout in ipairs(self.callouts) do
+		local slot = labels[i] and self.slot_by_key[labels[i]]
+		if slot and vp:HasSlotPoint(slot.owner, slot.bone) then
+			local point = vp:GetSlotPoint(slot.owner, slot.bone)
+			local w = self.view_w * kx
+			local h = self.view_h
+			local dx = point.x - w * 0.5
+			local dy = point.y - h * 0.5
+			local length = math.sqrt(dx * dx + dy * dy)
+			if length < 1 then
+				dx, dy, length = 0, -1, 1
+			end
+			local label_w = 150 * kx
+			local ax = point.x + dx / length * 80 * kx
+			local ay = point.y + dy / length * 60
+			ax = math.max(label_w * 0.5 + 6, math.min(w - label_w * 0.5 - 6, ax))
+			ay = math.max(20, math.min(h - 40, ay))
+			callout:SetWndPos(ax - label_w * 0.5, ay - 11)
+			callout:SetWndSize(label_w, 22)
+			local text = slot_label(slot)
+			if slot.attached then
+				text = text .. ": " .. part_name(slot.attached_section, true)
+			end
+			callout:SetText(text)
+			callout:Show(true)
+			vp:SetCallout(slot.owner, slot.bone, ax, ay)
+		else
+			callout:Show(false)
+		end
+	end
+end
+
+-----------------------------------------------------------------------------
+-- actions
+
+function weapon_customize_wnd:select_slot(key)
+	if not key or key == self.sel_key then
+		return
+	end
+	self.sel_key = key
+	self.sel_card = 1
+	self.card_offset = 1
+	self.preview_key = nil
+	self:rebuild_cards()
+	self:refresh_slots()
+	self:refresh_cards()
+	local slot = self:selected_slot()
+	if slot and self.focus_mode then
+		self.viewport:FocusSlot(slot.owner, slot.bone)
+		self.viewport:SetZoom(config().focus_zoom)
+	end
+	play("select")
+end
+
+function weapon_customize_wnd:step_slot(delta)
+	local count = #self.slots
+	if count == 0 then
+		return
+	end
+	local index = 1
+	for i, node in ipairs(self.slots) do
+		if node.key == self.sel_key then
+			index = i
+			break
+		end
+	end
+	index = (index - 1 + delta) % count + 1
+	self:select_slot(self.slots[index].key)
+end
+
+function weapon_customize_wnd:step_card(delta)
+	local count = #self.cards
+	if count == 0 then
+		return
+	end
+	self.sel_card = (self.sel_card - 1 + delta) % count + 1
+	self.hover_card = nil
+	self.preview_key = nil
+	self:refresh_cards()
+	play("select")
+end
+
+function weapon_customize_wnd:on_row_click(i)
+	local row = self.row_pool[i]
+	if row and row.entry and row.entry.slot then
+		self:select_slot(row.entry.slot.key)
+	end
+end
+
+function weapon_customize_wnd:on_card_click(i)
+	local card = self.card_pool[i]
+	if not card or not card.data then
+		return
+	end
+	self.sel_card = card.index
+	self:apply_card(card.data)
+end
+
+function weapon_customize_wnd:snapshot()
+	return weapon_customize.layout(self.root_id)
+end
+
+function weapon_customize_wnd:same_layout(a, b)
+	if #a ~= #b then
+		return false
+	end
+	local map = {}
+	for _, entry in ipairs(a) do
+		map[entry.id] = tostring(entry.owner) .. ":" .. entry.bone
+	end
+	for _, entry in ipairs(b) do
+		if map[entry.id] ~= tostring(entry.owner) .. ":" .. entry.bone then
+			return false
+		end
+	end
+	return true
+end
+
+function weapon_customize_wnd:push_undo()
+	table.insert(self.undo, self:snapshot())
+	if #self.undo > UNDO_LIMIT then
+		table.remove(self.undo, 1)
+	end
+	self.redo = {}
+end
+
+function weapon_customize_wnd:changed(sound, message)
+	self.pending_until = time_global() + 1500
+	self.next_refresh = 0
+	self.preview_key = nil
+	play(sound)
+	if message then
+		self:show_toast(message)
+	end
+end
+
+function weapon_customize_wnd:fail(message)
+	play("error")
+	self:show_toast(message)
+end
+
+function weapon_customize_wnd:show_toast(text)
+	self.toast:SetText(text)
+	self.toast:Show(true)
+	self.toast_until = time_global() + 2200
+end
+
+function weapon_customize_wnd:apply_card(card)
+	local slot = self:selected_slot()
+	if not slot or not card then
+		return
+	end
+	if card.kind == "detach" then
+		self:detach_selected()
+		return
+	end
+	if card.kind == "installed" then
+		self:show_toast(tr("wc_toast_already"))
+		return
+	end
+	if not card.part_id then
+		if this.hooks.missing_part and this.hooks.missing_part(self, card, slot) then
+			return
+		end
+		self:fail(string.format(tr("wc_toast_missing"), part_name(card.section, true)))
+		return
+	end
+	local before = self:snapshot()
+	if weapon_customize.attach(self.root_id, card.part_id, slot.owner, slot.bone) then
+		table.insert(self.undo, before)
+		if #self.undo > UNDO_LIMIT then
+			table.remove(self.undo, 1)
+		end
+		self.redo = {}
+		self.sel_card = 1
+		self.hover_card = nil
+		self:changed("attach", string.format(tr("wc_toast_attached"), part_name(card.section, true)))
+	else
+		self:fail(tr("wc_toast_failed"))
+	end
+end
+
+function weapon_customize_wnd:detach_selected()
+	local slot = self:selected_slot()
+	if not slot or not slot.attached then
+		self:fail(tr("wc_toast_nothing"))
+		return
+	end
+	local before = self:snapshot()
+	if weapon_customize.detach(slot.attached) then
+		table.insert(self.undo, before)
+		if #self.undo > UNDO_LIMIT then
+			table.remove(self.undo, 1)
+		end
+		self.redo = {}
+		self.sel_card = 1
+		self:changed("detach", string.format(tr("wc_toast_detached"), part_name(slot.attached_section, true)))
+	else
+		self:fail(tr("wc_toast_failed"))
+	end
+end
+
+function weapon_customize_wnd:restore(target, from_stack, to_stack, message)
+	local current = self:snapshot()
+	if self:same_layout(current, target) then
+		return false
+	end
+	if weapon_customize.apply_layout(self.root_id, target) then
+		if to_stack then
+			table.insert(to_stack, current)
+		end
+		self:changed("attach", message)
+		return true
+	end
+	self:fail(tr("wc_toast_restore_failed"))
+	return false
+end
+
+function weapon_customize_wnd:action_undo()
+	local target = table.remove(self.undo)
+	if not target then
+		self:fail(tr("wc_toast_no_undo"))
+		return
+	end
+	self:restore(target, self.undo, self.redo, tr("wc_toast_undo"))
+end
+
+function weapon_customize_wnd:action_redo()
+	local target = table.remove(self.redo)
+	if not target then
+		self:fail(tr("wc_toast_no_redo"))
+		return
+	end
+	self:restore(target, self.redo, self.undo, tr("wc_toast_redo"))
+end
+
+function weapon_customize_wnd:action_revert()
+	if not self.initial then
+		return
+	end
+	local current = self:snapshot()
+	if self:same_layout(current, self.initial) then
+		self:show_toast(tr("wc_toast_nothing_to_revert"))
+		return
+	end
+	if weapon_customize.apply_layout(self.root_id, self.initial) then
+		table.insert(self.undo, current)
+		self.redo = {}
+		self:changed("detach", tr("wc_toast_reverted"))
+	else
+		self:fail(tr("wc_toast_restore_failed"))
+	end
+end
+
+function weapon_customize_wnd:action_slot_prev() self:step_slot(-1) end
+function weapon_customize_wnd:action_slot_next() self:step_slot(1) end
+function weapon_customize_wnd:action_part_prev() self:step_card(-1) end
+function weapon_customize_wnd:action_part_next() self:step_card(1) end
+function weapon_customize_wnd:action_apply() self:apply_card(self.cards[self.sel_card]) end
+function weapon_customize_wnd:action_detach() self:detach_selected() end
+
+function weapon_customize_wnd:action_focus()
+	self.focus_mode = not self.focus_mode
+	local slot = self:selected_slot()
+	if self.focus_mode and slot then
+		self.viewport:FocusSlot(slot.owner, slot.bone)
+		self.viewport:SetZoom(config().focus_zoom)
+		self:show_toast(tr("wc_toast_focus_on"))
+	else
+		self.viewport:ClearFocus()
+		self.viewport:SetZoom(1)
+		self:show_toast(tr("wc_toast_focus_off"))
+	end
+end
+
+function weapon_customize_wnd:action_reset_view()
+	self.viewport:ResetView()
+	self.focus_mode = false
+end
+
+function weapon_customize_wnd:action_rotate_left() self.viewport:Rotate(-config().rotate_step, 0) end
+function weapon_customize_wnd:action_rotate_right() self.viewport:Rotate(config().rotate_step, 0) end
+function weapon_customize_wnd:action_zoom_in() self.viewport:Zoom(1) end
+function weapon_customize_wnd:action_zoom_out() self.viewport:Zoom(-1) end
+function weapon_customize_wnd:action_close() self:Close() end
+
+function weapon_customize_wnd:on_action(name)
+	local method = ACTIONS[name]
+	if not method or not self[method] then
+		return false
+	end
+	self[method](self)
+	return true
+end
+
+-----------------------------------------------------------------------------
+-- lifecycle
+
+function weapon_customize_wnd:Open()
+	self.opened = true
+	self.signature = -1
+	self.parts_signature = ""
+	self.next_refresh = 0
+	self.undo = {}
+	self.redo = {}
+	self.initial = self:snapshot()
+	self.viewport:SetItem(self.root_id)
+	self.viewport:ResetView()
+	self:rebuild()
+	self.signature = weapon_customize.signature(self.root_id)
+	self.parts_signature = self:parts_signature_now()
+	local slot = self:selected_slot()
+	if slot and self.focus_mode then
+		self.viewport:FocusSlot(slot.owner, slot.bone)
+		self.viewport:SetZoom(config().focus_zoom)
+	end
+	self:ShowDialog(true)
+	hotkeys.push_context(CONTEXT)
+	play("open")
+
+	if this.hooks.opened then
+		this.hooks.opened(self)
+	end
+end
+
+function weapon_customize_wnd:Close()
+	if not self.opened then
+		return
+	end
+	self.opened = false
+	hotkeys.pop_context(CONTEXT)
+	self.viewport:ClearPreview()
+	self.viewport:SetItem(NO_ID)
+	if self:IsShown() then
+		self:HideDialog()
+	end
+	play("close")
+end
+
+function weapon_customize_wnd:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action == ui_events.WINDOW_KEY_PRESSED and dik == DIK_keys.DIK_ESCAPE then
+		self:Close()
+	end
+	return true
+end
+
+-----------------------------------------------------------------------------
+-- entry points
+
+function open(obj)
+	if not obj or not db.actor or not weapon_customize.is_customizable(obj:id()) then
+		return false
+	end
+	if this.wnd and this.wnd.opened then
+		this.wnd:Close()
+	end
+	if not this.wnd or this.wnd.root_id ~= obj:id() then
+		this.wnd = weapon_customize_wnd(obj:id())
+	end
+	this.wnd:Open()
+	return true
+end
+
+function close()
+	if this.wnd then
+		this.wnd:Close()
+	end
+end
+
+function dispatch(name)
+	local wnd = this.wnd
+	if not wnd or not wnd.opened then
+		return false
+	end
+	return wnd:on_action(name)
+end
+
+function on_game_start()
+	this.cfg = nil
+	this.wnd = nil
+	if this.handler then
+		for name in pairs(this.ACTIONS) do
+			hotkeys.off(name, this.handler)
+		end
+	end
+	this.handler = function(action)
+		return dispatch(action)
+	end
+	for name in pairs(this.ACTIONS) do
+		hotkeys.on(name, this.handler)
+	end
+end

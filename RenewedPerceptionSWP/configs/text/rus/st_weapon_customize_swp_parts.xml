@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="mount_scope_45_mpr">
+		<text>Кронштейн MPR 45°</text>
+	</string>
+	<string id="mount_ac32062_rmr">
+		<text>Площадка RMR AC32062</text>
+	</string>
+	<string id="mount_scope_b13">
+		<text>Кронштейн Б-13</text>
+	</string>
+	<string id="mount_scope_b13v">
+		<text>Кронштейн Б-13В</text>
+	</string>
+	<string id="scope_pk06">
+		<text>Коллиматор ПК-06</text>
+	</string>
+	<string id="scope_rmr">
+		<text>Коллиматор Trijicon RMR</text>
+	</string>
+	<string id="scope_okp7_dovetail">
+		<text>ОКП-7 (ласточкин хвост)</text>
+	</string>
+	<string id="scope_okp7">
+		<text>Коллиматор ОКП-7</text>
+	</string>
+	<string id="scope_eotech_xps3">
+		<text>EOTech XPS3</text>
+	</string>
+	<string id="scope_aimpoint_pro">
+		<text>Aimpoint PRO</text>
+	</string>
+	<string id="scope_elcan_specter">
+		<text>ELCAN Specter</text>
+	</string>
+	<string id="scope_pso">
+		<text>Оптический прицел ПСО</text>
+	</string>
+	<string id="handguard_ak74_std">
+		<text>Цевьё АК-74</text>
+	</string>
+	<string id="handguard_aks74u_std">
+		<text>Цевьё АКС-74У</text>
+	</string>
+	<string id="handguard_b10m">
+		<text>Цевьё Зенит Б-10М</text>
+	</string>
+	<string id="handguard_b30">
+		<text>Цевьё Зенит Б-30</text>
+	</string>
+	<string id="handguard_aspid">
+		<text>Цевьё «Аспид»</text>
+	</string>
+	<string id="handguard_rs47">
+		<text>Цевьё RS47</text>
+	</string>
+	<string id="handguard_ak100">
+		<text>Цевьё АК-100</text>
+	</string>
+	<string id="handguard_val_std">
+		<text>Цевьё АС «Вал»</text>
+	</string>
+	<string id="handguard_mp5_std">
+		<text>Цевьё MP5</text>
+	</string>
+	<string id="gas_block_ak74_std">
+		<text>Газовый блок АК-74</text>
+	</string>
+	<string id="gas_block_aks74u_std">
+		<text>Газовый блок АКС-74У</text>
+	</string>
+	<string id="silencer_tgpa">
+		<text>Глушитель ТГП-А</text>
+	</string>
+	<string id="muzzle_ak74_std">
+		<text>ДТК АК-74</text>
+	</string>
+	<string id="muzzle_aks74u_std">
+		<text>Насадка АКС-74У</text>
+	</string>
+	<string id="magazine_6l23_545_30">
+		<text>Магазин 6Л23, 5.45 на 30</text>
+	</string>
+	<string id="magazine_val_20_std">
+		<text>Магазин АС «Вал» на 20</text>
+	</string>
+	<string id="magazine_mp5_30_std">
+		<text>Магазин MP5 на 30</text>
+	</string>
+	<string id="magazine_p226_15_std">
+		<text>Магазин P226 на 15</text>
+	</string>
+	<string id="magazine_desert_eagle_7_std">
+		<text>Магазин Desert Eagle на 7</text>
+	</string>
+	<string id="pistol_grip_ak_bakelit">
+		<text>Рукоять АК (бакелит)</text>
+	</string>
+	<string id="pistol_grip_ak_plastic">
+		<text>Рукоять АК (пластик)</text>
+	</string>
+	<string id="pistol_grip_ak_palm">
+		<text>Рукоять АК «Palm»</text>
+	</string>
+	<string id="pistol_grip_ak_epg">
+		<text>Рукоять АК EPG</text>
+	</string>
+	<string id="pistol_grip_ak_moe">
+		<text>Рукоять АК MOE</text>
+	</string>
+	<string id="pistol_grip_val_std">
+		<text>Рукоять АС «Вал»</text>
+	</string>
+	<string id="pistol_grip_p226_std">
+		<text>Накладки P226</text>
+	</string>
+	<string id="pistol_grip_desert_eagle_std">
+		<text>Накладки Desert Eagle</text>
+	</string>
+	<string id="reciever_ak74_std">
+		<text>Крышка АК-74</text>
+	</string>
+	<string id="reciever_aks74u_std">
+		<text>Крышка АКС-74У</text>
+	</string>
+	<string id="reciever_bastion">
+		<text>Крышка «Бастион» с планкой</text>
+	</string>
+	<string id="reciever_val_std">
+		<text>Крышка АС «Вал»</text>
+	</string>
+	<string id="reciever_p226_std">
+		<text>Затвор P226</text>
+	</string>
+	<string id="sight_front_sig226_std">
+		<text>Мушка P226</text>
+	</string>
+	<string id="sight_rear_ak74_std">
+		<text>Целик АК-74</text>
+	</string>
+	<string id="sight_rear_val_std">
+		<text>Целик АС «Вал»</text>
+	</string>
+	<string id="sight_rear_mp5_std">
+		<text>Диоптр MP5</text>
+	</string>
+	<string id="sight_rear_sig226_std">
+		<text>Целик P226</text>
+	</string>
+	<string id="sight_rear_desert_eagle_std">
+		<text>Целик Desert Eagle</text>
+	</string>
+	<string id="stock_buttpad_6g15">
+		<text>Затыльник 6Г15</text>
+	</string>
+	<string id="stock_ak74_std">
+		<text>Приклад АК-74</text>
+	</string>
+	<string id="stock_ak74m_std">
+		<text>Приклад АК-74М</text>
+	</string>
+	<string id="stock_ak74_plum">
+		<text>Приклад АК-74 (сливовый)</text>
+	</string>
+	<string id="stock_aks74u_std">
+		<text>Приклад АКС-74У</text>
+	</string>
+	<string id="stock_ak_zhukov">
+		<text>Приклад Magpul Zhukov</text>
+	</string>
+	<string id="stock_val_std">
+		<text>Приклад АС «Вал»</text>
+	</string>
+	<string id="stock_mp5_std">
+		<text>Приклад MP5</text>
+	</string>
+	<string id="flashlight_steiner_las_tac">
+		<text>Фонарь Steiner LAS/TAC</text>
+	</string>
+	<string id="laser_nc_star">
+		<text>ЛЦУ NcStar</text>
+	</string>
+	<string id="grip_zenit_b25u">
+		<text>Рукоять Зенит Б-25У</text>
+	</string>
+	<string id="grip_kac_vertical">
+		<text>Рукоять KAC вертикальная</text>
+	</string>
+</string_table>

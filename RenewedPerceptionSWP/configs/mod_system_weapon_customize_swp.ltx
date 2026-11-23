@@ -1,0 +1,152 @@
+[weapon_customize]
+ui_functor     = ui_weapon_customize.open
+xml            = weapon_customize.xml
+refresh_ms     = 250
+focus_zoom     = 1.9
+rotate_step    = 30
+snd_open       = interface\inv_open
+snd_close      = interface\inv_close
+snd_select     = interface\inv_properties
+snd_attach     = interface\inv_attach_addon
+snd_detach     = interface\inv_detach_addon
+snd_error      = interface\inv_drop
+
+[hotkey_layer.weapon_customize]
+parent   = ui
+priority = 150
+block    = all
+label    = kb_layer_weapon_customize
+
+[hotkey.wc_slot_prev]
+context  = weapon_customize
+key      = kQ
+gamepad  = cLB
+options  = kb_grp_weapon_customize
+label    = kb_wc_slot_prev
+hint     = 10
+
+[hotkey.wc_slot_next]
+context  = weapon_customize
+key      = kE
+gamepad  = cRB
+options  = kb_grp_weapon_customize
+label    = kb_wc_slot_next
+hint     = 11
+
+[hotkey.wc_part_prev]
+context  = weapon_customize
+key      = kW
+key2     = kUP
+gamepad  = cDPAD_UP
+options  = kb_grp_weapon_customize
+label    = kb_wc_part_prev
+hint     = 20
+
+[hotkey.wc_part_next]
+context  = weapon_customize
+key      = kS
+key2     = kDOWN
+gamepad  = cDPAD_DOWN
+options  = kb_grp_weapon_customize
+label    = kb_wc_part_next
+hint     = 21
+
+[hotkey.wc_apply]
+context  = weapon_customize
+key      = kRETURN
+key2     = kSPACE
+gamepad  = cA
+options  = kb_grp_weapon_customize
+label    = kb_wc_apply
+hint     = 30
+
+[hotkey.wc_detach]
+context  = weapon_customize
+key      = kX
+key2     = kDELETE
+gamepad  = cX
+options  = kb_grp_weapon_customize
+label    = kb_wc_detach
+hint     = 31
+
+[hotkey.wc_undo]
+context  = weapon_customize
+key      = kZ
+gamepad  = cY
+options  = kb_grp_weapon_customize
+label    = kb_wc_undo
+hint     = 40
+
+[hotkey.wc_redo]
+context  = weapon_customize
+key      = kY
+options  = kb_grp_weapon_customize
+label    = kb_wc_redo
+hint     = 41
+
+[hotkey.wc_revert]
+context  = weapon_customize
+key      = kBACK
+gamepad  = cBACK
+options  = kb_grp_weapon_customize
+label    = kb_wc_revert
+hint     = 42
+
+[hotkey.wc_focus]
+context  = weapon_customize
+key      = kF
+gamepad  = cRS
+options  = kb_grp_weapon_customize
+label    = kb_wc_focus
+hint     = 50
+
+[hotkey.wc_reset_view]
+context  = weapon_customize
+key      = kR
+gamepad  = cLS
+options  = kb_grp_weapon_customize
+label    = kb_wc_reset_view
+hint     = 51
+
+[hotkey.wc_rotate_left]
+context  = weapon_customize
+key      = kA
+key2     = kLEFT
+gamepad  = cDPAD_LEFT
+options  = kb_grp_weapon_customize
+label    = kb_wc_rotate_left
+hint     = 52
+
+[hotkey.wc_rotate_right]
+context  = weapon_customize
+key      = kD
+key2     = kRIGHT
+gamepad  = cDPAD_RIGHT
+options  = kb_grp_weapon_customize
+label    = kb_wc_rotate_right
+hint     = 53
+
+[hotkey.wc_zoom_in]
+context  = weapon_customize
+key      = kEQUALS
+key2     = kADD
+gamepad  = cRTRIGGER
+options  = kb_grp_weapon_customize
+label    = kb_wc_zoom_in
+hint     = 54
+
+[hotkey.wc_zoom_out]
+context  = weapon_customize
+key      = kMINUS
+key2     = kSUBTRACT
+gamepad  = cLTRIGGER
+options  = kb_grp_weapon_customize
+label    = kb_wc_zoom_out
+hint     = 55
+
+[hotkey.wc_close]
+context  = weapon_customize
+gamepad  = cB
+options  = kb_grp_weapon_customize
+label    = kb_wc_close
+hint     = 90

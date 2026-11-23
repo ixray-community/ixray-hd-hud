@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="st_weapon_customize">
+		<text>Настроить обвес</text>
+	</string>
+	<string id="wc_subtitle">
+		<text>Настройка оружия</text>
+	</string>
+	<string id="wc_slots_caption">
+		<text>Узлы</text>
+	</string>
+	<string id="wc_parts_caption">
+		<text>Детали</text>
+	</string>
+	<string id="wc_summary">
+		<text>Установлено: %d / %d  ·  Масса: %.2f кг</text>
+	</string>
+	<string id="wc_slot_locked">
+		<text>нет деталей</text>
+	</string>
+	<string id="wc_slot_empty">
+		<text>пусто</text>
+	</string>
+	<string id="wc_card_detach">
+		<text>Снять деталь</text>
+	</string>
+	<string id="wc_state_installed">
+		<text>установлено</text>
+	</string>
+	<string id="wc_state_on_weapon">
+		<text>на другом узле</text>
+	</string>
+	<string id="wc_state_count">
+		<text>в рюкзаке: %d</text>
+	</string>
+	<string id="wc_state_in_bag">
+		<text>в рюкзаке</text>
+	</string>
+	<string id="wc_state_missing">
+		<text>нет в наличии</text>
+	</string>
+	<string id="wc_compatible">
+		<text>вариантов: %d</text>
+	</string>
+	<string id="wc_no_parts">
+		<text>Для этого узла нет совместимых деталей.</text>
+	</string>
+	<string id="wc_no_slots">
+		<text>У этого оружия нет настраиваемых узлов.</text>
+	</string>
+	<string id="wc_details_pick">
+		<text>Выберите деталь в списке. Наведите курсор, чтобы примерить её на оружии.</text>
+	</string>
+	<string id="wc_details_detach">
+		<text>%s вернётся в рюкзак.</text>
+	</string>
+	<string id="wc_details_nested">
+		<text>Вместе с ней снимутся: %s</text>
+	</string>
+	<string id="wc_details_installed">
+		<text>Деталь уже стоит на этом узле.</text>
+	</string>
+	<string id="wc_details_move">
+		<text>Деталь будет перенесена с узла «%s».</text>
+	</string>
+	<string id="wc_details_in_bag">
+		<text>В рюкзаке: %d шт.</text>
+	</string>
+	<string id="wc_details_condition">
+		<text>Состояние лучшего экземпляра: %d%%</text>
+	</string>
+	<string id="wc_details_missing">
+		<text>Детали нет в рюкзаке. Она видна только в режиме бессмертия или разработки.</text>
+	</string>
+	<string id="wc_details_replace">
+		<text>Заменит: %s</text>
+	</string>
+	<string id="wc_details_carried">
+		<text>Вместе с ними в рюкзак уйдут: %s</text>
+	</string>
+	<string id="wc_details_conflicts">
+		<text>Несовместима, будет снято: %s</text>
+	</string>
+	<string id="wc_yes">
+		<text>есть</text>
+	</string>
+	<string id="wc_no">
+		<text>нет</text>
+	</string>
+	<string id="wc_delta_on">
+		<text>появится</text>
+	</string>
+	<string id="wc_delta_off">
+		<text>пропадёт</text>
+	</string>
+	<string id="wc_none">
+		<text>нет</text>
+	</string>
+	<string id="wc_viewport_hint">
+		<text>ЛКМ - вращать  ·  ПКМ - сдвинуть  ·  Колесо - масштаб  ·  Клик по точке - выбрать узел</text>
+	</string>
+	<string id="wc_toast_already">
+		<text>Эта деталь уже установлена</text>
+	</string>
+	<string id="wc_toast_missing">
+		<text>Нет в рюкзаке: %s</text>
+	</string>
+	<string id="wc_toast_attached">
+		<text>Установлено: %s</text>
+	</string>
+	<string id="wc_toast_detached">
+		<text>Снято: %s</text>
+	</string>
+	<string id="wc_toast_failed">
+		<text>Не удалось изменить обвес</text>
+	</string>
+	<string id="wc_toast_nothing">
+		<text>На узле ничего не установлено</text>
+	</string>
+	<string id="wc_toast_restore_failed">
+		<text>Не удалось восстановить сборку</text>
+	</string>
+	<string id="wc_toast_no_undo">
+		<text>Нечего отменять</text>
+	</string>
+	<string id="wc_toast_no_redo">
+		<text>Нечего повторять</text>
+	</string>
+	<string id="wc_toast_undo">
+		<text>Действие отменено</text>
+	</string>
+	<string id="wc_toast_redo">
+		<text>Действие повторено</text>
+	</string>
+	<string id="wc_toast_nothing_to_revert">
+		<text>Сборка не менялась</text>
+	</string>
+	<string id="wc_toast_reverted">
+		<text>Сборка возвращена к исходной</text>
+	</string>
+	<string id="wc_toast_focus_on">
+		<text>Камера следует за узлом</text>
+	</string>
+	<string id="wc_toast_focus_off">
+		<text>Общий вид</text>
+	</string>
+	<string id="wc_hint_slot">
+		<text>Узел</text>
+	</string>
+	<string id="wc_hint_part">
+		<text>Деталь</text>
+	</string>
+	<string id="wc_hint_apply">
+		<text>Установить</text>
+	</string>
+	<string id="wc_hint_detach">
+		<text>Снять</text>
+	</string>
+	<string id="wc_hint_undo">
+		<text>Отменить / Повторить</text>
+	</string>
+	<string id="wc_hint_revert">
+		<text>Сбросить</text>
+	</string>
+	<string id="wc_hint_focus">
+		<text>Фокус</text>
+	</string>
+	<string id="wc_hint_reset">
+		<text>Вид</text>
+	</string>
+	<string id="wc_hint_rotate">
+		<text>Поворот</text>
+	</string>
+	<string id="wc_hint_zoom">
+		<text>Масштаб</text>
+	</string>
+	<string id="wc_group_optics">
+		<text>ОПТИКА И ПРИЦЕЛЫ</text>
+	</string>
+	<string id="wc_group_muzzle">
+		<text>ДУЛО</text>
+	</string>
+	<string id="wc_group_body">
+		<text>КОРПУС</text>
+	</string>
+	<string id="wc_group_ergonomics">
+		<text>ЭРГОНОМИКА</text>
+	</string>
+	<string id="wc_group_tactical">
+		<text>ТАКТИЧЕСКИЕ МОДУЛИ</text>
+	</string>
+	<string id="wc_group_feed">
+		<text>ПИТАНИЕ</text>
+	</string>
+	<string id="wc_group_other">
+		<text>ПРОЧЕЕ</text>
+	</string>
+	<string id="wc_slot_mount">
+		<text>Крепление оптики</text>
+	</string>
+	<string id="wc_slot_scope">
+		<text>Прицел</text>
+	</string>
+	<string id="wc_slot_sight_rear">
+		<text>Целик</text>
+	</string>
+	<string id="wc_slot_sight_front">
+		<text>Мушка</text>
+	</string>
+	<string id="wc_slot_muzzle">
+		<text>Дульное устройство</text>
+	</string>
+	<string id="wc_slot_receiver">
+		<text>Крышка ствольной коробки</text>
+	</string>
+	<string id="wc_slot_slide">
+		<text>Затвор</text>
+	</string>
+	<string id="wc_slot_gasblock">
+		<text>Газовый блок</text>
+	</string>
+	<string id="wc_slot_handguard">
+		<text>Цевьё</text>
+	</string>
+	<string id="wc_slot_stock">
+		<text>Приклад</text>
+	</string>
+	<string id="wc_slot_buttpad">
+		<text>Затыльник</text>
+	</string>
+	<string id="wc_slot_pistolgrip">
+		<text>Пистолетная рукоять</text>
+	</string>
+	<string id="wc_slot_foregrip">
+		<text>Передняя рукоять</text>
+	</string>
+	<string id="wc_slot_tactical_1">
+		<text>Планка 1</text>
+	</string>
+	<string id="wc_slot_tactical_2">
+		<text>Планка 2</text>
+	</string>
+	<string id="wc_slot_tactical_3">
+		<text>Планка 3</text>
+	</string>
+	<string id="wc_slot_magazine">
+		<text>Магазин</text>
+	</string>
+	<string id="wc_stat_weight">
+		<text>Масса</text>
+	</string>
+	<string id="wc_unit_kg">
+		<text>кг</text>
+	</string>
+	<string id="wc_stat_cost">
+		<text>Стоимость обвеса</text>
+	</string>
+	<string id="wc_unit_money">
+		<text>RU</text>
+	</string>
+	<string id="wc_stat_sight">
+		<text>Прицел</text>
+	</string>
+	<string id="wc_stat_iron_sights">
+		<text>открытый</text>
+	</string>
+	<string id="wc_stat_silencer">
+		<text>Глушитель</text>
+	</string>
+	<string id="wc_stat_torch">
+		<text>Фонарь</text>
+	</string>
+	<string id="wc_stat_laser">
+		<text>ЛЦУ</text>
+	</string>
+	<string id="wc_stat_range">
+		<text>Дальность</text>
+	</string>
+	<string id="wc_stat_parts">
+		<text>Деталей</text>
+	</string>
+	<string id="kb_layer_weapon_customize">
+		<text>Настройка оружия</text>
+	</string>
+	<string id="kb_grp_weapon_customize">
+		<text>Настройка оружия</text>
+	</string>
+	<string id="kb_wc_slot_prev">
+		<text>Предыдущий узел</text>
+	</string>
+	<string id="kb_wc_slot_next">
+		<text>Следующий узел</text>
+	</string>
+	<string id="kb_wc_part_prev">
+		<text>Предыдущая деталь</text>
+	</string>
+	<string id="kb_wc_part_next">
+		<text>Следующая деталь</text>
+	</string>
+	<string id="kb_wc_apply">
+		<text>Установить деталь</text>
+	</string>
+	<string id="kb_wc_detach">
+		<text>Снять деталь</text>
+	</string>
+	<string id="kb_wc_undo">
+		<text>Отменить</text>
+	</string>
+	<string id="kb_wc_redo">
+		<text>Повторить</text>
+	</string>
+	<string id="kb_wc_revert">
+		<text>Вернуть исходную сборку</text>
+	</string>
+	<string id="kb_wc_focus">
+		<text>Фокус на узле</text>
+	</string>
+	<string id="kb_wc_reset_view">
+		<text>Сбросить камеру</text>
+	</string>
+	<string id="kb_wc_rotate_left">
+		<text>Повернуть влево</text>
+	</string>
+	<string id="kb_wc_rotate_right">
+		<text>Повернуть вправо</text>
+	</string>
+	<string id="kb_wc_zoom_in">
+		<text>Приблизить</text>
+	</string>
+	<string id="kb_wc_zoom_out">
+		<text>Отдалить</text>
+	</string>
+	<string id="kb_wc_close">
+		<text>Закрыть окно</text>
+	</string>
+</string_table>

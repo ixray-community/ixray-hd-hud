@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="mount_scope_45_mpr">
+		<text>MPR 45° mount</text>
+	</string>
+	<string id="mount_ac32062_rmr">
+		<text>AC32062 RMR mount</text>
+	</string>
+	<string id="mount_scope_b13">
+		<text>B-13 mount</text>
+	</string>
+	<string id="mount_scope_b13v">
+		<text>B-13V mount</text>
+	</string>
+	<string id="scope_pk06">
+		<text>PK-06 red dot</text>
+	</string>
+	<string id="scope_rmr">
+		<text>Trijicon RMR</text>
+	</string>
+	<string id="scope_okp7_dovetail">
+		<text>OKP-7 (dovetail)</text>
+	</string>
+	<string id="scope_okp7">
+		<text>OKP-7 reflex sight</text>
+	</string>
+	<string id="scope_eotech_xps3">
+		<text>EOTech XPS3</text>
+	</string>
+	<string id="scope_aimpoint_pro">
+		<text>Aimpoint PRO</text>
+	</string>
+	<string id="scope_elcan_specter">
+		<text>ELCAN Specter</text>
+	</string>
+	<string id="scope_pso">
+		<text>PSO scope</text>
+	</string>
+	<string id="handguard_ak74_std">
+		<text>AK-74 handguard</text>
+	</string>
+	<string id="handguard_aks74u_std">
+		<text>AKS-74U handguard</text>
+	</string>
+	<string id="handguard_b10m">
+		<text>Zenit B-10M handguard</text>
+	</string>
+	<string id="handguard_b30">
+		<text>Zenit B-30 handguard</text>
+	</string>
+	<string id="handguard_aspid">
+		<text>Aspid handguard</text>
+	</string>
+	<string id="handguard_rs47">
+		<text>RS47 handguard</text>
+	</string>
+	<string id="handguard_ak100">
+		<text>AK-100 handguard</text>
+	</string>
+	<string id="handguard_val_std">
+		<text>AS Val handguard</text>
+	</string>
+	<string id="handguard_mp5_std">
+		<text>MP5 handguard</text>
+	</string>
+	<string id="gas_block_ak74_std">
+		<text>AK-74 gas block</text>
+	</string>
+	<string id="gas_block_aks74u_std">
+		<text>AKS-74U gas block</text>
+	</string>
+	<string id="silencer_tgpa">
+		<text>TGP-A suppressor</text>
+	</string>
+	<string id="muzzle_ak74_std">
+		<text>AK-74 muzzle brake</text>
+	</string>
+	<string id="muzzle_aks74u_std">
+		<text>AKS-74U muzzle booster</text>
+	</string>
+	<string id="magazine_6l23_545_30">
+		<text>6L23 5.45 30-round magazine</text>
+	</string>
+	<string id="magazine_val_20_std">
+		<text>AS Val 20-round magazine</text>
+	</string>
+	<string id="magazine_mp5_30_std">
+		<text>MP5 30-round magazine</text>
+	</string>
+	<string id="magazine_p226_15_std">
+		<text>P226 15-round magazine</text>
+	</string>
+	<string id="magazine_desert_eagle_7_std">
+		<text>Desert Eagle 7-round magazine</text>
+	</string>
+	<string id="pistol_grip_ak_bakelit">
+		<text>AK grip (bakelite)</text>
+	</string>
+	<string id="pistol_grip_ak_plastic">
+		<text>AK grip (polymer)</text>
+	</string>
+	<string id="pistol_grip_ak_palm">
+		<text>AK Palm grip</text>
+	</string>
+	<string id="pistol_grip_ak_epg">
+		<text>AK EPG grip</text>
+	</string>
+	<string id="pistol_grip_ak_moe">
+		<text>AK MOE grip</text>
+	</string>
+	<string id="pistol_grip_val_std">
+		<text>AS Val grip</text>
+	</string>
+	<string id="pistol_grip_p226_std">
+		<text>P226 grip panels</text>
+	</string>
+	<string id="pistol_grip_desert_eagle_std">
+		<text>Desert Eagle grip panels</text>
+	</string>
+	<string id="reciever_ak74_std">
+		<text>AK-74 receiver cover</text>
+	</string>
+	<string id="reciever_aks74u_std">
+		<text>AKS-74U receiver cover</text>
+	</string>
+	<string id="reciever_bastion">
+		<text>Bastion railed cover</text>
+	</string>
+	<string id="reciever_val_std">
+		<text>AS Val receiver cover</text>
+	</string>
+	<string id="reciever_p226_std">
+		<text>P226 slide</text>
+	</string>
+	<string id="sight_front_sig226_std">
+		<text>P226 front sight</text>
+	</string>
+	<string id="sight_rear_ak74_std">
+		<text>AK-74 rear sight</text>
+	</string>
+	<string id="sight_rear_val_std">
+		<text>AS Val rear sight</text>
+	</string>
+	<string id="sight_rear_mp5_std">
+		<text>MP5 diopter sight</text>
+	</string>
+	<string id="sight_rear_sig226_std">
+		<text>P226 rear sight</text>
+	</string>
+	<string id="sight_rear_desert_eagle_std">
+		<text>Desert Eagle rear sight</text>
+	</string>
+	<string id="stock_buttpad_6g15">
+		<text>6G15 butt pad</text>
+	</string>
+	<string id="stock_ak74_std">
+		<text>AK-74 stock</text>
+	</string>
+	<string id="stock_ak74m_std">
+		<text>AK-74M stock</text>
+	</string>
+	<string id="stock_ak74_plum">
+		<text>AK-74 stock (plum)</text>
+	</string>
+	<string id="stock_aks74u_std">
+		<text>AKS-74U stock</text>
+	</string>
+	<string id="stock_ak_zhukov">
+		<text>Magpul Zhukov stock</text>
+	</string>
+	<string id="stock_val_std">
+		<text>AS Val stock</text>
+	</string>
+	<string id="stock_mp5_std">
+		<text>MP5 stock</text>
+	</string>
+	<string id="flashlight_steiner_las_tac">
+		<text>Steiner LAS/TAC light</text>
+	</string>
+	<string id="laser_nc_star">
+		<text>NcStar laser</text>
+	</string>
+	<string id="grip_zenit_b25u">
+		<text>Zenit B-25U grip</text>
+	</string>
+	<string id="grip_kac_vertical">
+		<text>KAC vertical grip</text>
+	</string>
+</string_table>

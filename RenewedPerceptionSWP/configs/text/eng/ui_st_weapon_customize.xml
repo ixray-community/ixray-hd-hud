@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="st_weapon_customize">
+		<text>Customize</text>
+	</string>
+	<string id="wc_subtitle">
+		<text>Weapon customization</text>
+	</string>
+	<string id="wc_slots_caption">
+		<text>Slots</text>
+	</string>
+	<string id="wc_parts_caption">
+		<text>Parts</text>
+	</string>
+	<string id="wc_summary">
+		<text>Installed: %d / %d  ·  Weight: %.2f kg</text>
+	</string>
+	<string id="wc_slot_locked">
+		<text>no parts</text>
+	</string>
+	<string id="wc_slot_empty">
+		<text>empty</text>
+	</string>
+	<string id="wc_card_detach">
+		<text>Detach part</text>
+	</string>
+	<string id="wc_state_installed">
+		<text>installed</text>
+	</string>
+	<string id="wc_state_on_weapon">
+		<text>on another slot</text>
+	</string>
+	<string id="wc_state_count">
+		<text>in backpack: %d</text>
+	</string>
+	<string id="wc_state_in_bag">
+		<text>in backpack</text>
+	</string>
+	<string id="wc_state_missing">
+		<text>not owned</text>
+	</string>
+	<string id="wc_compatible">
+		<text>options: %d</text>
+	</string>
+	<string id="wc_no_parts">
+		<text>No compatible parts for this slot.</text>
+	</string>
+	<string id="wc_no_slots">
+		<text>This weapon has no customizable slots.</text>
+	</string>
+	<string id="wc_details_pick">
+		<text>Pick a part from the list. Hover a part to preview it on the weapon.</text>
+	</string>
+	<string id="wc_details_detach">
+		<text>%s goes back to the backpack.</text>
+	</string>
+	<string id="wc_details_nested">
+		<text>Also removed with it: %s</text>
+	</string>
+	<string id="wc_details_installed">
+		<text>This part is already installed here.</text>
+	</string>
+	<string id="wc_details_move">
+		<text>The part will be moved from "%s".</text>
+	</string>
+	<string id="wc_details_in_bag">
+		<text>In backpack: %d</text>
+	</string>
+	<string id="wc_details_condition">
+		<text>Best condition: %d%%</text>
+	</string>
+	<string id="wc_details_missing">
+		<text>You do not own this part. It is listed only in god mode or development mode.</text>
+	</string>
+	<string id="wc_details_replace">
+		<text>Replaces: %s</text>
+	</string>
+	<string id="wc_details_carried">
+		<text>Also goes back to the backpack with them: %s</text>
+	</string>
+	<string id="wc_details_conflicts">
+		<text>Incompatible, will be removed: %s</text>
+	</string>
+	<string id="wc_yes">
+		<text>yes</text>
+	</string>
+	<string id="wc_no">
+		<text>no</text>
+	</string>
+	<string id="wc_delta_on">
+		<text>added</text>
+	</string>
+	<string id="wc_delta_off">
+		<text>removed</text>
+	</string>
+	<string id="wc_none">
+		<text>none</text>
+	</string>
+	<string id="wc_viewport_hint">
+		<text>LMB - rotate  ·  RMB - pan  ·  Wheel - zoom  ·  Click a point - select slot</text>
+	</string>
+	<string id="wc_toast_already">
+		<text>This part is already installed</text>
+	</string>
+	<string id="wc_toast_missing">
+		<text>Not in backpack: %s</text>
+	</string>
+	<string id="wc_toast_attached">
+		<text>Installed: %s</text>
+	</string>
+	<string id="wc_toast_detached">
+		<text>Detached: %s</text>
+	</string>
+	<string id="wc_toast_failed">
+		<text>Could not change the build</text>
+	</string>
+	<string id="wc_toast_nothing">
+		<text>Nothing is installed in this slot</text>
+	</string>
+	<string id="wc_toast_restore_failed">
+		<text>Could not restore the build</text>
+	</string>
+	<string id="wc_toast_no_undo">
+		<text>Nothing to undo</text>
+	</string>
+	<string id="wc_toast_no_redo">
+		<text>Nothing to redo</text>
+	</string>
+	<string id="wc_toast_undo">
+		<text>Undone</text>
+	</string>
+	<string id="wc_toast_redo">
+		<text>Redone</text>
+	</string>
+	<string id="wc_toast_nothing_to_revert">
+		<text>The build has not changed</text>
+	</string>
+	<string id="wc_toast_reverted">
+		<text>Build reverted</text>
+	</string>
+	<string id="wc_toast_focus_on">
+		<text>Camera follows the slot</text>
+	</string>
+	<string id="wc_toast_focus_off">
+		<text>Overview</text>
+	</string>
+	<string id="wc_hint_slot">
+		<text>Slot</text>
+	</string>
+	<string id="wc_hint_part">
+		<text>Part</text>
+	</string>
+	<string id="wc_hint_apply">
+		<text>Install</text>
+	</string>
+	<string id="wc_hint_detach">
+		<text>Detach</text>
+	</string>
+	<string id="wc_hint_undo">
+		<text>Undo / Redo</text>
+	</string>
+	<string id="wc_hint_revert">
+		<text>Revert</text>
+	</string>
+	<string id="wc_hint_focus">
+		<text>Focus</text>
+	</string>
+	<string id="wc_hint_reset">
+		<text>View</text>
+	</string>
+	<string id="wc_hint_rotate">
+		<text>Rotate</text>
+	</string>
+	<string id="wc_hint_zoom">
+		<text>Zoom</text>
+	</string>
+	<string id="wc_group_optics">
+		<text>OPTICS AND SIGHTS</text>
+	</string>
+	<string id="wc_group_muzzle">
+		<text>MUZZLE</text>
+	</string>
+	<string id="wc_group_body">
+		<text>BODY</text>
+	</string>
+	<string id="wc_group_ergonomics">
+		<text>ERGONOMICS</text>
+	</string>
+	<string id="wc_group_tactical">
+		<text>TACTICAL</text>
+	</string>
+	<string id="wc_group_feed">
+		<text>FEED</text>
+	</string>
+	<string id="wc_group_other">
+		<text>OTHER</text>
+	</string>
+	<string id="wc_slot_mount">
+		<text>Optic mount</text>
+	</string>
+	<string id="wc_slot_scope">
+		<text>Sight</text>
+	</string>
+	<string id="wc_slot_sight_rear">
+		<text>Rear sight</text>
+	</string>
+	<string id="wc_slot_sight_front">
+		<text>Front sight</text>
+	</string>
+	<string id="wc_slot_muzzle">
+		<text>Muzzle device</text>
+	</string>
+	<string id="wc_slot_receiver">
+		<text>Receiver cover</text>
+	</string>
+	<string id="wc_slot_slide">
+		<text>Slide</text>
+	</string>
+	<string id="wc_slot_gasblock">
+		<text>Gas block</text>
+	</string>
+	<string id="wc_slot_handguard">
+		<text>Handguard</text>
+	</string>
+	<string id="wc_slot_stock">
+		<text>Stock</text>
+	</string>
+	<string id="wc_slot_buttpad">
+		<text>Butt pad</text>
+	</string>
+	<string id="wc_slot_pistolgrip">
+		<text>Pistol grip</text>
+	</string>
+	<string id="wc_slot_foregrip">
+		<text>Foregrip</text>
+	</string>
+	<string id="wc_slot_tactical_1">
+		<text>Rail 1</text>
+	</string>
+	<string id="wc_slot_tactical_2">
+		<text>Rail 2</text>
+	</string>
+	<string id="wc_slot_tactical_3">
+		<text>Rail 3</text>
+	</string>
+	<string id="wc_slot_magazine">
+		<text>Magazine</text>
+	</string>
+	<string id="wc_stat_weight">
+		<text>Weight</text>
+	</string>
+	<string id="wc_unit_kg">
+		<text>kg</text>
+	</string>
+	<string id="wc_stat_cost">
+		<text>Parts value</text>
+	</string>
+	<string id="wc_unit_money">
+		<text>RU</text>
+	</string>
+	<string id="wc_stat_sight">
+		<text>Sight</text>
+	</string>
+	<string id="wc_stat_iron_sights">
+		<text>iron sights</text>
+	</string>
+	<string id="wc_stat_silencer">
+		<text>Suppressor</text>
+	</string>
+	<string id="wc_stat_torch">
+		<text>Flashlight</text>
+	</string>
+	<string id="wc_stat_laser">
+		<text>Laser</text>
+	</string>
+	<string id="wc_stat_range">
+		<text>Range</text>
+	</string>
+	<string id="wc_stat_parts">
+		<text>Parts</text>
+	</string>
+	<string id="kb_layer_weapon_customize">
+		<text>Weapon customization</text>
+	</string>
+	<string id="kb_grp_weapon_customize">
+		<text>Weapon customization</text>
+	</string>
+	<string id="kb_wc_slot_prev">
+		<text>Previous slot</text>
+	</string>
+	<string id="kb_wc_slot_next">
+		<text>Next slot</text>
+	</string>
+	<string id="kb_wc_part_prev">
+		<text>Previous part</text>
+	</string>
+	<string id="kb_wc_part_next">
+		<text>Next part</text>
+	</string>
+	<string id="kb_wc_apply">
+		<text>Install part</text>
+	</string>
+	<string id="kb_wc_detach">
+		<text>Detach part</text>
+	</string>
+	<string id="kb_wc_undo">
+		<text>Undo</text>
+	</string>
+	<string id="kb_wc_redo">
+		<text>Redo</text>
+	</string>
+	<string id="kb_wc_revert">
+		<text>Revert build</text>
+	</string>
+	<string id="kb_wc_focus">
+		<text>Focus slot</text>
+	</string>
+	<string id="kb_wc_reset_view">
+		<text>Reset camera</text>
+	</string>
+	<string id="kb_wc_rotate_left">
+		<text>Rotate left</text>
+	</string>
+	<string id="kb_wc_rotate_right">
+		<text>Rotate right</text>
+	</string>
+	<string id="kb_wc_zoom_in">
+		<text>Zoom in</text>
+	</string>
+	<string id="kb_wc_zoom_out">
+		<text>Zoom out</text>
+	</string>
+	<string id="kb_wc_close">
+		<text>Close window</text>
+	</string>
+</string_table>

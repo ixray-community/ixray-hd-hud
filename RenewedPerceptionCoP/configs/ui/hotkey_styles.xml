@@ -9,7 +9,7 @@
 			<text align="c" vert_align="c" font="font_roboto_medium_22" r="225" g="225" b="225"/>
 		</key>
 		<label x="0" y="0" width="10" height="22">
-			<text align="l" vert_align="c" font="font_roboto_medium_22" r="119" g="123" b="123"/>
+			<text align="l" vert_align="c" font="font_roboto_medium_18" r="119" g="123" b="123"/>
 		</label>
 	</style>
 	<style id="pda_small" key_padding="5" key_min_width="20" key_spacing="3" label_spacing="6" item_spacing="16">
@@ -21,7 +21,7 @@
 			<text align="c" vert_align="c" font="font_roboto_medium_22" r="225" g="225" b="225"/>
 		</key>
 		<label x="0" y="0" width="2" height="20">
-			<text align="l" vert_align="c" font="font_roboto_medium_22" r="119" g="123" b="123"/>
+			<text align="l" vert_align="c" font="font_roboto_medium_18" r="119" g="123" b="123"/>
 		</label>
 	</style>
 </w>

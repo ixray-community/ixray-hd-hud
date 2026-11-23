@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<w>
+	<layout margin="26" header_h="46" footer_h="36" gap="12" left_min="230" left_max="300" left_k="0.21" right_min="270" right_max="350" right_k="0.25" stats_h="96" row_h="27" card_h="32"/>
+
+	<colors>
+		<text r="210" g="210" b="210" a="255"/>
+		<dim r="122" g="128" b="132" a="255"/>
+		<accent r="215" g="205" b="90" a="255"/>
+		<good r="130" g="190" b="120" a="255"/>
+		<bad r="215" g="110" b="90" a="255"/>
+		<warn r="225" g="175" b="90" a="255"/>
+		<marker_full r="225" g="225" b="225" a="230"/>
+		<marker_empty r="140" g="140" b="140" a="150"/>
+		<marker_none r="110" g="90" b="85" a="110"/>
+		<line_full r="200" g="200" b="200" a="150"/>
+		<line_empty r="140" g="140" b="140" a="110"/>
+	</colors>
+
+	<groups>
+		<group id="optics" label="wc_group_optics" order="10"/>
+		<group id="muzzle" label="wc_group_muzzle" order="20"/>
+		<group id="body" label="wc_group_body" order="30"/>
+		<group id="ergonomics" label="wc_group_ergonomics" order="40"/>
+		<group id="tactical" label="wc_group_tactical" order="50"/>
+		<group id="feed" label="wc_group_feed" order="60"/>
+		<group id="other" label="wc_group_other" order="90"/>
+	</groups>
+
+	<slots>
+		<slot bone="tag_mount_attach" label="wc_slot_mount" group="optics" order="10"/>
+		<slot bone="tag_scope_attach" label="wc_slot_mount" group="optics" order="11"/>
+		<slot bone="mod_scope" label="wc_slot_scope" group="optics" order="12"/>
+		<slot bone="tag_sight_rear_attach" label="wc_slot_sight_rear" group="optics" order="13"/>
+		<slot bone="tag_sightrear_attach" label="wc_slot_sight_rear" group="optics" order="13"/>
+		<slot bone="tag_sight_front_attach" label="wc_slot_sight_front" group="optics" order="14"/>
+		<slot bone="tag_silencer_attach" label="wc_slot_muzzle" group="muzzle" order="20"/>
+		<slot bone="tag_silincer_attach" label="wc_slot_muzzle" group="muzzle" order="20"/>
+		<slot bone="tag_muzzle_attach" label="wc_slot_muzzle" group="muzzle" order="20"/>
+		<slot bone="tag_receiver_attach" label="wc_slot_receiver" group="body" order="30"/>
+		<slot bone="j_slide_attach" label="wc_slot_slide" group="body" order="31"/>
+		<slot bone="tag_gasblock_attach" label="wc_slot_gasblock" group="body" order="32"/>
+		<slot bone="tag_handguard_attach" label="wc_slot_handguard" group="body" order="33"/>
+		<slot bone="tag_stock_attach" label="wc_slot_stock" group="ergonomics" order="40"/>
+		<slot bone="mod_stock" label="wc_slot_buttpad" group="ergonomics" order="41"/>
+		<slot bone="tag_pistolgrip_attach" label="wc_slot_pistolgrip" group="ergonomics" order="42"/>
+		<slot bone="mod_foregrip" label="wc_slot_foregrip" group="ergonomics" order="43"/>
+		<slot bone="mod_tactical_000" label="wc_slot_tactical_1" group="tactical" order="50"/>
+		<slot bone="mod_tactical_001" label="wc_slot_tactical_2" group="tactical" order="51"/>
+		<slot bone="mod_tactical_002" label="wc_slot_tactical_3" group="tactical" order="52"/>
+		<slot bone="j_mag1" label="wc_slot_magazine" group="feed" order="60"/>
+		<slot bone="j_mag_1" label="wc_slot_magazine" group="feed" order="60"/>
+	</slots>
+
+	<stats>
+		<stat id="weight" label="wc_stat_weight" key="inv_weight" mode="sum" include_root="1" format="%.2f" unit="wc_unit_kg" better="lower"/>
+		<stat id="cost" label="wc_stat_cost" key="cost" mode="sum" format="%d" unit="wc_unit_money" hide_zero="1"/>
+		<stat id="sight" label="wc_stat_sight" key="aim_bone" mode="first" empty="wc_stat_iron_sights"/>
+		<stat id="silencer" label="wc_stat_silencer" key="is_silencer" mode="any" better="higher"/>
+		<stat id="torch" label="wc_stat_torch" key="torch_installed" mode="any" better="higher"/>
+		<stat id="laser" label="wc_stat_laser" key="laser_installed" mode="any" better="higher" hide_zero="1"/>
+		<stat id="range" label="wc_stat_range" key="holder_range_modifier" mode="mul" format="x%.2f" better="higher" hide_default="1"/>
+		<stat id="parts" label="wc_stat_parts" mode="count" format="%d"/>
+	</stats>
+
+	<background x="0" y="0" width="1024" height="768" stretch="1">
+		<texture a="255">ui_RP2_back</texture>
+	</background>
+
+	<main_frame x="0" y="0" width="1024" height="768">
+		<texture a="255">ui_RP2_MAIN_frame</texture>
+	</main_frame>
+
+	<panel x="0" y="0" width="300" height="300">
+		<texture a="255">ui_RP2_MID_frame</texture>
+	</panel>
+
+	<header_line x="0" y="0" width="1024" height="30" vertical="0">
+		<texture a="255">ui_RP2_top_frame</texture>
+	</header_line>
+
+	<footer_line x="0" y="0" width="1024" height="30" vertical="0">
+		<texture a="255">ui_RP2_bottom_frame</texture>
+	</footer_line>
+
+	<section_line x="0" y="0" width="300" height="26" vertical="0">
+		<texture a="110">ui_RP2_top_frame</texture>
+	</section_line>
+
+	<selection x="0" y="0" width="300" height="27" vertical="0">
+		<texture a="150">ui_RP2_top_frame</texture>
+	</selection>
+
+	<title x="0" y="0" width="500" height="30">
+		<text align="l" vert_align="c" font="font_oswald_24" r="225" g="225" b="225"/>
+	</title>
+
+	<subtitle x="0" y="0" width="500" height="18">
+		<text align="l" vert_align="c" font="font_rubik_12" r="119" g="123" b="123"/>
+	</subtitle>
+
+	<summary x="0" y="0" width="300" height="20">
+		<text align="r" vert_align="c" font="font_rubik_14" r="170" g="170" b="170"/>
+	</summary>
+
+	<section_caption x="0" y="0" width="280" height="26">
+		<text x="10" align="l" vert_align="c" font="font_rubik_14" r="150" g="150" b="150"/>
+	</section_caption>
+
+	<section_counter x="0" y="0" width="80" height="26">
+		<text align="r" vert_align="c" font="font_rubik_12" r="119" g="123" b="123"/>
+	</section_counter>
+
+	<btn_close x="0" y="0" width="26" height="22" stretch="1">
+		<texture_e>ui_RP2_Close_btn_e</texture_e>
+		<texture_h>ui_RP2_Close_btn_h</texture_h>
+		<texture_t>ui_RP2_Close_btn_t</texture_t>
+		<texture_d>ui_RP2_Close_btn_d</texture_d>
+	</btn_close>
+
+	<slot_row x="0" y="0" width="280" height="27" frame_mode="1">
+		<texture_e>ui_RP2_pda_tab_btn_e</texture_e>
+		<texture_h>ui_RP2_pda_tab_btn_h</texture_h>
+		<texture_t>ui_RP2_pda_tab_btn_t</texture_t>
+		<texture_d>ui_RP2_pda_tab_btn_d</texture_d>
+		<text align="l" vert_align="c" x="12" y="0" font="font_rubik_12"/>
+		<text_color>
+			<e r="193" g="201" b="209" a="200"/>
+			<t r="215" g="205" b="90" a="255"/>
+			<d r="122" g="135" b="148" a="255"/>
+			<h r="230" g="230" b="230" a="255"/>
+		</text_color>
+	</slot_row>
+
+	<slot_value x="0" y="0" width="130" height="27">
+		<text align="r" vert_align="c" font="font_rubik_12" r="160" g="160" b="160"/>
+	</slot_value>
+
+	<group_caption x="0" y="0" width="280" height="22">
+		<text x="6" align="l" vert_align="c" font="font_rubik_12" r="110" g="110" b="110"/>
+	</group_caption>
+
+	<part_card x="0" y="0" width="320" height="32" frame_mode="1">
+		<texture_e>ui_RP2_hide_tab_btn_e</texture_e>
+		<texture_h>ui_RP2_hide_tab_btn_h</texture_h>
+		<texture_t>ui_RP2_hide_tab_btn_t</texture_t>
+		<texture_d>ui_RP2_hide_tab_btn_d</texture_d>
+		<text align="l" vert_align="c" x="16" y="0" font="font_rubik_14"/>
+		<text_color>
+			<e r="205" g="205" b="205" a="255"/>
+			<t r="215" g="205" b="90" a="255"/>
+			<d r="110" g="110" b="110" a="255"/>
+			<h r="240" g="240" b="240" a="255"/>
+		</text_color>
+	</part_card>
+
+	<part_state x="0" y="0" width="120" height="32">
+		<text align="r" vert_align="c" font="font_rubik_12" r="150" g="150" b="150"/>
+	</part_state>
+
+	<part_mark x="0" y="0" width="3" height="32" stretch="1">
+		<texture>ui_inGame2_hint_wnd_bar</texture>
+	</part_mark>
+
+	<details_title x="0" y="0" width="300" height="24">
+		<text align="l" vert_align="c" font="font_rubik_16" r="225" g="225" b="225"/>
+	</details_title>
+
+	<details_text x="0" y="0" width="300" height="120" complex_mode="1">
+		<text align="l" font="font_rubik_12" r="165" g="165" b="165"/>
+	</details_text>
+
+	<details_warning x="0" y="0" width="300" height="60" complex_mode="1">
+		<text align="l" font="font_rubik_12" r="225" g="175" b="90"/>
+	</details_warning>
+
+	<empty_text x="0" y="0" width="300" height="60" complex_mode="1">
+		<text align="l" font="font_rubik_14" r="120" g="120" b="120"/>
+	</empty_text>
+
+	<viewport x="0" y="0" width="400" height="400" fov="20" zoom_min="0.6" zoom_max="4.5" auto_rotate="0"/>
+
+	<viewport_hint x="0" y="0" width="400" height="18">
+		<text align="l" vert_align="c" font="font_rubik_12" r="110" g="114" b="114"/>
+	</viewport_hint>
+
+	<marker x="0" y="0" width="22" height="22" stretch="1">
+		<texture>ui_RP2_IconFocus</texture>
+	</marker>
+
+	<callout x="0" y="0" width="150" height="22" stretch="1">
+		<texture a="220">ui_RP2_chips2</texture>
+		<text align="c" vert_align="c" font="font_rubik_12" r="225" g="225" b="225"/>
+	</callout>
+
+	<stat_label x="0" y="0" width="140" height="18">
+		<text align="l" vert_align="c" font="font_rubik_12" r="119" g="123" b="123"/>
+	</stat_label>
+
+	<stat_value x="0" y="0" width="140" height="22">
+		<text align="l" vert_align="c" font="font_rubik_16" r="220" g="220" b="220"/>
+	</stat_value>
+
+	<stat_delta x="0" y="0" width="80" height="22">
+		<text align="r" vert_align="c" font="font_rubik_12" r="130" g="190" b="120"/>
+	</stat_delta>
+
+	<toast x="0" y="0" width="420" height="24" stretch="1">
+		<texture a="230">ui_RP2_chips2</texture>
+		<text align="c" vert_align="c" font="font_rubik_14" r="230" g="230" b="230"/>
+	</toast>
+
+	<hotkeys x="0" y="0" width="980" height="20" key_padding="5" key_min_width="18" key_spacing="2" label_spacing="5" item_spacing="14" chips_align="l">
+		<key_back type="line" x="0" y="0" width="18" height="20">
+			<texture a="200">ui_RP2_HotKey</texture>
+		</key_back>
+		<key x="0" y="0" width="18" height="20">
+			<text align="c" vert_align="c" font="font_rubik_12" r="215" g="215" b="215"/>
+		</key>
+		<label x="0" y="0" width="10" height="20">
+			<text align="l" vert_align="c" font="font_rubik_12" r="119" g="123" b="123"/>
+		</label>
+		<item action="wc_slot_prev,wc_slot_next" label="wc_hint_slot"/>
+		<item action="wc_part_prev,wc_part_next" label="wc_hint_part"/>
+		<item action="wc_apply" label="wc_hint_apply"/>
+		<item action="wc_detach" label="wc_hint_detach"/>
+		<item action="wc_undo,wc_redo" label="wc_hint_undo"/>
+		<item action="wc_revert" label="wc_hint_revert"/>
+		<item action="wc_focus" label="wc_hint_focus"/>
+		<item action="wc_reset_view" label="wc_hint_reset"/>
+		<item action="wc_rotate_left,wc_rotate_right" label="wc_hint_rotate"/>
+		<item action="wc_zoom_in,wc_zoom_out" label="wc_hint_zoom"/>
+	</hotkeys>
+</w>

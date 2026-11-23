@@ -1,0 +1,5 @@
+name: RenewedPerceptionSWP
+platform: cop
+depends:
+  - RenewedPerceptionCoP
+  - secret-weapon-pack
