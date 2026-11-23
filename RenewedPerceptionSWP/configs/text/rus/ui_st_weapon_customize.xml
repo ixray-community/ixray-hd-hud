@@ -234,6 +234,12 @@
 	<string id="wc_slot_foregrip">
 		<text>Передняя рукоять</text>
 	</string>
+	<string id="wc_slot_rail_top">
+		<text>Верхняя планка</text>
+	</string>
+	<string id="wc_slot_tactical">
+		<text>Тактическая планка</text>
+	</string>
 	<string id="wc_slot_tactical_1">
 		<text>Планка 1</text>
 	</string>
@@ -275,6 +281,9 @@
 	</string>
 	<string id="wc_stat_range">
 		<text>Дальность</text>
+	</string>
+	<string id="wc_stat_value">
+		<text>Стоимость</text>
 	</string>
 	<string id="wc_stat_parts">
 		<text>Деталей</text>

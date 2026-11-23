@@ -234,6 +234,12 @@
 	<string id="wc_slot_foregrip">
 		<text>Foregrip</text>
 	</string>
+	<string id="wc_slot_rail_top">
+		<text>Top rail</text>
+	</string>
+	<string id="wc_slot_tactical">
+		<text>Tactical rail</text>
+	</string>
 	<string id="wc_slot_tactical_1">
 		<text>Rail 1</text>
 	</string>
@@ -275,6 +281,9 @@
 	</string>
 	<string id="wc_stat_range">
 		<text>Range</text>
+	</string>
+	<string id="wc_stat_value">
+		<text>Value</text>
 	</string>
 	<string id="wc_stat_parts">
 		<text>Parts</text>

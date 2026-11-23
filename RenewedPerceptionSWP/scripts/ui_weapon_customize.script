@@ -91,7 +91,8 @@ function load_config()
 		sounds = {},
 		groups = {},
 		slots = {},
-		stats = {},
+		stat_sets = {},
+		stat_max = 0,
 	}
 
 	for _, name in ipairs({"open", "close", "select", "attach", "detach", "error"}) do
@@ -114,9 +115,10 @@ function load_config()
 		return value == "1" or value == "true"
 	end
 
-	local function each(list, item, fn)
-		local count = xml:GetNodesNum(list, 0, item)
-		if count <= 0 or not xml:NavigateToNode(list, 0) then
+	local function each(list, item, fn, list_index)
+		list_index = list_index or 0
+		local count = xml:GetNodesNum(list, list_index, item)
+		if count <= 0 or not xml:NavigateToNode(list, list_index) then
 			return
 		end
 		for i = 0, count - 1 do
@@ -138,7 +140,13 @@ function load_config()
 	each("slots", "slot", function(i)
 		local bone = attr("slot", i, "bone", nil)
 		if bone then
-			cfg.slots[bone] = {
+			local list = cfg.slots[bone]
+			if not list then
+				list = {}
+				cfg.slots[bone] = list
+			end
+			list[#list + 1] = {
+				owners = split(attr("slot", i, "owner", "")),
 				label = attr("slot", i, "label", bone),
 				group = attr("slot", i, "group", "other"),
 				order = tonumber(attr("slot", i, "order", "1000")) or 1000,
@@ -146,9 +154,15 @@ function load_config()
 		end
 	end)
 
-	each("stats", "stat", function(i)
+	local set_index = 0
+	while xml:NavigateToNode("stats", set_index) do
+		xml:NavigateToRoot()
+		local kind = attr("stats", set_index, "for", "all")
+		local set = cfg.stat_sets[kind] or {}
+		cfg.stat_sets[kind] = set
+		each("stats", "stat", function(i)
 		local id = attr("stat", i, "id", tostring(i))
-		cfg.stats[#cfg.stats + 1] = {
+		set[#set + 1] = {
 			id = id,
 			label = attr("stat", i, "label", id),
 			key = attr("stat", i, "key", ""),
@@ -161,7 +175,11 @@ function load_config()
 			hide_default = flag("stat", i, "hide_default"),
 			empty = attr("stat", i, "empty", "wc_none"),
 		}
-	end)
+		end, set_index)
+		cfg.stat_max = math.max(cfg.stat_max, #set)
+		set_index = set_index + 1
+	end
+	xml:NavigateToRoot()
 
 	return cfg
 end
@@ -189,12 +207,48 @@ function play(name)
 	end
 end
 
-function slot_meta(bone)
-	local meta = config().slots[bone]
-	if meta then
-		return meta
+function owner_matches(section, owners)
+	for _, pattern in ipairs(owners) do
+		if string.sub(pattern, -1) == "*" then
+			local prefix = string.sub(pattern, 1, -2)
+			if string.sub(section, 1, #prefix) == prefix then
+				return true
+			end
+		elseif pattern == section then
+			return true
+		end
+	end
+	return false
+end
+
+function slot_meta(bone, owner_section)
+	local list = config().slots[bone]
+	if list then
+		local fallback = nil
+		for _, entry in ipairs(list) do
+			if #entry.owners == 0 then
+				fallback = fallback or entry
+			elseif owner_section and owner_matches(owner_section, entry.owners) then
+				return entry
+			end
+		end
+		if fallback then
+			return fallback
+		end
 	end
 	return {label = bone, group = "other", order = 1000}
+end
+
+function root_kind(obj)
+	if obj and obj:is_weapon() then
+		return "weapon"
+	end
+	return "attachment"
+end
+
+function stat_set(kind)
+	local sets = config().stat_sets
+	return sets[kind] or sets.all or {}
 end
 
 function group_meta(id)
@@ -248,6 +302,8 @@ function weapon_customize_wnd:__init(root_id) super()
 	self.pending_until = 0
 	self.toast_until = 0
 	self.preview_key = nil
+	self.kind = "attachment"
+	self.stats = {}
 
 	self:SetWndRect(Frect():set(0, 0, 1024, 768))
 	self:SetStopAnyMove(true)
@@ -390,6 +446,10 @@ function weapon_customize_wnd:InitControls()
 	self.viewport:SetLineColors(self.C.line_full, self.C.accent, self.C.line_empty)
 	self.view_w = center_w
 	self.view_h = view_h
+	self.view_h_stats = view_h
+	self.center_x = center_x
+	self.body_y = body_y
+	self.body_h = body_h
 
 	self.marker_pool = {}
 	for i = 1, 40 do
@@ -422,7 +482,7 @@ function weapon_customize_wnd:InitControls()
 	self:place(self.stats_panel, center_x, body_y + view_h + L.gap, center_w, L.stats_h)
 	self.stats_w = center_w
 	self.stat_pool = {}
-	for i = 1, #config().stats do
+	for i = 1, config().stat_max do
 		local stat = {}
 		stat.label = xml:InitTextWnd("stat_label", self.stats_panel)
 		stat.value = xml:InitTextWnd("stat_value", self.stats_panel)
@@ -523,7 +583,7 @@ function weapon_customize_wnd:rebuild()
 			node.allowed[#node.allowed + 1] = section
 		end
 		node.key = tostring(node.owner) .. ":" .. node.bone
-		node.meta = slot_meta(node.bone)
+		node.meta = slot_meta(node.bone, node.owner_section)
 		node.group = group_meta(node.meta.group)
 		nodes[i] = node
 		if node.parent > 0 and nodes[node.parent] then
@@ -1161,8 +1221,17 @@ function weapon_customize_wnd:refresh_stats(removed, added, added_key)
 		preview = self:tree_sections(removed, added, added_key)
 	end
 
+	for _, widget in ipairs(self.stat_pool) do
+		widget.label:Show(false)
+		widget.value:Show(false)
+		widget.delta:Show(false)
+	end
+	if #self.stats == 0 then
+		return
+	end
+
 	local shown = {}
-	for i, stat in ipairs(config().stats) do
+	for i, stat in ipairs(self.stats) do
 		local widget = self.stat_pool[i]
 		local old = self:stat_value(stat, current, root_section)
 		local new = preview and self:stat_value(stat, preview, root_section) or old
@@ -1616,7 +1685,20 @@ end
 -----------------------------------------------------------------------------
 -- lifecycle
 
+function weapon_customize_wnd:apply_view_layout()
+	local has_stats = #self.stats > 0
+	local h = has_stats and self.view_h_stats or self.body_h
+	self.view_h = h
+	self:place(self.viewport, self.center_x, self.body_y, self.view_w, h)
+	self:place(self.view_hint, 12, h - 24, self.view_w - 24, 18)
+	self:place(self.empty_view, 20, h * 0.5 - 20, self.view_w - 40, 40)
+	self.stats_panel:Show(has_stats)
+end
+
 function weapon_customize_wnd:Open()
+	self.kind = root_kind(level.object_by_id(self.root_id))
+	self.stats = stat_set(self.kind)
+	self:apply_view_layout()
 	self.opened = true
 	self.signature = -1
 	self.parts_signature = ""

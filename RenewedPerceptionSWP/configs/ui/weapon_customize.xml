@@ -29,6 +29,7 @@
 	<slots>
 		<slot bone="tag_mount_attach" label="wc_slot_mount" group="optics" order="10"/>
 		<slot bone="tag_scope_attach" label="wc_slot_mount" group="optics" order="11"/>
+		<slot bone="mod_scope" owner="handguard_*" label="wc_slot_rail_top" group="tactical" order="49"/>
 		<slot bone="mod_scope" label="wc_slot_scope" group="optics" order="12"/>
 		<slot bone="tag_sight_rear_attach" label="wc_slot_sight_rear" group="optics" order="13"/>
 		<slot bone="tag_sightrear_attach" label="wc_slot_sight_rear" group="optics" order="13"/>
@@ -44,6 +45,7 @@
 		<slot bone="mod_stock" label="wc_slot_buttpad" group="ergonomics" order="41"/>
 		<slot bone="tag_pistolgrip_attach" label="wc_slot_pistolgrip" group="ergonomics" order="42"/>
 		<slot bone="mod_foregrip" label="wc_slot_foregrip" group="ergonomics" order="43"/>
+		<slot bone="mod_tactical" label="wc_slot_tactical" group="tactical" order="50"/>
 		<slot bone="mod_tactical_000" label="wc_slot_tactical_1" group="tactical" order="50"/>
 		<slot bone="mod_tactical_001" label="wc_slot_tactical_2" group="tactical" order="51"/>
 		<slot bone="mod_tactical_002" label="wc_slot_tactical_3" group="tactical" order="52"/>
@@ -51,7 +53,7 @@
 		<slot bone="j_mag_1" label="wc_slot_magazine" group="feed" order="60"/>
 	</slots>
 
-	<stats>
+	<stats for="weapon">
 		<stat id="weight" label="wc_stat_weight" key="inv_weight" mode="sum" include_root="1" format="%.2f" unit="wc_unit_kg" better="lower"/>
 		<stat id="cost" label="wc_stat_cost" key="cost" mode="sum" format="%d" unit="wc_unit_money" hide_zero="1"/>
 		<stat id="sight" label="wc_stat_sight" key="aim_bone" mode="first" empty="wc_stat_iron_sights"/>
@@ -59,6 +61,12 @@
 		<stat id="torch" label="wc_stat_torch" key="torch_installed" mode="any" better="higher"/>
 		<stat id="laser" label="wc_stat_laser" key="laser_installed" mode="any" better="higher" hide_zero="1"/>
 		<stat id="range" label="wc_stat_range" key="holder_range_modifier" mode="mul" format="x%.2f" better="higher" hide_default="1"/>
+		<stat id="parts" label="wc_stat_parts" mode="count" format="%d"/>
+	</stats>
+
+	<stats for="attachment">
+		<stat id="weight" label="wc_stat_weight" key="inv_weight" mode="sum" include_root="1" format="%.2f" unit="wc_unit_kg" better="lower"/>
+		<stat id="value" label="wc_stat_value" key="cost" mode="sum" include_root="1" format="%d" unit="wc_unit_money" hide_zero="1"/>
 		<stat id="parts" label="wc_stat_parts" mode="count" format="%d"/>
 	</stats>
 
