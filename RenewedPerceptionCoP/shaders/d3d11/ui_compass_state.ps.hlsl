@@ -24,14 +24,15 @@ float4 main(p_TL I) : SV_Target
     float Anomaly = saturate(1.0f - abs(Level - 0.5f) * 8.0f);
     float Radiation = saturate(1.0f - abs(Level - 0.75f) * 8.0f);
     float Emission = saturate((Level - 0.875f) * 8.0f);
+    float Active = saturate((Level - 0.25f) * 4.0f);
 
     float Wave = sin(Uv.x * 18.0f + Time * 2.5f) * 0.035f * Anomaly
                + sin(Uv.x * 31.0f - Time * 7.0f) * 0.05f * Emission;
     float Haze = (CompassNoise(float2(Uv.x * 40.0f, Time * 3.0f)) - 0.5f) * 0.08f * Radiation;
     float Offset = Uv.y - 0.5f - Wave - Haze;
 
-    float Core = exp(-pow(Offset * 28.0f, 2.0f));
-    float Glow = exp(-pow(Offset * 7.0f, 2.0f)) * 0.45f;
+    float Core = exp(-pow(Offset * 42.0f, 2.0f));
+    float Glow = exp(-pow(Offset * 11.0f, 2.0f)) * 0.4f;
 
     float Pulse = 1.0f
                 + Anomaly * 0.25f * sin(Time * 3.5f)
@@ -47,5 +48,5 @@ float4 main(p_TL I) : SV_Target
     float Intensity = (Core + Glow * (1.0f + Emission)) * Pulse * Flicker + (Impulse * 2.0f + Flash) * Glow;
 
     float3 Color = I.Color.rgb * (1.0f + Core * 0.6f);
-    return float4(Color, saturate(Intensity) * Edge);
+    return float4(Color, saturate(Intensity) * Edge * Active);
 }
