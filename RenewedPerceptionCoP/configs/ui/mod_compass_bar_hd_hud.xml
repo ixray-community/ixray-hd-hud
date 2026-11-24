@@ -18,6 +18,16 @@
 			</draw>
 		</background>
 
+		<hazard_state x="0" y="-0.75" width="0.9" height="0.9" scan_radius="15" radiation_threshold="0.25" blend_speed="4" emission_check="surge_manager.is_started">
+			<glow x="0" y="0" width="1" height="1" stretch="1">
+				<texture shader="ui_compass_state">ui\ui_actor_wave_mask</texture>
+			</glow>
+			<safe r="120" g="185" b="160"/>
+			<anomaly r="198" g="167" b="232"/>
+			<radiation r="214" g="195" b="106"/>
+			<emission r="224" g="107" b="50"/>
+		</hazard_state>
+
 		<dial
 			x="0.42" y="-0.35"
 			width="0.95" height="1.0"
