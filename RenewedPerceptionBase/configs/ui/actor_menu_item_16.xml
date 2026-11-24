@@ -5,7 +5,7 @@
 	</background_frame>
 
 	<static_name x="16" y="16" width="308" height="22" stretch="1" complex_desc="1">
-		<text font="font_oswald_18" complex_mode="1" align="l" vert_align="c" r="193" g="201" b="209"/>
+		<text font="font_oswald_24" complex_mode="1" align="l" vert_align="c" r="193" g="201" b="209"/>
 	</static_name>
 
 	<static_weight x="16" y="40" width="200" height="18">
