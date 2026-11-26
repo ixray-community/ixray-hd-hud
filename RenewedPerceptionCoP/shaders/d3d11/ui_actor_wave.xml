@@ -1,7 +1,10 @@
-<shader>
+<shader version="2">
 	<normal>
-		<pass vs="stub_notransform_t" ps="ui_actor_wave" zfunc="always" zwrite="0" blend="srcalpha,one">
-			<texture name="s_base" src="@base"/>
-		</pass>
+		<pass vs="stub_notransform_t" ps="ui_actor_wave"/>
+		<fog value="0"/>
+		<zb test="0" write="0"/>
+		<blend enable="1" src="srcalpha" dest="one"/>
+		<texture name="s_base" value="{base}"/>
+		<sampler name="smp_base"/>
 	</normal>
 </shader>
