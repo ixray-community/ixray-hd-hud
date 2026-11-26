@@ -18,6 +18,7 @@ float CompassNoise(float2 P)
 float4 main(p_TL I) : SV_Target
 {
     float2 Uv = I.Tex0;
+    float Mask = s_base.Sample(smp_base, Uv).a;
     float Level = I.Color.a;
     float Time = timers.x;
 
@@ -48,5 +49,5 @@ float4 main(p_TL I) : SV_Target
     float Intensity = (Core + Glow * (1.0f + Emission)) * Pulse * Flicker + (Impulse * 2.0f + Flash) * Glow;
 
     float3 Color = I.Color.rgb * (1.0f + Core * 0.6f);
-    return float4(Color, saturate(Intensity) * Edge * Active);
+    return float4(Color, saturate(Intensity) * Edge * Active * step(0.0f, Mask));
 }
